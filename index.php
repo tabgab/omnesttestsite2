@@ -135,7 +135,7 @@
        		<!-- Body : End -->
 
        		<!-- Bottom : Start -->
-       		<tr valign="top" bgcolor="#005e77" height="100%">
+       		<tr valign="top" height="100%">
 
        			<!-- Left Margin plus Logo and News-->
        			<td width="435" colspan="3" background="images/front_global_back.jpg"></td>
@@ -161,7 +161,7 @@
        				<td background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="600" alt=""><br></td>
        			</tr>
        			<tr>
-       				<td height="100%" bgcolor="#005e77" ></td>
+       				<td height="100%"></td>
        			</tr>
        		</table>
        	</td>
