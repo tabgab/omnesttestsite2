@@ -43,7 +43,7 @@
 
        	<td valign="top" background="images/front_global_back.jpg">
 
-       		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+       		<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
 
        		<!-- Top : Start -->
        		<tr bgcolor="#005e77">
@@ -130,7 +130,7 @@
        		<!-- Body : End -->
 
        		<!-- Bottom : Start -->
-       		<tr bgcolor="#005e77">
+       		<tr valign="top" bgcolor="#005e77" height="100%">
 
        			<!-- Left Margin plus Logo and News-->
        			<td width="435" colspan="3" background="images/front_global_back.jpg"></td>
@@ -148,6 +148,7 @@
 
        		</tr>
        		<!-- Bottom : End -->
+
 
        		</table>
 
