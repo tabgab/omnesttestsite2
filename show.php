@@ -22,25 +22,17 @@
 	<script type="text/javascript" src="common/script.js"></script>
 </head>
 
-<body>
-<!--
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-    	<td width="50%"></td>
-    	<td width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="5" alt=""><br></td>
-    	<td width="50%"></td>
-    </tr>
-</table>
--->
+<body bgcolor="#d9d9d9">
+
 <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
+<tr bgcolor="#005e77">
 	<td width="50%"></td>
     	<td colspan="5" width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="5" alt=""></td>
 	<td width="50%"></td>
 </tr>
 
 <!-- Top : Start -->
-<tr>
+<tr bgcolor="#005e77">
 
 	<!-- Left Side -->
 	<td width="50%"></td>
@@ -49,7 +41,7 @@
 	<td width="25"><img src="images/spacer.gif" width="25" height="1" alt=""><br></td>
 
 	<!-- Logo & News -->
-	<td width="150"><img src="images/front_top_logo.gif" width="150" height="110" alt=""><br></td>
+	<td width="150" bgcolor="#cac9c6"><img src="images/front_top_logo.gif" width="150" height="110" alt=""><br></td>
 
 	<!-- Shell -->
 	<td width="30"><img src="images/spacer.gif" width="30" height="1" alt=""><br></td>
@@ -70,7 +62,7 @@
 <!-- Top : End -->
 
 <!-- Menu : Start -->
-<tr>
+<tr bgcolor="#000000">
 
 	<!-- Left Side -->
 	<td width="50%" background="images/side_menu_back.jpg"><img src="images/spacer.gif" width="1" height="1" alt=""><br></td>
@@ -79,7 +71,7 @@
 	<td width="25" background="images/side_menu_back.jpg"><img src="images/spacer.gif" width="1" height="1" alt=""><br></td>
 
 	<!-- Logo & News -->
-	<td width="150"><a href="index.php"><img src="images/side_menu_logo.gif" width="150" height="45" alt="" border="0"></a></td>
+	<td width="150" bgcolor="#cac9c6"><a href="index.php"><img src="images/side_menu_logo.gif" width="150" height="45" alt="" border="0"></a></td>
 
 	<!-- Menu -->
 	<td background="images/side_menu_back.jpg" colspan="2">
@@ -109,7 +101,7 @@
 	<td width="25" bgcolor="#E5E5E5" valign="top"><img src="images/side_over_back.jpg" alt="" width="25" height="50" border="0"><br></td>
 
 	<!-- Logo & News -->
-	<td width="150" background="images/side_news_back.jpg" valign="top">
+	<td width="150"  bgcolor="#eaeaea" background="images/side_news_back.jpg" valign="top">
 		<img src="images/side_news_top.jpg" width="150" height="50" alt=""><br>
 		<img src="images/side_news.jpg" width="150" height="35" alt=""><br>
 		<?php include("common/news.php")?>
@@ -141,7 +133,7 @@
 <!-- Body : End -->
 
 <!-- Bottom : Start -->
-<tr>
+<tr bgcolor="#005e77">
 
 	<!-- Left Side -->
 	<td width="50%"></td>
