@@ -40,7 +40,7 @@
 <!-- MIDDLE : End -->
 
 <!-- Right In Spacer -->
-	<td width="23" background="images/m_rs.gif"><img src="images/pixel.gif" width="23" height="1" alt="" border="0"><br></td>
+	<td width="23"><img src="images/pixel.gif" width="23" height="1" alt="" border="0"><br></td>
 
 <?php include("common/".$RIGHT.".php")?>
 

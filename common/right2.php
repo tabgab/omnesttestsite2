@@ -1,6 +1,6 @@
 <!-- RIGHT : Start -->
 
-	<td width="144" valign="top" background="images/m_rast.gif">
+	<td width="144" valign="top">
 
 		<center><h2>Details</h2></center>
 
