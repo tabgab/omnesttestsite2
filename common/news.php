@@ -2,7 +2,7 @@
 
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
-					January 1<sup>th</sup> 2005<br>
+					January 1<sup>st</sup> 2005<br>
 					</div>
 					<div class="NewsPreview">
 					<a href="show.php?page=pressv3announcement" class="NewsPreview">
