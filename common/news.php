@@ -2,6 +2,16 @@
 
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
+					March 31<sup>st</sup> 2005<br>
+					</div>
+					<div class="NewsPreview">
+					<a href="show.php?page=pressv31announcement" class="NewsPreview">
+					OMNEST&#8482; V3.1 released<br>
+					</a>
+					</div>
+
+					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
+					<div class="NewsDate">
 					January 1<sup>st</sup> 2005<br>
 					</div>
 					<div class="NewsPreview">
@@ -31,6 +41,7 @@
 					</a>
 					</div>
 
+<!--
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
 					August 21<sup>st</sup> 2004<br>
@@ -40,7 +51,7 @@
 					Partnership with InfoTek Information Systems Co., Inc. of Taipei.<br>
 					</a>
 					</div>
-<!--
+
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
 					May 1<sup>st</sup> 2004<br>

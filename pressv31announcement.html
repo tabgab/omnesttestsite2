@@ -1,0 +1,94 @@
+        <h1>OMNEST&#8482; 3.1 released</h1>
+
+        <div class="NewsDate">March 31<sup>st</sup> 2005</div> <br>
+
+<p>We are happy to announce the first minor update to the OMNEST&#8482; 3 simulator framework.
+This release contains several bugfixes since 3.0, as well as new features
+and new example simulations. </p>
+
+<p>A brief list of enhancements since version 3.0:</p>
+
+<p>Real-time/hybrid simulation:</p>
+<li>Real-time simulation has been implemented, and it is demonstrated by the
+  "Dyna/Real Time" sample simulation.
+</li><br/>
+<li>An example for hybrid (hardware-in-the-loop) simulation is now provided,
+  which is the "Sockets" sample simulation. It uses TCP sockets to communicate
+  with the outside world.
+</li><br/>
+<li>In relation to the above: new methods got added to the cScheduler interface.
+</li><br/>
+
+<p>For Windows:</p>
+<li>Debug info (*.pdb) files have been included in the installer, so one can now
+  single-step into the simulation kernel and user interface library sources
+  while debugging.
+</li><br/>
+
+<p>Simulation library:</p>
+<li>New utility class: cStringTokenizer. It splits strings to "tokens" along
+  given separator characters (by default spaces).
+</li><br/>
+<li>Changed the way scheduled events or pending messages are handled when their
+  destination module gets deleted during runtime. Before, these messages were
+  deleted by the cSimpleModule destructor, but this made it very long to clean
+  up large models. Now, messages are not deleted in the destructor, but left
+  in the FES -- they will be discarded in cSimulation::selectNextModule() when
+  they're met.
+</li><br/>
+<li>cDisplayString's getTagArg() method was modified to never return NULL; it
+  returns "" instead when the requested tag is not in the display string.
+</li><br/>
+
+<p>Configuration:</p>
+<li>Ini file runs can be given descriptions, and they will be displayed in the
+  Tkenv run selection dialog. Just add the description="some text" line
+  under the [Run x] headings.
+</li><br/>
+<li>New omnetpp.ini entry to help debugging: [General]/debug-on-errors=
+  true/false. If turned on, runtime errors (such as scheduling a message
+  into the past) will cause the program to break into the C++ debugger
+  if one is running, or just-in-time debugging is enabled. This makes it
+  possible to investigate the context of the error (stack frames, variables
+  etc). It works by doing INT 3 (debugger interrupt) on Windows, and
+  raise(SIGABRT) on Linux.
+</li><br/>
+<li>Slight change in the rules of handling included ini files, NED list files
+  and all filenames mentioned in them. All filenames are now understood as
+  relative to the location of the file which contains the reference,
+  rather than relative to the current working directory of the simulation.
+  This change is not backwards compatible, but has been found not to affect
+  any of the simulation frameworks already ported to 3.0.
+</li><br/>
+
+<p>Tkenv:</p>
+<li>Implemented the "t=<string>,<color>" display string tag for connections.
+  It makes the given string to appear near the connection arrow.
+</li><br/>
+<li>Tooltips can now be added to submodule icons, connection arrows and messages.
+  The tooltip text has to be given in the "tt=<tooltip-string>" display
+  string tag, and will be displayed if the mouse rests over the component for
+  a while. Tooltips allows more info to be displayed than can be squeezed
+  into the "t=" display string tag.
+</li><br/>
+<li>Added support for -r <run-number> command-line option, which has the same
+  effect as (but takes priority over) the [Tkenv]/default-run ini file entry.
+</li><br/>
+
+<p>Misc:</p>
+<li>opp_makemake, opp_nmakemake: implemented -X option (ignore subdirectory
+  during recursive build)
+</li><br/>
+<li>The -h command-line option is now understood by both Cmdenv and Tkenv,
+  and handled in a consistent way
+</li><br/>
+<li>The place/ icon directory was renamed to misc/ (Please update display
+  strings containing "i=place/..")
+</li><br/>
+<li>nedc got removed from the distribution</li>
+
+
+<p>We hope you will enjoy the new features of this release.</p>
+
+
+
