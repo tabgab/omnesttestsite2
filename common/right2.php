@@ -15,7 +15,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-		<a href="index.php?page=whatomnestcando&right=right2" class="Small_Title">What OMNEST&#8482; can do for You</a>
+		<a href="index.php?page=whatomnestcando&right=right2" class="Small_Title">What OMNEST&#8482; can do for you</a>
 		<br/>
 		</td></tr></table>
 		<br/>
@@ -34,7 +34,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-		<a href="index.php?page=whatyoucando&right=right2" class="Small_Title">What You can do with OMNEST&#8482;</a>
+		<a href="index.php?page=whatyoucando&right=right2" class="Small_Title">What you can do with OMNEST&#8482;</a>
 		<br/>
 		</td></tr></table>
 		<br/>
