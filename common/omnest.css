@@ -106,13 +106,24 @@ div.Title {
 	color: #FFFFFF;
 }
 
-h3 {
+h1 {
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 13pt;
 	color: #005E77;
 	padding-bottom: 10px;
 	padding-top: 0px;
 	margin-top: 0px
+}
+
+
+h2 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: justify;
+	font-weight: bold;
+	font-size: 11pt;
+	color: #000000;
+	padding-top: 20px;
+	font-style: italic;
 }
 
 p {
@@ -142,16 +153,11 @@ span.About_Company {
 	font-size: 8pt;
 }
 
-table.download {
+ul.download {
 	margin-left:24pt; 
-	border-collapse:collapse; 
-	border: none
-}
-
-table.download td {
 	font-size: 10pt;
 }
 
-table.download td:before { 
-	content: url('../images/arrow_small.gif') " ";
+ul.download li {
+  list-style-image : url(../images/arrow_small.gif);
 }
