@@ -13,50 +13,160 @@
 <html>
 <head>
 	<title>Omnest Global Inc.</title>
-<meta name="robots" content="INDEX,FOLLOW" />
-<meta name="revisit-after" content="30" />
-<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
-<link rel="stylesheet" type="text/css" href="common/omnest.css">
-<script type="text/javascript" src="common/script.js"></script>
+	<meta http-equiv=Page-Enter content=blendTrans(Duration=0.5)>
+	<meta name="robots" content="INDEX,FOLLOW" />
+	<meta name="revisit-after" content="30" />
+	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
+	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<link rel="stylesheet" type="text/css" href="common/omnest.css">
+	<script type="text/javascript" src="common/script.js"></script>
 </head>
 
-
-<body bgcolor="#FFFFFF" text="#000000" link="#00607B" vlink="#808080" alink="#FF0000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
-
-<?php include("common/header.php")?>
-
-
-<!-- BODY : Start -->
-
+<body>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
-
-
-
-<!-- Left In Spacer -->
-	<td width="20"><img src="images/pixel.gif" width="20" height="1" alt="" border="0"><br></td>
-
-<!-- MIDDLE : Start -->
-<td width="100%" valign="top">
-<?php include($PAGE.".html")?>
-</td>
-<!-- MIDDLE : End -->
-
-<!-- Right In Spacer -->
-	<td width="23"><img src="images/pixel.gif" width="23" height="1" alt="" border="0"><br></td>
-
-<?php include("common/".$RIGHT.".php")?>
-
-  </tr>
-
+	<td width="50%"></td>
+	<td width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="20" alt=""><br></td>
+	<td width="50%"></td>
+</tr>
 </table>
 
-<!-- BODY : End -->
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
 
+	<!-- Left Side -->
+	<td width="50%">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td valign="middle" background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="720" alt=""><br></td>
+			</tr>
+		</table>
+	</td>
 
-<?php include("common/footer.php")?>
+	<td valign="middle" background="images/front_global_back.jpg">
 
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+		<!-- Top : Start -->
+		<tr>
+
+			<!-- Left Margin -->
+			<td width="25"><img src="images/spacer.gif" width="25" height="1" alt=""><br></td>
+
+			<!-- Logo & News -->
+			<td width="150"><img src="images/front_top_logo.gif" width="150" height="110" alt=""><br></td>
+
+			<!-- Shell -->
+			<td width="260"><img src="images/spacer.gif" width="260" height="1" alt=""><br></td>
+
+			<!-- Menu 3 -->
+			<td width="390" align="right" valign="bottom" class="Menu3">
+				<?php include("common/topmenu.php")?>
+				<img src="images/spacer.gif" width="390" height="10" alt=""><br>
+			</td>
+
+			<!-- Right Margin -->
+			<td width="25"><img src="images/spacer.gif" width="25" height="1" alt=""><br></td>
+
+		</tr>
+		<!-- Top : End -->
+
+		<!-- Menu : Start -->
+		<tr>
+
+			<!-- Left Margin -->
+			<td width="25" background="images/front_menu_back.jpg"><img src="images/spacer.gif" width="1" height="1" alt=""><br></td>
+
+			<!-- Logo & News -->
+			<td width="150"><a href="index.php"><img src="images/front_menu_logo.gif" width="150" height="45" alt="" border="0"></a></td>
+
+			<!-- Menu -->
+			<td background="images/front_menu_back.jpg" colspan="2">
+
+				<?php include("common/mainmenu.php")?>
+
+			</td>
+
+			<!-- Slogen -->
+
+			<!-- Right Margin -->
+			<td width="25" background="images/front_menu_back.jpg"><img src="images/spacer.gif" width="1" height="1" alt=""><br></td>
+
+		</tr>
+		<!-- Menu : End -->
+
+		<!-- Body : Start -->
+		<tr>
+
+			<!-- Left Margin -->
+			<td width="25" background="images/front_mid_back.jpg"><img src="images/front_mid_left_margin.jpg" width="25" height="455" alt=""><br></td>
+
+			<!-- Logo & News -->
+			<td width="150" background="images/front_news_back.jpg" valign="top">
+			    <img src="images/spacer.gif" width="1" height="85" alt=""><br>
+				<?php include("common/news.php")?>
+			</td>
+
+			<!-- Shell -->
+			<td width="260" background="images/front_mid_back.jpg"><img src="images/front_shell.jpg" width="260" height="455" alt=""></td>
+
+			<!-- Text -->
+			<td width="390" background="images/front_text_back.jpg">
+				<div class="FrontText">
+				We all search for the prize...<br>
+				In a closed system, the solution is well hidden<br>
+				beneath layers of unyielding skin.<br>
+				Of course, you can keep trying the hard way...<br>
+				<br>
+				<div align="right">
+				<b><i>But wouldn't you rather have it OPEN?</i></b><br>
+				</div>
+				</div>
+				<br>
+			</td>
+
+			<!-- Right Margin -->
+			<td width="25" background="images/front_mid_back.jpg" valign="bottom"><img src="images/front_tm.jpg" width="25" height="80" alt=""><br></td>
+
+		</tr>
+		<!-- Body : End -->
+
+		<!-- Bottom : Start -->
+		<tr>
+
+			<!-- Left Margin -->
+			<td width="25"></td>
+
+			<!-- Logo & News -->
+			<td width="150"></td>
+
+			<!-- Shell -->
+			<td width="260"></td>
+
+			<!-- Slogen -->
+			<td width="390"><img src="images/front_bottom.gif" width="390" height="110" alt=""><br></td>
+
+			<!-- Right Margin -->
+			<td width="25"></td>
+
+		</tr>
+		<!-- Bottom : End -->
+
+		</table>
+
+	</td>
+
+	<!-- Right Side -->
+	<td width="50%">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td valign="middle" background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="720" alt=""><br></td>
+			</tr>
+		</table>
+	</td>
+
+	</tr>
+</table>
 
 </body>
 </html>
