@@ -5,7 +5,7 @@
 					<a href="show.php?page=references" class="Menu">References</a> |
 					<a href="show.php?page=download&right=right2" class="Menu">Download</a> |
 					<a href="show.php?page=company" class="Menu">Company</a> |
-					<a href="http://www.omnest.org" target="_blank" class="Menu">Community</a>
+					<a href="http://www.omnetpp.org" target="_blank" class="Menu">Community<img src="images/extlink.gif"></a>
 					</td>
 					<td align="right" valign="middle" class="Menu2">
 					<a href="index.php" class="Menu">Home</a> |
