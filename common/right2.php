@@ -35,8 +35,8 @@
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
 		<a href="whatyoucando.php" class="Small_Title">What You can do with OMNEST&#8482;</a>
-    	<br/>
-    	</td></tr></table>
+		<br/>
+		</td></tr></table>
 		<br/>
 
 		<!-- RIGHT 1 : End -->
@@ -53,7 +53,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-			<a href="screenshots.php" class="Small_Title"> Screenshots. OMNEST&#8482; in action.</a>
+			<a href="screenshots.php" class="Small_Title"> Screenshots - OMNEST&#8482; in action.</a>
 		<br>
 		</td></tr></table>
 		<br/>
@@ -92,7 +92,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-                	<p><a href="licensing.php">Licensing options</a>
+			<a href="licensing.php" class="Small_Title"> Licensing options</a>
 		<br>
 		</td></tr></table>
 		<br/>
