@@ -102,8 +102,8 @@
 
 	<!-- Logo & News -->
 	<td width="150"  bgcolor="#eaeaea" background="images/side_news_back.jpg" valign="top">
-		<img src="images/side_news_top.jpg" width="150" height="50" alt=""><br>
-		<img src="images/side_news.jpg" width="150" height="35" alt=""><br>
+		<img src="images/side_news_top.jpg" width="150" height="50" alt="">
+		<img src="images/side_news.jpg" width="150" height="35" alt="">
 		<?php include("common/news.php")?>
 
 	</td>

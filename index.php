@@ -102,7 +102,7 @@
 
        			<!-- Logo & News -->
        			<td width="150" background="images/front_news_back.jpg" bgcolor="#eaeaea" valign="top">
-       			    <img src="images/spacer.gif" width="1" height="85" alt=""><br>
+       			    <img src="images/spacer.gif" width="1" height="50" alt=""><br>
        				<?php include("common/news.php")?>
        			</td>
 
