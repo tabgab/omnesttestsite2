@@ -161,7 +161,7 @@
        				<td background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="600" alt=""><br></td>
        			</tr>
        			<tr>
-       				<td height="100%"></td>
+       				<td height="100%" bgcolor="#005e77"></td>
        			</tr>
        		</table>
        	</td>
