@@ -161,3 +161,7 @@ ul.download {
 ul.download li {
   list-style-image : url(../images/arrow_small.gif);
 }
+
+ul.redarrow li {
+  list-style-image : url(../images/arrow_small.gif);
+}
