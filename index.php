@@ -52,7 +52,7 @@
        			<td width="25"><img src="images/spacer.gif" width="25" height="1" alt=""><br></td>
 
        			<!-- Logo & News -->
-       			<td width="150" bgcolor="#cac9c6"><img src="images/front_top_logo.gif" width="150" height="110" alt=""></td>
+       			<td bgcolor="#cac9c6" background="images/front_top_logo.gif" width="150" height="110"><img src="images/spacer.gif" width="1" height="1" alt=""></td>
 
        			<!-- Shell -->
        			<td width="260"><img src="images/spacer.gif" width="260" height="1" alt=""><br></td>
@@ -60,7 +60,7 @@
        			<!-- Menu 3 -->
        			<td width="390" align="right" valign="bottom" class="Menu3">
        				<?php include("common/topmenu.php")?>
-       				<img src="images/spacer.gif" width="390" height="10" alt=""><br>
+       				<br><img src="images/spacer.gif" width="1" height="10" alt=""><br>
        			</td>
 
        			<!-- Right Margin -->
@@ -76,7 +76,8 @@
        			<td width="25" background="images/front_menu_back.jpg"><img src="images/spacer.gif" width="1" height="1" alt=""><br></td>
 
        			<!-- Logo & News -->
-       			<td width="150" bgcolor="#cac9c6"><a href="index.php"><img src="images/front_menu_logo.gif" width="150" height="45" alt="" border="0"></a></td>
+
+       			<td width="150" bgcolor="#cac9c6"><a href="index.php"><img title="OMNEST" src="images/front_menu_logo.gif" width="150" height="45" alt="" border="0"></a></td>
 
        			<!-- Menu -->
        			<td background="images/front_menu_back.jpg" colspan="2">
@@ -97,7 +98,7 @@
        		<tr>
 
        			<!-- Left Margin -->
-       			<td width="25" background="images/front_mid_back.jpg"><img src="images/front_mid_left_margin.jpg" width="25" height="395" alt=""><br></td>
+       			<td width="25" background="images/front_mid_back.jpg"></td>
 
        			<!-- Logo & News -->
        			<td width="150" background="images/front_news_back.jpg" bgcolor="#eaeaea" valign="top">
@@ -106,7 +107,8 @@
        			</td>
 
        			<!-- Shell -->
-       			<td width="260" background="images/front_mid_back.jpg"><img src="images/front_shell.jpg" width="260" height="395" alt=""></td>
+<!--       			<td width="260" background="images/front_mid_back.jpg"><img src="images/front_shell.jpg" width="260" height="395" alt=""></td> -->
+       			<td width="260" height="395" background="images/front_shell.jpg"><img src="images/spacer.gif" width="1" height="1" alt=""></td>
 
        			<!-- Text -->
        			<td width="390" background="images/front_text_back.jpg">
@@ -124,7 +126,7 @@
        			</td>
 
        			<!-- Right Margin -->
-       			<td width="25" background="images/front_mid_back.jpg" valign="bottom"><img src="images/front_tm.jpg" width="25" height="80" alt=""><br></td>
+       			<td width="25" background="images/front_mid_back.jpg" valign="bottom"><img title="" src="images/front_tm.jpg" width="25" height="80" alt="TM"></td>
 
        		</tr>
        		<!-- Body : End -->
@@ -135,13 +137,8 @@
        			<!-- Left Margin plus Logo and News-->
        			<td width="435" colspan="3" background="images/front_global_back.jpg"></td>
 
-       			<!-- Logo & News -->
-<!--       			<td width="150" ></td>
-
-       			<td width="260"></td>
--->
        			<!-- Slogen -->
-       			<td width="390"><img src="images/front_bottom.gif" width="390" height="40" alt=""><br></td>
+       			<td width="390" height="40" background="images/front_bottom.gif" style="background-repeat: no-repeat;"><img src="images/spacer.gif" width="1" height="1" alt="the OPEN Simulator"></td>
 
        			<!-- Right Margin -->
        			<td width="25"></td>
