@@ -25,7 +25,7 @@
 <body bgcolor="#d9d9d9">
 
 <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr bgcolor="#005e77" >
+    <tr bgcolor="#005e77" height="5">
     	<td width="50%"></td>
     	<td width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="5" alt=""></td>
     	<td width="50%"></td>
@@ -33,15 +33,18 @@
 
     <tr>
     	<!-- Left Side -->
-       	<td valign="top" width="50%" bgcolor="#005e77">
-       		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+       	<td valign="top" width="50%">
+       		<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
        			<tr>
        				<td background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="600" alt=""><br></td>
+       			</tr>
+       			<tr>
+       				<td height="100%" bgcolor="#005e77" ></td>
        			</tr>
        		</table>
        	</td>
 
-       	<td valign="top" background="images/front_global_back.jpg">
+       	<td valign="top" width="850" background="images/front_global_back.jpg">
 
        		<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
 
@@ -152,10 +155,13 @@
        	</td>
 
        	<!-- Right Side -->
-       	<td valign="top" width="50%" bgcolor="#005e77">
-       		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+       	<td valign="top" width="50%">
+       		<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
        			<tr>
        				<td background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="600" alt=""><br></td>
+       			</tr>
+       			<tr>
+       				<td height="100%" bgcolor="#005e77" ></td>
        			</tr>
        		</table>
        	</td>
