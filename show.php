@@ -117,7 +117,9 @@
 	<!-- Text -->
 	<td bgcolor="E5E5E5" valign="top"><img src="images/side_over_back.jpg" width="620" height="50" alt=""><br>
 
+	<div class="content">
 	<?php include($PAGE.".html")?>
+	</div>
 	<br/>
 
 	</td>

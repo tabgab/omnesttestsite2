@@ -28,6 +28,10 @@ A:ACTIVE {
 	text-decoration : none;
 }
 
+DIV.content A {
+	font-weight: bold;
+}
+
 td.Menu {
 	color: #CAC9C6;
 	font-size: 10pt;
