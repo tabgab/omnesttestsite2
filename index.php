@@ -13,6 +13,10 @@
 <html>
 <head>
 	<title>Omnest Global Inc.</title>
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="revisit-after" content="30" />
+<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
+<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
 <link rel="stylesheet" type="text/css" href="common/omnest.css">
 <script type="text/javascript" src="common/script.js"></script>
 </head>
