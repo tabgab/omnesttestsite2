@@ -1,7 +1,20 @@
+<?php
+  $PAGE = "home";
+  if (!empty($HTTP_GET_VARS["page"])) {
+    $PAGE = $HTTP_GET_VARS["page"];
+  }
+  $RIGHT = "right";
+  if (!empty($HTTP_GET_VARS["right"])) {
+    $RIGHT = $HTTP_GET_VARS["right"];
+  }
+
+?>
+
 <html>
 <head>
 	<title>Omnest Global Inc.</title>
 <link rel="stylesheet" type="text/css" href="common/omnest.css">
+<script type="text/javascript" src="common/script.js"></script>
 </head>
 
 
@@ -22,14 +35,14 @@
 
 <!-- MIDDLE : Start -->
 <td width="100%" valign="top">
-<?php include("home.html")?>
+<?php include($PAGE.".html")?>
 </td>
 <!-- MIDDLE : End -->
 
 <!-- Right In Spacer -->
 	<td width="23" background="images/m_rs.gif"><img src="images/pixel.gif" width="23" height="1" alt="" border="0"><br></td>
 
-<?php include("common/right.php")?>
+<?php include("common/".$RIGHT.".php")?>
 
   </tr>
 

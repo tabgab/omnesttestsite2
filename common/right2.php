@@ -15,7 +15,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-		<a href="whatomnestcando.php" class="Small_Title">What OMNEST&#8482; can do for You</a>
+		<a href="index.php?page=whatomnestcando&right=right2" class="Small_Title">What OMNEST&#8482; can do for You</a>
 		<br/>
 		</td></tr></table>
 		<br/>
@@ -34,7 +34,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-		<a href="whatyoucando.php" class="Small_Title">What You can do with OMNEST&#8482;</a>
+		<a href="index.php?page=whatyoucando&right=right2" class="Small_Title">What You can do with OMNEST&#8482;</a>
 		<br/>
 		</td></tr></table>
 		<br/>
@@ -53,7 +53,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-			<a href="screenshots.php" class="Small_Title"> Screenshots - OMNEST&#8482; in action.</a>
+			<a href="index.php?page=screenshots" class="Small_Title"> Screenshots - OMNEST&#8482; in action.</a>
 		<br>
 		</td></tr></table>
 		<br/>
@@ -72,7 +72,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-			<a href="download.php" class="Small_Title"> Visit our downloads section to
+			<a href="index.php?page=download&right=right2" class="Small_Title"> Visit our downloads section to
 			get your own evaluation copy now.</a>
 		<br>
 		</td></tr></table>
@@ -92,7 +92,7 @@
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"><tr><td valign="top" class="Small_Text">
 
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
-			<a href="licensing.php" class="Small_Title"> Licensing options</a>
+			<a href="index.php?page=licensing" class="Small_Title"> Licensing options</a>
 		<br>
 		</td></tr></table>
 		<br/>

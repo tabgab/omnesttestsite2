@@ -1,3 +1,10 @@
+/*********************
+* antispam filter    *
+*********************/
+function antispammail(user, domain) {
+document.write('<a href="mailto:'+user+'&#64;'+domain+'">'+user+'&#64;'+domain+'</a>');
+}
+
 /***********************************************
 * Contractible Headers script- c Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Oct 21st, 2003.
