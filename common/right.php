@@ -50,7 +50,7 @@
 		<img src="images/pixel.gif" width="1" height="2" alt="" border="0"><br>
 		<a href="index.php?page=press/mega" class="Small_Title">
 			March 1<sup>st</sup> 2004<br>
-			<strong>MEGA</strong> chose OMNEST&#8482;
+			<strong>MEGA</strong> chooses to embed OMNEST&#8482;
 			simulation technology.
 		</a><br>
 		</td></tr></table>
