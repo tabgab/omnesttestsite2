@@ -19,10 +19,10 @@
 			New Licensing options are available.
 		</a><br/>
 		</td></tr></table>
-		<br/>
 
 
 <!--
+		<br/>
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#E34030"><tr><td>
 		<img src="images/pixel.gif" width="144" height="1" alt="" border="0"><br>
 		</td></tr></table>
@@ -37,10 +37,8 @@
     		in its research.
     	</a><br/>
     	</td></tr></table>
+-->
 		<br/>
-
-
-
 
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#E34030"><tr><td>
 		<img src="images/pixel.gif" width="144" height="1" alt="" border="0"><br>
@@ -56,10 +54,8 @@
 			simulation technology.
 		</a><br>
 		</td></tr></table>
+
 		<br/>
-
--->
-
 		<table width="144" border="0" cellspacing="0" cellpadding="0" bgcolor="#E34030"><tr><td>
 		<img src="images/pixel.gif" width="144" height="1" alt="" border="0"><br>
 		</td></tr></table>
