@@ -141,3 +141,13 @@ span.About_CTitle {
 span.About_Company {
 	font-size: 8pt;
 }
+
+table.download {
+	margin-left:24pt; 
+	border-collapse:collapse; 
+	border: none
+}
+
+table.download td {
+	font-size:10pt;
+}
