@@ -151,3 +151,8 @@ table.download {
 table.download td {
 	font-size:10pt;
 }
+
+table.download td:before { 
+	content: url('../images/arrow_small.gif') " ";
+}
+
