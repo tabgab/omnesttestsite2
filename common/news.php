@@ -2,6 +2,16 @@
 
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
+					January 1<sup>th</sup> 2005<br>
+					</div>
+					<div class="NewsPreview">
+					<a href="show.php?page=pressv3announcement" class="NewsPreview">
+					OMNEST&#8482; V3.0 released<br>
+					</a>
+					</div>
+
+					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
+					<div class="NewsDate">
 					October 20<sup>th</sup> 2004<br>
 					</div>
 					<div class="NewsPreview">
@@ -41,6 +51,7 @@
 					</a>
 					</div>
 
+<!--
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
 					March 1<sup>st</sup> 2004<br>
@@ -51,7 +62,6 @@
 					</a>
 					</div>
 
-<!--
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
 					April 15<sup>th</sup> 2003<br>

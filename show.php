@@ -143,7 +143,7 @@
 
 	<!-- Middle -->
 	<td width="850" height="110" colspan="5" align="center" valign="top" background="images/front_global_back.jpg">
-		<font size="2" color="#C0C0C0" >Copyright &copy; 2004 Omnest Global Inc.</font>
+		<font size="2" color="#C0C0C0" >Copyright &copy; 2004-2005 Omnest Global Inc.</font>
 
 	</td>
 
