@@ -40,7 +40,7 @@
 					Partnership with InfoTek Information Systems Co., Inc. of Taipei.<br>
 					</a>
 					</div>
-
+<!--
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
 					May 1<sup>st</sup> 2004<br>
@@ -51,7 +51,7 @@
 					</a>
 					</div>
 
-<!--
+
 					<img src="images/news_separator.gif" width="122" height="5" alt=""><br>
 					<div class="NewsDate">
 					March 1<sup>st</sup> 2004<br>

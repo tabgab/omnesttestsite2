@@ -23,27 +23,25 @@
 </head>
 
 <body>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%"></td>
-	<td width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="20" alt=""><br></td>
-	<td width="50%"></td>
-</tr>
-</table>
 
 <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
+    <tr>
+    	<td width="50%"></td>
+    	<td width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="5" alt=""></td>
+    	<td width="50%"></td>
+    </tr>
 
+    <tr>
 	<!-- Left Side -->
-	<td width="50%">
+	<td valign="top" width="50%">
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 			<tr>
-				<td valign="middle" background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="720" alt=""><br></td>
+				<td background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="600" alt=""><br></td>
 			</tr>
 		</table>
 	</td>
 
-	<td valign="middle" background="images/front_global_back.jpg">
+	<td valign="top" background="images/front_global_back.jpg">
 
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 
@@ -99,7 +97,7 @@
 		<tr>
 
 			<!-- Left Margin -->
-			<td width="25" background="images/front_mid_back.jpg"><img src="images/front_mid_left_margin.jpg" width="25" height="455" alt=""><br></td>
+			<td width="25" background="images/front_mid_back.jpg"><img src="images/front_mid_left_margin.jpg" width="25" height="395" alt=""><br></td>
 
 			<!-- Logo & News -->
 			<td width="150" background="images/front_news_back.jpg" valign="top">
@@ -108,7 +106,7 @@
 			</td>
 
 			<!-- Shell -->
-			<td width="260" background="images/front_mid_back.jpg"><img src="images/front_shell.jpg" width="260" height="455" alt=""></td>
+			<td width="260" background="images/front_mid_back.jpg"><img src="images/front_shell.jpg" width="260" height="395" alt=""></td>
 
 			<!-- Text -->
 			<td width="390" background="images/front_text_back.jpg">
@@ -144,7 +142,7 @@
 			<td width="260"></td>
 
 			<!-- Slogen -->
-			<td width="390"><img src="images/front_bottom.gif" width="390" height="110" alt=""><br></td>
+			<td width="390"><img src="images/front_bottom.gif" width="390" height="40" alt=""><br></td>
 
 			<!-- Right Margin -->
 			<td width="25"></td>
@@ -157,10 +155,10 @@
 	</td>
 
 	<!-- Right Side -->
-	<td width="50%">
+	<td valign="top" width="50%">
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 			<tr>
-				<td valign="middle" background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="720" alt=""><br></td>
+				<td background="images/front_sides_back.jpg"><img src="images/spacer.gif" width="1" height="600" alt=""><br></td>
 			</tr>
 		</table>
 	</td>

@@ -23,16 +23,21 @@
 </head>
 
 <body>
-
+<!--
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    	<td width="50%"></td>
+    	<td width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="5" alt=""><br></td>
+    	<td width="50%"></td>
+    </tr>
+</table>
+-->
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
 	<td width="50%"></td>
-	<td width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="20" alt=""><br></td>
+    	<td colspan="5" width="850" background="images/front_global_back.jpg"><img src="images/spacer.gif" width="850" height="5" alt=""></td>
 	<td width="50%"></td>
 </tr>
-</table>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
 
 <!-- Top : Start -->
 <tr>
@@ -93,7 +98,7 @@
 <!-- Menu : End -->
 
 <!-- Body : Start -->
-<tr>
+<tr height="100%">
 
 	<!-- Left Side -->
 	<td width="50%" bgcolor="#E5E5E5" valign="top">
@@ -142,7 +147,7 @@
 	<td width="50%"></td>
 
 	<!-- Middle -->
-	<td width="850" height="110" colspan="5" align="center" valign="top" background="images/front_global_back.jpg">
+	<td width="850" height="80" colspan="5" align="center" valign="top" background="images/front_global_back.jpg">
 		<font size="2" color="#C0C0C0" >Copyright &copy; 2004-2005 Omnest Global Inc.</font>
 
 	</td>
