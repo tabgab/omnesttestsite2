@@ -1,13 +1,13 @@
 <?php
-  $PAGE = "home";
-  if (!empty($HTTP_GET_VARS["page"])) {
-    $PAGE = $HTTP_GET_VARS["page"];
-  }
-  $RIGHT = "right";
-  if (!empty($HTTP_GET_VARS["right"])) {
-    $RIGHT = $HTTP_GET_VARS["right"];
+  $PAGE = $HTTP_GET_VARS["page"];
+  if (empty($PAGE) || strlen($PAGE)>20 || !ctype_alnum($PAGE)) {
+    $PAGE = "home";
   }
 
+  $RIGHT = $HTTP_GET_VARS["right"];
+  if (empty($RIGHT) || strlen($RIGHT)>20 || !ctype_alnum($RIGHT)) {
+    $RIGHT = "right";
+  }
 ?>
 
 <html>
