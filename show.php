@@ -13,7 +13,7 @@
 <html>
 <head>
 	<title>Omnest Global Inc.</title>
-	<meta http-equiv=Page-Enter content=blendTrans(Duration=0.3)>
+	<meta http-equiv=Page-Enter content=blendTrans(Duration=0.1)>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
 	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
