@@ -1,5 +1,6 @@
 <!-- HEADER : Start -->
 
+<table width="760" border="2" cellpadding="0" cellspacing="0"><tr><td>
 
 <table width="*" border="0" cellspacing="0" cellpadding="0">
   <tr>
