@@ -28,7 +28,7 @@
 			<div id="header"><h1>Contact</h1></div>
 
 <?php
-$eol = '\r';
+$eol = '\n';
 $today = date("Y-F-d");
 $name = $_POST['name'];
 $email = $_POST['email'];
