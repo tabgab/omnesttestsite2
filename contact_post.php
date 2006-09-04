@@ -28,6 +28,7 @@
 			<div id="header"><h1>Contact</h1></div>
 
 <?php
+$eol = '\r';
 $today = date("Y-F-d");
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -39,20 +40,20 @@ $architecture_verification = $_POST['architecture_verification'];
 $discrete_event_simulation = $_POST['discrete_event_simulation'];
 $embedding = $_POST['embedding'];
 $message = $_POST['message'];
-$headers = "From: Omnest web contact on behalf of $name <$email>\n\r"; 
+$headers = "From: Omnest web contact form on behalf of $name <$email>\n\r"; 
 if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)) {
 
-  if(mail("contact@omnest.com","Omnest web contact","Name: $name
-E-mail: $email
-Company: $company
-Position: $position
-Pricing: $price_list
-Interested in:
-$network_simulation
-$architecture_verification
-$discrete_event_simulation
-$embedding
-Message: $message", $headers)) {
+  if(mail("contact@omnest.com","Omnest web contact","Name: $name". $eol .
+"E-mail: $email". $eol .
+"Company: $company". $eol .
+"Position: $position". $eol .
+"Pricing: $price_list". $eol .
+"Interested in:". $eol .
+"	$network_simulation". $eol .
+"	$architecture_verification". $eol .
+"	$discrete_event_simulation". $eol .
+"	$embedding". $eol .
+"Message: $message", $headers)) {
   	echo ("<b>Thank you for your interest in the OMNEST simulator.</b><br><br>We will get back to you with the requested information.<br>");
   } else {
   	echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
