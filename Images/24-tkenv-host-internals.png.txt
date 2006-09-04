@@ -1,0 +1,1 @@
+Opening a 'host' module shows its building blocks (simple modules)

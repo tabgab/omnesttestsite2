@@ -1,0 +1,1 @@
+Several scatter plots displayed in the same chart

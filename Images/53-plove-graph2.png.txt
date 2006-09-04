@@ -1,0 +1,1 @@
+Vector data with 'sample and hold' presentation

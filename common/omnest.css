@@ -1,159 +1,257 @@
-BODY {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	color: #000000;
-	margin: 0;
-	border: 0;
-	padding: 0;
+/*---------- · General · ----------*/
+body {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #F2F2F2;
+	color: #1E1E1E;
+	margin: 0px 20px 20px 20px;
+	background-image: url(../common/images/bg.gif);
+	background-repeat: repeat-x;
 }
 
-A {
-	color : #005E77;
-	text-decoration : none;
+td, select, input, textarea, p, a {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	color: #1E1E1E;
 }
 
-A:VISITED {
-	color : #005E77;
-	text-decoration : none;
-}
-
-A:HOVER {
-	color: #FF0000;
-	text-decoration: none;
-}
-
-A:ACTIVE {
-	color : #FF0000;
-	text-decoration : none;
-}
-
-DIV.content A {
-	font-weight: bold;
-}
-
-td.Menu {
-	color: #CAC9C6;
-	font-size: 13px;
-	font-weight: bold;
-}
-
-td.Menu2 {
-	color: #CAC9C6;
-	font-size: 11px;
-}
-
-td.Menu3 {
-	color: #CAC9C6;
-	font-size: 13px;
-}
-
-span.Menu {
-	font-weight: normal;
-}
-
-A.Menu {
-	color: #CAC9C6;
-	text-decoration: none;
-}
-
-A.Menu:VISITED {
-	color : #CAC9C6;
-	text-decoration : none;
-}
-
-A.Menu:HOVER {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-A.Menu:ACTIVE {
-	color : #FF0000;
-	text-decoration : none;
-}
-
-A.NewsPreview,A.NewsPreview:VISITED {
-	color : #000000;
-	text-decoration : none;
-}
-
-A.NewsPreview:HOVER {
-	color : #FF0000;
-}
-
-div.NewsPreview {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size: 9px;
-	padding-bottom: 6px;
-}
-
-div.NewsDate {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #005E77;
-	font-weight: bold;
-	padding-top: 3px;
-	padding-bottom: 5px;
-}
-
-div.FrontText {
-	font-size: 15px;
-}
-
-h1 {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size: 17px;
-	color: #005E77;
-	padding-bottom: 10px;
-	padding-top: 0px;
-	margin-top: 0px
-}
-
-
-h2 {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	text-align: justify;
-	font-weight: bold;
-	font-size: 15px;
-	color: #000000;
-	padding-top: 20px;
-	font-style: italic;
+td, select, input, textarea, p {
+	font-size: 12px;
 }
 
 p {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-  	text-align : justify;
-  	font-size : 12px;
-	color: #000000;
+	margin: 0px 0px 14px 0px;
+	text-align: justify;
+}
+
+a {
+	color: #005CAC;
+	text-decoration: none;
+}
+a:hover {
+	color: #E54426;
+	text-decoration: none;
+}
+
+form {
+	margin: 0px;
+}
+
+h1 {
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	margin: 5px 0px 15px 0px;
+	color: #909090;
+}
+
+h2 {
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 6px 0px 6px 0px;
+	color: #00718F;
+}
+
+h3 {
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 6px 0px 6px 0px;
+	color: #1E1E1E;
+}
+
+sub, sup {
+	font-size: 9px;
+}
+
+ul.list01 {
+	list-style-image: url(../common/images/list_01.gif);
+}
+
+ul.list03 {
+	list-style-image: url(../common/images/list_03.gif);
 }
 
 li {
-  font-size : 12px;
-  text-align : justify;
+	margin: 8px 0px 8px 0px;
 }
 
-li.reddot  {
-  font-size : 12px;
-  text-align : justify;
-  list-style-image : url(../images/red_point.gif);
+div#separator {
+	border-bottom: solid #C6C6C6 1px;
+	margin: 30px 0px 20px 0px;
 }
 
-span.About_CTitle {
+
+
+
+/*---------- · Link · ----------*/
+a.kiemeles {
+	color: #00718F;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.kiemeles:hover {
+	color: #E54426;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+/*---------- · Keret · ----------*/
+div#header h1 {
+	margin: 0;
+	padding: 0px 0px 15px 0px;
+}
+
+div#content p {
+	line-height: 150%;
+}
+div#footer p {
+	margin: 0;
+	padding: 5px 10px
+}
+
+div#container {
+	width: 658px;
+	margin: 0 auto;
+}
+div#content {
+	float: left;
+	width: 483px;
+	padding: 0px 0px 10px 0px;
+}
+div#right {
+	float: right;
+	width: 150px;
+}
+
+
+
+/*---------- · Index Kivonatok · ----------*/
+div#extra {
+	float: left;
+	width: 483px;
+	padding: 0px 0px 20px 0px;
+}
+div#col {
+	float: left;
+	width: 142px;
+}
+div#colcenter {
+	float: left;
+	width: 142px;
+	border: solid 0px;
+	padding: 0px 27px 0px 27px;
+	background-image: url(../common/images/index_colcenter_bg.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+div#coltext {
+	background-image: url(../common/images/index_list_bulett.gif);
+	background-repeat: no-repeat;
+	padding: 0px 0px 0px 7px;
 	font-size: 11px;
-	text-decoration: underline;
+	line-height: 18px;
 }
 
-span.About_Company {
+
+
+/*---------- · Logo · ----------*/
+div#logo {
+	padding: 38px 0px 25px 0px;
+	width: 150px;
+	float: left;
+}
+div#logoinside {
+	padding-top: 85px;
+	width: 189px;
+	float: left;
+}
+
+
+
+/*---------- · Menu · ----------*/
+div#topmenu {
+
+	float: right;
+	color: #DFDFDF;
 	font-size: 11px;
+	text-align: right;
+	padding: 90px 0px 0px 0px;
+}
+a.topmenulink {
+	text-decoration: none;
+	color: #DFDFDF;
+}
+a.topmenulink:hover {
+	text-decoration: none;
+	color: #E54426;
 }
 
-ul.download {
-	margin-left:24pt; 
-	font-size: 13px;
+
+div#mainmenu {
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 11px;
+	position: relative;
+	left: 8px;
+	top: 23px;
+	float: left;
+	width: 500px;
+}
+a.mainmenulink {
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 11px;
+	text-decoration: none;
+}
+a.mainmenulink:hover {
+	font-weight: bold;
+	color: #E54426;
+	font-size: 11px;
+	text-decoration: none;
+}
+div#mainmenuitem {
+	padding: 0px 3px 0px 3px;
+	float: left;
 }
 
-ul.download li {
-  list-style-image : url(../images/arrow_small.gif);
+div#minimenu {
+	float: left;
+	padding: 20px 0px 0px 100px;
 }
 
-ul.redarrow li {
-  list-style-image : url(../images/arrow_small.gif);
+/*---------- · Right · ----------*/
+
+.technicaldata {
+	width: 150px;
+	height: 110px;
+	background-image: url(../common/images/right_technical_data.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	line-height: 15px;
+	font-size: 10px;
+}
+
+a.rightlink {
+	text-decoration: none;
+}
+a.rightlink:hover {
+	text-decoration: none;
+	color: #E54426;
+}
+
+/*---------- · Footer · ----------*/
+div#footer {
+	clear: both;
+	width: 100%;
+	border-top: solid #ffffff 2px;
+	padding-top: 10px;
+	color: #B2B2B2;
+	font-size: 10px;
+}
+div#footerinside {
+	width: 658px;
+	margin: 0 auto;
 }

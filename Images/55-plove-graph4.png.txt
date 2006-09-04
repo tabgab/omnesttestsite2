@@ -1,0 +1,1 @@
+Scatter plot: frames dropped vs. offered load 
