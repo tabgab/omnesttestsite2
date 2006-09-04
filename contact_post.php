@@ -39,17 +39,15 @@ $architecture_verification = $_POST['architecture_verification'];
 $discrete_event_simulation = $_POST['discrete_event_simulation'];
 $embedding = $_POST['embedding'];
 $message = $_POST['message'];
-$headers = "From: omnest.com contact form on behalf of $name <contact@omnest.com>\n\r" . 
-           "Reply-To: $name <$email>\n\r" .
-           "Return-Path: $name <$email>\n\r";
+$headers = "From: Omnest web contact on behalf of $name <$email>\n\r"; 
 if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)) {
 
-  if(mail("contact@omnest.com","Contact","
-Name: $name
+  if(mail("contact@omnest.com","Omnest web contact","Name: $name
 E-mail: $email
 Company: $company
 Position: $position
 Pricing: $price_list
+Interested in:
 $network_simulation
 $architecture_verification
 $discrete_event_simulation
