@@ -41,7 +41,7 @@ $discrete_event_simulation = $_POST['discrete_event_simulation'];
 $embedding = $_POST['embedding'];
 $message = $_POST['message'];
 $headers = "From: \"Omnest web contact form on behalf of $name\" <$email>\r\n" .
-           "Reply-To: $email";
+           "Reply-To: \"$name\" <$email>";
 
 if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)) {
 
