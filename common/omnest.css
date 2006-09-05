@@ -255,3 +255,23 @@ div#footerinside {
 	width: 658px;
 	margin: 0 auto;
 }
+/*---------- . Button . ----------*/
+td#button-left {
+	background-image: url(../common/images/button_grad_left.gif);
+	background-repeat: no-repeat;
+	width: 76px;
+	height: 69px;
+}
+
+td#button {
+	background-image: url(../common/images/button_grad_bg.gif);
+	background-repeat: repeat-x;
+	padding-top: 10px;
+	line-height: 18px;
+}
+
+td#button-right {
+	background-image: url(../common/images/button_grad_right.gif);
+	background-repeat: no-repeat;
+	width: 13px;
+}

@@ -31,11 +31,20 @@
 <div id="header"><h1>Download</h1></div>
 
 <h2>Academic / Evaluation version</h2>
-<ul class="list03">
-    <li><a href="http://www.omnetpp.org/filemgmt/visit.php?lid=101">OMNeT++ 3.2p1 (Windows installer)</a></li>
-</ul>
+
+<!-- Start Button -->
+<table cellspacing="0" cellpadding="0">
+  <tr><td id="button-left"/><td id="button">
+    <a href="http://www.omnetpp.org/filemgmt/visit.php?lid=101"><strong>Download OMNeT++ 3.2p1</strong><br />
+		(Windows installer)</a>
+  </td><td id="button-right"/></tr>
+</table>
+<!-- End Button -->
+<br/>
+
 <p>For additional downloads please visit the <a href="http://www.omnetpp.org/filemgmt/viewcat.php?cid=2" target="_blank">OMNeT++ community site</a>.</p>
 <br/>
+
 <h2>Commercial edition (password protected)</h2>
 
 <h3>Latest stable version: 3.2p1</h3>
@@ -46,7 +55,6 @@
 <p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
 <a href="download-previous.php">Older versions can be found here.</a>
 </p>
-
 <br/>
 <h2>Simulation models</h2>
 
@@ -57,9 +65,15 @@ IEEE 802.11 and several other protocols you might need.
 <p>We have executable demo simulations for several model frameworks. The package includes
 full documentation and a Guided Tour for the INET Framework.
 </p>
-<ul class="list03">
-    <li><a href="/download/free/OMNESTDemo-3.0.0.exe">OMNEST Demo Simulations (Windows installer)</a></li>
-</ul>
+<!-- Start Button -->
+<table cellspacing="0" cellpadding="0">
+  <tr><td id="button-left"/><td id="button">
+    <a href="/download/free/OMNESTDemo-3.0.0.exe"><strong>Download OMNEST Demo Simulations</strong><br />
+		(Windows installer)</a>
+  </td><td id="button-right"/></tr>
+</table>
+<!-- End Button -->
+<br/>
 
 <p>For additional downloads please visit the <a href="http://www.omnetpp.org/filemgmt/viewcat.php?cid=8" target="_blank">OMNeT++ community site</a>.</p>
 
