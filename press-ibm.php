@@ -59,11 +59,11 @@
         the whole system is completely transparent, anyone can follow exactly
         what is happening inside the simulation. This way, the simulated technology
         can step out of the lab and right into production faster than ever.&quot;
-        <br>
-        <br>
-        <span class="About_CTitle">About IBM's Z&uuml;rich Research Laboratory:</span>
-        <br>
-        <span class="About_Company"> The research projects pursued at IBM's Zurich
+        <br/>
+        <br/>
+        <small>About IBM's Z&uuml;rich Research Laboratory:
+        <br/>
+        The research projects pursued at IBM's Zurich
         Research Laboratory are organized into three scientific and technical
         departments: Communication Systems, Computer Science, and Science & Technology.
         Also located at Zurich are the Industry Solutions Lab (ISL), an executive
@@ -72,7 +72,7 @@
         offerings and partner technologies. <br>
         <br>
         For more information, please visit: <a href="http://www.zurich.ibm.com/" target="_blank">IBM's
-        Z&uuml;rich Research Laboratory</a></span>.<br>
+        Z&uuml;rich Research Laboratory</a></small>.
       </p>
 
 

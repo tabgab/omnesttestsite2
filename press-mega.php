@@ -51,7 +51,7 @@ developer of the MEGA software suite.</p>
 partnership is destined to be a very productive one. MEGA International has a wealth of experience in the business
 process arena, while our simulation technology is versatile and open enough to be easily applied by them. This deal
 will serve the benefit of all MEGA customers, and we will do all that we can to help MEGA integrate our engine into
-their products." - said Andrßs Varga, author of OMNEST. when questioned on the deal.</p>
+their products." - said András Varga, author of OMNEST. when questioned on the deal.</p>
 
 <p>"This partnership with MEGA International expands the application radius of OMNEST&#8482; simulation technology by a fat mile.
 This is a classical win-win scenario, and one we will be looking to repeat as often as possible. We will continue to
@@ -59,9 +59,9 @@ focus on our core segment, to provide the best simulation technology to IT profe
 clearly evident, that the technology itself is capable of serving a variety of different markets equally well. We will
 keep a lookout for opportunities to partner with experts of different fields where Simulcraft is not directly
 involved, but the technology could provide benefits to customers of companies already acquainted with other markets
-where simulation can be of benefit to the overall product offering." - said Gßbor Tabi</p>
+where simulation can be of benefit to the overall product offering." - said Gábor Tabi</p>
 
-<p> <span class="About_CTitle">About MEGA:</span> <br> <span class="About_Company"> MEGA International
+<p><small> About MEGA: <br/> MEGA International
 (<a href="http://www.mega.com/" target="_blank">www.mega.com</a>) is the leading independent provider of Business Process
 Analysis (BPA) and Enterprise Architecture (EA) solutions. Side by side with client design teams, MEGA's highly
 trained, project-proven consultants deliver concrete business results to drive enterprise competitiveness. MEGA
@@ -70,9 +70,9 @@ MEGA BPA and EA Solutions enable business and IT stakeholders to drive bottom li
 and otherwise minimize the risk involved with changing critical business processes.<br/>
 Founded in 1991, MEGA has delivered successful projects to over 800 clients. MEGA's process-oriented
 consultative approach has provided significant value to its clients including Alitalia, Allianz, AXA, British American
-Tobacco, Credit Lyonnais, General Electric EP, Renault, SociÚtÚ GÚnÚrale, Target, Vitro and Wyeth. MEGA is
+Tobacco, Credit Lyonnais, General Electric EP, Renault, Target, Vitro and Wyeth. MEGA is
 headquartered in Paris, with offices in Boston (USA), Birmingham (UK), Munich (Germany) and Milano (Italy) and with
-partners located around the globe. MEGA supports over 23,000 software licenses worldwide.</span></p>
+partners located around the globe. MEGA supports over 23,000 software licenses worldwide.</small></p>
 
 	</div>
 	<!-- End Content -->

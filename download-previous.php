@@ -35,9 +35,15 @@
 <h3>Previous versions</h3>
 <ul class="list03">
     <li><a href="/download/commercial/omnest-3.2-src.tgz">OMNEST 3.2 src (all platforms)</a></li>
-    <li><a href="/download/commercial/omnest-3.2-win32.exe">OMNEST 3.2 Win32 installer</a><br><br></li>
+    <li><a href="/download/commercial/omnest-3.2-win32.exe">OMNEST 3.2 Win32 installer</a></li>
+    
+<div id="separator"></div>
+
     <li><a href="/download/commercial/omnest-3.1-src.tgz">OMNEST 3.1 src (all platforms)</a></li>
-    <li><a href="/download/commercial/omnest-3.1-win32.exe">OMNEST 3.1 Win32 installer</a><br><br></li>
+    <li><a href="/download/commercial/omnest-3.1-win32.exe">OMNEST 3.1 Win32 installer</a></li>
+
+    <div id="separator"></div>
+    
     <li><a href="/download/commercial/omnest-3.0-src-1yr.tgz">OMNEST 3.0 src (all platforms) - one year rental license</a></li>
     <li><a href="/download/commercial/omnest-3.0-win32-1yr.exe">OMNEST 3.0 Win32 installer - one year rental license</a></li>
     <li><a href="/download/commercial/omnest-3.0-src-perpetual.tgz">OMNEST 3.0 src (all platforms) - perpetual license</a></li>

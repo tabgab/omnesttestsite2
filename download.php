@@ -43,7 +43,8 @@
 <br/>
 
 <p>For additional downloads please visit the <a href="http://www.omnetpp.org/filemgmt/viewcat.php?cid=2" target="_blank">OMNeT++ community site</a>.</p>
-<br/>
+
+<div id="separator"></div>
 
 <h2>Commercial edition (password protected)</h2>
 
@@ -55,7 +56,7 @@
 <p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
 <a href="download-previous.php">Older versions can be found here.</a>
 </p>
-<br/>
+<div id="separator"></div>
 <h2>Simulation models</h2>
 
 <p>OMNEST&#8482;/OMNeT++ simulation models are released under various

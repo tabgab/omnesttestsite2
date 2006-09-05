@@ -19,26 +19,26 @@
 <? include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
-	
+
 	<div style="clear: both;">
 
 	<!-- Start Content -->
 	<div id="content">
 
 			<div id="header"><h1>Omnest Simulation Environment</h1></div>
-			
+
 			<p>OMNEST<SUP>TM</SUP> is the commercial version of the popular OMNeT++ simulation environment, used worldwide at several universities and research groups - and now at an increasing number of companies as well. Omnest is a versatile component-based, modular simulation environment with an open architecture, strong GUI support and an embeddable simulation kernel. With full source code, of course, as you wish all software came.</p>
 	</div>
 	<!-- End Content -->
 
-			
-			
+
+
 	<!-- Start Right -->
 	<? include("common/right_inc.php"); ?>
 	<!-- End Right -->
-			
-			
-			
+
+
+
 	<!-- Start Kivonatok -->
 	<div id="extra">
 		<!-- Start Col 1 -->
@@ -52,7 +52,7 @@
 		<embed src="flash/01.swf" menu=false quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="138" height="90">
 		</embed>
 		</object><br /><br />
-		<div id="coltext">design and evaluate wired and wireless protocols and networks</div>
+		<div id="coltext"><a href="network-simulation.php">design and evaluate wired and wireless protocols and networks</a></div>
 		</div>
 		<!-- End Col 1 -->
 
@@ -67,7 +67,7 @@
 		<embed src="flash/02.swf" menu=false quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="138" height="90">
 		</embed>
 		</object><br /><br />
-		<div id="coltext">simulate a wide range of systems, from queueing networks to software and hardware architectures</div>
+		<div id="coltext"><a href="discrete-event-simulation.php">simulate a wide range of systems, from queueing networks to software and hardware architectures</a></div>
 		</div>
 		<!-- End Col 2 -->
 
@@ -81,13 +81,13 @@
 		<embed src="flash/03.swf" menu=false quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="138" height="90">
 		</embed>
 		</object><br /><br />
-		<div id="coltext">add simulation capability to your product by embedding our simulation kernel</div>
+		<div id="coltext"><a href="embedding.php">add simulation capability to your product by embedding our simulation kernel</a></div>
 		</div>
 		<!-- End Col 3 -->
 	</div>
 	<!-- End Kivonatok -->
 
-	
+
 		</div>
 
 </div>

@@ -105,7 +105,7 @@
   <tr><td><br></td></tr>
 
     <tr>
-    <td align="center"><a href="http://www.intel.com/" target="_blank"><img sizex="50%" src="references/intel.gif" border="0"></a></td>
+    <td align="center"><a href="http://www.intel.com/" target="_blank"><img src="references/intel.med.trprnt.gif " border="0"></a></td>
     <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> is using OMNEST&#8482; simulation technology in its research.</p>
 
     </td>
@@ -166,6 +166,7 @@
 		</div>
 
 </div>
+
 <!-- End Container -->
 
 

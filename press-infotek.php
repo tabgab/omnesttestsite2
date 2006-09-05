@@ -48,8 +48,7 @@ also be presenting his work on IPv6 simulation with OMNEST&#8482; at the IPv6 su
 
 <p>Details on these two events will be released shortly.
 
-<p><span class="About_CTitle">About InfoTek:</span><br/>
-<span class="About_Company">
+<p><small>About InfoTek:<br/>
 InfoTek Information Systems Co., Inc.
 (<a href="http://www.infotek.com.tw/" target="_blank">www.infotek.com.tw</a>)
  is a professional consulting services provider in the
@@ -65,7 +64,7 @@ publication: looking for leading software developed in the market and translate 
 literature into Chinese version, to improve efficiency of professionals.<br/>
 
 Infotek is already ISO 9001 certified in July 2002 & August 2003. Customer focus,
-innovation and accountability are the philosophy and ultimate goal of InfoTek.</span><p>
+innovation and accountability are the philosophy and ultimate goal of InfoTek.</small><p>
 
 
 
