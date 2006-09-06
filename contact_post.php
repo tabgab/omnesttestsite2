@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
 
@@ -56,8 +56,46 @@ $eol .
 "	$architecture_verification". $eol .
 "	$discrete_event_simulation". $eol .
 "	$embedding". $eol .
-"Message: $message", $headers)) {
-  	echo ("<b>Thank you for your interest in the OMNEST simulator.</b><br><br>We will get back to you with the requested information.<br>");
+"Message: $message", $headers)) { ?>
+  	<b>Thank you for your interest in the OMNEST simulator.</b><br><br>We will get back to you with the requested information.<br>
+
+<!-- Google Code for LEAD Conversion Page -->
+
+<script language="JavaScript" type="text/javascript">
+
+<!--
+
+var google_conversion_id = 1067620223;
+
+var google_conversion_language = "en_US";
+
+var google_conversion_format = "1";
+
+var google_conversion_color = "f2f2f2";
+
+if (1) {
+
+  var google_conversion_value = 1;
+
+}
+
+var google_conversion_label = "LEAD";
+
+//-->
+
+</script>
+
+<script language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js">
+
+</script>
+
+<noscript>
+
+<img height=1 width=1 border=0 src="http://www.googleadservices.com/pagead/conversion/1067620223/?value=1&label=LEAD&script=0">
+
+</noscript>
+
+<?php
   } else {
   	echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
   }
