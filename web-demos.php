@@ -42,7 +42,7 @@
 
   <tr>
     <td align="center"><a href="http://www.omnest.biz/gabor/OMNEST_LOADER.html" target="_blank"><img src="common/images/screencam-overview.png" border="0" style="padding: 10px"></a></td>
-    <td><h2><a href="http://www.omnest.biz/gabor/OMNEST_LOADER.html" target="_blank">3-Minute Overview</a></h2>
+    <td><h2><a href="download/webdemo/OMNEST_LOADER.html" target="_blank">3-Minute Overview</a></h2>
     <p>Get a quick introduction to the main features and benefits of the OMNEST Simulation Framework in just 3 minutes. See the simulator in action, understand the principles and structure of the system. (3 Minutes, ~15MB, Flash 8)</p>
     </td>
   </tr>
