@@ -70,6 +70,14 @@
   <tr><td><br></td></tr>
 
   <tr>
+    <td align="center"><a href="http://www.invistics.com/" target="_blank"><img src="references/invistics.gif" border="0"></a></td>
+    <td><p><a href="http://www.invistics.com/" target="_blank">Invistics Corporation</a>. </p>
+    </td>
+
+  </tr>
+  <tr><td><br></td></tr>
+
+  <tr>
     <td align="center"><a href="http://www.thalesgroup.com/" target="_blank"><img src="references/thales.gif" border="0"></a></td>
     <td><p><a href="http://www.thalesgroup.com/" target="_blank">Thales Communications</a> is using OMNEST&#8482; in its research facilities world-wide.</p>
     </td>
