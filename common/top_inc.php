@@ -2,7 +2,7 @@
 	<div id="topmenu"><a href="academic.php" class="topmenulink">Academic</a> | <a href="licensing.php" class="topmenulink">Business</a> | <a href="partners.php" class="topmenulink">Partners</a> | <a href="contact.php" class="topmenulink">Contact</a></div>
 	<!-- End Topmenu -->
 
-	
+
 	<!-- Start Logo -->
 	<div id="logo"><a href="index.php"><img src="common/images/logo.gif" width="150" height="150" alt="Omnest" border="0" /></a></div>
 	<div id="logoinside"><img src="common/images/logo_opensimulator.gif" width="198" height="17" alt="the Opne Simulator" /></div>
@@ -10,7 +10,7 @@
 
 	<!-- Start Main Menu -->
 	<div id="mainmenu">
-	<div id="mainmenuitem"><a href="index.php" class="mainmenulink">Products</a></div>
+	<div id="mainmenuitem"><a href="index.php" class="mainmenulink">Home</a></div>
 	<div id="mainmenuitem">|</div>
 	<div id="mainmenuitem"><a href="references.php" class="mainmenulink">References</a></div>
 	<div id="mainmenuitem">|</div>

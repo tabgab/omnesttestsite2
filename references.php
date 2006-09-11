@@ -52,7 +52,7 @@
 
     to map and simulate its customer processes. The results of the simulation are used to manage activities
     with a view to improving the company's performance and customer satisfaction.<br>
-    Read the <a href="http://www.mega.com/en/news/press_release/index.asp?l=en&amp;p=27" target="_blank">success story.&nbsp;<img src="references/extlink.gif" alt="" border="0"></a></p>
+    Read the <a href="http://www.mega.com/index.asp/l/en/c/customer/p/success-story/a/customer-success-story0013" target="_blank">success story.&nbsp;</a></p>
     </td>
   </tr>
 
