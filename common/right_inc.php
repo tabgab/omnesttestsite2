@@ -10,7 +10,7 @@
 		</embed>
 		</object><br /><br />
 	<a href="contact.php"><img src="common/images/right_contact.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
-	<a href="/download/free/OMNESTDemo-3.0.0.exe"><img src="common/images/right_download_demo.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
-	<a href="http://www.omnetpp.org/filemgmt/visit.php?lid=101"><img src="common/images/right_download.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
+	<a href="download-demosim.php"><img src="common/images/right_download_demo.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
+	<a href="download-omnest.php"><img src="common/images/right_download.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
 	</div>
 	<!-- End Right inc -->

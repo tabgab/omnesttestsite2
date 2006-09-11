@@ -35,7 +35,7 @@
 <!-- Start Button -->
 <table cellspacing="0" cellpadding="0">
   <tr><td id="button-left"/><td id="button">
-    <a href="http://www.omnetpp.org/filemgmt/visit.php?lid=101"><strong>Download OMNeT++ 3.2p1</strong><br />
+    <a href="download-omnest.php"><strong>Download OMNeT++ 3.2p1</strong><br />
 		(Windows installer)</a>
   </td><td id="button-right"/></tr>
 </table>
@@ -69,7 +69,7 @@ full documentation and a Guided Tour for the INET Framework.
 <!-- Start Button -->
 <table cellspacing="0" cellpadding="0">
   <tr><td id="button-left"/><td id="button">
-    <a href="/download/free/OMNESTDemo-3.0.0.exe"><strong>Download OMNEST Demo Simulations</strong><br />
+    <a href="download-demosim.php"><strong>Download OMNEST Demo Simulations</strong><br />
 		(Windows installer)</a>
   </td><td id="button-right"/></tr>
 </table>
