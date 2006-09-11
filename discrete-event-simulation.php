@@ -76,13 +76,7 @@
 <!-- End Container -->
 
 
-
-
-<!-- Start Footer -->
-<div id="footer"><div id="footerinside">Copyright &copy; 2004-2006 Simulcraft Inc.</div></div>
-<!-- End Footer -->
-
-
+<? include("common/footer_inc.php"); ?>
 
 </body>
 </html>

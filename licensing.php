@@ -45,18 +45,6 @@
 
 We hope the above has met with your requirements. Please do not hesitate to <a href="contact.php">contact us</a> for details.
 
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
 	<!-- End Content -->
 

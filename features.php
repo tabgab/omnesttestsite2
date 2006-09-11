@@ -108,11 +108,7 @@
 <!-- End Container -->
 
 
-
-
 <? include("common/footer_inc.php"); ?>
-
-
 
 </body>
 </html>

@@ -1038,12 +1038,7 @@ function array_trim ( $array, $index ) {
 </div>
 <!-- End Container -->
 
-
-
-
 <? include("common/footer_inc.php"); ?>
-
-
 
 </body>
 </html>
