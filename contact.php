@@ -48,10 +48,11 @@
 </tr>
 <tr>
 <td align="right">Area of interest</td><td>
-<input type="checkbox" name="network_simulation" value="Network Simulation" />Network Simulation<br />
 <input type="checkbox" name="architecture_verification" value="Architecture Verification" />Architecture Verification<br />
 <input type="checkbox" name="discrete_event_simulation" value="Discrete Event Simulation" />Discrete Event Simulation<br />
 <input type="checkbox" name="embedding" value="Embedding" />Embedding the simulation kernel<br />
+<input type="checkbox" name="network_simulation" value="Network Simulation" />Network Simulation<br />
+<small>If checked, please specify protocols</small><br/><input type="text" name="protocols" style="width: 300px;" />
 </td>
 </tr>
 <tr>

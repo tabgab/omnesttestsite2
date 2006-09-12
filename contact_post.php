@@ -24,7 +24,6 @@
 
 	<!-- Start Content -->
 	<div id="content">
-
 			<div id="header"><h1>Contact</h1></div>
 
 <?php
@@ -36,6 +35,7 @@ $company = $_POST['company'];
 $position = $_POST['position'];
 $price_list = $_POST['price_list'];
 $network_simulation = $_POST['network_simulation'];
+$protocols = $_POST['protocols'];
 $architecture_verification = $_POST['architecture_verification'];
 $discrete_event_simulation = $_POST['discrete_event_simulation'];
 $embedding = $_POST['embedding'];
@@ -52,47 +52,30 @@ if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"
 $eol .
 "Interested in:". $eol .
 "       $price_list". $eol .
-"	$network_simulation". $eol .
 "	$architecture_verification". $eol .
 "	$discrete_event_simulation". $eol .
 "	$embedding". $eol .
+"	$network_simulation, Interested in: $protocols". $eol .
 "Message: $message", $headers)) { ?>
   	<b>Thank you for your interest in the OMNEST simulator.</b><br><br>We will get back to you with the requested information.<br>
 
 <!-- Google Code for LEAD Conversion Page -->
-
 <script language="JavaScript" type="text/javascript">
-
 <!--
-
 var google_conversion_id = 1067620223;
-
 var google_conversion_language = "en_US";
-
 var google_conversion_format = "1";
-
 var google_conversion_color = "f2f2f2";
-
 if (1) {
-
   var google_conversion_value = 1;
-
 }
-
 var google_conversion_label = "LEAD";
-
 //-->
-
 </script>
-
 <script language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js">
-
 </script>
-
 <noscript>
-
 <img height=1 width=1 border=0 src="http://www.googleadservices.com/pagead/conversion/1067620223/?value=1&label=LEAD&script=0">
-
 </noscript>
 
 <?php
@@ -104,34 +87,16 @@ var google_conversion_label = "LEAD";
   echo "Please provide a valid email address so that we can contact you.";
 }
 ?><br><br>
-
-
-
-
-
-
-
 	</div>
 	<!-- End Content -->
-
-
 
 	<!-- Start Right -->
 	<? include("common/right_inc.php"); ?>
 	<!-- End Right -->
-
-
 	</div>
 
 </div>
 <!-- End Container -->
-
-
-
-
 <? include("common/footer_inc.php"); ?>
-
-
-
 </body>
 </html>
