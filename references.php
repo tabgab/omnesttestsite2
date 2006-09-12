@@ -34,7 +34,7 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
 <tr>
-    <td align="center"><a href="http://www.mega.com/" target="_blank"><img src="references/mega.gif" border="0" height="102" width="197"></a></td>
+    <td align="center" width="220"><a href="http://www.mega.com/" target="_blank"><img src="references/mega.gif" border="0" height="102" width="197"></a></td>
     <td><p><a href="http://www.mega.com/" target="_blank">MEGA Corporation</a>
     has chosen to embed OMNEST&#8482; simulation technology into its
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> product.
@@ -71,7 +71,23 @@
 
   <tr>
     <td align="center"><a href="http://www.invistics.com/" target="_blank"><img src="references/invistics.gif" border="0"></a></td>
-    <td><p><a href="http://www.invistics.com/" target="_blank">Invistics Corporation</a>. </p>
+    <td><p><a href="http://www.invistics.com/" target="_blank">Invistics Corporation</a> </p>
+    </td>
+
+  </tr>
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td align="center"><a href="http://www.lucent.com/" target="_blank"><img src="references/lucent.gif" border="0"></a></td>
+    <td><p><a href="http://www.lucent.com/" target="_blank">Lucent Technologies</a> </p>
+    </td>
+
+  </tr>
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td align="center"><a href="http://www.alcatel.com/" target="_blank"><img src="references/alcatel.gif" border="0"></a></td>
+    <td><p><a href="http://www.alcatel.com/" target="_blank">Alcatel</a> </p>
     </td>
 
   </tr>
@@ -113,7 +129,7 @@
   <tr><td><br></td></tr>
 
     <tr>
-    <td align="center"><a href="http://www.intel.com/" target="_blank"><img src="references/intel.med.trprnt.gif " border="0"></a></td>
+    <td align="center"><a href="http://www.intel.com/" target="_blank"><img src="references/intel.gif " border="0"></a></td>
     <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> is using OMNEST&#8482; simulation technology in its research.</p>
 
     </td>
