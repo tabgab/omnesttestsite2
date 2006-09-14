@@ -29,9 +29,19 @@
 	<!-- Start Content -->
 	<div id="container">
 
+
 <div id="header"><h1>Downloading Demo Simulations</h1></div>
-<p>Your download should begin shortly. If it does not, try 
-clicking <a href="download/free/OMNESTDemo-3.2.0.exe">here</a>.</p>
+
+<p>OMNESTDemo-3.2.0 contains demo simulations, documentation and tutorials for:</p>
+
+<ul>
+ <li>OMNEST 3.2</li>
+ <li>INET Framework 20060912</li>
+ <li>Mobility Framework 1.0a1</li>
+ <li>SimSANs 2.0</li>
+</ul>
+
+<p>Your download should begin shortly. If it does not, click <a href="download/free/OMNESTDemo-3.2.0.exe">here</a>.</p>
 
 
 <!-- Google Code for DEFAULT Conversion Page -->
