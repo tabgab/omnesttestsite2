@@ -33,33 +33,20 @@
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
-<tr>
-    <td align="center" width="220"><a href="http://www.mega.com/" target="_blank"><img src="references/mega.gif" border="0" height="102" width="197"></a></td>
-    <td><p><a href="http://www.mega.com/" target="_blank">MEGA Corporation</a>
-    has chosen to embed OMNEST&#8482; simulation technology into its
-    <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> product.
-    MEGA Process 6.1 runs OMNEST&#8482; simulation kernel.
-    Read the <a href="press-mega.php">press release</a>.</p>
-
+  <tr>
+    <td align="center" width="220"><a href="http://www.spec.org/" target="_blank"><img src="references/spec.gif" border="0"></a></td>
+    <td><p>The <a href="http://www.spec.org/" target="_blank">Standard Performance Evaluation Corporation (SPEC)</a>
+      announced <a href="http://www.spec.org/cpu2006" target="_blank">SPEC CPU2006</a>, its next-generation benchmark for CPU-intensive performance.
+      <a href="http://www.spec.org/cpu2006/CINT2006" target="_blank">SPEC CINT2006</a>
+      is the successor of CPU2000. OMNeT++ simulation is
+      <a href="http://www.spec.org/cpu2006/Docs/471.omnetpp.html" target="_blank">one of the 12 integer benchmarks</a>,
+      in the total of 29 benchmarks.</p>
     </td>
   </tr>
 
   <tr><td><br></td></tr>
 
   <tr>
-    <td align="center"><a href="http://www.creditlyonnais.com/" target="_blank"><img src="references/cl.gif" border="0"></a></td>
-    <td><p><a href="http://www.creditlyonnais.com/" target="_blank">Crédit Lyonnais</a> selected <a href="http://www.mega.com/" target="_blank">MEGA</a>
-
-    to map and simulate its customer processes. The results of the simulation are used to manage activities
-    with a view to improving the company's performance and customer satisfaction.<br>
-    Read the <a href="http://www.mega.com/index.asp/l/en/c/customer/p/success-story/a/customer-success-story0013" target="_blank">success story.&nbsp;</a></p>
-    </td>
-  </tr>
-
-  <tr><td><br></td></tr>
-
-  <tr>
-
     <td align="center"><a href="http://www.ibm.com/" target="_blank"><img src="references/ibm.gif" border="0" height="72" width="127"></a></td>
     <td><p><a href="http://www.ibm.com/" target="_blank">IBM</a> has chosen to deploy OMNEST&#8482;
     at its <a href="http://www.zurich.ibm.com/" target="_blank">Zurich Research Laboratory</a>.
@@ -132,6 +119,31 @@
     <td align="center"><a href="http://www.intel.com/" target="_blank"><img src="references/intel.gif " border="0"></a></td>
     <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> is using OMNEST&#8482; simulation technology in its research.</p>
 
+    </td>
+  </tr>
+
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td align="center"><a href="http://www.mega.com/" target="_blank"><img src="references/mega.gif" border="0"></a></td>
+    <td><p><a href="http://www.mega.com/" target="_blank">MEGA Corporation</a>
+    has chosen to embed OMNEST&#8482; simulation technology into its
+    <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> product.
+    MEGA Process 6.1 runs OMNEST&#8482; simulation kernel.
+    Read the <a href="press-mega.php">press release</a>.</p>
+
+    </td>
+  </tr>
+
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td align="center"><a href="http://www.creditlyonnais.com/" target="_blank"><img src="references/cl.gif" border="0"></a></td>
+    <td><p><a href="http://www.creditlyonnais.com/" target="_blank">Crédit Lyonnais</a> selected <a href="http://www.mega.com/" target="_blank">MEGA</a>
+
+    to map and simulate its customer processes. The results of the simulation are used to manage activities
+    with a view to improving the company's performance and customer satisfaction.<br>
+    Read the <a href="http://www.mega.com/index.asp/l/en/c/customer/p/success-story/a/customer-success-story0013" target="_blank">success story.&nbsp;</a></p>
     </td>
   </tr>
 
