@@ -9,7 +9,7 @@
 	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
-<meta http-equiv="refresh" content="2;url=download/free/OMNESTDemo-3.0.0.exe">
+<meta http-equiv="refresh" content="2;url=download/free/OMNESTDemo-3.2.0.exe">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
 <div id="header"><h1>Downloading Demo Simulations</h1></div>
 <p>Your download should begin shortly. If it does not, try 
-clicking <a href="download/free/OMNESTDemo-3.0.0.exe">here</a>.</p>
+clicking <a href="download/free/OMNESTDemo-3.2.0.exe">here</a>.</p>
 
 
 <!-- Google Code for DEFAULT Conversion Page -->
