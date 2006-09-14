@@ -52,7 +52,8 @@
 <input type="checkbox" name="discrete_event_simulation" value="Discrete Event Simulation" />Discrete Event Simulation<br />
 <input type="checkbox" name="embedding" value="Embedding" />Embedding the simulation kernel<br />
 <input type="checkbox" name="network_simulation" value="Network Simulation" />Network Simulation<br />
-<small>If checked, please specify protocols</small><br/><input type="text" name="protocols" style="width: 300px;" />
+&nbsp;&nbsp;&nbsp;&nbsp;<small>Which areas or protocols (e.g. ad-hoc, IPv6, MPLS)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="protocols" style="width: 250px;" />
 </td>
 </tr>
 <tr>
@@ -62,7 +63,7 @@
 <tr><td>&nbsp;</td><td><input type="image" src="common/images/button_send.gif" /></td></tr>
 </table>
 </form>
-<p>We will use this data ONLY to contact you!</p>
+<p>We will use this data ONLY to contact you.</p>
 <br />
 <p>If you prefer, you may request information directly from:<br/><b> info at omnest dot com</b></p>
 
