@@ -42,7 +42,7 @@ wireless simulations to MPLS, Diffserv and IPv6.</p>
 combine existing protocol models to form hosts and network devices. There
 is support for real-time simulation and network emulation as well.</p>
 
-<h2>Simulation frameworks over OMNeT++:</h2>
+<h2>Simulation frameworks over OMNeT++/OMNEST:</h2>
 
 <ul class="list01">
 
@@ -81,14 +81,13 @@ class="kiemeles">SimSANs</a> - for simulating Storage Area Networks </li>
 
 </ul>
 
-<a
-href="http://www.omnetpp.org/staticpages/index.php?page=20031008083109542"
-target="_blank">See other models and frameworks</a><img
+<a href="http://www.omnetpp.org/staticpages/index.php?page=20031008083109542"
+target="_blank">See other models and frameworks on omnetpp.org</a><img
 src="common/images/list_02.gif" alt="" />
 
-<br />
+<br /><br />
 
-<a href="download.php" target="_blank">Download the demo of example
+<a href="download-demosim.php" target="_blank">Download the demo of example
 simulations of the above models</a><img
 src="common/images/list_02.gif" alt="" />
 
@@ -101,7 +100,7 @@ naturally cannot provide any warranty for them. However, their large
 exposure to the Academia means that they get reviewed and bugfixed
 and improved by many people.</p>
 
-<h2>OMNeT++ features relevant to network simulation</h2>
+<h2>OMNeT++/OMNEST features relevant to network simulation</h2>
 
 <ul class="list01">
 
@@ -119,8 +118,7 @@ and improved by many people.</p>
 
 </ul>
 
-<a href="http://localhost/omnestweb/features.php">Complete feature list
-</a><img src="common/images/list_02.gif" alt="" />
+<a href="features.php">Complete feature list</a><img src="common/images/list_02.gif" alt="" />
 
 </div>
 
