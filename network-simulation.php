@@ -87,8 +87,7 @@ src="common/images/list_02.gif" alt="" />
 
 <br /><br />
 
-<a href="download-demosim.php" target="_blank">Download the demo of example
-simulations of the above models</a><img
+<a href="download-demosim.php">Download the demo of example simulations of the above models</a><img
 src="common/images/list_02.gif" alt="" />
 
 <br /><br />
