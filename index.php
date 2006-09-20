@@ -27,7 +27,7 @@
 
 			<div id="header"><h1>Omnest Simulation Environment</h1></div>
 
-			<p>OMNEST<SUP>TM</SUP> is the commercial version of the popular OMNeT++ simulation environment, used worldwide at several universities and research groups - and now at an increasing number of companies as well. Omnest is a versatile component-based, modular simulation environment with an open architecture, strong GUI support and an embeddable simulation kernel. With full source code, of course, as you wish all software came.</p>
+			<p>OMNEST<SUP>TM</SUP> is the commercial version of the popular <a href="http://www.omnetpp.org" target="_blank">OMNeT++</a> simulation environment, used worldwide at several universities and research groups - and now at an increasing number of companies as well. Omnest is a versatile component-based, modular simulation environment with an open architecture, strong GUI support and an embeddable simulation kernel. With full source code, of course, as you wish all software came.</p>
 	</div>
 	<!-- End Content -->
 
