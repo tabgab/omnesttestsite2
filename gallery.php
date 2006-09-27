@@ -560,7 +560,7 @@ if (!file_exists($config['templateImage'])) {
 	$html_out = file_get_contents($config['templateImage']);
 }
 
-$desc_file = $_GET[entry].".txt";
+$desc_file = $_GET['entry'].".txt";
 $desc_exists = file_exists($desc_file);
 
 if ($desc_exists) {
@@ -576,10 +576,10 @@ if ($desc_exists) {
 // Do our template Replaces
 
 $html_out = str_replace("<!--LinkBack//-->", "<a href=\"$_SERVER[HTTP_REFERER]\">Back</a>", $html_out);
-$html_out = str_replace("<!--Modified//-->", date ("F d Y H:i:s.", filemtime($_GET[entry])), $html_out);
-$html_out = str_replace("<!--Filename//-->", basename($_GET[entry]), $html_out);
+$html_out = str_replace("<!--Modified//-->", date ("F d Y H:i:s.", filemtime($_GET['entry'])), $html_out);
+$html_out = str_replace("<!--Filename//-->", basename($_GET['entry']), $html_out);
 $html_out = str_replace("<!--Description//-->", $desc, $html_out);
-$html_out = str_replace("<!--Image//-->", "<img src=\"$_GET[entry]\">", $html_out);
+$html_out = str_replace("<!--Image//-->", "<img src=\"$_GET['entry']\">", $html_out);
 $html_out = str_replace("<!--VersionFooter//-->", $config['version'], $html_out);
 
 echo $html_out;
