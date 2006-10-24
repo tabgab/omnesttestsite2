@@ -48,7 +48,7 @@
   </tr>
 
   <tr>
-    <td align="center"><a href="webdemo/Preload_INETDEMO2006e.html" target="_blank"><img src="common/images/screencam-overview.png" border="0" style="padding: 10px"></a></td>
+    <td align="center"><a href="webdemo/Preload_INETDEMO2006e.html" target="_blank"><img src="common/images/arp-demo.png" border="0" style="padding: 10px"></a></td>
     <td><h2><a href="webdemo/Preload_INETDEMO2006e.html" target="_blank">Explore how ARP works</a></h2>
     <p>Get a quick introduction how the ARP protocol works. See the simulator in action, using the INET Framework.</p>
     </td>
