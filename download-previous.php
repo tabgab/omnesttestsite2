@@ -34,10 +34,15 @@
 
 <h3>Previous versions</h3>
 <ul class="list03">
+    <li><a href="/download/commercial/omnest-3.2p1-src.tgz">OMNEST 3.2p1 src (all platforms)</a></li>
+    <li><a href="/download/commercial/omnest-3.2p1-win32.exe">OMNEST 3.2p1 Win32 installer</a></li>
+    
+    <div id="separator"></div>
+
     <li><a href="/download/commercial/omnest-3.2-src.tgz">OMNEST 3.2 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.2-win32.exe">OMNEST 3.2 Win32 installer</a></li>
     
-<div id="separator"></div>
+    <div id="separator"></div>
 
     <li><a href="/download/commercial/omnest-3.1-src.tgz">OMNEST 3.1 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.1-win32.exe">OMNEST 3.1 Win32 installer</a></li>

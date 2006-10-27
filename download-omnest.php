@@ -9,7 +9,7 @@
 	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
-<meta http-equiv="refresh" content="2;url=http://www.omnetpp.org/filemgmt/visit.php?lid=101">
+<meta http-equiv="refresh" content="2;url=http://www.omnetpp.org/filemgmt/visit.php?lid=123">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
 <div id="header"><h1>Downloading OMNEST</h1></div>
 <p>Your download should begin shortly. If it does not, try 
-clicking <a href="http://www.omnetpp.org/filemgmt/visit.php?lid=101">here</a>.</p>
+clicking <a href="http://www.omnetpp.org/filemgmt/visit.php?lid=123">here</a>.</p>
 
 
 <br /><br />

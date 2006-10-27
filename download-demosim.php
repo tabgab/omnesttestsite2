@@ -35,7 +35,7 @@
 <p>OMNESTDemo-3.2.1 contains demo simulations, documentation and tutorials for:</p>
 
 <ul>
- <li>OMNEST 3.2</li>
+ <li>OMNEST 3.2++</li>
  <li>INET Framework 20061020</li>
  <li>Mobility Framework 1.0a1</li>
  <li>SimSANs 2.0</li>
