@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 
 	<!-- Start Minimenu --><div id="minimenu"><a href="network-simulation.php"><img src="common/images/minimenu_network.gif" width="118" height="44" alt="Network Simulation" border="0" /></a><a href="discrete-event-simulation.php"><img src="common/images/minimenu_discreteevent.gif" width="118" height="44" alt="Discrete Event Simulation" border="0" /></a></div><!-- End Minimenu -->
 	</div>
@@ -74,7 +74,7 @@
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -84,7 +84,7 @@
 </div>
 <!-- End Container -->
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 </body>

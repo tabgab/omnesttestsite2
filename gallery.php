@@ -34,7 +34,7 @@ function phpSG_Dropdown(){
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
 
@@ -1038,7 +1038,7 @@ function array_trim ( $array, $index ) {
 </div>
 <!-- End Container -->
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 </body>
 </html>

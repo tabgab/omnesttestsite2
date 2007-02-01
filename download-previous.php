@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 
 </div>
 	<!-- End Main Menu -->
@@ -36,19 +36,19 @@
 <ul class="list03">
     <li><a href="/download/commercial/omnest-3.2p1-src.tgz">OMNEST 3.2p1 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.2p1-win32.exe">OMNEST 3.2p1 Win32 installer</a></li>
-    
+
     <div id="separator"></div>
 
     <li><a href="/download/commercial/omnest-3.2-src.tgz">OMNEST 3.2 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.2-win32.exe">OMNEST 3.2 Win32 installer</a></li>
-    
+
     <div id="separator"></div>
 
     <li><a href="/download/commercial/omnest-3.1-src.tgz">OMNEST 3.1 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.1-win32.exe">OMNEST 3.1 Win32 installer</a></li>
 
     <div id="separator"></div>
-    
+
     <li><a href="/download/commercial/omnest-3.0-src-1yr.tgz">OMNEST 3.0 src (all platforms) - one year rental license</a></li>
     <li><a href="/download/commercial/omnest-3.0-win32-1yr.exe">OMNEST 3.0 Win32 installer - one year rental license</a></li>
     <li><a href="/download/commercial/omnest-3.0-src-perpetual.tgz">OMNEST 3.0 src (all platforms) - perpetual license</a></li>
@@ -64,7 +64,7 @@ with the product.</small></p>
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -74,7 +74,7 @@ with the product.</small></p>
 </div>
 <!-- End Container -->
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 </body>
 </html>

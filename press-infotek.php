@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
 
@@ -75,7 +75,7 @@ innovation and accountability are the philosophy and ultimate goal of InfoTek.</
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -87,7 +87,7 @@ innovation and accountability are the philosophy and ultimate goal of InfoTek.</
 
 
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 

@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
 
@@ -80,7 +80,7 @@ partners located around the globe. MEGA supports over 23,000 software licenses w
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -92,7 +92,7 @@ partners located around the globe. MEGA supports over 23,000 software licenses w
 
 
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 

@@ -91,12 +91,12 @@ var google_conversion_label = "LEAD";
 	<!-- End Content -->
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 	</div>
 
 </div>
 <!-- End Container -->
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 </body>
 </html>

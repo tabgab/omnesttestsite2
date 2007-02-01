@@ -17,7 +17,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 
 </div>
 	<!-- End Main Menu -->
@@ -30,7 +30,7 @@
 	<div id="container">
 
 <div id="header"><h1>Downloading OMNEST</h1></div>
-<p>Your download should begin shortly. If it does not, try 
+<p>Your download should begin shortly. If it does not, try
 clicking <a href="http://www.omnetpp.org/filemgmt/visit.php?lid=123">here</a>.</p>
 
 
@@ -87,7 +87,7 @@ var google_conversion_label = "DEFAULT";
 <!-- End Container -->
 
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 </body>

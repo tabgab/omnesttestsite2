@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 
 	<!-- Start Minimenu --><div id="minimenu"><a href="embedding.php"><img src="common/images/minimenu_embedding.gif" width="118" height="44" alt="Discrete Event Simulation" border="0" /></a><a href="discrete-event-simulation.php"><img src="common/images/minimenu_discreteevent.gif" width="118" height="44" alt="Discrete Event Simulation" border="0" /></a></div><!-- End Minimenu -->
 	</div>
@@ -126,7 +126,7 @@ and improved by many people.</p>
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -138,7 +138,7 @@ and improved by many people.</p>
 </div>
 <!-- End Container -->
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 </body>
 </html>

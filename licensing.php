@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
 
@@ -51,7 +51,7 @@ We hope the above has met with your requirements. Please do not hesitate to <a h
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -63,7 +63,7 @@ We hope the above has met with your requirements. Please do not hesitate to <a h
 
 
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 

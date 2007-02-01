@@ -16,10 +16,10 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
-	
+
 	<div style="clear: both;">
 
 	<!-- Start Content -->
@@ -54,22 +54,22 @@ Phone: +36 20 3535 116<br />
 Fax: +44 20 7681 1502<br />
 E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a><br /></p><br />
 
-	 
-	 
-	 
-	 
-	 
-			
+
+
+
+
+
+
 	</div>
 	<!-- End Content -->
 
-			
-			
+
+
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
-			
-	
+
+
 	</div>
 
 </div>
@@ -78,7 +78,7 @@ E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a><br /></p><br />
 
 
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 

@@ -17,7 +17,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 
 </div>
 	<!-- End Main Menu -->
@@ -96,7 +96,7 @@ var google_conversion_label = "DEFAULT";
 <!-- End Container -->
 
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 </body>

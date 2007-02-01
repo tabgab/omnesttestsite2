@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 	</div>
 	<!-- End Main Menu -->
 
@@ -25,16 +25,21 @@
 	<!-- Start Content -->
 	<div id="content">
 
-			<div id="header"><h1>Omnest Simulation Environment</h1></div>
+			<div id="header"><h1>OMNEST<sup>TM</sup> Simulation Environment</h1></div>
 
-			<p>OMNEST<SUP>TM</SUP> is the commercial version of the popular <a href="http://www.omnetpp.org" target="_blank" class="kiemeles">OMNeT++</a> simulation environment, used worldwide at several universities and research groups - and now at an increasing number of companies as well. Omnest is a versatile component-based, modular simulation environment with an open architecture, strong GUI support and an embeddable simulation kernel. With full source code, of course, as you wish all software came.</p>
+			<p><b>OMNEST is an open, versatile, component-based simulation environment</b> with a modular
+			architecture, strong GUI support and an embeddable simulation kernel.
+			 Source code is provided to give you full control of your software.
+			 OMNEST is the commercial version of the powerful
+			<a href="http://www.omnetpp.org" target="_blank" class="kiemeles">OMNeT++</a>
+			simulation environment,	used worldwide at universities and research groups.</p>
 	</div>
 	<!-- End Content -->
 
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -96,7 +101,7 @@
 
 
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 

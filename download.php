@@ -16,7 +16,7 @@
 <!-- Start Container -->
 <div id="container">
 
-<? include("common/top_inc.php"); ?>
+<?php include("common/top_inc.php"); ?>
 
 </div>
 	<!-- End Main Menu -->
@@ -85,7 +85,7 @@ full documentation and a Guided Tour for the INET Framework.
 
 
 	<!-- Start Right -->
-	<? include("common/right_inc.php"); ?>
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
 
 
@@ -95,7 +95,7 @@ full documentation and a Guided Tour for the INET Framework.
 </div>
 <!-- End Container -->
 
-<? include("common/footer_inc.php"); ?>
+<?php include("common/footer_inc.php"); ?>
 
 
 </body>
