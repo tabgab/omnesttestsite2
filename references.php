@@ -33,14 +33,10 @@
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
-  <tr>
-    <td align="center" width="220"><a href="http://www.spec.org/" target="_blank"><img src="references/spec.gif" border="0"></a></td>
-    <td><p>The <a href="http://www.spec.org/" target="_blank">Standard Performance Evaluation Corporation (SPEC)</a>
-      announced <a href="http://www.spec.org/cpu2006" target="_blank">SPEC CPU2006</a>, its next-generation benchmark for CPU-intensive performance.
-      <a href="http://www.spec.org/cpu2006/CINT2006" target="_blank">SPEC CINT2006</a>
-      is the successor of CPU2000. OMNeT++ simulation is
-      <a href="http://www.spec.org/cpu2006/Docs/471.omnetpp.html" target="_blank">one of the 12 integer benchmarks</a>,
-      in the total of 29 benchmarks.</p>
+    <tr>
+    <td align="center"><a href="http://www.intel.com/" target="_blank"><img src="references/intel.gif " border="0"></a></td>
+    <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> is using OMNEST&#8482; simulation technology in its research.</p>
+
     </td>
   </tr>
 
@@ -57,27 +53,59 @@
   <tr><td><br></td></tr>
 
   <tr>
-    <td align="center"><a href="http://www.invistics.com/" target="_blank"><img src="references/invistics.gif" border="0"></a></td>
-    <td><p><a href="http://www.invistics.com/" target="_blank">Invistics Corporation</a> </p>
+    <td align="center"><a href="http://www.cisco.com/" target="_blank"><img src="references/cisco.gif" border="0"></a></td>
+    <td><p>
+    <a href="http://www.cisco.com/" target="_blank">Cisco</a>
+      engineers needed a flexible solution that would allow them to accurately model the
+      insides of future products without the restrictions imposed on some of the competing
+      simulation systems. They chose OMNEST because the open architecture allows them to
+      model exactly what they want, and how they want, to a level of arbitrary detail
+      they feel fits the project goals.
+    </p>
     </td>
 
   </tr>
   <tr><td><br></td></tr>
 
   <tr>
-    <td align="center"><a href="http://www.lucent.com/" target="_blank"><img src="references/lucent.gif" border="0"></a></td>
-    <td><p><a href="http://www.lucent.com/" target="_blank">Lucent Technologies</a> </p>
+    <td align="center"><a href="http://www.hp.com/" target="_blank"><img src="references/hpinvent.gif" border="0"></a></td>
+    <td><p><a href="http://www.hp.com/" target="_blank">Hewlett-Packard Development Company.</a> HP professionals use OMNEST&#8482; for performance simulation of hardware architectures in their research and development.</p>
+
+    </td>
+  </tr>
+
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td align="center"><a href="http://www.orange.fr/" target="_blank"><img src="references/orange.gif" border="0"></a></td>
+    <td><p>
+    <a href="http://www.orange.fr/" target="_blank">Orange / France Telecom</a>
+    	use OMNEST&#8482; to simulate optical networks in their research laboratory.
+    </p>
     </td>
 
   </tr>
   <tr><td><br></td></tr>
 
   <tr>
-    <td align="center"><a href="http://www.alcatel.com/" target="_blank"><img src="references/alcatel.gif" border="0"></a></td>
-    <td><p><a href="http://www.alcatel.com/" target="_blank">Alcatel</a> </p>
+    <td align="center"><a href="http://www.alcatel-lucent.com/" target="_blank"><img src="references/alcatel-lucent.gif" border="0"></a></td>
+    <td><p><a href="http://www.alcatel-lucent.com/" target="_blank">Alcatel-Lucent:</a>
+    	When Alcatel and Lucent merged, both companies carried with them their own OMNEST&#8482; installations,
+    	since both companies were already established OMNEST&#8482; users. The combined entity continues to
+    	use the system on a regular basis in their research.
+    </p>
     </td>
 
   </tr>
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td align="center"><a href="http://www.eads.com/" target="_blank"><img src="references/eads.gif" border="0"></a></td>
+    <td><p><a href="http://www.eads.com/" target="_blank">European Aeronautic Defence and Space Company.</a> <br> EADS professionals are using and embedding OMNEST&#8482; technology to simulate the internals of vehicle systems.</p>
+    </td>
+
+  </tr>
+
   <tr><td><br></td></tr>
 
   <tr>
@@ -85,6 +113,19 @@
     <td><p><a href="http://www.thalesgroup.com/" target="_blank">Thales Communications</a> is using OMNEST&#8482; in its research facilities world-wide.</p>
     </td>
 
+  </tr>
+
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td align="center" width="220"><a href="http://www.spec.org/" target="_blank"><img src="references/spec.gif" border="0"></a></td>
+    <td><p>The <a href="http://www.spec.org/" target="_blank">Standard Performance Evaluation Corporation (SPEC)</a>
+      announced <a href="http://www.spec.org/cpu2006" target="_blank">SPEC CPU2006</a>, its next-generation benchmark for CPU-intensive performance.
+      <a href="http://www.spec.org/cpu2006/CINT2006" target="_blank">SPEC CINT2006</a>
+      is the successor of CPU2000. OMNeT++ simulation is
+      <a href="http://www.spec.org/cpu2006/Docs/471.omnetpp.html" target="_blank">one of the 12 integer benchmarks</a>,
+      in the total of 29 benchmarks.</p>
+    </td>
   </tr>
 
   <tr><td><br></td></tr>
@@ -98,30 +139,21 @@
   <tr><td><br></td></tr>
 
   <tr>
-    <td align="center"><a href="http://www.eads.com/" target="_blank"><img src="references/eads.gif" border="0"></a></td>
-    <td><p><a href="http://www.eads.com/" target="_blank">European Aeronautic Defence and Space Company.</a> <br> EADS professionals are using and embedding OMNEST&#8482; technology to simulate the internals of vehicle systems.</p>
+    <td align="center"><a href="http://www.invistics.com/" target="_blank"><img src="references/invistics.gif" border="0"></a></td>
+    <td><p><a href="http://www.invistics.com/" target="_blank">Invistics Corporation</a> </p>
     </td>
 
   </tr>
-
   <tr><td><br></td></tr>
 
   <tr>
-    <td align="center"><a href="http://www.hp.com/" target="_blank"><img src="references/hpinvent.gif" border="0"></a></td>
-    <td><p><a href="http://www.hp.com/" target="_blank">Hewlett-Packard Development Company.</a> HP professionals use OMNEST&#8482; for performance simulation of hardware architectures in their research and development.</p>
-
+    <td align="center"><a href="http://www.gilat.com/" target="_blank"><img src="references/gilat.gif" border="0"></a></td>
+    <td><p>
+    <a href="http://www.gilat.com/" target="_blank">Gilat Satellite Networks</a>
+    </p>
     </td>
+
   </tr>
-
-  <tr><td><br></td></tr>
-
-    <tr>
-    <td align="center"><a href="http://www.intel.com/" target="_blank"><img src="references/intel.gif " border="0"></a></td>
-    <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> is using OMNEST&#8482; simulation technology in its research.</p>
-
-    </td>
-  </tr>
-
   <tr><td><br></td></tr>
 
   <tr>
