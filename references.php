@@ -57,7 +57,7 @@
     <td><p>
     <a href="http://www.cisco.com/" target="_blank">Cisco</a>
       engineers needed a flexible solution that would allow them to accurately model the
-      insides of future products without the restrictions imposed on some of the competing
+      insides of future products without the restrictions imposed by some of the competing
       simulation systems. They chose OMNEST because the open architecture allows them to
       model exactly what they want, and how they want, to a level of arbitrary detail
       they feel fits the project goals.
