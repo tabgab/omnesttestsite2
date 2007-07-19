@@ -35,7 +35,7 @@
 
 <p>As a company, we are turning OMNeT++ into an industrial-strength, state of the art simulation framework, and we provide commercial support for our product. We are committed to serving our commercial customers with the same excellence that went into the design of OMNEST<SUP>TM</SUP>/OMNeT++. We are also ready to offer consultancy regarding the use of our product.</p>
 
-<p>Our vision is to become the leading provider of highly flexible and high-performance discrete event simulation framework and kernel, targetted chiefly for embedding and brain-intensive R&D work. We regard protocol design and the simulation of telecomunication networks as a prime application area for our software, but by far not the only one.</p>
+<p>Our vision is to become the leading provider of highly flexible and high-performance discrete event simulation framework and kernel, targetted chiefly for embedding and brain-intensive R&D work. We regard protocol design and the simulation of telecommunication networks as a prime application area for our software, but by far not the only one.</p>
 
 <p>OMNeT++ (OMNEST) is copyright (c) 1992-2006 Andras Varga.</p>
 
