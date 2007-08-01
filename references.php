@@ -34,7 +34,7 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
   <tr>
-    <td align="center"><a href="http://www.mellanox.com/" target="_blank"><img src="references/mellanox.png" border="0"></a></td>
+    <td align="center"><a href="http://www.mellanox.com/" target="_blank"><img src="references/mellanox.gif" border="0"></a></td>
     <td><p><a href="http://www.mellanox.com/" target="_blank">Mellanox Technologies</a>, the leading provider of Infiniband technology are using OMNEST in their research. They have released their own Infiniband model for OMNEST/OMNeT++ users. The model can be downloaded from our community site, <a href="http://www.omnetpp.org/filemgmt/singlefile.php?lid=133" target="_blank">here</a>.</p>
     </td>
   </tr>
