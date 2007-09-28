@@ -43,7 +43,6 @@
 	<!-- End Right -->
 
 
-
 	<!-- Start Kivonatok -->
 	<div id="extra">
 		<!-- Start Col 1 -->
@@ -92,6 +91,7 @@
 	</div>
 	<!-- End Kivonatok -->
 
+    <embed src="flash/OMNEST_news1.swf" menu=false quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="490" height="80">
 
 		</div>
 
