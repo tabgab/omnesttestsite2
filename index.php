@@ -85,13 +85,13 @@
 		<embed src="flash/03.swf" menu=false quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="138" height="90">
 		</embed>
 		</object><br /><br />
-		<div id="coltext"><a href="embedding.php">add simulation capability to your product by embedding our simulation kernel</a></div>
+		<div id="coltext"><a href="embedding.php">add simulation capability to your product by embedding our simulation kernel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
 		</div>
 		<!-- End Col 3 -->
 	</div>
 	<!-- End Kivonatok -->
 
-    <embed src="flash/OMNEST_news1.swf" menu=false quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="490" height="80">
+    <embed src="flash/OMNEST_news1.swf" menu="false" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="490" height="80">
 
 		</div>
 
