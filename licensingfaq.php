@@ -230,7 +230,7 @@ industry, and I have been given an assignment as part of that
 program. Can I make use of the free version for this assignment?</p>
 <p><b>A:</b> While you are
 welcome to use OMNeT++ for educational purposes, and it is a matter
-of principal for us to provide our software for free for educational
+of principle for us to provide our software for free for educational
 purposes, assignments of this kind require a commercial license. Such
 kind of co-operation between universities and industry is in essence
 an out-sourcing of industrial research to the university lab. While
