@@ -26,6 +26,7 @@
 	<div id="content">
 
 			<div id="header"><h1>Contact</h1></div>
+			<a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a><br/><br/>
 
 <form action="contact_post.php" method="post" name="post_robot" id="post_robot">
 <table border="0" cellspacing="0" cellpadding="6">
