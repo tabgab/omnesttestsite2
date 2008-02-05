@@ -165,7 +165,7 @@ considered.</p>
 			Development Leader
 		</td>
 		<td>
-			Occasionally checks on results, may rung
+			Occasionally checks on results, may run
 			simulations on their machine to check their state. Having OMNEST
 			installed is more of a convenience, than a tool.
 		</td>
