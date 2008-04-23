@@ -28,7 +28,7 @@
 			<div id="header"><h1>Licensing options</h1></div>
 
 
-<p>If you are looking into using OMNEST for simulation projects within your company, or you searching for an embeddable simulation kernel for your product, please check the license conditions below, and contact us so that we can provide you with further details.</p>
+<p>If you are looking into using OMNEST for simulation projects within your company, or you searching for an embeddable simulation kernel for your product, please check the <a href="licensingfaq.php">Licensing FAQ</a> and the license conditions below, and contact us so that we can provide you with further details.</p>
 
 <p>Commercial licenses come in two basic forms. Perpetual licenses are available, and can be used indefinitely, with the option to upgrade if a major release becomes available. We have also recently introduced the option to rent licenses at a flat rate for 12 months. This will allow for the flexible configuration of licenses used, while also reducing the initial investment necessary to start using OMNeT++ in commercial endeavors.</p>
 

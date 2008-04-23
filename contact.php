@@ -66,7 +66,7 @@
 </form>
 <p>We will use this data ONLY to contact you.</p>
 <br />
-<p>If you prefer, you may request information directly from:<br/><b> info at omnest dot com</b></p>
+<p>If you prefer, you may request information directly from:<br/><b> info at ourdomainname</b></p>
 
 <br />
 
