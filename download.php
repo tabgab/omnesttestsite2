@@ -51,9 +51,11 @@
 <h3>Latest stable version: 3.3</h3>
 <ul class="list03">
     <li><a href="/download/commercial/omnest-3.3-src.tgz">OMNEST 3.3 src (all platforms)</a></li>
+    <li><a href="/download/commercial/omnest-3.3p1-src.tgz">OMNEST 3.3p1 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.3-win32.exe">OMNEST 3.3 Win32 installer</a></li>
 </ul>
-<p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
+<p><small>Note: There is no 3.3p1 release for windows, because the patch only fixes Linux specific problems.</small><br/>
+<small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
 <a href="download-previous.php">Older versions can be found here.</a>
 </p>
 <div id="separator"></div>
