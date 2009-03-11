@@ -46,10 +46,6 @@
 <h2>Company Information</h2>
 
 <p>Simulcraft Inc.<br />
-Crystal Offices, OT Center<br />
-Victoria, Mahé<br />
-Republic of Seychelles<br />
-<br />
 Phone: +36 20 3535 116<br />
 Fax: +44 20 7681 1502<br />
 E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a><br /></p><br />

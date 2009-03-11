@@ -42,6 +42,19 @@
 <tr>
 <td align="right">Position</td><td><input type="text" name="position" style="width: 300px;" /></td>
 </tr>
+
+<tr>
+<td align="right"></td><td>
+<input type="checkbox" name="omnetpp_experience" value="yes" checked="false"/>I have experience with OMNeT++<br />
+</td>
+</tr>
+
+<tr>
+<td align="right"></td><td>
+<input type="checkbox" name="cpp_experience" value="yes" checked="false"/>I have C++ experience<br />
+</td>
+</tr>
+
 <tr>
 <td align="right"></td><td>
 <input type="checkbox" name="price_list" value="Price List" checked="true"/>Please send pricing information<br />

@@ -35,8 +35,8 @@
 <!-- Start Button -->
 <table cellspacing="0" cellpadding="0">
   <tr><td id="button-left"/><td id="button">
-    <a href="download-omnest.php"><strong>Download OMNeT++ 3.3</strong><br />
-		(Windows installer)</a>
+    <a href="download-omnest.php"><strong>Download OMNeT++ 4.0</strong><br />
+		(Windows zip)</a>
   </td><td id="button-right"/></tr>
 </table>
 <!-- End Button -->
@@ -48,14 +48,12 @@
 
 <h2>Commercial edition (password protected)</h2>
 
-<h3>Latest stable version: 3.3</h3>
+<h3>Latest stable version: 4.0</h3>
 <ul class="list03">
-    <li><a href="/download/commercial/omnest-3.3-src.tgz">OMNEST 3.3 src (all platforms)</a></li>
-    <li><a href="/download/commercial/omnest-3.3p1-src.tgz">OMNEST 3.3p1 src (all platforms)</a></li>
-    <li><a href="/download/commercial/omnest-3.3-win32.exe">OMNEST 3.3 Win32 installer</a></li>
+    <li><a href="/download/commercial/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer)</a></li>
+    <li><a href="/download/commercial/omnest-4.0-src.tgz">OMNEST 4.0 for Linux, Mac OS X (TGZ)</a></li>
 </ul>
-<p><small>Note: There is no 3.3p1 release for windows, because the patch only fixes Linux specific problems.</small><br/>
-<small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
+<p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
 <a href="download-previous.php">Older versions can be found here.</a>
 </p>
 <div id="separator"></div>
@@ -71,7 +69,7 @@ full documentation and a Guided Tour for the INET Framework.
 <!-- Start Button -->
 <table cellspacing="0" cellpadding="0">
   <tr><td id="button-left"/><td id="button">
-    <a href="download-demosim.php"><strong>Download OMNEST Demo Simulations</strong><br />
+    <a href="download-demosim.php"><strong>Download OMNEST 3.3 Demo Simulations</strong><br />
 		(Windows installer)</a>
   </td><td id="button-right"/></tr>
 </table>

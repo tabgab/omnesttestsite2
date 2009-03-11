@@ -33,6 +33,8 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $company = $_POST['company'];
 $position = $_POST['position'];
+$omnetpp_experience = $_POST['omnetpp_experience'];
+$cpp_experience = $_POST['cpp_experience'];
 $price_list = $_POST['price_list'];
 $network_simulation = $_POST['network_simulation'];
 $protocols = $_POST['protocols'];
@@ -49,6 +51,9 @@ if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"
 "E-mail:  $email". $eol .
 "Company: $company". $eol .
 "Position: $position". $eol .
+$eol .
+"OMNeT++ experience: ".  ($omnetpp_experience == "" ? "no": $omnetpp_experience). $eol .
+"C++ experience: " . ($cpp_experience == "" ? "no": $cpp_experience) . $eol .
 $eol .
 "Interested in:". $eol .
 "       $price_list". $eol .
