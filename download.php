@@ -50,8 +50,12 @@
 
 <h3>Latest stable version: 4.0</h3>
 <ul class="list03">
-    <li><a href="/download/commercial/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer)</a></li>
-    <li><a href="/download/commercial/omnest-4.0-src.tgz">OMNEST 4.0 for Linux, Mac OS X (TGZ)</a></li>
+    <li><a href="/download/commercial/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer)</a><br/>
+    <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
+    </li>
+    <li><a href="/download/commercial/omnest-4.0-src.tgz">OMNEST 4.0 for Linux, Mac OS X (TGZ)</a><br/>
+    <small>md5sum: c0ea62c94c2e71c04974b0d349062a</small>
+    </li>
 </ul>
 <p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
 <a href="download-previous.php">Older versions can be found here.</a>

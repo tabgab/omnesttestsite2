@@ -1,5 +1,5 @@
 <!-- Start Footer -->
-<div id="footer"><div id="footerinside">Copyright &copy; 2004-2008 Simulcraft Inc.</div></div>
+<div id="footer"><div id="footerinside">Copyright &copy; 2004-2009 Simulcraft Inc.</div></div>
 <!-- End Footer -->
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
