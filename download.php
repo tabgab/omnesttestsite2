@@ -50,10 +50,10 @@
 
 <h3>Latest stable version: 4.0</h3>
 <ul class="list03">
-    <li><a href="/download/commercial/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer)</a><br/>
+    <li><a href="/download/commercial4/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer) - 231Mb</a><br/>
     <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
     </li>
-    <li><a href="/download/commercial/omnest-4.0-src.tgz">OMNEST 4.0 for Linux, Mac OS X (TGZ)</a><br/>
+    <li><a href="/download/commercial4/omnest-4.0-src.tgz">OMNEST 4.0 for Linux, Mac OS X (TGZ) - 119Mb</a><br/>
     <small>md5sum: c0ea62c94c2e71c04974b0d349062a</small>
     </li>
 </ul>
