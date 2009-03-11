@@ -45,13 +45,13 @@
 
 <tr>
 <td align="right"></td><td>
-<input type="checkbox" name="omnetpp_experience" value="yes" checked="false"/>I have experience with OMNeT++<br />
+<input type="checkbox" name="omnetpp_experience" value="yes"/>I have experience with OMNeT++<br />
 </td>
 </tr>
 
 <tr>
 <td align="right"></td><td>
-<input type="checkbox" name="cpp_experience" value="yes" checked="false"/>I have C++ experience<br />
+<input type="checkbox" name="cpp_experience" value="yes"/>I have C++ experience<br />
 </td>
 </tr>
 
