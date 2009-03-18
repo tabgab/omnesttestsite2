@@ -12,6 +12,8 @@
 	<div id="mainmenu">
 	<div id="mainmenuitem"><a href="/" class="mainmenulink">Home</a></div>
 	<div id="mainmenuitem">|</div>
+	<div id="mainmenuitem"><a href="features.php" class="mainmenulink">Features</a></div>
+	<div id="mainmenuitem">|</div>
 	<div id="mainmenuitem"><a href="references.php" class="mainmenulink">References</a></div>
 	<div id="mainmenuitem">|</div>
 	<div id="mainmenuitem"><a href="download.php" class="mainmenulink">Download</a></div>

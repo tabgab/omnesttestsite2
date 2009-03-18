@@ -31,16 +31,16 @@
 <form action="contact_post.php" method="post" name="post_robot" id="post_robot">
 <table border="0" cellspacing="0" cellpadding="6">
 <tr>
-<td align="right">Name</td><td><input type="text" name="name" style="width: 300px;" /></td>
+<td align="right">Name</td><td><input type="text" name="name" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right"><b>E-mail<sup>*</sup></b></td><td><input type="text" name="email" style="width: 300px;" /></td>
+<td align="right"><b>E-mail<sup>*</sup></b></td><td><input type="text" name="email" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right">Company</td><td><input type="text" name="company" style="width: 300px;" /></td>
+<td align="right">Company</td><td><input type="text" name="company" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right">Position</td><td><input type="text" name="position" style="width: 300px;" /></td>
+<td align="right">Position</td><td><input type="text" name="position" style="width: 400px;" /></td>
 </tr>
 
 <tr>
@@ -67,17 +67,17 @@
 <input type="checkbox" name="embedding" value="Embedding" />Embedding the simulation kernel<br />
 <input type="checkbox" name="network_simulation" value="Network Simulation" />Network Simulation<br />
 &nbsp;&nbsp;&nbsp;&nbsp;<small>Which areas or protocols (e.g. ad-hoc, IPv6, MPLS)</small><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="protocols" style="width: 250px;" />
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="protocols" style="width: 383px;" />
 </td>
 </tr>
 <tr>
-<td align="right">Message</td><td><textarea cols="" rows="" name="message" style="width: 300px; height: 200px;"></textarea></td>
+<td align="right">Message</td><td><textarea cols="" rows="" name="message" style="width: 400px; height: 200px;"></textarea></td>
 </tr>
 
 <tr><td>&nbsp;</td><td><input type="image" src="common/images/button_send.gif" /></td></tr>
 </table>
 </form>
-<p>We will use this data ONLY to contact you.</p>
+<p>We will only use this data to contact you.</p>
 <br />
 <p>If you prefer, you may request information directly from:<br/><b> info at ourdomainname</b></p>
 
