@@ -28,7 +28,7 @@
 	<!-- Start Content -->
 	<div id="content">
 
-			<div id="header"><h1>Web demos</h1></div>
+			<div id="header"><h1>Web Demos</h1></div>
 
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
