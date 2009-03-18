@@ -34,9 +34,10 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
   <tr>
-    <td align="center"><a href="gallery.php"><img src="common/images/gallery.png" border="0" style="padding: 10px"></a></td>
-    <td><h2><a href="gallery.php">Screenshot gallery</a></h2>
-    <p>See screenshots from OMNeT++ runtime environment, graphical editor and analysis tools.</p>
+    <td align="center"><a href="webdemo/ide" target="_blank"><img src="common/images/ide.png" border="0" style="padding: 10px"></a></td>
+    <td><h2><a href="webdemo/ide" target="_blank">Using the IDE</a></h2>
+    <p>See the OMNEST IDE in action. Editing NED and Ini files, running your simulation and
+    analysing the results.</p>
     </td>
   </tr>
 

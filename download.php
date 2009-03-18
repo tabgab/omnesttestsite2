@@ -29,7 +29,7 @@
 	<div id="content">
 
 <div id="header"><h1>Download</h1></div>
-
+    
 <h2>Academic / Evaluation version</h2>
 
 <!-- Start Button -->
@@ -42,6 +42,7 @@
 <!-- End Button -->
 <br/>
 
+<a href="releasenotes.php"><strong>Release notes</strong></a>
 <p>For additional downloads please visit the <a href="http://www.omnetpp.org/filemgmt/viewcat.php?cid=2" target="_blank">OMNeT++ community site</a>.</p>
 
 <div id="separator"></div>
@@ -49,6 +50,7 @@
 <h2>Commercial edition (password protected)</h2>
 
 <h3>Latest stable version: 4.0</h3>
+<a href="releasenotes.php"><strong>Release notes</strong></a>
 <ul class="list03">
     <li><a href="/download/commercial4/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer) - 231Mb</a><br/>
     <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
