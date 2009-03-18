@@ -27,6 +27,11 @@
 
 			<div id="header"><h1>OMNEST<SUP>TM</SUP>/OMNeT++ Features</h1></div>
 
+    <p>OMNEST is an open, versatile, component-based simulation environment
+    with a modular architecture, strong GUI support and an embeddable
+    simulation kernel. Source code is provided to give you full control
+    of your software.
+    </p>
 
 <h2>General</h2>
 <ul class="list03">
