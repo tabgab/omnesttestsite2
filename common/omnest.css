@@ -113,12 +113,12 @@ div#footer p {
 }
 
 div#container {
-	width: 658px;
+	width: 858px;
 	margin: 0 auto;
 }
 div#content {
 	float: left;
-	width: 483px;
+	width: 683px;
 	padding: 0px 0px 10px 0px;
 }
 div#right {
@@ -130,9 +130,11 @@ div#right {
 
 /*---------- · Index Kivonatok · ----------*/
 div#extra {
-	float: left;
-	width: 483px;
-	padding: 0px 0px 20px 0px;
+	/*float: left;*/
+	width: 683px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0px 10px 0px;
 }
 div#col {
 	float: left;
@@ -252,7 +254,7 @@ div#footer {
 	font-size: 10px;
 }
 div#footerinside {
-	width: 658px;
+	width: 858px;
 	margin: 0 auto;
 }
 /*---------- . Button . ----------*/

@@ -91,7 +91,8 @@
 	</div>
 	<!-- End Kivonatok -->
 
-    <embed src="flash/OMNEST4.0_released.swf" menu="false" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="490" height="80">
+	<br>
+	<embed src="flash/OMNEST4.0_released.swf" menu="false" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="690" height="80">
 
 		</div>
 
