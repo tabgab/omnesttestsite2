@@ -29,8 +29,11 @@
 	<div id="content">
 
 <div id="header"><h1>Download</h1></div>
-    
+
 <h2>Academic / Evaluation version</h2>
+
+<p>Currently OMNeT++ doubles as the evaluation version of OMNEST<sup>TM</sup>.
+<a href="comparison.php">What's the difference between OMNeT++ and OMNEST?</a></p>
 
 <!-- Start Button -->
 <table cellspacing="0" cellpadding="0">

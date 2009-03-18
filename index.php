@@ -32,7 +32,8 @@
 			 Source code is provided to give you full control of your software.
 			 OMNEST is the commercial version of the powerful
 			<a href="http://www.omnetpp.org" target="_blank" class="kiemeles">OMNeT++</a>
-			simulation environment,	used worldwide at universities and research groups.</p>
+			simulation environment,	used worldwide at universities and research groups.
+			<a href="comparison.php">What's the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a></p>
 	</div>
 	<!-- End Content -->
 

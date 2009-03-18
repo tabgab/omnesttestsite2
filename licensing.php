@@ -45,6 +45,8 @@
 
 We hope the above has met with your requirements. Please do not hesitate to <a href="contact.php">contact us</a> for details.
 
+<p>See also: <a href="comparison.php">What's the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a></p>
+
 	</div>
 	<!-- End Content -->
 
