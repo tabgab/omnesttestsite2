@@ -42,16 +42,13 @@ wireless simulations to MPLS, Diffserv and IPv6.</p>
 combine existing protocol models to form hosts and network devices. There
 is support for real-time simulation and network emulation as well.</p>
 
-<h2>Simulation frameworks over OMNeT++/OMNEST:</h2>
+<h2>Network Simulation Packages for OMNeT++/OMNEST:</h2>
 
 <ul class="list01">
 
-<li><a
-href="http://www.omnetpp.org/staticpages/index.php?page=20041019113420757"
-target="_blank" class="kiemeles">INET Framework</a> - supports&nbsp;ad-hoc,
-wireless and wired (LAN, WAN) simulations (802.11, Ethernet, TCP, IP,
-IPv6, OSPF, MPLS, RSVP, etc.) The INET Framework is maintained by OMNEST
-people, with frequent contributions from the user community.</li>
+<li><a href="http://www.inet.omnetpp.org" target="_blank" class="kiemeles">INET Framework</a> -
+supports&nbsp;ad-hoc, wireless and wired (LAN, WAN) simulations (802.11,
+Ethernet, TCP, IP, IPv6, OSPF, MPLS, RSVP, and other protocols)</li>
 
 <ul class="list03">
 
@@ -64,19 +61,28 @@ guarantees simulation accuracy.</li>
 
 </ul>
 
-<li><a
-href="http://ctieware.eng.monash.edu.au/twiki/bin/view/Simulation/IPv6Suite"
-target="_blank" class="kiemeles">IPv6SuiteWithINET</a> - for IPv6, MIPv6
-and wireless (802.11) </li>
+<li><a href="http://www.oversim.org/" target="_blank"
+class="kiemeles">OverSim</a> - for overlay and peer-to-peer networks (based on INET)</li>
 
 <li><a href="http://mobility-fw.sourceforge.net/" target="_blank"
 class="kiemeles">Mobility Framework</a> - for wireless mobile and ad-hoc
 networks</li>
 
+<li><a href="http://mixim.sourceforge.net/" target="_blank"
+class="kiemeles">MiXiM</a> - for wireless mobile and ad-hoc
+networks (successor of Mobility Framework)</li>
+
+<li><a href="http://castalia.npc.nicta.com.au/" target="_blank"
+class="kiemeles">Castalia</a> - a wireless sensor network (WSN) simulator
+developed at NICTA Australia</li>
+
+<li><a href="http://pawis.sourceforge.net/" target="_blank"
+class="kiemeles">PAWiS</a> - Power Aware Wireless Sensor Networks Simulation Framework</li>
+
 <li><a href="http://nesct.sourceforge.net/" target="_blank"
 class="kiemeles">NesCT</a> - for simulating wireless motes running TinyOS</li>
 
-<li><a href="http://simsan.storwav.com/" target="_blank"
+<li><a href="http://www.simsans.org/" target="_blank"
 class="kiemeles">SimSANs</a> - for simulating Storage Area Networks </li>
 
 </ul>
