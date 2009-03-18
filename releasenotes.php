@@ -25,16 +25,19 @@
 	<!-- Start Content -->
 	<div id="content">
 
-	<div id="header"><h1>OMNEST 4.0 Release notes</h1></div>
+	<div id="header"><h1>What's new in OMNEST 4.0?</h1></div>
 
-<p>Brief summary of changes in 4.0:</p>
+<p>OMNEST 4.0 delivers a completely new, fresh experience to existing
+OMNEST users. Now you can work in a world-class integrated simulation
+environment, while nearly every aspect of the simulation framework
+has become a lot more powerful and more refined since the 3.3 release.</p>
 
-<h2>GUI</h2>
+<h2>Simulation IDE <sup>NEW!</sup></h2>
 
   <p>
   An Eclipse-based comprehensive simulation IDE has been introduced to replace
-  the previous standalone GUI programs gned, scalars and plove. The IDE supports
-  all stages of a simulation project: developing, building, configuring and
+  the previous standalone GUI programs. The IDE supports all stages of a
+  simulation project: developing, building, configuring and
   running simulation models, and analysing results. It also supports
   visualizing simulation execution traces as sequence charts, and generating
   documentation. We are also bundling version control (cvs, svn, git) Eclipse
@@ -218,6 +221,12 @@
   <p>
   The vector and scalar file format has changed to support the new features
   of the IDE. Vector files are now indexed for efficiency.</p>
+
+<br/>
+
+<p><b>Once you've experienced OMNEST 4.0, there is no going back!</b>
+Contact us if you need help for porting your existing models to 4.0.</p>
+
 
 	</div>
 	<!-- End Content -->

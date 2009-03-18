@@ -277,3 +277,16 @@ td#button-right {
 	background-repeat: no-repeat;
 	width: 13px;
 }
+
+
+.yes {
+	color: #007f00;
+	font-weight: bold;
+}
+
+.no {
+	color: #f00000;
+	font-weight: bold;
+}
+
+
