@@ -57,6 +57,15 @@
 
 	<!-- Start Kivonatok -->
 	<div id="extra">
+		<!-- Start Col 0 -->
+		<div id="col">
+		<a href="features.php"><img src="common/images/index_h2_features.gif" width="141" height="54" alt="Features" border="0" /><br /><br />
+    <img src="flash/index_overview.png" width="138" height="90" alt="Features" border="0" />
+    <br /><br />
+		<div id="coltext">Read about the OMNEST simulation environment</a><br /><br /><br /></div>
+		</div>
+		<!-- End Col 0 -->
+
 		<!-- Start Col 1 -->
 		<div id="col">
 		<a href="network-simulation.php"><img src="common/images/index_h2_network_simulation.gif" width="141" height="54" alt="Network Simulation" border="0" /></a><br /><br />
@@ -73,7 +82,7 @@
 		<!-- End Col 1 -->
 
 		<!-- Start Col 2 -->
-		<div id="colcenter">
+		<div id="col">
 		<a href="discrete-event-simulation.php"><img src="common/images/index_h2_discrete_event.gif" width="140" height="54" alt="Discrete Event Simulation" border="0" /></a><br /><br />
 		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="138" height="90">
 		<param name=movie value="flash/02.swf">
@@ -88,7 +97,7 @@
 		<!-- End Col 2 -->
 
 		<!-- Start Col 3 -->
-		<div id="col">
+		<div id="lastcol">
 		<a href="embedding.php"><img src="common/images/index_h2_embedding.gif" width="139" height="54" alt="Embedding" border="0" /></a><br /><br /><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="138" height="90">
 		<param name=movie value="flash/03.swf">
 		<param name=quality value=high>

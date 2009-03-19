@@ -131,7 +131,7 @@ div#right {
 /*---------- · Index Kivonatok · ----------*/
 div#extra {
 	/*float: left;*/
-	width: 683px;
+	width: 860px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0px 0px 10px 0px;
@@ -139,15 +139,14 @@ div#extra {
 div#col {
 	float: left;
 	width: 142px;
+	border-right: dashed 1px;
+  border-color: gray;
+	padding: 0px 13px 0px 13px;
 }
-div#colcenter {
+div#lastcol {
 	float: left;
 	width: 142px;
-	border: solid 0px;
-	padding: 0px 27px 0px 27px;
-	background-image: url(../common/images/index_colcenter_bg.gif);
-	background-repeat: repeat-y;
-	background-position: center;
+	padding: 0px 13px 0px 13px;
 }
 div#coltext {
 	background-image: url(../common/images/index_list_bulett.gif);
