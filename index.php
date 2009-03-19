@@ -35,8 +35,8 @@
 			<p><b>OMNEST is used by researchers and R&amp;D engineers worldwide</b>
 			to investigate various scenarios and design alternatives:
 			architectural designs, wireless and wired protocols and networks,
-			queueing-based and other systems. OMNEST lets you build and evaluate simulations in
-			a world-class integrated Simulation IDE, and you can also embed simulations
+			queueing-based and other systems. OMNEST lets you build and evaluate simulations
+			in a world-class integrated Simulation IDE, and you can also embed simulations
 			in your own software products.</p>
 
 			<p>OMNEST is the commercial version of the
