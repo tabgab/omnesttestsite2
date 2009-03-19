@@ -55,13 +55,13 @@
               <td><span class="yes">yes</span></td>
           </tr>
           <tr>
-              <td>Support for Linux, Mac OS&nbsp;X, and Windows<sup>2</sup></td>
+              <td>Support for all major operating systems<sup>2</sup></td>
               <td><span class="yes">yes</span></td>
               <td><span class="yes">yes</span></td>
           </tr>
           <tr>
               <td>Windows installer</td>
-              <td><span class="yes">no</span></td>
+              <td><span class="no">no</span></td>
               <td><span class="yes">yes</span></td>
           </tr>
           <tr>
@@ -114,7 +114,7 @@
         <ul>
             <sup>1</sup> if you are unsure whether you need a commercial license, please check the <a href="licensingfaq.php">Licensing FAQ</a>
             <br/>
-            <sup>2</sup> these are IDE and supported simulation platforms; the simulation kernel and models may be compiled for other platforms as well
+            <sup>2</sup>the IDE is supported on Linux, Mac OS&nbsp;X, and Windows; the simulation kernel and models may be compiled for other platforms as well
             <br/>
             <sup>3</sup> for MinGW and recent versions of Visual C++
             <br/>
@@ -124,7 +124,7 @@
             <br/>
             <sup>6</sup> for models and sequence charts
             <br/>
-            <sup>7</sup> allows for mixing OMNEST/OMNeT++ and SystemC modules in the same simulation program
+            <sup>7</sup> allows for mixing OMNEST and SystemC modules in the same simulation program
             <br/>
             <sup>8</sup> supports reading network topology and configuration from database, and writing simulation results to database
         </ul>
