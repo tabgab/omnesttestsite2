@@ -61,7 +61,7 @@
           </tr>
           <tr>
               <td>Windows installer</td>
-              <td><span class="no">no</span></td>
+              <td><span class="no">no</span> (distributed as zip)</td>
               <td><span class="yes">yes</span></td>
           </tr>
           <tr>
@@ -114,13 +114,13 @@
         <ul>
             <sup>1</sup> if you are unsure whether you need a commercial license, please check the <a href="licensingfaq.php">Licensing FAQ</a>
             <br/>
-            <sup>2</sup>the IDE is supported on Linux, Mac OS&nbsp;X, and Windows; the simulation kernel and models may be compiled for other platforms as well
+            <sup>2</sup> the IDE is supported on Linux, Mac OS&nbsp;X and Windows; the simulation kernel and models can be compiled on other platforms as well
             <br/>
             <sup>3</sup> for MinGW and recent versions of Visual C++
             <br/>
             <sup>4</sup> including MinGW on Windows
             <br/>
-            <sup>5</sup> with OMNeT++, generated documentation will be placed under the <a href="http://creativecommons.org/" target="_blank">Creative Commons</a> license. OMNEST does not contain this limitation.
+            <sup>5</sup> with OMNeT++, generated documentation is under the <a href="http://creativecommons.org/" target="_blank">Creative Commons</a> license. OMNEST does not contain this limitation.
             <br/>
             <sup>6</sup> for models and sequence charts
             <br/>

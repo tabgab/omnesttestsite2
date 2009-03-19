@@ -25,15 +25,26 @@
 	<!-- Start Content -->
 	<div id="content">
 
-			<div id="header"><h1>OMNEST<sup>TM</sup> Simulation Environment</h1></div>
+			<div id="header"><h1>OMNEST<sup>TM</sup> - the simulator for all things in R&amp;D
+			<br/>
+			<font size="+1"><i>&nbsp;&nbsp;&nbsp;&nbsp;"OMNeT++ Enterprise Edition"</i></font>
+			</h1>
 
-			<p><b>OMNEST is an open, versatile, component-based simulation environment</b> with a modular
-			architecture, strong GUI support and an embeddable simulation kernel.
-			 Source code is provided to give you full control of your software.
-			 OMNEST is the commercial version of the powerful
+			</div>
+
+			<p><b>OMNEST is used by researchers and R&amp;D engineers worldwide</b>
+			to investigate various scenarios and design alternatives:
+			architectural designs, wireless and wired protocols and networks,
+			queueing-based and other systems. OMNEST lets you build and evaluate simulations in
+			a world-class integrated Simulation IDE, and you can also embed simulations
+			in your own software products.</p>
+
+			<p>OMNEST is the commercial version of the
 			<a href="http://www.omnetpp.org" target="_blank" class="kiemeles">OMNeT++</a>
-			simulation environment,	used worldwide at universities and research groups.
+			simulation environment, which is well known and widely used in academic and research
+			communities.
 			<a href="comparison.php">What's the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a></p>
+
 	</div>
 	<!-- End Content -->
 
