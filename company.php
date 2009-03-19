@@ -27,17 +27,28 @@
 
 			<div id="header"><h1>About Simulcraft Inc.</h1></div>
 
-<p>Simulcraft Inc. is the company behind OMNeT++, the public-source simulation framework, and its new incarnation OMNEST<SUP>TM</SUP>. András Varga has been developing the OMNeT++ simulation system since 1992, with web site and public releases since 1995. Simulcraft Inc. sells commercial licenses and provides support and consulting services for OMNeT++.</p>
+<p>Simulcraft Inc. is the company behind OMNeT++, the public-source simulation framework, and its new 
+incarnation OMNEST<SUP>TM</SUP>. András Varga has been developing the OMNeT++ simulation system since 
+1992, with web site and public releases since 1995. Simulcraft Inc. sells commercial licenses and provides 
+support and consulting services for OMNeT++.</p>
 
-<p>Starting with the 1st of October 2005, Simulcraft has taken over all the rights and obligations of its predecessor Omnest Global Inc. The change in ownership in the company is entirely transparent to customers. Simulcraft continues along the same principles, with the same people. The name and the registered state of the company behind OMNEST has changed, but our fundamental creed to serve our customers needs by creating the best possible simulation system has not changed at all.</p>
+<p>Simulcraft is one of the few companies which successfully blend the open-source approach with commercial 
+activities. We derive pride and satisfaction from being able serve the thousands of people -- students, 
+lecturers, researchers -- who are using OMNeT++ in the Academia. We strongly believe that one of the key 
+assets of OMNEST<SUP>TM</SUP> and OMNeT++ -- and our key to success -- is the Open Source approach and
+ a live and thriving User Community.</p>
 
-<p>Simulcraft is one of the few companies which successfully blend the open-source approach with commercial activities. We derive pride and satisfaction from being able serve the thousands of people -- students, lecturers, researchers -- who are using OMNeT++ in the Academia. We strongly believe that one of the key assets of OMNEST<SUP>TM</SUP> and OMNeT++ -- and our key to success -- is the Open Source approach and a live and thriving User Community.</p>
+<p>As a company, we are turning OMNeT++ into an industrial-strength, state of the art simulation framework, 
+and we provide commercial support for our product. We are committed to serving our commercial customers with 
+the same excellence that went into the design of OMNEST<SUP>TM</SUP>/OMNeT++. We are also ready to offer 
+consultancy regarding the use of our product.</p>
 
-<p>As a company, we are turning OMNeT++ into an industrial-strength, state of the art simulation framework, and we provide commercial support for our product. We are committed to serving our commercial customers with the same excellence that went into the design of OMNEST<SUP>TM</SUP>/OMNeT++. We are also ready to offer consultancy regarding the use of our product.</p>
+<p>Our vision is to become the leading provider of highly flexible and high-performance discrete event 
+simulation framework and kernel, targeted chiefly for embedding and brain-intensive R&D work. We regard 
+protocol design and the simulation of telecommunication networks as a prime application area for our 
+software, but by far not the only one.</p>
 
-<p>Our vision is to become the leading provider of highly flexible and high-performance discrete event simulation framework and kernel, targetted chiefly for embedding and brain-intensive R&D work. We regard protocol design and the simulation of telecommunication networks as a prime application area for our software, but by far not the only one.</p>
-
-<p>OMNeT++ (OMNEST) is copyright (c) 1992-2006 Andras Varga.</p>
+<p>OMNeT++ (OMNEST) is copyright (c) 1992-2009 Andras Varga, OpenSim Ltd.</p>
 
 
 <div id="separator"></div>
