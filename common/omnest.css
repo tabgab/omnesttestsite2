@@ -139,6 +139,7 @@ div#extra {
 div#col {
 	float: left;
 	width: 142px;
+  height: 270px;
 	border-right: dashed 1px;
   border-color: gray;
 	padding: 0px 13px 0px 13px;

@@ -59,10 +59,10 @@
 	<div id="extra">
 		<!-- Start Col 0 -->
 		<div id="col">
-		<a href="features.php"><img src="common/images/index_h2_features.gif" width="141" height="54" alt="Features" border="0" /><br /><br />
-    <img src="flash/index_overview.png" width="138" height="90" alt="Features" border="0" />
+		<a href="overview.php"><img src="common/images/index_h2_overview.gif" width="141" height="54" alt="Overview" border="0" /></a><br /><br />
+    <a href="overview.php"><img src="flash/index_overview.png" width="138" height="90" alt="Features" border="0" /></a>
     <br /><br />
-		<div id="coltext">Read about the OMNEST simulation environment</a><br /><br /><br /></div>
+		<a href="overview.php"><div id="coltext">Read about the OMNEST simulation environment</a></div>
 		</div>
 		<!-- End Col 0 -->
 
