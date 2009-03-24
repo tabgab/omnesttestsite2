@@ -52,8 +52,8 @@ if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"
 "Company: $company". $eol .
 "Position: $position". $eol .
 $eol .
-"OMNeT++ experience: ".  ($omnetpp_experience == "" ? "no": $omnetpp_experience). $eol .
-"C++ experience: " . ($cpp_experience == "" ? "no": $cpp_experience) . $eol .
+"OMNeT++ experience: ".  $omnetpp_experience . $eol .
+"C++ experience: " . $cpp_experience . $eol .
 $eol .
 "Interested in:". $eol .
 "       $price_list". $eol .

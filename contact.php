@@ -44,14 +44,14 @@
 </tr>
 
 <tr>
-<td align="right"></td><td>
-<input type="checkbox" name="omnetpp_experience" value="yes"/>I have experience with OMNeT++<br />
+<td align="right">OMNeT++ experience:</td><td>
+<select name="omnetpp_experience"><option>Select:</option><option>Yes</option><option>No</option></select><br />
 </td>
 </tr>
 
 <tr>
-<td align="right"></td><td>
-<input type="checkbox" name="cpp_experience" value="yes"/>I have C++ experience<br />
+<td align="right">C++ experience:</td><td>
+<select name="cpp_experience"><option>Select:</option><option>Yes</option><option>No</option></select><br />
 </td>
 </tr>
 
