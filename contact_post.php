@@ -56,13 +56,13 @@ $eol .
 "C++ experience: " . $cpp_experience . $eol .
 $eol .
 "Interested in:". $eol .
-($price_list != "" ? " $price_list". $eol : "") .
+($price_list != "" ? "  $price_list". $eol : "") .
 ($architecture_verification != "" ? "  $architecture_verification". $eol : "") .
 ($discrete_event_simulation != "" ? "  $discrete_event_simulation". $eol : "") .
 ($embedding != "" ? "  $embedding". $eol : "") .
 ($network_simulation != "" ? "  $network_simulation " . $eol : "") .
-($protocols != "" ? "  Protocols: $protocols". $eol : "") .
-"Message: $message", $headers)) { ?>
+($protocols != "" ? "    Protocols: $protocols". $eol : "") .
+$eol . "Message: $message", $headers)) { ?>
   	<b>Thank you for your interest in the OMNEST simulator.</b><br><br>We will get back to you with the requested information.<br>
 
 <!-- Google Code for LEAD Conversion Page -->
