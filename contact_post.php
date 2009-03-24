@@ -60,7 +60,7 @@ $eol .
 "	$architecture_verification". $eol .
 "	$discrete_event_simulation". $eol .
 "	$embedding". $eol .
-"	$network_simulation, Interested in: $protocols". $eol .
+"	$network_simulation Protocols: $protocols". $eol .
 "Message: $message", $headers)) { ?>
   	<b>Thank you for your interest in the OMNEST simulator.</b><br><br>We will get back to you with the requested information.<br>
 
