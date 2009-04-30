@@ -25,7 +25,7 @@
 	<!-- Start Content -->
 	<div id="content">
 
-			<div id="header"><h1>OMNEST<sup>TM</sup> - the simulator for all things in R&amp;D
+			<div id="header"><h1><b>OMNEST</b><sup>TM</sup> - The R&amp;D Simulator
 			<br/>
 			<font size="+1"><i>&nbsp;&nbsp;&nbsp;&nbsp;"OMNeT++ Enterprise Edition"</i></font>
 			</h1>
