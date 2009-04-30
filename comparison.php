@@ -94,11 +94,13 @@
               <td><span class="no">no</span></td>
               <td><span class="yes">yes</span></td>
           </tr>
+<!--
           <tr>
               <td>Database Integration<sup>8</sup></td>
               <td><span class="no">no</span></td>
               <td><span class="yes">yes</span></td>
           </tr>
+-->
           <tr>
               <td>Support</td>
               <td>informal, via the mailing list</td>
@@ -124,9 +126,11 @@
             <br/>
             <sup>6</sup> for models and sequence charts
             <br/>
-            <sup>7</sup> allows for mixing OMNEST and SystemC modules in the same simulation program
+            <sup>7</sup> allows for mixing OMNEST and SystemC modules in the same simulation program (for OMNEST 4.0 please request separately)
+<!--
             <br/>
             <sup>8</sup> supports reading network topology and configuration from database, and writing simulation results to database
+-->
         </ul>
 
 	</div>
