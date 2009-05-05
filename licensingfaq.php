@@ -267,6 +267,8 @@ my simulations in souce-code form?</p>
 intellectual property you produce in OMNEST is yours. You can
 distribute it on your own terms, or use it internally as you please.</p>
 
+<ul class="list01"><li><a href="comparison.php">See also: What is the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a></li></ul>
+
 	</div>
 	<!-- End Content -->
 	<!-- Start Right -->

@@ -104,7 +104,7 @@
           <tr>
               <td>Support</td>
               <td>informal, via the mailing list</td>
-              <td>guaranteed 24-hour email support</td>
+              <td>guaranteed 48-hour email support</td>
           </tr>
           <tr>
               <td>Service Releases</td>

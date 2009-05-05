@@ -80,12 +80,20 @@
 	<li><strong>Parallel simulation</strong><br />
 	Parallel simulation on clusters or multiprocessors, with MPI and powerful conservative synchronization. Using named pipes or other communication means instead of MPI is also possible.</li>
 
+	<li><strong>Real-time and hardware-in-the-loop simulation</strong><br />
+	</li>
+
+	<li><strong>SystemC integration</strong><br />
+	Allows for mixing OMNEST and SystemC modules in the same simulation program (for OMNEST 4.0 please request separately).</li>
+
+	<li><strong>Network emulation capabilities</strong><br />
+	Available as part of model packages like the INET Framework.</li>
+
 	<li><strong>Extensibility</strong><br />
-	C++ plug-in interfaces are made available to customize features of the simulation kernel.</li>
+	C++ plug-in interfaces are made available to customize various aspects of the simulation kernel.</li>
 
 	<li><strong>Database support</strong><br />
 	Network topology and model configuration may come from a database, and results can be recorded into a database -- without changing a line in the model itself.</li>
-
 </ul>
 
 
