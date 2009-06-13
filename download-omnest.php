@@ -9,7 +9,7 @@
 	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
-<meta http-equiv="refresh" content="2;url=http://www.omnetpp.org/filemgmt/visit.php?lid=163">
+<meta http-equiv="refresh" content="2;url=http://www.omnetpp.org/omnetpp/doc_download/2062-omnet-40-win32-source--ide--mingw-zip">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 <div id="header"><h1>Downloading OMNeT++</h1></div>
 <p>For evaluation purposes ONLY.</p>
 <p>Your download should begin shortly. If it does not, try
-clicking <a href="http://www.omnetpp.org/filemgmt/visit.php?lid=163">here</a>.</p>
+clicking <a href="http://www.omnetpp.org/omnetpp/doc_download/2062-omnet-40-win32-source--ide--mingw-zip">here</a>.</p>
 
 
 <br /><br />

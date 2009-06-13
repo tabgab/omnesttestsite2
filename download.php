@@ -46,7 +46,7 @@
 <br/>
 
 <a href="releasenotes.php"><strong>Release notes</strong></a>
-<p>For additional downloads please visit the <a href="http://www.omnetpp.org/filemgmt/viewcat.php?cid=2" target="_blank">OMNeT++ community site</a>.</p>
+<p>For additional downloads please visit the <a href="http://www.omnetpp.org/component/docman/cat_view/1-omnet-releases" target="_blank">OMNeT++ community site</a>.</p>
 
 <div id="separator"></div>
 
