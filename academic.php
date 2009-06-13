@@ -59,7 +59,7 @@ modify and redistribute copies of OMNeT++ as long as you stay
 non-commercial. The license ensures that if you decide to use OMNeT++ for
 research or in teaching, you will always have OMNeT++ to back it, whatever
 happens to our company. The full text of the license can be read on
-<a href="http://www.omnetpp.org/external/license.php" target="_blank">omnetpp.org</a>.</p>
+<a href="http://www.omnetpp.org/license" target="_blank">omnetpp.org</a>.</p>
 
 <ul class="list01"><li><a href="comparison.php">See also: What is the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a></li></ul>
 

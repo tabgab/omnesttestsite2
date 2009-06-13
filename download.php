@@ -85,7 +85,7 @@ full documentation and a Guided Tour for the INET Framework.
 <!-- End Button -->
 <br/>
 
-<p>For additional downloads please visit the <a href="http://www.omnetpp.org/filemgmt/viewcat.php?cid=8" target="_blank">OMNeT++ community site</a>.</p>
+<p>For additional downloads please visit the <a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ community site</a>.</p>
 
 <br/>
 	</div>

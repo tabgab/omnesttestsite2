@@ -36,7 +36,7 @@
           <tr> <th></th>  <th width="25%">OMNeT++</th>  <th width="25%">OMNEST</th> </tr>
           <tr>
               <td>License</td>
-              <td><a href="http://www.omnetpp.org/external/license.php" target="_blank">Academic Public License</a><sup>1</sup></td>
+              <td><a href="http://www.omnetpp.org/license" target="_blank">Academic Public License</a><sup>1</sup></td>
               <td><a href="license.php" target="_blank">Commercial License</a></td>
           </tr>
           <tr>

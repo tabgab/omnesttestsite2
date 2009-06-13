@@ -46,7 +46,7 @@ is support for real-time simulation and network emulation as well.</p>
 
 <ul class="list01">
 
-<li><a href="http://www.inet.omnetpp.org" target="_blank" class="kiemeles">INET Framework</a> -
+<li><a href="http://inet.omnetpp.org" target="_blank" class="kiemeles">INET Framework</a> -
 supports&nbsp;ad-hoc, wireless and wired (LAN, WAN) simulations (802.11,
 Ethernet, TCP, IP, IPv6, OSPF, MPLS, RSVP, and other protocols)</li>
 
@@ -87,7 +87,7 @@ class="kiemeles">SimSANs</a> - for simulating Storage Area Networks </li>
 
 </ul>
 
-<a href="http://www.omnetpp.org/staticpages/index.php?page=20031008083109542"
+<a href="http://www.omnetpp.org/models"
 target="_blank">See other models and frameworks on omnetpp.org</a><img
 src="common/images/list_02.gif" alt="" />
 
