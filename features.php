@@ -84,7 +84,10 @@
 	</li>
 
 	<li><strong>SystemC integration</strong><br />
-	Allows for mixing OMNEST and SystemC modules in the same simulation program (for OMNEST 4.0 please request separately).</li>
+	Allows for mixing OMNEST and SystemC modules in the same simulation program (for OMNEST 4.0; please request separately).</li>
+
+	<li><strong>HLA support</strong><br />
+	Allows for connecting OMNEST with other simulators via HLA / IEEE 1516. (for OMNEST 4.0; please request separately).</li>
 
 	<li><strong>Network emulation capabilities</strong><br />
 	Available as part of model packages like the INET Framework.</li>
