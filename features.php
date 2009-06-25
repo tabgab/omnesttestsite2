@@ -42,7 +42,7 @@
 	Atomic components are programmed in C++, using a well-defined API to the simulation library. The use of C++, together with the streamlined simulation kernel, provides high event/sec throughput.</li>
 
 	<li><strong>Wide range of applicability</strong><br />
-	OMNEST/MNeT++ has proven itself in the simulation of queuing networks, business processes and high-level architectures. In the academia, it is mostly used for simulating wired and wireless communication networks.</li>
+	OMNEST/OMNeT++ has proven itself in the simulation of queuing networks, business processes and high-level architectures. In the academia, it is mostly used for simulating wired and wireless communication networks.</li>
 
 	<li><strong>Models are self-documenting</strong><br />
 	The documentation tool generates high-quality documentation from commented model source code, with diagrams, tables and cross-references. Integrates well with the Doxygen C++ documentation tool.</li>
