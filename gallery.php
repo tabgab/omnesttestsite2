@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Simulcraft Inc.</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
@@ -738,6 +739,7 @@ function oops($msg) {
 ?>
 <html>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>phpSimpleGallery Error</title>
 </head>
 <body>

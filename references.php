@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Simulcraft Inc.</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
@@ -190,7 +191,7 @@
 
   <tr>
     <td align="center"><a href="http://www.creditlyonnais.com/" target="_blank"><img src="references/cl.gif" border="0"></a></td>
-    <td><p><a href="http://www.creditlyonnais.com/" target="_blank">Crédit Lyonnais</a> selected <a href="http://www.mega.com/" target="_blank">MEGA</a>
+    <td><p><a href="http://www.creditlyonnais.com/" target="_blank">Cr&eacute;dit Lyonnais</a> selected <a href="http://www.mega.com/" target="_blank">MEGA</a>
 
     to map and simulate its customer processes. The results of the simulation are used to manage activities
     with a view to improving the company's performance and customer satisfaction.<br>

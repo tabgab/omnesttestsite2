@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Simulcraft Inc.</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
@@ -51,7 +52,7 @@ developer of the MEGA software suite.</p>
 partnership is destined to be a very productive one. MEGA International has a wealth of experience in the business
 process arena, while our simulation technology is versatile and open enough to be easily applied by them. This deal
 will serve the benefit of all MEGA customers, and we will do all that we can to help MEGA integrate our engine into
-their products." - said András Varga, author of OMNEST. when questioned on the deal.</p>
+their products." - said Andr&aacute;s Varga, author of OMNEST. when questioned on the deal.</p>
 
 <p>"This partnership with MEGA International expands the application radius of OMNEST&#8482; simulation technology by a fat mile.
 This is a classical win-win scenario, and one we will be looking to repeat as often as possible. We will continue to
@@ -59,7 +60,7 @@ focus on our core segment, to provide the best simulation technology to IT profe
 clearly evident, that the technology itself is capable of serving a variety of different markets equally well. We will
 keep a lookout for opportunities to partner with experts of different fields where Simulcraft is not directly
 involved, but the technology could provide benefits to customers of companies already acquainted with other markets
-where simulation can be of benefit to the overall product offering." - said Gábor Tabi</p>
+where simulation can be of benefit to the overall product offering." - said G&aacute;bor Tabi</p>
 
 <p><small> About MEGA: <br/> MEGA International
 (<a href="http://www.mega.com/" target="_blank">www.mega.com</a>) is the leading independent provider of Business Process

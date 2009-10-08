@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Simulcraft Inc.</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
@@ -42,27 +43,40 @@ $architecture_verification = $_POST['architecture_verification'];
 $discrete_event_simulation = $_POST['discrete_event_simulation'];
 $embedding = $_POST['embedding'];
 $message = $_POST['message'];
-$headers = "From: \"Omnest web contact form on behalf of $name\" <$email>\r\n" .
-           "Reply-To: \"$name\" <$email>";
 
-if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)) {
+if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email))
+{
+    $headers =
+        'MIME-Version: 1.0' . "\r\n" .
+        'Content-type: text/plain; charset=UTF-8' . "\r\n".
+        'Content-Transfer-Encoding: 8bit' . "\r\n".
+        'From: '.'=?UTF-8?B?'.base64_encode("Omnest web contact form on behalf of $name")."?="." <$email>" . "\r\n" .
+        'Reply-To: '.'=?UTF-8?B?'.base64_encode("\"$name\"")."?="." <$email>" . "\r\n";
 
-  if(mail("contact@omnest.com","Omnest web contact","Name: $name". $eol .
-"E-mail:  $email". $eol .
-"Company: $company". $eol .
-"Position: $position". $eol .
-$eol .
-"OMNeT++ experience: ".  $omnetpp_experience . $eol .
-"C++ experience: " . $cpp_experience . $eol .
-$eol .
-"Interested in:". $eol .
-($price_list != "" ? "  $price_list". $eol : "") .
-($architecture_verification != "" ? "  $architecture_verification". $eol : "") .
-($discrete_event_simulation != "" ? "  $discrete_event_simulation". $eol : "") .
-($embedding != "" ? "  $embedding". $eol : "") .
-($network_simulation != "" ? "  $network_simulation " . $eol : "") .
-($protocols != "" ? "    Protocols: $protocols". $eol : "") .
-$eol . "Message: $message", $headers)) { ?>
+    $body =
+        "Name: $name". $eol .
+        "E-mail:  $email". $eol .
+        "Company: $company". $eol .
+        "Position: $position". $eol .
+        $eol .
+        "OMNeT++ experience: ".  $omnetpp_experience . $eol .
+        "C++ experience: " . $cpp_experience . $eol .
+        $eol .
+        "Interested in:". $eol .
+        ($price_list != "" ? "  $price_list". $eol : "") .
+        ($architecture_verification != "" ? "  $architecture_verification". $eol : "") .
+        ($discrete_event_simulation != "" ? "  $discrete_event_simulation". $eol : "") .
+        ($embedding != "" ? "  $embedding". $eol : "") .
+        ($network_simulation != "" ? "  $network_simulation " . $eol : "") .
+        ($protocols != "" ? "    Protocols: $protocols". $eol : "") .
+        $eol .
+        "Message: $message";
+
+    $destaddr = "contact@omnest.com";
+
+    if(mail($destaddr, "Omnest web contact", $body, $headers))
+    {
+?>
   	<b>Thank you for your interest in the OMNEST simulator.</b><br><br>We will get back to you with the requested information.<br>
 
 <!-- Google Code for LEAD Conversion Page -->
@@ -85,9 +99,9 @@ var google_conversion_label = "LEAD";
 </noscript>
 
 <?php
-  } else {
-  	echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
-  }
+    } else {
+        echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
+    }
 
 } else {
   echo "Please provide a valid email address so that we can contact you.";

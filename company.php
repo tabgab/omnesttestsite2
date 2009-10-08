@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Simulcraft Inc.</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
@@ -28,7 +29,7 @@
 			<div id="header"><h1>About Simulcraft Inc.</h1></div>
 
 <p>Simulcraft Inc. is the company behind OMNeT++, the public-source simulation framework, and its new
-incarnation OMNEST<SUP>TM</SUP>. András Varga has been developing the OMNeT++ simulation system since
+incarnation OMNEST<SUP>TM</SUP>. Andr&aacute;s Varga has been developing the OMNeT++ simulation system since
 1992, with web site and public releases since 1995. Simulcraft Inc. sells commercial licenses and provides
 support and consulting services for OMNeT++.</p>
 
