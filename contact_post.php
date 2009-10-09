@@ -44,14 +44,16 @@ $discrete_event_simulation = $_POST['discrete_event_simulation'];
 $embedding = $_POST['embedding'];
 $message = $_POST['message'];
 
+// if the form is modified you should modify also the corresponding parser in sugarcrm (modules/Omnst_OppWebForm/OmnetMailParser.php)
+
 if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email))
 {
     $headers =
-        'MIME-Version: 1.0' . "\r\n" .
-        'Content-type: text/plain; charset=UTF-8' . "\r\n".
-        'Content-Transfer-Encoding: 8bit' . "\r\n".
-        'From: '.'=?UTF-8?B?'.base64_encode("Omnest web contact form on behalf of $name")."?="." <$email>" . "\r\n" .
-        'Reply-To: '.'=?UTF-8?B?'.base64_encode("\"$name\"")."?="." <$email>" . "\r\n";
+        'MIME-Version: 1.0' . $eol .
+        'Content-type: text/plain; charset=UTF-8' . $eol .
+        'Content-Transfer-Encoding: 8bit' . $eol .
+        'From: '.'=?UTF-8?B?'.base64_encode("Omnest web contact form on behalf of $name")."?="." <$email>" . $eol .
+        'Reply-To: '.'=?UTF-8?B?'.base64_encode("\"$name\"")."?="." <$email>" . $eol;
 
     $body =
         "Name: $name". $eol .
