@@ -60,7 +60,7 @@
     <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
     </li>
     <li><a href="/download/commercial4/omnest-4.0p1-src.tgz">OMNEST 4.0p1 for Linux, Mac OS X (TGZ) - 120Mb</a><br/>
-    <small>md5sum: c4096ea16b4e6927f428288af2ceec61</small>
+    <small>md5sum: d7b4e5a584d532e42f1656f96bc83fda</small>
     </li>
 </ul>
 <p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
