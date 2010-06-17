@@ -22,8 +22,6 @@
 </div>
 	<!-- End Main Menu -->
 
-
-
 	<div style="clear: both;">
 
 	<!-- Start Content -->
@@ -39,7 +37,7 @@
 <!-- Start Button -->
 <table cellspacing="0" cellpadding="0">
   <tr><td id="button-left"/><td id="button">
-    <a href="download-omnest.php"><strong>Download OMNeT++ 4.0</strong><br />
+    <a href="download-omnest.php"><strong>Download OMNeT++ 4.1</strong><br />
 		(Windows zip)</a>
   </td><td id="button-right"/></tr>
 </table>
@@ -53,19 +51,21 @@
 
 <h2>Commercial edition (password protected)</h2>
 
-<h3>Latest stable version: 4.0</h3>
+<h3>Latest stable version: 4.1</h3>
 <a href="releasenotes.php"><strong>Release notes</strong></a>
 <ul class="list03">
-    <li><a href="/download/commercial4/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer) - 231Mb</a><br/>
-    <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
+    <li><a href="/download/commercial4/omnest-4.1-win32.exe">OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
+    <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.0p1-src.tgz">OMNEST 4.0p1 for Linux, Mac OS X (TGZ) - 120Mb</a><br/>
-    <small>md5sum: d7b4e5a584d532e42f1656f96bc83fda</small>
+    <li><a href="/download/commercial4/omnest-4.1-src.tgz">OMNEST 4.1 for Linux, Mac OS X (TGZ) - 142Mb</a><br/>
+    <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
     </li>
 </ul>
 <p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
 <a href="download-previous.php">Older versions can be found here.</a>
 </p>
+
+<!-- temporarily disabled 
 <div id="separator"></div>
 <h2>Simulation models</h2>
 
@@ -76,15 +76,16 @@ IEEE 802.11 and several other protocols you might need.
 <p>We have executable demo simulations for several model frameworks. The package includes
 full documentation and a Guided Tour for the INET Framework.
 </p>
-<!-- Start Button -->
+
 <table cellspacing="0" cellpadding="0">
   <tr><td id="button-left"/><td id="button">
     <a href="download-demosim.php"><strong>Download OMNEST 3.3 Demo Simulations</strong><br />
 		(Windows installer)</a>
   </td><td id="button-right"/></tr>
 </table>
-<!-- End Button -->
+
 <br/>
+-->
 
 <p>For additional downloads please visit the <a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ community site</a>.</p>
 

@@ -36,6 +36,15 @@
 <h3>Previous versions</h3>
 <ul class="list03">
 
+    <li><a href="/download/commercial4/omnest-4.0-win32.exe">OMNEST 4.0 for Windows (installer) - 231Mb</a><br/>
+    <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
+    </li>
+    <li><a href="/download/commercial4/omnest-4.0p1-src.tgz">OMNEST 4.0p1 for Linux, Mac OS X (TGZ) - 120Mb</a><br/>
+    <small>md5sum: d7b4e5a584d532e42f1656f96bc83fda</small>
+    </li>
+
+    <div id="separator"></div>
+
     <li><a href="/download/commercial/omnest-3.3-src.tgz">OMNEST 3.3 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.3p1-src.tgz">OMNEST 3.3p1 src (all platforms)</a></li>
     <li><a href="/download/commercial/omnest-3.3-win32.exe">OMNEST 3.3 Win32 installer</a></li>
