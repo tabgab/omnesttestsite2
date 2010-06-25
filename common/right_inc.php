@@ -10,9 +10,7 @@
 		</object><br /><br />
 	<a href="web-demos.php"><img src="common/images/right_watch_demo.gif" width="150" height="110" alt="" border="0" /></a><br /><br />
 	<a href="contact.php"><img src="common/images/right_contact.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
-<!--
 	<a href="download-demosim.php"><img src="common/images/right_download_demo.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
--->
 	<a href="download.php"><img src="common/images/right_download.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
 	<a href="licensingfaq.php"><img src="common/images/right_faq.gif" width="150" height="83" alt="" border="0" /></a><br /><br />
 	</div>

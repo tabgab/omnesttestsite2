@@ -10,7 +10,6 @@
 	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
-<meta http-equiv="refresh" content="2;url=download/free/OMNESTDemo-3.2.1.exe">
 </head>
 
 <body>
@@ -23,26 +22,33 @@
 </div>
 	<!-- End Main Menu -->
 
-
-
 	<div style="clear: both;">
 
 	<!-- Start Content -->
 	<div id="container">
 
 
-<div id="header"><h1>Downloading Demo Simulations</h1></div>
+<div id="header"><h1>Downloading OMNEST Demo</h1></div>
 
-<p>OMNESTDemo-3.2.1 contains demo simulations, documentation and tutorials for:</p>
+<p>This download is a pre-configured Live CD Image that contains the following components:</p>
 
 <ul>
- <li>OMNEST 3.2++</li>
- <li>INET Framework 20061020</li>
- <li>Mobility Framework 1.0a1</li>
- <li>SimSANs 2.0</li>
+ <li>SliTaz GNU/Linux distribution</li>
+ <li>gcc compiler and the gdb debugger</li>
+ <li>OMNEST 4.1 Integrated Development Environment</li>
+ <li>Full Documetation</li>
+ <li>Pre-compiled OMNEST Simulation Libraries</li>
+ <li>Pre-compiled Simulation Samples</li>
 </ul>
 
-<p>Your download should begin shortly. If it does not, click <a href="download/free/OMNESTDemo-3.2.1.exe">here</a>.</p>
+<p>You can download this ISO image and burn it to a CD, but we recommend that you try it in a virtual machine.</p>
+<p>Download <a href="http://www.virtualbox.org/" target="_blank">VirtualBox</a> or 
+<a href="http://www.vmware.com/products/player/" target="_blank">VMware Player</a>. Setup a new virtual machine at
+least with 1.5GB system memory and mount the downloaded ISO image in the CDROM device.
+Start the virtual machine.</p> 
+<p>This image is a Live CD running only from the RAM. It will not write anything to your hard disk.</p>
+
+<p>Download the <a href="download/free/omnest41-demo.iso">OMNEST 4.1 Demo</a> now!</p>
 
 
 <!-- Google Code for DEFAULT Conversion Page -->
