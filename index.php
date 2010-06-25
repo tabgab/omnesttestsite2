@@ -112,9 +112,11 @@
 		<!-- End Col 3 -->
 	</div>
 	<!-- End Kivonatok -->
-
+ 
 	<br>
-	<embed src="flash/OMNEST4.0_released.swf" menu="false" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="690" height="80">
+	<a href="http://www.omnest.com/visualchangelog.php">
+	<img src="pictures/omnest4.1.1.gif"  alt= "OMNEST 4.1 released" border="0">
+	</a>
 
 		</div>
 

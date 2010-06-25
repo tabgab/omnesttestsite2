@@ -72,6 +72,12 @@ ul.list03 {
 	list-style-image: url(../common/images/list_03.gif);
 }
 
+ul.list04 {
+	list-style-image: url(../common/images/list_03.gif);
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 14px;
+}
+
 li {
 	margin: 8px 0px 8px 0px;
 }
