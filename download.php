@@ -28,26 +28,24 @@
 	<div id="content">
 
 <div id="header"><h1>Download</h1></div>
-
+<!--
 <h2>Academic / Evaluation version</h2>
 
 <p>Currently OMNeT++ doubles as the evaluation version of OMNEST<sup>TM</sup>.
 <a href="comparison.php">What's the difference between OMNeT++ and OMNEST?</a></p>
 
-<!-- Start Button -->
 <table cellspacing="0" cellpadding="0">
   <tr><td id="button-left"/><td id="button">
-    <a href="download-omnest.php"><strong>Download OMNeT++ 4.1</strong><br />
-		(Windows zip)</a>
+    <a href="download-omnest.php"><strong>Download OMNeT++ 4.1</strong><br /> (Windows zip)</a>
   </td><td id="button-right"/></tr>
 </table>
-<!-- End Button -->
 <br/>
 
 <a href="releasenotes.php"><strong>Release notes</strong></a>
 <p>For additional downloads please visit the <a href="http://www.omnetpp.org/component/docman/cat_view/1-omnet-releases" target="_blank">OMNeT++ community site</a>.</p>
 
 <div id="separator"></div>
+-->
 
 <h2>Commercial edition (password protected)</h2>
 

@@ -9,102 +9,96 @@
 	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
 	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-
 </head>
 
 <body>
 
 <!-- Start Container -->
 <div id="container">
-
 <?php include("common/top_inc.php"); ?>
-
 </div>
 	<!-- End Main Menu -->
 
 	<div style="clear: both;">
 
 	<!-- Start Content -->
-	<div id="container">
+	<div id="content">
 
 
-<div id="header"><h1>Downloading OMNEST Demo</h1></div>
+<div id="header"><h1>Downloading OMNEST Evaluation Version</h1></div>
 
-<p>This download is a pre-configured Live CD Image that contains the following components:</p>
+<p>This download is a Live CD image that contains a fully functional OMNEST installation.
+You can run and modify all the provided samples and create your own small simulations.</p>
 
+<p>Limitations of the evaluation version:</p>
 <ul>
- <li>SliTaz GNU/Linux distribution</li>
- <li>gcc compiler and the gdb debugger</li>
- <li>OMNEST 4.1 Integrated Development Environment</li>
- <li>Full Documetation</li>
- <li>Pre-compiled OMNEST Simulation Libraries</li>
- <li>Pre-compiled Simulation Samples</li>
+ <li>No source code is provided for the simulaion kernel.</li>
+ <li>Simulations are limited to 10.000.000 events and 1000 modules.</li>
 </ul>
 
+
+<table cellspacing="0" cellpadding="0">
+  <tr>
+	<td><img src="common/images/live-cd.png"/></td>
+	<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td id="button-left" style="vertical-align: middle"/>
+		<td id="button"><a href="download/free/omnest41-demo.iso"><strong>Download OMNEST 4.1 Demo</strong></a></td>
+		<td id="button-right"/></tr>
+		</table>
+	</td>
+  </tr>
+</table>
+
+<br/>
 <p>You can download this ISO image and burn it to a CD, but we recommend that you try it in a virtual machine.</p>
 <p>Download <a href="http://www.virtualbox.org/" target="_blank">VirtualBox</a> or 
-<a href="http://www.vmware.com/products/player/" target="_blank">VMware Player</a>. Setup a new virtual machine at
-least with 1.5GB system memory and mount the downloaded ISO image in the CDROM device.
+<a href="http://www.vmware.com/products/player/" target="_blank">VMware Player</a>. Setup a new virtual machine with 
+at least 1.5GB system memory and mount the downloaded ISO image in the CDROM device.
 Start the virtual machine.</p> 
-<p>This image is a Live CD running only from the RAM. It will not write anything to your hard disk.</p>
-
-<p>Download the <a href="download/free/omnest41-demo.iso">OMNEST 4.1 Demo</a> now!</p>
-
+<small>This image is a Live CD running only from the system RAM. It will not write anything to your hard disk. This means that
+files written to the filesystem will be deleted upon shutdown. If you want to keep your files, we recommend to 'suspend'
+your virtual machine instead of shutting down.
+<br/>
+<br/>
+You can bookmark this page now, so you will be able to re-download the evalutation version any time.</small>
 
 <!-- Google Code for DEFAULT Conversion Page -->
-
 <script language="JavaScript" type="text/javascript">
 
 <!--
-
 var google_conversion_id = 1067620223;
-
 var google_conversion_language = "en_US";
-
 var google_conversion_format = "1";
-
 var google_conversion_color = "f2f2f2";
 
 if (1) {
-
   var google_conversion_value = 1;
-
 }
 
 var google_conversion_label = "DEFAULT";
-
 //-->
 
 </script>
-
 <script language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js">
-
 </script>
 
 <noscript>
-
 <img height=1 width=1 border=0 src="http://www.googleadservices.com/pagead/conversion/1067620223/?value=1&label=DEFAULT&script=0">
-
 </noscript>
-<br /><br />
 
+<br /><br />
 	</div>
 	<!-- End Content -->
 
 	<!-- Start Right -->
+	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
-
-
-
-		</div>
-
+	</div>
 </div>
 
 <!-- End Container -->
-
-
 <?php include("common/footer_inc.php"); ?>
-
-
 </body>
 </html>
