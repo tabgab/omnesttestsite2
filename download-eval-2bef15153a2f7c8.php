@@ -36,6 +36,7 @@ You can run and modify all the provided samples and create your own small simula
  <li>Simulations are limited to 10.000.000 events and 1000 modules.</li>
 </ul>
 
+<p>If you need an unlimited version of OMNEST for your evaluation, please <a href="contact.php">contact us</a>.</p>
 
 <table cellspacing="0" cellpadding="0">
   <tr>
