@@ -1,0 +1,1 @@
+Opening a module shows it's internal topology

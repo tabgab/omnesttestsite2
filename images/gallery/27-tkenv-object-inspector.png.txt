@@ -1,0 +1,1 @@
+Object inspector showing the internal state of the component
