@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 <!--
@@ -102,7 +102,7 @@ $config['internalDisplay'] = true;
 $config['sortOrder'] = "nameASC"; //Defaulted to show newest images first.
 
 // folder where full size images are stored (include trailing slash)
-$config['fulls']="Images/";
+$config['fulls']="images/gallery";
 
 // name of subfolder where thumbnails are to be created
 $config['thumbs'] = $config['fulls']."Thumbs";

@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -36,7 +36,7 @@
 
   <tr>
     <td align="center"><a href="http://www.qualcomm.com/" target="_blank"><img src="references/qualcomm.gif" border="0"></a></td>
-    <td><p>Researchers are using Oversim P2P Simulator (<a href="http://www.oversim.org/" target="_blank">www.oversim.org</a>) 
+    <td><p>Researchers are using Oversim P2P Simulator (<a href="http://www.oversim.org/" target="_blank">www.oversim.org</a>)
       on top of OMNEST at <a href="http://www.qualcomm.com/" target="_blank">Qualcomm</a> to simulate various network scenarios.</p>
     </td>
   </tr>
@@ -45,9 +45,9 @@
 
   <tr>
     <td align="center"><a href="http://www.mellanox.com/" target="_blank"><img src="references/mellanox.gif" border="0"></a></td>
-    <td><p><a href="http://www.mellanox.com/" target="_blank">Mellanox Technologies</a>, the leading provider of Infiniband 
-      technology are using OMNEST in their research. They have released their own Infiniband model for 
-      OMNEST/OMNeT++ users. The model can be downloaded from our community site, 
+    <td><p><a href="http://www.mellanox.com/" target="_blank">Mellanox Technologies</a>, the leading provider of Infiniband
+      technology are using OMNEST in their research. They have released their own Infiniband model for
+      OMNEST/OMNeT++ users. The model can be downloaded from our community site,
       <a href="http://www.omnetpp.org/omnetpp/doc_details/2070-infiniband" target="_blank">here</a>.</p>
     </td>
   </tr>

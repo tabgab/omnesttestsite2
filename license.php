@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -37,31 +37,31 @@
 NOTICE: THIS SOFTWARE PRODUCT (TOGETHER WITH ITS ACCOMPANYING
 DOCUMENTATION, THE "PRODUCT") IS THE PROPERTY OF OPENSIM LTD.
 SOFTWARE CORPORATION ("OPENSIM LTD."). THE PRODUCT IS MADE AVAILABLE
-TO YOU, THE ORIGINAL PURCHASER, SUBJECT TO THE FOLLOWING LICENSE 
-AGREEMENT ("LICENSE"). PLEASE READ THIS LICENSE CAREFULLY BEFORE 
-INSTALLING OR USING THE PRODUCT. A COPY OF THIS LICENSE IS AVAILABLE 
-FOR YOUR FUTURE REFERENCE IN THE "LICENSE.HTML" FILE PROVIDED WITH THE 
+TO YOU, THE ORIGINAL PURCHASER, SUBJECT TO THE FOLLOWING LICENSE
+AGREEMENT ("LICENSE"). PLEASE READ THIS LICENSE CAREFULLY BEFORE
+INSTALLING OR USING THE PRODUCT. A COPY OF THIS LICENSE IS AVAILABLE
+FOR YOUR FUTURE REFERENCE IN THE "LICENSE.HTML" FILE PROVIDED WITH THE
 PRODUCT.
 
-YOU MAY ACCEPT THIS LICENSE BY INSTALLING AND USING OMNEST. IF YOU DO 
-NOT ACCEPT THIS LICENSE, THEN YOU MAY NOT INSTALL OR USE THE PRODUCT. 
-IN THAT CASE, YOU MAY, WITHIN TEN (10) DAYS AFTER YOU FIRST RECEIVED 
-THE PRODUCT, RETURN IT TO OPENSIM LTD. OR YOUR OMNEST AUTHORIZED 
-RESELLER,  ALONG WITH ITS ORIGINAL PACKAGING AND PROOF-OF-PURCHASE, FOR 
-A FULL REFUND. ANY USE BY YOU OF THIS PRODUCT ALSO CONSTITUTES YOUR 
+YOU MAY ACCEPT THIS LICENSE BY INSTALLING AND USING OMNEST. IF YOU DO
+NOT ACCEPT THIS LICENSE, THEN YOU MAY NOT INSTALL OR USE THE PRODUCT.
+IN THAT CASE, YOU MAY, WITHIN TEN (10) DAYS AFTER YOU FIRST RECEIVED
+THE PRODUCT, RETURN IT TO OPENSIM LTD. OR YOUR OMNEST AUTHORIZED
+RESELLER,  ALONG WITH ITS ORIGINAL PACKAGING AND PROOF-OF-PURCHASE, FOR
+A FULL REFUND. ANY USE BY YOU OF THIS PRODUCT ALSO CONSTITUTES YOUR
 ACCEPTANCE OF THESE TERMS.
 
-OPENSIM LTD. is only willing to grant you this License if you obtained 
-the PRODUCT from OPENSIM LTD. or an OPENSIM LTD. authorized reseller. If 
-you obtained the PRODUCT from any other source, you may not install or 
+OPENSIM LTD. is only willing to grant you this License if you obtained
+the PRODUCT from OPENSIM LTD. or an OPENSIM LTD. authorized reseller. If
+you obtained the PRODUCT from any other source, you may not install or
 use the PRODUCT.
 
-SIMULCRAFT is the exclusive worldwide commercial sublicenser of the 
-PRODUCT, and as such has all rights to sublicense the PRODUCT to end 
+SIMULCRAFT is the exclusive worldwide commercial sublicenser of the
+PRODUCT, and as such has all rights to sublicense the PRODUCT to end
 users and developers without restriction.
 
 1.      Ownership.  The PRODUCT is proprietary to OPENSIM LTD. The
-PRODUCT is licensed, not sold, to you notwithstanding any reference 
+PRODUCT is licensed, not sold, to you notwithstanding any reference
 herein to "purchases." You acknowledge and agree that: (a) the PRODUCT
 is protected under International copyright and other laws; (b) OPENSIM
 LTD. and its licensors retain all copyrights and other intellectual

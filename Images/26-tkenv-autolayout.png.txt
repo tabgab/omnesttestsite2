@@ -1,1 +1,0 @@
-Large graphs can be layouted automatically

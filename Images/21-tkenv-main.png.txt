@@ -1,1 +1,0 @@
-Simulation main window, showing module hierarchy, event timeline, and log

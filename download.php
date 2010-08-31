@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -28,42 +28,29 @@
 	<div id="content">
 
 <div id="header"><h1>Download</h1></div>
-<!--
-<h2>Academic / Evaluation version</h2>
 
-<p>Currently OMNeT++ doubles as the evaluation version of OMNEST<sup>TM</sup>.
-<a href="comparison.php">What's the difference between OMNeT++ and OMNEST?</a></p>
 
-<table cellspacing="0" cellpadding="0">
-  <tr><td id="button-left"/><td id="button">
-    <a href="download-omnest.php"><strong>Download OMNeT++ 4.1</strong><br /> (Windows zip)</a>
-  </td><td id="button-right"/></tr>
-</table>
-<br/>
-
-<a href="releasenotes.php"><strong>Release notes</strong></a>
-<p>For additional downloads please visit the <a href="http://www.omnetpp.org/component/docman/cat_view/1-omnet-releases" target="_blank">OMNeT++ community site</a>.</p>
-
-<div id="separator"></div>
--->
-
-<h2>Commercial edition (password protected)</h2>
+<h2>Commercial Edition (password-protected)</h2>
 
 <h3>Latest stable version: 4.1</h3>
-<a href="releasenotes.php"><strong>Release notes</strong></a>
+<a href="whatsnew-41.php">What's new in OMNEST 4.1?</a>
+
 <ul class="list03">
-    <li><a href="/download/commercial4/omnest-4.1-win32.exe">OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.1-win32.exe" onClick="javascript: pageTracker._trackPageview(this.href);">OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
     <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.1-src.tgz">OMNEST 4.1 for Linux, Mac OS X (TGZ) - 142Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.1-src.tgz" onClick="javascript: pageTracker._trackPageview(this.href);">OMNEST 4.1 for Linux, Mac OS X (TGZ) - 142Mb</a><br/>
     <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
     </li>
+    <li><a href="/download/commercial4/InstallGuide-41.pdf" onClick="javascript: pageTracker._trackPageview(this.href);">Installation Guide (PDF)</a><br/>
+    </li>
 </ul>
+
 <p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
 <a href="download-previous.php">Older versions can be found here.</a>
 </p>
 
-<!-- temporarily disabled 
+<!-- TODO temporarily disabled
 <div id="separator"></div>
 <h2>Simulation models</h2>
 
@@ -85,7 +72,14 @@ full documentation and a Guided Tour for the INET Framework.
 <br/>
 -->
 
-<p>For additional downloads please visit the <a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ community site</a>.</p>
+<img src="common/images/list_01.gif" alt="" border="0">
+For additional downloads please visit the <a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ community site</a>.
+<br>
+<br>
+
+<img src="common/images/list_01.gif" alt="" border="0">
+Do not have an OMNEST License yet? Try the <a href="download-eval.php">Evaluation Version!</a>
+<br><br><br><br>
 
 <br/>
 	</div>

@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -19,7 +19,7 @@
 
 <?php include("common/top_inc.php"); ?>
 
-	<!-- Start Minimenu --><div id="minimenu"><a href="network-simulation.php"><img src="common/images/minimenu_network.gif" width="118" height="44" alt="Network Simulation" border="0" /></a><a href="discrete-event-simulation.php"><img src="common/images/minimenu_discreteevent.gif" width="118" height="44" alt="Discrete Event Simulation" border="0" /></a></div><!-- End Minimenu -->
+	<?php minimenu(array('overview', 'architecture-verification', 'performance-modeling', 'network-simulation')); ?>
 	</div>
 	<!-- End Main Menu -->
 
@@ -30,19 +30,26 @@
 	<!-- Start Content -->
 	<div id="content">
 
-			<div id="header"><h1>Embedding</h1></div>
+<div id="header"><h1>OMNEST Simulation Engine</h1></div>
 
-			<p><strong>The Omnest<SUP>TM</SUP> simulation kernel can be embedded into 3rd party applications.</strong> Your embedding application will link with the simulation kernel as a C++ library. Models can be developed and tested in the original OMNeT++/OMNEST GUI, then embedded unchanged into your application.</p>
+<p><strong>The OMNEST<SUP>TM</SUP> Simulation Engine is a C++ library
+that can be built into your application to provide simulation capabilities.</strong>
+Models can be developed and tested in the OMNEST Simulation IDE,
+then compiled into your application in an unchanged form.</p>
 
-			<h2>Features</h2>
+<img src="images/misc/car-engine.png" width="339" height="261" align="right"/>
+
+<h2>Features</h2>
+
 <ul class="list01">
-	<li>Hierarchical, component-based modelling</li>
+	<li>Hierarchical, component-based modeling</li>
 	<li>C++-based, high performance simulation kernel</li>
 	<li>Source code is provided</li>
 	<li>Parallel simulation and other advanced features</li>
 	<li>Responsive and expert support</li>
 </ul>
-	<a href="features.php">Complete feature list </a><img src="common/images/list_02.gif" alt="" />
+
+<a href="features.php">Complete feature list </a><img src="common/images/list_02.gif" alt="" />
 
 <br/><br/>
 <h2>References</h2>
@@ -55,7 +62,6 @@
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> business process simulation product.
     MEGA Process 6.1 runs OMNEST&#8482; simulation kernel.
     Read the <a href="press-mega.php">press release</a>.</p>
-
     </td>
   </tr>
 
@@ -63,11 +69,22 @@
     <td align="center"><a href="http://www.eads.com/" target="_blank"><img src="references/eads.gif" border="0"></a></td>
     <td><p><a href="http://www.eads.com/" target="_blank">European Aeronautic Defence and Space Company.</a> <br> EADS professionals are using and embedding OMNEST&#8482; technology to simulate the internals of vehicle systems.</p>
     </td>
-
   </tr>
 </table>
 
-<br /><br />
+<!-- common footer for all "landing" pages -->
+<hr style="color:red">
+<br>
+
+<img src="common/images/list_01.gif" alt="" border="0">
+<a href="overview.php">Read more about the OMNEST simulation environment</a>
+<br><br>
+
+<img src="common/images/list_01.gif" alt="" border="0">
+<a href="download-eval.php">Download the evaluation version!</a>
+
+<br><br><br><br>
+
 
 	</div>
 	<!-- End Content -->

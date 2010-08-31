@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -19,7 +19,7 @@
 
 <?php include("common/top_inc.php"); ?>
 
-	<!-- Start Minimenu --><div id="minimenu"><a href="network-simulation.php"><img src="common/images/minimenu_network.gif" width="118" height="44" alt="Network Simulation" border="0" /></a><a href="embedding.php"><img src="common/images/minimenu_embedding.gif" width="118" height="44" alt="Embedding" border="0" /></a></div><!-- End Minimenu -->
+	<!-- Start Minimenu --><div id="minimenu"><a href="network-simulation.php"><img src="common/images/minimenu_networksim.gif" width="118" height="44" alt="Network Simulation" border="0" /></a><a href="embedding.php"><img src="common/images/minimenu_simkernel.gif" width="118" height="44" alt="Simulation Library" border="0" /></a></div><!-- End Minimenu -->
 	</div>
 	<!-- End Main Menu -->
 
@@ -54,11 +54,19 @@
 	<li>Responsive and expert support</li>
 	<li>Parallel simulation and other advanced features</li>
 </ul>
-	<a href="features.php">Complete feature list </a><img src="common/images/list_02.gif" alt="" />
 
-<br /><br />
+<!-- common footer for all "landing" pages -->
+<hr style="color:red">
+<br>
 
+<img src="common/images/list_01.gif" alt="" border="0">
+<a href="overview.php">Read more about the OMNEST simulation environment</a>
+<br><br>
 
+<img src="common/images/list_01.gif" alt="" border="0">
+<a href="download-eval.php">Download the evaluation version!</a>
+
+<br><br><br><br>
 
 	</div>
 	<!-- End Content -->

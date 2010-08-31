@@ -5,9 +5,9 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
-	<meta http-equiv="refresh" content="3;url=download-eval-2bef15153a2f7c8.php" />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
+	<meta http-equiv="refresh" content="3;url=download-eval.php?id=2bef15153a2f7c8" />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 	<title>OMNEST Evaluation Download</title>
@@ -26,11 +26,14 @@
 
 	<!-- Start Content -->
 	<div id="content">
-			
 
-  <div id="header"><h1>Downloading OMNEST Evaluation Version</h1></div>
-  <b>Thank you for your interest in the OMNEST simulator.</b><br><br>You will be redicercted to the 
-  <a href="download-eval-2bef15153a2f7c8.php" >OMNEST Evaluation Download</a> page.<br>
+
+  <div id="header"><h1>OMNEST Evaluation</h1></div>
+  <b>Thank you for your interest in the OMNEST simulator.</b>
+  <br>
+  <br>
+  You will be redirected to the <a href="download-eval.php?id=2bef15153a2f7c8">OMNEST Evaluation Download</a> page shortly.
+  <br>
 
 <!-- Google Code for LEAD Conversion Page -->
 <script language="JavaScript" type="text/javascript">

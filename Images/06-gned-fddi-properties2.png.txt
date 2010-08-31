@@ -1,1 +1,0 @@
-Module type, parameters, gates, documentation

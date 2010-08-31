@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -26,7 +26,7 @@
 	<!-- Start Content -->
 	<div id="content">
 
-			<div id="header"><h1>OMNEST<SUP>TM</SUP>/OMNeT++ Features</h1></div>
+			<div id="header"><h1>OMNEST Features</h1></div>
 
     <p>OMNEST is an open, versatile, component-based simulation environment
     with a modular architecture, strong GUI support and an embeddable
@@ -36,7 +36,7 @@
 
 <h2>General</h2>
 <ul class="list03">
-	<li><strong>Hierarchical, component-based modelling</strong><br />
+	<li><strong>Hierarchical, component-based modeling</strong><br />
 	You build models from self-contained components using a high-level declarative language (NED), with arbitrary levels of nesting. Use the graphical editor or your favourite text editor.</li>
 
 	<li><strong>C++-based, high performance simulation kernel</strong><br />
@@ -85,10 +85,10 @@
 	</li>
 
 	<li><strong>SystemC integration</strong><br />
-	Allows for mixing OMNEST and SystemC modules in the same simulation program (for OMNEST 4.0; please request separately).</li>
+	Allows for mixing OMNEST and SystemC modules in the same simulation program.</li>
 
 	<li><strong>HLA support</strong><br />
-	Allows for connecting OMNEST with other simulators via HLA / IEEE 1516. (for OMNEST 4.0; please request separately).</li>
+	Allows for connecting OMNEST with other simulators via HLA / IEEE 1516.</li>
 
 	<li><strong>Network emulation capabilities</strong><br />
 	Available as part of model packages like the INET Framework.</li>

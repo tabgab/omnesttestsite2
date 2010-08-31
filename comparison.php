@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -29,7 +29,7 @@
 
 		<div id="header"><h1>OMNEST - OMNeT++ Comparison</h1></div>
 
-		<p>OMNEST and OMNeT++ are largely identical, simulation models written
+		<p>OMNEST and OMNeT++ are largely identical, and simulation models written
 		for one are guaranteed to compile and run with the other. Differences
 		apply to licensing, packaging, and certain features only.</p>
 
@@ -132,9 +132,9 @@
             <br/>
             <sup>6</sup> for models and sequence charts
             <br/>
-            <sup>7</sup> allows for mixing OMNEST and SystemC modules in the same simulation program (for OMNEST 4.0 please request separately)
+            <sup>7</sup> allows for mixing OMNEST and SystemC modules in the same simulation program
             <br/>
-            <sup>8</sup> allows OMNEST simulations to join HLA (IEEE 1516) federates (for OMNEST 4.0 please request separately)
+            <sup>8</sup> allows OMNEST simulations to join HLA (IEEE 1516) federates
 <!--
             <br/>
             <sup>9</sup> supports reading network topology and configuration from database, and writing simulation results to database

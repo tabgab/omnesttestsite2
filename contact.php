@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Simulcraft Inc.</title>
+	<title>OMNEST - The Open Simulator</title>
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 
 </head>
@@ -26,8 +26,9 @@
 	<!-- Start Content -->
 	<div id="content">
 
-			<div id="header"><h1>Contact</h1></div>
-			<a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a><br/><br/>
+<div id="header"><h1>Contact</h1></div>
+
+F.A.Q: <a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a><br/><br/>
 
 <form action="contact_post.php" method="post" name="post_robot" id="post_robot">
 <table border="0" cellspacing="0" cellpadding="6">
@@ -57,29 +58,51 @@
 </tr>
 
 <tr>
+<td align="right">Where did you hear about<br>OMNEST or OMNeT++?</td><td>
+<select name="source">
+  <option value="n/a">Select:</option>
+  <option value="web">Web search</option>
+  <option value="advertisement">Advertisement</option>
+  <option value="friend">Colleague or friend</option>
+  <option value="publication">Research paper or conference</option>
+  <option value="other">Other</option>
+</select>
+<br />
+</td>
+</tr>
+
+<tr>
 <td align="right"></td><td>
 <input type="checkbox" name="price_list" value="Price List" checked="true"/>Please send pricing information<br />
 </td>
 </tr>
+
 <tr>
 <td align="right">Area of interest</td><td>
+<input type="checkbox" name="performance_modeling" value="Performance Modeling" />Performance Modeling<br />
 <input type="checkbox" name="architecture_verification" value="Architecture Verification" />Architecture Verification<br />
-<input type="checkbox" name="discrete_event_simulation" value="Discrete Event Simulation" />Discrete Event Simulation<br />
-<input type="checkbox" name="embedding" value="Embedding" />Embedding the simulation kernel<br />
+<input type="checkbox" name="embedding" value="Embedding" />Embedding the simulation kernel into a product<br />
 <input type="checkbox" name="network_simulation" value="Network Simulation" />Network Simulation<br />
 &nbsp;&nbsp;&nbsp;&nbsp;<small>Which areas or protocols (e.g. ad-hoc, IPv6, MPLS)</small><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="protocols" style="width: 383px;" />
 </td>
 </tr>
+
 <tr>
 <td align="right">Message</td><td><textarea cols="" rows="" name="message" style="width: 400px; height: 200px;"></textarea></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td><td><input type="checkbox" name="newsletter" value="Newsletter" checked="true"/>I would like to be notified about new versions and other events</td>
 </tr>
 
 <tr><td>&nbsp;</td><td><input type="image" src="common/images/button_send.gif" /></td></tr>
 </table>
 </form>
-<p>We will only use this data to contact you.</p>
+
+<p>We will only use the above data to contact you, and will not disclose it to a third party.</p>
 <br />
+
 <p>If you prefer, you may request information directly from:<br/><b> info at ourdomainname</b></p>
 
 <br />

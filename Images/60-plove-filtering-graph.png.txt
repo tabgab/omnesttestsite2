@@ -1,1 +1,0 @@
-Queuing time and its moving average displayed on the same diagram

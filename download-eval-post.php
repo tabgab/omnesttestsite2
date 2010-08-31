@@ -1,4 +1,7 @@
 <?php
+
+error_reporting(0); // turn off all errors and warnings (including notices caused by unfilled form fields)
+
 $eol = "\n";
 $today = date("Y-F-d");
 $name = $_POST['name'];
@@ -7,17 +10,18 @@ $company = $_POST['company'];
 $position = $_POST['position'];
 $omnetpp_experience = $_POST['omnetpp_experience'];
 $cpp_experience = $_POST['cpp_experience'];
-$price_list = $_POST['price_list'];
+$source = $_POST['source'];
 $network_simulation = $_POST['network_simulation'];
 $protocols = $_POST['protocols'];
 $architecture_verification = $_POST['architecture_verification'];
 $discrete_event_simulation = $_POST['discrete_event_simulation'];
 $embedding = $_POST['embedding'];
 $message = $_POST['message'];
+$newsletter = $_POST['newsletter'];
 
 // if the form is modified you should modify also the corresponding parser in sugarcrm (modules/Omnst_OppWebForm/OmnetMailParser.php)
 
-if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email))
+if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email) > 0)
 {
     $headers =
         'MIME-Version: 1.0' . $eol .
@@ -42,8 +46,9 @@ if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"
         ($embedding != "" ? "  $embedding". $eol : "") .
         ($network_simulation != "" ? "  $network_simulation " . $eol : "") .
         ($protocols != "" ? "    Protocols: $protocols". $eol : "") .
+        "Newsletter: ".  $newsletter . $eol .
         $eol .
-        "Problem: $message";
+        "Message: $message";
 
     $destaddr = "eval@omnest.com";
 
@@ -60,8 +65,8 @@ if(eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable discrete event simulator simulation embedding c++ c open source network"  />
+	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
+	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 	<title>OMNEST Evaluation Download</title>
 </head>
