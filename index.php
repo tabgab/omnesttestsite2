@@ -51,7 +51,7 @@ communities.
 
 <br>
 <img src="common/images/list_01.gif" alt="" border="0">
-<a href="features.php">Features in nutshell</a>
+<a href="features.php">Features in a nutshell</a>
 
 <br>
 <br>

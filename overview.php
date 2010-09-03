@@ -88,7 +88,7 @@ Also:<br>
 <br>
 
 <img src="common/images/list_01.gif" alt="" border="0">
-<a href="features.php">Features in nutshell</a>
+<a href="features.php">Features in a nutshell</a>
 <br>
 
 <img src="common/images/list_01.gif" alt="" border="0">
@@ -129,8 +129,8 @@ and at the annual <a href="http://omnet-workshop.org" target="_blank">OMNeT++ wo
       (e.g. messages)
 
   <li>not limiting -- the simulator and models can be extended in unforeseen ways;
-      exotic scenarios, such as network emulation, interfacing with other simulators
-      and other external systems, parallel simulation, and combinations of the above,
+      exotic scenarios such as interfacing with other simulators
+      and external systems, parallel simulation, emulation, and combinations of the above,
       can be realized; and when something doesn't work as expected, the full source code
       is there to study and debug
 </ul>

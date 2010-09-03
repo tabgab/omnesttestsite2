@@ -9,10 +9,10 @@
 	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
 	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
+	<script language="JavaScript" src="common/gen_validatorv31.js" type="text/javascript"></script>
 </head>
 
 <body>
-
 <!-- Start Container -->
 <div id="container">
 
@@ -33,33 +33,36 @@ and will not disclose it to third parties.</p>
 
 <form action="download-eval-post.php" method="post" name="post_robot" id="post_robot">
 <table border="0" cellspacing="0" cellpadding="6">
+
+<tr><td>&nbsp;</td><td><div id='post_robot_errorloc' style='color: #cc0000; font-size:10px;'></div></td></tr>
+
 <tr>
-<td align="right">Name</td><td><input type="text" name="name" style="width: 400px;" /></td>
+<td align="right">Name:<sup>*</sup></td><td><input type="text" name="name" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right"><b>E-mail<sup>*</sup></b></td><td><input type="text" name="email" style="width: 400px;" /></td>
+<td align="right">E-mail:<sup>*</sup></td><td><input type="text" name="email" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right">Company</td><td><input type="text" name="company" style="width: 400px;" /></td>
+<td align="right">Company:<sup>*</sup></td><td><input type="text" name="company" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right">Position</td><td><input type="text" name="position" style="width: 400px;" /></td>
+<td align="right">Position:<sup>*</sup></td><td><input type="text" name="position" style="width: 400px;" /></td>
 </tr>
 
 <tr>
-<td align="right">OMNeT++ experience:</td><td>
+<td align="right">OMNeT++ experience:<sup>*</sup></td><td>
 <select name="omnetpp_experience"><option>Select:</option><option>Yes</option><option>No</option></select><br />
 </td>
 </tr>
 
 <tr>
-<td align="right">C++ experience:</td><td>
+<td align="right">C++ experience:<sup>*</sup></td><td>
 <select name="cpp_experience"><option>Select:</option><option>Yes</option><option>No</option></select><br />
 </td>
 </tr>
 
 <tr>
-<td align="right">Where did you hear about<br>OMNEST or OMNeT++?</td><td>
+<td align="right">Where did you hear about<br>OMNEST or OMNeT++?<sup>*</sup></td><td>
 <select name="source">
   <option value="n/a">Select:</option>
   <option value="web">Web search</option>
@@ -95,33 +98,36 @@ and will not disclose it to third parties.</p>
 </table>
 </form>
 
+<script language="JavaScript" type="text/javascript">
+//You should create the validator only after the definition of the HTML form
+  var frmvalidator  = new Validator("post_robot");
+  frmvalidator.EnableOnPageErrorDisplaySingleBox();
+  // frmvalidator.EnableMsgsTogether();
+
+  frmvalidator.addValidation("name","req","Please enter your name");
+  frmvalidator.addValidation("email","req","Please enter your e-mail address");
+  frmvalidator.addValidation("email","email","Please enter a valid e-mail address");
+  frmvalidator.addValidation("company","req","Please enter your company");
+  frmvalidator.addValidation("position","req","Please provide your position in your company");
+  frmvalidator.addValidation("omnetpp_experience","dontselect=0","Please select whether you have previous experience with OMNeT++");
+  frmvalidator.addValidation("cpp_experience","dontselect=0","Please select whether you have C++ experience");
+  frmvalidator.addValidation("source","dontselect=0","Please select where you heard about OMNEST");
+</script>
+
 <br />
 
-<p>If you prefer, you may request information directly from:<br/><b> info at ourdomainname</b></p>
+<p>If you prefer, you may request information directly from: <b> info at ourdomainname</b></p>
 
 <br />
 
 	</div>
 	<!-- End Content -->
-
-
-
 	<!-- Start Right -->
 	<?php include("common/right_inc.php"); ?>
 	<!-- End Right -->
-
-
 	</div>
-
 </div>
 <!-- End Container -->
-
-
-
-
 <?php include("common/footer_inc.php"); ?>
-
-
-
 </body>
 </html>

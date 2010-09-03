@@ -40,10 +40,10 @@ to be simulated with high performance, such as the simulation of network
 protocols or hardware architectures.
 </p>
 
-<p>OMNEST as a product <b>does not contain</b> simulation models for
-communication networks. However, as OMNEST is 100% compatible with OMNeT++,
-<b>the vast body of open-source simulation models that has been written by
-researchers for OMNeT++ is available for OMNEST users as well.</b> These
+<p>OMNEST as a product does not contain simulation models
+above and beyond what is available for OMNeT++, but
+<b>the vast body of open-source simulation models that have been written by
+researchers for OMNeT++ are available for OMNEST users as well.</b> These
 simulation models are being used by hundreds of researchers every day, and
 simulation results are being
 <a href="http://omnetpp.org/publications" target="_blank">published</a>
@@ -204,11 +204,10 @@ a wide range of platforms. The main features of Castalia are:
 
 <p>
 Concerning the last bullet, Castalia was designed right from the beginning
-so that the users can easily implement/import their algorithms and
-protocols into Castalia while making use of the features the simulator is
-providing. Proper modularization and a configurable, automated build
-procedure help towards this end. The modularity, reliability, and speed of
-Castalia is partly enabled by OMNeT++.
+so that users can easily implement/import their algorithms and
+protocols into Castalia while making use of the features the simulator
+provides. Proper modularization and a configurable, automated build
+procedure make this easier.
 </p>
 
 
