@@ -97,9 +97,8 @@ function send_mails()
             'Reply-To: '.'=?UTF-8?B?'.base64_encode("OMNEST Contact")."?="." <$form_email>";
 
     $confirm_body = "Dear Sir / Madam,". $eol . $eol .
-    "This is an automatically generated message to let you know that we received and processed your request. You will be hearing from us shortly." . 
-    "Thank you for your interest in OMNEST.". $eol . $eol .
-    "With best regards,". $eol .
+        "This is an automatically generated message to let you know that we have received and processed your request. You will be hearing from us shortly. Thank you for your interest in OMNEST." . $eol . $eol .
+        "With best regards,". $eol .
 	"The OMNEST Team". $eol;
 
     //dbg: return maildummy($destaddr, "Omnest web contact", $body, $headers) && maildummy($email, "Contacting OMNEST", $confirm_body, $confirm_headers);
