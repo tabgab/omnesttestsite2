@@ -260,7 +260,7 @@ function form_error_div_name(msgs)
 
 	var divname ="";
 	if(input_element)
-	{
+	{
 	 divname = input_element.form._sfm_form_name + "_errorloc";
 	}
 
