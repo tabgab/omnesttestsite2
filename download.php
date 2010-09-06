@@ -30,6 +30,11 @@
 <div id="header"><h1>Download</h1></div>
 
 
+<h2>Evaluation Version</h2>
+
+<p>Download <a href="download-eval.php"><b>OMNEST Evaluation version</b></a> (Windows Installer or Linux Live CD)</p>
+
+<br/>
 <h2>Commercial Edition (password-protected)</h2>
 
 <h3>Latest stable version: 4.1</h3>
