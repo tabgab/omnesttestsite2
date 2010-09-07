@@ -32,9 +32,10 @@
 
 <h2>Evaluation Version</h2>
 
-<p>Download <a href="download-eval.php"><b>OMNEST Evaluation version</b></a> (Windows Installer or Linux Live CD)</p>
+<p>Do not have an OMNEST License yet? Download <a href="download-eval.php"><b>OMNEST Evaluation version</b></a>!
+<br>
+<small>(Windows Installer or Linux Live CD)</small></p>
 
-<br/>
 <h2>Commercial Edition (password-protected)</h2>
 
 <h3>Latest stable version: 4.1</h3>
@@ -80,13 +81,6 @@ full documentation and a Guided Tour for the INET Framework.
 <img src="common/images/list_01.gif" alt="" border="0">
 For additional downloads please visit the <a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ community site</a>.
 <br>
-<br>
-
-<img src="common/images/list_01.gif" alt="" border="0">
-Do not have an OMNEST License yet? Try the <a href="download-eval.php">Evaluation Version!</a>
-<br><br><br><br>
-
-<br/>
 	</div>
 	<!-- End Content -->
 
