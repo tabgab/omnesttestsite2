@@ -10,6 +10,7 @@
 	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
 	<script language="JavaScript" src="common/gen_validatorv31.js" type="text/javascript"></script>
+    <?php include("common/ga.php"); ?>
 </head>
 
 <body>

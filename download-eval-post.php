@@ -9,7 +9,7 @@
 	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
 	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-
+    <?php include("common/ga.php"); ?>
 </head>
 
 <body>
@@ -97,13 +97,13 @@ function send_mails()
             'From: '.'=?UTF-8?B?'.base64_encode("OMNEST Eval")."?="." <$from_email>" . $eol .
             'Reply-To: '.'=?UTF-8?B?'.base64_encode("OMNEST Eval")."?="." <$from_email>";
 
-    $confirm_body = "Dear Sir / Madam,"  . $eol . $eol .  
-    "This is an automatically generated message in response to your request to download and evaluate OMNEST."  . $eol . $eol . 
+    $confirm_body = "Dear Sir / Madam,"  . $eol . $eol .
+    "This is an automatically generated message in response to your request to download and evaluate OMNEST."  . $eol . $eol .
     "Thank you for your interest in the OMNEST Simulation Framework. You can download the evaluation version of the software " .
     "from the link below. Our normal evaluation term is 30 days, during which we will be happy to support you via e-mail. " .
-    "If you have questions regarding the software, please write an e-mail to eval@omnest.com" . $eol . $eol . 
-    "Download link: $download_url" . $eol . $eol . 
-    "With best regards,"  . $eol . 
+    "If you have questions regarding the software, please write an e-mail to eval@omnest.com" . $eol . $eol .
+    "Download link: $download_url" . $eol . $eol .
+    "With best regards,"  . $eol .
     "The OMNEST Team" . $eol;
 
     //dbg: return maildummy($destaddr, "OMNEST Evaluation Request", $body, $headers) && maildummy($email, "OMNEST Evaluation Download", $confirm_body, $confirm_headers);

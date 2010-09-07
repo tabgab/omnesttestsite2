@@ -9,7 +9,7 @@
 	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
 	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-
+    <?php include("common/ga.php"); ?>
 </head>
 
 <body>
@@ -41,13 +41,13 @@
 <a href="whatsnew-41.php">What's new in OMNEST 4.1?</a>
 
 <ul class="list03">
-    <li><a href="/download/commercial4/omnest-4.1-win32.exe" onClick="javascript: pageTracker._trackPageview(this.href);">OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.1-win32.exe" >OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
     <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.1-src.tgz" onClick="javascript: pageTracker._trackPageview(this.href);">OMNEST 4.1 for Linux, Mac OS X (TGZ) - 142Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux, Mac OS X (TGZ) - 142Mb</a><br/>
     <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
     </li>
-    <li><a href="/download/commercial4/InstallGuide-41.pdf" onClick="javascript: pageTracker._trackPageview(this.href);">Installation Guide (PDF)</a><br/>
+    <li><a href="/download/commercial4/InstallGuide-41.pdf" >Installation Guide (PDF)</a><br/>
     </li>
 </ul>
 

@@ -9,7 +9,7 @@
 	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
 	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-
+    <?php include("common/ga.php"); ?>
 </head>
 
 <body>
@@ -76,7 +76,7 @@ embedded into your program as C++ libraries.</p>
 
 <table cellspacing="0" cellpadding="0"><tr>
 <td id="button-left" style="vertical-align: middle"/>
-<td id="button"><a href="/download/free/omnest-whitepaper.pdf" onClick="javascript: pageTracker._trackPageview(this.href);"><strong>Download the OMNEST<sup>TM</sup> White Paper</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td id="button"><a href="/download/free/omnest-whitepaper.pdf" ><strong>Download the OMNEST<sup>TM</sup> White Paper</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td id="button-right"/></tr>
 </table>
 

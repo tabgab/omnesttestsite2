@@ -17,6 +17,7 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
 	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
 	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
 	<link rel="stylesheet" type="text/css" href="common/omnest.css">
+    <?php include("common/ga.php"); ?>
 </head>
 
 <body>
@@ -67,7 +68,7 @@ You can also download OMNeT++ models from the web, and install and try them.
 		<table cellspacing="0" cellpadding="0">
 		<tr>
 		<td id="button-left" style="vertical-align: middle"/>
-		<td id="button"><a href="/download/free/omnest41-demo.iso" onClick="javascript: pageTracker._trackPageview(this.href);"><strong>Download OMNEST 4.1 Evaluation Live CD</strong></a></td>
+		<td id="button"><a href="/download/free/omnest41-demo.iso" ><strong>Download OMNEST 4.1 Evaluation Live CD</strong></a></td>
 		<td id="button-right"/></tr>
 		</table>
 	</td>
@@ -108,7 +109,7 @@ You can also download OMNeT++ models from the web, and install and try them.
 		<table cellspacing="0" cellpadding="0">
 		<tr>
 		<td id="button-left" style="vertical-align: middle"/>
-		<td id="button"><a href="/download/free/omnest-4.1-eval-win32.exe" onClick="javascript: pageTracker._trackPageview(this.href);"><strong>Download OMNEST 4.1 Evaluation for Windows</strong></a></td>
+		<td id="button"><a href="/download/free/omnest-4.1-eval-win32.exe" ><strong>Download OMNEST 4.1 Evaluation for Windows</strong></a></td>
 		<td id="button-right"/></tr>
 		</table>
 	</td>
