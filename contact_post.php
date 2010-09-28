@@ -25,7 +25,7 @@
 
 	<!-- Start Content -->
 	<div id="content">
-			<div id="header"><h1>Contact</h1></div>
+	<div id="header"><h1>Contact</h1></div>
 
 <?php
 // if the form is modified you should modify also the corresponding parser in sugarcrm (modules/Omnst_OppWebForm/OmnetMailParser.php)
@@ -107,6 +107,8 @@ function send_mails()
 
 if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $_POST['email']) < 1) {
     echo "Please provide a valid email address so that we can contact you.";
+} else if (strpos($_POST['message'],"http:") !== false) {
+    echo ("Urls are not allowed in the message. Thank you for your understanding.");
 } else if (!send_mails()) {
     echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
 } else {
