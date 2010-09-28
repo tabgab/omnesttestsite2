@@ -101,6 +101,10 @@ communities.
 </center>
 
 <br>
+<img src="common/images/list_01.gif" alt="" border="0">
+<a href="piracy.php">Watch out for cheats and pirates in China. Please read if you are considering OMNEST / OMNeT++ in China</a>
+
+<br>
 <a href="whatsnew-41.php"><img src="images/misc/omnest4.1.1.gif" alt="OMNEST 4.1 released" border="0"></a>
 
 
