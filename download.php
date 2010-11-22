@@ -1,104 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Download Commercial Edition</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
+<div id="header"><h1>Download Commercial Edition (password-protected)</h1></div>
 
-<?php include("common/top_inc.php"); ?>
+<p>You can download OMNEST here if you have already purchased a license.</p>
 
-</div>
-	<!-- End Main Menu -->
+<h3 style="margin-bottom:0">Latest stable version: 4.1 <a href="whatsnew-41.php">(What's new in this release?)</a></h3>
 
-	<div style="clear: both;">
+<h3>Downloads:</h3>
 
-	<!-- Start Content -->
-	<div id="content">
+<table style="border-spacing:10px">
+  <tr>
+    <td style="width:80px; padding-right: 20px; text-align: right">
+      <a href="/download/commercial4/omnest-4.1-win32.exe"><img src="images/misc/win-logo.png"/></a>
+    </td>
+    <td>
+      <a href="/download/commercial4/omnest-4.1-win32.exe">OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
+      <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
+    </td>
+  </tr>
 
-<div id="header"><h1>Download</h1></div>
+  <tr>
+    <td style="width:80px; padding-right: 20px; text-align: right">
+      <a href="/download/commercial4/omnest-4.1-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
+    </td>
+    <td>
+       <a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux and Mac OS X (TGZ) - 142Mb</a><br/>
+       <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
+    </td>
+  </tr>
 
+  <tr>
+    <td style="width:80px; padding-right: 20px; text-align: right">
+      <a href="/download/commercial4/InstallGuide-41.pdf"><img src="images/misc/pdf.png"></a>
+    </td>
+    <td>
+      <a href="/download/commercial4/InstallGuide-41.pdf" >Installation Guide (PDF)</a>
+    </td>
+  </tr>
 
-<h2>Evaluation Version</h2>
-
-<p>Do not have an OMNEST License yet? Download <a href="download-eval.php"><b>OMNEST Evaluation version</b></a>!
-<br>
-<small>(Windows Installer or Linux Live CD)</small></p>
-
-<h2>Commercial Edition (password-protected)</h2>
-
-<h3>Latest stable version: 4.1</h3>
-<a href="whatsnew-41.php">What's new in OMNEST 4.1?</a>
-
-<ul class="list03">
-    <li><a href="/download/commercial4/omnest-4.1-win32.exe" >OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
-    <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
-    </li>
-    <li><a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux, Mac OS X (TGZ) - 142Mb</a><br/>
-    <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
-    </li>
-    <li><a href="/download/commercial4/InstallGuide-41.pdf" >Installation Guide (PDF)</a><br/>
-    </li>
-</ul>
-
-<p><small>Note: The above downloads are for both "One year rental" and "Perpetual" licenses.</small><br/>
-<a href="download-previous.php">Older versions can be found here.</a>
-</p>
-
-<!-- TODO temporarily disabled
-<div id="separator"></div>
-<h2>Simulation models</h2>
-
-<p>OMNEST&#8482;/OMNeT++ simulation models are released under various
-open-source licenses. There are available models for TCP/IP, IPv6, Ethernet,
-IEEE 802.11 and several other protocols you might need.
-</p>
-<p>We have executable demo simulations for several model frameworks. The package includes
-full documentation and a Guided Tour for the INET Framework.
-</p>
-
-<table cellspacing="0" cellpadding="0">
-  <tr><td id="button-left"/><td id="button">
-    <a href="download-demosim.php"><strong>Download OMNEST 3.3 Demo Simulations</strong><br />
-		(Windows installer)</a>
-  </td><td id="button-right"/></tr>
 </table>
 
-<br/>
--->
+<p><small>Note: The above downloads are for both "Annual" and "Perpetual" licenses.</small></p>
 
-<img src="common/images/list_01.gif" alt="" border="0">
-For additional downloads please visit the <a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ community site</a>.
-<br>
-	</div>
-	<!-- End Content -->
+<p><a href="download-previous.php">Older versions can be found here.</a></p>
 
+<p>To download open-source simulation models and other extensions, please visit the
+<a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ community site</a>.
+</p>
 
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-
-		</div>
-
-</div>
-<!-- End Container -->
-
-<?php include("common/footer_inc.php"); ?>
-
-
+<?php print_leadout(); ?>
 </body>
 </html>

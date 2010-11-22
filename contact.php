@@ -1,67 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-	<script language="JavaScript" src="common/gen_validatorv31.js" type="text/javascript"></script>
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Request Quotation</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+    <script src="common/gen_validatorv31.js" type="text/javascript"></script>
+    <style type="text/css">
+      td:first-child {text-align: right; }
+    </style>
 </head>
 
 <body>
-<!-- Start Container -->
-<div id="container">
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
+<div id="header"><h1>Request Quotation</h1></div>
 
-	<div style="clear: both;">
+<p>Please give us some details about yourself and your project, and we will
+get back to you soon. We will only use this data to better assist you with
+matters related to OMNEST, and will not disclose it to third parties.</p>
 
-	<!-- Start Content -->
-	<div id="content">
-
-<div id="header"><h1>Contact</h1></div>
-
-F.A.Q: <a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a><br/><br/>
+<p><small>Frequently asked: <a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a></small></p>
 
 <form action="contact_post.php" method="post" name="post_robot" id="post_robot">
-<table border="0" cellspacing="0" cellpadding="6">
+<table style="border-spacing: 9px">
 
 <tr><td>&nbsp;</td><td><div id='post_robot_errorloc' style='color: #cc0000; font-size:10px;'></div></td></tr>
 
 <tr>
-<td align="right">Name:<sup>*</sup></td><td><input type="text" name="name" style="width: 400px;" /></td>
+<td>Name:<sup>*</sup></td><td><input type="text" name="name" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right">E-mail:<sup>*</sup></td><td><input type="text" name="email" style="width: 400px;" /></td>
+<td>E-mail:<sup>*</sup></td><td><input type="text" name="email" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right">Company:<sup>*</sup></td><td><input type="text" name="company" style="width: 400px;" /></td>
+<td>Company:<sup>*</sup></td><td><input type="text" name="company" style="width: 400px;" /></td>
 </tr>
 <tr>
-<td align="right">Position:<sup>*</sup></td><td><input type="text" name="position" style="width: 400px;" /></td>
+<td>Position:<sup>*</sup></td><td><input type="text" name="position" style="width: 400px;" /></td>
 </tr>
 
 <tr>
-<td align="right">OMNeT++ experience:<sup>*</sup></td><td>
+<td>OMNeT++ experience:<sup>*</sup></td><td>
 <select name="omnetpp_experience"><option>Select:</option><option>Yes</option><option>No</option></select><br />
 </td>
 </tr>
 
 <tr>
-<td align="right">C++ experience:<sup>*</sup></td><td>
+<td>C++ experience:<sup>*</sup></td><td>
 <select name="cpp_experience"><option>Select:</option><option>Yes</option><option>No</option></select><br />
 </td>
 </tr>
 
 <tr>
-<td align="right">Where did you hear about<br>OMNEST or OMNeT++?<sup>*</sup></td><td>
+<td>Where did you hear about<br>OMNEST or OMNeT++?<sup>*</sup></td><td>
 <select name="source">
   <option value="n/a">Select:</option>
   <option value="web">Web search</option>
@@ -75,13 +73,13 @@ F.A.Q: <a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a><br/
 </tr>
 
 <tr>
-<td align="right"></td><td>
-<input type="checkbox" name="price_list" value="Price List" checked="true"/>Please send pricing information<br />
+<td></td><td>
+<input type="checkbox" name="price_list" value="Price List" checked/>Please send pricing information<br />
 </td>
 </tr>
 
 <tr>
-<td align="right">Area of interest</td><td>
+<td>Area of interest</td><td>
 <input type="checkbox" name="performance_modeling" value="Performance Modeling" />Performance Modeling<br />
 <input type="checkbox" name="architecture_verification" value="Architecture Verification" />Architecture Verification<br />
 <input type="checkbox" name="embedding" value="Embedding" />Embedding the simulation kernel into a product<br />
@@ -92,19 +90,19 @@ F.A.Q: <a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a><br/
 </tr>
 
 <tr>
-<td align="right">Message</td><td><textarea cols="" rows="" name="message" style="width: 400px; height: 200px;"></textarea></td>
+<td>Message</td><td><textarea name="message" style="width: 400px; height: 200px;"></textarea></td>
 </tr>
 
 <tr>
-<td>&nbsp;</td><td><input type="checkbox" name="newsletter" value="Newsletter" checked="true"/>I would like to be notified about new versions and other events</td>
+<td>&nbsp;</td><td><input type="checkbox" name="newsletter" value="Newsletter" checked/>I would like to be notified about new versions and other events</td>
 </tr>
 
 
-<tr><td>&nbsp;</td><td><input type="image" src="common/images/button_send.gif" /></td></tr>
+<tr><td>&nbsp;</td><td><input type="image" alt="Send" src="common/images/button_send.gif" /></td></tr>
 </table>
 </form>
 
-<script language="JavaScript" type="text/javascript">
+<script type="text/javascript">
 //You should create the validator only after the definition of the HTML form
   var frmvalidator  = new Validator("post_robot");
   frmvalidator.EnableOnPageErrorDisplaySingleBox();
@@ -120,21 +118,10 @@ F.A.Q: <a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a><br/
   frmvalidator.addValidation("source","dontselect=0","Please select where you heard about OMNEST");
 </script>
 
-<p>We will only use the above data to contact you, and will not disclose it to a third party.</p>
 <br />
 
 <p>If you prefer, you may request information directly from:<br/><b> info at ourdomainname</b></p>
 
-<br />
-	</div>
-	<!-- End Content -->
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-	</div>
-</div>
-<!-- End Container -->
-<?php include("common/footer_inc.php"); ?>
+<?php print_leadout(); ?>
 </body>
 </html>

@@ -1,0 +1,189 @@
+<?php
+
+// PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
+
+$product_menu = array(
+    array("text"=>"OMNEST", "link"=>"omnest.php", "submenu"=>array(
+        array("text"=>"Overview", "link"=>"overview.php"),
+        array("text"=>"Features", "link"=>"features.php"),
+        array("text"=>"References", "link"=>"references.php"),
+        array("text"=>"IDE Tour", "link"=>"ide.php"),
+        array("text"=>"Demo Videos", "link"=>"demo-videos.php"),
+        array("text"=>"List of Documentation", "link"=>"documentation.php"),
+        array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
+    )),
+
+    array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "submenu"=>array(
+        array("text"=>"Case Studies", "link"=>"perf-casestudies.php"),
+        array("text"=>"Modeling Library", "link"=>"queueinglib.php"),
+    )),
+
+    array("text"=>"Architecture Verification", "link"=>"architecture-verification.php", "submenu"=>array(
+        array("text"=>"Case Studies", "link"=>"archver-casestudies.php"),
+        array("text"=>"SystemC Support", "link"=>"systemc-integration.php"),
+    )),
+
+    array("text"=>"Network Simulation", "link"=>"network-simulation.php", "submenu"=>array(
+        array("text"=>"References", "link"=>"netsim-references.php"),
+        array("text"=>"Case Studies", "link"=>"netsim-casestudies.php"),
+        array("text"=>"INET Framework", "link"=>"inet-framework.php"),
+        array("text"=>"Castalia", "link"=>"castalia.php"),
+        array("text"=>"MiXiM", "link"=>"mixim.php"),
+        array("text"=>"Book Recommendation", "link"=>"network-simulation-book.php"),
+    )),
+
+    array("text"=>"Embedding", "link"=>"embedding.php"),
+    array("text"=>"<b>Try OMNEST!</b>", "link"=>"try-omnest.php"),
+);
+
+$purchase_menu = array(
+    array("text"=>"Request Quotation", "link"=>"contact.php", "submenu"=>array(
+       array("text"=>"Do I Need a License?", "link"=>"licensingfaq.php"),
+       array("text"=>"Licensing Options", "link"=>"licensing.php"),
+       array("text"=>"License Agreement", "link"=>"license.php"),
+    )),
+    array("text"=>"Support", "link"=>"support.php", "submenu"=>array(
+       array("text"=>"Download OMNEST", "link"=>"download.php"),
+    )),
+);
+
+$company_menu = array(
+    array("text"=>"Company", "link"=>"company.php"),
+    array("text"=>"Community", "link"=>"community.php"),
+    array("text"=>"Partners", "link"=>"partners.php"),
+);
+
+$blank_menu = array();  // for pages that don't need a menu
+
+function print_footer_links()
+{
+?>
+    <table class="footerlinks">
+        <tr>
+          <td class="colhead" colspan="3" >Product</td>
+          <td class="colhead">Purchase</td>
+          <td class="colhead">About Us</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li><a href="omnest.php">OMNEST</a>
+                      <ul>
+                        <li><a href="overview.php">Overview</a>
+                        <li><a href="features.php">Features</a>
+                        <li><a href="references.php">References</a>
+                        <li><a href="ide.php">IDE Tour</a>
+                        <li><a href="demo-videos.php">Demo Videos</a>
+                        <li><a href="documentation.php">List of Documentation</a>
+                        <li><a href="comparison.php">OMNEST vs. OMNeT++</a>
+                      </ul>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="performance-modeling.php">Performance Modeling</a>
+                      <ul>
+                        <li><a href="perf-casestudies.php">Case Studies</a>
+                        <li><a href="queueinglib.php">Perf. Modeling Library</a>
+                      </ul>
+                    <li><a href="architecture-verification.php">Architecture Verification</a>
+                      <ul>
+                        <li><a href="systemc-integration.php">SystemC Integration</a>
+                        <li><a href="archver-casestudies.php">Case Studies</a>
+                      </ul>
+                    <li><a href="embedding.php">Embedding</a>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="network-simulation.php">Network Simulation</a>
+                        <ul>
+                            <li><a href="netsim-references.php">References</a>
+                            <li><a href="netsim-casestudies.php">Case Studies</a>
+                            <li><a href="inet-framework.php">INET Framework</a>
+                            <li><a href="castalia.php">Castalia</a>
+                            <li><a href="mixim.php">MiXiM</a>
+                            <li><a href="network-simulation-book.php">Book Recommendation</a>
+                        </ul>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="try-omnest.php">Try OMNEST</a>
+                    <li><a href="contact.php">Request Quotation</a>
+                        <ul>
+                            <li><a href="licensingfaq.php">Do I Need a License?</a>
+                            <li><a href="licensing.php">Licensing Options</a>
+                            <li><a href="license.php">License Agreement</a>
+                        </ul>
+                    <li><a href="support.php">Support</a>
+                        <ul>
+                            <li><a href="download.php">Download OMNEST</a>
+                        </ul>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="company.php">Company</a>
+                    <li><a href="community.php">Community</a>
+                    <li><a href="partners.php">Partners</a>
+                </ul>
+            </td>
+        </tr>
+    </table>
+<?php
+}
+
+function print_top_menu($menu, $current_page)
+{
+    global $product_menu, $purchase_menu, $company_menu;
+
+    $current_page = basename($current_page);
+
+    $is_tryomnest_related = $current_page=="try-omnest.php" ||
+                            $current_page=="download-eval.php" ||
+                            $current_page=="download-eval-post.php" ||
+                            $current_page=="download-eval-request.php";
+    $is_support_related = $current_page=="support.php" ||
+                            $current_page=="download.php";
+    print_top_menu_item("PRODUCT", "omnest.php", $menu===$product_menu && !$is_tryomnest_related);
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    print_top_menu_item("TRY OMNEST!", "try-omnest.php", $menu===$product_menu && $is_tryomnest_related);
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    print_top_menu_item("HOW TO BUY", "contact.php", $menu===$purchase_menu && !$is_support_related);
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    print_top_menu_item("SUPPORT", "support.php", $menu===$purchase_menu && $is_support_related);
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    print_top_menu_item("ABOUT US", "company.php", $menu===$company_menu);
+}
+
+function print_top_menu_item($name, $link, $is_selected)
+{
+    $class_name = $is_selected ? "topmenuitem_selected" : "topmenuitem";
+    echo "<a href=\"$link\" class=\"$class_name\">$name</a>";
+}
+
+function print_menu($menu, $current_page)
+{
+    $current_page = basename($current_page);
+
+    echo "<div class=\"vmenu\">\n";
+    foreach ($menu as $menuitem) {
+        $class_attr = " class=\"vmenuitem" . (($menuitem["link"]==$current_page) ? " selected\"" : "\"");
+        printf(" <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $menuitem["link"], $menuitem["text"]);
+        if (array_key_exists("submenu", $menuitem)) {
+            $submenu = $menuitem["submenu"];
+            echo "  <div class=\"vsubmenu\">\n";
+            foreach ($submenu as $submenuitem) {
+                $class_attr = " class=\"vsubmenuitem" . (($submenuitem["link"]==$current_page) ? " selected\"" : "\"");
+                printf("   <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $submenuitem["link"], $submenuitem["text"]);
+            }
+            echo "  </div>\n";
+        }
+    }
+    echo "</div>\n";
+}
+
+?>
+
+

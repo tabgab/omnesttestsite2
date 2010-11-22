@@ -1,33 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST - an Embeddable Discrete Event Simulator Network" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Documentation</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
-
-<!-- Start Container -->
-<div id="container">
-
-<?php include("common/top_inc.php"); ?>
-
-</div>
-	<!-- End Main Menu -->
-
-
-
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
+<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST Documentation</h1></div>
 
@@ -172,23 +159,12 @@ the Simulation IDE as well.</p>
   </tbody>
 </table>
 
-<br /><br />
+<h2>Read more</h2>
 
-	</div>
-	<!-- End Content -->
+<ul class="links">
+  <li>Next: <a href="comparison.php">OMNEST - OMNeT++ Comparison</a>
+</ul>
 
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-
-		</div>
-
-</div>
-<!-- End Container -->
-
-<?php include("common/footer_inc.php"); ?>
-
+<?php print_leadout(); ?>
 </body>
 </html>

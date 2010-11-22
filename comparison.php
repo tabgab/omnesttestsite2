@@ -1,40 +1,42 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - OMNEST - OMNeT++ Comparison</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <style type="text/css">
+     .yes {
+        color: #007f00;
+        font-weight: bold;
+      }
+
+      .no {
+         color: #f00000;
+         font-weight: bold;
+      }
+      th, td {text-align: center}
+      th:first-child, td:first-child {text-align: left}
+    </style>
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($product_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
+<div id="header"><h1>OMNEST - OMNeT++ Comparison</h1></div>
 
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
+<p>OMNEST and OMNeT++ are largely identical, and simulation models written
+for one are guaranteed to compile and run with the other. Differences
+apply to licensing, packaging, and certain features only.</p>
 
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
-
-
-		<div id="header"><h1>OMNEST - OMNeT++ Comparison</h1></div>
-
-		<p>OMNEST and OMNeT++ are largely identical, and simulation models written
-		for one are guaranteed to compile and run with the other. Differences
-		apply to licensing, packaging, and certain features only.</p>
-
-        <table id="features" border="1" width="90%" cellspacing="0" cellpadding="4">
-          <tr> <th></th>  <th width="25%">OMNeT++</th>  <th width="25%">OMNEST</th> </tr>
+        <table class="fancytable" style="width:90%">
+          <tr> <th></th>  <th style="width:27%">OMNeT++</th>  <th style="width:30%">OMNEST</th> </tr>
           <tr>
               <td>License</td>
               <td><a href="http://www.omnetpp.org/license" target="_blank">Academic Public License</a><sup>1</sup></td>
@@ -62,7 +64,7 @@
           </tr>
           <tr>
               <td>Windows installer</td>
-              <td><span class="no">no</span> (distributed as zip)</td>
+              <td><span class="no">no</span> <br>(distributed as zip)</td>
               <td><span class="yes">yes</span></td>
           </tr>
           <tr>
@@ -82,7 +84,7 @@
           </tr>
           <tr>
               <td>Documentation Generation <br/><small>(example: <a href="http://inet.omnetpp.org/doc/INET" target="_blank">INET</a>)</small></td>
-              <td><span class="yes">yes</span> -- under <span class="no">Creative Commons</span><sup>5</sup></td>
+              <td><span class="yes">yes</span><br>under <span class="no">Creative Commons</span><sup>5</sup></td>
               <td><span class="yes">yes</span></td>
           </tr>
           <tr>
@@ -119,7 +121,7 @@
           </tr>
         </table>
 
-        <ul>
+        <div class="footnotes">
             <sup>1</sup> if you are unsure whether you need a commercial license, please check the <a href="licensingfaq.php">Licensing FAQ</a>
             <br/>
             <sup>2</sup> the IDE is supported on Linux, Mac OS&nbsp;X and Windows; the simulation kernel and models can be compiled on other platforms as well
@@ -139,29 +141,8 @@
             <br/>
             <sup>9</sup> supports reading network topology and configuration from database, and writing simulation results to database
 -->
-        </ul>
+        </div>
 
-	</div>
-	<!-- End Content -->
-
-
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-	</div>
-
-</div>
-<!-- End Container -->
-
-
-
-
-<?php include("common/footer_inc.php"); ?>
-
-
-
+<?php print_leadout(); ?>
 </body>
 </html>

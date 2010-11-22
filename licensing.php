@@ -1,33 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Licensing Options</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
-
-<!-- Start Container -->
-<div id="container">
-
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
-
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>Licensing Options</h1></div>
-
 
 <p>If you are looking into using OMNEST for simulation projects within your company,
 or you are searching for an embeddable simulation kernel for your product,
@@ -79,29 +68,6 @@ also has access to OMNEST, then the distribution of binaries is usually not nece
 
 We hope the above has met with your requirements. Please do not hesitate to <a href="contact.php">contact us</a> for details.
 
-<p>See also: <a href="comparison.php">What's the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a></p>
-
-	</div>
-	<!-- End Content -->
-
-
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-	</div>
-
-</div>
-<!-- End Container -->
-
-
-
-
-<?php include("common/footer_inc.php"); ?>
-
-
-
+<?php print_leadout(); ?>
 </body>
 </html>

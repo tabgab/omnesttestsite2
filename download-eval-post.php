@@ -1,31 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST Evaluation Download</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Download Evaluation Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($product_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
-
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
-
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
-			<div id="header"><h1>OMNEST Evaluation Download</h1></div>
+<div id="header"><h1>OMNEST Evaluation Download</h1></div>
 
 <?php
 // if the form is modified you should modify also the corresponding parser in sugarcrm (modules/Omnst_OppWebForm/OmnetMailParser.php)
@@ -122,17 +113,6 @@ if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{
     echo ("<b>Thank you for your interest in the OMNEST Simulator.</b><br><br>You can download your evaluation copy from <a href=\"$download_url\">$download_url</a>; we have also sent you an e-mail with this URL.<br>");
 } ?>
 
-<br><br>
-	</div>
-	<!-- End Content -->
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-	</div>
-
-</div>
-<!-- End Container -->
-<?php include("common/footer_inc.php"); ?>
+<?php print_leadout(); ?>
 </body>
 </html>

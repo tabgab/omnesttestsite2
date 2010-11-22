@@ -1,1 +1,0 @@
-Editor showing the contents of a 'host' module

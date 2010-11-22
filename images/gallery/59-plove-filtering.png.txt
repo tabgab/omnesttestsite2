@@ -1,1 +1,0 @@
-Apply several filter on the data at the same time

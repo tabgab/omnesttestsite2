@@ -1,36 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - MEGA International embeds OMNEST simulation technology</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($product_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
+<div id="header"><h1>MEGA International embeds OMNEST&#8482; simulation technology</h1></div>
 
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
+<p>Paris, March 1<sup>st</sup> 2004</p> <br>
 
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
-
-	<div id="header"><h1>MEGA International embeds OMNEST&#8482; simulation technology</h1></div>
-
-        <div class="NewsDate"> Paris, March 1<sup>st</sup> 2004</div> <br>
-
-        <img src="references/mega.gif" alt="" border="0" class="News_Pic" align="left" width="197" height="102">
+<img src="references/mega.gif" alt="" align="left" width="197" height="102">
 
 <p>Last year MEGA International decided to embed OMNEST&#8482; technology into their Business Process Analysis
 and Enterprise Architecture Solutions suite, which resulted in simulation capabilities being added into the MEGA Process
@@ -45,7 +35,7 @@ integration into our product due to its open architecture," he added.</p>
 <p>"The new version of MEGA Process has been successfully released and the simulation feature has pleasantly surprised
 people that were waiting for it. This success has only been possible thanks to the excellent quality and design of your
 product. This allowed us to create a feature much more powerful than we were expected at the beginning of the project.
-That is definitively the proof we made the good choice when choosing OMNeT++," said Mr. Nicolas Betbeder-Matibet, lead
+That is definitively the proof we made the good choice when choosing OMNEST," said Mr. Nicolas Betbeder-Matibet, lead
 developer of the MEGA software suite.</p>
 
 <p>"We are very happy and proud to be associated with such a renown company as MEGA International. I believe this
@@ -75,27 +65,6 @@ Tobacco, Credit Lyonnais, General Electric EP, Renault, Target, Vitro and Wyeth.
 headquartered in Paris, with offices in Boston (USA), Birmingham (UK), Munich (Germany) and Milano (Italy) and with
 partners located around the globe. MEGA supports over 23,000 software licenses worldwide.</small></p>
 
-	</div>
-	<!-- End Content -->
-
-
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-	</div>
-
-</div>
-<!-- End Container -->
-
-
-
-
-<?php include("common/footer_inc.php"); ?>
-
-
-
+<?php print_leadout(); ?>
 </body>
 </html>

@@ -1,161 +1,120 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Overview and Benefits</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($product_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
+<div id="header"><h1>OMNEST &ndash; Overview and Benefits</h1></div>
 
-<?php include("common/top_inc.php"); ?>
-
-	<?php minimenu(array('architecture-verification', 'performance-modeling', 'network-simulation')); ?>
-	</div>
-	<!-- End Main Menu -->
-
-
-
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
-
-	<div id="header"><h1>OMNEST<sup>TM</sup> &ndash; Overview and Benefits</h1></div>
-
-<p><b>
+<p>
 OMNEST is the commercial version of the OMNeT++ object-oriented discrete
 event simulation framework. The framework has a generic architecture,
-which allows it to be applied to various problem domains where <i>complex behavior</i>
-needs to be simulated with <i>high performance</i>: protocol modeling, validation
+which allows it to be applied to various problem domains where complex behavior
+needs to be simulated with high performance: protocol modeling, validation
 of hardware architectures, modeling of wired and wireless communication networks,
-to name a few.</b></p>
-
-<p>
-<img src="images/misc/overview-modules.png" style="float:left; margin-right:10px;"/>
-OMNEST is not a simulator itself, but rather it provides a
-framework and tools to write simulations. One of the fundamentals of the
-OMNEST framework is the <b>component-based architecture</b>
-for simulation models: A model can be combined in various ways from
-reusable components, so called modules. The noncommercial version, OMNeT++, has a huge user community
+to name a few.  The noncommercial version, OMNeT++ has a huge
+<a href="community.php">user community</a>
 in the Academia, with several groups publishing and supporting
-<a href="network-simulation.php">simulation</a>
-<a href="http://www.omnetpp.org/models" target="_blank">models</a>,
-and nearly a hundred <a href="http://www.omnetpp.org/publications" target="_blank">papers</a>
-published each year on wireless network simulation and other topics.</p>
+simulation models, and nearly a hundred papers published each year on
+on the simulation of wireless networks and other topics.</p>
+
+<div class="pic left">
+<img src="images/misc/overview-modules.png" alt=""/>
+<div style="width:300px">OMNEST models are composed of nested
+modules that primarily communicate by exchanging messages</div>
+</div>
 
 <p>
-<img src="images/misc/overview-ide.png" style="float:right; margin-left:10px;"/>
-Simulations can be designed and evaluated in an integrated <b>Simulation IDE</b>,
-and can be run utilizing various interfaces:
+<b>Infrastructure.</b> One of the fundamentals of the
+OMNEST framework is the component-based architecture for simulation models.
+Models are built from reusable components, so called modules, which can be
+combined in various ways. The depth of module nesting is not limited.
+Modules communicate primarily by message passing, via connections or direct sending.
+Module behavior can be programmed in C++, using the simulation infrastructure
+OMNEST provides. The framework includes services like module parameterization,
+random numbers, result recording, publish-subscribe communication, logging,
+dynamic module and link creation, topology extraction and many others.
+</p>
+
+<p>
+<img src="images/misc/overview-ide.png" class="right rounded" />
+<b>IDE.</b> Simulation models can be designed and evaluated in an Eclipse-based
+integrated Simulation IDE, and can be run utilizing various interfaces:
 from simple command-line interfaces that are ideally suited for batch execution,
 to sophisticated graphical animated user interfaces which can
-be used for debugging or demonstration purposes.</p>
+be used for debugging or demonstration purposes. You can also extend the IDE
+with software from the Eclipse Marketplace and other Eclipse plug-in sites.</p>
 
 <p>
-<img src="images/misc/systemc_etc.png" style="float:left; margin-right:10px;"/>
-OMNEST simulations are very <b>scalable and run efficiently</b>, due to the use of C++.
-Simulation models can also be executed using parallel distributed simulation.
+<b>Scalability, extensibility, SystemC, HLA</b>. OMNEST simulations run very efficiently, due
+to the use of C++ and the careful design of the simulation library.
+Simulation models can also be executed using parallel distributed simulation,
+to gain speed-up or to distribute memory requirements.
 Real-time execution and emulation (hardware-in-the-loop) are supported as well.
-The OMNEST-SystemC integration facility allows OMNEST simulations to directly
+The OMNEST-SystemC integration capability allows OMNEST simulations to directly
 incorporate parts written in SystemC, without loss of performance. OMNEST
-simulations can also participate in a HLA federation.</p>
+simulations can also participate in HLA federations.</p>
 
-<p>If you'd like to create application programs that internally rely on simulation,
-OMNEST allows that: the simulation kernel, modules and whole simulations can be
+<p>
+You can create your own applications that may rely on the OMNEST simulation
+kernel internally for simulation functions. OMNEST is written with such embedding
+scenarios in mind. The simulation kernel, modules, even whole simulations can be
 embedded into your program as C++ libraries.</p>
 
-<table cellspacing="0" cellpadding="0"><tr>
-<td id="button-left" style="vertical-align: middle"/>
-<td id="button"><a href="/download/free/omnest-whitepaper.pdf" ><strong>Download the OMNEST<sup>TM</sup> White Paper</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-<td id="button-right"/></tr>
-</table>
 
-<br><br>
-Also:<br>
+<div class="framed">
 
-<img src="common/images/list_01.gif" alt="" border="0">
-<a href="web-demos.php">Demo videos and presentations</a>
-<br>
+<h2 style="color:#e54426">What Our Users Say</h2>
 
-<img src="common/images/list_01.gif" alt="" border="0">
-<a href="features.php">Features in a nutshell</a>
-<br>
-
-<img src="common/images/list_01.gif" alt="" border="0">
-<a href="embedding.php">Embedding OMNEST simulations into applications</a>
-<br>
-
-<img src="common/images/list_01.gif" alt="" border="0">
-<a href="documentation.php">OMNEST documentation</a>
-<br>
-
-<img src="common/images/list_01.gif" alt="" border="0">
-<a href="comparison.php">What's the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a>
-<br>
-<br>
-
-
-<h2 style="color:#e54426">Why Is OMNEST Good for Me?</h2>
-
-<p>When we asked experts why they chose OMNEST or OMNeT++ for their work or research,
-they brought up the following reasons (most of this was personal communication via email
-and at the annual <a href="http://omnet-workshop.org" target="_blank">OMNeT++ workshops</a>):</p>
+<p>When we asked our customers and users why they chose OMNEST (or OMNeT++)
+for their work or research, they brought up the following reasons (most of this
+was personal communication via email and at the annual OMNeT++ workshops):</p>
 
 <ul>
-  <li>very efficient -- OMNEST simulations execute fast and scale very well,
+  <li><b>very efficient</b> -- OMNEST simulations execute fast and scale very well,
       which can be surprising given the amount of features in the simulation library
 
-  <li>fast learning -- some C++ knowledge is required, but the programming model and
+  <li><b>fast learning</b> -- some C++ knowledge is required, but the programming model and
       the API can be picked up quickly, and one can become productive in a short time
 
-  <li>great community -- OMNeT++ has a huge user community, and a lot of information
+  <li><b>great community</b> -- OMNeT++ has a huge user community, and a lot of information
       is freely available on the Internet; this is very useful when one bumps into a problem,
       as the solution is often just a web search away (compare that with proprietary
       tools where publicly available information is often limited to marketing materials)
 
-  <li>component model -- other people's simulation models are easier to understand
-      and can be combined in unexpected ways, because components do not interact with
-      each other directly on the C++ level, only via means provided by OMNEST
-      (e.g. messages)
+  <li><b>component model</b> -- simulation models are easier to understand and maintain
+      and can be combined in unexpected ways (because components do not interact with
+      each other directly on the C++ level, only via means provided by OMNEST, e.g. messages)
 
-  <li>not limiting -- the simulator and models can be extended in unforeseen ways;
+  <li><b>not limiting</b> -- the simulator and models can be extended in unforeseen ways;
       exotic scenarios such as interfacing with other simulators
       and external systems, parallel simulation, emulation, and combinations of the above,
       can be realized; and when something doesn't work as expected, the full source code
       is there to study and debug
 </ul>
 
-	</div>
-	<!-- End Content -->
-
-
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-	</div>
-
 </div>
-<!-- End Container -->
 
+<br>
 
+<h2>Read more</h2>
 
+<ul class="links">
+  <li>Next: <a href="features.php">OMNEST Features</a>
+</ul>
 
-<?php include("common/footer_inc.php"); ?>
-
-
-
+<?php print_leadout(); ?>
 </body>
 </html>

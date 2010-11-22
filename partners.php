@@ -1,84 +1,91 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Partners</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($company_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
-
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
-
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
-
-			<div id="header"><h1>Partners</h1></div>
+<div id="header"><h1>Partners</h1></div>
 
 
-<p>Thanks for your interest.</p>
+<p>Our authorized OMNEST resellers:</p>
 
-<p>While OMNeT++ is well known in the academia, the OMNEST<SUP>TM</SUP> reseller and partner network is generally at its inception.</p>
+<table style="margin-left:50px">
+  <tr>
+    <td style="height:80px; width:180px">
+      <a href="http://vi-re.com" target="_blank"><img src="images/misc/vire-logo.png"></a>
+    </td>
+    <td style="vertical-align:top">
+      <b>VI-RE Technologies</b> (<a href="http://vi-re.com" target="_blank">vi-re.com</a>)<br>
+      <a href="http://www.vi-re.com/about/article/contact" target="_blank">address and contact details</a><br>
+      Countries: China, Malaysia and Singapore
+    </td>
+  </tr>
 
-<p>We are very happy about the existing references we have. OMNEST<SUP>TM</SUP> is used by some of the most innovative corporations in the world, and some very large and prestigious organizations have invested into OMNEST<SUP>TM</SUP> technology. We see this as a promising start, and this is probably the best time for any interested parties to join us in establishing a world-class distribution network.</p>
+  <tr>
+    <td style="height:80px; width:180px">
+      <a href="http://www.eswlab.com" target="_blank"><img src="images/misc/eswlab-logo.gif"></a>
+    </td>
+    <td>
+      <b>Engineering Software Lab, Ltd.</b> (<a href="http://www.eswlab.com" target="_blank">eswlab.com</a>)<br>
+      Countries: Israel
+    </td>
+  </tr>
 
-<h2>Reseller Partners</h2>
-<p>We value initiative, flexibility and dedication to fulfill customer needs, and are looking to establish reseller relationships with companies who think and act on a similar trail. An OMNEST<SUP>TM</SUP> reseller must really add value to the offering, by investing the energy and time to be able to support users locally. An OMNEST<SUP>TM</SUP> reseller partner must also be willing to invest into marketing, to extend visibility and reach in the targeted market.</p>
+<!--
+  <tr>
+    <td style="height:80px; width:180px">
+      <a href="http://dellsoft.in" target="_blank"><img src="images/misc/dellsoft-logo.jpg"></a>
+    </td>
+    <td>
+      <b>DELLSOFT Technologies</b> (<a href="http://dellsoft.in" target="_blank">dellsoft.in</a>)</a><br>
+      Countries: India
+    </td>
+  </tr>
+-->
+</table>
 
-<p>While these investments are not to be underestimated, the potential rewards are extra-ordinary. Discreet Event Simulation is today's "must have" technology in manufacturing, system design, communication and networking, amongst other technical disciplines. Industries range from high-tech IT and defense, through electronics and consumer goods, to telecommunication, consulting and even business process modeling in finance or government organizations. The applications are truly endless, and the results are well worth the initial investment. Companies increase the quality of their output and/or services, optimize architecture and/or internal structures and processes, save costs, and become generally more competitive when they apply OMNEST<SUP>TM</SUP> technology. As a reseller partner, perhaps you too can become an essential part of making OMNEST<SUP>TM</SUP> the premiere simulation tool across multiple industries.</p>
-
-<p>Simulcraft understands the key role of VAR partners in the success of OMNEST<SUP>TM</SUP>, we honor and protect the investments our partners make in market-building. If you are interested to develop a relationship along the grounds laid out above, we would like to hear from you. <a href="contact.php">Contact us</a> and we will get back to you shortly.</p>
-
-<h2>Developer Partners</h2>
-<p>So, in your many years of using OMNeT++, you have developed an add-on, a model, or a custom front-end that you would now like to commercialize? Or you have an idea extending OMNEST<SUP>TM</SUP> to be even more effective in a specific field and would like to market an add-on to the system? You would also like to be listed on this site and take advantage of the global channel we are building? Welcome, we would be pleased to talk to you. <a href="contact.php">Contact us</a> and we will get back to you shortly.</p>
-
-<h2>OEM Partners</h2>
-<p>You have been looking to extend your software with simulation capabilities, and would like something that you can easily and seamlessly integrate into your product? Are you looking to release something based on the OMNEST<SUP>TM</SUP> engine, but the parameters and algorithms you use result in a product you would like to market yourself? Or are you interested in arming your sales people, consultants or technicians with the ultimate "in-house" system-analysis or configuration tool, and would like to use OMNEST<SUP>TM</SUP> as the basis of developing your own proprietary product? Perhaps you have something even more groundbreaking on your mind? <a href="contact.php">Contact us</a> and we will help you make it happen.</p>
-
-
-
-
-
-
-
-
-
-
-
-	</div>
-	<!-- End Content -->
-
-
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-	</div>
-
-</div>
-<!-- End Container -->
+<p>Note: <a href="piracy.php">Piracy of OMNeT++ Licenses in China</a>.</p>
 
 
+<h2>Interested in becoming an OMNEST&#8482; reseller?</h2>
 
+<p>We value initiative, flexibility and dedication to fulfill customer
+needs, and are looking to establish reseller relationships with companies
+who think and act on a similar trail. An OMNEST reseller must
+really add value to the offering, by investing the energy and time to be
+able to support users locally. An OMNEST reseller partner must also be
+willing to invest into marketing, to extend visibility and reach in the
+targeted market.</p>
 
-<?php include("common/footer_inc.php"); ?>
+<p>While these investments are not to be underestimated, the potential
+rewards are significant. Discrete Event Simulation is today's "must
+have" technology in manufacturing, system design, communication and
+networking, amongst other technical disciplines. Industries range from
+high-tech IT and defense, through electronics and consumer goods, to
+telecommunication and consulting. As a reseller partner, perhaps you
+too can become an essential part of making OMNEST the premiere
+simulation tool across multiple industries.</p>
 
+<p>Simulcraft understands the key role of VAR partners in the success of
+OMNEST, we honor and protect the investments our partners make in
+market-building. If you are interested to develop a relationship along the
+grounds laid out above, we would like to hear from you.</p>
 
+<p><a href="contact.php">Contact us</a> and we will get back to you shortly.</p>
 
+<?php print_leadout(); ?>
 </body>
 </html>
+

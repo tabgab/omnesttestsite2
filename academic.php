@@ -1,35 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-    <?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Academic Use</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($product_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
+<!-- THIS PAGE IS CURRENTLY UNUSED -->
 
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
+<div id="header"><h1>Academic Use</h1></div>
 
-	<div style="clear: both;">
-
-	<!-- Start Content -->
-	<div id="content">
-
-			<div id="header"><h1>Academic Use</h1></div>
-
-
-<p>OMNEST<SUP>TM</SUP> is the commercial version of the OMNeT++ simulation
+<p>OMNEST&#8482; is the commercial version of the OMNeT++ simulation
 framework, one of the most popular simulators at universities worldwide.
 OMNeT++ is used as a research and teaching tool, and there are many
 OMNeT++-based open-source simulation models and model frameworks released
@@ -44,7 +35,7 @@ the Academic Public License.</p>
 
 <p>If you are a student or university lecturer and OMNeT++ is used in
 teaching, then it qualifies as non-commercial activity. If you are doing
-research with OMNEST<SUP>TM</SUP>/OMNeT++ (whether at a university,
+research with OMNEST&#8482;/OMNeT++ (whether at a university,
 research institute or company), then the deciding factor is whether the
 results will be publicly available (i.e. published in a journal or
 presented at a public conference), or will be used in the creation of a
@@ -62,29 +53,6 @@ research or in teaching, you will always have OMNeT++ to back it, whatever
 happens to our company. The full text of the license can be read on
 <a href="http://www.omnetpp.org/license" target="_blank">omnetpp.org</a>.</p>
 
-<ul class="list01"><li><a href="comparison.php">See also: What is the difference between OMNeT++ and OMNEST<sup>TM</sup>?</a></li></ul>
-
-	</div>
-	<!-- End Content -->
-
-
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-	</div>
-
-</div>
-<!-- End Container -->
-
-
-
-
-<?php include("common/footer_inc.php"); ?>
-
-
-
+<?php print_leadout(); ?>
 </body>
 </html>

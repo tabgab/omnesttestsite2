@@ -1,1 +1,0 @@
-Visual properties for a module

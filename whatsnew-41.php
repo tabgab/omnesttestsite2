@@ -1,39 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>OMNEST - The Open Simulator</title>
-	<meta name="robots" content="INDEX,FOLLOW" />
-	<meta name="revisit-after" content="30" />
-	<meta name="description" content="OMNEST Discrete Event Network Simulator" />
-	<meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework"  />
-	<link rel="stylesheet" type="text/css" href="common/omnest.css">
-
-<?php include("common/ga.php"); ?>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - What's New in the IDE in the 4.1 Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
 </head>
 
 <body>
+<?php print_leadin($product_menu, __FILE__); ?>
 
-<!-- Start Container -->
-<div id="container">
-<?php include("common/top_inc.php"); ?>
-	</div>
-	<!-- End Main Menu -->
+<div id="header"><h1>What's New in OMNEST 4.1</h1></div>
 
-	<div style="clear: both;">
+<h2>Simulation Core</h2>
 
-	<!-- Start Content -->
-	<div id="content">
+<p>A very brief summary of the changes and new features in the simulation core:</p>
 
-<h1>What's New in the IDE in the 4.1 Version</h1>
+<ul>
+  <li>introduction of a signals framework
+  <li>signals-based result recording
+  <li>declared statistics in NED files
+  <li>statistics configurability in ini files
+  <li>channel statistics
+  <li>countless other improvements (check the change log included with OMNEST)
+</ul>
+
 
 <h2>NED Editor</h2>
 
 <ul class ="list04">
 <li><strong>New Eclipse Platform</strong><br />
 <p>The IDE is now based on Eclipse 3.5.2 and CDT 6.0.2.</p>
-<img src="images/whatsnew-41/41-version.png" border="0">
+<img src="images/whatsnew-41/41-version.png">
 <br />
 <br />
 <li><strong>Manual Palette Filtering</strong><br />
@@ -283,23 +287,6 @@ the project.</p>
 <img src="images/whatsnew-41/41-plugin-running.png"/>
 </ul>
 
-	</div>
-	<!-- End Content -->
-
-
-
-	<!-- Start Right -->
-	<?php include("common/right_inc.php"); ?>
-	<!-- End Right -->
-
-
-	</div>
-
-</div>
-<!-- End Container -->
-
-
-<?php include("common/footer_inc.php"); ?>
-
+<?php print_leadout(); ?>
 </body>
 </html>
