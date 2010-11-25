@@ -28,7 +28,7 @@ reseller partners.</p>
 <p>Simulcraft and Opensim successfully blend the open-source approach with
 commercial activities. We derive pride and satisfaction from being able
 to serve thousands of people -- students, lecturers, researchers -- who are
-using OMNeT++ in the Academia, and we believe that our key to success is
+using OMNeT++ in Academia, and we believe that our key to success is
 the open source approach and a live and thriving user community.
 The revenue from OMNEST allows us to continually improve and support OMNeT++,
 and generally contribute to the growth of the community.

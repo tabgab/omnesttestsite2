@@ -21,7 +21,7 @@
 <p>The OMNEST simulation framework's component-oriented architecture
 makes it ideally suited to architectural simulation of complex hardware
 and software systems, for example supercomputer architectures, on-chip networks,
-multiprocessor systems and SOA architectures, and in general, problem domains
+multiprocessor systems, SOA architectures, and in general, problem domains
 where a complex system's behavior needs to be simulated with high performance.
 </p>
 
@@ -37,14 +37,14 @@ OMNEST to solve their problems.
 <div>Illustration: an example switch architecture</div>
 </div>
 
-<p>OMNEST helps you fight complexity by providing a <b>component architecture</b>
+<p>OMNEST helps you deal with complexity by providing a <b>component architecture</b>
 that allows you to build the model hierarchically in a top-down or
 bottom-up fashion. Components can represent any level of detail that is
 appropriate for your simulation study, from cycle-accurate models to
 high-level functional models. The component architecture also makes it possible
 to have multiple implementations with varying level of detail for a given
 component, or to replace a single component with a composite one.
-These features allow you to write the simulation model on the right abstraction level,
+These features allow you to write the simulation model on the appropriate abstraction level
 and still have the flexibility to modify it later.
 </p>
 
@@ -52,17 +52,15 @@ and still have the flexibility to modify it later.
 <p>Simulation <b>performance</b> is ensured by careful design and the use of C++
 for both models and the simulation kernel and library.
 If you are simulating hardware architectures, OMNEST's <b>SystemC</b> integration feature
-can be extremely useful. SystemC modules, both RTL or higher-level
-functional ones, can be used in OMNEST simulations without loss of performance.
+can be extremely useful.  Both RTL and higher-level SystemC modules
+can be used in OMNEST simulations without loss of performance.
 When needed, distributed parallel simulation capability is available for
 speeding up model execution and for distributing memory requirements. The simulation
 model does not need to be instrumented for parallel simulation, but it needs
 to obey certain restrictions (e.g. no global variables and no direct access of
 components that may be instantiated in a different partition). Hardware-in-the-loop
 and connecting an OMNEST simulation to other simulators (co-simulation)
-is also supported. (Some details like the specifics of talking to the particular
-external device or simulator needs to be filled in by you, of course, but
-our team can help you with that.)
+are also supported. 
 </p>
 
 

@@ -27,7 +27,7 @@
     using a high-level declarative language (NED), and can be edited
     graphically or in source mode. NED provides packages, inheritance,
     interfaces, parametric types, metadata annotation and other features
-    that make it scale.</li>
+    that allow easy scalability of models.</li>
 
     <li><strong>C++-based, high performance simulation kernel</strong><br>
     Atomic components are programmed in C++, using a well-defined API to the simulation library.
@@ -39,7 +39,7 @@
     Eclipse plug-in sites.</li>
 
     <li><strong>Powerful GUI for tracing, debugging and animating your simulations</strong><br>
-    Simulations can be run under an graphical interactive runtime environment or a
+    Simulations can be run under a graphical interactive runtime environment or a
     command-line interface for batch execution. The graphical runtime environment provides
     animation and tracing, and lets you peek into objects and variables in the C++ code
     while the simulation executes.</li>
@@ -102,7 +102,7 @@
 
     <li><strong>Open interfaces</strong><br>
     All model files and output files are plain text to make it easier for you to process
-    them with your own custom tools or 3rd party ones. We also provide command-line tools
+    them with your own custom or 3rd party tools. We also provide command-line tools
     and libraries to manipulate them.</li>
 
     <li><strong>Open-source simulation models</strong><br>
@@ -110,7 +110,7 @@
 
     <li><strong>Extensible</strong><br>
     C++ plug-in interfaces are made available to customize various aspects of the simulation kernel:
-    event scheduling, configuration and model parameterization, result recording and so on.</li>
+    event scheduling, configuration and model parameterization, result recording and more.</li>
 </ul>
 
 <h3>ADVANCED</h3>
@@ -137,7 +137,7 @@
     <li><strong>SystemC integration</strong><br>
     Allows for mixing OMNEST and SystemC modules in the same simulation program,
     without losing performance. (Co-simulation solutions found in other products
-    usually incur quite significant performance penalty.)</li>
+    usually incur a significant performance penalty.)</li>
 
     <li><strong>HLA support</strong><br>
     Allows for connecting OMNEST with other simulators via HLA / IEEE 1516.</li>

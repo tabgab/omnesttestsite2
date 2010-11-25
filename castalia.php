@@ -39,7 +39,7 @@ a wide range of platforms. The main features of Castalia are:
 
       <li>Complex  model for temporal variation of path loss</li>
       <li>Fully supports mobility of the nodes</li>
-      <li>Interference is handled as received signal strength, not as separate feature</li>
+      <li>Interference is handled as received signal strength, not as a separate feature</li>
      </ul>
     </li>
 

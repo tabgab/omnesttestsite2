@@ -21,7 +21,7 @@
 
 <p>OMNEST is the commercial version of OMNeT++, one of the most popular network
 simulation frameworks in academic and research communities.
-OMNeT++ is free for academic and non-profit use, and has a vivid
+OMNeT++ is free for academic and non-profit use, and has an active
 and growing user community. Most network simulation frameworks for
 OMNeT++ have been created and are supported by the community.
 The main forum for discussions is the OMNeT++ mailing list, currently

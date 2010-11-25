@@ -51,9 +51,9 @@ the Simulation IDE as well.</p>
       <td class="doctitle">OMNEST Manual</td>
       <td>pdf, html</td>
       <td>
-        A comprehensive and in-depth description on using OMNEST, from principles
-        to programming, parameterizing and running simulations and evaluating results.
-        Also covers advanced topics like parallel distributed simulation, extending
+        A comprehensive and in-depth description of using OMNEST; from principles
+        to programming, parameterizing, running simulations, and evaluating results.
+        The manual also covers advanced topics like parallel distributed simulation, extending
         the simulator with custom schedulers, and embedding simulations into 3rd party
         applications. Does not cover the Simulation IDE (see IDE User Guide).
       </td>
@@ -80,7 +80,7 @@ the Simulation IDE as well.</p>
       <td class="doctitle">IDE User Guide</td>
       <td>pdf, html</td>
       <td>
-        Provides a detailed coverage of using the Simulation IDE and its
+        Provides detailed coverage of using the Simulation IDE and its
         functionality. Covers model (NED) editing; C++ editing and build; parameterizing
         and configuring models; launching simulations; debugging, tracing and
         inspecting simulations; visualizing simulation history on sequence charts;
@@ -139,7 +139,7 @@ the Simulation IDE as well.</p>
       <td class="doctitle">Migration Guide</td>
       <td>pdf, html</td>
       <td>
-        Provides an overview and instructions on how to migrate simulations
+        Provides an overview and instructions for migrating simulations
         written for earlier (3.x) versions of OMNEST or OMNeT++, using
         the provided migration tools and some manual work.
       </td>

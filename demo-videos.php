@@ -39,7 +39,7 @@
     <td>
       <div>
              <p>This is a 15-minute tutorial that walks through the basic steps of creating
-             and running a simulation, visualizing its execution history on a sequence chart
+             and running a simulation, visualizing its execution history on a sequence chart,
              and analyzing the simulation results, in order to show basic functions of the
              OMNEST Simulation IDE.</p>
        </div>

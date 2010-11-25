@@ -30,7 +30,7 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
 
 <p>Evaluation versions are full OMNEST installations, including the simulation
 libraries, tools, the IDE, sample simulations and documentation.
-The Evaluation version comes in two flavours, as a Live CD image
+The Evaluation version comes in two forms; as a Live CD image
 and as a Windows installer. You can run and modify all the provided samples and create your own small simulations.
 You can also download OMNeT++ models from the web, install and try them.</p>
 
@@ -57,7 +57,7 @@ You can also download OMNeT++ models from the web, install and try them.</p>
 
 <a href="download/free/omnest-4.1-eval-win32.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
       <p><tt><a href="download/free/omnest-4.1-eval-win32.exe">omnest-4.1-eval-win32.exe</a></tt></p>
-      <p>This is a program that installs OMNEST Evaluation on a 32-bit Windows system (Windows 7, Vista or XP).
+      <p>This is a program that installs the OMNEST Evaluation on a 32-bit Windows system (Windows 7, Vista or XP).
       </p>
 
       <small>NOTE: A C++ compiler and binaries are included for compiling simulation models

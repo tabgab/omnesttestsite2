@@ -19,11 +19,11 @@
 <div id="header"><h1>Discrete Event Simulation</h1></div>
 
 <p><strong>With OMNeT++/OMNEST you can simulate</strong> anything that can
-be mapped into a number of entities, sending messages to each other. What
+be mapped into a number of entities sending messages to each other. What the
 entities and messages mean is up to you. That is, one can simulate queueing
 networks ("jobs" or "customers" travelling among queues), computer networks
 (computers exchanging packets), businesses (employees sending documents and
-files to each other and making phone calls) , hardware architectures (e.g.
+files to each other and making phone calls), hardware architectures (e.g.
 a CPU making requests to the disk, or units communicating on a bus) and
 many other systems.</p>
 
@@ -37,8 +37,8 @@ running the model, and evaluating the results.</p>
 
 <p>The OMNEST/OMNeT++ simulation kernel is very extensible, and can
 accommodate special needs such as parallel/distributed simulation,
-real-time simulation (emulation), database integration, embedding, comes
-with source code to increase your degree of freedom, and is backed with
+real-time simulation (emulation), database integration, and embedding. OMNEST/OMNeT++ comes
+with source code to make custom model development easier and faster, and is backed with
 superior support.</p>
 
 
