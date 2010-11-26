@@ -17,7 +17,7 @@ function print_titlepage_head_contribution() {
 }
 
 function print_head_contribution_internal($is_title_page) { ?>
-    <base href="<?php echo $_SERVER['SCRIPT_NAME']?>" /> <!-- avoid issues with /index.php/ style tags -->
+    <base href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME']?>" /> <!-- avoid issues with /index.php/ style tags URI-->
     <link rel="stylesheet" type="text/css" href="common/omnest.css">
 
     <!--[if lt IE 7.]>
