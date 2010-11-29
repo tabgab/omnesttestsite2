@@ -26,7 +26,7 @@
 <p>OMNEST is a component-oriented network simulation framework.
 The generic architecture of the simulator allows OMNEST to be
 applied to various problem domains where complex behavior needs to be
-simulated with high performance, for example protocol modeling,
+simulated with high performance; for example protocol modeling,
 simulation of hardware architectures and computer networks.</p>
 
 <p>
@@ -34,10 +34,10 @@ simulation of hardware architectures and computer networks.</p>
 Classic performance models are built from more-or-less standardized
 components that have relatively simple behavior: queues, resource
 allocation/deallocation, splitting and joining jobs, updating variables,
-etc. If your model is 100% like that, you probably don't need OMNEST
+etc. If your model is of this type, you probably don't need OMNEST
 because you cannot make use of its competitive advantage (simulating
 complex behavior with high performance). However, if you need to simulate a
-piece of complex technology and not a hamburger bar, chances are you cannot
+complex, real-world system, chances are you cannot
 express its behavior with standardized performance modeling components
 alone.
 </p>
@@ -45,7 +45,7 @@ alone.
 <p>
 Today's technology is incredibly complex, and it can be a difficult task to
 find the right abstraction level for the simulation model. If the model is
-too detailed, it takes a long time to develop and validate it, and also
+too detailed, it takes a long time to develop and validate, and it also
 runs slower. If it is too simple and ignores something important, your
 results may not have anything to do with the real system. It is a valid
 approach to start the model simple (so you have quickly have some initial
@@ -81,10 +81,10 @@ protocol implementation.
 
 <p>Why not choose a simulation package based on Java or a special-purpose
 simulation language, or a "no-programming" GUI simulation software?
-If you can, why not indeed. However, consider this:</p>
+One of these other solutions may work for you; however, consider this:</p>
 
 <ul>
-  <li><p><b>If your model cannot fit into the natural concepts of the simulation package,
+  <li><p><b>If your model cannot fit within the natural concepts of the simulation package,
       performance will suffer.</b> And maybe you will also struggle implementing the model.
       If your model is behaviorally complex, you will need to write additional
       code because you cannot express behavior using the building blocks provided
@@ -101,13 +101,13 @@ If you can, why not indeed. However, consider this:</p>
       external systems?</b> Connect to other simulators, perform real-time
       hardware-in-the-loop simulations, and so on.
       If so, then double-check if the simulation package allows it.
-      With OMNEST, the whole simulator is completely open for extension
+      With OMNEST, the entire simulator is completely open for extension
       via C/C++, so you <i>know</i> for sure that you will be able to do
       whatever you need to do.</p>
   <li><p><b>Does your simulation potentially involve data communication or computer
       networks?</b> When modeling an IT system (e.g. a SOA application), network
       performance and the behavior of network protocols may be an important factor
-      in the overall performance so that they need to be simulated explicitly at some point.
+      in the overall performance, so that they need to be simulated explicitly at some point.
       (For example, TCP can exhibit very complex stateful nonlinear behavior
       when it experiences congestion.)
       In such simulations, the large body of protocol simulation frameworks

@@ -91,7 +91,7 @@ A more complete list of models and frameworks is available on the
 <h2>Benefits</h2>
 
 <p>Simulation models are truly <b>component-based</b>, meaning that you are
-able to combine existing blocks (protocol models, application models, queues, etc)
+able to combine existing blocks (protocol models, application models, queues, etc.)
 and your custom blocks to form models of arbitrary hosts, routers, switches
 and other network devices. Another distinguishing feature of OMNEST/OMNeT++
 models is the <b>framework approach</b>, meaning that models such as MiXiM

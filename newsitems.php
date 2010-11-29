@@ -44,7 +44,7 @@ $news = array(
           simulation core include the introduction of a signals framework;
           signals-based result recording; declared statistics in NED files and
           their configurability in ini files; channel statistics; and many other
-          improvements. There were also several refinements on the graphical runtime
+          improvements. There were also several refinements of the graphical runtime
           environment and Simulation IDE, and the documentation was completed
           with new items. <a href='whatsnew-41.php'>Details</a>.</p>
         ",
@@ -76,7 +76,7 @@ $news = array(
           related topics. Alfonso Ariza Quintana raised the idea of modularizing the
           INET Framework in his presentation. Andras Varga presented about the new
           signals feature of OMNeT++ and about extending the IDE with wizards. The
-          participants attested a very high quality of presentations. Thanks to the
+          participants attested to the very high quality of presentations. Thanks to the
           strong TPC, we have had four reviews per paper and a rebuttal period, which
           helped to select high quality papers for the workshop. Our general
           impressions was that this community is advancing and growing very fast.</p>"

@@ -35,7 +35,7 @@ OMNEST in China. VI-RE has our authorization to prosecute pirates and
 cheats peddling illegal wares.
 </p>
 
-<p>If you have been approached by crooks, or have already fallen victim
+<p>If you have been approached by anyone besides our authorized agent, or have already fallen victim
 to these pirates, please get in touch with us so that we may discuss
 legalization options. Apart from being safe from litigation and the burden
 of using stolen goods, you too could take advantage of the benefits of

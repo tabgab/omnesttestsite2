@@ -63,7 +63,7 @@
 
 <p>We value initiative, flexibility and dedication to fulfill customer
 needs, and are looking to establish reseller relationships with companies
-who think and act on a similar trail. An OMNEST reseller must
+who think and act in a similar way. An OMNEST reseller must
 really add value to the offering, by investing the energy and time to be
 able to support users locally. An OMNEST reseller partner must also be
 willing to invest into marketing, to extend visibility and reach in the
@@ -80,7 +80,7 @@ simulation tool across multiple industries.</p>
 
 <p>Simulcraft understands the key role of VAR partners in the success of
 OMNEST, we honor and protect the investments our partners make in
-market-building. If you are interested to develop a relationship along the
+market-building. If you are interested in developing a relationship along the
 grounds laid out above, we would like to hear from you.</p>
 
 <p><a href="contact.php">Contact us</a> and we will get back to you shortly.</p>

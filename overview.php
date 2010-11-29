@@ -24,10 +24,9 @@ event simulation framework. The framework has a generic architecture,
 which allows it to be applied to various problem domains where complex behavior
 needs to be simulated with high performance: protocol modeling, validation
 of hardware architectures, modeling of wired and wireless communication networks,
-to name a few.  The noncommercial version, OMNeT++ has a huge
-<a href="community.php">user community</a>
-in the Academia, with several groups publishing and supporting
-simulation models, and nearly a hundred papers published each year on
+to name a few.  The noncommercial version, OMNeT++, has a huge academic
+<a href="community.php">user community</a>, with several groups publishing and supporting
+simulation models, and nearly a hundred papers published each year 
 on the simulation of wireless networks and other topics.</p>
 
 <div class="pic left">
@@ -39,7 +38,7 @@ modules that primarily communicate by exchanging messages</div>
 <p>
 <b>Infrastructure.</b> One of the fundamentals of the
 OMNEST framework is the component-based architecture for simulation models.
-Models are built from reusable components, so called modules, which can be
+Models are built from reusable components, called modules, which can be
 combined in various ways. The depth of module nesting is not limited.
 Modules communicate primarily by message passing, via connections or direct sending.
 Module behavior can be programmed in C++, using the simulation infrastructure
@@ -61,14 +60,14 @@ with software from the Eclipse Marketplace and other Eclipse plug-in sites.</p>
 <b>Scalability, extensibility, SystemC, HLA</b>. OMNEST simulations run very efficiently, due
 to the use of C++ and the careful design of the simulation library.
 Simulation models can also be executed using parallel distributed simulation,
-to gain speed-up or to distribute memory requirements.
+to speed up the simulations or to distribute memory requirements.
 Real-time execution and emulation (hardware-in-the-loop) are supported as well.
 The OMNEST-SystemC integration capability allows OMNEST simulations to directly
 incorporate parts written in SystemC, without loss of performance. OMNEST
 simulations can also participate in HLA federations.</p>
 
 <p>
-You can create your own applications that may rely on the OMNEST simulation
+You can create your own applications that rely on the OMNEST simulation
 kernel internally for simulation functions. OMNEST is written with such embedding
 scenarios in mind. The simulation kernel, modules, even whole simulations can be
 embedded into your program as C++ libraries.</p>

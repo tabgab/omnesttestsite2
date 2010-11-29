@@ -87,18 +87,17 @@ external interface.</p>
 </div>
 
 <p><b>Creating the model.</b> First we created a rough implementation using
-the pre-built blocks. The first model was showing signs of life in less
-than 4 hours. After that we started refining the blocks. We added AFDX
+the pre-built blocks. After that we started refining the blocks. We added AFDX
 specific data (virtual link and partition IDs, etc.) to the source packet
 generators, then we refined our Ethernet MAC module which was originally
 just a stock Server block. At first we had also a Switch implementation
-that had hard coded virtual link routing information, but later changed
+that had hard-coded virtual link routing information, but later changed
 this to read the link information from a configuration file. </p>
 
 <p><b>Conclusion.</b> We found that using the queueing library was very
 rewarding in our simulation model, as it allowed us to build a model at the
 right level of abstraction. The top-down design method in OMNEST made it possible
-to refine the model gradually, without having to fight unnecessary
+to refine the model gradually, without having to contend with unnecessary
 complexity or suffer performance overhead from an excessively detailed
 model. It was useful to have a complete control over the behavior of the
 model, by being able to modify or replace the initial building blocks.</p>
@@ -112,7 +111,7 @@ model, by being able to modify or replace the initial building blocks.</p>
       or later one can explicitly model communication, CPU, disk access etc.</li>
   <li>routing can be first a simple hardcoded function; later a table-driven,
       proper implementation (as was suggested in the above AFDX model)</li>
-  <li>user behavior can be easily modeled a Poisson process and later replaced
+  <li>user behavior can be easily modeled as a Poisson process and later replaced
       as something more sophisticated (like modeling web browsing behavior)</li>
 </ul>
 
