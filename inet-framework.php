@@ -85,7 +85,7 @@ OMNeT++ Sequence Chart tool (switch to full screen and HD for viewing):</p>
 The following paper by INRIA researchers reports about using the INET Framework
 for simulation of a train communication system. It discusses both the advantages
 and limitations/difficulties of the INET Framework at the time the article was
-written, and lessons learnt from the project. It is a worthy read.
+written, and lessons learned from the project. It is a worthy read.
 </p>
 
 <p class="bibref">

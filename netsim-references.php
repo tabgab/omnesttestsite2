@@ -103,7 +103,7 @@ BIONETS project deliverable. Chapter 6, <i>"The BIONETS simulator platform"</i>,
 <p><b>OPTIMIX.</b> The ICT-OPTIMIX FP7 project
 (<a href="http://www.ict-optimix.eu" target="_blank">ict-optimix.eu</a>)
 studies innovative solutions enabling enhanced video streaming for point to
-multi-point in an IP based wireless heterogeneous system, based on cross
+multi-point in an IP based wireless heterogeneous system, based on cross-
 layer adaptation of the whole transmission chain. The aim of the project is
 to increase the perceived quality of service for the user thanks to
 efficient cross-layer mechanisms enabling efficient joint approach between

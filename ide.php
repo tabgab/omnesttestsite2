@@ -85,9 +85,9 @@ view of the parameterized module tree, and many other useful features.</p>
 
 <p>Simulations can be run under several user interfaces, including a command-line
 interface for batch execution and a graphical interactive runtime environment.
-The graphical runtime lets the user explore the simulation model and
+The graphical runtime allows the user to explore the simulation model and
 stop, resume or single-step execution; animates packet transmissions and other events;
-displays log messages from model components; lets the user peek into queues, buffers,
+displays log messages from model components; allows the user to peek into queues, buffers,
 state variables and other objects; and provides other useful features.</p>
 
 <div style="clear:both"></div>
@@ -101,7 +101,7 @@ simulation history and visualize it on an interactive sequence chart in
 the IDE. The sequence chart includes simulation events, messages
 sent between simulation components and C++ method calls across components.
 The sequence chart can be zoomed, panned, filtered, etc. The default
-time-to-coordinate mapping is a nonlinear one that compresses very long
+time-to-coordinate mapping is nonlinear; it compresses very long
 time gaps and enhances small ones in order to make them fit and remain
 observable on the finite-size screen. Images can be saved in several formats,
 including SVG. Special care was taken to ensure that the tool remains useful for
@@ -121,12 +121,12 @@ and in showing off and documenting model operation.
 
 <img class="pic left rounded" width=200 src="images/screenshots/scave-thumb.png" alt="Result Analysis" onclick="enlarge(this);" longdesc="images/screenshots/scave.png"/>
 
-<p>The result analysis tool in the IDE lets you process and plot simulation
+<p>The result analysis tool in the IDE allows you to process and plot simulation
 results in various ways. Simulation results (scalars, summary statistics,
 histograms, time series, etc.) are written into result files during execution;
 these files also record various details about the simulation run, such as
-the time of execution, the name of the network and its parameterization.
-The result analysis tool lets you select a subset of all result files
+the time of execution, and the name of the network and its parameterization.
+The result analysis tool allows you to select a subset of all result files
 to work with, and displays their contents organized in various ways.
 You can filter the result items you are interested in, and plot
 them. Processing steps such as averaging or smoothing vector data
@@ -143,11 +143,11 @@ same plots after re-running the simulation.
 
 <img class="pic left rounded" width=200 src="images/screenshots/neddoc-thumb.png" alt="Documentation Generator" onclick="enlarge(this);" longdesc="images/screenshots/neddoc.png"/>
 
-<p>The IDE lets you generate hyperlinked HTML documentation from simulation
+<p>The IDE allows you to generate hyperlinked HTML documentation from simulation
 models and model frameworks. The documentation is generated from the network
 description (NED) files and their comments much the same way as Javadoc for
 Java or Doxygen for C++. The documentation will contain network diagrams,
-inheritance and usage diagrams and other useful diagrams as well, and
+inheritance and usage diagrams, and other useful diagrams as well, and
 includes references to Doxygen-generated C++ documentation of the underlying
 C++ model code.</p>
 

@@ -53,7 +53,7 @@ convert to perpetual licenses.</p>
 and you can extend or reduce the number of licenses used as you please.
 Licenses for terms shorter than 12 months are not offered, and our discount
 offer is limited to the last 12 months of annual license fees only you paid
-for the license to be converted only.</p>
+for the license to be converted to a perpetual license.
 
 <h2>Redistribution</h2>
 

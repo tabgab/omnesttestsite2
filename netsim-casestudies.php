@@ -39,7 +39,7 @@ packages are fully compatible.) The companies mentioned below possess OMNEST lic
 <p>The purpose of the BOSS project was the design and prototype development
 of an efficient railway communication system. This system was aimed to
 support the high demands of an audio/video surveillance system in a rolling
-train from a control center on the wayside, but also to address related
+train from a control center on the wayside, and also to address related
 issues, such as predictive maintenance. The system is based on WiMAX/HSUPA
 (outdoors, towards the control center) and WiFi (indoors) networks.
 </p>
@@ -86,9 +86,9 @@ can be viewed <a href="http://www.dailymotion.com/video/x9hnje_boss-traindemonst
 Thales Group researchers Rapha&euml;l Massin and his colleagues
 developed a OMNeT++-based simulation framework to enable the study of
 data and multimedia content transmission over hybrid wired/wireless ad-hoc
-networks, as well as the design of innovative radio accesss chemes. To
+networks, as well as the design of innovative radio accesss schemes. To
 achieve this goal, the complete protocol stack from the application to the
-physical layer was simulated, and the real bits and bytes of the messages
+physical layer is simulated, and the real bits and bytes of the messages
 transferred on the radio channel are exchanged. To ensure that this
 framework was reusable and extensible in future studies and projects, a
 modular software and protocol architecture was defined, using facilities
@@ -114,11 +114,11 @@ Low-Rate Wireless Personal Area Network (LR-WPAN) applications. This is
 especially the case for industrial sensor network applications such as
 automation control. Researchers from Siemens and University of
 Erlangen-Nuremberg performed a series of OMNeT++-based simulation
-experiments that contribute to our better understanding of IEEE 802.15.4
+experiments that contribute to a better understanding of IEEE 802.15.4
 behavior. The results outline the capabilities of this protocol in the
-selected scenarios but also the limitations. In particular, they
+selected scenarios, and also the limitations. They
 investigated the dependency of the protocol on protocol-inherent
-parameters such as the beacon order and the superframe order but also to
+parameters such as the beacon order and the superframe order, and also to
 different traffic load. The results can be used for planning and deploying
 IEEE 802.15.4 based sensor networks with specific performance demands. A
 special focus was put on application scenarios in industrial sensor network

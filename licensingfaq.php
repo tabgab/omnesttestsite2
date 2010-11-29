@@ -186,7 +186,7 @@ of extra components and features in OMNEST (<a href="comparison.php">comparison<
         </td>
         <td>
             A new application is to be created, where the
-            OMNEST simulation kernel, or part of it is to be embedded and
+            OMNEST simulation kernel, or part of it, is to be embedded and
             marketed as part of the new product, or OMNEST is used to export
             self-contained simulations capable of functioning without an
             installed OMNEST system.
