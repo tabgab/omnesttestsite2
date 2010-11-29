@@ -103,8 +103,30 @@ if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{
 } else if (!send_mails()) {
     echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
 } else {
-    echo ("<b>Thank you for your interest in the OMNEST Simulator.</b><br><br>We will get back to you with the requested information.<br>");
-} ?>
+?>
+
+<b>Thank you for your interest in the OMNEST Simulator.</b><br><br>We will get back to you with the requested information.<br>
+
+<!-- Google Code for Contacted us (AdWords) Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1067620223;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "lead";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1067620223/?label=lead&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<?php } ?>
 
 <?php print_leadout(); ?>
 </body>
