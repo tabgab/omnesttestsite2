@@ -22,7 +22,7 @@
 
 <div id="header"><h1>Performance Modeling Library</h1></div>
 
-<p>OMNEST comes with a process modeling library for queueing and
+<p>OMNEST includes a process modeling library for queueing and
 resource reservation models.
 The library allows you to build your initial performance model quickly,
 and experiment with it to get an initial idea about your system's performance.

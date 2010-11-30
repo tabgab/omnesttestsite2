@@ -34,8 +34,8 @@ has become a lot more powerful and more refined since the 3.3 release.</p>
   documentation. We are also bundling version control (cvs, svn, git) Eclipse
   plug-ins with the IDE. The IDE is supported on the three major platforms,
   Linux, Mac OS X and Windows. Since Eclipse is extremely extensible, we expect
-  that OMNEST-based simulation frameworks will contribute their own custom
-  wizards into the IDE.</p>
+  that OMNEST-based simulation framework developers will contribute their own custom
+  wizards for the IDE.</p>
 
 <h2>Tooling</h2>
 
@@ -55,7 +55,7 @@ has become a lot more powerful and more refined since the 3.3 release.</p>
   In order to facilitate working with large simulation models like the INET
   Framework, the makefile generator opp_makemake has been extended with the
   --deep option. With --deep, opp_makemake generates a makefile that takes
-  care of building a whole source directory tree.</p>
+  care of building a complete source directory tree.</p>
 
   <p>
   Another big change is out-of-directory builds for both the OMNEST libraries
@@ -71,8 +71,8 @@ has become a lot more powerful and more refined since the 3.3 release.</p>
 
   <p>
   Simulation kernel internals have been redesigned with memory efficiency in
-  mind, to support large-scale simulations better. Techniques include string
-  pooling (storing freqeuently occurring strings such as module, gate and
+  mind, to better support large-scale simulations. Techniques include string
+  pooling (storing frequently occurring strings such as module, gate and
   parameter names only in one copy), shared parameter value instances,
   gate vector descriptors (gate name, type and size are only stored once
   for the whole gate vector), and optimal packing of object fields (e.g.
@@ -80,7 +80,7 @@ has become a lot more powerful and more refined since the 3.3 release.</p>
 
   <p>
   The simulation kernel as a library has been made significantly easier to
-  embed in other (non-OMNEST) programs. The way of using the OMNEST
+  embed in other (non-OMNEST) programs. The method of using the OMNEST
   simulation kernel as a plain C++ library has been documented in the Manual,
   and two corresponding code examples have been added to the distribution.</p>
 
@@ -104,7 +104,7 @@ has become a lot more powerful and more refined since the 3.3 release.</p>
   moved to cPacket.</p>
 
   <p>
-  Modules have now the possibility to receive nonzero-duration messages
+  Modules now have the option to receive nonzero-duration messages
   at the beginning of the reception; this is done by reconfiguring the
   gate object.</p>
 
@@ -125,7 +125,7 @@ has become a lot more powerful and more refined since the 3.3 release.</p>
 
   <p>
   A Java-like package system has been introduced to make the language scale
-  to large model frameworks and to prevent name clashes; NED files files are
+  to large model frameworks and to prevent name conflicts; NED files files are
   now read from directory trees listed on the NEDPATH.</p>
 
   <p>
@@ -184,7 +184,7 @@ has become a lot more powerful and more refined since the 3.3 release.</p>
   file.</p>
 
   <p>
-  The concept of "runs" have been refined to provide parameter study support;
+  The concept of "runs" has been refined to provide parameter study support;
   Ini files now can specify parameter ranges and the runtime is able to explore
   them. The notion of experiment, measurement and replication was introduced to
   help the general workflow of result analysis.</p>

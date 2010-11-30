@@ -28,7 +28,7 @@ IP blocks) that you would like to incorporate in OMNEST simulations. A
 possible scenario is to test a wireless chip's SystemC IP block in an
 OMNEST simulation, where radio channel modeling and higher-layer protocols
 come from OMNEST network modeling frameworks. It is possible to embed both
-RTL and higher-level functional (e.g. TLM) models; the latter is usually a
+RTL and higher-level (e.g. TLM) models; the latter is usually a
 better choice. SystemC is a system specification and simulation library
 from the Open SystemC Initiative (OSCI, <a href="http://www.systemc.org"
 target="_blank">www.systemc.org</a>). </p>

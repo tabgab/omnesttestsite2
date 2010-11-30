@@ -240,8 +240,8 @@ Charts can be exported in SVG format from the chart context menu.</p>
 <br />
 <br />
 <li><strong>Wizard Wizards</strong> <br />
-<p>There are several wizards that help creating other wizards. It is possible to
-create a wizards based on an already existing simulation directory, or based on an other wizard.
+<p>There are several wizards that help in creating other wizards. It is possible to
+create wizards based on an already existing simulation directory, or based on an other wizard.
 Example wizards are also provided to help you quickly create your first wizard...</p>
 <img src="images/whatsnew-41/41-wiz-wiz-menu.png"/>
 <br />

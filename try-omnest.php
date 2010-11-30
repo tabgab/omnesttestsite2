@@ -20,7 +20,7 @@
 
 <p>Evaluation versions are full OMNEST installations, including the simulation
 libraries, tools, the IDE, sample simulations and documentation.
-The Evaluation version comes in two flavours, as a Live CD image
+The Evaluation version comes in two forms; as a Live CD image
 and as a Windows installer.</p>
 
 <div class="next" style="text-align:right"><a href="download-eval-request.php">Proceed to Downloads <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></div>
@@ -72,7 +72,7 @@ Note:
 <ul>
  <li>Limitations of the evaluation version: (1) no source code is provided for the simulation kernel;
     (2) simulations are limited to 10,000,000 events and 1000 modules.</li>
- <li>Network simulation models are not included, they need to be downloaded separately;
+ <li>Network simulation models are not included; they need to be downloaded separately;
      <a href="network-simulation.php">read more here</a>.</li>
 </ul>
 
