@@ -26,7 +26,7 @@
 about yourself. We will only use this data to contact you about OMNEST,
 and will not disclose it to third parties.</p>
 
-<p style="line-height:110%"><small><b>Are you a student or a lecturer?</b>
+<p style="line-height:110%"><small><b style="color: #E54426">Are you a student or a lecturer?</b>
 If your work is of noncommercial nature, you don't need OMNEST: you can use the
 open-source version OMNeT++ from <a href="http://omnetpp.org">omnetpp.org</a>.
 OMNEST and OMNeT++ are mostly identical except for licensing, branding, and the presence
