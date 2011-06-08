@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<?php include("common/design.php"); ?>
+<?php
+$pos_field = trim(strtolower($_POST['position']));
+$similarity = 3;
+if (levenshtein($pos_field, "student") <= $similarity || levenshtein($pos_field, "étudiant") <= $similarity
+    || levenshtein($pos_field, "estudiante") <= $similarity) {
+?>
+<head>
+<meta HTTP-EQUIV="REFRESH" content="0; url=http://www.omnetpp.org/" />
+</head>
+<?php
+} else {
+include("common/design.php"); 
+?>
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -115,4 +126,5 @@ if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{
 
 <?php print_leadout(); ?>
 </body>
+<?php } ?>
 </html>
