@@ -16,7 +16,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>What's new in OMNEST 4.0?</h1></div>
+<div id="header"><h1>What's New in OMNEST 4.0?</h1></div>
 
 <p>OMNEST 4.0 delivers a completely new, fresh experience to existing
 OMNEST users. Now you can work in a world-class integrated simulation

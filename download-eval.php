@@ -36,8 +36,8 @@ You can also download OMNeT++ models from the web, install and try them.</p>
 
 <h2><a name="livecd"></a>Live CD Image</h2>
 
-      <a href="download/free/omnest41-demo.iso"><img class="left" src="images/misc/download-linux-eval.png"></a>
-      <p><a href="download/free/omnest41-demo.iso" ><tt>omnest41-demo.iso</tt></a></p>
+      <a href="download/free/omnest421-demo.iso"><img class="left" src="images/misc/download-linux-eval.png"></a>
+      <p><a href="download/free/omnest421-demo.iso" ><tt>omnest421-demo.iso</tt></a></p>
       <p>This is a Linux Live CD image that contains a fully functional OMNEST installation.
       You can burn this ISO image to a CD and boot from it, but we recommend that
       you try it in a virtual machine such as
@@ -55,9 +55,9 @@ You can also download OMNeT++ models from the web, install and try them.</p>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 
-<a href="download/free/omnest-4.1-eval-win32.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
-      <p><tt><a href="download/free/omnest-4.1-eval-win32.exe">omnest-4.1-eval-win32.exe</a></tt></p>
-      <p>This is a program that installs the OMNEST Evaluation on a 32-bit Windows system (Windows 7, Vista or XP).
+<a href="download/free/omnest-4.2.1-eval-win32.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
+      <p><tt><a href="download/free/omnest-4.2.1-eval-win32.exe">omnest-4.2.1-eval-win32.exe</a></tt></p>
+      <p>This is a program that installs the OMNEST Evaluation on a Windows machine (Windows 7, Vista or XP).
       </p>
 
       <small>NOTE: A C++ compiler and binaries are included for compiling simulation models

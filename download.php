@@ -20,37 +20,37 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 4.1 <a href="whatsnew-41.php">(What's new in this release?)</a></h3>
+<h3 style="margin-bottom:0">Latest stable version: 4.2.1 <a href="whatsnew-42.php">(What's new in this release?)</a></h3>
 
 <h3>Downloads:</h3>
 
 <table style="border-spacing:10px">
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.1-win32.exe"><img src="images/misc/win-logo.png"/></a>
+      <a href="/download/commercial4/omnest-4.2.1-win32.exe"><img src="images/misc/win-logo.png"/></a>
     </td>
     <td>
-      <a href="/download/commercial4/omnest-4.1-win32.exe">OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
-      <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
+      <a href="/download/commercial4/omnest-4.2.1-win32.exe">OMNEST 4.2.1 for Windows (installer) - 293Mb</a><br/>
+      <small>md5sum: cd7182d2a36ae9a3d671c8654dd00386</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.1-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
+      <a href="/download/commercial4/omnest-4.2.1-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux and Mac OS X (TGZ) - 142Mb</a><br/>
-       <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
+       <a href="/download/commercial4/omnest-4.2.1-src.tgz" >OMNEST 4.2.1 for Linux and Mac OS X (TGZ) - 155Mb</a><br/>
+       <small>md5sum: abbf0508dd1c96b03966bb1a14bc00e2</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/InstallGuide-41.pdf"><img src="images/misc/pdf.png"></a>
+      <a href="/download/commercial4/InstallGuide-42.pdf"><img src="images/misc/pdf.png"></a>
     </td>
     <td>
-      <a href="/download/commercial4/InstallGuide-41.pdf" >Installation Guide (PDF)</a>
+      <a href="/download/commercial4/InstallGuide-42.pdf" >Installation Guide (PDF)</a>
     </td>
   </tr>
 

@@ -54,7 +54,7 @@ and as a Windows installer.</p>
       <a href="download-eval-request.php"><img src="images/misc/download-win-eval.png"/></a>
     </td>
     <td style="vertical-align: top">
-      <p>This is a program that installs OMNEST Evaluation on a 32-bit Windows system (Windows 7, Vista or XP).
+      <p>This is a program that installs OMNEST Evaluation on a Windows machine (Windows 7, Vista or XP).
       You can run and modify all the provided samples and create your own small simulations.
       You can also download OMNeT++ models from the web, and install and try them.
       </p>
