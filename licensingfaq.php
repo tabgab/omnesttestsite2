@@ -218,7 +218,7 @@ noncommercial version OMNeT++ for learning the software.</p>
 in our environment before purchasing it. What should we do?</p>
 
 <p><b>A:</b> You are welcome to download and try the evaluation version
-of OMNEST. You can able to evaluate OMNEST free of charge, and receive
+of OMNEST. You can evaluate OMNEST free of charge, and receive
 technical support during evaluation.</p>
 
 <p><b>Q:</b> I am a student at a
