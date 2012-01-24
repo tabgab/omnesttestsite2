@@ -50,7 +50,7 @@
       <a href="/download/commercial4/InstallGuide-42.pdf"><img src="images/misc/pdf.png"></a>
     </td>
     <td>
-      <a href="/download/commercial4/InstallGuide-42.pdf" >Installation Guide (PDF)</a>
+      <a href="/download/commercial4/InstallGuide.pdf" >Installation Guide (PDF)</a>
     </td>
   </tr>
 
