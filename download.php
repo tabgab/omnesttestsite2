@@ -27,21 +27,21 @@
 <table style="border-spacing:10px">
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.2.1-win32.exe"><img src="images/misc/win-logo.png"/></a>
+      <a href="/download/commercial4/omnest-4.2.1a-win32.exe"><img src="images/misc/win-logo.png"/></a>
     </td>
     <td>
-      <a href="/download/commercial4/omnest-4.2.1-win32.exe">OMNEST 4.2.1 for Windows (installer) - 293Mb</a><br/>
-      <small>md5sum: cd7182d2a36ae9a3d671c8654dd00386</small>
+      <a href="/download/commercial4/omnest-4.2.1a-win32.exe">OMNEST 4.2.1 for Windows (installer) - 293Mb</a><br/>
+      <small>md5sum starts with: 6178-e45f</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.2.1-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
+      <a href="/download/commercial4/omnest-4.2.1a-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial4/omnest-4.2.1-src.tgz" >OMNEST 4.2.1 for Linux and Mac OS X (TGZ) - 155Mb</a><br/>
-       <small>md5sum: abbf0508dd1c96b03966bb1a14bc00e2</small>
+       <a href="/download/commercial4/omnest-4.2.1a-src.tgz" >OMNEST 4.2.1 for Linux and Mac OS X (TGZ) - 155Mb</a><br/>
+       <small>md5sum starts with: c7ac-0f63</small>
     </td>
   </tr>
 
