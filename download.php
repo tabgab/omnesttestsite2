@@ -31,7 +31,7 @@
     </td>
     <td>
       <a href="/download/commercial4/omnest-4.2.1a-win32.exe">OMNEST 4.2.1 for Windows (installer) - 293Mb</a><br/>
-      <small>md5sum starts with: 6178-e45f</small>
+      <small>md5sum starts with: 99de-c37a</small>
     </td>
   </tr>
 
