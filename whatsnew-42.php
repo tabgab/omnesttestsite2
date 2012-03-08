@@ -18,7 +18,24 @@
 
 <div id="header"><h1>What's New in OMNEST 4.2</h1></div>
 
-<h2>Platform</h2>
+<h2>Simulation Core &amp; Tools</h2>
+
+<p>A very brief summary of the changes and new features in the simulation core and tools:</p>
+
+<ul>
+  <li>revised and expanded User Guide and User Manual
+  <li>improved C++ debugging experience for standard containers
+  <li>enabled pretty-printing of variables in gdb using Python scripts (pretty printers are available for certain OMNEST classes)
+  <li>64-bit executables on OS X
+  <li>updated MSYS and MinGW binaries in the Windows distribution
+  <li>improvements in iteration variable handling in Ini files
+  <li>users can now contribute their own result filters and NED functions
+  <li>changed and expanded measurement unit support
+  <li>improved message compiler (opp_msgc)
+  <li>bugfixes and other smaller improvements
+</ul>
+
+<h2>Eclipse Platform</h2>
 
 <ul>
 
