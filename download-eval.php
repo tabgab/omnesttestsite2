@@ -37,8 +37,9 @@ You can also download OMNeT++ models from the web, install and try them.</p>
 <h2><a name="livecd"></a>Live CD Image</h2>
 
       <a href="download/free/omnest421-demo.iso"><img class="left" src="images/misc/download-linux-eval.png"></a>
-      <p><a href="download/free/omnest421-demo.iso" ><tt>omnest421-demo.iso</tt></a></p>
-      <p>This is a Linux Live CD image that contains a fully functional OMNEST installation.
+      <p><a href="download/free/omnest421-demo.iso" ><tt>omnest421-demo.iso</tt></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5: 7c5f4398b7dc6a247ecd4e21c32a4394)</small></p>
+      <p>This is a Linux Live CD image that contains a full-featured OMNEST installation.
       You can burn this ISO image to a CD and boot from it, but we recommend that
       you try it in a virtual machine such as
       <a href="http://www.virtualbox.org/" target="_blank">VirtualBox</a> or
