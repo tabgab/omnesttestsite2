@@ -5,9 +5,33 @@
 //
 $news = array(
     array(
+        "id" => "lte-world-summit",
+        "title" => "LTE World Summit",
+        "date" => "March 8, 2012",
+        "summary" => "
+          We will be attending <a href='http://ws.lteconference.com' target='_blank'>LTE World Summit 2012</a>
+          taking place in Barcelona on 22-24 May. Come and visit us at stand 70!
+        ",
+    ),
+
+    array(
+        "id" => "workshop-2012",
+        "title" => "5th International Workshop on OMNeT++",
+        "date" => "March 7, 2012",
+        "summary" => "
+          The 5th International Workshop on OMNeT++/OMNEST will take place on March 23, 2012
+          in Desenzano, Italy. The workshop brings together researchers using OMNeT++ worldwide,
+          and provides a forum for presenting novel ideas and recent developments, including
+          contributions to open-source simulation models.
+          The technical program is already
+          <a href='http://www.omnet-workshop.org/2012/General/TechnicalProgram' target='_blank'>online</a>.
+          ",
+    ),
+
+    array(
         "id" => "omnest-4.2.1",
         "title" => "OMNEST 4.2.1 released",
-        "date" => "Jan 24, 2012",
+        "date" => "January 24, 2012",
         "summary" => "
           We are happy to announce the release of OMNEST 4.2.1.
           See <a href='whatsnew-42.php'>what's new</a>.
@@ -22,21 +46,18 @@ $news = array(
     ),
 
     array(
-        "id" => "workshop-2011-cfp",
-        "title" => "4th International Workshop on OMNeT++ -- Call for Papers",
-        "date" => "September 28, 2010",
+        "id" => "workshop-2011",
+        "title" => "4th International Workshop on OMNeT++",
+        "date" => "March 21, 2011",
         "summary" => "
-          The next OMNeT++ Workshop will be held on March 21, 2011
-          in Barcelona, Spain.",
-        "fulltext" => "
-          <p>The 4th International OMNeT++ Workshop will be held on March 21, 2011
-          in Barcelona, Spain. You can submit full papers (up to 8 pages), short papers
-          (up to 4 pages) and code contribution papers (2 pages) until
-          November 15, 2010. All accepted full and short papers
-          will be indexed, and selected papers will be considered for an international
-          journal publication. The workshop will be held in conjunction with SIMUTools 2011.
-          <a href='http://www.omnet-workshop.org/2011/Authors/CallForPapers' target='_blank'>Call for Papers</a></p>
-        ",
+          Researchers using OMNeT++/OMNEST met on March 21, 2011
+          in Barcelona for presenting their work at the
+          <a href='http://omnet-workshop.org/2011' target='_blank'>4th International Workshop on OMNeT++</a>.
+          The workshop was organized as part of the
+          <a href='http://simutools.org/2011' target='_blank'>SimuTools</a> conference.
+          The list of presentations, together with presentation slides are available in the
+          <a href='http://www.omnet-workshop.org/2011/General/TechnicalProgram' target='_blank'>Technical Program</a>.
+          ",
     ),
 
     array(
