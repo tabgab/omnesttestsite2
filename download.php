@@ -20,28 +20,28 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 4.2.1 <a href="whatsnew-42.php">(What's new in this release?)</a></h3>
+<h3 style="margin-bottom:0">Latest stable version: 4.2.2 <a href="whatsnew-42.php">(What's new in this release?)</a></h3>
 
 <h3>Downloads:</h3>
 
 <table style="border-spacing:10px">
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.2.1a-win32.exe"><img src="images/misc/win-logo.png"/></a>
+      <a href="/download/commercial4/omnest-4.2.2-win32.exe"><img src="images/misc/win-logo.png"/></a>
     </td>
     <td>
-      <a href="/download/commercial4/omnest-4.2.1a-win32.exe">OMNEST 4.2.1 for Windows (installer) - 293Mb</a><br/>
-      <small>md5sum starts with: 99de-c37a</small>
+      <a href="/download/commercial4/omnest-4.2.2-win32.exe">OMNEST 4.2.2 for Windows (installer) - 293Mb</a><br/>
+      <small>md5: d2f48dc9c27e3dda968ceebef93c9df8</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.2.1a-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
+      <a href="/download/commercial4/omnest-4.2.2-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial4/omnest-4.2.1a-src.tgz" >OMNEST 4.2.1 for Linux and Mac OS X (TGZ) - 155Mb</a><br/>
-       <small>md5sum starts with: c7ac-0f63</small>
+       <a href="/download/commercial4/omnest-4.2.2-src.tgz" >OMNEST 4.2.2 for Linux and Mac OS X (TGZ) - 155Mb</a><br/>
+       <small>md5: 8c79d459e696147c86e041f23704f97f</small>
     </td>
   </tr>
 

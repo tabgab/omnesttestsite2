@@ -5,6 +5,21 @@
 //
 $news = array(
     array(
+        "id" => "omnest-4.2.2",
+        "title" => "OMNEST 4.2.2 released",
+        "date" => "March 27, 2012",
+        "summary" => "
+          We are happy to announce the next maintenance release of OMNEST 4.2.2.
+          See <a href='whatsnew-42.php'>what's new</a>.
+        ",
+        "fulltext" => "
+          <p>We are happy to announce the release of OMNEST 4.2.2.
+          Contains fixes for several bugs reported for the previous version.
+          </p>
+        ",
+    ),
+
+    array(
         "id" => "lte-world-summit",
         "title" => "LTE World Summit",
         "date" => "March 8, 2012",
