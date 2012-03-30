@@ -56,9 +56,9 @@ You can also download OMNeT++ models from the web, install and try them.</p>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 
-<a href="download/free/omnest-4.2.1-win32-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
-      <p><tt><a href="download/free/omnest-4.2.1-win32-eval.exe">omnest-4.2.1-win32-eval.exe</a></tt>
-      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5: d399acdb6ba04c5d8248c1dc168bde87)</small></p>
+<a href="download/free/omnest-4.2.2-win32-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
+      <p><tt><a href="download/free/omnest-4.2.2-win32-eval.exe">omnest-4.2.2-win32-eval.exe</a></tt>
+      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5: 4fd0779d7afa8b0d880a354a9af985b0)</small></p>
       <p>This program installs OMNEST Evaluation on a Windows machine (Windows 7, Vista or XP).
       For compiling models, OMNEST can use a preinstalled copy of Microsoft Visual C++ or
       the bundled <a href='http://mingw.org/' target='_blank'>MinGW</a> compiler.
