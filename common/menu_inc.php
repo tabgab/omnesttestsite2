@@ -1,6 +1,6 @@
 <?php
 
-// PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
+// PRODUCT  | TRY OMNEST!  | HOW TO BUY | SERVICES |SUPPORT | ABOUT US
 
 $product_menu = array(
     array("text"=>"OMNEST", "link"=>"omnest.php", "submenu"=>array(
@@ -42,6 +42,7 @@ $purchase_menu = array(
        array("text"=>"Licensing Options", "link"=>"licensing.php"),
        array("text"=>"License Agreement", "link"=>"license.php"),
     )),
+    array("text"=>"Services", "link"=>"services.php"),
     array("text"=>"Support", "link"=>"support.php", "submenu"=>array(
        array("text"=>"Download OMNEST", "link"=>"download.php"),
     )),
@@ -116,6 +117,7 @@ function print_footer_links()
                             <li><a href="licensing.php">Licensing Options</a>
                             <li><a href="license.php">License Agreement</a>
                         </ul>
+                    <li><a href="services.php">Services</a>
                     <li><a href="support.php">Support</a>
                         <ul>
                             <li><a href="download.php">Download OMNEST</a>
@@ -150,7 +152,9 @@ function print_top_menu($menu, $current_page)
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     print_top_menu_item("TRY OMNEST!", "try-omnest.php", $menu===$product_menu && $is_tryomnest_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("HOW TO BUY", "contact.php", $menu===$purchase_menu && !$is_support_related);
+    print_top_menu_item("HOW TO BUY", "contact.php", $menu===$purchase_menu && !$is_support_related && $current_page!="services.php");
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    print_top_menu_item("SERVICES", "services.php", $current_page=="services.php");
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     print_top_menu_item("SUPPORT", "support.php", $menu===$purchase_menu && $is_support_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
