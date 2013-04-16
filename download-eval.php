@@ -28,10 +28,10 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
 
 <p><b>Please bookmark this page so that you will be able to come back to it later.</b></p>
 
-<p>The evaluation version is a full OMNEST installations, including the simulation
+<p>The evaluation version is a full OMNEST installation, including the simulation
 libraries, tools, the IDE, sample simulations and documentation.
 You can run and modify all the provided samples and create your own small simulations.
-You can also download OMNeT++ models from the web, install and try them.</p>
+You can also download, install and try OMNeT++ models from the web.</p>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 

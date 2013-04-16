@@ -20,8 +20,7 @@
 
 <p>Evaluation versions are full OMNEST installations, including the simulation
 libraries, tools, the IDE, sample simulations and documentation.
-The Evaluation version comes in two forms; as a Live CD image
-and as a Windows installer.</p>
+</p>
 
 <div class="next" style="text-align:right"><a href="download-eval-request.php">Proceed to Downloads <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></div>
 
@@ -33,9 +32,9 @@ and as a Windows installer.</p>
       <a href="download-eval-request.php"><img src="images/misc/download-win-eval.png"/></a>
     </td>
     <td style="vertical-align: top">
-      <p>This is a program that installs OMNEST Evaluation on a Windows machine (Windows 8, 7 or XP).
+      <p>Installs OMNEST Evaluation on a Windows machine (Windows 8, 7 or XP).
       You can run and modify all the provided samples and create your own small simulations.
-      You can also download OMNeT++ models from the web, install and try them.
+      You can also download, install and try OMNeT++ models from the web.
       </p>
 
       <p>A C++ compiler and binaries are included for compiling simulation models
