@@ -20,34 +20,34 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 4.2.2 <a href="whatsnew-42.php">(What's new in this release?)</a></h3>
+<h3 style="margin-bottom:0">Latest stable version: 4.3 <a href="whatsnew-43.php">(What's new in this release?)</a></h3>
 
 <h3>Downloads:</h3>
 
 <table style="border-spacing:10px">
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.2.2-win32.exe"><img src="images/misc/win-logo.png"/></a>
+      <a href="/download/commercial4/omnest-4.3-win32.exe"><img src="images/misc/win-logo.png"/></a>
     </td>
     <td>
-      <a href="/download/commercial4/omnest-4.2.2-win32.exe">OMNEST 4.2.2 for Windows (installer) - 293Mb</a><br/>
-      <small>md5: d2f48dc9c27e3dda968ceebef93c9df8</small>
+      <a href="/download/commercial4/omnest-4.3-win32.exe">OMNEST 4.3 for Windows (installer) - 381Mb</a><br/>
+      <small>md5: feb02e4cddf7512efbcb012a6654c626</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/omnest-4.2.2-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
+      <a href="/download/commercial4/omnest-4.3-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial4/omnest-4.2.2-src.tgz" >OMNEST 4.2.2 for Linux and Mac OS X (TGZ) - 155Mb</a><br/>
-       <small>md5: 8c79d459e696147c86e041f23704f97f</small>
+       <a href="/download/commercial4/omnest-4.3-src.tgz" >OMNEST 4.3 for Linux and Mac OS X (TGZ) - 166Mb</a><br/>
+       <small>md5: fc50a9d70b35792aeac72d7a337cff25</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a href="/download/commercial4/InstallGuide-42.pdf"><img src="images/misc/pdf.png"></a>
+      <a href="/download/commercial4/InstallGuide.pdf"><img src="images/misc/pdf.png"></a>
     </td>
     <td>
       <a href="/download/commercial4/InstallGuide.pdf" >Installation Guide (PDF)</a>

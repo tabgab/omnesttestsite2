@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - What's New in the IDE in the 4.3 Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+</head>
+
+<body>
+<?php print_leadin($product_menu, __FILE__); ?>
+
+<div id="header"><h1>What's New in OMNEST 4.3</h1></div>
+
+<h2>IDE</h2>
+
+<ul>
+  <li>Added support for computed scalars in the Analysis Tool. 
+      This adds a lot of power to the Analysis Tool, and makes a 
+      lot of computations possible that could previously only be done in scripts 
+      (e.g. in GNU R). The relevant section in the User Guide comes with a lot of 
+      illuminating examples. 
+
+  <li> The IDE no longer runs the C/C++ Indexer before build (the code now
+    collects the information for makefile dependency generation by other
+    means)
+
+  <li> The CDT C++ code analyzer has been turned off as it was reporting
+    too many false positives.
+
+  <li> Added pretty printing of STL containers (std::map, etc), simtime_t
+    and other objects to the debugger; see the updated User Guide for
+    details. 
+
+  <li> Added 'Logarithmic X axis' option to scatter chart in the Analysis Tool.
+
+  <li> Usability improvements in the Analysis Tool.
+
+  <li> Better error reporting in the Sequence Chart and Event Log views.
+
+  <li> The CDT debugger no longer stops at the main() function by default.
+
+  <li> Added full screen mode (Ctrl-Shift-F11).
+
+  <li> Added NED editor support for named channels.
+
+  <li> Added support for opening files from the command line, i.e. use:
+    'omnetpp Aloha.ned'
+
+  <li> Updated the bundled MinGW (GCC 4.7, linker and GDB 7.4).
+
+  <li> Updated to Eclipse 3.8.2; the IDE now requires Java 1.6+.
+</ul>
+
+<h2>NED</h2>
+
+<ul>
+  <li> 
+In NED, it is now possible to give names to connections (more precisely, to 
+the channel objects in the connections; previously they were always called 
+"channel"). Names make connections much more addressable when you assign 
+channel parameters from ini files (i.e. if you name Ethernet links "eth", 
+you use the "**.eth.datarate" key to assign Ethernet bitrates, even if there 
+are a lot of other links in the network.)
+
+</ul>
+
+<h2>Simulation Core</h2>
+<ul>
+  <li> Added the cPatternMatcher and cMatchExpression utility classes to the API.
+    cPatternMatcher is a glob-style pattern matching class. cMatchExpression 
+    builds on top of cPatternMatcher and lets you combine patterns with AND, 
+    OR, NOT for matching fields of arbitrary objects.
+
+  <li> Added hasEncapsulatedPacket() to cPacket.
+
+  <li> Implemented calculateWeightedSingleShortestPathsTo() in cTopology.
+
+  <li> Signals implementation now allows static initialization of simsignal_t
+    variables.
+</ul>
+
+<h2>Tools</h2>
+<ul>
+  <li> Simplified makefile output: Makefiles now output only the filenames to the 
+    console instead of whole commands. This makes the build output less noisy. 
+    If you need the old behavior, use the 'V=1' (verbose on) option on 
+    the make command line.
+
+  <li> The simulator now supports Mac OS X 10.8 (you need to install XQuartz; see
+    the Install Guide)
+
+</ul>
+
+<br/>
+<h2><a href="whatsnew-42.php">What's New in OMNEST 4.2 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+
+<?php print_leadout(); ?>
+</body>
+</html>

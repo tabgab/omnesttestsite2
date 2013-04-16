@@ -28,38 +28,17 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
 
 <p><b>Please bookmark this page so that you will be able to come back to it later.</b></p>
 
-<p>Evaluation versions are full OMNEST installations, including the simulation
+<p>The evaluation version is a full OMNEST installations, including the simulation
 libraries, tools, the IDE, sample simulations and documentation.
-The Evaluation version comes in two forms; as a Live CD image
-and as a Windows installer. You can run and modify all the provided samples and create your own small simulations.
+You can run and modify all the provided samples and create your own small simulations.
 You can also download OMNeT++ models from the web, install and try them.</p>
-
-<h2><a name="livecd"></a>Live CD Image</h2>
-
-      <a href="download/free/omnest421-demo.iso"><img class="left" src="images/misc/download-linux-eval.png"></a>
-      <p><a href="download/free/omnest421-demo.iso" ><tt>omnest421-demo.iso</tt></a>
-      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5: 7c5f4398b7dc6a247ecd4e21c32a4394)</small></p>
-      <p>This is a Linux Live CD image that contains a full-featured OMNEST installation.
-      You can burn this ISO image to a CD and boot from it, but we recommend that
-      you try it in a virtual machine such as
-      <a href="http://www.virtualbox.org/" target="_blank">VirtualBox</a> or
-      <a href="http://www.vmware.com/products/player/" target="_blank">VMware Player</a>.
-      </p>
-
-      <small>NOTE: Set up a new virtual machine with <u>at least 1.5GB</u> system memory and mount
-      the downloaded ISO image in the CDROM device. Start the virtual machine.
-      This image is a Live CD running only from the system RAM. It will
-      not write anything to your hard disk. This means that files written to the
-      filesystem will be lost upon shutdown. If you want to keep your files,
-      we recommend that you 'suspend' your virtual machine instead of shutting it
-      down.</small>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 
-<a href="download/free/omnest-4.2.2-win32-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
-      <p><tt><a href="download/free/omnest-4.2.2-win32-eval.exe">omnest-4.2.2-win32-eval.exe</a></tt>
-      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5: 4fd0779d7afa8b0d880a354a9af985b0)</small></p>
-      <p>This program installs OMNEST Evaluation on a Windows machine (Windows 7, Vista or XP).
+<a href="download/free/omnest-4.3-win32-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
+      <p><tt><a href="download/free/omnest-4.3-win32-eval.exe">omnest-4.3-win32-eval.exe</a></tt>
+      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5: 37449986fad9ecbd339bc28e428a270a)</small></p>
+      <p>This program installs OMNEST Evaluation on a Windows machine (Windows 8, 7 or XP).
       For compiling models, OMNEST can use a preinstalled copy of Microsoft Visual C++ or
       the bundled <a href='http://mingw.org/' target='_blank'>MinGW</a> compiler.
       </p>
