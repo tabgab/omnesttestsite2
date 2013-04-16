@@ -39,7 +39,7 @@ you can also embed simulations in your own software products.
 include("newsitems.php");
 
 // display all news
-$maxitems = 3;
+$maxitems = 2;
 $count = 0;
 foreach ($news as $news_data) {
     echo "<div class='news'>\n";

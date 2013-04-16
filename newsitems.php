@@ -5,6 +5,36 @@
 //
 $news = array(
     array(
+        "id" => "omnest-4.3",
+        "title" => "OMNEST 4.3 released",
+        "date" => "April 15, 2013",
+        "summary" => "OMNEST 4.3 has been released with several new features, improvements and bugfixes.
+          Faster project rebuilds, new data analysis features with computed scalar support,
+          full screen mode and other IDE enhancements are complemented by new NED functionality
+          and new utility classes in the simulation kernel. <a href='whatsnew-43.php'>Details</a>
+        ",
+    ),
+
+    array(
+        "id" => "workshop-2013",
+        "title" => "6th International OMNeT++ workshop",
+        "date" => "March 5th, 2013",
+        "summary" => "
+          The workshop, which took place in Cannes at the French Riviera,
+          drew a great crowd of professionals who discussed
+          and demonstrated their latest research, including new
+          ideas and contributions to open-source simulation models.
+          As in the previous years, presentations have been selected from
+          a large number of submissions, using multiple peer reviews to
+          ensure a high professional and scientific standard.
+          The program, including the presentation slides, is
+          <a href='http://www.omnet-workshop.org/2013/General/TechnicalProgram' target='_blank'>available online</a>,
+          and the associated papers are available in the SimuTools conference
+          proceedings and the ACM Digital Library.
+        ",
+    ),
+
+    array(
         "id" => "omnest-4.2.2",
         "title" => "OMNEST 4.2.2 released",
         "date" => "March 27, 2012",

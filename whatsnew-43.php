@@ -21,24 +21,23 @@
 <h2>IDE</h2>
 
 <ul>
-  <li>Added support for computed scalars in the Analysis Tool. 
-      This adds a lot of power to the Analysis Tool, and makes a 
-      lot of computations possible that could previously only be done in scripts 
-      (e.g. in GNU R). The relevant section in the User Guide comes with a lot of 
-      illuminating examples. 
+  <li>Added support for computed scalars in the Analysis Tool.
+      This adds significant power to the Analysis Tool, and makes a
+      large class of computations possible that could previously only be done in scripts
+      (e.g. in GNU R). The relevant section in the User Guide comes with numerous
+      illuminating examples.
 
-  <li> The IDE no longer runs the C/C++ Indexer before build (the code now
-    collects the information for makefile dependency generation by other
-    means)
+  <li> The IDE no longer runs the C/C++ Indexer before build, saving time for the user.
+    (The code now collects the information for makefile dependency generation by other
+    means.)
 
-  <li> The CDT C++ code analyzer has been turned off as it was reporting
+  <li> The CDT C++ code analyzer has been turned off by default, as it was reporting
     too many false positives.
 
-  <li> Added pretty printing of STL containers (std::map, etc), simtime_t
-    and other objects to the debugger; see the updated User Guide for
-    details. 
+  <li> Added pretty-printing of simtime_t, standard containers and other classes
+    to the debugger; see the updated User Guide for details.
 
-  <li> Added 'Logarithmic X axis' option to scatter chart in the Analysis Tool.
+  <li> Added the Logarithmic X Axis option to scatter charts in the Analysis Tool.
 
   <li> Usability improvements in the Analysis Tool.
 
@@ -50,10 +49,9 @@
 
   <li> Added NED editor support for named channels.
 
-  <li> Added support for opening files from the command line, i.e. use:
-    'omnetpp Aloha.ned'
+  <li> Added support for opening files from the command line; use "omnetpp Aloha.ned"
 
-  <li> Updated the bundled MinGW (GCC 4.7, linker and GDB 7.4).
+  <li> Updated the bundled MinGW compiler toolchain (GCC 4.7, linker and GDB 7.4).
 
   <li> Updated to Eclipse 3.8.2; the IDE now requires Java 1.6+.
 </ul>
@@ -61,12 +59,12 @@
 <h2>NED</h2>
 
 <ul>
-  <li> 
-In NED, it is now possible to give names to connections (more precisely, to 
-the channel objects in the connections; previously they were always called 
-"channel"). Names make connections much more addressable when you assign 
-channel parameters from ini files (i.e. if you name Ethernet links "eth", 
-you use the "**.eth.datarate" key to assign Ethernet bitrates, even if there 
+  <li>
+In NED, it is now possible to give names to connections (more precisely, to
+the channel objects in the connections; previously they were always called
+"channel"). Names make connections much more addressable when you assign
+channel parameters from ini files (i.e. if you name Ethernet links "eth",
+you use the "**.eth.datarate" key to assign Ethernet bitrates, even if there
 are a lot of other links in the network.)
 
 </ul>
@@ -74,8 +72,8 @@ are a lot of other links in the network.)
 <h2>Simulation Core</h2>
 <ul>
   <li> Added the cPatternMatcher and cMatchExpression utility classes to the API.
-    cPatternMatcher is a glob-style pattern matching class. cMatchExpression 
-    builds on top of cPatternMatcher and lets you combine patterns with AND, 
+    cPatternMatcher is a glob-style pattern matching class. cMatchExpression
+    builds on top of cPatternMatcher and lets you combine patterns with AND,
     OR, NOT for matching fields of arbitrary objects.
 
   <li> Added hasEncapsulatedPacket() to cPacket.
@@ -88,9 +86,9 @@ are a lot of other links in the network.)
 
 <h2>Tools</h2>
 <ul>
-  <li> Simplified makefile output: Makefiles now output only the filenames to the 
-    console instead of whole commands. This makes the build output less noisy. 
-    If you need the old behavior, use the 'V=1' (verbose on) option on 
+  <li> Simplified makefile output: Makefiles now output only the filenames to the
+    console instead of whole commands, making the build output less noisy.
+    If you need the old behavior, add the V=1 (verbose on) option to
     the make command line.
 
   <li> The simulator now supports Mac OS X 10.8 (you need to install XQuartz; see
@@ -104,3 +102,4 @@ are a lot of other links in the network.)
 <?php print_leadout(); ?>
 </body>
 </html>
+
