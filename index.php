@@ -27,7 +27,7 @@ and engineers worldwide</b> to investigate scenarios and design alternatives
 in various wired/wireless networks, interconnection networks,
 queueing-based performance models and other systems.
 OMNEST simulations can also be <b>embedded</b> in your own software products.
-<a href="omnest.php">Learn more</a></p>
+</p>
 
 <div id="under-intro-text">
 
@@ -41,6 +41,19 @@ OMNEST simulations can also be <b>embedded</b> in your own software products.
   <li><a href="casestudies.php">More &gt;&gt;</a><br>
 </ul>
 
+<h1>Selected Publications</h1>
+
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
+<small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
+<br><br>
+
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
+<small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
+<br><br>
+
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
+<small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
+<br><br>
 
 <h1>News</h1>
 
@@ -70,8 +83,18 @@ if (sizeof($news) > $maxitems) {
 ?>
 </div> <!-- id="news" -->
 
-<div id="featured" style="float:right; width:340px">
-<h1>Featured</h1>
+<div id="rightcol" style="float:right; width:340px">
+<h1>Testimonials</h1>
+
+<p><i>"CBISA has helped to simplify the community benefit reporting process for
+our organization and is very user friendly. It is very easy to customize
+the database to meet our specific reporting needs and the reporting tool is
+very useful as it allows me to customize reports using various attributes.
+I am also very pleased with the relationship our organization has with Lyon
+Software and have found their entire team to be friendly and supportive."</i>
+- Deborah Blake, Texas Health Resources</i></p>
+
+<h1>Featured Stories</h1>
 <img alt="" src="images/misc/marenostrum-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
 <p>IBM researchers have used OMNEST to optimize one of Europe's most powerful supercomputers.<br>
 <a href="archver-casestudies.php">Read more</a></p>
