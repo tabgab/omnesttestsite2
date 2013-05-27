@@ -1,0 +1,117 @@
+* OMNeST PROCUDT TOUR DESIGN *
+
+1. Example Tours
+
+ - https://www.mint.com/how-it-works/budgeting/
+ - http://www.fusioncharts.com/products/suite/tour/
+ - http://www.apple.com/why-mac/
+ - http://www.apple.com/iphone/
+ - http://www.solidworks.com/sw/onlinetour/simulation.htm
+ - http://www.clicktale.com/products/tour
+ - http://basecamp.com/progress
+ - http://www.wufoo.com/tour/users/
+ - https://path.com/
+ - http://www.campaignmonitor.com/features/
+ - http://www.opencandy.com/developers/
+
+2. How to Design a Product Tour?
+
+ - http://www.dtelepathy.com/blog/design/seven-exceptional-product-tours-and-the-best-practices-they-teach-us
+ - http://claytoncorreia.com/blog/the-rise-of-the-tour-page-best-practices-and-examples
+
+3. Goals
+
+ - Help understanding the product
+   - What knowledge can we assume about visitors? What simulation environments do they know?
+     What programming languages do they know? What network protocols are they looking for?
+
+ - Convert visitor to customer
+   - How do we know what visitors are looking for? What kind of problems do they want to solve?
+   - Can we predict the expectations of visitors by collecting information from past customers?
+
+ - Sequential steps
+   Each slide is clearly defined and moves the visitor down the path to becoming a customer
+
+ - Bite sized
+   Each slide highlights one important aspect of the product or service that is easy to digest and understand
+
+ - Short and to the point
+   The tours are succinct and deliver key value propositions in a compact form that respects the visitor’s time
+
+ - Clear call to action
+   Each tour ends with a clear call to action that helps the visitor take the next step to becoming a customer
+
+4. Content
+
+ - dynamic/static that is frozen/live
+ - active/passive/interaction with the visitor?
+ - text/image/video/music
+
+5. Style
+
+ - fonts/colors/locations/sizes
+ - few things/big things/easy recognition
+ - static/animated/transitions/effects
+ - minimalistic/visually appealing/clear
+ - header/footer?
+
+6. Navigation
+
+ - sequential/hierarchical/random
+ - frames with menu/single page
+
+7. Spread
+
+ - 1-2 minutes reading, 12-24 pages
+ - one clear message per page
+ - each page contains some graphics, a title and possibly a few lines of text
+
+8. Pages
+
+  The following is written from a somewhat marketing point of view. I'm assuming the visitor has basic C++ knowledge.
+
+ - Benefits (Simulation Benefits)
+   - http://wiki.answers.com/Q/Advantages_and_disadvantages_of_simulation
+   - http://www.anylogic.com/use-of-simulation
+   - Simulation greatly decreases the costs of your product development
+     ??? Some image that shows the difference between simulation and the real thing in terms of costs???
+   - Combining existing and your proprietary models reduces development time
+     Screenshot of the IDE during NED model editing
+
+ - Development (Developing New Models)
+   - The Eclipse based Integrated Development Environment provides you with state of the art development tools
+     Screenshot of the IDE, but which part?
+   - Open source code allows you to easily customize and extend the models at your will
+     Screenshot of the IDE during C++ editing
+   - Debugging the model, tracking the simulation during runtime at your fingertips
+     Screenshot of the debugger and the eventlog?
+
+ - Modeling (Using Existing Models)
+   - Wide range of existing standard compliant models provide you with immediate test environments
+   - Domain specific, flexible and scaleable models are easy to use by the domain experts
+   - Easily and concisely parameterizable models reduces your maintenance costs
+
+ - Simulation (Running the Simulation)
+   - High performance state of the art C++ simulation kernel reduces runtime
+     An image of a robust real engine?
+   - Graphical simulation runtime environment gives you an overview of what's happening
+     Screenshot of tkenv or jenv
+   - Parallel simulation allows using all of your computing power
+     An image of multiple computers
+   - Real-time, hardware-in-the-loop simulation allows testing the real thing
+     An image that shows some real hardware (e.g. a network card)
+   - Integration with existing simulation software using SystemC or HLA
+     Logos for OMNeST, SystemC and HLA somehow linked together
+   - Seamless embedding into your proprietary software
+     Some image that shows the thing under the hood
+
+ - Result analysis (Analyzing the Result)
+   - The statistical analysis tool helps you making the right decisions
+     Screenshot of the scave tool
+   - The sequence chart helps you understanding the exact behavior of the model
+     Screenshot of the sequence chart
+
+ - Call to action
+   - Download the evaluation version
+   - Request quotation or buy the product
+   - Learn more about the product

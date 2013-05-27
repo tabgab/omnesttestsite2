@@ -2,6 +2,18 @@
 
 // PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
+$tour_menu = array(
+    array("text"=>"OMNEST Is...", "link"=>"tour-omnest-is.php"),
+    array("text"=>"Benefits of Simulation", "link"=>"tour-benefits.php"),
+    array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),
+    array("text"=>"Benefit from Existing Models", "link"=>"tour-modeling.php"),
+    array("text"=>"Develop New Models Easily", "link"=>"tour-development.php"),
+    array("text"=>"High-Perf. Simulation", "link"=>"tour-simulation.php"),
+    array("text"=>"Make the Right Design Decisions", "link"=>"tour-analysis.php"),
+    //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
+    array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),
+);
+
 $product_menu = array(
     array("text"=>"OMNEST", "link"=>"omnest.php", "submenu"=>array(
         array("text"=>"Overview", "link"=>"overview.php"),

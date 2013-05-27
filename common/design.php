@@ -73,14 +73,23 @@ function print_titlepage_leadin() { ?>
             &nbsp;
         </div>
 
+<!--
         <img id="learnbutton" style="position:absolute; top:364px; left:14px" alt="Learn More" src="common/images/button_learn_more.png">
         <img id="downloadbutton" style="position:absolute; top:364px; left:220px" alt="Download" src="common/images/button_download_eval.png">
-        <!-- preload button hover images -->
+        <!- - preload button hover images - ->
         <img style="display:none" src="common/images/button_learn_more_hover.png" alt="Learn More" >
         <img style="display:none" src="common/images/button_download_eval_hover.png" alt="Download" >
-        <!-- sensitive areas -->
-        <a href="omnest.php"><div style="position:absolute; top:372px; left:25px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+        <!- - sensitive areas - ->
+        <a href="tour-benefits.php"><div style="position:absolute; top:372px; left:25px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
         <a href="try-omnest.php"><div style="position:absolute; top:372px; left:231px; width:180px; height:58px" onmouseover="document.getElementById('downloadbutton').src='common/images/button_download_eval_hover.png'" onmouseout="document.getElementById('downloadbutton').src='common/images/button_download_eval.png'"><img src="common/images/button_transparent.png" alt="Download" /></div></a>
+-->
+
+        <img id="tourbutton" style="position:absolute; top:364px; left:190px" alt="PRODUCT TOUR" src="common/images/button_tour.png">
+        <!-- preload button hover images -->
+        <img style="display:none" src="common/images/button_tour_hover.png" alt="PRODUCT TOUR" >
+        <!-- sensitive areas -->
+        <a href="tour-omnest-is.php"><div style="position:absolute; top:372px; left:200px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+
 
         <div style="position:absolute; top:120px; left:577px"><img src="common/images/slidewindow.png" alt="Slides"></div>
         <div style="position:absolute; top:130px; left:606px">
