@@ -43,14 +43,17 @@ OMNEST simulations can also be <b>embedded</b> in your own software products.
 
 <h1>Selected Publications</h1>
 
+<img src="images/misc/ieee.png">
 <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
 <small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
 <br><br>
 
+<img src="images/misc/ieee.png">
 <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
 <small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
 <br><br>
 
+<img src="images/misc/ieee.png">
 <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
 <small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
 <br><br>
@@ -89,10 +92,21 @@ if (sizeof($news) > $maxitems) {
 <p><i>"CBISA has helped to simplify the community benefit reporting process for
 our organization and is very user friendly. It is very easy to customize
 the database to meet our specific reporting needs and the reporting tool is
-very useful as it allows me to customize reports using various attributes.
-I am also very pleased with the relationship our organization has with Lyon
-Software and have found their entire team to be friendly and supportive."</i>
+very useful as it allows me to customize reports using various attributes."</i>
 - Deborah Blake, Texas Health Resources</i></p>
+
+<p>
+<img alt="" src="images/misc/dummy-testimonial-photo.png" width=60 style="float:right; margin-right:10px; margin-top:3px">
+<i>"I am very pleased with the relationship our organization has with Lyon
+Software and have found their entire team to be friendly and supportive.
+The program is very featurefull, too! It spared me a lot of work."</i>
+- Deborah Blake, Texas Health Resources</i></p>
+
+<p><i>"OMNEST is the coolest piece of technology I have come across during
+my entire carreer of making coffe for various executives."</i>
+- Deborah Blake, Texas Health Resources</i></p>
+
+
 
 <h1>Featured Stories</h1>
 <img alt="" src="images/misc/marenostrum-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
