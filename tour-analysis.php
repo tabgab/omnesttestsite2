@@ -24,13 +24,13 @@
 <?php print_leadin($tour_menu, __FILE__); ?>
 
 <img class="pic right rounded" width=200 src="images/screenshots/scave-thumb.png" alt="Statistical Analysis Tool" onclick="enlarge(this);"/>
-<h1>The statistical analysis tool helps you making the right decisions based on the collected data</h1>
+<h1>The statistical analysis tool helps you make the right decisions based on the collected data</h1>
 <p>todo</p>
 <a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/screenshots/seqchart-thumb.png" alt="Sequence Chart Tool" onclick="enlarge(this);"/>
-<h1>The sequence chart helps you understanding the every minute detail of your model</h1>
+<h1>The sequence chart helps you understand the every minute detail of your model</h1>
 <p>todo</p>
 <a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>

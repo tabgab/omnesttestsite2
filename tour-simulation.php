@@ -37,13 +37,13 @@
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/parallel.png" alt="todo" onclick="enlarge(this);"/>
-<h1>Parallel simulation allows using all of your computing power at once</h1>
+<h1>Parallel simulation allows you to use all of your computing power at once</h1>
 <p>todo</p>
 <a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/hardware.jpg" alt="todo" onclick="enlarge(this);"/>
-<h1>Real-time hardware-in-the-loop simulation allows testing the models with the real thing</h1>
+<h1>Real-time hardware-in-the-loop simulation allows you to test the models with the real thing</h1>
 <p>todo</p>
 <a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>

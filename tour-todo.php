@@ -24,7 +24,7 @@
 <?php print_leadin($tour_menu, __FILE__); ?>
 
 <img class="pic right rounded" width=200 src="images/screenshots/todo-thumb.png" alt="todo" onclick="enlarge(this);"/>
-<h1>OMNET is widely used in academic research producing a great number of new models yearly</h1>
+<h1>OMNET is widely used in academic research, producing a great number of new models yearly</h1>
 <p>todo</p>
 <a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>

@@ -36,13 +36,13 @@
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/risks.jpg" alt="Network Editor" onclick="enlarge(this);"/>
-<h1>Simulation helps you mitigating risks during research and development</h1>
-<p>You can try many different scenarios that may only rarly occur in the real world.</p>
+<h1>Simulation helps you mitigate risks during research and development</h1>
+<p>You can try many different scenarios that may only rarely occur in the real world.</p>
 <a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/combine.jpg" alt="Network Editor" onclick="enlarge(this);"/>
-<h1>Simulation allows combining existing models with your new models easily</h1>
+<h1>Simulation allows you to combine existing models with your new models easily</h1>
 <p>You can try all sorts of new ways to build new products.</p>
 <a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
