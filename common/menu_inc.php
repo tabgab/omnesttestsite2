@@ -13,17 +13,20 @@ $product_menu = array(
         array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
     )),
 
-    array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "submenu"=>array(
+    array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Overview", "link"=>"performance-modeling.php"),
         array("text"=>"Case Studies", "link"=>"perf-casestudies.php"),
         array("text"=>"Modeling Library", "link"=>"queueinglib.php"),
     )),
 
-    array("text"=>"Architecture Verification", "link"=>"architecture-verification.php", "submenu"=>array(
+    array("text"=>"Architecture Verification", "link"=>"architecture-verification.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Overview", "link"=>"architecture-verification.php"),
         array("text"=>"Case Studies", "link"=>"archver-casestudies.php"),
         array("text"=>"SystemC Support", "link"=>"systemc-integration.php"),
     )),
 
-    array("text"=>"Network Simulation", "link"=>"network-simulation.php", "submenu"=>array(
+    array("text"=>"Network Simulation", "link"=>"network-simulation.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Overview", "link"=>"network-simulation.php"),
         array("text"=>"References", "link"=>"netsim-references.php"),
         array("text"=>"Case Studies", "link"=>"netsim-casestudies.php"),
         array("text"=>"INET Framework", "link"=>"inet-framework.php"),
@@ -173,19 +176,24 @@ function print_menu($menu, $current_page)
 
     echo "<div class=\"vmenu\">\n";
     foreach ($menu as $menuitem) {
-        $class_attr = " class=\"vmenuitem" . (($menuitem["link"]==$current_page) ? " selected\"" : "\"");
+        $class_attr = " class=\"vmenuitem" . ((is_highlightable($menuitem) && $menuitem["link"]==$current_page) ? " selected\"" : "\"");
         printf(" <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $menuitem["link"], $menuitem["text"]);
         if (array_key_exists("submenu", $menuitem)) {
             $submenu = $menuitem["submenu"];
             echo "  <div class=\"vsubmenu\">\n";
             foreach ($submenu as $submenuitem) {
-                $class_attr = " class=\"vsubmenuitem" . (($submenuitem["link"]==$current_page) ? " selected\"" : "\"");
+                $class_attr = " class=\"vsubmenuitem" . ((is_highlightable($submenuitem) && $submenuitem["link"]==$current_page) ? " selected\"" : "\"");
                 printf("   <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $submenuitem["link"], $submenuitem["text"]);
             }
             echo "  </div>\n";
         }
     }
     echo "</div>\n";
+}
+
+function is_highlightable($menuitem)
+{
+    return !array_key_exists("highlight", $menuitem) || $menuitem["highlight"];
 }
 
 ?>
