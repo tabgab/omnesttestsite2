@@ -43,7 +43,7 @@ Republic of Seychelles<br>
 Fax: +44 20 7681 1502<br>
 E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a></p>
 
-<p>You can contact us using the <a href="contact.php">contact page</a>.</p>
+<p>You can also contact us using the <a href="contact.php">contact page</a>.</p>
 
 <?php print_leadout(); ?>
 </body>
