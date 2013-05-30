@@ -35,28 +35,28 @@ queueing-based and other systems. OMNEST lets you build and evaluate simulations
 in an integrated Simulation IDE. You can also embed simulations
 in your own software products.</p>
 
+<p>Learn more about OMNEST:</p>
+
 <ul class="links">
   <li><a href="overview.php">Overview of the OMNEST simulation environment</a>
   <li><a href="features.php">Features in a nutshell</a>
 </ul>
 
-<br>
-
-<p>Application areas:</p>
+<p>Or how it can be used in your field:</p>
 
 <table style="width:680px;">
     <tr>
         <td style="width:10px">&nbsp;</td>
         <td>
-            <a href="performance-modeling.php" style="font-family:custom, Arial, Helvetica, sans-serif; font-size:16px; color:#E54426;">Performance Modeling</a>
+            <a href="performance-modeling.php" style="font-size:16px;">Performance Modeling</a>
         </td>
         <td>&nbsp;</td>
         <td>
-            <a href="architecture-verification.php" style="font-family:custom, Arial, Helvetica, sans-serif; font-size:16px; color:#E54426;">Architecture Verification</a>
+            <a href="architecture-verification.php" style="font-size:16px;">Architecture Verification</a>
         </td>
         <td>&nbsp;</td>
         <td>
-            <a href="network-simulation.php" style="font-family:custom, Arial, Helvetica, sans-serif; font-size:16px; color:#E54426;">Network Simulation</a>
+            <a href="network-simulation.php" style="font-size:16px;">Network Simulation</a>
         </td>
         <td>&nbsp;</td>
     </tr>
