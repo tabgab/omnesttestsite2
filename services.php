@@ -52,7 +52,7 @@ ensure maximum results with minimum cost.</p>
 
 <p>By combining your domain specific knowledge with our deep 
 understanding of the simulation platform we can put together a 
-reliable recepie for success and help you achieve your project 
+reliable recipe for success and help you achieve your project
 goals with confidence.</p>
 
 <p>Get in touch with us on <a href="mailto:info@omnest.com">info@omnest.com</a> 
