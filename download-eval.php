@@ -22,7 +22,7 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
 </head>
 
 <body>
-<?php print_leadin($product_menu, __FILE__); ?>
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST Evaluation Download</h1></div>
 

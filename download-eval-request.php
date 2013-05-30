@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<?php print_leadin($product_menu, __FILE__); ?>
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>Download OMNEST Evaluation Version</h1></div>
 

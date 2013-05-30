@@ -11,7 +11,7 @@ if (levenshtein($pos_field, "student") <= $similarity || levenshtein($pos_field,
 </head>
 <?php
 } else {
-include("common/design.php"); 
+include("common/design.php");
 ?>
 
 <head>
@@ -25,7 +25,7 @@ include("common/design.php");
 </head>
 
 <body>
-<?php print_leadin($product_menu, __FILE__); ?>
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST Evaluation Download</h1></div>
 

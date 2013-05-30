@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<?php print_leadin($company_menu, __FILE__); ?>
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>Community</h1></div>
 

@@ -35,10 +35,6 @@ queueing-based and other systems. OMNEST lets you build and evaluate simulations
 in an integrated Simulation IDE. You can also embed simulations
 in your own software products.</p>
 
-<p>OMNEST is the commercial version of <a href="community.php">OMNeT++</a>,
-one of the most popular network simulation frameworks in academic and research communities.
-The two frameworks are compatible (see <a href="comparison.php">differences</a>.)</p>
-
 <ul class="links">
   <li><a href="overview.php">Overview of the OMNEST simulation environment</a>
   <li><a href="features.php">Features in a nutshell</a>

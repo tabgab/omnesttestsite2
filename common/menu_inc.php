@@ -1,16 +1,17 @@
 <?php
 
-// PRODUCT  | TRY OMNEST!  | HOW TO BUY | SERVICES |SUPPORT | ABOUT US
+// PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
 $product_menu = array(
     array("text"=>"OMNEST", "link"=>"omnest.php", "submenu"=>array(
         array("text"=>"Overview", "link"=>"overview.php"),
         array("text"=>"Features", "link"=>"features.php"),
-        array("text"=>"References", "link"=>"references.php"),
-        array("text"=>"IDE Tour", "link"=>"ide.php"),
+        array("text"=>"Simulation IDE", "link"=>"ide.php"),
         array("text"=>"Demo Videos", "link"=>"demo-videos.php"),
+        array("text"=>"Embedding", "link"=>"embedding.php"),
         array("text"=>"Documentation", "link"=>"documentation.php"),
-        array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
+        array("text"=>"References", "link"=>"references.php"),
+        array("text"=>"Try OMNEST!", "link"=>"try-omnest.php"),
     )),
 
     array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
@@ -35,26 +36,33 @@ $product_menu = array(
         array("text"=>"Book Recommendation", "link"=>"network-simulation-book.php"),
     )),
 
-    array("text"=>"Embedding", "link"=>"embedding.php"),
-    array("text"=>"<b>Try OMNEST!</b>", "link"=>"try-omnest.php"),
+    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Request Quotation", "link"=>"contact.php"),
+        array("text"=>"Support", "link"=>"support.php"),
+        array("text"=>"About Us", "link"=>"company.php"),
+    ))
 );
 
 $purchase_menu = array(
-    array("text"=>"Request Quotation", "link"=>"contact.php", "submenu"=>array(
-       array("text"=>"Do I Need a License?", "link"=>"licensingfaq.php"),
-       array("text"=>"Licensing Options", "link"=>"licensing.php"),
-       array("text"=>"License Agreement", "link"=>"license.php"),
+    array("text"=>"Learn about OMNEST", "link"=>"omnest.php"),
+    array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
+    array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Request Quotation", "link"=>"contact.php"),
+        array("text"=>"Do I Need a License?", "link"=>"licensingfaq.php"),
+        array("text"=>"Licensing Options", "link"=>"licensing.php"),
+        array("text"=>"License Agreement", "link"=>"license.php"),
+        array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
     )),
-    array("text"=>"Services", "link"=>"services.php"),
-    array("text"=>"Support", "link"=>"support.php", "submenu"=>array(
-       array("text"=>"Download OMNEST", "link"=>"download.php"),
+    array("text"=>"Support", "link"=>"support.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Product Support", "link"=>"support.php"),
+        array("text"=>"Download OMNEST", "link"=>"download.php"),
+        array("text"=>"Training and Consulting", "link"=>"services.php"),
     )),
-);
-
-$company_menu = array(
-    array("text"=>"Company", "link"=>"company.php"),
-    array("text"=>"Community", "link"=>"community.php"),
-    array("text"=>"Partners", "link"=>"partners.php"),
+    array("text"=>"About Us", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Company", "link"=>"company.php"),
+        // array("text"=>"Community", "link"=>"community.php"),
+        array("text"=>"Partners", "link"=>"partners.php"),
+    )),
 );
 
 $blank_menu = array();  // for pages that don't need a menu
@@ -141,7 +149,7 @@ function print_footer_links()
 
 function print_top_menu($menu, $current_page)
 {
-    global $product_menu, $purchase_menu, $company_menu;
+    global $product_menu, $purchase_menu;
 
     $current_page = basename($current_page);
 
@@ -149,19 +157,31 @@ function print_top_menu($menu, $current_page)
                             $current_page=="download-eval.php" ||
                             $current_page=="download-eval-post.php" ||
                             $current_page=="download-eval-request.php";
-    $is_support_related = $current_page=="support.php" ||
-                            $current_page=="download.php";
+
+    $is_purchase_related =  $current_page=="contact.php" ||
+                            $current_page=="contact_post.php" ||
+                            $current_page=="licensingfaq.php" ||
+                            $current_page=="licensing.php" ||
+                            $current_page=="license.php";
+
+    $is_support_related =   $current_page=="support.php" ||
+                            $current_page=="download.php" ||
+                            $current_page=="services.php";
+
+    $is_company_related =   $current_page=="company.php" ||
+                            $current_page=="partners.php";
+
     print_top_menu_item("PRODUCT", "omnest.php", $menu===$product_menu && !$is_tryomnest_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("TRY OMNEST!", "try-omnest.php", $menu===$product_menu && $is_tryomnest_related);
+    print_top_menu_item("TRY OMNEST!", "try-omnest.php", $is_tryomnest_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("HOW TO BUY", "contact.php", $menu===$purchase_menu && !$is_support_related && $current_page!="services.php");
+    print_top_menu_item("HOW TO BUY", "contact.php", $is_purchase_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("SERVICES", "services.php", $current_page=="services.php");
+    //print_top_menu_item("SERVICES", "services.php", $current_page=="services.php");
+    //echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    print_top_menu_item("SUPPORT", "support.php", $is_support_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("SUPPORT", "support.php", $menu===$purchase_menu && $is_support_related);
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("ABOUT US", "company.php", $menu===$company_menu);
+    print_top_menu_item("ABOUT US", "company.php", $is_company_related);
 }
 
 function print_top_menu_item($name, $link, $is_selected)

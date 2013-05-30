@@ -27,13 +27,18 @@
 </head>
 
 <body>
-<?php print_leadin($product_menu, __FILE__); ?>
+<?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST - OMNeT++ Comparison</h1></div>
 
-<p>OMNEST and OMNeT++ are largely identical, and simulation models written
-for one are guaranteed to compile and run with the other. Differences
-apply to licensing, packaging, and certain features only.</p>
+<p>OMNEST is the commercial version of OMNeT++, one of the most popular
+network simulation frameworks in academic and research communities.
+OMNeT++ is distributed under the <i>Academic Public License</i> that
+does not allow commercial use.</p>
+
+<p>OMNEST and OMNeT++ are nearly identical, simulation models written
+for OMNeT++ are guaranteed to compile and run with OMNEST, and vice versa.
+Differences apply to licensing, packaging, and certain features only.</p>
 
         <table class="fancytable" style="width:90%">
           <tr> <th></th>  <th style="width:27%">OMNeT++</th>  <th style="width:30%">OMNEST</th> </tr>
