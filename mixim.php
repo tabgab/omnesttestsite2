@@ -59,11 +59,7 @@ OMNeT++ 2009: Proceedings of the 1st International Workshop on OMNeT++ (hosted b
 
 <p><a href="pdf/mixim2009.pdf">Read the article (pdf)</a></p>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="network-simulation-book.php">Book recommendation</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

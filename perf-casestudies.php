@@ -115,11 +115,7 @@ model, by being able to modify or replace the initial building blocks.</p>
       as something more sophisticated (like modeling web browsing behavior)</li>
 </ul>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="queueinglib.php">The performance modeling library</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

@@ -159,11 +159,7 @@ the Simulation IDE as well.</p>
   </tbody>
 </table>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="comparison.php">OMNEST - OMNeT++ Comparison</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

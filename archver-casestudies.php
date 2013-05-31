@@ -193,7 +193,7 @@ scalability, performance, and efficiency. This is only a first result;
 as the PhoenixSim simulator allows researchers to analyze the overall
 scalability and performance of various network designs in terms of
 physical-layer metrics such as insertion loss, crosstalk, and energy,
-many more results can be expected, contributing to the eventual realization 
+many more results can be expected, contributing to the eventual realization
 of practical on-chip photonic networks.
 </p>
 
@@ -275,11 +275,7 @@ Yitzhak Birk and Vladimir Zdornov (Technion, Israel Institute of Technology), 20
 SYSTOR '09: Proceedings of SYSTOR 2009: The Israeli Experimental Systems Conference: 1--11.
 </p>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="systemc-integration.php">Using SystemC code in OMNEST models</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

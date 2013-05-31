@@ -65,6 +65,8 @@ under the "Look Inside" function.</p>
 
 <p>(Note that the book's length is misprinted on the above sites -- it is actually 500+ pages not 256.)</p>
 
+<?php print_next_links($product_menu, __FILE__); ?>
+
 <?php print_leadout(); ?>
 </body>
 </html>

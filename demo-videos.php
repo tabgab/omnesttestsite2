@@ -114,12 +114,7 @@
   </tr>
 </table>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="documentation.php">List of Documentation</a>
-</ul>
-
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

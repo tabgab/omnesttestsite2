@@ -192,6 +192,8 @@ original library blocks, because there are no interpreted code blocks that would
 slow down the simulation.
 </p>
 
+<?php print_next_links($product_menu, __FILE__); ?>
+
 <?php print_leadout(); ?>
 </body>
 </html>

@@ -93,6 +93,8 @@ in your own software products.</p>
     </tr>
 </table>
 
+<?php print_next_links($product_menu, __FILE__); ?>
+
 <?php print_leadout(); ?>
 </body>
 </html>

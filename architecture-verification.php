@@ -60,17 +60,10 @@ model does not need to be instrumented for parallel simulation, but it needs
 to obey certain restrictions (e.g. no global variables and no direct access of
 components that may be instantiated in a different partition). Hardware-in-the-loop
 and connecting an OMNEST simulation to other simulators (co-simulation)
-are also supported. 
+are also supported.
 </p>
 
-
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="archver-casestudies.php">Selected case studies</a>
-  <li>Related: <a href="performance-modeling.php">Performance modeling with OMNEST</a>,
-        <a href="network-simulation.php">Network simulation with OMNEST</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

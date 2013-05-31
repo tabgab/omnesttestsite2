@@ -139,14 +139,7 @@ One of these other solutions may work for you; however, consider this:</p>
       next simulation project.</p>
 </ul>
 
-
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="perf-casestudies.php">Selected case studies</a>
-  <li>Related: <a href="architecture-verification.php">Architecture verification with OMNEST</a>,
-      <a href="network-simulation.php">Network simulation with OMNEST</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

@@ -11,7 +11,7 @@ $product_menu = array(
         array("text"=>"Embedding", "link"=>"embedding.php"),
         array("text"=>"Documentation", "link"=>"documentation.php"),
         array("text"=>"References", "link"=>"references.php"),
-        array("text"=>"Try OMNEST!", "link"=>"try-omnest.php"),
+        array("text"=>"Try OMNEST!", "link"=>"try-omnest.php", "crosslink"=>1),
     )),
 
     array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
@@ -36,15 +36,15 @@ $product_menu = array(
         array("text"=>"Book Recommendation", "link"=>"network-simulation-book.php"),
     )),
 
-    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Request Quotation", "link"=>"contact.php"),
-        array("text"=>"Support", "link"=>"support.php"),
-        array("text"=>"About Us", "link"=>"company.php"),
+    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "crosslink"=>1, "submenu"=>array(
+        array("text"=>"Request Quotation", "link"=>"contact.php", "crosslink"=>1),
+        array("text"=>"Support", "link"=>"support.php", "crosslink"=>1),
+        array("text"=>"About Us", "link"=>"company.php", "crosslink"=>1),
     ))
 );
 
 $purchase_menu = array(
-    array("text"=>"Learn about OMNEST", "link"=>"omnest.php"),
+    array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
     array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Request Quotation", "link"=>"contact.php"),
@@ -214,6 +214,43 @@ function print_menu($menu, $current_page)
 function is_highlightable($menuitem)
 {
     return !array_key_exists("highlight", $menuitem) || $menuitem["highlight"];
+}
+
+function print_next_links($menu, $current_page)
+{
+    $current_page = basename($current_page);
+    $menuitem = get_next_menu_item($menu, $current_page);
+
+    echo "<br>\n";
+    if ($menuitem != NULL)
+        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $menuitem["link"] . "\">Next: " . $menuitem["text"] . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"try-omnest.php\">Try OMNEST! <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+}
+
+function get_next_menu_item($menu, $current_page)
+{
+    $current_page_found = false;
+    foreach ($menu as $menuitem) {
+        if ($current_page_found && $menuitem["link"]!=$current_page && !array_get($menuitem, "crosslink"))
+           return $menuitem;
+        if (!$current_page_found && $menuitem["link"]==$current_page)
+            $current_page_found = true;
+        if (array_key_exists("submenu", $menuitem)) {
+            $submenu = $menuitem["submenu"];
+            foreach ($submenu as $submenuitem) {
+                if ($current_page_found && $submenuitem["link"]!=$current_page && !array_get($submenuitem, "crosslink"))
+                    return $submenuitem;
+                if (!$current_page_found && $submenuitem["link"]==$current_page)
+                    $current_page_found = true;
+            }
+        }
+    }
+    return NULL;
+}
+
+function array_get($array, $index)
+{
+    return array_key_exists($index, $array) ? $array[$index] : NULL;
 }
 
 ?>

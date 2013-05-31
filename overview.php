@@ -26,7 +26,7 @@ needs to be simulated with high performance: protocol modeling, validation
 of hardware architectures, modeling of wired and wireless communication networks,
 to name a few.  The noncommercial version, OMNeT++, has a huge academic
 <a href="community.php">user community</a>, with several groups publishing and supporting
-simulation models, and nearly a hundred papers published each year 
+simulation models, and nearly a hundred papers published each year
 on the simulation of wireless networks and other topics.</p>
 
 <div class="pic left">
@@ -108,11 +108,7 @@ was personal communication via email and at the annual OMNeT++ workshops):</p>
 
 <br>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="features.php">OMNEST Features</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

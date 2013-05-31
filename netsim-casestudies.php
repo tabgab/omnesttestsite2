@@ -140,11 +140,7 @@ Wiley Wireless Communications and Mobile Computing (WCMC), vol. 10 (5), pp. 609-
 <p>You can find more accounts on research done with OMNeT++ in papers in the
 <a href="http://omnetpp.org/publications" target="_blank">omnetpp.org publications database</a>.</p>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="inet-framework.php">INET Framework</a></li>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

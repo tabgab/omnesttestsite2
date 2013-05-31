@@ -58,6 +58,8 @@ then compiled into your application in an unchanged form.</p>
   </tr>
 </table>
 
+<?php print_next_links($product_menu, __FILE__); ?>
+
 <?php print_leadout(); ?>
 </body>
 </html>

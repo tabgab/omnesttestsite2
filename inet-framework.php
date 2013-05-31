@@ -97,12 +97,7 @@ Lille, 20-22 Oct. 2009.
 
 <p><a href="pdf/maureir2010.pdf">Read the article (pdf)</a></p>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="castalia.php">Castalia</a>
-</ul>
-
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

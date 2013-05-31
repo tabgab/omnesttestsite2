@@ -406,11 +406,7 @@ on <a href="archver-casestudies.php">architecture verification</a>,
 
 <br>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="ide.php">Tour of the OMNEST IDE</a>
-</ul>
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

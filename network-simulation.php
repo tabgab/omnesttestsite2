@@ -101,22 +101,14 @@ be <b>mixed</b> with other kinds of simulation models such as performance models
 architectural models.
 </p>
 
-<h2>Read more</h2>
-
-<ul class="links">
-  <li>Next: <a href="netsim-references.php">Network simulation references</a></li>
-  <li>Related: <a href="performance-modeling.php">Performance modeling with OMNEST</a>,
-      <a href="architecture-verification.php">Architecture verification with OMNEST</a>
-</ul>
-
-<br>
-
 <p class="disclaimer">
 As network simulation frameworks are being developed and released
 by independent groups, we cannot offer commercial support for them.
 However, this does not mean you are on your own, because you can get informal support
 via the OMNeT++ mailing list and other forums.
 </p>
+
+<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>
