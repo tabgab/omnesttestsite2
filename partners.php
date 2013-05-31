@@ -43,6 +43,16 @@
     </td>
   </tr>
 
+  <tr>
+    <td style="height:80px; width:180px">
+      <a href="http://www.pulse-denshi.co.jp" target="_blank"><img src="images/misc/pulse-denshi-logo.png"></a>
+    </td>
+    <td>
+      <b>Pulse Denshi Co., Ltd.</b> (<a href="http://www.pulse-denshi.co.jp" target="_blank">pulse-denshi.co.jp</a>)<br>
+      Countries: Japan
+    </td>
+  </tr>
+
 <!--
   <tr>
     <td style="height:80px; width:180px">
