@@ -17,7 +17,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>Network Simulation &ndash; Case Studies</h1></div>
+<div id="header"><h1>Network Simulation Case Studies</h1></div>
 
 <!-- <p>TODO There are countless papers on omnetpp.org - - here we single out some, related to
 EU projects and industry uses...  They are using OMNeT++ because such stories

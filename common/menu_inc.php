@@ -28,7 +28,7 @@ $product_menu = array(
 
     array("text"=>"Network Simulation", "link"=>"network-simulation.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Overview", "link"=>"network-simulation.php"),
-        array("text"=>"References", "link"=>"netsim-references.php"),
+        array("text"=>"Reference Projects", "link"=>"netsim-references.php"),
         array("text"=>"Case Studies", "link"=>"netsim-casestudies.php"),
         array("text"=>"INET Framework", "link"=>"inet-framework.php"),
         array("text"=>"Castalia", "link"=>"castalia.php"),

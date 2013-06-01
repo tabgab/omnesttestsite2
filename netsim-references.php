@@ -16,7 +16,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>Network Simulation &ndash; References</h1></div>
+<div id="header"><h1>Network Simulation Reference Projects</h1></div>
 
 <p>OMNeT++ was used in several EU-sponsored research projects:</p>
 
