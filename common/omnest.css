@@ -259,7 +259,10 @@ p.newssummary {
 
 .fancytable td.doctitle {
     font-weight: bold;
-    color: #00718F;
+}
+
+.fancytable a {
+    text-decoration: underline;
 }
 
 /*** Top menu ***/

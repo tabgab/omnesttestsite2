@@ -9,7 +9,7 @@ $product_menu = array(
         array("text"=>"References", "link"=>"references.php"),
         array("text"=>"IDE Tour", "link"=>"ide.php"),
         array("text"=>"Demo Videos", "link"=>"demo-videos.php"),
-        array("text"=>"List of Documentation", "link"=>"documentation.php"),
+        array("text"=>"Documentation", "link"=>"documentation.php"),
         array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
     )),
 

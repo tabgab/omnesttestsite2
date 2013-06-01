@@ -24,21 +24,21 @@ Most documents are available via the html-based Help system of
 the Simulation IDE as well.</p>
 
 <table class="fancytable">
+  <col width="180px">
   <thead>
     <tr>
       <th>Document</th>
-      <th>Format</th>
       <th>Description</th>
     </tr>
   </thead>
 
   <tbody>
 
-    <tr class="sep"><td colspan="3">Base</td></tr>
+    <tr class="sep"><td colspan="2">Base</td></tr>
 
     <tr>
-      <td class="doctitle">Installation Guide</td>
-      <td>pdf</td>
+      <td class="doctitle"><a href="documentation/InstallGuide.pdf">Installation Guide</a></td>
+      <!-- format: pdf -->
       <td>
         Provides instructions on how to install OMNEST on Windows, Mac OS X and
         selected Linux distributions. Also gives directions on how to build and
@@ -48,8 +48,8 @@ the Simulation IDE as well.</p>
     </tr>
 
     <tr>
-      <td class="doctitle">OMNEST Manual</td>
-      <td>pdf, html</td>
+      <td class="doctitle"><a href="documentation/Manual.pdf">OMNEST Manual</a></td>
+      <!-- format: pdf, html -->
       <td>
         A comprehensive and in-depth description of using OMNEST; from principles
         to programming, parameterizing, running simulations, and evaluating results.
@@ -61,7 +61,7 @@ the Simulation IDE as well.</p>
 
     <tr>
       <td class="doctitle">Simulation API&nbsp;Reference</td>
-      <td>html</td>
+      <!-- format: html -->
       <td>
         A cross-referenced HTML documentation of the C++ simulation library,
         generated from header files and source comments.</td>
@@ -69,16 +69,16 @@ the Simulation IDE as well.</p>
 
     <tr>
       <td class="doctitle">NEDXML API&nbsp;Reference</td>
-      <td>html</td>
+      <!-- format: html -->
       <td>A rarely-needed cross-referenced HTML documentation of the library that
       lets you programmatically access and manipulate NED source files.</td>
     </tr>
 
-    <tr class="sep"><td colspan="3">IDE</td></tr>
+    <tr class="sep"><td colspan="2">IDE</td></tr>
 
     <tr>
-      <td class="doctitle">IDE User Guide</td>
-      <td>pdf, html</td>
+      <td class="doctitle"><a href="documentation/UserGuide.pdf">Simulation IDE User Guide</a></td>
+      <!-- format: pdf, html -->
       <td>
         Provides detailed coverage of using the Simulation IDE and its
         functionality. Covers model (NED) editing; C++ editing and build; parameterizing
@@ -91,7 +91,7 @@ the Simulation IDE as well.</p>
 
     <tr>
       <td class="doctitle">IDE Customization Guide</td>
-      <td>pdf, html</td>
+      <!-- format: pdf, html -->
       <td>
         Describes how one can create custom wizards that appear under the
         <i>File &gt; New</i> menu of the IDE. These wizards can generate projects,
@@ -103,7 +103,7 @@ the Simulation IDE as well.</p>
 
     <tr>
       <td class="doctitle">IDE Developers Guide</td>
-      <td>pdf, html</td>
+      <!-- format: pdf, html -->
       <td>
         Documents how one can extend the Eclipse-based Simulation IDE by writing
         plug-ins in Java. Contains installation instructions for the Eclipse PDE
@@ -113,11 +113,11 @@ the Simulation IDE as well.</p>
       </td>
     </tr>
 
-    <tr class="sep"><td colspan="3">Introductory</td></tr>
+    <tr class="sep"><td colspan="2">Introductory</td></tr>
 
     <tr>
       <td class="doctitle">IDE Overview</td>
-      <td>pdf</td>
+      <!-- format: pdf -->
       <td>
         A short document that introduces the main functionality (editors, views, etc.)
         of the Simulation IDE; illustrated with many screenshots.</td>
@@ -125,7 +125,7 @@ the Simulation IDE as well.</p>
 
     <tr>
       <td class="doctitle">Tictoc Tutorial</td>
-      <td>html</td>
+      <!-- format: html -->
       <td>
         A short tutorial for programming simulations in OMNEST. It takes
         the user through 15+ simulations with increasing complexity,
@@ -133,11 +133,11 @@ the Simulation IDE as well.</p>
       </td>
     </tr>
 
-    <tr class="sep"><td colspan="3">Migration</td></tr>
+    <tr class="sep"><td colspan="2">Migration</td></tr>
 
     <tr>
       <td class="doctitle">Migration Guide</td>
-      <td>pdf, html</td>
+      <!-- format: pdf, html -->
       <td>
         Provides an overview and instructions for migrating simulations
         written for earlier (3.x) versions of OMNEST or OMNeT++, using
@@ -147,7 +147,7 @@ the Simulation IDE as well.</p>
 
     <tr>
       <td class="doctitle">API Changes</td>
-      <td>txt</td>
+      <!-- format: txt -->
       <td>
         Enumerates the list of simulation API changes in each OMNEST version.
         Items are classified as <i>new feature</i>, <i>incompatible change</i>,
