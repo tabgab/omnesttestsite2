@@ -28,33 +28,31 @@
 NOTICE: THIS SOFTWARE PRODUCT (TOGETHER WITH ITS ACCOMPANYING
 DOCUMENTATION, THE "PRODUCT") IS THE PROPERTY OF OPENSIM LTD.
 SOFTWARE CORPORATION ("OPENSIM LTD."). THE PRODUCT IS MADE AVAILABLE
-TO YOU, THE ORIGINAL PURCHASER, SUBJECT TO THE FOLLOWING LICENSE
-AGREEMENT ("LICENSE"). PLEASE READ THIS LICENSE CAREFULLY BEFORE
-INSTALLING OR USING THE PRODUCT. A COPY OF THIS LICENSE IS AVAILABLE
-FOR YOUR FUTURE REFERENCE IN THE "LICENSE.HTML" FILE PROVIDED WITH THE
+TO YOU, THE ORIGINAL PURCHASER, SUBJECT TO THE FOLLOWING LICENSE AGREEMENT
+("LICENSE"). PLEASE READ THIS LICENSE CAREFULLY BEFORE INSTALLING OR USING
+THE PRODUCT. A COPY OF THIS LICENSE IS AVAILABLE FOR YOUR FUTURE REFERENCE
+IN THE "LICENSE.HTML" FILE PROVIDED WITH THE PRODUCT.
+
+YOU MAY ACCEPT THIS LICENSE BY INSTALLING AND USING OMNEST. IF YOU DO NOT
+ACCEPT THIS LICENSE, THEN YOU MAY NOT INSTALL OR USE THE PRODUCT. IN THAT
+CASE, YOU MAY, WITHIN TEN (10) DAYS AFTER YOU FIRST RECEIVED THE PRODUCT,
+RETURN IT TO OPENSIM LTD. OR YOUR OMNEST AUTHORIZED RESELLER, ALONG
+WITH ITS ORIGINAL PACKAGING AND PROOF-OF-PURCHASE, FOR A FULL REFUND. ANY
+USE BY YOU OF THIS PRODUCT ALSO CONSTITUTES YOUR ACCEPTANCE OF THESE TERMS.
+
+OPENSIM LTD. is only willing to grant you this License if you obtained the
+PRODUCT from OPENSIM LTD. or an OPENSIM LTD. authorized reseller. If you
+obtained the PRODUCT from any other source, you may not install or use the
 PRODUCT.
 
-YOU MAY ACCEPT THIS LICENSE BY INSTALLING AND USING OMNEST. IF YOU DO
-NOT ACCEPT THIS LICENSE, THEN YOU MAY NOT INSTALL OR USE THE PRODUCT.
-IN THAT CASE, YOU MAY, WITHIN TEN (10) DAYS AFTER YOU FIRST RECEIVED
-THE PRODUCT, RETURN IT TO OPENSIM LTD. OR YOUR OMNEST AUTHORIZED
-RESELLER,  ALONG WITH ITS ORIGINAL PACKAGING AND PROOF-OF-PURCHASE, FOR
-A FULL REFUND. ANY USE BY YOU OF THIS PRODUCT ALSO CONSTITUTES YOUR
-ACCEPTANCE OF THESE TERMS.
-
-OPENSIM LTD. is only willing to grant you this License if you obtained
-the PRODUCT from OPENSIM LTD. or an OPENSIM LTD. authorized reseller. If
-you obtained the PRODUCT from any other source, you may not install or
-use the PRODUCT.
-
-SIMULCRAFT is the exclusive worldwide commercial sublicenser of the
-PRODUCT, and as such has all rights to sublicense the PRODUCT to end
-users and developers without restriction.
+SIMULCRAFT is the exclusive worldwide commercial sublicenser of the PRODUCT,
+and as such has all rights to sublicense the PRODUCT to end users and
+developers without restriction.
 
 1.      Ownership.  The PRODUCT is proprietary to OPENSIM LTD. The
-PRODUCT is licensed, not sold, to you notwithstanding any reference
-herein to "purchases." You acknowledge and agree that: (a) the PRODUCT
-is protected under International copyright and other laws; (b) OPENSIM
+PRODUCT is licensed, not sold, to you notwithstanding any reference herein
+to "purchases." You acknowledge and agree that: (a) the PRODUCT is
+protected under International copyright and other laws; (b) OPENSIM
 LTD. and its licensors retain all copyrights and other intellectual
 property rights in the PRODUCT; (c) there are no implied licenses under
 this License, and any rights not expressly granted to you hereunder are
@@ -86,7 +84,10 @@ reasonable number of copies of the PRODUCT to backup devices such as hard
 disks, optical media, or tape and one (1) physical CD media backup copy of
 the PRODUCT solely to replace the original copy provided to you if the
 original copy is damaged or destroyed. All rights not specifically granted
-to you herein are retained by OPENSIM LTD.
+to you herein are retained by OPENSIM LTD. Licenses can be re-designated
+to new individuals to accommodate for internal team changes on a reasonable
+time scale as long as this is not intended to defeat the concept that each
+user shall have their own separate license.
 
 2.2.2   You may: Develop, compile, and run your simulation models, and
 create custom inherent system logic.
@@ -308,8 +309,8 @@ for third-party claims relating to the PRODUCT.
 
 10.     TERM AND TERMINATION.
 
-10.1    Term. For 1 year rental licenses: The term of this License will
-begin as of the date that you receive the PRODUCT and will remain in effect
+10.1    Term. For annual licenses: The term of this License will begin
+as of the date that you receive the PRODUCT and will remain in effect
 for 12 months. For perpetual licenses: The term of this License will begin
 as of the date that you receive the PRODUCT and will remain in effect until
 terminated under this Section 10.
@@ -339,18 +340,18 @@ been returned or destroyed;; and (c) all provisions of this License with
 the exception of the licenses granted in Sections 2, 3.2 and 4, will
 survive termination of this License for any reason.
 
-10.5    For 1 Year Rental license ONLY: Renewal. You may renew this license
+10.5    For Annual License ONLY: Renewal. You may renew this license
 by placing an order for a subsequent 12 month limited license, or you may
 purchase a perpetual license.
 
-10.6    For 1 Year Rental license ONLY: Converting a Rental License to a
+10.6    For Annual License ONLY: Converting an Annual License to a
 Perpetual License. You may decide, at any time while you hold a valid
-Rental License (including up to 90 days after its expiration), to convert
-your Rental License to a Perpetual License. OPENSIM LTD. warrants to
+Annual License (including up to 90 days after its expiration), to convert
+your Annual License to a Perpetual License. OPENSIM LTD. warrants to
 reduce the price of the perpetual license by the fee you paid for the last
-12 months' rental. The offer is for the last 12 months only. If you convert
-a license you have rented for more than 12 months, the discount offered
-will still not exceed the rental fees you paid for 12 months. You may be
+12 months' license. The offer is for the last 12 months only. If you convert
+a license you have used for more than 12 months, the discount offered
+will still not exceed the license fees you paid for 12 months. You may be
 required to show proof of purchase to take advantage of this offer.
 
 11.     GENERAL PROVISIONS.
@@ -358,8 +359,8 @@ required to show proof of purchase to take advantage of this offer.
 11.1    Canadian Transactions. If you are subject to Canadian law, you
 agree to the following: The parties hereto have expressly required that the
 present License and its Exhibits be drawn up in the English language. / Les
-parties aux prÃ©sentes, ont expressÃ©ment exigÃ© que la prÃ©sente Convention et
-ses Annexes soient rÃ©digÃ©es en langue anglaise.
+parties aux présentes, ont expressément exigé que la présente Convention et
+ses Annexes soient rédigées en langue anglaise.
 
 11.2    Hazardous Uses. The PRODUCT is not intended for use, and you may
 not use or allow others to use the PRODUCT, in connection with any
