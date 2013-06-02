@@ -22,13 +22,12 @@
 
 <div style="float:left; width:760px; margin-top: 8px">
 
-<p><b>OMNEST simulation software is used by R&amp;D staff, researchers
-and engineers worldwide</b> to investigate various scenarios and design
-alternatives: architectural designs, wireless/wired protocols and
-networks, queueing-based and other systems. OMNEST lets you build and
-evaluate simulations in an Eclipse-based integrated Simulation IDE, and
-you can also embed simulations in your own software products.
-<a href="omnest.php">Learn more...</a></p>
+<p><b>OMNEST simulation software has been chosen by R&amp;D staff, researchers
+and engineers worldwide</b> to investigate scenarios and design alternatives
+in various wired/wireless networks, interconnection networks,
+queueing-based performance models and other systems.
+OMNEST simulations can also be <b>embedded</b> in your own software products.
+<a href="omnest.php">Learn more</a></p>
 
 <div id="under-intro-text">
 
