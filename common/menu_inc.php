@@ -11,7 +11,6 @@ $product_menu = array(
         array("text"=>"Embedding", "link"=>"embedding.php"),
         array("text"=>"Documentation", "link"=>"documentation.php"),
         array("text"=>"References", "link"=>"references.php"),
-        array("text"=>"Try OMNEST!", "link"=>"try-omnest.php", "crosslink"=>1),
     )),
 
     array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
@@ -58,8 +57,8 @@ $purchase_menu = array(
         array("text"=>"Download OMNEST", "link"=>"download.php"),
         array("text"=>"Training and Consulting", "link"=>"services.php"),
     )),
-    array("text"=>"About Us", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Company", "link"=>"company.php"),
+    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"About Us", "link"=>"company.php"),
         // array("text"=>"Community", "link"=>"community.php"),
         array("text"=>"Partners", "link"=>"partners.php"),
     )),
