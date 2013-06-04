@@ -164,7 +164,7 @@ function print_leadin($menu, $file) { ?>
         <div style="width: 980px;  background-color: white; min-height: 500px">
 
             <div id="content" style="margin:0px;">
-                <div style="float:left; width:180px; background-image:url(common/images/menu_vertical_sep.png); background-position:top right; background-repeat:no-repeat; padding:0 30px 0 25px; min-height:350px; margin-top:20px">
+                <div style="float:left; width:200px; background-image:url(common/images/menu_vertical_sep.png); background-position:top right; background-repeat:no-repeat; padding:0 10px 0 25px; min-height:350px; margin-top:20px">
                    <?php print_menu($menu, $file); ?>
                 </div>
 

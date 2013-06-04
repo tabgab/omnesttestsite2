@@ -3,18 +3,23 @@
 // PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
 $tour_menu = array(
-    array("text"=>"OMNEST Is...", "link"=>"tour-omnest-is.php"),
-    array("text"=>"Benefits of Simulation", "link"=>"tour-benefits.php"),
-    array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),
-    array("text"=>"Benefit from Existing Models", "link"=>"tour-modeling.php"),
-    array("text"=>"Develop New Models Easily", "link"=>"tour-development.php"),
-    array("text"=>"High-Perf. Simulation", "link"=>"tour-simulation.php"),
-    array("text"=>"Make the Right Design Decisions", "link"=>"tour-analysis.php"),
-    //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
-    array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),
+    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"),
+        array("text"=>"Benefits of Simulation", "link"=>"tour-benefits.php"),
+        array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),
+        array("text"=>"Benefit from Existing Models", "link"=>"tour-modeling.php"),
+        array("text"=>"Develop New Models Easily", "link"=>"tour-development.php"),
+        array("text"=>"High-Perf. Simulation", "link"=>"tour-simulation.php"),
+        array("text"=>"Make the Right Design Decisions", "link"=>"tour-analysis.php"),
+        //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
+        array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),
+    )),
+    array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
+    array("text"=>"Company", "link"=>"company.php", "crosslink"=>1)
 );
 
 $product_menu = array(
+    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "crosslink"=>1),
     array("text"=>"OMNEST", "link"=>"omnest.php", "submenu"=>array(
         array("text"=>"Overview", "link"=>"overview.php"),
         array("text"=>"Features", "link"=>"features.php"),
@@ -53,6 +58,7 @@ $product_menu = array(
 );
 
 $purchase_menu = array(
+    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "crosslink"=>1),
     array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
     array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "submenu"=>array(
