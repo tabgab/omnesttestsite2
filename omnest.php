@@ -35,15 +35,9 @@ queueing-based performance models and other systems.
 OMNEST simulations can also be <b>embedded</b> in your own software products.
 </p>
 
+<!-- TODO: MIERT ILYEN A SORREND? MIERT NEM NETWORK SIMULATION VAN ELOL??? -->
 
-<p>Learn more about OMNEST:</p>
-
-<ul class="links">
-  <li><a href="overview.php">Overview of the OMNEST simulation environment</a>
-  <li><a href="features.php">Features in a nutshell</a>
-</ul>
-
-<p>Or how it can be used in your field:</p>
+<p>Proceed to the next page to learn more about OMNEST, or jump straight to reading how it can be used in your field:</p>
 
 <table style="width:680px;">
     <tr>
