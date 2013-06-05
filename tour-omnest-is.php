@@ -65,7 +65,7 @@ Expect frameworks and open-source tweakable models instead of "canned" models.</
 </td></tr>
 
 <tr><td><img src="images/tour/swiss-army-knife.png" width=150></td><td> <!-- swiss army knife -->
-<p><font size="+3">unlimited flexibility</font><br>
+<p><font size="+3">flexible</font><br>
 You can change simulation models in any way you want, because you have access to model source and platform infrastructure.
 You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.
 </p>
@@ -73,12 +73,12 @@ You can also get the simulator work together with other software in your toolbox
 
 <tr><td><img src="images/tour/performance.png" width=150></td><td>  <!-- car? fighter plane? -->
 <p><font size="+3">high performance</font><br>
-Models are written in C++, and execute on top of a streamlined simulation kernel to provide high event throughput.
+<b>Models are written in C++</b>, and execute on top of a streamlined simulation kernel to provide high event throughput.
 Diagnostic and animation features pose minimal overhead when not in use.</p>
 </td></tr>
 
 <tr><td><img src="images/tour/trusted.png" width=150></td><td>  <!-- tick? -->
-<p><font size="+3">trusted</font><br>
+<p><font size="+3">trusted by industry leaders</font><br>
 Many large companies are relying on OMNEST in their R&amp;D for exploring large-scale
 problems using network simulation. Several have created their own internal simulation models
 or model libraries that they can turn to whenever new challenges appear.
@@ -107,8 +107,7 @@ For you, this means you have access to a huge pool of talent and a wealth of inf
 As a result of the strong user community, there is an ever-growing number of open-source simulation models
 available to you, covering very diverse domains from internet routing to ad-hoc and sensor networks, in-car networks,
 4G, photonic on-chip networks and so on.
-Very often, these models are not the "final solution" but can give you a jump-start when
-implementing your own simulation model to solve the problem at hand.
+These models can give you a jump-start when building your simulation model to solve the problem at hand.
 </p>
 </td></tr>
 
