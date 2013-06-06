@@ -26,19 +26,16 @@
 <img class="pic right rounded" width=200 src="images/screenshots/network-editor-thumb.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Domain specific, flexible and scaleable models are easy to use by your domain experts</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/screenshots/todo-thumb.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Easily and concisely parameterizable models reduce your maintenance costs</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/screenshots/todo-thumb.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Wide range of existing standard compliant models allows you to focus on the interesting parts</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <a href="try-omnest.php"><img src="common/images/button_download_eval.png" alt="Download Evaluation Version"></a>

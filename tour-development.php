@@ -27,19 +27,16 @@
 <img class="pic right rounded" width=200 src="images/tour/eclipse.png" alt="C++ Editor" onclick="enlarge(this);"/>
 <h1>The Eclipse based Integrated Simulation Environment provides you with state of the art development tools</h1>
 <p>The IDE provides C++ development environment, domain specific tools, etc. You can install 3rd-party software components.</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/open-source.jpg" alt="todo" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/open-source.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Open source code allows you to easily customize and extend existing models at your will</h1>
 <p>Models can be customized and extended in unforeseen ways according to your needs.</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/debug.jpg" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/debug.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Debugging the model and tracking the simulation during runtime are at your fingertips</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <a href="try-omnest.php"><img src="common/images/button_download_eval.png" alt="Download Evaluation Version"></a>

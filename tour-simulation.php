@@ -26,38 +26,32 @@
 <img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt="todo" onclick="enlarge(this);"/>
 <h1>High performance state of the art C++ simulation kernel fully utilizes your hardware</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <!--<img class="pic left rounded" width=200 src="images/screenshots/runtime-thumb.png" alt="Runtime Environment" onclick="enlarge(this);"/>-->
-<img class="pic left rounded" width=200 src="images/tour/graphical.jpg" alt="Runtime Environment" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/graphical.png" alt="Runtime Environment" onclick="enlarge(this);"/>
 <h1>Graphical simulation runtime environment gives you a deep insight of what's happening</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/parallel.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Parallel simulation allows you to use all of your computing power at once</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/hardware.jpg" alt="todo" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/hardware.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Real-time hardware-in-the-loop simulation allows you to test the models with the real thing</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/integration.jpg" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/integration.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Integration with existing simulation software using SystemC or HLA gives you interoperability</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/embedding.jpg" alt="todo" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/embedding.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Seamless embedding into your proprietary software makes you even more competitive</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <a href="try-omnest.php"><img src="common/images/button_download_eval.png" alt="Download Evaluation Version"></a>

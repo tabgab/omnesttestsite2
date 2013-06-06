@@ -26,25 +26,21 @@
 <img class="pic right rounded" width=200 src="images/screenshots/scave-thumb.png" alt="Statistical Analysis Tool" onclick="enlarge(this);"/>
 <h1>The statistical analysis tool helps you make the right decisions based on the collected data</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/screenshots/seqchart-thumb.png" alt="Sequence Chart Tool" onclick="enlarge(this);"/>
 <h1>The sequence chart helps you understand the every minute detail of your model</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/integration.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Integration with industry standard analysis tools allows you get the best of all</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/screenshots/todo-thumb.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Open and well documented output formats let you analyse results as you need</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <a href="try-omnest.php"><img src="common/images/button_download_eval.png" alt="Download Evaluation Version"></a>

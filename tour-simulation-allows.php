@@ -26,20 +26,17 @@
 <img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Simulation lets you try things that don't exist yet</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <!--<img class="pic left rounded" width=200 src="images/screenshots/runtime-thumb.png" alt="Runtime Environment" onclick="enlarge(this);"/>-->
-<img class="pic left rounded" width=200 src="images/tour/graphical.jpg" alt="Runtime Environment" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/graphical.png" alt="Runtime Environment" onclick="enlarge(this);"/>
 <h1>Simulation lets you try large-scale scenarios without having to build them</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/parallel.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Simulation lets you try unusual or rare situations</h1>
 <p>todo</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <a href="try-omnest.php"><img src="common/images/button_download_eval.png" alt="Download Evaluation Version"></a>

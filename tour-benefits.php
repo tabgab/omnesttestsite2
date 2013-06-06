@@ -23,28 +23,24 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<img class="pic right rounded" width=200 src="images/tour/costs.jpg" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/costs.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Simulation greatly decreases the costs of your product development</h1>
 <p>You don't need to build the real thing in the first place.</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/time-to-market.jpg" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/time-to-market.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Simulation reduces the time to market of your new products and product updates</h1>
 <p>Faster development cycles results in shorter time to market.</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/risks.jpg" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/risks.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Simulation helps you mitigate risks during research and development</h1>
 <p>You can try many different scenarios that may only rarely occur in the real world.</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/combine.jpg" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/combine.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Simulation allows you to combine existing models with your new models easily</h1>
 <p>You can try all sorts of new ways to build new products.</p>
-<a href="todo">Learn more &#x25b8;</a>
 <div style="clear:both"></div>
 
 <a href="try-omnest.php"><img src="common/images/button_download_eval.png" alt="Download Evaluation Version"></a>
