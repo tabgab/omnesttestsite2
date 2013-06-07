@@ -43,9 +43,7 @@
 <p>You can try all sorts of new ways to build new products.</p>
 <div style="clear:both"></div>
 
-<a href="try-omnest.php"><img src="common/images/button_download_eval.png" alt="Download Evaluation Version"></a>
-<a href="contact.php"><img src="common/images/button_request_quotation.png" alt="Request Quotation"></a>
-<a href="tour-modeling.php"><img src="common/images/button_learn_more.png" alt="Learn More About OMNEST"/></a>
+<?php print_next_tourstep_links(__FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

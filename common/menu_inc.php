@@ -2,18 +2,20 @@
 
 // PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
+$tour = array(
+    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"),
+    array("text"=>"Benefits of Simulation", "link"=>"tour-benefits.php"),
+    array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),
+    array("text"=>"Benefit from Existing Models", "link"=>"tour-modeling.php"),
+    array("text"=>"Develop New Models Easily", "link"=>"tour-development.php"),
+    array("text"=>"High-Perf. Simulation", "link"=>"tour-simulation.php"),
+    array("text"=>"Make the Right Design Decisions", "link"=>"tour-analysis.php"),
+    //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
+    array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),
+);
+
 $tour_menu = array(
-    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"),
-        array("text"=>"Benefits of Simulation", "link"=>"tour-benefits.php"),
-        array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),
-        array("text"=>"Benefit from Existing Models", "link"=>"tour-modeling.php"),
-        array("text"=>"Develop New Models Easily", "link"=>"tour-development.php"),
-        array("text"=>"High-Perf. Simulation", "link"=>"tour-simulation.php"),
-        array("text"=>"Make the Right Design Decisions", "link"=>"tour-analysis.php"),
-        //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
-        array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),
-    )),
+    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "highlight"=>0, "submenu"=>$tour),
     array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
     array("text"=>"Company", "link"=>"company.php", "crosslink"=>1)
 );
@@ -266,6 +268,33 @@ function get_next_menu_item($menu, $current_page)
 function array_get($array, $index)
 {
     return array_key_exists($index, $array) ? $array[$index] : NULL;
+}
+
+function print_next_tourstep_links($current_page)
+{
+    $current_page = basename($current_page);
+
+    $tourstep = get_next_tourstep_item($current_page);
+
+    echo "<br>\n";
+    if ($tourstep != NULL)
+        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $tourstep["link"] . "\">Next: " . $tourstep["text"] . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+    else
+        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"omnest.php\">Learn more about OMNEST <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"try-omnest.php\">Try OMNEST! <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+}
+
+function get_next_tourstep_item($current_page)
+{
+    global $tour;
+    $current_page_found = false;
+    foreach ($tour as $tourstep) {
+        if ($current_page_found)
+           return $tourstep;
+        if ($tourstep["link"]==$current_page)
+            $current_page_found = true;
+    }
+    return NULL;
 }
 
 ?>
