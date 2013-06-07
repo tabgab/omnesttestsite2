@@ -23,6 +23,12 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<h1>Why Simulate?</h1>
+
+<p>(We know that you already know why otherwise you would not be here, but we compiled a list for your reference.)</p>
+
+TODO: analytical models are too complex, and prototypes are not yet available or would cost too much (i.e. 10000 routers)
+
 <img class="pic right rounded" width=200 src="images/tour/costs.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Simulation greatly decreases the costs of your product development</h1>
 <p>You don't need to build the real thing in the first place.</p>
@@ -35,7 +41,10 @@
 
 <img class="pic right rounded" width=200 src="images/tour/risks.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Simulation helps you mitigate risks during research and development</h1>
-<p>You can try many different scenarios that may only rarely occur in the real world.</p>
+<p>Simulation helps you discover flaws early in the design process when they are
+much cheaper to fix. You can start simulations early during the design process
+when your product or parts of it are not yet available, and you can try scenarios
+that would be difficult to produce using the real system or prototypes.</p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/combine.png" alt="Network Editor" onclick="enlarge(this);"/>

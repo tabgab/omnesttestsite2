@@ -3,15 +3,16 @@
 // PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
 $tour = array(
-    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"),
-    array("text"=>"Benefits of Simulation", "link"=>"tour-benefits.php"),
-    array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),
+    array("text"=>"Why Simulation?", "link"=>"tour-why-simulation.php"),
+    array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),  // MERGE!!!
+    array("text"=>"Why OMNEST?", "link"=>"tour-why-omnest.php"),
+    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"), // http://flightsoftware.jhuapl.edu/files/2011/FSW11_Paine.pdf  slide 4
     array("text"=>"Benefit from Existing Models", "link"=>"tour-modeling.php"),
     array("text"=>"Develop New Models Easily", "link"=>"tour-development.php"),
     array("text"=>"High-Perf. Simulation", "link"=>"tour-simulation.php"),
     array("text"=>"Make the Right Design Decisions", "link"=>"tour-analysis.php"),
     //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
-    array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),
+    array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),  //Ez talan nem kell, vagy nem ide?
 );
 
 $tour_menu = array(
