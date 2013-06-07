@@ -108,6 +108,14 @@ However, this does not mean you are on your own, because you can get informal su
 via the OMNeT++ mailing list and other forums.
 </p>
 
+<h2>Case Studies</h2>
+
+<ul>
+<li><a href="casestudy-boss.php">The Celtic BOSS Project (Railway on-board wireless secured video surveillance)</a>
+<li><a href="casestudy-adhoc.php">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
+<li><a href="casestudy-lrwpan.php">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
+</ul>
+
 <?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>

@@ -32,6 +32,16 @@ OMNEST simulations can also be <b>embedded</b> in your own software products.
 <div id="under-intro-text">
 
 <div id="news" style="float:left; width:400px">
+ <h1>Case Studies</h1>
+
+<ul>
+  <li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
+  <li><a href="casestudy-adhoc.php">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
+  <li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
+  <li><a href="casestudies.php">More &gt;&gt;</a><br>
+</ul>
+
+
 <h1>News</h1>
 
 <?php

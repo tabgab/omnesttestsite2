@@ -63,6 +63,14 @@ and connecting an OMNEST simulation to other simulators (co-simulation)
 are also supported.
 </p>
 
+<h2>Case Studies</h2>
+
+<ul>
+<li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
+<li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
+<li><a href="casestudy-infiniband.php">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
+</ul>
+
 <?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>

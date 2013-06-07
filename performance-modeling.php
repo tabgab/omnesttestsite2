@@ -139,6 +139,12 @@ One of these other solutions may work for you; however, consider this:</p>
       next simulation project.</p>
 </ul>
 
+<h2>Case Studies</h2>
+
+<ul>
+<li><a href="casestudy-afdx.php">Modeling Avionics Full-Duplex Switched Ethernet (AFDX) Networks</a>
+</ul>
+
 <?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>

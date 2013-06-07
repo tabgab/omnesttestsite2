@@ -10,25 +10,23 @@ $product_menu = array(
         array("text"=>"Demo Videos", "link"=>"demo-videos.php"),
         array("text"=>"Embedding", "link"=>"embedding.php"),
         array("text"=>"Documentation", "link"=>"documentation.php"),
+        array("text"=>"Case Studies", "link"=>"casestudies.php"),
         array("text"=>"References", "link"=>"references.php"),
     )),
 
     array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Overview", "link"=>"performance-modeling.php"),
-        array("text"=>"Case Studies", "link"=>"perf-casestudies.php"),
         array("text"=>"Modeling Library", "link"=>"queueinglib.php"),
     )),
 
     array("text"=>"Architecture Verification", "link"=>"architecture-verification.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Overview", "link"=>"architecture-verification.php"),
-        array("text"=>"Case Studies", "link"=>"archver-casestudies.php"),
         array("text"=>"SystemC Support", "link"=>"systemc-integration.php"),
     )),
 
     array("text"=>"Network Simulation", "link"=>"network-simulation.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Overview", "link"=>"network-simulation.php"),
         array("text"=>"Reference Projects", "link"=>"netsim-references.php"),
-        array("text"=>"Case Studies", "link"=>"netsim-casestudies.php"),
         array("text"=>"INET Framework", "link"=>"inet-framework.php"),
         array("text"=>"Castalia", "link"=>"castalia.php"),
         array("text"=>"MiXiM", "link"=>"mixim.php"),

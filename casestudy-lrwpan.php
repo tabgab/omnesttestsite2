@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
+<?php include("common/casestudies_inc.php"); ?>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - Network Simulation Case Studies</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+    <script src="common/enlargeit.js" type="text/javascript"></script>
+</head>
+
+<body>
+<?php print_leadin($product_menu, __FILE__); ?>
+
+<div id="header"><h1>Case Study &ndash; Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</h1></div>
+
+<p>
+The IEEE 802.15.4 protocol has become the primary solution for many
+Low-Rate Wireless Personal Area Network (LR-WPAN) applications. This is
+especially the case for industrial sensor network applications such as
+automation control. Researchers from Siemens and University of
+Erlangen-Nuremberg performed a series of OMNeT++-based simulation
+experiments that contribute to a better understanding of IEEE 802.15.4
+behavior. The results outline the capabilities of this protocol in the
+selected scenarios, and also the limitations. They
+investigated the dependency of the protocol on protocol-inherent
+parameters such as the beacon order and the superframe order, and also to
+different traffic load. The results can be used for planning and deploying
+IEEE 802.15.4 based sensor networks with specific performance demands. A
+special focus was put on application scenarios in industrial sensor network
+applications. The primary requirements were reduced end-to-end latency and
+energy consumption. The results were obtained with the authors' new
+implementation of IEEE 802.15.4 developed for OMNeT++.
+</p>
+
+<p><a href="pdf/chen2010simulation.pdf">Read the full text (pdf)</a></p>
+
+<p class="bibref">
+Feng Chen, Nan Wang, Reinhard German and Falko Dressler, 2010.
+<i>"Simulation study of IEEE 802.15.4 LR-WPAN for industrial applications."</i>
+Wiley Wireless Communications and Mobile Computing (WCMC), vol. 10 (5), pp. 609-621, May 2010.
+</p>
+
+<?php print_next_casestudy_links(__FILE__); ?>
+
+<?php print_leadout(); ?>
+</body>
+</html>
+

@@ -2,6 +2,7 @@
 <html>
 
 <?php include("common/design.php"); ?>
+<?php include("common/casestudies_inc.php"); ?>
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -16,9 +17,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>Performance Modeling &ndash; Case Studies</h1></div>
-
-<h2>Modeling Avionics Full-Duplex Switched Ethernet</h2>
+<div id="header"><h1>Case Studies &ndash; Modeling Avionics Full-Duplex Switched Ethernet</h1></div>
 
 <div class="pic right">
 <img src="images/misc/airplane.png"/>
@@ -115,7 +114,7 @@ model, by being able to modify or replace the initial building blocks.</p>
       as something more sophisticated (like modeling web browsing behavior)</li>
 </ul>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+<?php print_next_casestudy_links(__FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>
