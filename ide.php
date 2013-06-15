@@ -5,7 +5,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - Tour of the Simulation IDE</title>
+    <title>OMNEST - The Simulation IDE</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
@@ -23,7 +23,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>Tour of the Simulation IDE</h1></div>
+<div id="header"><h1>The Simulation IDE</h1></div>
 
 <p>The OMNEST Simulation IDE supports all stages of a simulation project:
 developing, building, configuring and running simulation models, and
@@ -31,26 +31,22 @@ analyzing results. It also supports visualizing simulation execution traces
 as sequence charts, and generating documentation. This page is intended
 to give you a brief overview of the Simulation IDE.</p>
 
+<hr>
+
+<img class="pic right rounded" width=200 src="images/screenshots/network-editor-thumb.png" alt="Network Editor" onclick="enlarge(this);" longdesc="images/screenshots/network-editor.png"/>
 <h2>Model Editing</h2>
 
-<img class="pic left rounded" width=200 src="images/screenshots/network-editor-thumb.png" alt="Network Editor" onclick="enlarge(this);" longdesc="images/screenshots/network-editor.png"/>
-
-<p>Networks and other components can be edited in the NED (NEtwork Description)
-editor graphically or in source mode. Changes made in one
-representation are immediately reflected in the other. The NED language
-defines the appearance, parameters and connection points of module components
-(termed <i>modules</i>), and also the submodules and internal connections (netlist).
-NED has support for parametric topologies, interfaces, inheritance, hierarchical
-packages and many other language features necessary for creating and
-working with large model frameworks. The source editor offers live error
-markers, intelligent Content Assist, Go To Declaration, Inheritance View
-and other convenience features.</p>
+<p>Components can be assembled to form compound modules and networks in the
+NED editor graphically or in source mode. Changes made in one
+representation are immediately reflected in the other. The source editor
+offers live error markers, intelligent Content Assist, Go To Declaration,
+Inheritance View and other convenience features.</p>
 
 <div style="clear:both"></div>
-
-<h2>C++ Editing</h2>
+<hr>
 
 <img class="pic left rounded" width=200 src="images/screenshots/cc-editor-thumb.png" alt="C++ Editing" onclick="enlarge(this);" longdesc="images/screenshots/cc-editor.png"/>
+<h2>C++ Editing</h2>
 
 <p>Simulation components are implemented in C++, using the OMNEST simulation
 library. OMNEST relies on Eclipse's C/C++ Development Tooling (CDT),
@@ -60,28 +56,24 @@ many other features. Makefiles and the C++ build are managed automatically,
 but can be manually tweaked if necessary.</p>
 
 <div style="clear:both"></div>
+<hr>
 
+<img class="pic right rounded" width=200 src="images/screenshots/config-editor-thumb.png" alt="Configuration Editor" onclick="enlarge(this);" longdesc="images/screenshots/config-editor.png"/>
 <h2>Configuration Editor</h2>
-
-<img class="pic left rounded" width=200 src="images/screenshots/config-editor-thumb.png" alt="Configuration Editor" onclick="enlarge(this);" longdesc="images/screenshots/config-editor.png"/>
 
 <p>Simulation models and the simulation kernel can be configured and parameterized
 using configuration files. The configuration editor provides a form-based
 view of all configuration options, grouped by topics. The configuration can
 also be edited in source mode; changes made in one representation are immediately
-reflected in the other. Configuration file syntax allows several model
-parameters to be set together by using wildcard patterns for the parameter's name and location,
-avoiding repetition and redundancy. It also lets you define parameter studies,
-that is, multiple runs that iterate over several values of a parameter (or parameters),
-each repeated <i>N</i> times with different random number seeds.
+reflected in the other.
 The editor offers live error markers, content assist, informative tooltips,
 view of the parameterized module tree, and many other useful features.</p>
 
 <div style="clear:both"></div>
-
-<h2>Graphical Runtime Environment</h2>
+<hr>
 
 <img class="pic left rounded" width=200 src="images/screenshots/runtime-thumb.png" alt="Graphical Runtime Environment" onclick="enlarge(this);" longdesc="images/screenshots/runtime.png"/>
+<h2>Graphical Runtime Environment</h2>
 
 <p>Simulations can be run under several user interfaces, including a command-line
 interface for batch execution and a graphical interactive runtime environment.
@@ -91,35 +83,27 @@ displays log messages from model components; allows the user to peek into queues
 state variables and other objects; and provides other useful features.</p>
 
 <div style="clear:both"></div>
+<hr>
 
+<img class="pic right rounded" width=200 src="images/screenshots/seqchart-thumb.png" alt="Sequence Chart" onclick="enlarge(this);" longdesc="images/screenshots/seqchart.png"/>
 <h2>Sequence Chart</h2>
 
-<img class="pic left rounded" width=200 src="images/screenshots/seqchart-thumb.png" alt="Sequence Chart" onclick="enlarge(this);" longdesc="images/screenshots/seqchart.png"/>
-
-<p>One of the unrivalled features of OMNEST is being able to record the
+<p>One of the unique features of OMNEST is being able to record the
 simulation history and visualize it on an interactive sequence chart in
 the IDE. The sequence chart includes simulation events, messages
 sent between simulation components and C++ method calls across components.
-The sequence chart can be zoomed, panned, filtered, etc. The default
-time-to-coordinate mapping is nonlinear; it compresses very long
-time gaps and enhances small ones in order to make them fit and remain
-observable on the finite-size screen. Images can be saved in several formats,
-including SVG. Special care was taken to ensure that the tool remains useful for
-large simulation models and log files: chart contents can be filtered
-in many ways (by modules and module types, event types, message types,
-time, etc) to reduce the amount of information to be plotted to a manageable volume;
-compound modules can be collapsed into single axes; various details
-can be turned on and off. Due to random access and lazy loading, the tool
-remains useful for file sizes beyond 4GB as well.
-The sequence chart tool can be invaluable help in tracking down protocol errors,
-and in showing off and documenting model operation.
+Sequence charts tool can be invaluable help in tracking down protocol errors,
+in demonstrating the model, and also in documenting model operation
+(as the chart can be exported in various image formats including SVG.)
+The tool offers a wide range of filtering and display options, and it remains
+useful for very large file sizes (beyond 4GB) as well.
 </p>
 
 <div style="clear:both"></div>
-
-<h2>Result Analysis</h2>
+<hr>
 
 <img class="pic left rounded" width=200 src="images/screenshots/scave-thumb.png" alt="Result Analysis" onclick="enlarge(this);" longdesc="images/screenshots/scave.png"/>
+<h2>Result Analysis</h2>
 
 <p>The result analysis tool in the IDE allows you to process and plot simulation
 results in various ways. Simulation results (scalars, summary statistics,
@@ -138,10 +122,10 @@ same plots after re-running the simulation.
 </p>
 
 <div style="clear:both"></div>
+<hr>
 
+<img class="pic right rounded" width=200 src="images/screenshots/neddoc-thumb.png" alt="Documentation Generator" onclick="enlarge(this);" longdesc="images/screenshots/neddoc.png"/>
 <h2>Generating Documentation</h2>
-
-<img class="pic left rounded" width=200 src="images/screenshots/neddoc-thumb.png" alt="Documentation Generator" onclick="enlarge(this);" longdesc="images/screenshots/neddoc.png"/>
 
 <p>The IDE allows you to generate hyperlinked HTML documentation from simulation
 models and model frameworks. The documentation is generated from the network
@@ -152,10 +136,10 @@ includes references to Doxygen-generated C++ documentation of the underlying
 C++ model code.</p>
 
 <div style="clear:both"></div>
-
-<h2>Installing 3rd-party Eclipse Software</h2>
+<hr>
 
 <img class="pic left rounded" width=200 src="images/screenshots/install-software-thumb.png" alt="Installing Software" onclick="enlarge(this);" longdesc="images/screenshots/install-software.png"/>
+<h2>Installing 3rd-party Eclipse Software</h2>
 
 <p>Since the OMNEST Simulation IDE is a customized Eclipse instance,
 you can install 3rd-party software into it from the
@@ -163,9 +147,12 @@ you can install 3rd-party software into it from the
 and other Eclipse plug-in sites with just a few clicks.</p>
 
 <div style="clear:both"></div>
+<hr>
+
 
 <?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>
 </html>
+

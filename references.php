@@ -25,10 +25,8 @@
 <p>The following is a sample from the list of companies that have purchased
 OMNEST licenses for internal research and other purposes. If you are
 interested in more in-depth stories on what problems OMNEST has been applied
-to, check out our case study pages
-on <a href="archver-casestudies.php">architecture verification</a>,
-<a href="netsim-casestudies.php">network simulation</a> and
-<a href="perf-casestudies.php">performance modeling</a>.
+to, check <a href="case-studies.php">Case Studies</a>, <a href="testimonials.php">Testimonials</a>,
+and other related pages.
 </p>
 
 <table class="fancytable">

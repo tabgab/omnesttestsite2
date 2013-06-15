@@ -20,15 +20,9 @@
 
 <p>The OMNEST simulation framework's component-oriented architecture
 makes it ideally suited to architectural simulation of complex hardware
-and software systems, for example supercomputer architectures, on-chip networks,
-multiprocessor systems, SOA architectures, and in general, problem domains
-where a complex system's behavior needs to be simulated with high performance.
-</p>
-
-<p>See our <a href="archver-casestudies.php">case studies</a> on how others used
-OMNEST to solve their problems.
-</p>
-
+and software systems, for example HPC systems, networks-on-chip,
+and in general, problem domains where a complex system's behavior
+needs to be simulated with high performance.</p>
 
 <h2>Benefits</h2>
 
@@ -45,23 +39,24 @@ high-level functional models. The component architecture also makes it possible
 to have multiple implementations with varying level of detail for a given
 component, or to replace a single component with a composite one.
 These features allow you to write the simulation model on the appropriate abstraction level
-and still have the flexibility to modify it later.
-</p>
+and still have the flexibility to modify it later.</p>
 
+<p><b>Existing model frameworks</b> (e.g. for NoC simulation) may be useful for your project;
+see the <a href="simulation-models.php#nocs">Simulation Models</a> page for more information.</p>
 
 <p>Simulation <b>performance</b> is ensured by careful design and the use of C++
 for both models and the simulation kernel and library.
-If you are simulating hardware architectures, OMNEST's <b>SystemC</b> integration feature
-can be extremely useful.  Both RTL and higher-level SystemC modules
-can be used in OMNEST simulations without loss of performance.
 When needed, distributed parallel simulation capability is available for
-speeding up model execution and for distributing memory requirements. The simulation
-model does not need to be instrumented for parallel simulation, but it needs
-to obey certain restrictions (e.g. no global variables and no direct access of
-components that may be instantiated in a different partition). Hardware-in-the-loop
-and connecting an OMNEST simulation to other simulators (co-simulation)
-are also supported.
-</p>
+speeding up model execution and for distributing memory requirements.</p>
+
+<p>If you are simulating <b>hardware architectures</b>, OMNEST's
+<a href="systemc-integration.php">SystemC integration feature</a>
+can be extremely useful.  Both RTL and higher-level SystemC modules
+can be used in OMNEST simulations without loss of performance.</p>
+
+<p><b>Hardware-in-the-loop</b> (emulation), and <b>co-simulation</b> (connecting
+an OMNEST simulation to other simulators) are also within reach.</p>
+
 
 <h2>Case Studies</h2>
 
@@ -71,7 +66,9 @@ are also supported.
 <li><a href="casestudy-infiniband.php">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
 </ul>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+<br>
+
+<?php print_next_link("application-areas.php", "Back to Application Areas"); ?>
 
 <?php print_leadout(); ?>
 </body>

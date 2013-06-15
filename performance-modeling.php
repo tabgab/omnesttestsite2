@@ -70,6 +70,8 @@ can thus give you a head-start for building detailed, high-performance
 simulation models.
 </p>
 
+<p>Click for the overview of the <a href="queueinglib.php">OMNEST performance modeling library (queueinglib)</a></p>
+
 <p>
 The fact that OMNEST models are written in C++ also allows you
 to seamlessly integrate "foreign" C or C++ code into the simulation,

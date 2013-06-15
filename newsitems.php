@@ -11,7 +11,7 @@ $news = array(
         "summary" => "OMNEST 4.3 has been released with several new features, improvements and bugfixes.
           Faster project rebuilds, new data analysis features with computed scalar support,
           full screen mode and other IDE enhancements are complemented by new NED functionality
-          and new utility classes in the simulation kernel. <a href='whatsnew-43.php'>Details</a>
+          and new utility classes in the simulation kernel. <a href='whatsnew-43.php'>Details&nbsp;&raquo;</a>
         ",
     ),
 
@@ -82,7 +82,7 @@ $news = array(
           Contains several new features for the IDE and the
           runtime environment, additional simulation APIs and
           enhanced documentation.
-          <a href='whatsnew-42.php'>Details</a>.</p>
+          <a href='whatsnew-42.php'>Details&nbsp;&raquo;</a></p>
         ",
     ),
 
@@ -107,7 +107,7 @@ $news = array(
         "date" => "September 28, 2010.",
         "summary" => "
           Recently, we have received reports that crooks are peddling OMNeT++ licenses
-          for commercial use in China. <a href='piracy.php'>Details.</a>",
+          for commercial use in China. <a href='piracy.php'>Details&nbsp;&raquo;</a>",
     ),
 
     array(
@@ -125,7 +125,7 @@ $news = array(
           their configurability in ini files; channel statistics; and many other
           improvements. There were also several refinements of the graphical runtime
           environment and Simulation IDE, and the documentation was completed
-          with new items. <a href='whatsnew-41.php'>Details</a>.</p>
+          with new items. <a href='whatsnew-41.php'>Details&nbsp;&raquo;</a></p>
         ",
     ),
 
@@ -169,7 +169,7 @@ $news = array(
           The OMNEST team is happy to announce version 4.0 of the OMNEST Simulation
           Environment. OMNEST 4.0 features include an Eclipse-based Simulation IDE,
           greatly enhanced NED language and simulation kernel, a streamlined
-          simulation kernel and many other improvements. <a href='whatsnew-40.php'>Details.</a>",
+          simulation kernel and many other improvements. <a href='whatsnew-40.php'>Details&nbsp;&raquo;</a>",
     ),
 
 );

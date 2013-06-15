@@ -19,7 +19,7 @@ function print_next_casestudy_links($current_page)
     echo "<br>\n";
     if ($casestudy != NULL)
         echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $casestudy["link"] . "\">Next Case Study <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
-    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"casestudies.php\">Case Study Index <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"case-studies.php\">Case Study Index <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
 }
 
 function get_next_casestudy_item($current_page)

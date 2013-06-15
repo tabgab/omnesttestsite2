@@ -26,22 +26,34 @@
 and engineers worldwide</b> to investigate scenarios and design alternatives
 in various wired/wireless networks, interconnection networks,
 queueing-based performance models and other systems.
-OMNEST simulations can also be <b>embedded</b> in your own software products.
+OMNEST simulations can also be embedded into your own software products.
 </p>
 
 <div id="under-intro-text">
 
 <div id="news" style="float:left; width:400px">
- <h1>Case Studies</h1>
+<h1><a href="simulation-models.php">Simulation Models</a></h1>
+
+<p>Simulation models for
+Internet protocols, wireless networks, switched LANs,
+peer-to-peer networks, media streaming,
+mobile ad-hoc networks, mesh networks, wireless sensor networks,
+vehicular networks, NoCs,
+HPC clusters, cloud computing, SANs, optical networks,
+and more...
+<a href="simulation-models.php">Explore the models&nbsp;&raquo;</a>
+</p>
+
+<h1><a href="case-studies.php">Case Studies</a></h1>
 
 <ul>
   <li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
   <li><a href="casestudy-adhoc.php">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
   <li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
-  <li><a href="casestudies.php">More &gt;&gt;</a><br>
+  <li><a href="case-studies.php">More&nbsp;&raquo;</a><br>
 </ul>
 
-<h1>Selected Publications</h1>
+<h1><a href="publications.php">Selected Publications</a></h1>
 
 <img src="images/misc/ieee.png">
 <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
@@ -58,7 +70,7 @@ OMNEST simulations can also be <b>embedded</b> in your own software products.
 <small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
 <br><br>
 
-<h1>News</h1>
+<h1><a href="news.php">News</a></h1>
 
 <?php
 include("newsitems.php");
@@ -72,7 +84,7 @@ foreach ($news as $news_data) {
     echo "    <p class='newsdate'>" . $news_data["date"] . "</p>\n";
     echo "    <div class='newssummary'><p>\n" . $news_data["summary"];
     if (array_key_exists("fulltext", $news_data)) {
-        echo " <a href='news.php?id=" . $news_data["id"] . "'>More...</a>";
+        echo " <a href='news.php?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
     }
     echo "\n</p></div>\n\n";
     echo "</div>\n";
@@ -81,13 +93,13 @@ foreach ($news as $news_data) {
 }
 
 if (sizeof($news) > $maxitems) {
-    echo "<p><a href='news.php'>More news...</a></p>\n";
+    echo "<p><a href='news.php'>More news&nbsp;&raquo;</a></p>\n";
 }
 ?>
 </div> <!-- id="news" -->
 
 <div id="rightcol" style="float:right; width:340px">
-<h1>Testimonials</h1>
+<h1><a href="testimonials.php">Testimonials</a></h1>
 
 <p><i>"CBISA has helped to simplify the community benefit reporting process for
 our organization and is very user friendly. It is very easy to customize
@@ -111,14 +123,14 @@ my entire carreer of making coffe for various executives."</i>
 <h1>Featured Stories</h1>
 <img alt="" src="images/misc/marenostrum-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
 <p>IBM researchers have used OMNEST to optimize one of Europe's most powerful supercomputers.<br>
-<a href="archver-casestudies.php">Read more</a></p>
+<a href="casestudy-ibmzurich.php">Read more&nbsp;&raquo;</a></p>
 
 <div style="clear:both"></div>
 <br>
 
 <img alt="" src="images/misc/workshop08-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
 <p>Users meet regularly at the International OMNeT++ Workshop, co-located with the SimuTools conference.<br>
-<a href="community.php">Read more</a></p>
+<a href="community.php">Read more&nbsp;&raquo;</a></p>
 
 <div style="clear:both"></div>
 
@@ -131,7 +143,7 @@ my entire carreer of making coffe for various executives."</i>
 
 </div>
 <div style="float:right; width:140px">
-    <h1 class="titlepage" style="margin-top:3px; margin-left:0px">References</h1>
+    <h1 class="titlepage" style="margin-top:3px; margin-left:0px"><a href="references.php">References</a></h1>
     <div style="text-align:center; border:solid 1px #bebebe; padding:8px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px">
         <a href="references.php">
         <img src="references/ibm.png"> <br><br>

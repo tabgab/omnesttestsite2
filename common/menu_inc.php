@@ -21,53 +21,67 @@ $touritems = array(
 );
 
 $tour_menu = array(
+    array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "highlight"=>0, "submenu"=>$touritems),
-    array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
+    array("text"=>"Learn about OMNEST", "link"=>"learn-omnest.php", "crosslink"=>1),
+    array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
+    array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
+    array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Support", "link"=>"support.php", "highlight"=>0, "crosslink"=>1),
     array("text"=>"Company", "link"=>"company.php", "crosslink"=>1)
 );
 
 $product_menu = array(
+    array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
-    array("text"=>"OMNEST", "link"=>"omnest.php", "submenu"=>array(
+    array("text"=>"Learn more about OMNEST", "link"=>"learn-omnest.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"At a Glance", "link"=>"learn-omnest.php"),
         array("text"=>"Overview", "link"=>"overview.php"),
-        array("text"=>"Features", "link"=>"features.php"),
         array("text"=>"Simulation IDE", "link"=>"ide.php"),
+        array("text"=>"Typical Application Areas", "link"=>"application-areas.php"),
+        array("text"=>"Simulation Models", "link"=>"simulation-models.php"),
         array("text"=>"Demo Videos", "link"=>"demo-videos.php"),
-        array("text"=>"Embedding", "link"=>"embedding.php"),
+////        array("text"=>"Embedding", "link"=>"embedding.php"),
         array("text"=>"Documentation", "link"=>"documentation.php"),
-        array("text"=>"Case Studies", "link"=>"casestudies.php"),
-        array("text"=>"References", "link"=>"references.php"),
+//    )),
+
+////    array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
+//        array("text"=>"Performance Modeling", "link"=>"performance-modeling.php"),
+////        array("text"=>"Modeling Library", "link"=>"queueinglib.php"),
+//    )),
+
+//    array("text"=>"Architecture Verification", "link"=>"architecture-verification.php", "highlight"=>0, "submenu"=>array(
+//        array("text"=>"Architecture Verification", "link"=>"architecture-verification.php"),
+////        array("text"=>"SystemC Support", "link"=>"systemc-integration.php"),
+//    )),
+
+//    array("text"=>"Network Simulation", "link"=>"network-simulation.php", "highlight"=>0, "submenu"=>array(
+//        array("text"=>"Network Simulation", "link"=>"network-simulation.php"),
+//        array("text"=>"INET Framework", "link"=>"inet-framework.php"),
+//        array("text"=>"Castalia", "link"=>"castalia.php"),
+//        array("text"=>"MiXiM", "link"=>"mixim.php"),
     )),
 
-    array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Overview", "link"=>"performance-modeling.php"),
-        array("text"=>"Modeling Library", "link"=>"queueinglib.php"),
-    )),
-
-    array("text"=>"Architecture Verification", "link"=>"architecture-verification.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Overview", "link"=>"architecture-verification.php"),
-        array("text"=>"SystemC Support", "link"=>"systemc-integration.php"),
-    )),
-
-    array("text"=>"Network Simulation", "link"=>"network-simulation.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Overview", "link"=>"network-simulation.php"),
+    array("text"=>"OMNEST in the World", "link"=>"references.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Corporate References", "link"=>"references.php"),
+        array("text"=>"Testimonials", "link"=>"testimonials.php"),
+        array("text"=>"Publications", "link"=>"publications.php"),
+        array("text"=>"Case Studies", "link"=>"case-studies.php"),
         array("text"=>"Reference Projects", "link"=>"netsim-references.php"),
-        array("text"=>"INET Framework", "link"=>"inet-framework.php"),
-        array("text"=>"Castalia", "link"=>"castalia.php"),
-        array("text"=>"MiXiM", "link"=>"mixim.php"),
         array("text"=>"Book Recommendation", "link"=>"network-simulation-book.php"),
     )),
 
-    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "crosslink"=>1, "submenu"=>array(
-        array("text"=>"Request Quotation", "link"=>"contact.php", "crosslink"=>1),
-        array("text"=>"Support", "link"=>"support.php", "crosslink"=>1),
-        array("text"=>"About Us", "link"=>"company.php", "crosslink"=>1),
-    ))
+    array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
+    array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Support", "link"=>"support.php", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "crosslink"=>1),
 );
 
 $purchase_menu = array(
-    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "crosslink"=>1),
-    array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
+    array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
+    array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
+    array("text"=>"Learn about OMNEST", "link"=>"learn-omnest.php", "crosslink"=>1),
+    array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
     array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Request Quotation", "link"=>"contact.php"),
@@ -90,7 +104,7 @@ $purchase_menu = array(
 
 $blank_menu = array();  // for pages that don't need a menu
 
-function print_footer_links()
+function print_footer_links()   //TOOD this is totally out of date!!!
 {
 ?>
     <table class="footerlinks">
@@ -102,7 +116,7 @@ function print_footer_links()
         <tr>
             <td>
                 <ul>
-                    <li><a href="omnest.php">OMNEST</a>
+                    <li><a href="learn-omnest.php">OMNEST</a>
                       <ul>
                         <li><a href="overview.php">Overview</a>
                         <li><a href="features.php">Features</a>
@@ -172,7 +186,7 @@ function print_footer_links()
 
 function print_top_menu($menu, $current_page)
 {
-    global $product_menu, $purchase_menu;
+    global $tour_menu, $product_menu, $purchase_menu;
 
     $current_page = basename($current_page);
 
@@ -194,7 +208,7 @@ function print_top_menu($menu, $current_page)
     $is_company_related =   $current_page=="company.php" ||
                             $current_page=="partners.php";
 
-    print_top_menu_item("PRODUCT", "omnest.php", $menu===$product_menu && !$is_tryomnest_related);
+    print_top_menu_item("PRODUCT", "omnest-is.php", $menu===$tour_menu || $menu===$product_menu);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     print_top_menu_item("TRY OMNEST!", "try-omnest.php", $is_tryomnest_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
@@ -246,8 +260,9 @@ function print_next_links($menu, $current_page)
 
     echo "<br>\n";
     if ($menuitem != NULL)
-        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $menuitem["link"] . "\">Next: " . $menuitem["text"] . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
-    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"try-omnest.php\">Try OMNEST! <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+        print_next_link($menuitem["link"], "Next: " . $menuitem["text"]);
+
+    print_next_link("try-omnest.php", "Try OMNEST!");
 }
 
 function get_next_menu_item($menu, $current_page)
@@ -276,6 +291,16 @@ function array_get($array, $index)
     return array_key_exists($index, $array) ? $array[$index] : NULL;
 }
 
+function print_next_link($url, $text)
+{
+    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $url . "\">" . $text . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+}
+
+function print_next_link_small($url, $text)
+{
+    echo "<div class=\"next-small\" style=\"text-align:right; height:0px\"><a href=\"" . $url . "\">" . $text . "&nbsp;&raquo;</a></div>\n";
+}
+
 function print_next_tourstep_links($current_page)
 {
     $current_page = basename($current_page);
@@ -284,10 +309,9 @@ function print_next_tourstep_links($current_page)
 
     echo "<br>\n";
     if ($tourstep != NULL)
-        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $tourstep["link"] . "\">Next: " . $tourstep["text"] . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+        print_next_link($tourstep["link"], "Next: " . $tourstep["text"]);
     else
-        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"omnest.php\">Learn more about OMNEST <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
-    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"try-omnest.php\">Try OMNEST! <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+        print_next_link("tour-thankyou.php", "Next: Finish the Tour");
 }
 
 function get_next_tourstep_item($current_page)
