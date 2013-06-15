@@ -5,7 +5,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - Tour of the Simulation IDE</title>
+    <title>OMNEST Tour - Why Simulation</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
@@ -23,11 +23,13 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<!--TODO
 <h1>Why Simulate?</h1>
 
 <p>(We know that you already know why otherwise you would not be here, but we compiled a list for your reference.)</p>
 
 TODO: analytical models are too complex, and prototypes are not yet available or would cost too much (i.e. 10000 routers)
+-->
 
 <img class="pic right rounded" width=200 src="images/tour/costs.png" alt="Network Editor" onclick="enlarge(this);"/>
 <h1>Simulation greatly decreases the costs of your product development</h1>
@@ -47,9 +49,28 @@ when your product or parts of it are not yet available, and you can try scenario
 that would be difficult to produce using the real system or prototypes.</p>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/combine.png" alt="Network Editor" onclick="enlarge(this);"/>
-<h1>Simulation allows you to combine existing models with your new models easily</h1>
-<p>You can try all sorts of new ways to build new products.</p>
+<img class="pic right rounded" width=200 src="images/tour/todo.png" alt="todo" onclick="enlarge(this);"/>
+<h1>Simulation lets you try things that don't exist yet</h1>
+<p>
+One of the primary advantages of simulators is that they are able to provide users with practical feedback
+when designing real world systems. This allows the designer to determine the correctness and efficiency
+of a design before the system is actually constructed. Consequently, the user may explore the merits
+of alternative designs without actually physically building the systems. By investigating the effects
+of specific design decisions during the design phase rather than the construction phase,
+the overall cost of building the system diminishes significantly.
+
+Alternatives for simulation are mathematical analysis and prototyping. However, analytical
+modeling is not always feasibly to complexity issues, and prototypes are often costly to build.</p>
+<div style="clear:both"></div>
+
+<img class="pic left rounded" width=200 src="images/tour/todo.png" alt="todo" onclick="enlarge(this);"/>
+<h1>Simulation lets you try large-scale scenarios without having to build them</h1>
+<p>todo</p>
+<div style="clear:both"></div>
+
+<img class="pic right rounded" width=200 src="images/tour/todo.png" alt="todo" onclick="enlarge(this);"/>
+<h1>Simulation lets you test your product in diverse scenarios, including rare conditions</h1>
+<p>todo</p>
 <div style="clear:both"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>

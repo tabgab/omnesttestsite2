@@ -5,7 +5,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - Tour of the Simulation IDE</title>
+    <title>OMNEST Tour - Thank You</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
@@ -23,23 +23,25 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt="todo" onclick="enlarge(this);"/>
-<h1>Simulation lets you try things that don't exist yet</h1>
-<p>todo</p>
-<div style="clear:both"></div>
+<h1>Thank You</h1>
 
-<!--<img class="pic left rounded" width=200 src="images/screenshots/runtime-thumb.png" alt="Runtime Environment" onclick="enlarge(this);"/>-->
-<img class="pic left rounded" width=200 src="images/tour/graphical.png" alt="Runtime Environment" onclick="enlarge(this);"/>
-<h1>Simulation lets you try large-scale scenarios without having to build them</h1>
-<p>todo</p>
-<div style="clear:both"></div>
+<p><img class="rounded right" src="images/tour/thankyou.jpg">
+Thank you for taking the OMNEST Product Tour.</p>
 
-<img class="pic right rounded" width=200 src="images/tour/parallel.png" alt="todo" onclick="enlarge(this);"/>
-<h1>Simulation lets you try unusual or rare situations</h1>
-<p>todo</p>
-<div style="clear:both"></div>
+<p>We hope that you found that OMNEST fits your needs, and we can
+soon welcome you among the happy users of our simulation tool.</p>
 
-<?php print_next_tourstep_links(__FILE__); ?>
+<!-- TODO  Gabor, please write nice sentences here! -->
+
+<div style="clear:both"></div>
+<br>
+<br>
+
+<?php
+print_next_link("omnest.php", "Learn about OMNEST in more detail");
+print_next_link("try-omnest.php", "Try OMNEST");
+print_next_link("contact.php", "Questions? Contact us");
+?>
 
 <?php print_leadout(); ?>
 </body>

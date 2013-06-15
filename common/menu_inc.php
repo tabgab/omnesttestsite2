@@ -3,26 +3,31 @@
 // PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
 $touritems = array(
-    array("text"=>"Why Simulation?", "link"=>"tour-why-simulation.php"),
-    array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),  // MERGE!!!
-    array("text"=>"Why OMNEST?", "link"=>"tour-why-omnest.php"),
-    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"), // http://flightsoftware.jhuapl.edu/files/2011/FSW11_Paine.pdf  slide 4
-    array("text"=>"Benefit from Existing Models", "link"=>"tour-modeling.php"),
-    array("text"=>"Develop New Models Easily", "link"=>"tour-development.php"),
-    array("text"=>"High-Perf. Simulation", "link"=>"tour-simulation.php"),
+    array("text"=>"Benefits of Simulation", "link"=>"tour-why-simulation.php"),
+//    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"), // http://flightsoftware.jhuapl.edu/files/2011/FSW11_Paine.pdf  slide 4
+    array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
+    array("text"=>"Benefit from Existing Models", "link"=>"tour-models.php"),
+    array("text"=>"High-Performance Simulation", "link"=>"tour-simulation.php"),
+
     array("text"=>"Make the Right Design Decisions", "link"=>"tour-analysis.php"),
+    //array("text"=>"Gain Insight from Simulations", "link"=>"tour-analysis.php"),
+    //array("text"=>"Make Better Decisions", "link"=>"tour-analysis.php"),
+    //array("text"=>"Make Better Design Decisions", "link"=>"tour-analysis.php"),  //TODO: s
+    //array("text"=>"Gain Insight Into Your System", "link"=>"tour-analysis.php"),
+
+    array("text"=>"OMNEST Integrates", "link"=>"tour-integrates.php"),
+
     //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
-    array("text"=>"Learn Working w/ OMNEST", "link"=>"tour-learn-omnest.php"),  //Ez talan nem kell, vagy nem ide?
 );
 
 $tour_menu = array(
-    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "highlight"=>0, "submenu"=>$touritems),
+    array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "highlight"=>0, "submenu"=>$touritems),
     array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
     array("text"=>"Company", "link"=>"company.php", "crosslink"=>1)
 );
 
 $product_menu = array(
-    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "crosslink"=>1),
+    array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
     array("text"=>"OMNEST", "link"=>"omnest.php", "submenu"=>array(
         array("text"=>"Overview", "link"=>"overview.php"),
         array("text"=>"Features", "link"=>"features.php"),

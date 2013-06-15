@@ -88,7 +88,7 @@ function print_titlepage_leadin() { ?>
         <!-- preload button hover images -->
         <img style="display:none" src="common/images/button_tour_hover.png" alt="PRODUCT TOUR" >
         <!-- sensitive areas -->
-        <a href="tour-omnest-is.php"><div style="position:absolute; top:372px; left:200px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+        <a href="tour-why-simulation.php"><div style="position:absolute; top:372px; left:200px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
 
 
         <div style="position:absolute; top:120px; left:577px"><img src="common/images/slidewindow.png" alt="Slides"></div>
