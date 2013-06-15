@@ -2,7 +2,7 @@
 
 // PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
-$tour = array(
+$touritems = array(
     array("text"=>"Why Simulation?", "link"=>"tour-why-simulation.php"),
     array("text"=>"Simulation Allows You To...", "link"=>"tour-simulation-allows.php"),  // MERGE!!!
     array("text"=>"Why OMNEST?", "link"=>"tour-why-omnest.php"),
@@ -16,7 +16,7 @@ $tour = array(
 );
 
 $tour_menu = array(
-    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "highlight"=>0, "submenu"=>$tour),
+    array("text"=>"OMNEST Product Tour", "link"=>"tour-omnest-is.php", "highlight"=>0, "submenu"=>$touritems),
     array("text"=>"Learn about OMNEST", "link"=>"omnest.php", "crosslink"=>1),
     array("text"=>"Company", "link"=>"company.php", "crosslink"=>1)
 );
@@ -287,9 +287,9 @@ function print_next_tourstep_links($current_page)
 
 function get_next_tourstep_item($current_page)
 {
-    global $tour;
+    global $touritems;
     $current_page_found = false;
-    foreach ($tour as $tourstep) {
+    foreach ($touritems as $tourstep) {
         if ($current_page_found)
            return $tourstep;
         if ($tourstep["link"]==$current_page)
