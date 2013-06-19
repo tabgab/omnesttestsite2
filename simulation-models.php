@@ -55,7 +55,14 @@ routing protocols (RIP, OSPF,...)
 
 <p>See the Protocol Matrix on the INET Framework web site for details.</p>
 
-<p>Several simulation frameworks take INET as a base an extend it into various directions:</p>
+<ul>
+  <li>Cleanly programmed and extensively commented models lend themselves to experimentation with protocols and various architectures.
+  <li>Several models are ported versions of real-life networking software like the Quagga routing daemon, or the AODV-UU implementation, which guarantees simulation accuracy.
+  <li>Existing protocol models can be freely combined to form hosts and network devices
+  <li>Emulation / Real-Time simulation / hardware-in-the-loop simulation support
+</ul>
+
+<p>Several simulation frameworks take INET as a base, and extend it into various directions:</p>
 
 <ul>
   <li><?php extlink("oversim" ); ?> is an overlay and peer-to-peer network simulation framework.
