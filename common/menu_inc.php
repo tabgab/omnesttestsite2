@@ -3,7 +3,7 @@
 // PRODUCT  | TRY OMNEST!  | HOW TO BUY | SUPPORT | ABOUT US
 
 $touritems = array(
-    array("text"=>"Benefits of Simulation", "link"=>"tour-why-simulation.php"),
+//    array("text"=>"Benefits of Simulation", "link"=>"tour-why-simulation.php"),
 //    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"), // http://flightsoftware.jhuapl.edu/files/2011/FSW11_Paine.pdf  slide 4
     array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
     array("text"=>"Benefit from Existing Models", "link"=>"tour-models.php"),

@@ -11,11 +11,15 @@
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <script type="text/javascript" src="common/collapsible.js"></script>
     <?php print_head_contribution(); ?>
 </head>
 
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
+
+<!-- TODO hint: <div style="max-height:30px; overflow:hidden;"> -->
+
 
 <div id="header"><h1>Simulation Models</h1></div>
 
@@ -42,6 +46,7 @@ Internet for the keywords, e.g. <i>"HMIPv6 OMNeT++"</i>.</p>
 
 <h2 class="framed"><a name="inet">Internet</a></h2>
 
+<div class="collapsible">
 <p>The <?php extlink("inet" ); ?> is the best place to begin when you want to simulate
 any of the protocols, technologies and applications used on the Internet (or other WANs).</p>
 
@@ -88,9 +93,11 @@ routing protocols (RIP, OSPF,...)
 </ul>
 
 <p>Several packages, e.g. xMIPv6, VoIPTool and HTTPTools, used to be separate projects but have been integrated into INET since.</p>
+</div>
 
 <h2 class="framed">Wired and Wireless LANs</h2>
 
+<div class="collapsible">
 <p>The best choice for simulating LANs with OMNEST is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).
 The INET Framework contains models for Ethernet (including Fast Ethernet, Gigabit Ethernet,
 40 and 100 Gigabit Ethernet, duplex and half-duplex) and the IEEE 802.11 wireless LAN standard.
@@ -102,6 +109,7 @@ Ethernet, Wireless LAN 802.11, WiMAX
 Switched networks: Ethernet switches, VLAN, Spanning-Tree Protocol (STP), Rapid Spanning-Tree Protocol (RSTP), etc.
 
 See also SAN, Cloud, HPC
+</div>
 
 
 <h2 class="framed"><a name="manets">Mobile Ad-hoc Networks</a></h2>
