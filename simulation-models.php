@@ -23,10 +23,9 @@
 
 <div id="header"><h1>Simulation Models</h1></div>
 
-<p><b>OMNEST as a product doesn't contain simulation models beyond a few simple code examples,
-but you can make use of the models written for OMNeT++, the noncommercial version of OMNEST.</b>
-These models have been written by the OMNeT++ user community,and published under various
-open-source licenses.</p>
+<p><b>With OMNEST you can make use of the models written for OMNeT++, the noncommercial version of OMNEST.</b>
+These models have been written by the OMNeT++ user community, and published under various
+open-source licenses. Below is a partial list of the models, organized by topic.</p>
 
 <!-- TODO alternative:
 <p><b>OMNEST as a product doesn't contain simulation models beyond code examples,
@@ -34,9 +33,11 @@ but you can make use of the large body of simulation models written by the OMNeT
 published under various open-source licenses.</b> OMNeT++ is the noncommercial version of OMNEST.</p>
 -->
 
-<p>Here is an approximate catalog of these simulation models, organized by topics.
+<!--
+<p>Here is an partial list of these simulation models, organized by topics.
 If you don't find here what you are looking for, we recommend that you search on the
 Internet for the keywords, e.g. <i>"HMIPv6 OMNeT++"</i>.</p>
+-->
 
 <!-- TODO alternative:
 <p>On this page we list some of these simulation models, organized by topics.

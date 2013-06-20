@@ -46,14 +46,13 @@ chose OMNEST (or OMNeT++):</p>
       tools where publicly available information is often limited to marketing materials)
 
   <li><b>component model</b> -- simulation models are easier to understand and maintain
-      and can be combined in unexpected ways (because components do not interact with
+      and can be combined in unexpected ways (because components usually do not interact with
       each other directly on the C++ level, only via means provided by OMNEST, e.g. messages)
 
   <li><b>flexible</b> -- the simulator and models can be extended in unforeseen ways;
-      exotic scenarios such as interfacing with other simulators
-      and external systems, parallel simulation, emulation, and combinations of the above,
-      can be realized; and when something doesn't work as expected, the full source code
-      is there to study and debug
+      exotic scenarios such as interfacing with other simulators and external systems,
+      parallel simulation, emulation, and combinations of the above, can be realized;
+      and the full source code is there to study and debug when needed
 </ul>
 
 
@@ -141,8 +140,6 @@ library. This functionality includes:</p>
 
 <h3>PERFORMANCE, INTEGRATION AND EXTENSIBILITY</h3>
 
-TODO: supported platforms
-
 <p>OMNEST allows many interesting possiblities:</p>
 
 <ul>
@@ -194,6 +191,13 @@ TODO: supported platforms
     Allows for connecting OMNEST with other simulators via HLA / IEEE 1516.
 
 </ul>
+
+<h3>PLATFORMS</h3>
+
+<p>Simulations can be run on Windows and practically in any Unix-like environment
+that is powerful enough and has a modern C++ compiler, including Mac OS X and Linux.</p>
+
+<p>The Simulation IDE is currently available on Windows, Mac OS X and Linux.</p>
 
 <br>
 
