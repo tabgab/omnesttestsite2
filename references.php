@@ -28,7 +28,7 @@ OMNEST licenses for internal research and other purposes.</p>
 <table class="fancytable">
   <col style="width:220px"/><col />
   <tr>
-    <td><a href="http://www.qualcomm.com/" target="_blank"><img src="references/qualcomm.gif"></a></td>
+    <td><a class="noicon" href="http://www.qualcomm.com/" target="_blank"><img src="references/qualcomm.gif"></a></td>
     <td><p>Researchers are using Oversim P2P Simulator (<a href="http://www.oversim.org/" target="_blank">www.oversim.org</a>)
       on top of OMNEST at <a href="http://www.qualcomm.com/" target="_blank">Qualcomm</a> to simulate various network scenarios.</p>
     </td>
@@ -37,7 +37,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.mellanox.com/" target="_blank"><img src="references/mellanox.png"></a></td>
+    <td><a class="noicon" href="http://www.mellanox.com/" target="_blank"><img src="references/mellanox.png"></a></td>
     <td><p><a href="http://www.mellanox.com/" target="_blank">Mellanox Technologies</a>, the leading provider of Infiniband
       technology are using OMNEST in their research. They have released their own Infiniband model for
       OMNEST/OMNeT++ users. The model can be downloaded from our community site,
@@ -48,7 +48,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.intel.com/" target="_blank"><img src="references/intel.gif"></a></td>
+    <td><a class="noicon" href="http://www.intel.com/" target="_blank"><img src="references/intel.gif"></a></td>
     <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> is using OMNEST&#8482; simulation technology in its research.</p>
     </td>
   </tr>
@@ -56,7 +56,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.ibm.com/" target="_blank"><img src="references/ibm.png"></a></td>
+    <td><a class="noicon" href="http://www.ibm.com/" target="_blank"><img src="references/ibm.png"></a></td>
     <td><p><a href="http://www.ibm.com/" target="_blank">IBM</a> has chosen to deploy OMNEST&#8482;
     at its <a href="http://www.zurich.ibm.com/" target="_blank">Zurich Research Laboratory</a>.
     Read the <a href="press-ibm.php">press release</a>.</p>
@@ -66,7 +66,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.cisco.com/" target="_blank"><img src="references/cisco.gif"></a></td>
+    <td><a class="noicon" href="http://www.cisco.com/" target="_blank"><img src="references/cisco.gif"></a></td>
     <td><p>
     <a href="http://www.cisco.com/" target="_blank">Cisco</a>
       engineers needed a flexible solution that would allow them to accurately model the
@@ -81,7 +81,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.hp.com/" target="_blank"><img src="references/hpinvent.gif"></a></td>
+    <td><a class="noicon" href="http://www.hp.com/" target="_blank"><img src="references/hpinvent.gif"></a></td>
     <td><p><a href="http://www.hp.com/" target="_blank">Hewlett-Packard Development Company.</a> HP professionals use OMNEST&#8482; for performance simulation of hardware architectures in their research and development.</p>
 
     </td>
@@ -90,7 +90,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.orange.fr/" target="_blank"><img src="references/orange.gif"></a></td>
+    <td><a class="noicon" href="http://www.orange.fr/" target="_blank"><img src="references/orange.gif"></a></td>
     <td><p>
     <a href="http://www.orange.fr/" target="_blank">Orange / France Telecom</a>
         use OMNEST&#8482; to simulate optical networks in their research laboratory.
@@ -101,7 +101,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.alcatel-lucent.com/" target="_blank"><img src="references/alcatel-lucent.gif"></a></td>
+    <td><a class="noicon" href="http://www.alcatel-lucent.com/" target="_blank"><img src="references/alcatel-lucent.gif"></a></td>
     <td><p><a href="http://www.alcatel-lucent.com/" target="_blank">Alcatel-Lucent:</a>
         When Alcatel and Lucent merged, both companies carried with them their own OMNEST&#8482; installations,
         since both companies were already established OMNEST&#8482; users. The combined entity continues to
@@ -113,7 +113,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.eads.com/" target="_blank"><img src="references/eads.png"></a></td>
+    <td><a class="noicon" href="http://www.eads.com/" target="_blank"><img src="references/eads.png"></a></td>
     <td><p><a href="http://www.eads.com/" target="_blank">European Aeronautic Defence and Space Company.</a> <br> EADS professionals are using and embedding OMNEST&#8482; technology to simulate the internals of vehicle systems.</p>
     </td>
 
@@ -122,7 +122,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.thalesgroup.com/" target="_blank"><img src="references/thales.gif"></a></td>
+    <td><a class="noicon" href="http://www.thalesgroup.com/" target="_blank"><img src="references/thales.gif"></a></td>
     <td><p><a href="http://www.thalesgroup.com/" target="_blank">Thales Communications</a> is using OMNEST&#8482; in its research facilities world-wide.
     You can find related information on our network simulation <a href="netsim-references.php">references</a>
     and <a href="netsim-casestudies.php">case studies</a> pages.</p>
@@ -133,7 +133,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.spec.org/" target="_blank"><img src="references/spec.gif"></a></td>
+    <td><a class="noicon" href="http://www.spec.org/" target="_blank"><img src="references/spec.gif"></a></td>
     <td><p>The <a href="http://www.spec.org/" target="_blank">Standard Performance Evaluation Corporation (SPEC)</a>
       announced <a href="http://www.spec.org/cpu2006" target="_blank">SPEC CPU2006</a>, its next-generation benchmark for CPU-intensive performance.
       <a href="http://www.spec.org/cpu2006/CINT2006" target="_blank">SPEC CINT2006</a>
@@ -146,7 +146,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.broadcom.com/" target="_blank"><img src="references/broadcom.png"></a></td>
+    <td><a class="noicon" href="http://www.broadcom.com/" target="_blank"><img src="references/broadcom.png"></a></td>
     <td><p><a href="http://www.broadcom.com/" target="_blank">Broadcom, Corp.</a></p>
     </td>
   </tr>
@@ -154,7 +154,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.invistics.com/" target="_blank"><img src="references/invistics.gif"></a></td>
+    <td><a class="noicon" href="http://www.invistics.com/" target="_blank"><img src="references/invistics.gif"></a></td>
     <td><p><a href="http://www.invistics.com/" target="_blank">Invistics, Corp.</a> </p>
     </td>
 
@@ -162,7 +162,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.gilat.com/" target="_blank"><img src="references/gilat.gif"></a></td>
+    <td><a class="noicon" href="http://www.gilat.com/" target="_blank"><img src="references/gilat.gif"></a></td>
     <td><p>
     <a href="http://www.gilat.com/" target="_blank">Gilat Satellite Networks, Inc.</a>
     </p>
@@ -172,7 +172,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.mega.com/" target="_blank"><img src="references/mega.gif"></a></td>
+    <td><a class="noicon" href="http://www.mega.com/" target="_blank"><img src="references/mega.gif"></a></td>
     <td><p><a href="http://www.mega.com/" target="_blank">MEGA Corporation</a>
     has chosen to embed OMNEST&#8482; simulation technology into its
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> product.
@@ -185,7 +185,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.creditlyonnais.com/" target="_blank"><img src="references/cl.gif"></a></td>
+    <td><a class="noicon" href="http://www.creditlyonnais.com/" target="_blank"><img src="references/cl.gif"></a></td>
     <td><p><a href="http://www.creditlyonnais.com/" target="_blank">Cr&eacute;dit Lyonnais</a> selected <a href="http://www.mega.com/" target="_blank">MEGA</a>
 
     to map and simulate its customer processes. The results of the simulation are used to manage activities
@@ -197,7 +197,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.f5networks.com/" target="_blank"><img src="references/f5.gif"></a></td>
+    <td><a class="noicon" href="http://www.f5networks.com/" target="_blank"><img src="references/f5.gif"></a></td>
     <td><p><a href="http://www.f5networks.com/" target="_blank">F5 Networks, Inc.</a></p>
     </td>
 
@@ -206,7 +206,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.broadbus.com/" target="_blank"><img src="references/broadbus.gif"></a></td>
+    <td><a class="noicon" href="http://www.broadbus.com/" target="_blank"><img src="references/broadbus.gif"></a></td>
     <td><p><a href="http://www.broadbus.com/" target="_blank">Broadbus Technologies, Inc.</a></p>
     </td>
   </tr>
@@ -214,14 +214,14 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.saic.com/" target="_blank"><img src="references/saic.gif"></a></td>
+    <td><a class="noicon" href="http://www.saic.com/" target="_blank"><img src="references/saic.gif"></a></td>
     <td><p><a href="http://www.saic.com/" target="_blank">Science Applications International Corporation</a></p>
     </td>
   </tr>
 
 
   <tr>
-    <td><a href="http://www.abb.ch/" target="_blank"><img src="references/abb.png"></a></td>
+    <td><a class="noicon" href="http://www.abb.ch/" target="_blank"><img src="references/abb.png"></a></td>
     <td><p><a href="http://www.abb.ch/" target="_blank">ABB Switzerland</a></p>
     </td>
   </tr>
@@ -229,7 +229,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.anagran.com/" target="_blank"><img src="references/anagran.jpg"></a></td>
+    <td><a class="noicon" href="http://www.anagran.com/" target="_blank"><img src="references/anagran.jpg"></a></td>
     <td><p><a href="http://www.anagran.com/" target="_blank">Anagran, Inc.</a></p>
     </td>
   </tr>
@@ -237,7 +237,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.areva.com/" target="_blank"><img src="references/areva.png"></a></td>
+    <td><a class="noicon" href="http://www.areva.com/" target="_blank"><img src="references/areva.png"></a></td>
     <td><p><a href="http://www.areva.com/" target="_blank">Areva, Inc.</a></p>
     </td>
   </tr>
@@ -245,7 +245,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.audi.com/" target="_blank"><img src="references/audi.jpg"></a></td>
+    <td><a class="noicon" href="http://www.audi.com/" target="_blank"><img src="references/audi.jpg"></a></td>
     <td><p><a href="http://www.audi.com/" target="_blank">Audi AG.</a></p>
     </td>
   </tr>
@@ -253,7 +253,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.baxter.com/" target="_blank"><img src="references/baxter.png"></a></td>
+    <td><a class="noicon" href="http://www.baxter.com/" target="_blank"><img src="references/baxter.png"></a></td>
     <td><p><a href="http://www.baxter.com/" target="_blank">Baxter, Corp.</a></p>
     </td>
   </tr>
@@ -261,7 +261,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.boeing.com/" target="_blank"><img src="references/boeing.png"></a></td>
+    <td><a class="noicon" href="http://www.boeing.com/" target="_blank"><img src="references/boeing.png"></a></td>
     <td><p><a href="http://www.boeing.com/" target="_blank">Boeing, Inc.</a></p>
     </td>
   </tr>
@@ -269,7 +269,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.fujitsu.com/" target="_blank"><img src="references/fujitsu.png"></a></td>
+    <td><a class="noicon" href="http://www.fujitsu.com/" target="_blank"><img src="references/fujitsu.png"></a></td>
     <td><p><a href="http://www.fujitsu.com/" target="_blank">Fujitsu</a></p>
     </td>
   </tr>
@@ -277,7 +277,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.hirschmann.com/" target="_blank"><img src="references/hirschmann.png"></a></td>
+    <td><a class="noicon" href="http://www.hirschmann.com/" target="_blank"><img src="references/hirschmann.png"></a></td>
     <td><p><a href="http://www.hirschmann.com/" target="_blank">Hirschmann, a brand of Belden, Inc.</a></p>
     </td>
   </tr>
@@ -285,7 +285,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.kddi.com/" target="_blank"><img src="references/kddi.jpg"></a></td>
+    <td><a class="noicon" href="http://www.kddi.com/" target="_blank"><img src="references/kddi.jpg"></a></td>
     <td><p><a href="http://www.kddi.com/" target="_blank">KDDI, Corp.</a></p>
     </td>
   </tr>
@@ -293,7 +293,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.ljnets.com/" target="_blank"><img src="references/ljnets.jpg"></a></td>
+    <td><a class="noicon" href="http://www.ljnets.com/" target="_blank"><img src="references/ljnets.jpg"></a></td>
     <td><p><a href="http://www.ljnets.com/" target="_blank">La Jolla Networks, Inc.</a></p>
     </td>
   </tr>
@@ -301,97 +301,97 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a href="http://www.nec.com/" target="_blank"><img src="references/nec.gif"></a></td>
+    <td><a class="noicon" href="http://www.nec.com/" target="_blank"><img src="references/nec.gif"></a></td>
     <td><p><a href="http://www.nec.com/" target="_blank">NEC, Corp.</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.sun.com/" target="_blank"><img src="references/oracle-sun.gif"></a></td>
+    <td><a class="noicon" href="http://www.sun.com/" target="_blank"><img src="references/oracle-sun.gif"></a></td>
     <td><p><a href="http://www.sun.com/" target="_blank">Oracle (Sun Microsystems)</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.ornl.gov/" target="_blank"><img src="references/ornl.gov.png"></a></td>
+    <td><a class="noicon" href="http://www.ornl.gov/" target="_blank"><img src="references/ornl.gov.png"></a></td>
     <td><p><a href="http://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory, UT-Battelle</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.saabgroup.com/" target="_blank"><img src="references/saabgroup.png"></a></td>
+    <td><a class="noicon" href="http://www.saabgroup.com/" target="_blank"><img src="references/saabgroup.png"></a></td>
     <td><p><a href="http://www.saabgroup.com/" target="_blank">Saab Group</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.sapura.com.my/" target="_blank"><img src="references/sapura.gif"></a></td>
+    <td><a class="noicon" href="http://www.sapura.com.my/" target="_blank"><img src="references/sapura.gif"></a></td>
     <td><p><a href="http://www.sapura.com.my/" target="_blank">Sapura Group</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.siemens.com/" target="_blank"><img src="references/siemens.png"></a></td>
+    <td><a class="noicon" href="http://www.siemens.com/" target="_blank"><img src="references/siemens.png"></a></td>
     <td><p><a href="http://www.siemens.com/" target="_blank">Siemens AG.</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.utc.com/" target="_blank"><img src="references/utc.png"></a></td>
+    <td><a class="noicon" href="http://www.utc.com/" target="_blank"><img src="references/utc.png"></a></td>
     <td><p><a href="http://www.utc.com/" target="_blank">United Technologies, Corp.</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.fraunhofer.com/" target="_blank"><img src="references/fraunhofer.jpg"></a></td>
+    <td><a class="noicon" href="http://www.fraunhofer.com/" target="_blank"><img src="references/fraunhofer.jpg"></a></td>
     <td><p><a href="http://www.fraunhofer.com/" target="_blank">Fraunhofer Gesellschaft</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.mc.com/" target="_blank"><img src="references/mc.jpg"></a></td>
+    <td><a class="noicon" href="http://www.mc.com/" target="_blank"><img src="references/mc.jpg"></a></td>
     <td><p><a href="http://www.mc.com/" target="_blank">Mercury Computer Systems, Inc.</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.philips.com/" target="_blank"><img src="references/philips.png"></a></td>
+    <td><a class="noicon" href="http://www.philips.com/" target="_blank"><img src="references/philips.png"></a></td>
     <td><p><a href="http://www.philips.com/" target="_blank">Philips Electronics N.V.</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.radmor.com.pl/" target="_blank"><img src="references/radmor.jpg"></a></td>
+    <td><a class="noicon" href="http://www.radmor.com.pl/" target="_blank"><img src="references/radmor.jpg"></a></td>
     <td><p><a href="http://www.radmor.com.pl/" target="_blank">Radmor S.A.</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.selex-comms.co.uk/" target="_blank"><img src="references/selex.jpg"></a></td>
+    <td><a class="noicon" href="http://www.selex-comms.co.uk/" target="_blank"><img src="references/selex.jpg"></a></td>
     <td><p><a href="http://www.selex-comms.co.uk/" target="_blank">SELEX Communications</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.st.com/" target="_blank"><img src="references/st.gif"></a></td>
+    <td><a class="noicon" href="http://www.st.com/" target="_blank"><img src="references/st.gif"></a></td>
     <td><p><a href="http://www.st.com/" target="_blank">STMicroelectronics</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.dlr.de/" target="_blank"><img src="references/dlr.jpg"></a></td>
+    <td><a class="noicon" href="http://www.dlr.de/" target="_blank"><img src="references/dlr.jpg"></a></td>
     <td><p><a href="http://www.dlr.de" target="_blank">German Aerospace Center (DLR)</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.bmw.com/" target="_blank"><img src="references/bmw.png"></a></td>
+    <td><a class="noicon" href="http://www.bmw.com/" target="_blank"><img src="references/bmw.png"></a></td>
     <td><p><a href="http://www.bmw.com/" target="_blank">BMW Group</a></p>
     </td>
   </tr>
 
   <tr>
-    <td><a href="http://www.bosch.com/" target="_blank"><img src="references/bosch.png"></a></td>
+    <td><a class="noicon" href="http://www.bosch.com/" target="_blank"><img src="references/bosch.png"></a></td>
     <td><p><a href="http://www.bosch.com/" target="_blank">Bosch Group</a></p>
     </td>
   </tr>

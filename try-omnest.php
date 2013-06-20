@@ -29,7 +29,7 @@ libraries, tools, the IDE, sample simulations and documentation.
 <table>
   <tr>
     <td style="width:130px; vertical-align: top">
-      <a href="download-eval-request.php"><img src="images/misc/download-win-eval.png"/></a>
+      <a class="noicon" href="download-eval-request.php"><img src="images/misc/download-win-eval.png"/></a>
     </td>
     <td style="vertical-align: top">
       <p>Installs OMNEST Evaluation on a Windows machine (Windows 8, 7 or XP).

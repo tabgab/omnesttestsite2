@@ -26,7 +26,7 @@ Klaus Wehrle, Mesut G&uuml;nes, James Gross (Editors), Springer, 2010.
 
 <p>
 
-<a target="_blank" href="http://www.springer.com/computer/communication+networks/book/978-3-642-12330-6">
+<a class="noicon" href="http://www.springer.com/computer/communication+networks/book/978-3-642-12330-6" target="_blank">
 <img class="right" src="images/misc/network-simulation-book.png">
 </a>
 

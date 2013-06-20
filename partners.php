@@ -25,7 +25,7 @@
 <table style="margin-left:50px">
   <tr>
     <td style="height:80px; width:180px">
-      <a href="http://vi-re.com" target="_blank"><img src="images/misc/vire-logo.png"></a>
+      <a class="noicon" href="http://vi-re.com" target="_blank"><img src="images/misc/vire-logo.png"></a>
     </td>
     <td style="vertical-align:top">
       <b>VI-RE Technologies</b> (<a href="http://vi-re.com" target="_blank">vi-re.com</a>)<br>
@@ -36,7 +36,7 @@
 
   <tr>
     <td style="height:80px; width:180px">
-      <a href="http://www.eswlab.com" target="_blank"><img src="images/misc/eswlab-logo.gif"></a>
+      <a class="noicon" href="http://www.eswlab.com" target="_blank"><img src="images/misc/eswlab-logo.gif"></a>
     </td>
     <td>
       <b>Engineering Software Lab, Ltd.</b> (<a href="http://www.eswlab.com" target="_blank">eswlab.com</a>)<br>
@@ -46,7 +46,7 @@
 
   <tr>
     <td style="height:80px; width:180px">
-      <a href="http://www.pulse-denshi.co.jp" target="_blank"><img src="images/misc/pulse-denshi-logo.png"></a>
+      <a class="noicon" href="http://www.pulse-denshi.co.jp" target="_blank"><img src="images/misc/pulse-denshi-logo.png"></a>
     </td>
     <td>
       <b>Pulse Denshi Co., Ltd.</b> (<a href="http://www.pulse-denshi.co.jp" target="_blank">pulse-denshi.co.jp</a>)<br>
@@ -57,7 +57,7 @@
 <!--
   <tr>
     <td style="height:80px; width:180px">
-      <a href="http://dellsoft.in" target="_blank"><img src="images/misc/dellsoft-logo.jpg"></a>
+      <a class="noicon" href="http://dellsoft.in" target="_blank"><img src="images/misc/dellsoft-logo.jpg"></a>
     </td>
     <td>
       <b>DELLSOFT Technologies</b> (<a href="http://dellsoft.in" target="_blank">dellsoft.in</a>)</a><br>

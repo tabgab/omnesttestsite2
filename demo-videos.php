@@ -26,7 +26,7 @@
 
 <table>
   <tr><td rowspan="3"><div style="margin-right: 20px; background-image: url(images/video/ide-thumb.png); background-repeat: no-repeat; width: 220px; height: 165px;">
-             <a href="/webdemo/ide" target="_blank"><img src="images/video/play.png" ></a>
+             <a class="noicon" href="/webdemo/ide" target="_blank"><img src="images/video/play.png" ></a>
           </div>
       </td>
       <td><h2>Using the IDE</h2></td>

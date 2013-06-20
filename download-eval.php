@@ -35,7 +35,7 @@ You can also download, install and try OMNeT++ models from the web.</p>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 
-<a href="download/free/omnest-4.3-win32-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
+<a class="noicon" href="download/free/omnest-4.3-win32-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
       <p><tt><a href="download/free/omnest-4.3-win32-eval.exe">omnest-4.3-win32-eval.exe</a></tt>
       &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5: 37449986fad9ecbd339bc28e428a270a)</small></p>
       <p>This program installs OMNEST Evaluation on a Windows machine (Windows 8, 7 or XP).

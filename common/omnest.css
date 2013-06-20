@@ -56,6 +56,11 @@ a[href^="http://"], a[href^="https://"] {
     padding-right: 13px;
 }
 
+a.noicon[href^="http://"], a.noicon[href^="https://"] {
+    background: none;
+    padding-right: 0px;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: custom, Arial, Helvetica, sans-serif;
     font-weight: normal;
