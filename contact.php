@@ -5,7 +5,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - Request Quotation</title>
+    <title>OMNEST - Contact / Request Quotation</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
@@ -20,7 +20,7 @@
 <body>
 <?php print_leadin($purchase_menu, __FILE__); ?>
 
-<div id="header"><h1>Request Quotation</h1></div>
+<div id="header"><h1>Contact / Request Quotation</h1></div>
 
 <p>Please give us some details about yourself and your project, and we will
 get back to you soon. We will only use this data to better assist you with
