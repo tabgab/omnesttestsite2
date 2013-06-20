@@ -5,7 +5,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - References</title>
+    <title>OMNEST - Customers</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
@@ -20,13 +20,15 @@
 <?php print_leadin($product_menu, __FILE__); ?>
 
 
-<div id="header"><h1>References</h1></div>
+<div id="header"><h1>Customers</h1></div>
 
 <p>The following is a sample from the list of companies that have purchased
-OMNEST licenses for internal research and other purposes. If you are
-interested in more in-depth stories on what problems OMNEST has been applied
+OMNEST licenses for internal research and other purposes.
+<!--XXX
+If you are interested in more in-depth stories on what problems OMNEST has been applied
 to, check <a href="case-studies.php">Case Studies</a>, <a href="testimonials.php">Testimonials</a>,
 and other related pages.
+-->
 </p>
 
 <table class="fancytable">

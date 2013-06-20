@@ -63,7 +63,7 @@ $product_menu = array(
     )),
 
     array("text"=>"OMNEST in the World", "link"=>"references.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Corporate References", "link"=>"references.php"),
+        array("text"=>"Customers", "link"=>"references.php"),
         array("text"=>"Testimonials", "link"=>"testimonials.php"),
         array("text"=>"Publications", "link"=>"publications.php"),
         array("text"=>"Case Studies", "link"=>"case-studies.php"),
