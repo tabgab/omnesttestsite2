@@ -23,6 +23,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
+<span style="color: red;">TODO: this page should be merged with "Simulation IDE"</span>
 
 <div id="header"><h1>OMNEST at a Glance</h1></div>
 
@@ -57,7 +58,7 @@ both graphically and in source mode. NED has a similar level of editor support a
 <tr><td><img src="images/tour/msg.png" width=150></td><td>  <!-- packet X {... -->
 <p><font size="+3">Msg</font><br>
 Protocol headers and other messages are represented in the code with C++ classes, but
-there is DSL that spares you the tedium of writing the C++ classes by generating them from
+there is a DSL that spares you the tedium of writing the C++ classes by generating them from
 a high-level description, alongside with serialization and reflection code.</p>
 </td></tr>
 

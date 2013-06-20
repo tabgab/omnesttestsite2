@@ -23,13 +23,7 @@
 <div id="header"><h1>Customers</h1></div>
 
 <p>The following is a sample from the list of companies that have purchased
-OMNEST licenses for internal research and other purposes.
-<!--XXX
-If you are interested in more in-depth stories on what problems OMNEST has been applied
-to, check <a href="case-studies.php">Case Studies</a>, <a href="testimonials.php">Testimonials</a>,
-and other related pages.
--->
-</p>
+OMNEST licenses for internal research and other purposes.</p>
 
 <table class="fancytable">
   <col style="width:220px"/><col />
@@ -405,8 +399,6 @@ and other related pages.
 </table>
 
 <br>
-
-<?php print_next_links($product_menu, __FILE__); ?>
 
 <?php print_leadout(); ?>
 </body>

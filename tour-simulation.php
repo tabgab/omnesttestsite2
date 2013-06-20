@@ -24,10 +24,10 @@
 <?php print_leadin($tour_menu, __FILE__); ?>
 
 <img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt="todo" onclick="enlarge(this);"/>
-<h1>High-performance simulation kernel lets you utilize your hardware</h1>
+<h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
 <p>Models are written in C++, and execute on top of a streamlined simulation kernel
-to provide high event throughput. Diagnostic and animation features pose minimal
-overhead when not in use.
+to provide high event throughput. Diagnostic and animation features are optional and 
+pose minimal overhead when not in use.
 
 OMNEST simulations execute fast and scale very well, which can be surprising
 given the amount of features in the simulation library. TODO revise <!--TODO ez copy/paste a 'what is' oldalrol -->
@@ -35,8 +35,11 @@ given the amount of features in the simulation library. TODO revise <!--TODO ez 
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/insight.png" alt="Runtime Environment" onclick="enlarge(this);"/>
+
+<span style="color: red;">TODO: this is close to being a duplicate of another one on the "Develop models easily" page</span>
+
 <h1>Graphical simulation runtime environment gives you a deep insight into running simulations</h1>
-<p>Simulations can be run in an graphical interactive runtime environment that
+<p>Simulations can be run in a graphical interactive runtime environment that
 lets you explore the simulation model,
 animates packet transmissions and other events,
 lets you pause the model and run it in various modes,
@@ -45,7 +48,10 @@ This feature helps reduce debugging time, and is also useful when demonstrating 
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/parallel.png" alt="todo" onclick="enlarge(this);"/>
-<h1>Parallel simulation allows you to use all of your computing power at once</h1>
+<h1>Parallel simulation allows you to use all of your computing power simultaneously</h1>
+
+<span style="color: red;">TODO: mentioning requirements this way (without a detailed explanation) might make the reader think that it is very difficult</span>
+
 <p>Simulation models that meet the requirements can be run in parallel on clusters or multiprocessors.
 Parallel simulation runs on top of MPI, and employs conservative synchronization.
 Using named pipes or other communication means instead of MPI is also possible.</p>
@@ -53,6 +59,9 @@ Using named pipes or other communication means instead of MPI is also possible.<
 
 <img class="pic left rounded" width=200 src="images/tour/hardware.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Real-time hardware-in-the-loop simulation allows you to test the models with the real thing</h1>
+
+<span style="color: red;">TODO: shouldn't it be clear that there's at least one existing and complete solution that is able to connect to real TCP/IP networks over ethernet</span>
+
 <p>The simulation kernel supports real-time and hardware-in-the loop simulation
 via a plugin interface. Functioning, extensively commented source code examples
 will help you quickly implement your own application-specific hardware-in-the-loop simulation.

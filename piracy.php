@@ -16,6 +16,7 @@
 <body>
 <?php print_leadin($purchase_menu, __FILE__); ?>
 
+<span style="color: red;">TODO: this page is not present in the menu but it could be easily included in the company menu</span>
 
 <div id="header"><h1>Piracy of OMNeT++ Licenses in China</h1></div>
 
@@ -28,8 +29,7 @@ yourself at risk if you buy from an unauthorized source.
 </p>
 
 <p>There is only one authorized OMNEST reseller in China:
-<a href="http://vi-re.com" target="_blank"><b>VI-RE Technologies</b></a>
-(<a href="http://vi-re.com" target="_blank">vi-re.com</a>)</a>.
+<b>VI-RE Technologies</b> (<a href="http://vi-re.com" target="_blank">vi-re.com</a>).
 No other company, or individual may sell you a legitimate copy of
 OMNEST in China. VI-RE has our authorization to prosecute pirates and
 cheats peddling illegal wares.

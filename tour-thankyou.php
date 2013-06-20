@@ -37,8 +37,10 @@ soon welcome you among the happy users of our simulation tool.</p>
 <br>
 <br>
 
+<span style="color: red;">TODO: the contact link refers to the Request Quotation page and that's incorrect</span>
+
 <?php
-print_next_link("omnest.php", "Learn about OMNEST in more detail");
+print_next_link("learn-omnest.php", "Learn about OMNEST in more detail");
 print_next_link("try-omnest.php", "Try OMNEST");
 print_next_link("contact.php", "Questions? Contact us");
 ?>

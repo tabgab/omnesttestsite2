@@ -23,6 +23,8 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<span style="color: red;">TODO: the position and style of the following link looks weird</span>
+
 <?php
 print_next_link_small($touritems[0]["link"], "Take the Product Tour!");
 ?>
@@ -51,7 +53,7 @@ print_next_link_small($touritems[0]["link"], "Take the Product Tour!");
       - a 3 menüt összevonni (pl az adott lapon nem releváns almenük fixen csukva lennének) ill racionalizálni, ld conversion audit
 -->
 
-<table>
+<span style="color: red;">TODO: now that the headers are not aligned vertically, we should consider putting the "OMNEST is" prefix into each one of them</span>
 
 <img class="pic left" src="images/tour/network.png" width=150> <!-- network? -->
 <h1>a network simulator platform</h1>
@@ -71,6 +73,8 @@ Expect frameworks and open-source tweakable models instead of "canned" models.</
 <h1>flexible</h1>
 TODO: COMPONENT ARCHITECTURE: MODELS CAN BE COMBINED FREELY.
 
+<span style="color: red;">TODO: should say something else than "any way you want", because it sounds weird, it kind of implies that you can rewrite it from scratch</span>
+
 You can change simulation models in any way you want, because you have access to model source and platform infrastructure.
 You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.
 </p>
@@ -78,7 +82,8 @@ You can also get the simulator work together with other software in your toolbox
 
 <img class="pic right" src="images/tour/performance.png" width=150>  <!-- car? fighter plane? -->
 <h1>high performance</h1>
-<b>Models are written in C++</b>, and execute on top of a streamlined simulation kernel to provide high event throughput.
+<span style="color: red;">TODO: the emphasis should be italic or it should be removed</span>
+<i>Models are written in C++</i>, and execute on top of a streamlined simulation kernel to provide high event throughput.
 Diagnostic and animation features pose minimal overhead when not in use.</p>
 <div style="clear:both"></div>
 
@@ -116,8 +121,6 @@ available to you, covering very diverse domains from internet routing to ad-hoc 
 These models can give you a jump-start when building your simulation model to solve the problem at hand.
 </p>
 <div style="clear:both"></div>
-
-</table>
 
 <?php
 print_next_link($touritems[0]["link"], "Take the Product Tour!");

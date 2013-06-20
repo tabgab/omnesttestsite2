@@ -229,8 +229,6 @@ PSIRP project deliverable D5.4. Section 5.1.1, <i>"Dissemination of PSIRP result
 <p>Please note that commercial companies joining research projects need to obtain
 an OMNEST license.</p>
 
-<?php print_next_links($product_menu, __FILE__); ?>
-
 <?php print_leadout(); ?>
 </body>
 </html>

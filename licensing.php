@@ -58,7 +58,7 @@ for the license to be converted to a perpetual license.
 <h2>Redistribution</h2>
 
 <p>Both annual and perpetual licenses carry the option to redistribute
-your simulation code, NED files, etc. All IP you create in OMNEST is yours
+your simulation code, NED files, etc. All intellectual property you create in OMNEST is yours
 to distribute as you please. The licenses do not permit the distribution
 of self-running simulations however, since these must contain a part of
 OMNEST to function. We refer to these as "derivative products", and must

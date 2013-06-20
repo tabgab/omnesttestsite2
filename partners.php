@@ -18,6 +18,7 @@
 
 <div id="header"><h1>Partners</h1></div>
 
+<span style="color: red;">TODO: I'm not sure if the external link marker is right after links that have only image content</span>
 
 <p>Our authorized OMNEST resellers:</p>
 

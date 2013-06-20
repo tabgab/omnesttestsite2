@@ -48,8 +48,6 @@ packages are fully compatible.) The companies mentioned below possess OMNEST lic
 <li><a href="casestudy-lrwpan.php">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
 </ul>
 
-<?php print_next_links($product_menu, __FILE__); ?>
-
 <?php print_leadout(); ?>
 </body>
 </html>

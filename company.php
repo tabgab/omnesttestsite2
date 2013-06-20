@@ -22,8 +22,7 @@
 OMNEST licenses and support contracts are available from Simulcraft and its authorized
 reseller partners.</p>
 
-<p>OMNEST/OMNeT++ is copyright (c) 1992-2013 Andras Varga,
-<a href="http://opensim.hu/index_en.html">OpenSim Ltd</a>.</p>
+<p>OMNEST/OMNeT++ is copyright (c) 1992-2013 <a href="http://opensim.hu/index_en.html">OpenSim Ltd</a>.</p>
 
 <p>Simulcraft and Opensim successfully blend the open-source approach with
 commercial activities. We derive pride and satisfaction from being able

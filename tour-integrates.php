@@ -23,30 +23,32 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<img class="pic left rounded" width=200 src="images/tour/puzzle.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/puzzle.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Open and well-documented file formats let you integrate OMNEST into your workflow</h1>
 <p>All model files and output files are plain text to make it easier for you to generate and/or process them
 with your own custom tools or 3rd party software. We also provide command-line tools and libraries to manipulate them.</p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/systemc-etc.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/systemc-etc.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Integration with existing simulation software using SystemC or HLA gives you interoperability</h1>
 <p>OMNEST allows you to mix native and SystemC modules in the same simulation program,
 without the performance penalty usually associated with co-simulation.
 For example, this allows you to place your transaction-level or register-level SystemC models
 into OMNEST network simulations or architectural models. OMNEST can also take part in HLA federations,
+
+<span style="color: red;">TODO: "can be extended" sounds like "you can do yourself"</span>
+
 and can be extended to interoperate with other simulators as well.</p>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/cogwheel.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/cogwheel.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Seamless embedding into your proprietary software makes you even more competitive</h1>
 <p>Simulations can be redistributed, and your users will be able to run them with different
 parameter settings. The simulation kernel, model components or whole simulations can even be
-embedded as libraries into your software products -- check our References for companies that
-have already done that.</p>
+embedded as libraries into your software products, as some of our customers have.</p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/eclipse.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/eclipse.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Eclipse-based IDE lets you integrate all your GUI tools in a single platform</h1>
 <p>The OMNEST IDE is based on Eclipse, an integration platform many companies have decided to standardize on for their tooling.
 Eclipse also has tremendous 3rd party extensions support, available at the Eclipse Marketplace.

@@ -24,7 +24,7 @@
 <?php print_leadin($tour_menu, __FILE__); ?>
 
 <img class="pic right rounded" width=200 src="images/tour/models.png" alt="todo" onclick="enlarge(this);"/>
-<h1>Simulation models are available for many network simulation domains</h1>
+<h1>Simulation models are available for many network domains</h1>
 <p>
 Internet &bull;
 Wired and Wireless LANs &bull;
@@ -42,27 +42,42 @@ Queueing &bull; Resource allocation
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/combine.png" alt="todo" onclick="enlarge(this);"/>
+
 <h1>Component-based model frameworks allow you to freely combine blocks</h1>
 <p>Due to the component model, simulation models are easier to understand and maintain and
-can be combined in unexpected ways (because components do not interact with each other directly
-on the C++ level, only via means provided by OMNEST, e.g. messages).
+can be combined in unforeseen ways.
+<!--(because components do not interact with each other directly
+on the C++ level, only via means provided by OMNEST, e.g. messages)-->
 </p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/code.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/parametrizable.png" alt="todo" onclick="enlarge(this);"/>
+<h1>Concise and flexible parameterization makes it easy to configure your simulations</h1>
+<p>Simulation components can (and usually do) expose several parameters to allow configuring
+their behaviour. This makes it easier to reuse components for new simulations,
+and provides a great degree of freedom. Even for large models, the size of configuration
+can be kept manageable due to the use of default values and wildcard parameter assigments.</p>
+<div style="clear:both"></div>
+
+<img class="pic left rounded" width=200 src="images/tour/code.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Open source allows you to explore, modify, and extend simulation models at will</h1>
 <p>With network simulation, source code availability is a must, because you need to know
 whether and how the model implements various aspects of the real system (e.g. certain protocol features).
 Having the source also allows you to change or enhance the model to fit your needs.</p>
 <div style="clear:both"></div>
 
+<!--
 <img class="pic left rounded" width=200 src="images/tour/collaborate.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Free and open-source models allow you to collaborate with external researchers more openly</h1>
+
+<span style="color: red;">TODO: this explanation doesn't make clear to me what is the benefit for a customer here</span>
+
 <p>Most existing simulation models are under various open source licenses.
 This can be a huge benefit if you want to collaborate with researchers at universities
 or other institutes, because you can distribute your derived models to them
 without needing to worry about copyright and licensing issues.</p>
 <div style="clear:both"></div>
+-->
 
 
 <!--TODO:

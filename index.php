@@ -17,10 +17,12 @@
 </head>
 
 <body>
+
 <?php print_titlepage_leadin(); ?>
 
-
 <div style="float:left; width:760px; margin-top: 8px">
+
+<span style="color: red;">TODO: the product tour button on the product banner takes us to the "OMNEST is" page instead of the tour</span>
 
 <p><b>OMNEST simulation software has been chosen by R&amp;D staff, researchers
 and engineers worldwide</b> to investigate scenarios and design alternatives
@@ -29,12 +31,14 @@ queueing-based performance models and other systems.
 OMNEST simulations can also be embedded into your own software products.
 </p>
 
+<span style="color: red;">TODO: headers shouldn't be links throughout the web site, because they should have different style and also this way they are somewhat confusing, I would rather repeat the header at the end, or add a "more" link if it's not already there, etc.</span>
+
 <div id="under-intro-text">
 
 <div id="news" style="float:left; width:400px">
 <h1><a href="simulation-models.php">Simulation Models</a></h1>
 
-<p>Simulation models for
+<p>Models exist for
 Internet protocols, wireless networks, switched LANs,
 peer-to-peer networks, media streaming,
 mobile ad-hoc networks, mesh networks, wireless sensor networks,

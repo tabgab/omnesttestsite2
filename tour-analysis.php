@@ -28,12 +28,15 @@
 <p>Simulation programs can record all kinds of data: scalars, summary statistics,
 histograms, time series, etc. The result analysis tool in the IDE allows you to
 browse, filter, process and plot these results in various ways, and even lets you
-store the "recipes" to save repeated work. Data and graphics can also be exported in
+store the "recipes" to avoid repeated work. Data and graphics can also be exported in
 various formats, ready for inclusion in your reports.</p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/seqchart.png" alt="Sequence Chart Tool" onclick="enlarge(this);"/>
-<h1>The sequence chart helps you understand the dynamic behaviour of your model</h1>
+<h1>The sequence chart helps you understand the dynamic behavior of your model</h1>
+
+<span style="color: red;">TODO: this explanation is simply too long</span>
+
 <p>
 Simulations can record a detailed event log that can be visualized as a sequence
 chart, facilitating understanding of the model. One of the unrivalled features of
