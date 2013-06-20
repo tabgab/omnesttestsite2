@@ -18,7 +18,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>Case Studies &ndash; Improving the Performance of InfiniBand in a Supercomputing Cluster</h1></div>
+<div id="header"><h1>Case Study &ndash; Improving the Performance of InfiniBand in a Supercomputing Cluster</h1></div>
 
 <div class="pic right rounded">
 <img src="images/misc/pleiades.jpg">

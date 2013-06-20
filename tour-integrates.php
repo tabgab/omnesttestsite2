@@ -23,7 +23,7 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<img class="pic left rounded" width=200 src="images/tour/workflow.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/puzzle.png" alt="todo" onclick="enlarge(this);"/>
 <h1>Open and well-documented file formats let you integrate OMNEST into your workflow</h1>
 <p>All model files and output files are plain text to make it easier for you to generate and/or process them
 with your own custom tools or 3rd party software. We also provide command-line tools and libraries to manipulate them.</p>

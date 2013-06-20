@@ -18,7 +18,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>Case Studies &ndash; Simulation of Next-Generation Supercomputing Systems at IBM Research</h1></div>
+<div id="header"><h1>Case Study &ndash; Simulation of Next-Generation Supercomputing Systems at IBM Research</h1></div>
 
 <p>Dr. Denzel and his colleagues at the IBM Zurich and Austin Research
 Laboratories have built an OMNEST-based simulation framework that is

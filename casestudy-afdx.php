@@ -17,7 +17,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>Case Studies &ndash; Modeling Avionics Full-Duplex Switched Ethernet</h1></div>
+<div id="header"><h1>Case Study &ndash; Modeling Avionics Full-Duplex Switched Ethernet</h1></div>
 
 <div class="pic right">
 <img src="images/misc/airplane.png"/>

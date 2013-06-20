@@ -18,15 +18,7 @@
 
 <div id="header"><h1>Simulation of Wireless and Wired Networks</h1></div>
 
-<p>OMNEST is compatible with the vast body of open-source simulation models
-that have been written by researchers for the OMNeT++ simulation framework.
-These simulation models are being used by hundreds of researchers every day,
-and simulation results are being published at leading conferences and in journals
-as well as at the annual
-<a href="http://omnet-workshop.org" target="_top">International OMNeT++ Workshop</a>,
-a joint event of the ICST SimuTools conference.</p>
-
-<h2>Benefits</h2>
+<h2>Using OMNEST for Network Simulation</h2>
 
 <p>Simulation models are truly <b>component-based</b>, meaning that you are
 able to combine existing blocks (protocol models, application models, queues, etc.)
@@ -39,6 +31,14 @@ be <b>mixed</b> with other kinds of simulation models such as performance models
 architectural models.</p>
 
 <h2>Simulation Models</h2>
+
+<p>OMNEST is compatible with the vast body of open-source simulation models
+that have been written by researchers for the OMNeT++ simulation framework.
+These simulation models are being used by hundreds of researchers every day,
+and simulation results are being published at leading conferences and in journals
+as well as at the annual
+<a href="http://omnet-workshop.org" target="_top">International OMNeT++ Workshop</a>,
+a joint event of the ICST SimuTools conference.</p>
 
 <p>The list of simulation models and model frameworks is available on the
 <a href="simulation-models.php">Simulation Models page</a>.</p>
