@@ -44,7 +44,7 @@ If you don't find here what you are looking for, we recommend that you search on
 Internet for the keywords, e.g. <i>"HMIPv6 OMNeT++"</i>.</p>
 -->
 
-<h2 class="framed"><a name="inet">Internet</a></h2>
+<h2 class="framed"><a name="inet"></a>Internet</h2>
 
 <div class="collapsible">
 <p>The <?php extlink("inet" ); ?> is the best place to begin when you want to simulate
@@ -112,7 +112,7 @@ See also SAN, Cloud, HPC
 </div>
 
 
-<h2 class="framed"><a name="manets">Mobile Ad-hoc Networks</a></h2>
+<h2 class="framed"><a name="manets"></a>Mobile Ad-hoc Networks</h2>
 
 <p>The best choice for simulating mobile ad-hoc networks (MANETs) with OMNEST
 is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).</p>
@@ -237,7 +237,7 @@ regular and irregular topologies.</p>
 may also be useful in the simulation of interconnection networks (see <a href="#nocs">below</a>.)</p>
 
 
-<h2 class="framed"><a name="nocs">Networks-on-Chip (NoCs)</a></h2>
+<h2 class="framed"><a name="nocs"></a>Networks-on-Chip (NoCs)</h2>
 
 <p>There are two model frameworks specifically designed for the simulation of NoCs. One is
 <?php extlink("hnocs"); ?>,
