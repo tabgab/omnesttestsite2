@@ -29,6 +29,12 @@
 <p>(We know that you already know why otherwise you would not be here, but we compiled a list for your reference.)</p>
 
 TODO: analytical models are too complex, and prototypes are not yet available or would cost too much (i.e. 10000 routers)
+
+
+Simulation lets you experiment with systems that not yet exist
+Simulation lets you try large-scale scenarios without having to build them
+Simulation lets you test your product in diverse scenarios, including rare conditions
+Simulation lets you verify and validate your product before moving on to the prototyping phase of development  ==> test vector etc
 -->
 
 <img class="pic right rounded" width=200 src="images/tour/costs.png" alt="Network Editor" onclick="enlarge(this);"/>
