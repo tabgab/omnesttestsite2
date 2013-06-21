@@ -36,11 +36,11 @@ Queueing &bull; Resource allocation
 
 <img class="pic left rounded" width=200 src="images/tour/combine.png" alt=""/>
 
-<h1>Simulation models provide you with reusable components that you can freely combine</h1>
-<p>Simulation models allow you to assemble
-new simulations in the given domain by combining the blocks they provide.
-Due to the component model, simulation models
-are easier to understand and maintain and can be combined in unforeseen ways.
+<h1>Reusable components let you build new simulations easily</h1>
+<p>Simulation models provide you with reusable components that you can freely combine
+in new simulations. The component model also makes simulation models
+easier to explore, understand and maintain.
+<!-- and can be combined in unforeseen ways. -->
 </p>
 <div style="clear:both"></div>
 
