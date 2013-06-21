@@ -49,11 +49,17 @@ embedded as libraries into your software products, as some of our customers have
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/eclipse.png" alt="todo" onclick="enlarge(this);"/>
-<h1>Eclipse-based IDE lets you integrate all your GUI tools in a single platform</h1>
-<p>The OMNEST IDE is based on Eclipse, an integration platform many companies have decided to standardize on for their tooling.
-Eclipse also has tremendous 3rd party extensions support, available at the Eclipse Marketplace.
-TODO And you can also extend the IDE, contribute tools to OMNEST editors, etc!!!
+
+<h1>Eclipse-based Simulation IDE allows you to extend it with 3rd party and in-house tools and functions</h1>
+<p>The OMNEST IDE is based on Eclipse, a software product that many companies use
+as an integration platform. 3rd party extensions, such as UML tools and source code analyzers,
+are available from the Eclipse Marketplace.
+You can also extend the Simulation IDE and its tools with new functions,
+for example domain-specific model validation.
 </p>
+
+
+
 <div style="clear:both"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>
