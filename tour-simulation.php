@@ -20,11 +20,7 @@
 <h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
 <p>Models are written in C++, and execute on top of a streamlined simulation kernel
 to provide high event throughput. Diagnostic and animation features are optional and
-pose minimal overhead when not in use.
-
-OMNEST simulations execute fast and scale very well, which can be surprising
-given the amount of features in the simulation library. TODO revise <!--TODO ez copy/paste a 'what is' oldalrol -->
-</p>
+pose minimal overhead when not in use. OMNEST simulations execute fast and scale very well.</p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/insight.png" alt=""/>

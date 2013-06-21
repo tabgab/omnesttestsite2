@@ -5,8 +5,8 @@
 $touritems = array(
     array("text"=>"Take Advantage of Simulation", "link"=>"tour-why-simulation.php"),
 //    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"), // http://flightsoftware.jhuapl.edu/files/2011/FSW11_Paine.pdf  slide 4
-    array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
     array("text"=>"Benefit from Existing Models", "link"=>"tour-models.php"),
+    array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
     array("text"=>"High-Performance Simulation", "link"=>"tour-simulation.php"),
 //    array("text"=>"<i>Utilize</i><br/>Powerful Simulation", "link"=>"tour-simulation.php"),
 //    array("text"=>"<i>Utilize</i><br/>Superior Simulation", "link"=>"tour-simulation.php"),

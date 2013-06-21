@@ -19,62 +19,28 @@
 <img class="pic right rounded" width=200 src="images/tour/components.png" alt=""/>
 <h1>Component-based modeling lets you build your models from reusable, self-contained blocks</h1>
 <p>Simulation models are built from reusable, self-contained components that
-are assembled using a domain-specific language. 
-
-<!--
-Due to the component model,
-simulation models are easier to understand and maintain. They can be combined in unexpected ways
-
-<span style="color: red;">TODO: the following statement is false</span>
-
-(because components do not interact with each other directly on the C++ level,
-only via means provided by OMNEST, e.g. messages).
--->
-
-Components facilitate code reuse, and also help you
+are assembled using a domain-specific language. Components facilitate code reuse, and also help you
 choose the right abstraction level: a component in a model can be later
 replaced with a more detailed or a less detailed version.
-<!--
-and you can also replace a single component with a composite one or vice versa.
--->
 </p>
 <div style="clear:both"></div>
-
 
 <img class="pic left rounded" width=200 src="images/tour/ide-tools.png" alt=""/>
-
 <h1>The Simulation IDE provides you with state-of-the-art development tools</h1>
-<p>There are tools for all stages of a simulation project: developing,
-assembling, configuring and running simulation models, and analyzing results.
-
-<!--
-TODO:
-State of the art C++ editing.
-Models and model components can be edited graphically or in source mode.
-Simulations can record a detailed event log that can be visualized as a
-sequence chart, facilitating understanding of the model. Simulation results
-can be post-processed and plotted in the IDE's analysis tool.
--->
+<p>There are tools for all stages of a simulation project: developing C++ code,
+assembling, configuring and running simulation models, and analyzing results. 
+The IDE provides modern C++ editing, both graphical and text editing for 
+networks, both form based and text editing for parametrization, with many useful and widely used functions.
 </p>
 <div style="clear:both"></div>
 
-
 <img class="pic right rounded" width=200 src="images/tour/debug.png" alt=""/>
-<h1>Debugging the model and tracking the simulation during runtime are at your fingertips</h1>
+<!--<h1>Debugging the model and tracking the simulation during runtime are at your fingertips</h1>-->
+<!--<h1>The C++ debugger and the graphical simulation runtime helps you hunt down bugs easily</h1>-->
+<h1>The Simulation IDE provides you with an advanced domain specific debugger</h1>
+<h1>The C++ debugger and the graphical simulation runtime forms an advanced domain specific debugger</h1>
 <p>
 todo
-<!--
-THIS is a duplicate of another in the High-Performance section
-
-Simulations can be run in a graphical interactive runtime environment that
-lets you explore the simulation model,
-animates packet transmissions and other events,
-lets you pause the model and run it in various modes,
-look at logs, peek into queues, buffers, state variables, etc.
-This feature reduces debugging time, and is also useful when demonstrating the model to 3rd parties.
-TODO this is the same as on the next page!
--->
-
 </p>
 <div style="clear:both"></div>
 

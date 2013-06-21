@@ -17,7 +17,7 @@
 <?php print_leadin($tour_menu, __FILE__); ?>
 
 <img class="pic right rounded" width=200 src="images/tour/models.png" alt=""/>
-<h1>Simulation models are available for many network domains</h1>
+<h1>Simulation models are available for many application domains</h1>
 <p>
 Internet &bull;
 Wired and Wireless LANs &bull;
@@ -36,6 +36,7 @@ Queueing &bull; Resource allocation
 
 <img class="pic left rounded" width=200 src="images/tour/combine.png" alt=""/>
 
+<h1>Simulation models provide you with reusable components that you can freely combine</h1>
 <h1>Component-based model frameworks allow you to freely combine blocks</h1>
 <p>Due to the component model, simulation models are easier to understand and maintain and
 can be combined in unforeseen ways.
