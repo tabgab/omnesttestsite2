@@ -11,13 +11,6 @@
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
-    <style type="text/css">
-.row td {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 20px;
-}
-    </style>
-    <script src="common/enlargeit.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -25,7 +18,7 @@
 
 <h1>Thank You</h1>
 
-<p><img class="rounded right" src="images/tour/thankyou.jpg">
+<p><img class="rounded right" src="images/tour/thankyou.jpg" alt="">
 Thank you for taking the OMNEST Product Tour.</p>
 
 <p>We hope that you found that OMNEST fits your needs, and we can
@@ -37,10 +30,8 @@ soon welcome you among the happy users of our simulation tool.</p>
 <br>
 <br>
 
-<span style="color: red;">TODO: the contact link refers to the Request Quotation page and that's incorrect</span>
-
 <?php
-print_next_link("learn-omnest.php", "Learn about OMNEST in more detail");
+print_next_link("overview.php", "Learn about OMNEST in more detail");
 print_next_link("try-omnest.php", "Try OMNEST");
 print_next_link("contact.php", "Questions? Contact us");
 ?>

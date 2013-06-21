@@ -11,19 +11,12 @@
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
-    <style type="text/css">
-.row td {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 20px;
-}
-    </style>
-    <script src="common/enlargeit.js" type="text/javascript"></script>
 </head>
 
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt=""/>
 <h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
 <p>Models are written in C++, and execute on top of a streamlined simulation kernel
 to provide high event throughput. Diagnostic and animation features are optional and 
@@ -34,34 +27,33 @@ given the amount of features in the simulation library. TODO revise <!--TODO ez 
 </p>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/insight.png" alt="Runtime Environment" onclick="enlarge(this);"/>
-
-<span style="color: red;">TODO: this is close to being a duplicate of another one on the "Develop models easily" page</span>
-
+<img class="pic left rounded" width=200 src="images/tour/insight.png" alt=""/>
 <h1>Graphical simulation runtime environment gives you a deep insight into running simulations</h1>
 <p>Simulations can be run in a graphical interactive runtime environment that
 lets you explore the simulation model,
 animates packet transmissions and other events,
 lets you pause the model and run it in various modes,
 look at logs, peek into queues, buffers, state variables, etc.
-This feature helps reduce debugging time, and is also useful when demonstrating the model to 3rd parties.</p>
+This feature helps understanding the model and it's also useful when demonstrating to 3rd parties.</p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/parallel.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/parallel.png" alt=""/>
 <h1>Parallel simulation allows you to use all of your computing power simultaneously</h1>
+<p>
+Often you can utilize parallel simulation on clusters or multicore/multi&shy;processor architectures to
+speed up execution or to distribute memory requirements.
+Parallel simulation doesn't require models to be instrumented.</p>
 
-<span style="color: red;">TODO: mentioning requirements this way (without a detailed explanation) might make the reader think that it is very difficult</span>
+<!--
+Models don't need to be instrumented for parallel simulation, but they need
+to obey certain restrictions.</p>
+-->
 
-<p>Simulation models that meet the requirements can be run in parallel on clusters or multiprocessors.
-Parallel simulation runs on top of MPI, and employs conservative synchronization.
-Using named pipes or other communication means instead of MPI is also possible.</p>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/hardware.png" alt="todo" onclick="enlarge(this);"/>
+
+<img class="pic left rounded" width=200 src="images/tour/hardware.png" alt=""/>
 <h1>Real-time hardware-in-the-loop simulation allows you to test the models with the real thing</h1>
-
-<span style="color: red;">TODO: shouldn't it be clear that there's at least one existing and complete solution that is able to connect to real TCP/IP networks over ethernet</span>
-
 <p>The simulation kernel supports real-time and hardware-in-the loop simulation
 via a plugin interface. Functioning, extensively commented source code examples
 will help you quickly implement your own application-specific hardware-in-the-loop simulation.

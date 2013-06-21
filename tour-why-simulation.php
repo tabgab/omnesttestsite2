@@ -11,13 +11,6 @@
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
-    <style type="text/css">
-.row td {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 20px;
-}
-    </style>
-    <script src="common/enlargeit.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -25,21 +18,21 @@
 
 <!--TODO
 <!--
-<img class="pic right rounded" width=200 src="images/tour/costs.png" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/costs.png" alt=""/>
 <h1>Simulation greatly decreases the costs of your product development</h1>
 <p>You don't need to build the real thing in the first place.</p>
 <div style="clear:both"></div>
 -->
 
 <!--
-<img class="pic left rounded" width=200 src="images/tour/time-to-market.png" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/time-to-market.png" alt=""/>
 <h1>Simulation reduces the time to market of your new products and product updates</h1>
 <p>Faster development cycles results in shorter time to market.</p>
 <div style="clear:both"></div>
 -->
 
 <!--
-<img class="pic right rounded" width=200 src="images/tour/risks.png" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/risks.png" alt=""/>
 <h1>Simulation helps you mitigate risks during research and development</h1>
 <p>Simulation helps you discover flaws early in the design process when they are
 much cheaper to fix. You can start simulations early during the design process
@@ -48,7 +41,7 @@ that would be difficult to produce using the real system or prototypes.</p>
 <div style="clear:both"></div>
 -->
 
-<img class="pic right rounded" width=200 src="images/tour/costs.png" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/blueprint.png" alt=""/>
 <h1>Simulation lets you experiment with systems that don't exist yet</h1>
 <p>
 You can explore the merits of alternative designs without actually physically constructing the systems.
@@ -73,17 +66,17 @@ of specific design decisions during the design phase rather than the constructio
 the overall cost of building the system diminishes significantly.
 -->
 
-<img class="pic left rounded" width=200 src="images/tour/todo.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/large-scale.png" alt=""/>
 <h1>Simulation lets you try large-scale scenarios without having to build them</h1>
 <p>todo</p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/todo.png" alt="todo" onclick="enlarge(this);"/>
+<img class="pic right rounded" width=200 src="images/tour/thermometer.png" alt=""/>
 <h1>Simulation lets you test your product in diverse scenarios and rare conditions</h1>
 <p>todo</p>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width=200 src="images/tour/costs.png" alt="Network Editor" onclick="enlarge(this);"/>
+<img class="pic left rounded" width=200 src="images/tour/testing.png" alt=""/>
 <h1>Simulation lets you verify and validate a product early in the development
 </h1>
 <p>

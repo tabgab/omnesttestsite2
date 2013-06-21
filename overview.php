@@ -164,7 +164,9 @@ library. This functionality includes:</p>
     to speed up the simulations or to distribute memory requirements.
     Simulation models don't need to be instrumented for parallel simulation, but they need
     to obey certain restrictions (e.g. no global variables and no direct access of
-    components that are instantiated in a different partition)
+    components that are instantiated in a different partition).
+    Parallel simulation runs on top of MPI, and employs conservative synchronization.
+    Using named pipes or other communication means instead of MPI is also possible.
 
     <li><strong>Multiple Replications in Parallel</strong><br>
     OMNEST lets you speed up steady-state simulations using the
