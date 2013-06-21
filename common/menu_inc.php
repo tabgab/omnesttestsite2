@@ -8,21 +8,8 @@ $touritems = array(
     array("text"=>"Benefit from Existing Models", "link"=>"tour-models.php"),
     array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
     array("text"=>"High-Performance Simulation", "link"=>"tour-simulation.php"),
-//    array("text"=>"<i>Utilize</i><br/>Powerful Simulation", "link"=>"tour-simulation.php"),
-//    array("text"=>"<i>Utilize</i><br/>Superior Simulation", "link"=>"tour-simulation.php"),
-
     array("text"=>"Make Right Design Decisions", "link"=>"tour-analysis.php"),
-    //array("text"=>"<i>Make the</i><br/>Right Design Decisions", "link"=>"tour-analysis.php"),
-
-    //array("text"=>"Gain Insight from Simulations", "link"=>"tour-analysis.php"),
-    //array("text"=>"Make Better Decisions", "link"=>"tour-analysis.php"),
-    //array("text"=>"Make Better Design Decisions", "link"=>"tour-analysis.php"),  //TODO: s
-    //array("text"=>"Gain Insight Into Your System", "link"=>"tour-analysis.php"),
-
     array("text"=>"Integrate with OMNEST", "link"=>"tour-integrates.php"),
-    //array("text"=>"OMNEST Integrates", "link"=>"tour-integrates.php"),
-
-    //TODO array("text"=>"- TODO", "link"=>"tour-todo.php"),
 );
 
 $tour_menu = array(
@@ -40,7 +27,7 @@ $product_menu = array(
     array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
     array("text"=>"Learn more about OMNEST", "link"=>"learn-omnest.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"At a Glance", "link"=>"learn-omnest.php"),
+// TODO: move to IDE welcome page        array("text"=>"At a Glance", "link"=>"learn-omnest.php"),
         array("text"=>"Overview", "link"=>"overview.php"),
         array("text"=>"Typical Application Areas", "link"=>"application-areas.php"),
         array("text"=>"Simulation Models", "link"=>"simulation-models.php"),
@@ -100,7 +87,6 @@ $purchase_menu = array(
         array("text"=>"Techincal Support", "link"=>"support.php"),
         array("text"=>"Download OMNEST", "link"=>"download.php"),
         array("text"=>"Training and Consulting", "link"=>"services.php"),
-        array("text"=>"Contact", "link"=>"contact.php"),
     )),
     array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"About Us", "link"=>"company.php"),

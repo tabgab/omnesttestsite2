@@ -16,11 +16,11 @@
 <body>
 <?php print_leadin($purchase_menu, __FILE__); ?>
 
-<div id="header"><h1>Support</h1></div>
+<div id="header"><h1>Technical Support</h1></div>
 
 <img src="images/misc/support.png" class="pic right" alt="">
 
-<p>OMNEST product support is available at <b>support@omnest.com</b>.
+<p>OMNEST product technical support is available at <b>support@omnest.com</b>.
 You may also contact us at the above address if you need assistance
 during evaluation.</p>
 

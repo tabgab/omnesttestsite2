@@ -20,23 +20,9 @@
 <h1>Component-based modeling lets you build your models from reusable, self-contained blocks</h1>
 <p>Simulation models are built from reusable, self-contained components that
 are assembled using a domain-specific language.
-
-<!--
-Due to the component model,
-simulation models are easier to understand and maintain. They can be combined in unexpected ways
-
-<span style="color: red;">TODO: the following statement is false</span>
-
-(because components do not interact with each other directly on the C++ level,
-only via means provided by OMNEST, e.g. messages).
--->
-
 Components provide a natural organization for your code, facilitate code reuse,
 and also help you choose the right abstraction level, because components in a model can be
 replaced with more detailed / less detailed versions.
-<!--
-and you can also replace a single component with a composite one or vice versa.
--->
 </p>
 <div style="clear:both"></div>
 
@@ -50,13 +36,11 @@ networks, both form based and text editing for parametrization, with many useful
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/debug.png" alt=""/>
-<!--<h1>Debugging the model and tracking the simulation during runtime are at your fingertips</h1>-->
-<!--<h1>The C++ debugger and the graphical simulation runtime helps you hunt down bugs easily</h1>-->
-<h1>The Simulation IDE provides you with an advanced domain specific debugger</h1>
-<h1>The C++ debugger and the graphical simulation runtime forms an advanced domain specific debugger</h1>
-<p>
-todo
-</p>
+<h1>The integrated debugging environment helps you identify problems quickly</h1>
+<p>The graphical simulation runtime front-end combines well with the C++ 
+debugger to form an integrated environment. You can easily switch 
+between high-level (simulation) and low-level (C++) debugging,
+allowing you to track down problems efficiently.</p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/understand.png" alt=""/>
