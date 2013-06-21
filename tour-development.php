@@ -19,17 +19,32 @@
 <img class="pic right rounded" width=200 src="images/tour/components.png" alt=""/>
 <h1>Component-based modeling lets you build your models from reusable, self-contained blocks</h1>
 <p>Simulation models are built from reusable, self-contained components that
-are assembled using a domain-specific language. Components facilitate code reuse, and also help you
-choose the right abstraction level: a component in a model can be later
-replaced with a more detailed or a less detailed version.
+are assembled using a domain-specific language.
+
+<!--
+Due to the component model,
+simulation models are easier to understand and maintain. They can be combined in unexpected ways
+
+<span style="color: red;">TODO: the following statement is false</span>
+
+(because components do not interact with each other directly on the C++ level,
+only via means provided by OMNEST, e.g. messages).
+-->
+
+Components provide a natural organization for your code, facilitate code reuse,
+and also help you choose the right abstraction level, because components in a model can be
+replaced with more detailed / less detailed versions.
+<!--
+and you can also replace a single component with a composite one or vice versa.
+-->
 </p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width=200 src="images/tour/ide-tools.png" alt=""/>
 <h1>The Simulation IDE provides you with state-of-the-art development tools</h1>
 <p>There are tools for all stages of a simulation project: developing C++ code,
-assembling, configuring and running simulation models, and analyzing results. 
-The IDE provides modern C++ editing, both graphical and text editing for 
+assembling, configuring and running simulation models, and analyzing results.
+The IDE provides modern C++ editing, both graphical and text editing for
 networks, both form based and text editing for parametrization, with many useful and widely used functions.
 </p>
 <div style="clear:both"></div>
@@ -47,7 +62,7 @@ todo
 <img class="pic left rounded" width=200 src="images/tour/understand.png" alt=""/>
 <h1>The sequence chart helps you understand the dynamic behavior of your model</h1>
 <p>You can configure simulations to record a detailed history, and visualize it on an
-interactive sequence chart in the IDE. The chart includes 
+interactive sequence chart in the IDE. The chart includes
 events, messages sent between components, C++ method calls across
 components, etc. This tool can be an invaluable help in tracking down
 model errors, and in showing off and documenting model operation.</p>

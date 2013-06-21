@@ -37,11 +37,10 @@ Queueing &bull; Resource allocation
 <img class="pic left rounded" width=200 src="images/tour/combine.png" alt=""/>
 
 <h1>Simulation models provide you with reusable components that you can freely combine</h1>
-<h1>Component-based model frameworks allow you to freely combine blocks</h1>
-<p>Due to the component model, simulation models are easier to understand and maintain and
-can be combined in unforeseen ways.
-<!--(because components do not interact with each other directly
-on the C++ level, only via means provided by OMNEST, e.g. messages)-->
+<p>Simulation models allow you to assemble
+new simulations in the given domain by combining the blocks they provide.
+Due to the component model, simulation models
+are easier to understand and maintain and can be combined in unforeseen ways.
 </p>
 <div style="clear:both"></div>
 
