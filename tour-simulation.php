@@ -19,7 +19,7 @@
 <img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt=""/>
 <h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
 <p>Models are written in C++, and execute on top of a streamlined simulation kernel
-to provide high event throughput. Diagnostic and animation features are optional and 
+to provide high event throughput. Diagnostic and animation features are optional and
 pose minimal overhead when not in use.
 
 OMNEST simulations execute fast and scale very well, which can be surprising
@@ -34,7 +34,7 @@ lets you explore the simulation model,
 animates packet transmissions and other events,
 lets you pause the model and run it in various modes,
 look at logs, peek into queues, buffers, state variables, etc.
-This feature helps understanding the model and it's also useful when demonstrating to 3rd parties.</p>
+This feature helps you understand the model, and it is also useful when demonstrating to 3rd parties.</p>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/parallel.png" alt=""/>
