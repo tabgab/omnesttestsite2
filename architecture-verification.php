@@ -18,8 +18,7 @@
 
 <div id="header"><h1>Architecture Verification</h1></div>
 
-<p>The OMNEST simulation framework's component-oriented architecture
-makes it ideally suited to architectural simulation of complex hardware
+<p>OMNEST is well suited to the architectural simulation of complex hardware
 and software systems, for example HPC systems, networks-on-chip,
 and in general, problem domains where a complex system's behavior
 needs to be simulated with high performance.</p>
@@ -31,8 +30,8 @@ needs to be simulated with high performance.</p>
 <div>Illustration: an example switch architecture</div>
 </div>
 
-<p>OMNEST helps you deal with complexity by providing a <b>component architecture</b>
-that allows you to build the model hierarchically in a top-down or
+<p>The component architecture helps you deal with complexity by allowing
+you to build the model hierarchically in a top-down or
 bottom-up fashion. Components can represent any level of detail that is
 appropriate for your simulation study, from cycle-accurate models to
 high-level functional models. The component architecture also makes it possible
