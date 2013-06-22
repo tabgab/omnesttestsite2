@@ -23,11 +23,13 @@
      so we don't need to show example models etc...
 -->
 
+<!--XXX
 <p>OMNEST is a component-oriented network simulation framework.
 The generic architecture of the simulator allows OMNEST to be
 applied to various problem domains where complex behavior needs to be
 simulated with high performance; for example protocol modeling,
 simulation of hardware architectures and computer networks.</p>
+-->
 
 <p>
 <img src="images/misc/queueing-network.png" class="right"/>

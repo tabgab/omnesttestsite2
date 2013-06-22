@@ -18,10 +18,12 @@
 
 <div id="header"><h1>Architecture Verification</h1></div>
 
+<!--XXX
 <p>OMNEST is well suited to the architectural simulation of complex hardware
 and software systems, for example HPC systems, networks-on-chip,
 and in general, problem domains where a complex system's behavior
 needs to be simulated with high performance.</p>
+-->
 
 <h2>Benefits</h2>
 
