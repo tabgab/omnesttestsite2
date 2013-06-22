@@ -11,8 +11,8 @@
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
-    <script type="text/javascript" src="common/collapsible.js"></script>
     <?php print_head_contribution(); ?>
+    <script type="text/javascript" src="common/collapsible.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 <!-- TODO hint: <div style="max-height:30px; overflow:hidden;"> -->
 
 
-<div id="header"><h1>Simulation Models</h1></div>
+<div id="header"><h1 toggle="all">Simulation Models</h1></div>
 
 <p><b>With OMNEST you can make use of the models written for OMNeT++, the noncommercial version of OMNEST.</b>
 These models have been written by the OMNeT++ user community, and published under various
@@ -45,9 +45,13 @@ If you don't find here what you are looking for, we recommend that you search on
 Internet for the keywords, e.g. <i>"HMIPv6 OMNeT++"</i>.</p>
 -->
 
-<h2 class="framed"><a name="inet"></a>Internet</h2>
+<h2 class="framed" toggle="internet">
+  <a name="inet"></a>
+  <span class="toggle-collapsed internet">+</span><span class="toggle-expanded internet">-</span>
+  Internet
+</h2>
 
-<div class="collapsible">
+<div>
 <p>The <?php extlink("inet" ); ?> is the best place to begin when you want to simulate
 any of the protocols, technologies and applications used on the Internet (or other WANs).</p>
 
@@ -57,8 +61,9 @@ IPv4, IPv6, TCP (several flavors), UDP, SCTP, RTP; Mobile IPv6 (MIPv6);
 Differential Services (DiffServ);
 MPLS family: RSVP, ....
 
-routing protocols (RIP, OSPF,...)
-
+routing protocols (RIP, OSPF,...)<a href="#" toggle="internet" class="toggle-collapsed internet"> See more &gt;&gt;&gt;</a>
+</div>
+<div class="toggle-slide internet">
 <p>See the Protocol Matrix on the INET Framework web site for details.</p>
 
 <ul>
@@ -96,15 +101,16 @@ routing protocols (RIP, OSPF,...)
 <p>Several packages, e.g. xMIPv6, VoIPTool and HTTPTools, used to be separate projects but have been integrated into INET since.</p>
 </div>
 
-<h2 class="framed">Wired and Wireless LANs</h2>
+<h2 class="framed" toggle="wireless">Wired and Wireless LANs</h2>
 
-<div class="collapsible">
+<div>
 <p>The best choice for simulating LANs with OMNEST is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).
 The INET Framework contains models for Ethernet (including Fast Ethernet, Gigabit Ethernet,
 40 and 100 Gigabit Ethernet, duplex and half-duplex) and the IEEE 802.11 wireless LAN standard.
+<a href="#" toggle="wireless" class="toggle-collapsed wireless"> See more &gt;&gt;&gt;</a>
 </p>
-
-
+</div>
+<div class="toggle-slide wireless">
 Ethernet, Wireless LAN 802.11, WiMAX
 
 Switched networks: Ethernet switches, VLAN, Spanning-Tree Protocol (STP), Rapid Spanning-Tree Protocol (RSTP), etc.

@@ -1,3 +1,16 @@
+$(document).ready(function(){
+  $(".toggle-expanded,.toggle-slide").css("display","none");
+  $("[toggle]").click(function(event){
+    var target = $(event.target).attr("toggle");
+    var selector = (target === "" || target === "all") ? "" : "."+target;
+    $(".toggle-slide"+selector).slideToggle(300);
+    $(".toggle-expanded"+selector).toggle();
+    $(".toggle-collapsed"+selector).toggle();
+  });
+});
+
+// ------------------
+
 function setupFolding()
 {
         // get all collapsible divs
