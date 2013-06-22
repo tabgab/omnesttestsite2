@@ -29,7 +29,7 @@ the overall cost of building the system diminishes significantly.</p>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width=200 src="images/tour/thermometer.png" alt=""/>
-<h1>Simulation lets you test your product in diverse scenarios and rare conditions</h1>
+<h1>Simulation lets you synthesize scenarios that are not easily produceable with the real system</h1>
 <p>todo</p>
 <div style="clear:both"></div>
 
