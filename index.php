@@ -103,6 +103,9 @@ if (sizeof($news) > $maxitems) {
 </div> <!-- id="news" -->
 
 <div id="rightcol" style="float:right; width:340px">
+<h1><a href="embedding.php">Add Simulation To Your Software Products!</a></h1>
+<p>You can embed the OMNEST Simulation kernel as a library into your products. TODO</p>
+
 <h1><a href="testimonials.php">Testimonials</a></h1>
 
 <p><i>"CBISA has helped to simplify the community benefit reporting process for

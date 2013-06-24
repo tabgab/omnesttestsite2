@@ -15,7 +15,7 @@ $touritems = array(
 $tour_menu = array(
     array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "highlight"=>0, "submenu"=>$touritems),
-    array("text"=>"Learn about OMNEST", "link"=>"learn-omnest.php", "crosslink"=>1),
+    array("text"=>"Learn about OMNEST", "link"=>"overview.php", "crosslink"=>1),
     array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
     array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "crosslink"=>1),
@@ -26,7 +26,7 @@ $tour_menu = array(
 $product_menu = array(
     array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
-    array("text"=>"Learn more about OMNEST", "link"=>"learn-omnest.php", "highlight"=>0, "submenu"=>array(
+    array("text"=>"Learn more about OMNEST", "link"=>"overview.php", "highlight"=>0, "submenu"=>array(
 // TODO: move to IDE welcome page        array("text"=>"At a Glance", "link"=>"learn-omnest.php"),
         array("text"=>"Overview", "link"=>"overview.php"),
         array("text"=>"Typical Application Areas", "link"=>"application-areas.php"),
@@ -73,7 +73,7 @@ $product_menu = array(
 $purchase_menu = array(
     array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
-    array("text"=>"Learn about OMNEST", "link"=>"learn-omnest.php", "crosslink"=>1),
+    array("text"=>"Learn about OMNEST", "link"=>"overview.php", "crosslink"=>1),
     array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
     array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "submenu"=>array(
@@ -109,7 +109,7 @@ function print_footer_links()   //TOOD this is totally out of date!!!
         <tr>
             <td>
                 <ul>
-                    <li><a href="learn-omnest.php">OMNEST</a>
+                    <li><a href="overview.php">OMNEST</a>
                       <ul>
                         <li><a href="overview.php">Overview</a>
                         <li><a href="features.php">Features</a>
