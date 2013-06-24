@@ -29,7 +29,7 @@ without the performance penalty usually associated with co-simulation.
 OMNEST can also take part in HLA federations, and can be extended to interoperate with other simulators by other means.</p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/cogwheel.png" alt=""/>
+<img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt=""/>
 <h1>Seamless embedding into your proprietary software makes you even more competitive</h1>
 <p>Simulations can be redistributed, and your users will be able to run them with different
 parameter settings. The simulation kernel, model components or whole simulations can even be

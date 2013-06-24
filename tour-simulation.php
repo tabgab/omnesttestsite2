@@ -16,7 +16,7 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<img class="pic right rounded" width=200 src="images/misc/omnest-engine.png" alt=""/>
+<img class="pic right rounded" width=200 src="images/tour/speedometer.png" alt=""/>
 <h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
 <p>Models are written in C++, and execute on top of a streamlined simulation kernel
 to provide high event throughput. Diagnostic and animation features are optional and
