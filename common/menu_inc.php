@@ -4,7 +4,6 @@
 
 $touritems = array(
     array("text"=>"Take Advantage of Simulation", "link"=>"tour-why-simulation.php"),
-//    array("text"=>"OMNEST is...", "link"=>"tour-omnest-is.php"), // http://flightsoftware.jhuapl.edu/files/2011/FSW11_Paine.pdf  slide 4
     array("text"=>"Benefit from Existing Models", "link"=>"tour-models.php"),
     array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
     array("text"=>"High-Performance Simulation", "link"=>"tour-simulation.php"),
@@ -27,40 +26,33 @@ $product_menu = array(
     array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
     array("text"=>"Learn more about OMNEST", "link"=>"overview.php", "highlight"=>0, "submenu"=>array(
-// TODO: move to IDE welcome page        array("text"=>"At a Glance", "link"=>"learn-omnest.php"),
         array("text"=>"Overview", "link"=>"overview.php"),
-        array("text"=>"Typical Application Areas", "link"=>"application-areas.php"),
+        array("text"=>"Typical Application Areas", "link"=>"application-areas.php", "subpages"=>array(
+            "architecture-verification.php",
+            "network-simulation.php",
+            "performance-modeling.php",
+            "embedding.php"
+        )),
         array("text"=>"Simulation Models", "link"=>"simulation-models.php"),
         array("text"=>"Simulation IDE", "link"=>"ide.php"),
         array("text"=>"Demo Videos", "link"=>"demo-videos.php"),
-////        array("text"=>"Embedding", "link"=>"embedding.php"),
         array("text"=>"Documentation", "link"=>"documentation.php"),
-//    )),
-
-////    array("text"=>"Performance Modeling", "link"=>"performance-modeling.php", "highlight"=>0, "submenu"=>array(
-//        array("text"=>"Performance Modeling", "link"=>"performance-modeling.php"),
-////        array("text"=>"Modeling Library", "link"=>"queueinglib.php"),
-//    )),
-
-//    array("text"=>"Architecture Verification", "link"=>"architecture-verification.php", "highlight"=>0, "submenu"=>array(
-//        array("text"=>"Architecture Verification", "link"=>"architecture-verification.php"),
-////        array("text"=>"SystemC Support", "link"=>"systemc-integration.php"),
-//    )),
-
-//    array("text"=>"Network Simulation", "link"=>"network-simulation.php", "highlight"=>0, "submenu"=>array(
-//        array("text"=>"Network Simulation", "link"=>"network-simulation.php"),
-//        array("text"=>"INET Framework", "link"=>"inet-framework.php"),
-//        array("text"=>"Castalia", "link"=>"castalia.php"),
-//        array("text"=>"MiXiM", "link"=>"mixim.php"),
     )),
 
     array("text"=>"OMNEST in the World", "link"=>"references.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Customers", "link"=>"references.php"),
         array("text"=>"Testimonials", "link"=>"testimonials.php"),
         array("text"=>"Publications", "link"=>"publications.php"),
-        array("text"=>"Case Studies", "link"=>"case-studies.php"),
-        array("text"=>"References", "link"=>"netsim-references.php"),
-        //array("text"=>"Reference Projects", "link"=>"netsim-references.php"),
+        array("text"=>"Case Studies", "link"=>"case-studies.php", "subpages"=>array(
+            "casestudy-adhoc.php",
+            "casestudy-afdx.php",
+            "casestudy-boss.php",
+            "casestudy-ibmzurich.php",
+            "casestudy-infiniband.php",
+            "casestudy-lrwpan.php",
+            "casestudy-photonic.php"
+        )),
+        array("text"=>"Reference Projects", "link"=>"netsim-references.php"),
         array("text"=>"Book Recommendation", "link"=>"network-simulation-book.php"),
     )),
 
@@ -97,7 +89,7 @@ $purchase_menu = array(
 
 $blank_menu = array();  // for pages that don't need a menu
 
-function print_footer_links()   //TOOD this is totally out of date!!!
+function print_footer_links()   //TODO this is totally out of date!!!
 {
 ?>
     <table class="footerlinks">
@@ -226,13 +218,13 @@ function print_menu($menu, $current_page)
 
     echo "<div class=\"vmenu\">\n";
     foreach ($menu as $menuitem) {
-        $class_attr = " class=\"vmenuitem" . ((is_highlightable($menuitem) && $menuitem["link"]==$current_page) ? " selected\"" : "\"");
+        $class_attr = " class=\"vmenuitem" . (is_highlightable($menuitem,$current_page) ? " selected\"" : "\"");
         printf(" <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $menuitem["link"], $menuitem["text"]);
         if (array_key_exists("submenu", $menuitem)) {
             $submenu = $menuitem["submenu"];
             echo "  <div class=\"vsubmenu\">\n";
             foreach ($submenu as $submenuitem) {
-                $class_attr = " class=\"vsubmenuitem" . ((is_highlightable($submenuitem) && $submenuitem["link"]==$current_page) ? " selected\"" : "\"");
+                $class_attr = " class=\"vsubmenuitem" . (is_highlightable($submenuitem,$current_page) ? " selected\"" : "\"");
                 printf("   <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $submenuitem["link"], $submenuitem["text"]);
             }
             echo "  </div>\n";
@@ -241,9 +233,17 @@ function print_menu($menu, $current_page)
     echo "</div>\n";
 }
 
-function is_highlightable($menuitem)
+function is_highlightable($menuitem, $current_page)
 {
-    return !array_key_exists("highlight", $menuitem) || $menuitem["highlight"];
+    //return (!array_key_exists("highlight", $menuitem) || $menuitem["highlight"]) && $menuitem["link"]==$current_page;
+
+    if (array_key_exists("highlight", $menuitem) && !$menuitem["highlight"])
+        return false;
+    if ($menuitem["link"]==$current_page)
+        return true;
+    if (array_key_exists("subpages", $menuitem) && in_array($current_page, $menuitem["subpages"]))
+        return true;
+    return false;
 }
 
 function print_next_links($menu, $current_page)

@@ -27,10 +27,7 @@ needs to be simulated with high performance.</p>
 
 <h2>Benefits</h2>
 
-<div class="pic right">
-<img src="images/misc/arch-example-switch.png" width=300>
-<div>Illustration: an example switch architecture</div>
-</div>
+<img class="right" src="images/misc/architecture-verification.png" alt="">
 
 <p>The component architecture helps you deal with complexity by allowing
 you to build the model hierarchically in a top-down or
@@ -41,6 +38,11 @@ to have multiple implementations with varying level of detail for a given
 component, or to replace a single component with a composite one.
 These features allow you to write the simulation model on the appropriate abstraction level
 and still have the flexibility to modify it later.</p>
+
+<div class="pic left">
+<img src="images/misc/arch-example-switch.png" width=300>
+<div>Illustration: an example switch architecture</div>
+</div>
 
 <p><b>Existing model frameworks</b> (e.g. for NoC simulation) may be useful for your project;
 see the <a href="simulation-models.php#nocs">Simulation Models</a> page for more information.</p>

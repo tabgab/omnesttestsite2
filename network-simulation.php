@@ -20,6 +20,8 @@
 
 <h2>Using OMNEST for Network Simulation</h2>
 
+<img class="right" src="images/misc/network.png" alt="">
+
 <p>Simulation models are truly <b>component-based</b>, meaning that you are
 able to combine existing blocks (protocol models, application models, queues, etc.)
 and your custom blocks to form models of arbitrary hosts, routers, switches

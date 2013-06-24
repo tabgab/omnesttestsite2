@@ -31,8 +31,10 @@ simulated with high performance; for example protocol modeling,
 simulation of hardware architectures and computer networks.</p>
 -->
 
+<img class="right" src="images/misc/performance-modeling.png" alt="">
+<!-- <img src="images/misc/queueing-network.png" class="right"/> -->
+
 <p>
-<img src="images/misc/queueing-network.png" class="right"/>
 Classic performance models are built from more-or-less standardized
 components that have relatively simple behavior: queues, resource
 allocation/deallocation, splitting and joining jobs, updating variables,
