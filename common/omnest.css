@@ -39,6 +39,7 @@ a {
 
 a:hover {
     color: #E54426;
+    cursor: pointer;
 }
 
 a.kiemeles {
@@ -59,6 +60,17 @@ a[href^="http://"], a[href^="https://"] {
 a.noicon[href^="http://"], a.noicon[href^="https://"] {
     background: none;
     padding-right: 0px;
+}
+
+h2[toggle] {
+    cursor: pointer;
+    background-image: url(images/circled_plus.png);
+    background-position: 99% center;
+    background-repeat: no-repeat;
+}
+
+h2.expanded[toggle] {
+    background-image: url(images/circled_minus.png);
 }
 
 h1, h2, h3, h4, h5 {

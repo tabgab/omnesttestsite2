@@ -12,7 +12,22 @@
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
-    <script type="text/javascript" src="common/collapsible.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("div[toggle]").css("display","none");
+    $("a[toggle]").html(" See more&nbsp;&raquo;");
+    $("a[toggleAll]").click(function(){
+      $("h2[toggle]").addClass("expanded");
+      $("div[toggle]").show();
+      $("a[toggle]").hide();
+    })
+    $(":header[toggle], a[toggle]").click(function(event) {
+      var target = $(event.target).attr("toggle");
+      $(":header[toggle='"+target+"']").toggleClass("expanded");
+      $("div[toggle='"+target+"'], a[toggle='"+target+"']").toggle();
+    });
+});
+</script>
 </head>
 
 <body>
@@ -22,10 +37,6 @@
 
 
 <div id="header"><h1 toggle="all">Simulation Models</h1></div>
-
-<p><b>With OMNEST you can make use of the models written for OMNeT++, the noncommercial version of OMNEST.</b>
-These models have been written by the OMNeT++ user community, and published under various
-open-source licenses. Below is a partial list of the models, organized by topic.</p>
 
 <!-- TODO alternative:
 <p><b>OMNEST as a product doesn't contain simulation models beyond code examples,
@@ -45,11 +56,14 @@ If you don't find here what you are looking for, we recommend that you search on
 Internet for the keywords, e.g. <i>"HMIPv6 OMNeT++"</i>.</p>
 -->
 
-<h2 class="framed" toggle="internet">
-  <a name="inet"></a>
-  <span class="toggle-collapsed internet">+</span><span class="toggle-expanded internet">-</span>
-  Internet
-</h2>
+<p style="margin-bottom: 0;"><b>With OMNEST you can make use of the models written for OMNeT++, the noncommercial version of OMNEST.</b>
+These models have been written by the OMNeT++ user community, and published under various
+open-source licenses. Below is a partial list of the models, organized by topic.
+</p>
+<div style="text-align: right;"><a toggleAll="yes">Expand all</a></div>
+
+<a name="inet"></a>
+<h2 class="framed" toggle="internet" style="margin-top: 0;">Internet</h2>
 
 <div>
 <p>The <?php extlink("inet" ); ?> is the best place to begin when you want to simulate
@@ -61,9 +75,9 @@ IPv4, IPv6, TCP (several flavors), UDP, SCTP, RTP; Mobile IPv6 (MIPv6);
 Differential Services (DiffServ);
 MPLS family: RSVP, ....
 
-routing protocols (RIP, OSPF,...)<a href="#" toggle="internet" class="toggle-collapsed internet"> See more &gt;&gt;&gt;</a>
+routing protocols (RIP, OSPF,...) <a toggle="internet" ></a>
 </div>
-<div class="toggle-slide internet">
+<div toggle="internet">
 <p>See the Protocol Matrix on the INET Framework web site for details.</p>
 
 <ul>
@@ -107,10 +121,10 @@ routing protocols (RIP, OSPF,...)<a href="#" toggle="internet" class="toggle-col
 <p>The best choice for simulating LANs with OMNEST is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).
 The INET Framework contains models for Ethernet (including Fast Ethernet, Gigabit Ethernet,
 40 and 100 Gigabit Ethernet, duplex and half-duplex) and the IEEE 802.11 wireless LAN standard.
-<a href="#" toggle="wireless" class="toggle-collapsed wireless"> See more &gt;&gt;&gt;</a>
+<a toggle="wireless"></a>
 </p>
 </div>
-<div class="toggle-slide wireless">
+<div toggle="wireless">
 Ethernet, Wireless LAN 802.11, WiMAX
 
 Switched networks: Ethernet switches, VLAN, Spanning-Tree Protocol (STP), Rapid Spanning-Tree Protocol (RSTP), etc.
