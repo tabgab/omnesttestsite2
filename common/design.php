@@ -23,7 +23,7 @@ function print_head_contribution_internal($is_title_page) { ?>
     <!--[if lt IE 7.]>
       <script defer type="text/javascript" src="common/pngfix.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <script type="text/javascript" src="common/jquery.min.js" ></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-240922-1']);
