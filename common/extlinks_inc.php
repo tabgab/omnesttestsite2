@@ -15,6 +15,7 @@ $extlinks = array(
      "mcoapp-github" => array("link"=>"https://github.com/bmsousa/mCoAplus", "text"=>"github"),
      "ebitsim" => array("link"=>"http://github.com/pedromanoel/EbitSim", "text"=>"EBitSim"),
      "quagga" => array("link"=>"https://github.com/inet-framework/inet-quagga", "text"=>"Quagga"),
+     "numbat" => array("link"=>"http://klub.com.pl/numbat/", "text"=>"Numbat"),
      "nesct" => array("link"=>"http://nesct.sourceforge.net/", "text"=>"NesCT"),
      "veins" => array("link"=>"http://veins.car2x.org/", "text"=>"Veins"),
      "vns" => array("link"=>"http://www.dcc.fc.up.pt/~rjf/vns/", "text"=>"VNS"),

@@ -62,11 +62,12 @@ a.noicon[href^="http://"], a.noicon[href^="https://"] {
     padding-right: 0px;
 }
 
-h2[toggle] {
+h2.framed[toggle] {
     cursor: pointer;
     background-image: url(images/circled_plus.png);
-    background-position: 99% center;
+    background-position: left center;
     background-repeat: no-repeat;
+    padding-left: 27px;
 }
 
 h2.expanded[toggle] {
