@@ -23,7 +23,7 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<span style="color: red;">TODO: the position and style of the following link looks weird</span>
+<!-- TODO: the position and style of the following link looks weird -->
 
 <?php
 print_next_link_small($touritems[0]["link"], "Take the Product Tour!");
@@ -31,36 +31,17 @@ print_next_link_small($touritems[0]["link"], "Take the Product Tour!");
 
 <div id="header"><h1 style="background-color: transparent;">OMNEST Is...</h1></div>
 
-<!-- TODO:
-   grafikák:
-      - halvány tompa kék körlap, *kivágva* belõle a figura; minimális árnyék
-      - vagy: kék kör alakú keretet rátenni, hogy az alsókkal konzisztens legyen
-
-   több verziót kipróbálni:
-      - címlapon, egyben az egész
-      - elsõ fele a címlapon, második fele egy NEXT> gomb után
-      - cimlap marad, onnan feltûnõ "Learn More" gombbal érhetõ el a tour
-
-   kérdés: ha tour a címlapon marad, a News rész melyik lapra kerüljön?
-
-   más:
-      - References-t fõ menüponttá tenni (promotálni eggyel)
-      - Embedding: behozni az elsõ OMNEST alá
-      - IDE Tour -> IDE Overview
-      - List of documentation -> Documentation
-      - Comparison lap: kiírni hogy az OMNeT++ az OMNEST academic verziója (ill. vica versa)
-      - cimlapon a slideshow lehetne egy link pl az IDE Overview-ra
-      - a 3 menüt összevonni (pl az adott lapon nem releváns almenük fixen csukva lennének) ill racionalizálni, ld conversion audit
--->
-
-<span style="color: red;">TODO: now that the headers are not aligned vertically, we should consider putting the "OMNEST is" prefix into each one of them</span>
+<!--TODO now that the headers are not aligned vertically, we should consider putting
+the "OMNEST is" prefix into each one of them -->
 
 <img class="pic left" src="images/tour/network.png" width=150> <!-- network? -->
 <h1>a network simulator platform</h1>
-Provides generic infrastructure for creating, running and evaluating simulations.
+It provides generic infrastructure for creating, running and evaluating simulations.
 OMNEST can cater for the simulation of communication networks including
-ad-hoc and vehicular networks, queueing systems, etc; do performance modeling,
-architecture verification, configuration validation and more. TODO update this list!</p>
+wired and wireless networks, mobile ad-hoc networks and sensor networks;
+hardware like high-speed interconnects and networks-on-chip;
+it can be used for performance modeling of clouds and other HPC systems;
+and for much more.</p>
 <div style="clear:both"></div>
 
 <img class="pic right" src="images/tour/r-n-d.png" width=150>
@@ -73,17 +54,14 @@ Expect frameworks and open-source tweakable models instead of "canned" models.</
 <h1>flexible</h1>
 TODO: COMPONENT ARCHITECTURE: MODELS CAN BE COMBINED FREELY.
 
-<span style="color: red;">TODO: should say something else than "any way you want", because it sounds weird, it kind of implies that you can rewrite it from scratch</span>
-
-You can change simulation models in any way you want, because you have access to model source and platform infrastructure.
+You can explore, modify and enhance simulation models, because you have access to model source and platform infrastructure.
 You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.
 </p>
 <div style="clear:both"></div>
 
 <img class="pic right" src="images/tour/performance.png" width=150>  <!-- car? fighter plane? -->
 <h1>high performance</h1>
-<span style="color: red;">TODO: the emphasis should be italic or it should be removed</span>
-<i>Models are written in C++</i>, and execute on top of a streamlined simulation kernel to provide high event throughput.
+Models are written in C++, and execute on top of a streamlined simulation kernel to provide high event throughput.
 Diagnostic and animation features pose minimal overhead when not in use.</p>
 <div style="clear:both"></div>
 
