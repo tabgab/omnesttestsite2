@@ -18,32 +18,34 @@
 
 <div id="header"><h1>Simulation of Wireless and Wired Networks</h1></div>
 
-<h2>Using OMNEST for Network Simulation</h2>
-
 <img class="right" src="images/misc/network.png" alt="">
 
-<p>Simulation models are truly <b>component-based</b>, meaning that you are
-able to combine existing blocks (protocol models, application models, queues, etc.)
-and your custom blocks to form models of arbitrary hosts, routers, switches
-and other network devices. Another distinguishing feature of OMNEST/OMNeT++
-models is the <b>framework approach</b>, meaning that models such as MiXiM
-and INET are <i>frameworks</i>, having been written with the express purpose of
-making it easy to extend and build on top of them. Also, protocol models may
-be <b>mixed</b> with other kinds of simulation models such as performance models or
-architectural models.</p>
+<p><b>The largest application area for OMNEST is the simulation of
+various communication networks,</b> such as wired and wireless networks,
+mobile ad-hoc networks, sensor networks, vehicular networks and others.
+</p>
 
 <h2>Simulation Models</h2>
 
 <p>OMNEST is compatible with the vast body of open-source simulation models
 that have been written by researchers for the OMNeT++ simulation framework.
-These simulation models are being used by hundreds of researchers every day,
-and simulation results are being published at leading conferences and in journals
-as well as at the annual
-<a href="http://omnet-workshop.org" target="_top">International OMNeT++ Workshop</a>,
-a joint event of the ICST SimuTools conference.</p>
+</p>
 
 <p>The list of simulation models and model frameworks is available on the
-<a href="simulation-models.php">Simulation Models page</a>.</p>
+<a href="simulation-models.php">Simulation Models</a> page.</p>
+
+<h2>Benefits</h2>
+
+<p>Models such as the INET Framework or Castalia are <i>frameworks</i>,
+having been written with the express purpose of making it easy to extend
+and build on top of them.</p>
+
+<p>Due to OMNEST's component architecture, you can combine existing blocks
+(protocol models, application models, queues, etc.) and your custom blocks
+to form models of arbitrary hosts, routers, switches and other network devices.
+Protocol models may also be mixed with other kinds of simulation models
+such as queueing or resource allocation models.</p>
+
 
 <!--TODO
 <p>A more complete list of models and frameworks is available on the

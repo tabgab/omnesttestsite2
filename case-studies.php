@@ -29,7 +29,8 @@ packages are fully compatible.) The companies mentioned below possess OMNEST lic
 <h2>Performance Modeling</h2>
 
 <ul>
-<li><a href="casestudy-afdx.php">Modeling Avionics Full-Duplex Switched Ethernet (AFDX) Networks</a>
+<li><a href="casestudy-cloud.php">Performance Simulation of Clouds at IBM Research</a>
+<li><a href="casestudy-afdx.php">High-Level Modeling of AFDX Networks</a>
 </ul>
 
 <h2>Architecture Verification</h2>

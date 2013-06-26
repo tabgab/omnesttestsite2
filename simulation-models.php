@@ -278,7 +278,7 @@ in the same simulation, without incurring the severe performance loss that is ty
 with co-simulations.</p>
 
 
-<h2 class="framed">Cloud computing, HPC clusters, SANs</h2>
+<h2 class="framed"><a name="cloud"></a>Cloud computing, HPC clusters, SANs</h2>
 
 <?php extlink("icancloud"); ?> and <?php extlink("simcan"); ?> are two simulation frameworks
 that can be used to simulate high-performance clusters (HPCs) and cloud computing systems.

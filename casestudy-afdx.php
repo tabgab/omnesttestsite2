@@ -25,15 +25,16 @@
 </div>
 
 <p><i>In one of our projects, we helped a client build a simulation model
-for aircraft on-board data networks based on the AFDX standard. The model
+for aircraft on-board data networks based on the
+Avionics Full-Duplex Switched Ethernet (AFDX) standard. The model
 would be used for various purposes including performance evaluation and
-reliability analysis. The base of the model was the <a
-href="queueinglib.php">OMNEST performance modeling library</a>. The library
-allowed us to create the model quickly, and leaves room for gradual refinement
+reliability analysis. The base of the model was the
+<a href="queueinglib.php">OMNEST performance modeling library</a>.
+The library allowed us to create the model quickly, and left room for gradual refinement
 and extension in various directions.</i></p>
 
-<p><b>Introduction.</b> AFDX provides networking services for internal aircraft communication. To
-reduce costs, it is based on the Ethernet standard and deploys a switched
+<p><b>Introduction.</b> AFDX provides networking services for internal aircraft communication.
+To reduce costs, it is based on the Ethernet standard and deploys a switched
 Ethernet network topology to deliver reliable and redundant data
 transmission services for aircraft end systems (ES). Determining the
 reliability and performance of complex AFDX networks with hundreds or
