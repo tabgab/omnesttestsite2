@@ -13,26 +13,31 @@
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
   <script type="text/javascript">
+  function locationHashChanged() {
+    $(location.hash).addClass("expanded");
+  }
+  
   $(document).ready(function() {
-    $("div[toggle]").css("display","none");
-    //$("a[toggle]").html(" See more&nbsp;&raquo;");
-    $("a[toggle]").html(" [...]");
-    $("a[toggleAll]").click(function(){
-      //$("h2[toggle]").addClass("expanded");
-      //$("div[toggle]").show();
-      //$("a[toggle]").hide();
-      //FIXME toggle is NOT good here! must open ALL or close ALL
-      $("h2[toggle]").toggleClass("expanded");
-      $("div[toggle]").toggle();
-      $("a[toggle]").toggle();
-    })
-    $(":header[toggle], a[toggle]").click(function(event) {
-      var target = $(event.target).attr("toggle");
-      $(":header[toggle='"+target+"']").toggleClass("expanded");
-      $("div[toggle='"+target+"'], a[toggle='"+target+"']").toggle();
+    $(":header[id]").click(function(event) {
+      var target = $(event.target).attr("id");
+      $("h2[toggle='"+target+"']").toggleClass("expanded");
     });
-});
-</script>
+
+    $("a[toggleAll]").click(function(){
+      $(this).toggleClass("expanded");
+      if ($(this).hasClass("expanded")) {
+        $(this).html("Collapse all");
+        $("h2[id]").addClass("expanded");
+      } else {
+        $(this).html("Expand all");
+        $("h2[id]").removeClass("expanded");
+      }
+    })
+
+    window.addEventListener("hashchange", locationHashChanged, false);
+    locationHashChanged();
+  });
+  </script>
 </head>
 
 <body>
@@ -66,15 +71,13 @@ open-source licenses. Below is a partial list of the models, organized by topic.
 <a href="#interconnection">Interconnection Networks</a> &bull;
 <a href="#nocs">Networks-on-Chip (NoCs)</a> &bull;
 <a href="#cloud">Cloud Computing, HPC Clusters, SANs</a> &bull;
-<a href="#cloud">Performance Modeling</a>
+<a href="#perf">Performance Modeling</a>
 </p>
 
-<div style="text-align: right;"><a toggleAll="yes">Expand/collapse all</a></div>
+<div style="text-align: right;"><a toggleAll="yes">Expand all</a></div>
 
-
-<a name="inet"></a>
-<h2 class="framed" toggle="internet">Internet</h2>
-<div toggle="internet">
+<h2 class="framed" id="inet">Internet</h2>
+<div>
 
 <p>The <?php extlink("inet" ); ?> is the best place to begin when you want to simulate
 any of the protocols, technologies and applications used on the Internet and other WANs.
@@ -132,15 +135,14 @@ on the INET Framework web site for details.</p>
 </div>
 
 
-<a name="lans"></a>
-<h2 class="framed" toggle="lans">Wired and Wireless LANs</h2>
-<div toggle="lans">
+<h2 class="framed" id="lans">Wired and Wireless LANs</h2>
+<div>
 
 <p>The best choice for simulating LANs with OMNEST is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).
 The INET Framework contains models for Ethernet (including Fast Ethernet, Gigabit Ethernet,
 40 and 100 Gigabit Ethernet, duplex and half-duplex), IEEE 802.11 as well as
 network devices built from them (switch, access point, etc.)
-<a toggle="lans"></a></p>
+</p>
 
 <p>More support for switched networks, including VLAN, Spanning-Tree Protocol (STP) and
 Rapid Spanning-Tree Protocol (RSTP), is available from
@@ -151,13 +153,12 @@ However, one drawback of Numbat is its limited interoperability with the INET Fr
 </div>
 
 
-<a name="manets"></a>
-<h2 class="framed" toggle="manets">Mobile Ad-hoc Networks</h2>
-<div toggle="manets">
+<h2 class="framed" id="manets">Mobile Ad-hoc Networks</h2>
+<div>
 
 <p>The best choice for simulating mobile ad-hoc networks (MANETs) with OMNEST
 is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).
-<a toggle="manets"></a></p>
+</p>
 
 <p>An alternative is <?php extlink("mixim"); ?> (<?php extlink("miximsf"); ?>),
 which contains a much more detailed physical layer model but has no
@@ -180,16 +181,15 @@ behaviour especially relating to access of the radio.</p>
 </div>
 
 
-<a name="wsn"></a>
-<h2 class="framed" toggle="wsn">Sensor Networks</h2>
-<div toggle="wsn">
+<h2 class="framed" id="wsn">Sensor Networks</h2>
+<div>
 
 <p>There are currently three good choices for the simulation of wireless sensor networks (WSNs)
 with OMNEST: The <?php extlink("inet"); ?> (see <a href="#inet">above</a>),
 <?php extlink("mixim"); ?> (see <a href="#manets">above</a>) and
 <?php extlink("castalia"); ?> (see <a href="#manets">above</a>).
 The INET Framework is currently missing a battery model, which may or may not be a problem
-for your project. <a toggle="wsn"></a></p>
+for your project. </p>
 
 <p>Other frameworks like PAWiS or LSU Sensor Simulator (SenSim) should be considered obsolete.</p>
 
@@ -199,8 +199,7 @@ and produces OMNeT++ simulation code from it.</p>
 </div>
 
 
-<a name="vehicular"></a>
-<h2 class="framed" toggle="vehicular">Vehicular Networks</h2>
+<h2 class="framed" id="vehicular">Vehicular Networks</h2>
 <div toggle="vehicular">
 
 <p>The recommended framework for simulating vehicular (i.e. inter-vehicle) networks is
@@ -215,14 +214,13 @@ simulating MANETs (see <a href="#manets">above</a>).</p>
 </div>
 
 
-<a name="in-vehicle"></a>
-<h2 class="framed" toggle="in-vehicle">In-vehicle Networks</h2>
-<div toggle="in-vehicle">
+<h2 class="framed" id="in-vehicle">In-vehicle Networks</h2>
+<div>
 
 <p>Protocols used in cars (automotive networks: CAN, LIN, DC-Bus, FlexRay,
 MOST, TTEthernet, etc.) and in aircraft (avionics networks like AFDX) belong here.
 Currently a TTEthernet model named <?php extlink("tt4inet"); ?> is available;
-it is based on the INET Framework. <a toggle="in-vehicle"></a></p>
+it is based on the INET Framework. </p>
 
 <p>The release of other protocol models is in preparation.</p>
 
@@ -230,23 +228,22 @@ it is based on the INET Framework. <a toggle="in-vehicle"></a></p>
 </div>
 
 
-<a name="cellular"></a>
-<h2 class="framed" toggle="cellular">Cellular Networks</h2>
 
-<div toggle="cellular">
+<h2 class="framed" id="cellular">Cellular Networks</h2>
+
+<div>
 <p>There are currently two model frameworks for next-generation cellular networks (3GPP/4G/LTE):
 <?php extlink("simulte"); ?> and <?php extlink("4gsim"); ?>,
 both based on the INET Framework. On the long term, we would like the
 two frameworks to converge.</p>
 </div>
 
-<a name="satellite"></a>
-<h2 class="framed" toggle="satellite">Satellite Communications</h2>
-<div toggle="satellite">
+<h2 class="framed" id="satellite">Satellite Communications</h2>
+<div>
 
 <p>For the simulation of satellite communication systems, you can make use of
 <?php extlink("os3"); ?>, the Open Source Satellite Simulator.
-<a toggle="satellite"></a></p>
+</p>
 
 <p>The goal of the OS<sup>3</sup> project was to make evaluating satellite communication protocols as easy as possible.
 OS<sup>3</sup> can also automatically import real satellite tracks and weather data
@@ -254,12 +251,11 @@ to simulate conditions at a certain point in the past or in the future,
 and offers powerful visualization. OS<sup>3</sup> extends the INET Framework.</p>
 </div>
 
-<a name="optical"></a>
-<h2 class="framed" toggle="optical">Optical Networks</h2>
-<div toggle="optical">
+<h2 class="framed" id="optical">Optical Networks</h2>
+<div>
 
 <p>There are several model frameworks that deal with optical networks,
-e.g. INET-HNRL, EPON, OBSModules, and PhoenixSim. <a toggle="optical"></a></p>
+e.g. INET-HNRL, EPON, OBSModules, and PhoenixSim.</p>
 
 <p><?php extlink("hnrl"); ?> provides models for network systems, components,
 and protocols in both optical and wireless networking and their hybrid.
@@ -282,12 +278,11 @@ edge nodes and core nodes, and link the OBS network with other data networks lik
 </div>
 
 
-<a name="interconnection"></a>
-<h2 class="framed" toggle="interconnection">Interconnection Networks</h2>
-<div toggle="interconnection">
+<h2 class="framed" id="interconnection">Interconnection Networks</h2>
+<div>
 
 <p>There are several model frameworks that are related to interconnection networks,
-e.g. an InfiniBand model, HNOCS an PhoenixSim. <a toggle="interconnection"></a></p>
+e.g. an InfiniBand model, HNOCS an PhoenixSim.</p>
 
 <p>An open-source InfiniBand simulation model is available from Mellanox as
 <?php extlink("ib_flit_sim"); ?>.
@@ -308,12 +303,11 @@ may also be useful in the simulation of interconnection networks (see <a href="#
 </div>
 
 
-<a name="nocs"></a>
-<h2 class="framed" toggle="nocs">Networks-on-Chip (NoCs)</h2>
-<div toggle="nocs">
+<h2 class="framed" id="nocs">Networks-on-Chip (NoCs)</h2>
+<div>
 
 <p>Simulation frameworks for NoCs include HNOCs and PhoenixSim. You can also make use of SystemC.
-<a toggle="nocs"></a></p>
+</p>
 
 <p>There are two model frameworks specifically designed for the simulation of NoCs. One is
 <?php extlink("hnocs"); ?>,
@@ -333,16 +327,15 @@ in the same simulation, without incurring the severe performance loss that is ty
 with co-simulations.</p>
 </div>
 
-<a name="cloud"></a>
-<h2 class="framed" toggle="cloud">Cloud computing, HPC clusters, SANs</h2>
-<div toggle="cloud">
+<h2 class="framed" id="cloud">Cloud computing, HPC clusters, SANs</h2>
+<div>
 
 <p>There are several frameworks for the performance simulation of various classes of
 data center infrastructure: iCanCloud (for clouds), SIMCAN (for HPC architectures),
 SimSANs (for storage area networks), HECIOS (for distributed file systems),
 OMPCM (for TODO), as discussed below.
 The <a href="casestudy-cloud.php">cloud simulation paper</a> from IBM Research
-may also be useful. <a toggle="cloud"></a></p>
+may also be useful.</p>
 
 <?php extlink("icancloud"); ?> is a simulation framework for cloud computing systems.
 The main purpose of iCanCloud is to predict the trade-offs between cost and performance
@@ -400,10 +393,9 @@ automatically to a OMNeT++ network definition file (NED) that uses the developed
 
 
 
-<a name="perf"></a>
-<h2 class="framed" toggle="perf">Performance Modeling</h2>
+<h2 id="perf" class="framed" id="perf">Performance Modeling</h2>
 
-<div toggle="perf">
+<div>
 Queueinglib; github project...
 </div>
 

@@ -62,7 +62,7 @@ a.noicon[href^="http://"], a.noicon[href^="https://"] {
     padding-right: 0px;
 }
 
-h2.framed[toggle] {
+h2.framed[id] {
     cursor: pointer;
     background-image: url(images/circled_plus.png);
     background-position: left center;
@@ -70,8 +70,16 @@ h2.framed[toggle] {
     padding-left: 27px;
 }
 
-h2.expanded[toggle] {
+h2.framed.expanded[id] {
     background-image: url(images/circled_minus.png);
+}
+
+h2[id]+div {
+    display: none;
+}
+
+h2[id].expanded+div {
+    display: block;
 }
 
 h1, h2, h3, h4, h5 {
