@@ -20,7 +20,7 @@
   $(document).ready(function() {
     $(":header[id]").click(function(event) {
       var target = $(event.target).attr("id");
-      $("h2[toggle='"+target+"']").toggleClass("expanded");
+      $("h2[id='"+target+"']").toggleClass("expanded");
     });
 
     $("a[toggleAll]").click(function(){
@@ -200,7 +200,7 @@ and produces OMNeT++ simulation code from it.</p>
 
 
 <h2 class="framed" id="vehicular">Vehicular Networks</h2>
-<div toggle="vehicular">
+<div>
 
 <p>The recommended framework for simulating vehicular (i.e. inter-vehicle) networks is
 <?php extlink("veins"); ?>, which combines a MiXiM-based network simulator with
