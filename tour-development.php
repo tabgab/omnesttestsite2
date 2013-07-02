@@ -35,13 +35,13 @@ networks, both form based and text editing for parametrization, with many useful
 
 <img class="pic right rounded" width="200" src="images/tour/debug.png" alt=""/>
 <h1>The integrated debugging environment helps you identify problems quickly</h1>
-<p class="lefttext">The graphical simulation runtime front-end combines well with the C++ 
-debugger to form an integrated environment. You can easily switch 
+<p class="lefttext">The graphical simulation runtime front-end combines well with the C++
+debugger to form an integrated environment. You can easily switch
 between high-level (simulation) and low-level (C++) debugging,
 allowing you to track down problems efficiently.</p>
 <div style="clear:both"></div>
 
-<img class="pic left rounded" width="200" src="images/tour/understand.png" alt=""/>
+<img class="pic left rounded" width="200" src="images/tour/seqchart.png" alt=""/>
 <h1>The sequence chart helps you understand the dynamic behavior of your model</h1>
 <p class="righttext">You can configure simulations to record a detailed history, and visualize it on an
 interactive sequence chart in the IDE. The chart includes
@@ -72,3 +72,4 @@ model errors, and in showing off and documenting model operation.</p>
 <?php print_leadout(); ?>
 </body>
 </html>
+

@@ -16,7 +16,7 @@
   function locationHashChanged() {
     $(location.hash).addClass("expanded");
   }
-  
+
   $(document).ready(function() {
     $(":header[id]").click(function(event) {
       var target = $(event.target).attr("id");
@@ -45,11 +45,6 @@
 
 <div id="header"><h1>Simulation Models</h1></div>
 
-<!--TODO:
-  1. belso linkek nyissak is ki azt a sectiont ahova mutatnak
-  2. a <div toggle="...">-k altal szetvagott kezdo mondatokat ujra osszeolvasztani
--->
-
 <p style="margin-bottom: 0;"><b>With OMNEST you can make use of the models written for OMNeT++,
 the noncommercial version of OMNEST.</b>
 These models have been written by the OMNeT++ user community, and published under various
@@ -58,7 +53,7 @@ open-source licenses. Below is a partial list of the models, organized by topic.
 
 <br>
 
-<p><!--TODO ez kell? -->
+<p>
 <a href="#inet">Internet</a> &bull;
 <a href="#lans">Wired and Wireless LANs</a> &bull;
 <a href="#manets">Mobile Ad-hoc Networks</a> &bull;
@@ -70,8 +65,7 @@ open-source licenses. Below is a partial list of the models, organized by topic.
 <a href="#optical">Optical Networks</a> &bull;
 <a href="#interconnection">Interconnection Networks</a> &bull;
 <a href="#nocs">Networks-on-Chip (NoCs)</a> &bull;
-<a href="#cloud">Cloud Computing, HPC Clusters, SANs</a> &bull;
-<a href="#perf">Performance Modeling</a>
+<a href="#cloud">Cloud Computing, HPC Clusters, SANs</a>
 </p>
 
 <div style="text-align: right;"><a toggleAll="yes">Expand all</a></div>
@@ -138,7 +132,7 @@ on the INET Framework web site for details.</p>
 <h2 class="framed" id="lans">Wired and Wireless LANs</h2>
 <div>
 
-<p>The best choice for simulating LANs with OMNEST is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).
+<p>The best choice for simulating LANs with OMNEST is the <a href="#inet">INET Framework</a>.
 The INET Framework contains models for Ethernet (including Fast Ethernet, Gigabit Ethernet,
 40 and 100 Gigabit Ethernet, duplex and half-duplex), IEEE 802.11 as well as
 network devices built from them (switch, access point, etc.)
@@ -157,7 +151,7 @@ However, one drawback of Numbat is its limited interoperability with the INET Fr
 <div>
 
 <p>The best choice for simulating mobile ad-hoc networks (MANETs) with OMNEST
-is the <?php extlink("inet"); ?> (see <a href="#inet">above</a>).
+is the <a href="#inet">INET Framework</a>.
 </p>
 
 <p>An alternative is <?php extlink("mixim"); ?> (<?php extlink("miximsf"); ?>),
@@ -185,7 +179,7 @@ behaviour especially relating to access of the radio.</p>
 <div>
 
 <p>There are currently three good choices for the simulation of wireless sensor networks (WSNs)
-with OMNEST: The <?php extlink("inet"); ?> (see <a href="#inet">above</a>),
+with OMNEST: The <a href="#inet">INET Framework</a>,
 <?php extlink("mixim"); ?> (see <a href="#manets">above</a>) and
 <?php extlink("castalia"); ?> (see <a href="#manets">above</a>).
 The INET Framework is currently missing a battery model, which may or may not be a problem
@@ -220,13 +214,11 @@ simulating MANETs (see <a href="#manets">above</a>).</p>
 <p>Protocols used in cars (automotive networks: CAN, LIN, DC-Bus, FlexRay,
 MOST, TTEthernet, etc.) and in aircraft (avionics networks like AFDX) belong here.
 Currently a TTEthernet model named <?php extlink("tt4inet"); ?> is available;
-it is based on the INET Framework. </p>
+it is based on the <a href="#inet">INET Framework</a>.</p>
 
-<p>The release of other protocol models is in preparation.</p>
-
-<p>The release of an Ethernet Audio-Video Bridging (AVB) model can also be expected.</p>
+<p>The release of other protocol models, including Ethernet Audio-Video Bridging (AVB)
+can also be expected.</p>
 </div>
-
 
 
 <h2 class="framed" id="cellular">Cellular Networks</h2>
@@ -234,28 +226,26 @@ it is based on the INET Framework. </p>
 <div>
 <p>There are currently two model frameworks for next-generation cellular networks (3GPP/4G/LTE):
 <?php extlink("simulte"); ?> and <?php extlink("4gsim"); ?>,
-both based on the INET Framework. On the long term, we would like the
-two frameworks to converge.</p>
+both based on the <a href="#inet">INET Framework</a>.
+On the long term, we would like the two LTE frameworks to converge.</p>
 </div>
+
 
 <h2 class="framed" id="satellite">Satellite Communications</h2>
 <div>
 
 <p>For the simulation of satellite communication systems, you can make use of
 <?php extlink("os3"); ?>, the Open Source Satellite Simulator.
-</p>
-
-<p>The goal of the OS<sup>3</sup> project was to make evaluating satellite communication protocols as easy as possible.
+The goal of the OS<sup>3</sup> project was to make evaluating satellite communication protocols as easy as possible.
 OS<sup>3</sup> can also automatically import real satellite tracks and weather data
 to simulate conditions at a certain point in the past or in the future,
-and offers powerful visualization. OS<sup>3</sup> extends the INET Framework.</p>
+and offers powerful visualization. OS<sup>3</sup> extends the
+<a href="#inet">INET Framework</a>.</p>
 </div>
+
 
 <h2 class="framed" id="optical">Optical Networks</h2>
 <div>
-
-<p>There are several model frameworks that deal with optical networks,
-e.g. INET-HNRL, EPON, OBSModules, and PhoenixSim.</p>
 
 <p><?php extlink("hnrl"); ?> provides models for network systems, components,
 and protocols in both optical and wireless networking and their hybrid.
@@ -281,9 +271,6 @@ edge nodes and core nodes, and link the OBS network with other data networks lik
 <h2 class="framed" id="interconnection">Interconnection Networks</h2>
 <div>
 
-<p>There are several model frameworks that are related to interconnection networks,
-e.g. an InfiniBand model, HNOCS an PhoenixSim.</p>
-
 <p>An open-source InfiniBand simulation model is available from Mellanox as
 <?php extlink("ib_flit_sim"); ?>.
 It models the data-path of hosts and switches at the flit transfer level,
@@ -305,9 +292,6 @@ may also be useful in the simulation of interconnection networks (see <a href="#
 
 <h2 class="framed" id="nocs">Networks-on-Chip (NoCs)</h2>
 <div>
-
-<p>Simulation frameworks for NoCs include HNOCs and PhoenixSim. You can also make use of SystemC.
-</p>
 
 <p>There are two model frameworks specifically designed for the simulation of NoCs. One is
 <?php extlink("hnocs"); ?>,
@@ -332,8 +316,8 @@ with co-simulations.</p>
 
 <p>There are several frameworks for the performance simulation of various classes of
 data center infrastructure: iCanCloud (for clouds), SIMCAN (for HPC architectures),
-SimSANs (for storage area networks), HECIOS (for distributed file systems),
-OMPCM (for TODO), as discussed below.
+SimSANs (for storage area networks), HECIOS (for distributed file systems) and
+OMPCM (for software architectures including network effects), as discussed below.
 The <a href="casestudy-cloud.php">cloud simulation paper</a> from IBM Research
 may also be useful.</p>
 
@@ -361,7 +345,7 @@ and the ability to scale those models keeping a good level of performance and ac
 SIMCAN includes a set of configurable modules that allow to simulate
 from simple elements (like disk drives, file systems, etc) to complete components
 of the architecture (like nodes, switches, etc).
-SIMCAN is based on the INET Framework.
+SIMCAN is based on the <a href="#inet">INET Framework</a>.
 </p>
 
 <p><?php extlink("simsans"); ?>, on the other hand, is tool for detailed simulation of
@@ -377,7 +361,7 @@ SimSANs is neither open source (please contact the author for source) nor based 
 
 <p><?php extlink("hecios"); ?> (High-End Computing I/O Simulator), is a trace-driven
 parallel file system simulator, developed for simulating PVFS (Parallel Virtual File System).
-HECIOS is based on the INET Framework.
+HECIOS is based on the <a href="#inet">INET Framework</a>.
 (<?php extlink("heciosthesis"); ?>)
 </p>
 
@@ -389,14 +373,6 @@ By applying a series of model-transformations, a Palladio model can be transform
 automatically to a OMNeT++ network definition file (NED) that uses the developed OMPCM modules.
 </p>
 
-</div>
-
-
-
-<h2 id="perf" class="framed" id="perf">Performance Modeling</h2>
-
-<div>
-Queueinglib; github project...
 </div>
 
 <?php print_next_links($product_menu, __FILE__); ?>

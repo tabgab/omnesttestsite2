@@ -172,7 +172,7 @@ library. This functionality includes:</p>
     OMNEST lets you speed up steady-state simulations using the
     <a href="http://www.cosc.canterbury.ac.nz/research/RG/net_sim/simulation_group/akaroa/about.chtml" target="_blank">Akaroa</a>
     package. Akaroa runs multiple replications of the model on nodes of a computing cluster.
-    (Akaroa license needs to be obtained separately from its authors.)</li>
+    (Akaroa software and license needs to be obtained separately from its authors.)</li>
 
     <li><strong>Real-time and hardware-in-the-loop simulation</strong><br>
     The simulation kernel supports real-time and hardware-in-the loop simulation

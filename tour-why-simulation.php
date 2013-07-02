@@ -30,12 +30,19 @@ the overall cost of building the system diminishes significantly.</p>
 
 <img class="pic right rounded" width="200" src="images/tour/stopwatch.png" alt=""/>
 <h1>Simulation lets you synthesize scenarios that are not easily produceable with the real system</h1>
-<p class="lefttext">todo</p>
+<p class="lefttext">
+e.g. often not easy to set up the exact synchronization or sequence of events;
+e.g. not easy to induce certain behaviour in systems where you don't have access to internals;
+not easy to reproduce same the radio signal propagation multiple times;
+etc</p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width="200" src="images/tour/detail.png" alt=""/>
 <h1>Simulation lets you investigate details that are normally not accessible</h1>
-<p class="righttext">todo</p>
+<p class="righttext">
+internal state of equipment, e.g. variables or buffers;
+exact timing relationships of events;
+todo</p>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width="200" src="images/tour/award2.png" alt=""/>
@@ -54,3 +61,4 @@ leading to cost saving and improvement in product quality.</p>
 <?php print_leadout(); ?>
 </body>
 </html>
+
