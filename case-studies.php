@@ -26,21 +26,6 @@ are more accessible (already public), but they equally apply to OMNEST (the two
 packages are fully compatible.) The companies mentioned below possess OMNEST licenses.</p>
 -->
 
-<h2>Performance Modeling</h2>
-
-<ul>
-<li><a href="casestudy-cloud.php">Performance Simulation of Clouds at IBM Research</a>
-<li><a href="casestudy-afdx.php">High-Level Modeling of AFDX Networks</a>
-</ul>
-
-<h2>Architecture Verification</h2>
-
-<ul>
-<li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
-<li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
-<li><a href="casestudy-infiniband.php">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
-</ul>
-
 <h2>Network Simulation</h2>
 
 <ul>
@@ -49,6 +34,22 @@ packages are fully compatible.) The companies mentioned below possess OMNEST lic
 <li><a href="casestudy-lrwpan.php">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
 </ul>
 
+<h2>Architectural Exploration</h2>
+
+<ul>
+<li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
+<li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
+<li><a href="casestudy-infiniband.php">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
+</ul>
+
+<h2>Performance Modeling</h2>
+
+<ul>
+<li><a href="casestudy-cloud.php">Performance Simulation of Clouds at IBM Research</a>
+<li><a href="casestudy-afdx.php">High-Level Modeling of AFDX Networks</a>
+</ul>
+
 <?php print_leadout(); ?>
 </body>
 </html>
+

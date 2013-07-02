@@ -47,7 +47,7 @@ Protocol models may also be mixed with other kinds of simulation models
 such as queueing or resource allocation models.</p>
 
 
-<!--TODO
+<!--
 <p>A more complete list of models and frameworks is available on the
 <a href="http://www.omnetpp.org/models" target="_blank">OMNeT++ web site</a>.</p>
 -->
@@ -60,8 +60,10 @@ such as queueing or resource allocation models.</p>
 <li><a href="casestudy-lrwpan.php">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
 </ul>
 
+<!--
 <?php print_next_link("simulation-models.php", "Simulation Models"); ?>
 <?php print_next_link("application-areas.php", "Back to Application Areas"); ?>
+-->
 
 <?php print_leadout(); ?>
 </body>

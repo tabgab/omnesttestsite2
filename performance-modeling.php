@@ -75,7 +75,7 @@ storage area networks (SANs) and other domains may also be useful.</p>
 <li><a href="casestudy-afdx.php">High-Level Modeling of AFDX Networks</a>
 </ul>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+<!-- <?php print_next_links($product_menu, __FILE__); ?> -->
 
 <?php print_leadout(); ?>
 </body>

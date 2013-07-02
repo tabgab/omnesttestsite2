@@ -56,7 +56,7 @@ chose OMNEST (or OMNeT++):</p>
 </ul>
 
 
-<h3>COMPONENT MODEL</h3>
+<h2>Component Model</h2>
 
 <div class="pic right">
 <img src="images/misc/overview-modules.png" alt=""/>
@@ -102,7 +102,8 @@ parameters to be set together by using wildcard patterns.</p>
 that iterate over several values of a parameter (or parameters), each repeated N
 times with different random number seeds.</p>
 
-<h3>THE SIMULATION LIBRARY</h3>
+
+<h2>The Simulation Library</h2>
 
 <p>Simple modules are programmed in C++, using the APIs provided by the simulation
 library. This functionality includes:</p>
@@ -138,7 +139,8 @@ library. This functionality includes:</p>
     result files) or other programming environments.</li>
 </ul>
 
-<h3>PERFORMANCE, INTEGRATION AND EXTENSIBILITY</h3>
+
+<h2>Performance, Integration and Extensibility</h2>
 
 <p>OMNEST allows many interesting possiblities:</p>
 
@@ -194,7 +196,7 @@ library. This functionality includes:</p>
 
 </ul>
 
-<h3>PLATFORMS</h3>
+<h2>Platforms</h2>
 
 <p>Simulations can be run on Windows and practically in any Unix-like environment
 that is powerful enough and has a modern C++ compiler, including Mac OS X and Linux.</p>

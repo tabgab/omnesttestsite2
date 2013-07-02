@@ -78,9 +78,11 @@ an OMNEST simulation to other simulators) are also within reach.</p>
 <li><a href="casestudy-infiniband.php">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
 </ul>
 
+<div style="clear:both"></div>
+
 <br>
 
-<?php print_next_link("application-areas.php", "Back to Application Areas"); ?>
+<!-- <?php print_next_link("application-areas.php", "Back to Application Areas"); ?> -->
 
 <?php print_leadout(); ?>
 </body>

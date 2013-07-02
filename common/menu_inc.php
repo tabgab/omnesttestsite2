@@ -26,12 +26,15 @@ $product_menu = array(
     array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
     array("text"=>"Learn more about OMNEST", "link"=>"overview.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Overview", "link"=>"overview.php"),
+        array("text"=>"Overview", "link"=>"overview.php", "subpages"=>array(
+            "systemc-integration.php",
+            "embedding.php"
+        )),
         array("text"=>"Typical Application Areas", "link"=>"application-areas.php", "subpages"=>array(
             "architecture-verification.php",
             "network-simulation.php",
             "performance-modeling.php",
-            "embedding.php"
+            "queueinglib.php"
         )),
         array("text"=>"Simulation Models", "link"=>"simulation-models.php"),
         array("text"=>"Simulation IDE", "link"=>"ide.php"),
@@ -47,6 +50,7 @@ $product_menu = array(
             "casestudy-adhoc.php",
             "casestudy-afdx.php",
             "casestudy-boss.php",
+            "casestudy-cloud.php",
             "casestudy-ibmzurich.php",
             "casestudy-infiniband.php",
             "casestudy-lrwpan.php",
