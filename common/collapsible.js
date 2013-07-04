@@ -1,71 +1,25 @@
-
-// Usage: 
-// - specify a toggle="toggleId" attribute on any element you want to turn into a toggle
-//   (toggleId is a unque identifier on the page) use toggle="all" to toggle all elements 
-//   on the page at the same time.
-// - specify class="toggle-expanded toggleId" for elements that should be visible in expanded state
-// - specify class="toggle-collapsed toggleId" for elements that should be visible in collapsed state
-//
-// TODO: - the toggle all function is a bit strange if some of the elements are expanded while others collapsed.
-//         Probaly should first expand all the element (and not toggle)
-//       - It might be better to hide/show the expanded/colapsed elements only at the end of the sliding animation
-//
-// $(document).ready(function(){
-//   $(".toggle-expanded,.toggle-slide").css("display","none");
-//   $("[toggle]").click(function(event){
-//     var target = $(event.target).attr("toggle");
-//     var selector = (target === "" || target === "all") ? "" : "."+target;
-//     $(".toggle-expanded"+selector).toggle();
-//     $(".toggle-collapsed"+selector).toggle();
-//   });
-// });
-
-// ------------------
-
-function setupFolding()
-{
-        // get all collapsible divs
-        var divs = document.getElementsByTagName("div");
-
-        // go through all divs
-        for (var i=0; i<divs.length; i++)
-        {
-                var div = divs[i];
-                if (div.className != "collapsible")
-                        continue;
-                div.style.maxHeight = "50px";
-                div.style.overflow = "hidden";
-
-                var linkDiv = document.createElement('div');
-                linkDiv.innerHTML = '<center><a href="javascript:;" onClick="openPanel(this);return false;">---More---</a></center>';
-                div.parentNode.insertBefore(linkDiv, div.nextSibling);
-        }
+function locationHashChanged() {
+  $(location.hash).addClass("expanded");
 }
 
-function openPanel(moreLink)
-{
-        var linkDiv = moreLink.parentNode.parentNode;
-        var panelDiv = linkDiv.previousSibling;
-        panelDiv.style.maxHeight = "none";
-        linkDiv.innerHTML = '<center><a href="javascript:;" onClick="closePanel(this);return false;">---Less---</a></center>';
-}
+$(document).ready(function() {
+  $(":header[id]").click(function(event) {
+    var target = $(event.target).attr("id");
+    $("h2[id='"+target+"']").toggleClass("expanded");
+  });
 
-function closePanel(moreLink)
-{
-        var linkDiv = moreLink.parentNode.parentNode;
-        var panelDiv = linkDiv.previousSibling;
-        panelDiv.style.maxHeight = "50px";
-        linkDiv.innerHTML = '<center><a href="javascript:;" onClick="openPanel(this);return false;">---More---</a></center>';
-}
+  $("a[toggleAll]").click(function(){
+    $(this).toggleClass("expanded");
+    if ($(this).hasClass("expanded")) {
+      $(this).html("Collapse all");
+      $("h2[id]").addClass("expanded");
+    } else {
+      $(this).html("Expand all");
+      $("h2[id]").removeClass("expanded");
+    }
+  })
 
-if (window.addEventListener)
-{
-        // the "proper" way
-        window.addEventListener("load", setupFolding, false);
-}
-else if (window.attachEvent)
-{
-        // the IE way
-        window.attachEvent("onload", setupFolding);
-}
+  window.addEventListener("hashchange", locationHashChanged, false);
+  locationHashChanged();
+});
 

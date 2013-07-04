@@ -12,36 +12,17 @@
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
-  <script type="text/javascript">
-  function locationHashChanged() {
-    $(location.hash).addClass("expanded");
-  }
-
-  $(document).ready(function() {
-    $(":header[id]").click(function(event) {
-      var target = $(event.target).attr("id");
-      $("h2[id='"+target+"']").toggleClass("expanded");
-    });
-
-    $("a[toggleAll]").click(function(){
-      $(this).toggleClass("expanded");
-      if ($(this).hasClass("expanded")) {
-        $(this).html("Collapse all");
-        $("h2[id]").addClass("expanded");
-      } else {
-        $(this).html("Expand all");
-        $("h2[id]").removeClass("expanded");
-      }
-    })
-
-    window.addEventListener("hashchange", locationHashChanged, false);
-    locationHashChanged();
-  });
-  </script>
+    <script src="common/collapsible.js" type="text/javascript"></script>
 </head>
 
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
+
+<!--TODO:
+ OpenFlow
+ CometOS
+-->
+
 
 <div id="header"><h1>Simulation Models</h1></div>
 
