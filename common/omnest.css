@@ -409,3 +409,10 @@ table.footerlinks a:hover {
     color: #fff;
 }
 
+.lefttext {
+    margin-right: 215px;
+}
+
+.righttext {
+    margin-left: 215px;
+}
