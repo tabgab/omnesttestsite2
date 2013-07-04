@@ -44,13 +44,13 @@ it can be used for performance modeling of clouds and other HPC systems;
 and for much more.</p>
 <div style="clear:both"></div>
 
-<img class="pic right" src="images/tour/r-n-d.png" width=150>
+<img class="pic right" src="images/tour/research.png" width=150>
 <h1>for R&amp;D</h1>
 Researchers and R&amp;D people need to investigate deeper than just parameterizing existing systems.
 Expect frameworks and open-source tweakable models instead of "canned" models.</p>
 <div style="clear:both"></div>
 
-<img class="pic left" src="images/tour/swiss-army-knife.png" width=150> <!-- swiss army knife -->
+<img class="pic left" src="images/tour/swiss-army-knife2.png" width=150> <!-- swiss army knife -->
 <h1>flexible</h1>
 TODO: COMPONENT ARCHITECTURE: MODELS CAN BE COMBINED FREELY.
 
@@ -59,13 +59,13 @@ You can also get the simulator work together with other software in your toolbox
 </p>
 <div style="clear:both"></div>
 
-<img class="pic right" src="images/tour/performance.png" width=150>  <!-- car? fighter plane? -->
+<img class="pic right" src="images/tour/fighter.png" width=150>  <!-- car? fighter plane? -->
 <h1>high performance</h1>
 Models are written in C++, and execute on top of a streamlined simulation kernel to provide high event throughput.
 Diagnostic and animation features pose minimal overhead when not in use.</p>
 <div style="clear:both"></div>
 
-<img class="pic left" src="images/tour/trusted.png" width=150>  <!-- tick? -->
+<img class="pic left" src="images/tour/trusted2.png" width=150>  <!-- tick? -->
 <h1>trusted by industry leaders</h1>
 Many large companies are relying on OMNEST in their R&amp;D for exploring large-scale
 problems using network simulation. Several have created their own internal simulation models
@@ -73,7 +73,7 @@ or model libraries that they can turn to whenever new challenges appear.
 </p>
 <div style="clear:both"></div>
 
-<img class="pic right" src="images/tour/open.png" width=150> <!-- open door? open book? open box? palms? -->
+<img class="pic right" src="images/tour/open2.png" width=150> <!-- open door? open book? open box? palms? -->
 <h1>open</h1>
 Open culture, open interfaces! OMNEST has started as an open-source project, and it shows. We do not hide any
 source code from you or lock down any part of the product. Well-documented extension APIs, plain-text input
@@ -81,7 +81,7 @@ and output file formats make it easy to accommodate special needs.
 TODO: supports nearly all platforms</p>
 <div style="clear:both"></div>
 
-<img class="pic left" src="images/tour/community.png" width=150> <!-- graduation hat? kemcso+lombik? atom? community/users? einstein? -->
+<img class="pic left" src="images/tour/community2.png" width=150> <!-- graduation hat? kemcso+lombik? atom? community/users? einstein? -->
 <h1>well embedded in the scientific community</h1>
 Under the name OMNeT++, OMNEST is a well-established tool in the scientific community.
 Over 200 papers are published each year at various conferences and in journals, and
@@ -91,7 +91,7 @@ For you, this means you have access to a huge pool of talent and a wealth of inf
 (Search with the keyword "OMNeT++".)</p>
 <div style="clear:both"></div>
 
-<img class="pic right" src="images/tour/wealth-of-models.png" width=150>  <!-- community icon? github icon? open source logo? -->
+<img class="pic right" src="images/tour/books.png" width=150>  <!-- community icon? github icon? open source logo? -->
 <h1>wealth of open-source simulation models</h1>
 As a result of the strong user community, there is an ever-growing number of open-source simulation models
 available to you, covering very diverse domains from internet routing to ad-hoc and sensor networks, in-car networks,

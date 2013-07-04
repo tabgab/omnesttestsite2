@@ -28,7 +28,7 @@ the overall cost of building the system diminishes significantly.</p>
 <p>todo</p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/thermometer.png" alt=""/>
+<img class="pic right rounded" width=200 src="images/tour/stopwatch.png" alt=""/>
 <h1>Simulation lets you synthesize scenarios that are not easily produceable with the real system</h1>
 <p>todo</p>
 <div style="clear:both"></div>
@@ -38,7 +38,7 @@ the overall cost of building the system diminishes significantly.</p>
 <p>todo</p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width=200 src="images/tour/testing.png" alt=""/>
+<img class="pic right rounded" width=200 src="images/tour/award2.png" alt=""/>
 <h1>Simulation lets you verify and validate a product early in the development</h1>
 <p>Simulations may incorporate production code embedded in the system.
 In that case, system-level simulations can be used to ensure
