@@ -43,7 +43,7 @@ easier to explore, understand and maintain.
 </p>
 <div style="clear:both"></div>
 
-<img class="pic right rounded" width="200" src="images/tour/panel2.png" alt=""/>
+<img class="pic right rounded" width="200" src="images/tour/knobs.png" alt=""/>
 <h1>Concise and flexible parameterization makes it easy to configure your simulations</h1>
 <p class="lefttext">Simulation components can (and usually do) expose several parameters to allow configuring
 their behaviour. This makes it easier to reuse components for new simulations,
