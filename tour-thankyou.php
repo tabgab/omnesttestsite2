@@ -18,7 +18,7 @@
 
 <h1>Thank You</h1>
 
-<p><img class="rounded right" src="images/tour/thankyou.jpg" alt="">
+<p><img class="rounded right" src="images/tour/thankyou.png" alt="">
 Thank you for taking the OMNEST Product Tour.</p>
 
 <p>We hope that you found that OMNEST fits your needs, and we can
