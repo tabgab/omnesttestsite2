@@ -47,7 +47,7 @@ easier to explore, understand and maintain.
 <h1>Concise and flexible parameterization makes it easy to configure your simulations</h1>
 <p class="lefttext">Simulation components can (and usually do) expose several parameters to allow configuring
 their behaviour. This makes it easier to reuse components for new simulations,
-and provides a great degree of freedom. Even for large models, the size of configuration
+and provides a great degree of freedom. Even for large models, the size of the configuration
 can be kept manageable due to the use of default values and wildcard parameter assigments.</p>
 <div style="clear:both"></div>
 

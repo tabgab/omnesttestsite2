@@ -18,19 +18,19 @@
 
 <img class="pic right rounded" width="200" src="images/tour/tour-development-components.png" alt=""/>
 <h1>Component-based modeling lets you build your models from reusable, self-contained blocks</h1>
-<p class="lefttext">Simulation models are built from reusable, self-contained components that
-are assembled using a domain-specific language.
+<p class="lefttext">Simulation models are built from reusable, self-contained components,
+assembled using a domain-specific language.
 Components provide a natural organization for your code, facilitate code reuse,
-and also help you choose the right abstraction level, because components in a model can be
-replaced with more detailed / less detailed versions.</p>
+and also help you choose the right abstraction level by allowing you to
+replace any component with more detailed / less detailed versions.</p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width="200" src="images/tour/tour-development-ide-tools.png" alt=""/>
 <h1>The Simulation IDE provides you with state-of-the-art development tools</h1>
-<p class="righttext">There are tools for all stages of a simulation project: developing C++ code,
-assembling, configuring and running simulation models, and analyzing results.
-The IDE provides modern C++ editing, both graphical and text editing for
-networks, both form based and text editing for parametrization, with many useful and widely used functions.</p>
+<p class="righttext">Tools are available for all stages of a simulation project: developing C++ code,
+assembling, configuring and running simulation models and analyzing results.
+The IDE provides modern C++ editing with refactoring capabilities, a dual-mode (graphical/source)
+editor for networks and topology, a smart configuration editor, and much more.</p>
 <div style="clear:both"></div>
 
 <img class="pic right rounded" width="200" src="images/tour/tour-development-debug.png" alt=""/>

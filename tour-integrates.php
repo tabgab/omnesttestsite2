@@ -33,7 +33,7 @@ OMNEST can also take part in HLA federations, and can be extended to interoperat
 <h1>Seamless embedding into your proprietary software makes you even more competitive</h1>
 <p class="lefttext">Simulations can be redistributed, and your users will be able to run them with different
 parameter settings. The simulation kernel, model components or whole simulations can even be
-embedded as libraries into your software products, as some of our customers have.</p>
+embedded as libraries into your software products. OMNEST has been succesfully embedded into different simulators covering a wide area of application.</p>
 <div style="clear:both"></div>
 
 <img class="pic left rounded" width="200" src="images/tour/tour-integration-eclipse.png" alt=""/>
