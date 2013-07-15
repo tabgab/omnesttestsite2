@@ -47,17 +47,17 @@ and for much more.</p>
 Expect frameworks and open-source tweakable models instead of "canned" models.</p>
 <div style="clear:both"></div>
 
-<img class="pic left" src="images/tour/omnest-flexible.png" width="200">
-<h1>Flexible</h1>
-TODO: COMPONENT ARCHITECTURE: MODELS CAN BE COMBINED FREELY.
-<p class="righttext">You can explore, modify and enhance simulation models, because you have access to model source and platform infrastructure.
-You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.</p>
+<img class="pic left" src="images/tour/omnest-performance.png" width="200">
+<h1>High Performance</h1>
+<p class="righttext">Models are written in C++, and execute on top of a streamlined simulation kernel to provide high event throughput.
+Diagnostic and animation features pose minimal overhead when not in use.</p>
 <div style="clear:both"></div>
 
-<img class="pic right" src="images/tour/omnest-performance.png" width="200">
-<h1>High Performance</h1>
-<p class="lefttext">Models are written in C++, and execute on top of a streamlined simulation kernel to provide high event throughput.
-Diagnostic and animation features pose minimal overhead when not in use.</p>
+<img class="pic right" src="images/tour/omnest-flexible.png" width="200">
+<h1>Flexible</h1>
+TODO: COMPONENT ARCHITECTURE: MODELS CAN BE COMBINED FREELY.
+<p class="lefttext">You can explore, modify and enhance simulation models, because you have access to model source and platform infrastructure.
+You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.</p>
 <div style="clear:both"></div>
 
 <img class="pic left" src="images/tour/omnest-trusted.png" width="200">
