@@ -16,7 +16,7 @@
 <body>
 <?php print_leadin($purchase_menu, __FILE__); ?>
 
-<span style="color: red;">TODO: this page is not present in the menu but it could be easily included in the company menu</span>
+<!-- TODO: this page is not present in the menu but it could be easily included in the company menu -->
 
 <div id="header"><h1>Piracy of OMNeT++ Licenses in China</h1></div>
 
