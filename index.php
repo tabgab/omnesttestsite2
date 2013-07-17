@@ -30,7 +30,7 @@ OMNEST simulations can also be embedded into your own software products.
 
 <div id="under-intro-text">
 
-<div id="news" style="float:left; width:400px">
+<div id="leftcol" style="float:left; width:400px">
 <h1><a href="simulation-models.php">Simulation Models</a></h1>
 
 <p>Models exist for
@@ -71,6 +71,37 @@ and more...
 <br><br>
 -->
 
+</div> <!--leftcol-->
+
+<div id="rightcol" style="float:right; width:340px">
+<h1><a href="embedding.php">Add Simulation To Your Software Products!</a></h1>
+<p>Did you know? You can <a href="embedding.php">embed</a> the simulation kernel or whole simulations into your software products.</p>
+
+<!--TODO
+<h1><a href="testimonials.php">Testimonials</a></h1>
+
+<p><i>"Using OMNEST was a real pleasure after the struggle we had with our former simulation tool."</i>
+- John Smith, ACME Inc.</i></p>
+
+<p><i>"Due to OMNEST's good design and excellent documentation, we became productive with it very fast."</i>
+- Jane Smith, EMCA Inc.</i></p>
+-->
+
+<!--
+<h1>Featured Stories</h1>
+
+<img alt="" src="images/misc/marenostrum-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
+<p>IBM researchers have used OMNEST to optimize one of Europe's most powerful supercomputers.<br>
+<a href="casestudy-ibmzurich.php">Read more&nbsp;&raquo;</a></p>
+<div style="clear:both"></div>
+<br>
+
+<img alt="" src="images/misc/workshop08-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
+<p>Users meet regularly at the International OMNeT++ Workshop, co-located with the SimuTools conference.<br>
+<a href="community.php">Read more&nbsp;&raquo;</a></p>
+<div style="clear:both"></div>
+-->
+
 <h1><a href="news.php">News</a></h1>
 
 <?php
@@ -81,12 +112,13 @@ $maxitems = 2;
 $count = 0;
 foreach ($news as $news_data) {
     echo "<div class='news'>\n";
+    if (array_key_exists("image", $news_data))
+        echo "<img alt='' src='" . $news_data["image"]. "' width=150 style='float:left; margin-right:10px; margin-top:3px'>";
     echo "    <p class='newstitle'><a href='news.php?id=" . $news_data["id"] . "'>" . $news_data["title"] . "</a></p>\n";
     echo "    <p class='newsdate'>" . $news_data["date"] . "</p>\n";
     echo "    <div class='newssummary'><p>\n" . $news_data["summary"];
-    if (array_key_exists("fulltext", $news_data)) {
+    if (array_key_exists("fulltext", $news_data))
         echo " <a href='news.php?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
-    }
     echo "\n</p></div>\n\n";
     echo "</div>\n";
     if (++$count >= $maxitems)
@@ -97,42 +129,12 @@ if (sizeof($news) > $maxitems) {
     echo "<p><a href='news.php'>More news&nbsp;&raquo;</a></p>\n";
 }
 ?>
-</div> <!-- id="news" -->
 
-<div id="rightcol" style="float:right; width:340px">
-<h1><a href="embedding.php">Add Simulation To Your Software Products!</a></h1>
-<p>You can embed the OMNEST Simulation kernel as a library into your products. TODO</p>
-
-<h1><a href="testimonials.php">Testimonials</a></h1>
-
-<p><i>"CBISA has helped to simplify the community benefit reporting process for
-our organization and is very user friendly."</i>
-- Deborah Blake, Texas Health Resources</i></p>
-
-<p>
-<img alt="" src="images/misc/dummy-testimonial-photo.png" width=60 style="float:right; margin-right:10px; margin-top:3px">
-<i>"I am very pleased with the relationship to be friendly and supportive."</i>
-- Deborah Blake, Texas Health Resources</i></p>
-
-<h1>Featured Stories</h1>
-<img alt="" src="images/misc/marenostrum-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
-<p>IBM researchers have used OMNEST to optimize one of Europe's most powerful supercomputers.<br>
-<a href="casestudy-ibmzurich.php">Read more&nbsp;&raquo;</a></p>
-
-<div style="clear:both"></div>
-<br>
-
-<img alt="" src="images/misc/workshop08-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
-<p>Users meet regularly at the International OMNeT++ Workshop, co-located with the SimuTools conference.<br>
-<a href="community.php">Read more&nbsp;&raquo;</a></p>
+</div> <!--rightcol-->
 
 <div style="clear:both"></div>
 
-</div> <!-- id="featured" -->
-
-<div style="clear:both"></div>
-
-</div> <!-- id="under-intro-text" -->
+</div>
 
 
 </div>

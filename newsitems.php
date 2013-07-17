@@ -18,6 +18,7 @@ $news = array(
         "id" => "workshop-2013",
         "title" => "6th International OMNeT++ workshop",
         "date" => "March 5th, 2013",
+        //"image" => "images/misc/workshop08-featured.jpg",
         "summary" => "
           The peer-reviewed annual workshop took place in Cannes this year,
           and the papers and posters again represented a high professional
