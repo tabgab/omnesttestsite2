@@ -106,28 +106,8 @@ and more...
 
 <?php
 include("newsitems.php");
-
-// display all news
-$maxitems = 2;
-$count = 0;
-foreach ($news as $news_data) {
-    echo "<div class='news'>\n";
-    if (array_key_exists("image", $news_data))
-        echo "<img alt='' src='" . $news_data["image"]. "' width=150 style='float:left; margin-right:10px; margin-top:3px'>";
-    echo "    <p class='newstitle'><a href='news.php?id=" . $news_data["id"] . "'>" . $news_data["title"] . "</a></p>\n";
-    echo "    <p class='newsdate'>" . $news_data["date"] . "</p>\n";
-    echo "    <div class='newssummary'><p>\n" . $news_data["summary"];
-    if (array_key_exists("fulltext", $news_data))
-        echo " <a href='news.php?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
-    echo "\n</p></div>\n\n";
-    echo "</div>\n";
-    if (++$count >= $maxitems)
-        break;
-}
-
-if (sizeof($news) > $maxitems) {
-    echo "<p><a href='news.php'>More news&nbsp;&raquo;</a></p>\n";
-}
+include("common/news_inc.php");
+news_print_frontpage(2);
 ?>
 
 </div> <!--rightcol-->
