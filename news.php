@@ -35,8 +35,14 @@ if ($news_id) {
     else {
         echo "<h1>" . $news_data["title"] . "</h1>\n";
         echo "<p class='newsdate'>" . $news_data["date"] . "</p><br>\n";
-        $text = array_key_exists("fulltext", $news_data) ? $news_data["fulltext"] : "<p>" . $news_data["summary"] . "</p>";
-        echo "\n" . $text . "\n";
+
+        if (!array_key_exists("fulltext", $news_data)) {
+            echo "<p>" . $news_data["summary"] . "</p>\n";
+        }
+        else {
+            echo "<p><i>" . $news_data["summary"] . "</i></p>\n";
+            echo $news_data["fulltext"] . "\n";
+        }
     }
 
     echo "<ul class='links'><li><a href='news.php'>Read all news</a></ul>\n";
@@ -57,8 +63,11 @@ else {
         echo "<a name='" . $news_data["id"] . "'></a>";
         echo "<p class='newstitle'>" . $news_data["title"] . "</p>\n";
         echo "<p class='newsdate'>" . $news_data["date"] . "</p>\n";
-        $text = array_key_exists("fulltext", $news_data) ? $news_data["fulltext"] : "<p>" . $news_data["summary"] . "</p>";
-        echo "\n" . $text . "\n";
+
+        echo "<p>" . $news_data["summary"];
+        if (array_key_exists("fulltext", $news_data))
+            echo " <a href='news.php?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
+        echo "</p>\n";
     }
 }
 

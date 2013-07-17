@@ -18,6 +18,10 @@
 
 <div id="header"><h1>What's New in OMNEST 4.3</h1></div>
 
+<p>The highlights of this release are new NED functionality, new utility classes in the simulation kernel,
+faster project rebuilds in the IDE, new data analysis features with
+computed scalar support and full screen mode. Read on for details.</p>
+
 <h2>IDE</h2>
 
 <ul>
