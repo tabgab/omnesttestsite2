@@ -50,23 +50,6 @@ components, etc. This tool can be an invaluable help in tracking down
 model errors, and in showing off and documenting model operation.</p>
 <div style="clear:both"></div>
 
-<!--TODO:
-    <li><strong>Source code is provided</strong><br>
-    We provide the full source code to increase your understanding of the simulation
-    framework, to help in debugging, and to enable you to make modifications should it
-    ever become necessary.</li>
-
-    <li><strong>Models are self-documenting</strong><br>
-    The documentation tool generates high-quality documentation from commented model source code, with diagrams, tables and cross-references. Integrates well with the Doxygen C++ documentation tool.</li>
--->
-
-<!-- TODO models page
-<img class="pic left rounded" width="200" src="images/tour/tour-development-open-source.png" alt=""/>
-<h1>Open source code allows you to easily customize and extend existing models at your will</h1>
-<p class="righttext">Models can be customized and extended in unforeseen ways according to your needs.</p>
-<div style="clear:both"></div>
--->
-
 <?php print_next_tourstep_links(__FILE__); ?>
 
 <?php print_leadout(); ?>

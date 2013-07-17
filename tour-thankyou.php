@@ -24,8 +24,6 @@ Thank you for taking the OMNEST Product Tour.</p>
 <p>We hope that you found that OMNEST fits your needs, and we can
 soon welcome you among the happy users of our simulation tool.</p>
 
-<!-- TODO  Gabor, please write nice sentences here! -->
-
 <div style="clear:both"></div>
 <br>
 <br>
