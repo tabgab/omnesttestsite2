@@ -68,7 +68,7 @@ modules that primarily communicate by exchanging messages</div>
 architecture for simulation models. Models are built from reusable
 components, called modules, which can be combined in various ways. The
 depth of module nesting is not limited. Modules communicate primarily by
-message passing, via connections or direct sending. Module behavior can be
+message passing, via connections or by direct sending. Module behavior can be
 programmed in C++, using the simulation infrastructure OMNEST provides.</p>
 
 <p>Component architecture provides multiple benefits:</p>
@@ -116,11 +116,11 @@ library. This functionality includes:</p>
     from compact descriptions. Timers are also represented with messages that a module sends to itself.
     </li>
 
-    <li>random numbers, TODO!
-    <li>logging,
-    <li>access and runtime manipulation of models,
-    <li>topology extraction
-    <li>many others.
+    <li><strong>Random numbers</strong><br>
+    OMNEST offers multiple random number streams, pluggable RNG algorithms (the default being
+    Mersenne Twister), and many discrete and continuous distributions.
+    RNGs are rarely accessed in the code directly, as most of the time module parameters
+    are used as sources of random numbers.</li>
 
     <li><strong>Publish-subscribe communication</strong><br>
     OMNEST provides a signals framework that is used for publish-subscribe
@@ -130,13 +130,30 @@ library. This functionality includes:</p>
     signals at any level.</li>
 
     <li><strong>Result recording</strong><br>
-    Model code can record simulation results directly, or expose them as signals and let
+    Model code can record any data as simulation result.
+    Data can be recorded directly, or the model can emit them as signals and let
     the simulation framework take care of recording them in the appropriate form and
     level of detail. Results can be recorded as scalars (e.g. the sum, count, average,
     other other property of the values), as histograms, as statistical summaries,
     or all values as vectors (i.e. time series). Result files can be plotted using
     the IDE, or programmatically from GNU R (we have an R package that understands
     result files) or other programming environments.</li>
+
+    <li><strong>Logging</strong><br>
+    Good log messages in the code (be it yours or 3rd party code) help you understand
+    the behaviour of the model, and can also reduce debugging time. OMNEST can also
+    save log messages (along with other activities of the model) into an event log
+    file that can be later filtered by module, simulation time or other properties,
+    can be searched and examined, and can be viewed together with dynamically drawn
+    sequence charts.</li>
+
+    <li><strong>Access and runtime manipulation of models</strong><br>
+    OMNEST supports the creation and deletion of modules and connections at runtime,
+    opening the possiblity for modeling dynamically changing networks, as well
+    as importing topology from external source at runtime.
+    It is also possible to extract the network topology into a graph representation,
+    for example for finding shortest paths.
+
 </ul>
 
 
