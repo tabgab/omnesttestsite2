@@ -23,8 +23,6 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<span style="color: red;">TODO: this page should be merged with "Simulation IDE"</span>
-
 <div id="header"><h1>OMNEST at a Glance</h1></div>
 
 <table>

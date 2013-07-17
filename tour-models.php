@@ -39,7 +39,6 @@ Queueing &bull; Resource allocation
 <p class="righttext">Simulation models provide you with reusable components that you can freely combine
 in new simulations. The component model also makes simulation models
 easier to explore, understand and maintain.
-<!-- and can be combined in unforeseen ways. -->
 </p>
 <div style="clear:both"></div>
 
@@ -57,35 +56,6 @@ can be kept manageable due to the use of default values and wildcard parameter a
 whether and how the model implements various aspects of the real system (e.g. certain protocol features).
 Having the source also allows you to change or enhance the model to fit your needs.</p>
 <div style="clear:both"></div>
-
-<!--
-<img class="pic left rounded" width="200" src="images/tour/tour-models-collaborate.png" alt=""/>
-<h1>Free and open-source models allow you to collaborate with external researchers more openly</h1>
-
-<span style="color: red;">TODO: this explanation doesn't make clear to me what is the benefit for a customer here</span>
-
-<p class="righttext">Most existing simulation models are under various open source licenses.
-This can be a huge benefit if you want to collaborate with researchers at universities
-or other institutes, because you can distribute your derived models to them
-without needing to worry about copyright and licensing issues.</p>
-<div style="clear:both"></div>
--->
-
-
-<!--TODO:
-<img class="pic left rounded" width="200" src="images/tour/tour-models-todo.png" alt=""/>
-<h1>Domain specific, flexible and scalable models are easy to use by your domain experts</h1>
-<p class="righttext">todo</p>
-<div style="clear:both"></div>
--->
-
-<!--TODO:
-<li><strong>Wide range of applicability</strong><br>
-OMNEST/OMNeT++ has proven itself in the simulation of wired and wireless communication networks,
-high-level architectural simulation of hardware/software systems, performance modeling
-(queueing networks) and other areas.</li>
--->
-
 
 <?php print_next_tourstep_links(__FILE__); ?>
 

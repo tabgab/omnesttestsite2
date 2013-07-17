@@ -23,8 +23,6 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<!-- TODO: the position and style of the following link looks weird -->
-
 <?php
 print_next_link_small($touritems[0]["link"], "Take the Product Tour!");
 ?>

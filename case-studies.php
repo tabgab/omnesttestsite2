@@ -20,12 +20,6 @@
 
 <p>This page is an index of case studies on this site.</p>
 
-<!-- <p>TODO There are countless papers on omnetpp.org - - here we single out some, related to
-EU projects and industry uses...  They are using OMNeT++ because such stories
-are more accessible (already public), but they equally apply to OMNEST (the two
-packages are fully compatible.) The companies mentioned below possess OMNEST licenses.</p>
--->
-
 <h2>Network Simulation</h2>
 
 <ul>
