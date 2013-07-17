@@ -80,7 +80,7 @@ $purchase_menu = array(
         array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
     )),
     array("text"=>"Support", "link"=>"support.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Techincal Support", "link"=>"support.php"),
+        array("text"=>"Technical Support", "link"=>"support.php"),
         array("text"=>"Download OMNEST", "link"=>"download.php"),
         array("text"=>"Training and Consulting", "link"=>"services.php"),
     )),
@@ -93,7 +93,7 @@ $purchase_menu = array(
 
 $blank_menu = array();  // for pages that don't need a menu
 
-function print_footer_links()   //TODO this is totally out of date!!!
+function print_footer_links()
 {
 ?>
     <table class="footerlinks">
@@ -105,66 +105,57 @@ function print_footer_links()   //TODO this is totally out of date!!!
         <tr>
             <td>
                 <ul>
-                    <li><a href="overview.php">OMNEST</a>
-                      <ul>
-                        <li><a href="overview.php">Overview</a>
-                        <li><a href="features.php">Features</a>
-                        <li><a href="references.php">References</a>
-                        <li><a href="ide.php">IDE Tour</a>
-                        <li><a href="demo-videos.php">Demo Videos</a>
-                        <li><a href="documentation.php">List of Documentation</a>
-                        <li><a href="comparison.php">OMNEST vs. OMNeT++</a>
-                      </ul>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li><a href="performance-modeling.php">Performance Modeling</a>
-                      <ul>
-                        <li><a href="perf-casestudies.php">Case Studies</a>
-                        <li><a href="queueinglib.php">Perf. Modeling Library</a>
-                      </ul>
-                    <li><a href="architecture-verification.php">Architecture Verification</a>
-                      <ul>
-                        <li><a href="systemc-integration.php">SystemC Integration</a>
-                        <li><a href="archver-casestudies.php">Case Studies</a>
-                      </ul>
-                    <li><a href="embedding.php">Embedding</a>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li><a href="network-simulation.php">Network Simulation</a>
+                    <li><a href="omnest-is.php">Introduction</a>
                         <ul>
-                            <li><a href="netsim-references.php">References</a>
-                            <li><a href="netsim-casestudies.php">Case Studies</a>
-                            <li><a href="inet-framework.php">INET Framework</a>
-                            <li><a href="castalia.php">Castalia</a>
-                            <li><a href="mixim.php">MiXiM</a>
+                            <li><a href="omnest-is.php">What is OMNEST?</a>
+                            <li><a href="tour-why-simulation.php">Product Tour</a>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="overview.php">Learn More</a>
+                        <ul>
+                            <li><a href="overview.php">Overview</a>
+                            <li><a href="application-areas.php">Application Areas</a>
+                            <li><a href="simulation-models.php">Simulation Models</a>
+                            <li><a href="ide.php">Simulation IDE</a>
+                            <li><a href="demo-videos.php">Demo Videos</a>
+                            <li><a href="documentation.php">Documentation</a>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="references.php">OMNEST In the World</a>
+                        <ul>
+                            <li><a href="references.php">Customers</a>
+                            <li><a href="testimonials.php">Testimonials</a>
+                            <li><a href="publications.php">Publications</a>
+                            <li><a href="case-studies.php">Case Studies</a>
+                            <li><a href="netsim-references.php">Reference Projects</a>
                             <li><a href="network-simulation-book.php">Book Recommendation</a>
                         </ul>
+                    </li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="try-omnest.php">Try OMNEST</a>
-                    <li><a href="contact.php">Request Quotation</a>
-                        <ul>
-                            <li><a href="licensingfaq.php">Do I Need a License?</a>
-                            <li><a href="licensing.php">Licensing Options</a>
-                            <li><a href="license.php">License Agreement</a>
-                        </ul>
-                    <li><a href="services.php">Services</a>
-                    <li><a href="support.php">Support</a>
-                        <ul>
-                            <li><a href="download.php">Download OMNEST</a>
-                        </ul>
+                    <li><a href="contact.php">Contact Us /<br> Request Quotation</a></li>
+                    <li><a href="licensingfaq.php">Do I Need a License?</a></li>
+                    <li><a href="licensing.php">Licensing Options</a></li>
+                    <li><a href="license.php">License Agreement</a></li>
+                    <li><a href="comparison.php">OMNeT++ Comparison</a></li>
+                    <li><a href="support.php">Technical Support</a></li>
+                    <li><a href="download.php">Download OMNEST</a></li>
+                    <li><a href="services.php">Training and Consulting</a></li>
                 </ul>
             </td>
             <td>
                 <ul>
                     <li><a href="company.php">Company</a>
-                    <li><a href="community.php">Community</a>
                     <li><a href="partners.php">Partners</a>
                 </ul>
             </td>
