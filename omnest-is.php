@@ -51,26 +51,26 @@ Expect frameworks and open-source tweakable models instead of "canned" models.</
 Diagnostic and animation features pose minimal overhead when not in use.</p>
 <div style="clear:both"></div>
 
-<img class="pic right" src="images/tour/omnest-flexible.png" width="200">
-<h1>Flexible</h1>
-TODO: COMPONENT ARCHITECTURE: MODELS CAN BE COMBINED FREELY.
-<p class="lefttext">You can explore, modify and enhance simulation models, because you have access to model source and platform infrastructure.
-You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.</p>
+<img class="pic right" src="images/tour/omnest-trusted.png" width="200">
+<h1>Trusted by Industry Leaders</h1>
+<p class="lefttext">Many large companies are relying on OMNEST in their R&amp;D for exploring problems
+and design alternatives using network simulation. Several have created their own internal simulation models
+or model libraries that they can turn to whenever new challenges appear.</p>
 <div style="clear:both"></div>
 
-<img class="pic left" src="images/tour/omnest-trusted.png" width="200">
-<h1>Trusted by Industry Leaders</h1>
-<p class="righttext">Many large companies are relying on OMNEST in their R&amp;D for exploring large-scale
-problems using network simulation. Several have created their own internal simulation models
-or model libraries that they can turn to whenever new challenges appear.</p>
+<img class="pic left" src="images/tour/omnest-flexible.png" width="200">
+<h1>Flexible</h1>
+<p class="righttext">Simulation models are built from self-contained blocks that can be combined in many ways.
+You can explore, modify and enhance models, because you have access to the source code and to platform infrastructure.
+You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.</p>
 <div style="clear:both"></div>
 
 <img class="pic right" src="images/tour/omnest-open.png" width="200">
 <h1>Open</h1>
-<p class="lefttext">Open culture, open interfaces! OMNEST has started as an open-source project, and it shows. We do not hide any
-source code from you or lock down any part of the product. Well-documented extension APIs, plain-text input
-and output file formats make it easy to accommodate special needs.
-TODO: supports nearly all platforms</p>
+<p class="lefttext">Open culture, open interfaces! OMNEST has started as an open-source project, and it shows.
+We do not hide any source code from you or lock down any part of the product.
+Well-documented extension APIs, plain-text input and output file formats make it easy to accommodate special needs.
+Simulations can be run on a multitude of platforms.</p>
 <div style="clear:both"></div>
 
 <img class="pic left" src="images/tour/omnest-community.png" width="200">
