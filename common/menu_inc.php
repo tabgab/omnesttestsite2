@@ -293,7 +293,6 @@ function print_next_tourstep_links($current_page)
 
     $tourstep = get_next_tourstep_item($current_page);
 
-    echo "<br>\n";
     if ($tourstep != NULL)
         print_next_link($tourstep["link"], "Next: " . $tourstep["text"]);
     else

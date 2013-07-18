@@ -416,3 +416,8 @@ table.footerlinks a:hover {
 .righttext {
     margin-left: 215px;
 }
+
+.separator {
+    clear: both;
+    margin-top: 30px;
+}

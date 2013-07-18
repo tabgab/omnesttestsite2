@@ -16,7 +16,7 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<img class="pic right rounded" width="200" src="images/tour/tour-analysis-record.png" alt=""/>
+<img class="pic right rounded" style="margin-top: 26px;" width="200" src="images/tour/tour-analysis-record.png" alt=""/>
 <h1>Simulation models can be easily set up to record useful statistics</h1>
 <p class="lefttext">Support for statistics recording can be easily added to model components
 (if not built in already), and the actual amount and form of data to be recorded
@@ -58,18 +58,18 @@ The amount and form of data to be actually recorded to disk can be dynamically c
 -->
 
 </p>
-<div style="clear:both"></div>
+<div class="separator"></div>
 
-<img class="pic left rounded" width="200" src="images/tour/tour-analysis-tool.png" alt=""/>
+<img class="pic left rounded" style="margin-top: 12px;" width="200" src="images/tour/tour-analysis-tool.png" alt=""/>
 <h1>The result analysis tool helps you make the right decisions based on the collected data</h1>
 <p class="righttext">The result analysis tool in the IDE allows you to
 browse, filter, process and plot simulation results in various ways, and even lets you
 automate the process of producing the charts. Charts are also interactive, and let you zoom
 into interesting areas. Data and graphics can be exported in
 various formats, ready for inclusion into your reports.</p>
-<div style="clear:both"></div>
+<div class="separator"></div>
 
-<img class="pic right rounded" width="200" src="images/tour/tour-analysis-integration.png" alt=""/>
+<img class="pic right rounded" style="margin-top: 12px; margin-right: 10px;" width="200" src="images/tour/tour-analysis-integration.png" alt=""/>
 <h1>Integration with industry standard analysis tools allows you get the best of all</h1>
 <p class="lefttext">You can harness the power of your favourite statistics program (Matlab, GNU R and others)
 for processing OMNEST simulation results. We use open file formats,
@@ -80,7 +80,7 @@ into your favourite statistics program, such as Matlab, R or Python packages,
 for further analysis. OMNEST provides tools to facilitate this process,
 such as CSV export and an R package to directly read result files into R.</p>
 -->
-<div style="clear:both"></div>
+<div class="separator"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>
 
