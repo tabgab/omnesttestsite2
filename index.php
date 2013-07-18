@@ -75,7 +75,7 @@ and more...
 
 <div id="rightcol" style="float:right; width:340px">
 <h1><a href="embedding.php">Add Simulation To Your Software Products!</a></h1>
-<p>Did you know? You can <a href="embedding.php">embed</a> the simulation kernel or whole simulations into your software products.</p>
+<p>You can <a href="embedding.php">embed</a> the simulation kernel or whole simulations into your software products.</p>
 
 <!--TODO
 <h1><a href="testimonials.php">Testimonials</a></h1>
