@@ -55,7 +55,7 @@ function print_titlepage_leadin() { ?>
         </div>
 
         <div id="logo" style="position:absolute; top:24px; left: 36px">
-            <a href="index.php"><img src="common/images/logo.png" alt="OMNEST"></a>
+            <a href="index.php"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
         </div>
 
         <div id="search" style="position:absolute; top:16px; right:20px; background-image:url(common/images/search.png); background-repeat: no-repeat; width:150px; height:24px;">
@@ -141,7 +141,7 @@ function print_leadin($menu, $file) { ?>
         </div>
 
         <div id="logo" style="position:absolute; top:24px; left: 36px">
-            <a href="index.php"><img src="common/images/logo.png" alt="OMNEST"></a>
+            <a href="index.php"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
         </div>
 
         <div id="search" style="position:absolute; top:16px; right:20px; background-image:url(common/images/search.png); background-repeat: no-repeat; width:150px; height:24px;">
