@@ -8,10 +8,8 @@ $news = array(
         "id" => "omnest-4.3",
         "title" => "OMNEST 4.3 released",
         "date" => "April 15, 2013",
-        "summary" => "
-           OMNEST 4.3 has been released with several new features, improvements and bugfixes.
-           <a href='whatsnew-43.php'>Details&nbsp;&raquo;</a>
-        ",
+        "summary" => "OMNEST 4.3 has been released with several new features, improvements and bugfixes.",
+        "link" => "whatsnew-43.php"
     ),
 
     array(
@@ -78,17 +76,8 @@ $news = array(
         "id" => "omnest-4.2.1",
         "title" => "OMNEST 4.2.1 released",
         "date" => "January 24, 2012",
-        "summary" => "
-          We are happy to announce the release of OMNEST 4.2.1.
-          See <a href='whatsnew-42.php'>what's new</a>.
-        ",
-        "fulltext" => "
-          <p>We are happy to announce the release of OMNEST 4.2.1.
-          Contains several new features for the IDE and the
-          runtime environment, additional simulation APIs and
-          enhanced documentation.
-          <a href='whatsnew-42.php'>Details&nbsp;&raquo;</a></p>
-        ",
+        "summary" => "We are happy to announce the release of OMNEST 4.2.1.",
+        "link" => "whatsnew-42.php"
     ),
 
     array(
@@ -112,26 +101,16 @@ $news = array(
         "date" => "September 28, 2010.",
         "summary" => "
           Recently, we have received reports that crooks are peddling OMNeT++ licenses
-          for commercial use in China. <a href='piracy.php'>Details&nbsp;&raquo;</a>",
+          for commercial use in China.",
+        "link" => "piracy.php"
     ),
 
     array(
         "id" => "omnest-4.1",
         "title" => "OMNEST 4.1 released",
         "date" => "June 14, 2010",
-        "summary" => "
-          We are happy to announce the release of OMNEST 4.1.
-          <a href='whatsnew-41.php'>What's New</a>.
-        ",
-        "fulltext" => "
-          <p>We are happy to announce the release of OMNEST 4.1. Changes to the
-          simulation core include the introduction of a signals framework;
-          signals-based result recording; declared statistics in NED files and
-          their configurability in ini files; channel statistics; and many other
-          improvements. There were also several refinements of the graphical runtime
-          environment and Simulation IDE, and the documentation was completed
-          with new items. <a href='whatsnew-41.php'>Details&nbsp;&raquo;</a></p>
-        ",
+        "summary" => "We are happy to announce the release of OMNEST 4.1.",
+        "link" => "whatsnew-41.php",
     ),
 
     array(
@@ -143,7 +122,7 @@ $news = array(
           Torremolinos, in conjunction with SimuTools 2010 as usual. The workshop
           was a great success.",
         "fulltext" => "
-          <p >The 3rd International Workshop on OMNeT++ was held on March 19, 2010 in
+          <p>The 3rd International Workshop on OMNeT++ was held on March 19, 2010 in
           Torremolinos, in conjunction with SimuTools 2010 as usual. The workshop
           was a great success: We had about 10 published papers and more than
           30 participants in the room. The workshop programme, including presentation
@@ -174,7 +153,8 @@ $news = array(
           The OMNEST team is happy to announce version 4.0 of the OMNEST Simulation
           Environment. OMNEST 4.0 features include an Eclipse-based Simulation IDE,
           greatly enhanced NED language and simulation kernel, a streamlined
-          simulation kernel and many other improvements. <a href='whatsnew-40.php'>Details&nbsp;&raquo;</a>",
+          simulation kernel and many other improvements.",
+        "link" => "whatsnew-40.php"
     ),
 
 );

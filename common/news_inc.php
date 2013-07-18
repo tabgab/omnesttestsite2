@@ -19,6 +19,8 @@ function news_print_item_page($news_id)
 
         if (!array_key_exists("fulltext", $news_data)) {
             echo "<p>" . $news_data["summary"] . "</p>\n";
+            if (array_key_exists("link", $news_data))
+                echo " <a href='" . $news_data["link"] . "'>More&nbsp;&raquo;</a>";
         }
         else {
             echo "<p><i>" . $news_data["summary"] . "</i></p>\n";
@@ -52,6 +54,8 @@ function news_print_list()
         echo "<p>" . $news_data["summary"];
         if (array_key_exists("fulltext", $news_data))
             echo " <a href='news.php?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
+        if (array_key_exists("link", $news_data))
+            echo " <a href='" . $news_data["link"] . "'>More&nbsp;&raquo;</a>";
         echo "</p>\n";
     }
 }
@@ -70,6 +74,9 @@ function news_print_frontpage($maxitems)
         echo "    <div class='newssummary'><p>\n" . $news_data["summary"];
         if (array_key_exists("fulltext", $news_data))
             echo " <a href='news.php?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
+        if (array_key_exists("link", $news_data))
+            echo " <a href='" . $news_data["link"] . "'>More&nbsp;&raquo;</a>";
+
         echo "\n</p></div>\n\n";
         echo "</div>\n";
         if (++$count >= $maxitems)

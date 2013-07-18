@@ -18,6 +18,14 @@
 
 <div id="header"><h1>What's New in OMNEST 4.1</h1></div>
 
+<p>We are happy to announce the release of OMNEST 4.1. Changes to the
+simulation core include the introduction of a signals framework;
+signals-based result recording; declared statistics in NED files and
+their configurability in ini files; channel statistics; and many other
+improvements. There were also several refinements of the graphical runtime
+environment and Simulation IDE, and the documentation was completed
+with new items. Read on for details.</p>
+
 <h2>Simulation Core</h2>
 
 <p>A very brief summary of the changes and new features in the simulation core:</p>

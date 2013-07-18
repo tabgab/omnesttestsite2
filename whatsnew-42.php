@@ -18,6 +18,11 @@
 
 <div id="header"><h1>What's New in OMNEST 4.2</h1></div>
 
+<p>We are happy to announce the release of OMNEST 4.2.1.
+It contains several new features for the IDE and the
+runtime environment, additional simulation APIs and
+enhanced documentation. Read on for details.</p>
+
 <h2>Simulation Core &amp; Tools</h2>
 
 <p>A very brief summary of the changes and new features in the simulation core and tools:</p>
