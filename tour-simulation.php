@@ -16,6 +16,8 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<?php print_next_tourstep_links_small(__FILE__); ?>
+
 <img class="pic right rounded" style="margin-top: 0px;" width="200" src="images/tour/tour-simulation-performance.png" alt=""/>
 <h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
 <p class="lefttext">Models are written in C++, and execute on top of a streamlined simulation kernel

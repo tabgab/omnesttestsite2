@@ -16,6 +16,8 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<?php print_next_tourstep_links_small(__FILE__); ?>
+
 <img class="pic right rounded" style="margin-top: 30px;" width="200" src="images/tour/tour-models-domains.png" alt=""/>
 <h1>Simulation models are available for many application domains</h1>
 <p class="lefttext">

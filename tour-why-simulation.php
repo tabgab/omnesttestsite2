@@ -16,6 +16,8 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<?php print_next_tourstep_links_small(__FILE__); ?>
+
 <img class="pic right rounded" style="margin-top: 12px;" width="200" src="images/tour/tour-whysim-blueprints.png" alt=""/>
 <h1>Simulation lets you experiment with systems that don't exist yet</h1>
 <p class="leftext">You can explore the merits of alternative designs without actually physically constructing the systems.

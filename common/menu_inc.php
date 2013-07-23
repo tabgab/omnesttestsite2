@@ -277,26 +277,35 @@ function array_get($array, $index)
     return array_key_exists($index, $array) ? $array[$index] : NULL;
 }
 
-function print_next_link($url, $text)
+function print_next_link($url, $text, $small=false)
 {
-    echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $url . "\">" . $text . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+    if ($small)
+        echo "<div class=\"next-small\" style=\"text-align:right; height:0px\"><a href=\"" . $url . "\">" . $text . "&nbsp;&raquo;</a></div>\n";
+    else
+        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $url . "\">" . $text . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
 }
 
 function print_next_link_small($url, $text)
 {
-    echo "<div class=\"next-small\" style=\"text-align:right; height:0px\"><a href=\"" . $url . "\">" . $text . "&nbsp;&raquo;</a></div>\n";
+    print_next_link($url, $text, true);
 }
 
-function print_next_tourstep_links($current_page)
+function print_next_tourstep_links($current_page, $small=false)
 {
     $current_page = basename($current_page);
 
     $tourstep = get_next_tourstep_item($current_page);
 
     if ($tourstep != NULL)
-        print_next_link($tourstep["link"], "Next: " . $tourstep["text"]);
+        print_next_link($tourstep["link"], "Next: " . $tourstep["text"], $small);
     else
-        print_next_link("tour-thankyou.php", "Next: Finish the Tour");
+        print_next_link("tour-thankyou.php", "Next: Finish the Tour", $small);
+}
+
+function print_next_tourstep_links_small($current_page)
+{
+    print_next_tourstep_links($current_page, true);
+    echo "<br>\n";
 }
 
 function get_next_tourstep_item($current_page)

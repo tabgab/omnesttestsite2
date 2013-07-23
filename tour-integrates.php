@@ -16,6 +16,8 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<?php print_next_tourstep_links_small(__FILE__); ?>
+
 <img class="pic right rounded" style="margin-top: 25px; margin-right: 6px;" width="200" src="images/tour/tour-integration-workflow.png" alt=""/>
 <h1>Open and well-documented file formats let you integrate OMNEST into your workflow</h1>
 <p class="lefttext">All model files and output files are plain text to make it easier for you to generate and/or process them

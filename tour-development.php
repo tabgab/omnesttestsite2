@@ -16,6 +16,8 @@
 <body>
 <?php print_leadin($tour_menu, __FILE__); ?>
 
+<?php print_next_tourstep_links_small(__FILE__); ?>
+
 <img class="pic right rounded" style="margin-top: 25px;" width="200" src="images/tour/tour-development-components.png" alt=""/>
 <h1>Component-based modeling lets you build your models from reusable, self-contained blocks</h1>
 <p class="lefttext">Simulation models are built from reusable, self-contained components,
