@@ -8,7 +8,7 @@ $touritems = array(
     array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
     array("text"=>"High-Performance Simulation", "link"=>"tour-simulation.php"),
     array("text"=>"Make Right Design Decisions", "link"=>"tour-analysis.php"),
-    array("text"=>"Integrate with OMNEST", "link"=>"tour-integrates.php"),
+    array("text"=>"OMNEST Integrates Well", "link"=>"tour-integrates.php"),
 );
 
 $tour_menu = array(
