@@ -24,10 +24,19 @@
 The IEEE 802.15.4 protocol has become the primary solution for many
 Low-Rate Wireless Personal Area Network (LR-WPAN) applications. This is
 especially the case for industrial sensor network applications such as
-automation control. Researchers from Siemens and University of
-Erlangen-Nuremberg performed a series of OMNeT++-based simulation
-experiments that contribute to a better understanding of IEEE 802.15.4
-behavior. The results outline the capabilities of this protocol in the
+automation control.</p>
+
+<div class="pic right">
+<img src="images/misc/lrwpan.png" width="300" alt="Screenshot of the LR-WPAN model" onclick="enlarge(this);" longdesc="images/misc/lrwpan.png"/>
+<div style="width:250px">Screenshot of the LR-WPAN model in the OMNeT++ user interface (figure from the paper; click to enlarge)</div>
+</div>
+
+<p>Researchers from Siemens and University of Erlangen-Nuremberg performed
+a series of OMNeT++-based simulation experiments that contribute to a better
+understanding of IEEE 802.15.4 behavior. The simulations were performed with
+a IEEE 802.15.4 simulation model the authors developed for OMNeT++.</p>
+
+<p>The results outline the capabilities of this protocol in the
 selected scenarios, and also the limitations. They
 investigated the dependency of the protocol on protocol-inherent
 parameters such as the beacon order and the superframe order, and also to
@@ -35,9 +44,8 @@ different traffic load. The results can be used for planning and deploying
 IEEE 802.15.4 based sensor networks with specific performance demands. A
 special focus was put on application scenarios in industrial sensor network
 applications. The primary requirements were reduced end-to-end latency and
-energy consumption. The results were obtained with the authors' new
-implementation of IEEE 802.15.4 developed for OMNeT++.
-</p>
+energy consumption.</p>
+
 
 <p><a href="pdf/chen2010simulation.pdf">Read the full text (pdf)</a></p>
 
