@@ -47,7 +47,8 @@ Expect frameworks and open-source tweakable models instead of "canned" models.</
 
 <img class="pic left" style="margin-top: -12px;" src="images/tour/omnest-performance.png" width="200">
 <h1>High Performance</h1>
-<p class="righttext">Models are written in C++, and execute on top of a streamlined simulation kernel to provide high event throughput.
+<p class="righttext" style="margin-bottom: 58px;">Models are written in C++, and execute on top of
+a streamlined simulation kernel to provide high event throughput.
 Diagnostic and animation features pose minimal overhead when not in use.</p>
 <div class="separator"></div>
 
