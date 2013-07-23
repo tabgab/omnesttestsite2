@@ -23,9 +23,7 @@
 <body id="whatisomnest">
 <?php print_leadin($tour_menu, __FILE__); ?>
 
-<?php
-print_next_link_small($touritems[0]["link"], "Take the Product Tour!");
-?>
+<!-- <?php print_next_link_small($touritems[0]["link"], "Take the Product Tour!"); ?> -->
 
 <div id="header"><h1 style="background-color: transparent;">OMNEST Is...</h1></div>
 
