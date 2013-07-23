@@ -39,15 +39,16 @@ it can be used for performance modeling of clouds and other HPC systems;
 and for much more.</p>
 <div class="separator"></div>
 
-<img class="pic right" style="margin-top: -8px;" src="images/tour/omnest-for-research.png" width="200">
+<img class="pic right" style="margin-top: -8px; margin-bottom: 20px;" src="images/tour/omnest-for-research.png" width="200">
 <h1>For R&amp;D</h1>
 <p class="lefttext">Researchers and R&amp;D people need to investigate deeper than just parameterizing existing systems.
-Expect frameworks and open-source tweakable models instead of "canned" models.</p>
+Expect frameworks and open-source tweakable models instead of "canned" models, a very extensible
+simulation framework, and many ways to automate your work.</p>
 <div class="separator"></div>
 
-<img class="pic left" style="margin-top: -12px;" src="images/tour/omnest-performance.png" width="200">
+<img class="pic left" style="margin-top: -12px; margin-bottom: 24px;" src="images/tour/omnest-performance.png" width="200">
 <h1>High Performance</h1>
-<p class="righttext" style="margin-bottom: 58px;">Models are written in C++, and execute on top of
+<p class="righttext">Models are written in C++, and execute on top of
 a streamlined simulation kernel to provide high event throughput.
 Diagnostic and animation features pose minimal overhead when not in use.</p>
 <div class="separator"></div>
