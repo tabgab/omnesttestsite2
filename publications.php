@@ -19,6 +19,12 @@
 
 <div id="header"><h1>Selected Publications</h1></div>
 
+
+<div class="pic right" >
+<img src="images/misc/publications-by-year.png" alt="Publications by year"/>
+<div style="width: 230px">Number of OMNEST/OMNeT++ related publications each year (source: Google Scholar)</div>
+</div>
+
 <p><b>OMNeT++, the academic version of OMNEST has grown to be one of the most popular
 simulation platforms for the research of various computer networks.</b>
 In recent years, the number of scientific publications written with OMNeT++ and OMNEST
@@ -26,9 +32,10 @@ has been well over two hundred each year, and this number keeps growing.</p>
 
 <p>Below is a list of selected publications that you may find interesting.</p>
 
+<div style="clear: both;"/>
+<br>
+
 <?php
-
-
 $publications = array(
     // Internet
     "JGRodrigo2010" => array(
