@@ -3,7 +3,7 @@
 // PRODUCT  | TRY OMNEST  | HOW TO BUY | SUPPORT | ABOUT US
 
 $touritems = array(
-    array("text"=>"Take Advantage of Simulation", "link"=>"tour-why-simulation.php"),
+    //array("text"=>"Take Advantage of Simulation", "link"=>"tour-why-simulation.php"),
     array("text"=>"Benefit from Existing Models", "link"=>"tour-models.php"),
     array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
     array("text"=>"High-Performance Simulation", "link"=>"tour-simulation.php"),
