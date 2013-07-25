@@ -8,7 +8,7 @@ $extlinks = array(
      "castalia" => array("link"=>"http://castalia.research.nicta.com.au/index.php/en/", "text"=>"Castalia"),
      "oversim" => array("link"=>"http://www.oversim.org", "text"=>"OverSim"),
      "denacast" => array("link"=>"http://www.denacast.org/", "text"=>"DenaCast"),
-     "ansa" => array("link"=>"https://nes.fit.vutbr.cz/ansa/pmwiki.php?n=Main.HomePage", "text"=>"ANSA"),
+     "ansa" => array("link"=>"http://nes.fit.vutbr.cz/ansa/pmwiki.php?n=Main.HomePage", "text"=>"ANSA"),
      "rease" => array("link"=>"https://i72projekte.tm.uka.de/trac/ReaSE", "text"=>"ReaSE"),
      "hipsimpp" => array("link"=>"http://www.ict-optimix.eu/index.php/HIPSim", "text"=>"HIPSim++"),
      "mcoapp" => array("link"=>"http://mcoa.dei.uc.pt", "text"=>"mCoA++"),

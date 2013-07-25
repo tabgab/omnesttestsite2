@@ -125,7 +125,7 @@ OMNEST licenses for internal research and other purposes.</p>
     <td><a class="noicon" href="http://www.thalesgroup.com/" target="_blank"><img src="references/thales.gif"></a></td>
     <td><p><a href="http://www.thalesgroup.com/" target="_blank">Thales Communications</a> is using OMNEST&#8482; in its research facilities world-wide.
     You can find related information on our network simulation <a href="netsim-references.php">references</a>
-    and <a href="netsim-casestudies.php">case studies</a> pages.</p>
+    and <a href="case-studies.php">case studies</a> pages.</p>
     </td>
 
   </tr>
@@ -207,7 +207,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
   <tr>
     <td><a class="noicon" href="http://www.broadbus.com/" target="_blank"><img src="references/broadbus.gif"></a></td>
-    <td><p><a href="http://www.broadbus.com/" target="_blank">Broadbus Technologies, Inc.</a></p>
+    <td><p><a href="http://motorola.com/" target="_blank">Acquired by Motorola, Inc.</a></p>
     </td>
   </tr>
 

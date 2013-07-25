@@ -3,6 +3,7 @@
 
 <?php include("common/design.php"); ?>
 <?php include("common/casestudies_inc.php"); ?>
+<?php include("common/extlinks_inc.php"); ?>
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -51,8 +52,8 @@ uses preconfigured virtual circuits to deliver data between ESs.)</p>
 <p><b>Considerations.</b> As a first step in our modeling process, we
 investigated what model components are readily available for OMNEST. Because
 AFDX uses Ethernet as the base technology and uses higher layer protocols
-like TCP when transmitting data between applications, we considered <a
-href="inet-framework.php">INET Framework</a>. INET contains both Ethernet
+like TCP when transmitting data between applications, we considered 
+<?php extlink("inet", "INET Framework"); ?>. INET contains both Ethernet
 modules and higher layer protocols like IP, TCP and UDP. We concluded using
 INET Framework would give a too detailed model and would deliver answers to
 questions we are not really interested in (like how the upper level

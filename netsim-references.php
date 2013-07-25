@@ -43,7 +43,8 @@ presented in WP5.
 <img class="pic left" src="images/researchprojects/wasp.png">
 
 <p><b>WASP.</b> The WASP project (Wirelessly Accessible Sensor Populations,
-FP6-IST-2005-2.5.3 Embedded Systems, <a target="_blank" href="http://wasp-project.org" >wasp-project.org</a>)
+<a target="_blank" href="http://cordis.europa.eu/search/index.cfm?fuseaction=proj.document&PJ_RCN=8497100" >
+FP6-IST-2005-2.5.3 Embedded Systems</a>)
 was aimed at the provisioning of a complete system view for building large
 populations of collaborating wireless objects. Three business areas, road transport,
 elderly care, and herd control, were selected for their societal significance and large
@@ -76,11 +77,13 @@ able to adapt to the surrounding environment and user needs, to evolve without
 direct human supervision, and able to deal with large-scale networks of
 heterogeneous nodes ranging from small, cheap devices to more complex network nodes.</p>
 
+<!-- website disappeared
 <p>The project's official simulator, the BIONETS Simulator Platform, is available from
 <a href="http://bionets.hit.bme.hu">bionets.hit.bme.hu</a> as an open-source OMNeT++
 simulation model. An overview of the project and the simulations is presented
 in the paper cited below, and the simulator is documented in the deliverable
 D1.3.2 of the project.</p>
+-->
 
 <p class="bibref">
 Vilmos Simon, Laszlo Bacsardi, Sandor Szabo (TU Budapest), Daniele Miorandi (CREATE-NET), 2007.
@@ -147,7 +150,7 @@ OPTIMIX project deliverable D2.1a, Chapter 7 "OMNeT++ Modules", pp.60.
 <img class="pic left" src="images/researchprojects/ict-rocket.png">
 
 <p><b>ROCKET.</b> ROCKET (Reconfigurable OFDMA-based Cooperative NetworKs Enabled
-by Agile SpecTrum Use, <a href="http://www.ict-rocket.eu" target="_blank">ict-rocket.eu</a>)
+by Agile SpecTrum Use, <a href="http://llocs.upc.edu/www-ictrocket/" target="_blank">http://llocs.upc.edu/www-ictrocket</a>)
 is an FP7 project that aims at providing a ubiquitous wireless solution
 to reach bit rates higher than 100Mbps with peak throughputs higher than 1Gbps,
 based on reconfigurable OFDMA cooperative networks enabled by agile spectrum use.</p>
@@ -158,14 +161,14 @@ contributions on task 3A2 / deliverable D7, building an OMNeT++ simulation
 to compare the MAC-level performance of various Alamouti-based cooperative
 relaying techniques in the single-cell multi-user context of the "one way
 two paths" relay channel scenario</i>
-(<a href="http://www.ict-rocket.eu/thales.htm">source</a>.) The simulation
+(<a href="http://llocs.upc.edu/www-ictrocket/thales.htm" target="_blank">source</a>.) The simulation
 model is documented in deliverable D7.</p>
 
 <p class="bibref">
 R. Hoshyar et al, 2009.
 <i>"3d2 - Multi User Cooperative Transmission techniques for OFDMA Multi-hop Cellular Networks"</i>,
 ROCKET project deliverable D7. Chapter 4, <i>"OMNeT++ simulation framework for ROCKET"</i>, pp.175.
-[<a href="http://www.ict-rocket.eu/documents/Deliverables/ROCKET_3D2UNISt.pdf">pdf</a>]
+[<a href="http://llocs.upc.edu/www-ictrocket/documents/Deliverables/ROCKET_3D2UNISt.pdf" target="_blank">pdf</a>]
 </p>
 
 <hr>
@@ -173,7 +176,7 @@ ROCKET project deliverable D7. Chapter 4, <i>"OMNeT++ simulation framework for R
 <img class="pic left" src="images/researchprojects/boss.png">
 
 <p><b>BOSS.</b> The purpose of the Celtic BOSS project
-(<a href="http://www.celtic-boss.org" target="_blank">celtic-boss.org</a>)
+(<a href="http://celtic-boss.mik.bme.hu/" target="_blank">celtic-boss.mik.bme.hu</a>)
 was the design and prototype development of an efficient railway communication system. This system was aimed
 at supporting the high demands of an audio/video surveillance system in a rolling
 train from a control center on the wayside. The system is based on WiMAX/HSUPA
@@ -184,7 +187,7 @@ used thoughout the project lifetime, and was gradually enriched with modules and
 algorithms developed within the project's technical packages on radio communications,
 signalling, adaptation to impairments, efficient multimedia compression, and
 abnormal events detection. You can read more details in our
-<a href="netsim-casestudies.php">case studies</a> page.</p>
+<a href="casestudy-boss.php">case study</a>.</p>
 
 <p class="bibref">
 C. Lamy-Bergot, 2008. <i>"BOSS: On-board wireless secured video surveillance"</i>,

@@ -26,7 +26,7 @@
       <a class="noicon" href="http://vi-re.com" target="_blank"><img src="images/misc/vire-logo.png"></a>
     </td>
     <td style="vertical-align:top">
-      <b>VI-RE Technologies</b> (<a href="http://vi-re.com" target="_blank">vi-re.com</a>)<br>
+      <b>VI-RE Technologies</b> (<a href="http://www.vi-re.com" target="_blank">www.vi-re.com</a>)<br>
       <a href="http://www.vi-re.com/about/article/contact" target="_blank">address and contact details</a><br>
       Countries: China, Malaysia and Singapore
     </td>

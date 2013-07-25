@@ -29,7 +29,7 @@ yourself at risk if you buy from an unauthorized source.
 </p>
 
 <p>There is only one authorized OMNEST reseller in China:
-<b>VI-RE Technologies</b> (<a href="http://vi-re.com" target="_blank">vi-re.com</a>).
+<b>VI-RE Technologies</b> (<a href="http://www.vi-re.com" target="_blank">www.vi-re.com</a>).
 No other company, or individual may sell you a legitimate copy of
 OMNEST in China. VI-RE has our authorization to prosecute pirates and
 cheats peddling illegal wares.

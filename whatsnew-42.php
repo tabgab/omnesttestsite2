@@ -45,7 +45,7 @@ enhanced documentation. Read on for details.</p>
 <ul>
 
 <li><b>Updated Eclipse Platform
-</b><br/><p>The IDE is now based on <a href="http://download.eclipse.org/eclipse/downloads/drops/R-3.7-201106131736/eclipse-news-part1.html">Eclipse 3.7.1</a>
+</b><br/><p>The IDE is now based on <a href="http://archive.eclipse.org/eclipse/downloads/drops/R-3.7-201106131736/eclipse-news-part1.html">Eclipse 3.7.1</a>
 and <a href="http://wiki.eclipse.org/CDT/User/NewIn80">CDT 8.0.1.</a>
 (Click on the links to review the changes in Eclipse and CDT.)</p>
 <img src="images/whatsnew-42/42-version.png" border="0">

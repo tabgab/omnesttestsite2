@@ -35,7 +35,7 @@ applications.
 <div style="width:300px">The <i>Mare Nostrum</i> supercomputer, which has a unique
 installation location, was optimized with the help of OMNEST (see text.)
 It ranked #26 on the Top500 list of June 2008.
-(<a href="http://www.treehugger.com/files/2007/08/how_to_treat_yo.php" target="_blank">source and more photos</a>)</div>
+(<a href="http://www.treehugger.com/gadgets/how-to-treat-your-computer-marenostrum.html" target="_blank">source and more photos</a>)</div>
 </div>
 
 <p><i>"Large-scale end-to-end simulation of HPC systems running benchmark applications on
