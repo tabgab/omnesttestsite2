@@ -23,40 +23,18 @@
 <p class="lefttext">Support for statistics recording can be easily added to model components
 (if not built in already), and the actual amount and form of data to be recorded
 to disk can be dynamically configured.
-
-You can record time series, histograms, statistical summaries, and
+OMNEST lets you record time series, histograms, statistical summaries, and
 simple scalars like count or average, and you can also turn recording on/off globally,
 by modules or by statistics.
 
 <!--
-<p>Support for statistics recording can be easily added to model components
-(if not built in already), and the actual amount and form of data to be recorded
-to disk can be dynamically configured.
-
-You can record time series, histograms, statistical summaries, and
-simple scalars like count or average, and you can also turn recording on/off globally,
-by modules or by statistics.
--->
-
-<!--
-You can turn recording on/off globally,
-by modules or by statistics, and configure the detail level:
-as time series, histogram, statistical summary, or simple scalars
-like count or average.
-
 <p>Components can be easily instrumented to produce raw statistical data,
 and the simulation framework can record them in different forms:
 as time series, histogram, statistical summary, or simple scalar like count or average.
 
-ComponentsSimulations can be easily instrumented to produce data el
-
 <p>Components can be easily instrumented to produce raw statistical data,
 and the simulation framework can record them in different forms:
 as time series, histogram, statistical summary, or simple scalar like count or average.
-
-record all kinds of data: scalars, summary statistics, histograms, time series, etc.
-
-The amount and form of data to be actually recorded to disk can be dynamically configured
 -->
 
 </p>
@@ -64,7 +42,7 @@ The amount and form of data to be actually recorded to disk can be dynamically c
 
 <img class="pic left rounded" style="margin-top: 12px;" width="200" src="images/tour/tour-analysis-tool.png" alt=""/>
 <h1>The result analysis tool helps you make the right decisions based on the collected data</h1>
-<p class="righttext">The result analysis tool in the IDE allows you to
+<p class="righttext">The result analysis tool in the OMNEST IDE allows you to
 browse, filter, process and plot simulation results in various ways, and even lets you
 automate the process of producing the charts. Charts are also interactive, and let you zoom
 into interesting areas. Data and graphics can be exported in

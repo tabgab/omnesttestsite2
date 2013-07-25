@@ -38,7 +38,7 @@ Queueing &bull; Resource allocation
 
 <img class="pic left rounded" style="margin-top: -9px;" width="200" src="images/tour/tour-models-combine.png" alt=""/>
 <h1>Reusable components let you build new simulations easily</h1>
-<p class="righttext">Simulation models provide you with reusable components that you can freely combine
+<p class="righttext">OMNEST simulation models provide you with reusable components that you can freely combine
 in new simulations. The component model also makes simulation models
 easier to explore, understand and maintain.
 </p>
@@ -46,7 +46,7 @@ easier to explore, understand and maintain.
 
 <img class="pic right rounded" style="margin-top: 16px;" width="200" src="images/tour/tour-models-parameters.png" alt=""/>
 <h1>Concise and flexible parameterization makes it easy to configure your simulations</h1>
-<p class="lefttext">Simulation components can (and usually do) expose several parameters to allow configuring
+<p class="lefttext">OMNEST simulation components can (and usually do) expose several parameters to allow configuring
 their behaviour. This makes it easier to reuse components for new simulations,
 and provides a great degree of freedom. Even for large models, the size of the configuration
 can be kept manageable due to the use of default values and wildcard parameter assigments.</p>
@@ -56,7 +56,8 @@ can be kept manageable due to the use of default values and wildcard parameter a
 <h1>Open source allows you to explore, modify, and extend simulation models at will</h1>
 <p class="righttext">With network simulation, source code availability is a must, because you need to know
 whether and how the model implements various aspects of the real system (e.g. certain protocol features).
-Having the source also allows you to change or enhance the model to fit your needs.</p>
+Having the source also allows you to change or enhance the model to fit your needs. With OMNEST,
+not only simulation models are open source, but you also have the source code to the full system.</p>
 <div class="separator"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>

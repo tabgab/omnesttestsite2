@@ -48,7 +48,9 @@ simulation framework, and many ways to automate your work.</p>
 <h2>High Performance</h2>
 <p class="righttext">Models are written in C++, and execute on top of
 a streamlined simulation kernel to provide high event throughput.
-Diagnostic and animation features pose minimal overhead when not in use.</p>
+Parallel simulation and the possibility to utilize computing clusters
+also saves you time when running large simulations or simulation campaigns.
+</p>
 <div class="separator"></div>
 
 <img class="pic right" style="margin-top: -26px;" src="images/tour/omnest-trusted.png" width="200">

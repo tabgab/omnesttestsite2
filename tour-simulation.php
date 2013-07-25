@@ -20,14 +20,14 @@
 
 <img class="pic right rounded" style="margin-top: 0px;" width="200" src="images/tour/tour-simulation-performance.png" alt=""/>
 <h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
-<p class="lefttext">Models are written in C++, and execute on top of a streamlined simulation kernel
+<p class="lefttext">OMNEST models are written in C++, and execute on top of a streamlined simulation kernel
 to provide high event throughput. Diagnostic and animation features are optional and
 pose minimal overhead when not in use. OMNEST simulations execute fast and scale very well.</p>
 <div class="separator"></div>
 
 <img class="pic left rounded" style="margin-top: -12px;" width="200" src="images/tour/tour-simulation-inspect.png" alt=""/>
 <h1>Graphical simulation runtime environment gives you a deep insight into running simulations</h1>
-<p class="righttext">Simulations can be run in a graphical interactive runtime environment that
+<p class="righttext">OMNEST simulations can be run in a graphical interactive runtime environment that
 lets you explore the simulation model,
 animates packet transmissions and other events,
 lets you pause the model and run it in various modes,
@@ -37,8 +37,12 @@ This feature helps you understand the model, and it is also useful when demonstr
 
 <img class="pic right rounded" style="margin-top: -20px;" width="200" src="images/tour/tour-simulation-parallel.png" alt=""/>
 <h1>Parallel simulation allows you to use all of your computing power simultaneously</h1>
-<p class="lefttext">Often you can utilize parallel simulation on clusters or multicore/multi&shy;processor architectures to
-speed up execution or to distribute memory requirements.
+<p class="lefttext">
+Simulations can also be run outside the IDE and independent from it,
+so you can harness the power of other computers or computing clusters in addition to your OMNEST workstation.
+
+Also, often you can utilize parallel simulation on clusters or multicore/multi&shy;processor
+architectures to speed up execution or to distribute memory requirements.
 Parallel simulation doesn't require models to be instrumented.</p>
 
 <!--
@@ -50,7 +54,7 @@ to obey certain restrictions.</p>
 
 <img class="pic left rounded" style="margin-top: -12px;" width="200" src="images/tour/tour-simulation-hil.png" alt=""/>
 <h1>Real-time hardware-in-the-loop simulation allows you to test the models with the real thing</h1>
-<p class="righttext">The simulation kernel supports real-time and hardware-in-the loop simulation
+<p class="righttext">The OMNEST simulation kernel supports real-time and hardware-in-the loop simulation
 via a plugin interface. Functioning, extensively commented source code examples
 will help you quickly implement your own application-specific hardware-in-the-loop simulation.
 Network emulation capability is available as part of model packages like the INET Framework.</p>
