@@ -44,7 +44,7 @@ $product_menu = array(
 
     array("text"=>"OMNEST in the World", "link"=>"references.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Customers", "link"=>"references.php"),
-        array("text"=>"Testimonials", "link"=>"testimonials.php"),
+        //TODO add back when there is content:  array("text"=>"Testimonials", "link"=>"testimonials.php"),
         array("text"=>"Publications", "link"=>"publications.php"),
         array("text"=>"Case Studies", "link"=>"case-studies.php", "subpages"=>array(
             "casestudy-adhoc.php",
@@ -132,7 +132,7 @@ function print_footer_links()
                     <li><a href="references.php">OMNEST In the World</a>
                         <ul>
                             <li><a href="references.php">Customers</a>
-                            <li><a href="testimonials.php">Testimonials</a>
+                            <!-- <li><a href="testimonials.php">Testimonials</a> -->
                             <li><a href="publications.php">Publications</a>
                             <li><a href="case-studies.php">Case Studies</a>
                             <li><a href="netsim-references.php">Reference Projects</a>
