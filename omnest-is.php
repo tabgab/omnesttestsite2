@@ -30,7 +30,7 @@
 <img class="pic left" style="margin-top: 4px;" src="images/tour/omnest-network-simulator.png" width="200">
 <h2>A Network Simulator Platform</h2>
 <p class="righttext">It provides generic infrastructure for creating, running and evaluating simulations.
-OMNEST can cater for the simulation of communication networks including
+OMNEST caters for the simulation of communication networks including
 wired and wireless networks, mobile ad-hoc networks and sensor networks;
 hardware like high-speed interconnects and networks-on-chip;
 it can be used for performance modeling of clouds and other HPC systems;
@@ -39,7 +39,7 @@ and for much more.</p>
 
 <img class="pic right" style="margin-top: -8px; margin-bottom: 20px;" src="images/tour/omnest-for-research.png" width="200">
 <h2>For R&amp;D</h2>
-<p class="lefttext">Researchers and R&amp;D people need to investigate deeper than just parameterizing existing systems.
+<p class="lefttext">Researchers and innovators need to investigate deeper than just parameterizing existing systems.
 Expect frameworks and open-source tweakable models instead of "canned" models, a very extensible
 simulation framework, and many ways to automate your work.</p>
 <div class="separator"></div>
@@ -55,8 +55,8 @@ also saves you time when running large simulations or simulation campaigns.
 
 <img class="pic right" style="margin-top: -26px;" src="images/tour/omnest-trusted.png" width="200">
 <h2>Trusted by Industry Leaders</h2>
-<p class="lefttext">Many large companies are relying on OMNEST in their R&amp;D for exploring problems
-and design alternatives using network simulation. Several have created their own internal simulation models
+<p class="lefttext">Many reputable companies rely on OMNEST in their R&amp;D for solving problems
+and exploring design alternatives using network simulation. Several have created their own internal simulation models
 or model libraries that they can turn to whenever new challenges appear.</p>
 <div class="separator"></div>
 
@@ -64,7 +64,7 @@ or model libraries that they can turn to whenever new challenges appear.</p>
 <h2>Flexible</h2>
 <p class="righttext">Simulation models are built from self-contained blocks that can be combined in many ways.
 You can explore, modify and enhance models, because you have access to the source code and to platform infrastructure.
-You can also get the simulator work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.</p>
+You can also get the simulator to work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.</p>
 <div class="separator"></div>
 
 <img class="pic right" style="margin-top: 16px;" src="images/tour/omnest-open.png" width="200">
@@ -77,7 +77,7 @@ Simulations can be run on a multitude of platforms.</p>
 
 <img class="pic left" style="margin-top: 16px;" src="images/tour/omnest-community.png" width="200">
 <h2>Well Embedded in the Scientific Community</h2>
-<p class="righttext">Under the name OMNeT++, OMNEST is a well-established tool in the scientific community.
+<p class="righttext">Known by  the name OMNeT++, OMNEST is a well-established tool in the scientific community.
 Over 200 papers are published each year at various conferences and in journals, and
 dedicated workshops take place annually with peer-reviewed submissions. The community mailing list
 is busier than ever, and there are dozens of OMNeT++-related web sites (projects, blogs, etc).
@@ -89,7 +89,7 @@ For you, this means you have access to a huge pool of talent and a wealth of inf
 <p class="lefttext">As a result of the strong user community, there is an ever-growing number of open-source simulation models
 available to you, covering very diverse domains from internet routing to ad-hoc and sensor networks, in-car networks,
 4G, photonic on-chip networks and so on.
-These models can give you a jump-start when building your simulation model to solve the problem at hand.</p>
+These models can give you a jump-start when building your simulation.</p>
 <div class="separator"></div>
 
 <?php
