@@ -21,7 +21,7 @@
 <img class="pic right rounded" style="margin-top: 0px;" width="200" src="images/tour/tour-simulation-performance.png" alt=""/>
 <h1>High-performance simulation kernel lets you fully utilize your hardware</h1>
 <p class="lefttext">OMNEST models are written in C++, and execute on top of a streamlined simulation kernel
-to provide high event throughput. Diagnostic and animation features are optional and
+to provide high event throughput. Diagnostic and animation features can be switched on and off at will and
 pose minimal overhead when not in use. OMNEST simulations execute fast and scale very well.</p>
 <div class="separator"></div>
 
