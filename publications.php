@@ -33,7 +33,6 @@ has been well over two hundred each year, and this number keeps growing.</p>
 <p>Below is a list of selected publications that you may find interesting.</p>
 
 <div style="clear: both;"/>
-<br>
 
 <?php
 $publications = array(
