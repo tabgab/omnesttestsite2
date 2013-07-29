@@ -18,25 +18,7 @@ var mygallery=new fadeSlideShow({
         ["images/slideshow/satellite-dishes.jpg", "", "", ""],
         ["images/slideshow/sensor-nodes.jpg", "", "", ""],
         ["images/slideshow/comm-towers.jpg", "", "", ""],
-
-        //TODO:
-        ["tmp/slideshow/selected/vehicular-network.png", "", "", ""],
-
-/*
-        ["images/slideshow/seq1.png", "", "", ""],
-        ["images/slideshow/ned1.png", "", "", ""],
-        ["images/slideshow/elog1.png", "", "", ""],
-        ["images/slideshow/largenet.png", "", "", ""],
-        ["images/slideshow/tcp.png", "", "", ""]        // NO COMMA HERE
-*/
-/*
-        ["images/slideshow/cell-tower.jpg", "", "", ""],
-        ["images/slideshow/mobile.jpg", "", "", ""],
-        ["images/slideshow/network-hub.jpg", "", "", ""],
-        ["images/slideshow/satellite-antenna.jpg", "", "", ""],
-        ["images/slideshow/surveillance.jpg", "", "", ""],
-        ["images/slideshow/system-on-chip.jpg", "", "", ""]        // NO COMMA HERE
-*/
+        ["images/slideshow/in-car-network.jpg", "", "", ""]        // NO COMMA HERE
     ],
     displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
     persist: false, //remember last viewed slide and recall within same session?
