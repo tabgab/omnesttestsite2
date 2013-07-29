@@ -8,17 +8,18 @@ var mygallery=new fadeSlideShow({
     wrapperid: "bannerslideshow", //ID of blank DIV on page to house Slideshow
     dimensions: [340, 218], //width/height of gallery in pixels. Should reflect dimensions of largest image
     imagearray: [
-        ["images/slideshow/junction.jpg", "", "", ""],
         ["images/slideshow/ethernet-switch.jpg", "", "", ""],
         ["images/slideshow/laptops.jpg", "", "", ""],
-        ["images/slideshow/datacenter.jpg", "", "", ""],
-        ["images/slideshow/optical-switch.jpg", "", "", ""],
-        ["images/slideshow/satellite.jpg", "", "", ""],
         ["images/slideshow/wireless-tower-sign.jpg", "", "", ""],
-        ["images/slideshow/satellite-dishes.jpg", "", "", ""],
+        ["images/slideshow/datacenter.jpg", "", "", ""],
+        ["images/slideshow/junction.jpg", "", "", ""],
+        ["images/slideshow/in-car-network.jpg", "", "", ""],
         ["images/slideshow/sensor-nodes.jpg", "", "", ""],
         ["images/slideshow/comm-towers.jpg", "", "", ""],
-        ["images/slideshow/in-car-network.jpg", "", "", ""]        // NO COMMA HERE
+        ["images/slideshow/optical-switch.jpg", "", "", ""],
+        ["images/slideshow/satellite.jpg", "", "", ""],
+        ["images/slideshow/satellite-dishes.jpg", "", "", ""]
+                                               // NO COMMA AFTER LAST LINE!
     ],
     displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
     persist: false, //remember last viewed slide and recall within same session?
