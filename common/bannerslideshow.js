@@ -15,18 +15,11 @@ var mygallery=new fadeSlideShow({
         ["images/slideshow/satellite.jpg", "", "", ""],
         ["images/slideshow/wireless-tower-sign.jpg", "", "", ""],
         ["images/slideshow/satellite-dishes.jpg", "", "", ""],
+        ["images/slideshow/sensor-nodes.jpg", "", "", ""],
+        ["images/slideshow/comm-towers.jpg", "", "", ""],
 
         //TODO:
-        ["tmp/slideshow/selected/sensornodes3.png", "", "", ""],
-        ["tmp/slideshow/selected/sensornodes6.png", "", "", ""],
-        ["tmp/slideshow/selected/sensornodes5.png", "", "", ""],
         ["tmp/slideshow/selected/vehicular-network.png", "", "", ""],
-        ["tmp/slideshow/selected/dreamstime-telecom-tower-image30744076.jpg", "", "", ""],
-        ["tmp/slideshow/selected/dreamstime-telecommunication-towers-view-from-below-thumb24481352.jpg", "", "", ""],
-        ["tmp/slideshow/selected/dreamstime-telecommunications-towers-thumb24867459.jpg", "", "", ""],
-        ["tmp/slideshow/selected/dreamstime-image23481550.jpg", "", "", ""],
-        ["tmp/slideshow/selected/wsn-yellowstone-terrain-1.png", "", "", ""],
-        ["tmp/slideshow/selected/wsn-yellowstone-terrain-2.png", "", "", ""]
 
 /*
         ["images/slideshow/seq1.png", "", "", ""],
@@ -44,7 +37,7 @@ var mygallery=new fadeSlideShow({
         ["images/slideshow/system-on-chip.jpg", "", "", ""]        // NO COMMA HERE
 */
     ],
-    displaymode: {type:'auto', pause:2000, cycles:0, wraparound:false},
+    displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
     persist: false, //remember last viewed slide and recall within same session?
     fadeduration: 500, //transition duration (milliseconds)
     descreveal: "ondemand",
