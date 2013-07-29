@@ -21,7 +21,7 @@ var mygallery=new fadeSlideShow({
         ["images/slideshow/satellite-dishes.jpg", "", "", ""]
                                                // NO COMMA AFTER LAST LINE!
     ],
-    displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
+    displaymode: {type:'auto', pause:3500, cycles:0, wraparound:false},
     persist: false, //remember last viewed slide and recall within same session?
     fadeduration: 500, //transition duration (milliseconds)
     descreveal: "ondemand",
