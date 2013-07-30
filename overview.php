@@ -40,7 +40,7 @@ chose OMNEST (or OMNeT++):</p>
   <li><b>can be learned fast</b> -- some C++ knowledge is required, but the programming model and
       the API can be picked up quickly, and one can become productive in a short time
 
-  <li><b>great community</b> -- OMNeT++ has a huge user community, and a lot of information
+  <li><b>great community</b> -- the simulator has a huge user community, and a lot of information
       is freely available on the Internet; this is very useful when one bumps into a problem,
       as the solution is often just a web search away (compare that with proprietary
       tools where publicly available information is often limited to marketing materials)
@@ -49,7 +49,7 @@ chose OMNEST (or OMNeT++):</p>
       and can be combined in unexpected ways (because components usually do not interact with
       each other directly on the C++ level, only via means provided by OMNEST, e.g. messages)
 
-  <li><b>flexible</b> -- the simulator and models can be extended in unforeseen ways;
+  <li><b>flexible</b> -- the simulator and models can be extended in pleasantly felxible ways;
       exotic scenarios such as interfacing with other simulators and external systems,
       parallel simulation, emulation, and combinations of the above, can be realized;
       and the full source code is there to study and debug when needed
@@ -65,8 +65,8 @@ modules that primarily communicate by exchanging messages</div>
 </div>
 
 <p>One of the fundamentals of the OMNEST framework is the component-based
-architecture for simulation models. Models are built from reusable
-components, called modules, which can be combined in various ways. The
+architecture of simulation models. Models are built from reusable
+components, called modules, which can be combined to form more complex structures. The
 depth of module nesting is not limited. Modules communicate primarily by
 message passing, via connections or by direct sending. Module behavior can be
 programmed in C++, using the simulation infrastructure OMNEST provides.</p>
@@ -74,7 +74,7 @@ programmed in C++, using the simulation infrastructure OMNEST provides.</p>
 <p>Component architecture provides multiple benefits:</p>
 
 <ul>
-   <li>simulation models are easier to understand and maintain, and can be combined in unexpected ways,
+   <li>simulation models are easier to understand and maintain, and can be combined productively,
        (because components do not interact with each other directly on the C++ level,
        only via means provided by OMNEST, e.g. messages).
    <li>facilitates code reuse
@@ -91,7 +91,7 @@ NED has support for parametric topologies, packages, inheritance, interfaces,
 metadata annotation, documentation comments, and many other language features
 necessary for creating and working with large model frameworks.</p>
 
-<p>Simulation models can be parameterized via module parameters. Module parameters
+<p>Simulation models can be parameterized. Module parameters
 can carry simple (int, double, string, bool) and compound data types (e.g. XML),
 and can be set to values like <i>normal(1.0,0.3)</i> to act as random number sources.
 To reduce the amount of configuration needed to parameterize a model, parameters
@@ -183,7 +183,7 @@ library. This functionality includes:</p>
     to speed up the simulations or to distribute memory requirements.
     Simulation models don't need to be instrumented for parallel simulation, but they need
     to obey certain restrictions (e.g. no global variables and no direct access of
-    components that are instantiated in a different partition).
+    components that are instantiated in a different partition may be used).
     Parallel simulation runs on top of MPI, and employs conservative synchronization.
     Using named pipes or other communication means instead of MPI is also possible.
 
