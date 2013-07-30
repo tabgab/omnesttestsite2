@@ -175,7 +175,7 @@ function iconWithLabel($icon, $name) {
         </td>
         <td>
             <p>Additional library blocks perform further tasks, like the Clone
-            block that duplicates every incoming the job to each of its outputs.
+            block that duplicates every incoming job to each of its outputs.
         </td>
     </tr>
 </table>
