@@ -71,7 +71,11 @@ $purchase_menu = array(
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
     array("text"=>"Learn about OMNEST", "link"=>"overview.php", "crosslink"=>1),
     array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
-    array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
+    array("text"=>"Try OMNEST", "link"=>"try-omnest.php", "subpages"=>array(
+            "download-eval-request.php",
+            "download-eval-post.php",
+            "download-eval.php"
+        )),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Request Quotation", "link"=>"contact.php"),
         array("text"=>"Do I Need a License?", "link"=>"licensingfaq.php"),
@@ -105,17 +109,17 @@ function print_footer_links()
         <tr>
             <td>
                 <ul>
-                    <li><a href="omnest-is.php">Introduction</a>
+                    <li>Introduction
                         <ul>
                             <li><a href="omnest-is.php">What is OMNEST?</a>
-                            <li><a href="tour-why-simulation.php">Product Tour</a>
+                            <li><a href="tour-models.php">Product Tour</a>
                         </ul>
                     </li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="overview.php">Learn More</a>
+                    <li>Learn More
                         <ul>
                             <li><a href="overview.php">Overview</a>
                             <li><a href="application-areas.php">Application Areas</a>
@@ -129,7 +133,7 @@ function print_footer_links()
             </td>
             <td>
                 <ul>
-                    <li><a href="references.php">OMNEST In the World</a>
+                    <li>OMNEST In the World
                         <ul>
                             <li><a href="references.php">Customers</a>
                             <!-- <li><a href="testimonials.php">Testimonials</a> -->

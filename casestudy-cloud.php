@@ -39,7 +39,7 @@ and reservation and provisioning of resources.</p>
 </i>
 
 <div class="pic right" >
-<img src="images/misc/altevogt-cloud-3.png" width="300px" alt="TODO" onclick="enlarge(this);" longdesc="images/misc/altevogt-cloud-3.png"/>
+<img src="images/misc/altevogt-cloud-3.png" width="300px" alt="" onclick="enlarge(this);" longdesc="images/misc/altevogt-cloud-3.png"/>
 <div style="width: 300px">A typical cloud simulation consisting of several clusters,
 each cluster containing a number of managed nodes, storage subsystems,
 and LANs for customer, management, storage access (figure from the paper; click to enlarge)</div>

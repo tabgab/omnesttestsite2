@@ -37,7 +37,7 @@ chose OMNEST (or OMNeT++):</p>
   <li><b>very efficient</b> -- OMNEST simulations execute fast and scale very well,
       which can be surprising given the amount of features in the simulation library
 
-  <li><b>fast learning</b> -- some C++ knowledge is required, but the programming model and
+  <li><b>can be learned fast</b> -- some C++ knowledge is required, but the programming model and
       the API can be picked up quickly, and one can become productive in a short time
 
   <li><b>great community</b> -- OMNeT++ has a huge user community, and a lot of information
@@ -175,7 +175,7 @@ library. This functionality includes:</p>
     You can create your own applications that rely on the OMNEST simulation
     kernel internally for simulation functions: the simulation kernel, model components
     or even whole simulations can be embedded into your program as C++ libraries.
-    <a href="systemc-integration.php">Read more&nbsp;&raquo;</a>
+    <a href="embedding.php">Read more&nbsp;&raquo;</a>
 
     <li><strong>Parallel simulation</strong><br>
     Simulation models can be executed using parallel distributed simulation

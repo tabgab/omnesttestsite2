@@ -37,8 +37,8 @@ OMNEST simulations can also be embedded into your own software products.
 Internet protocols, wireless networks, switched LANs,
 peer-to-peer networks, media streaming,
 mobile ad-hoc networks, mesh networks, wireless sensor networks,
-vehicular networks, NoCs,
-HPC clusters, cloud computing, SANs, optical networks,
+vehicular networks, NoCs, optical networks,
+HPC clusters, cloud computing, SANs,
 and more...
 <a href="simulation-models.php">Explore the models&nbsp;&raquo;</a>
 </p>
