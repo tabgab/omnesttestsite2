@@ -13,9 +13,70 @@ function print_head_contribution() {
  * To be invoked inside <head>
  */
 function print_titlepage_head_contribution() {
-    print_head_contribution_internal(true);
-}
+    print_head_contribution_internal(true); ?>
 
+    <script type="text/javascript">
+        function switchSlideshow() {
+            var $active = $("#slideshow IMG.slideshow-active");
+            if ( $active.length == 0 ) $active = $("#slideshow IMG:last");
+            var $next =  $active.next().length ? $active.next() : $("#slideshow IMG:first");
+            $active.addClass("slideshow-last-active");
+            $next.css({opacity: 0.0})
+                .addClass("slideshow-active")
+                .animate({opacity: 1.0}, 500, function() {
+                    $active.removeClass("slideshow-active slideshow-last-active");
+                });
+        }
+
+        $(function() {
+            var images = 
+                ["images/slideshow/ethernet-switch.jpg",
+                 "images/slideshow/laptops.jpg",
+                 "images/slideshow/wireless-tower-sign.jpg",
+                 "images/slideshow/datacenter.jpg",
+                 "images/slideshow/junction.jpg",
+                 "images/slideshow/in-car-network.jpg",
+                 "images/slideshow/sensor-nodes.jpg",
+                 "images/slideshow/comm-towers.jpg",
+                 "images/slideshow/optical-switch.jpg",
+                 "images/slideshow/satellite.jpg",
+                 "images/slideshow/satellite-dishes.jpg"];
+            var first = true;
+            var slideshow = document.getElementById("slideshow");
+            for (var image in images) {
+                var imageElement = document.createElement("img");
+                imageElement.src = images[image];
+                if (first)
+                    imageElement.setAttribute("class", "slideshow-active");
+                first = false;
+                slideshow.appendChild(imageElement);
+            }
+            setInterval("switchSlideshow()", 3500);
+        });
+    </script>
+
+    <style type="text/css">
+    #slideshow IMG {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+    }
+
+    #slideshow IMG.slideshow-active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow IMG.slideshow-last-active {
+        z-index:9;
+    }
+    </style>
+
+<?php } ?>
+
+<?php
 function print_head_contribution_internal($is_title_page) { ?>
     <base href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME']?>" /> <!-- avoid issues with /index.php/ style tags URI-->
     <link rel="stylesheet" type="text/css" href="common/omnest.css">
@@ -39,9 +100,6 @@ function print_head_contribution_internal($is_title_page) { ?>
     </script>
     <script type="text/javascript" src="common/addGAToLinks.js"></script>
 <?php } ?>
-
-
-
 
 <?php
 /**
@@ -94,8 +152,7 @@ function print_titlepage_leadin() { ?>
         <a href="omnest-is.php"><div style="position:absolute; top:372px; left:96px; width:180px; height:58px" onmouseover="document.getElementById('tourbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('tourbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
 
         <div style="position:absolute; top:120px; left:577px"><img src="common/images/slidewindow.png" alt="Slides"></div>
-        <div style="position:absolute; top:130px; left:606px">
-           <div id="bannerslideshow"></div>
+        <div id="slideshow" style="position:absolute; top:130px; left:606px">
         </div>
 
         <div id="headplaceholder" style="height:427px"></div>
@@ -171,8 +228,6 @@ function print_leadin($menu, $file) { ?>
                 </div>
 
                 <div style="float:right; width:690px; margin: 20px 30px 20px 0">
-
-
 <?php } ?>
 
 <?php
