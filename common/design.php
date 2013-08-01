@@ -29,7 +29,7 @@ function print_titlepage_head_contribution() {
         }
 
         $(function() {
-            var images = 
+            var images =
                 ["images/slideshow/ethernet-switch.jpg",
                  "images/slideshow/laptops.jpg",
                  "images/slideshow/wireless-tower-sign.jpg",
@@ -152,7 +152,7 @@ function print_titlepage_leadin() { ?>
         <a href="omnest-is.php"><div style="position:absolute; top:372px; left:96px; width:180px; height:58px" onmouseover="document.getElementById('tourbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('tourbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
 
         <div style="position:absolute; top:120px; left:577px"><img src="common/images/slidewindow.png" alt="Slides"></div>
-        <div id="slideshow" style="position:absolute; top:130px; left:606px">
+        <div id="slideshow" style="position:absolute; top:130px; left:606px; background-color:#00245A; width:340px; height:218px">
         </div>
 
         <div id="headplaceholder" style="height:427px"></div>
