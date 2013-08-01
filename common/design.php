@@ -53,6 +53,48 @@ function print_titlepage_head_contribution() {
             }
             setInterval("switchSlideshow()", 3500);
         });
+
+        $(function() {
+            var images =
+               ["images/tour/omnest-community.png",
+                "images/tour/omnest-flexible.png",
+                "images/tour/omnest-for-research.png",
+                "images/tour/omnest-models.png",
+                "images/tour/omnest-network-simulator.png",
+                "images/tour/omnest-open.png",
+                "images/tour/omnest-performance.png",
+                "images/tour/omnest-trusted.png",
+                "images/tour/thankyou.png",
+                "images/tour/tour-analysis-integration.png",
+                "images/tour/tour-analysis-record.png",
+                "images/tour/tour-analysis-tool.png",
+                "images/tour/tour-development-components.png",
+                "images/tour/tour-development-debug.png",
+                "images/tour/tour-development-ide-tools.png",
+                "images/tour/tour-development-seqchart.png",
+                "images/tour/tour-integration-eclipse.png",
+                "images/tour/tour-integration-embedding.png",
+                "images/tour/tour-integration-systemc-etc.png",
+                "images/tour/tour-integration-workflow.png",
+                "images/tour/tour-models-combine.png",
+                "images/tour/tour-models-domains.png",
+                "images/tour/tour-models-parameters.png",
+                "images/tour/tour-models-source.png",
+                "images/tour/tour-simulation-hil.png",
+                "images/tour/tour-simulation-inspect.png",
+                "images/tour/tour-simulation-parallel.png",
+                "images/tour/tour-simulation-performance.png",
+                "images/tour/tour-whysim-blueprints.png",
+                "images/tour/tour-whysim-details.png",
+                "images/tour/tour-whysim-largescale.png",
+                "images/tour/tour-whysim-reproduce.png",
+                "images/tour/tour-whysim-verify.png"];
+            for (var image in images) {
+                var imageElement = document.createElement("img");
+                imageElement.src = images[image];
+            }
+        });
+
     </script>
 
     <style type="text/css">
