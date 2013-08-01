@@ -110,7 +110,7 @@ function print_titlepage_leadin() { ?>
     <div id="titlepage" style="position:relative; width: 980px; margin: 0 auto;">
 
         <!-- Banner Area: Logo, Search, Top menu, Banner with Buttons -->
-        <div style="position:absolute; background-image:url(common/images/top_strip_blue.png); top:0px; width:100%; height:6px;">
+        <div style="position:absolute; background-color:#093E65; background-image:url(common/images/top_strip_blue.png); top:0px; width:100%; height:6px;">
             &nbsp;
         </div>
 
@@ -129,7 +129,7 @@ function print_titlepage_leadin() { ?>
                 <?php print_top_menu(null, "index.php"); ?>
         </div>
 
-        <div style="position:absolute; background-image:url(common/images/banner_omnest.jpg); top:78px; width:100%; height:346px;"
+        <div style="position:absolute; background-color:#197C92; background-image:url(common/images/banner_omnest.jpg); top:78px; width:100%; height:346px;"
              alt="queueing, mobile, wireless, photonic, sensor, internet, resource allocation, SystemC, real-time, ad-hoc, emulation, optical, performance, system-on-chip, protocol">
             &nbsp;
         </div>
@@ -195,7 +195,7 @@ function print_leadin($menu, $file) { ?>
   <div style="position:relative; width: 992px; margin: 0 auto; background-image: url(common/images/bg.png); background-repeat: repeat-y; background-position: center top;">
     <div id="container" style="position:relative; width: 980px; margin: 0 auto; background-color: white;">
 
-        <div style="position:absolute; background-image:url(common/images/top_strip_blue.png); top:0px; width:100%; height:6px;">
+        <div style="position:absolute; background-color:#093E65; background-image:url(common/images/top_strip_blue.png); top:0px; width:100%; height:6px;">
             &nbsp;
         </div>
 
@@ -214,7 +214,7 @@ function print_leadin($menu, $file) { ?>
                 <?php print_top_menu($menu, $file); ?>
         </div>
 
-        <div style="position:absolute; background-image:url(common/images/bg_inner.jpg); top:78px; width:100%; height:38px;">
+        <div style="position:absolute; background-color:#257D93; background-image:url(common/images/bg_inner.jpg); top:78px; width:100%; height:38px;">
             &nbsp;
         </div>
 
