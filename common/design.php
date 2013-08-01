@@ -79,8 +79,12 @@ function print_titlepage_head_contribution() {
 <?php
 function print_head_contribution_internal($is_title_page) { ?>
     <base href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME']?>" /> <!-- avoid issues with /index.php/ style tags URI-->
-    <link rel="stylesheet" type="text/css" href="common/omnest.css">
-
+    <style type="text/css">
+<?php
+// optimization: include instead of <link rel="stylesheet" type="text/css" href="common/omnest.css">
+include("common/omnest.css");
+?>
+    </style>
     <!--[if lt IE 7.]>
       <script defer type="text/javascript" src="common/pngfix.js"></script>
     <![endif]-->
@@ -98,7 +102,12 @@ function print_head_contribution_internal($is_title_page) { ?>
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
     </script>
-    <script type="text/javascript" src="common/addGAToLinks.js"></script>
+    <script type="text/javascript">
+<?php
+// optimization: include instead of <script type="text/javascript" src="common/addGAToLinks.js">
+ include("common/addGAToLinks.js");
+?>
+    </script>
 <?php } ?>
 
 <?php
