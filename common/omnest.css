@@ -106,17 +106,6 @@ h1 {
     padding: 3px 6px 2px 6px;
 }
 
-#whatisomnest h2 {
-    font-size: 22px;
-    color: #265268;
-    background-color: #C9C9EF;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    padding: 6px 8px 3px 8px;
-    margin-left: -8px;
-}
-
 h2 {
     font-size: 18px;
 }
