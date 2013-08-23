@@ -38,7 +38,7 @@ and for much more.</p>
 <div class="separator"></div>
 
 <img class="pic right" style="margin-top: -8px; margin-bottom: 20px;" src="images/tour/omnest-for-research.png" width="200">
-<h2>For R&amp;D</h2>
+<h2>Designed for Innovators</h2>
 <p class="lefttext">Researchers and innovators need to investigate deeper than just parameterizing existing systems.
 Expect frameworks and open-source tweakable models instead of "canned" models, a very extensible
 simulation framework, and many ways to automate your work.</p>
