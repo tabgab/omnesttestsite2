@@ -133,6 +133,8 @@ include("common/omnest.css");
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
 	  var _gaq = _gaq || [];
+	  var pluginUrl =  '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
 	  _gaq.push(['_setAccount', 'UA-240922-1']);
 	  _gaq.push(['_setDomainName', 'omnest.com']);
 	  _gaq.push(['_setAllowLinker', true]);
@@ -200,7 +202,7 @@ function print_titlepage_leadin() { ?>
         <!-- preload button hover images -->
         <img style="display:none" src="common/images/button_learn_more_hover.png" alt="">
         <!-- sensitive areas -->
-        <a href="omnest-is.php"><div style="position:absolute; top:372px; left:96px; width:180px; height:58px" onmouseover="document.getElementById('tourbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('tourbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+        <a href="omnest-is.php" id="button"><div style="position:absolute; top:372px; left:96px; width:180px; height:58px" onmouseover="document.getElementById('tourbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('tourbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
 
         <div style="position:absolute; top:120px; left:577px"><img src="common/images/slidewindow.png" alt=""></div>
         <div id="slideshow" style="position:absolute; top:130px; left:606px; background-color:#00245A; width:340px; height:218px">

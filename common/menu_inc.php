@@ -111,8 +111,8 @@ function print_footer_links()
                 <ul>
                     <li>Introduction
                         <ul>
-                            <li><a href="omnest-is.php">What is OMNEST?</a>
-                            <li><a href="tour-models.php">Product Tour</a>
+                            <li><a href="omnest-is.php" id="footermenu">What is OMNEST?</a>
+                            <li><a href="tour-models.php" id="footermenu">Product Tour</a>
                         </ul>
                     </li>
                 </ul>
@@ -121,12 +121,12 @@ function print_footer_links()
                 <ul>
                     <li>Learn More
                         <ul>
-                            <li><a href="overview.php">Overview</a>
-                            <li><a href="application-areas.php">Application Areas</a>
-                            <li><a href="simulation-models.php">Simulation Models</a>
-                            <li><a href="ide.php">Simulation IDE</a>
-                            <li><a href="demo-videos.php">Demo Videos</a>
-                            <li><a href="documentation.php">Documentation</a>
+                            <li><a href="overview.php" id="footermenu">Overview</a>
+                            <li><a href="application-areas.php" id="footermenu">Application Areas</a>
+                            <li><a href="simulation-models.php" id="footermenu">Simulation Models</a>
+                            <li><a href="ide.php" id="footermenu">Simulation IDE</a>
+                            <li><a href="demo-videos.php" id="footermenu">Demo Videos</a>
+                            <li><a href="documentation.php" id="footermenu">Documentation</a>
                         </ul>
                     </li>
                 </ul>
@@ -135,32 +135,32 @@ function print_footer_links()
                 <ul>
                     <li>OMNEST In the World
                         <ul>
-                            <li><a href="references.php">Customers</a>
-                            <!-- <li><a href="testimonials.php">Testimonials</a> -->
-                            <li><a href="publications.php">Publications</a>
-                            <li><a href="case-studies.php">Case Studies</a>
-                            <li><a href="netsim-references.php">Reference Projects</a>
-                            <li><a href="network-simulation-book.php">Book Recommendation</a>
+                            <li><a href="references.php" id="footermenu">Customers</a>
+                            <!-- <li><a href="testimonials.php" id="footermenu">Testimonials</a> -->
+                            <li><a href="publications.php" id="footermenu">Publications</a>
+                            <li><a href="case-studies.php" id="footermenu">Case Studies</a>
+                            <li><a href="netsim-references.php" id="footermenu">Reference Projects</a>
+                            <li><a href="network-simulation-book.php" id="footermenu">Book Recommendation</a>
                         </ul>
                     </li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="contact.php">Contact Us /<br> Request Quotation</a></li>
-                    <li><a href="licensingfaq.php">Do I Need a License?</a></li>
-                    <li><a href="licensing.php">Licensing Options</a></li>
-                    <li><a href="license.php">License Agreement</a></li>
-                    <li><a href="comparison.php">OMNeT++ Comparison</a></li>
-                    <li><a href="support.php">Technical Support</a></li>
-                    <li><a href="download.php">Download OMNEST</a></li>
-                    <li><a href="services.php">Training and Consulting</a></li>
+                    <li><a href="contact.php" id="footermenu">Contact Us /<br> Request Quotation</a></li>
+                    <li><a href="licensingfaq.php" id="footermenu">Do I Need a License?</a></li>
+                    <li><a href="licensing.php" id="footermenu">Licensing Options</a></li>
+                    <li><a href="license.php" id="footermenu">License Agreement</a></li>
+                    <li><a href="comparison.php" id="footermenu">OMNeT++ Comparison</a></li>
+                    <li><a href="support.php" id="footermenu">Technical Support</a></li>
+                    <li><a href="download.php" id="footermenu">Download OMNEST</a></li>
+                    <li><a href="services.php" id="footermenu">Training and Consulting</a></li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="company.php">Company</a>
-                    <li><a href="partners.php">Partners</a>
+                    <li><a href="company.php" id="footermenu">Company</a>
+                    <li><a href="partners.php" id="footermenu">Partners</a>
                 </ul>
             </td>
         </tr>
@@ -208,7 +208,7 @@ function print_top_menu($menu, $current_page)
 function print_top_menu_item($name, $link, $is_selected)
 {
     $class_name = $is_selected ? "topmenuitem_selected" : "topmenuitem";
-    echo "<a href=\"$link\" class=\"$class_name\">$name</a>";
+    echo "<a href=\"$link\"  id=\"topmenu\" class=\"$class_name\">$name</a>";
 }
 
 function print_menu($menu, $current_page)
@@ -218,13 +218,13 @@ function print_menu($menu, $current_page)
     echo "<div class=\"vmenu\">\n";
     foreach ($menu as $menuitem) {
         $class_attr = " class=\"vmenuitem" . (is_highlightable($menuitem,$current_page) ? " selected\"" : "\"");
-        printf(" <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $menuitem["link"], $menuitem["text"]);
+        printf(" <div%s><a  id=\"menu\" href=\"%s\">%s</a></div>\n", $class_attr, $menuitem["link"], $menuitem["text"]);
         if (array_key_exists("submenu", $menuitem)) {
             $submenu = $menuitem["submenu"];
             echo "  <div class=\"vsubmenu\">\n";
             foreach ($submenu as $submenuitem) {
                 $class_attr = " class=\"vsubmenuitem" . (is_highlightable($submenuitem,$current_page) ? " selected\"" : "\"");
-                printf("   <div%s><a href=\"%s\">%s</a></div>\n", $class_attr, $submenuitem["link"], $submenuitem["text"]);
+                printf("   <div%s><a id=\"menu\" href=\"%s\">%s</a></div>\n", $class_attr, $submenuitem["link"], $submenuitem["text"]);
             }
             echo "  </div>\n";
         }
@@ -284,9 +284,9 @@ function array_get($array, $index)
 function print_next_link($url, $text, $small=false)
 {
     if ($small)
-        echo "<div class=\"next-small\" style=\"text-align:right; height:0px\"><a href=\"" . $url . "\">" . $text . "&nbsp;&raquo;</a></div>\n";
+        echo "<div class=\"next-small\" style=\"text-align:right; height:0px\"><a id=\"small_next_link\" href=\"" . $url . "\">" . $text . "&nbsp;&raquo;</a></div>\n";
     else
-        echo "<div class=\"next\" style=\"text-align:right\"><a href=\"" . $url . "\">" . $text . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
+        echo "<div class=\"next\" style=\"text-align:right\"><a id=\"large_next_link\" href=\"" . $url . "\">" . $text . " <img src=\"common/images/button_next.png\"><img src=\"common/images/button_next.png\"></a></div>\n";
 }
 
 function print_next_link_small($url, $text)
