@@ -29,7 +29,7 @@ h2 {
 
 <img class="pic left" style="margin-top: 20px;" src="images/tour/omnest-network-simulator.png" width="260">
 <h2>A Network Simulator Platform</h2>
-<p class="righttext">It provides generic infrastructure for creating, running and evaluating simulations.
+<p class="righttext">OMNEST provides generic infrastructure for creating, running and evaluating simulations.
 OMNEST caters for the simulation of communication networks including
 wired and wireless networks, mobile ad-hoc networks and sensor networks;
 hardware like high-speed interconnects and networks-on-chip;
@@ -39,7 +39,10 @@ and for much more.</p>
 
 <img class="pic right" style="margin-top: -8px; margin-bottom: 20px;" src="images/tour/omnest-for-research.png" width="260">
 <h2>Designed for Innovators</h2>
-<p class="lefttext">Researchers and innovators need to investigate deeper than just parameterizing existing systems.
+<p class="lefttext">
+As an innovator or researcher, you know you need to investigate deep into systems &mdash;
+tweaking existing configuration parameters isn't enough.
+OMNEST gives you freedom in testing your ideas: it lets you implement in simulation what you want, the way you want it.
 Expect frameworks and open-source tweakable models instead of "canned" models, a very extensible
 simulation framework, and many ways to automate your work.</p>
 <div class="separator"></div>
