@@ -22,23 +22,30 @@
 
 <h3>Previous versions</h3>
 <ul>
+    <li><a href="/download/commercial4/omnest-4.3-win32.exe" >OMNEST 4.3 for Windows (installer) - 293MB</a><br/>
+    <small>md5sum: feb02e4cddf7512efbcb012a6654c626</small>
+    </li>
+    <li><a href="/download/commercial4/omnest-4.3-src.tgz" >OMNEST 4.3 for Linux, Mac OS X (TGZ) - 141MB</a><br/>
+    <small>md5sum: fc50a9d70b35792aeac72d7a337cff25</small>
+    </li>
 
-    <li><a href="/download/commercial4/omnest-4.2.2-win32.exe" >OMNEST 4.2.2 for Windows (installer) - 293Mb</a><br/>
+
+    <li><a href="/download/commercial4/omnest-4.2.2-win32.exe" >OMNEST 4.2.2 for Windows (installer) - 293MB</a><br/>
     <small>md5sum: d2f48dc9c27e3dda968ceebef93c9df8</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.2.2-src.tgz" >OMNEST 4.2.2 for Linux, Mac OS X (TGZ) - 141Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.2.2-src.tgz" >OMNEST 4.2.2 for Linux, Mac OS X (TGZ) - 141MB</a><br/>
     <small>md5sum: 8c79d459e696147c86e041f23704f97f</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.1-win32.exe" >OMNEST 4.1 for Windows (installer) - 293Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.1-win32.exe" >OMNEST 4.1 for Windows (installer) - 293MB</a><br/>
     <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux, Mac OS X (TGZ) - 141Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux, Mac OS X (TGZ) - 141MB</a><br/>
     <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.0-win32.exe" >OMNEST 4.0 for Windows (installer) - 231Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.0-win32.exe" >OMNEST 4.0 for Windows (installer) - 231MB</a><br/>
     <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.0p1-src.tgz" >OMNEST 4.0p1 for Linux, Mac OS X (TGZ) - 120Mb</a><br/>
+    <li><a href="/download/commercial4/omnest-4.0p1-src.tgz" >OMNEST 4.0p1 for Linux, Mac OS X (TGZ) - 120MB</a><br/>
     <small>md5sum: d7b4e5a584d532e42f1656f96bc83fda</small>
     </li>
 

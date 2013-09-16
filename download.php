@@ -20,28 +20,28 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 4.3 <a href="whatsnew-43.php">(What's new in this release?)</a></h3>
+<h3 style="margin-bottom:0">Latest stable version: 4.3.1 <a href="whatsnew-431.php">(What's new in this release?)</a></h3>
 
 <h3>Downloads:</h3>
 
 <table style="border-spacing:10px">
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a class="noicon" href="/download/commercial4/omnest-4.3-win32.exe"><img src="images/misc/win-logo.png"/></a>
+      <a class="noicon" href="/download/commercial4/omnest-4.3.1-win32.exe"><img src="images/misc/win-logo.png"/></a>
     </td>
     <td>
-      <a href="/download/commercial4/omnest-4.3-win32.exe">OMNEST 4.3 for Windows (installer) - 381Mb</a><br/>
-      <small>md5: feb02e4cddf7512efbcb012a6654c626</small>
+      <a href="/download/commercial4/omnest-4.3.1-win32.exe">OMNEST 4.3.1 for Windows (installer) - 377MB</a><br/>
+      <small>md5: b2e9eb75b6cf1b67a8d7a499f1a31436</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 20px; text-align: right">
-      <a class="noicon" href="/download/commercial4/omnest-4.3-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
+      <a class="noicon" href="/download/commercial4/omnest-4.3.1-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial4/omnest-4.3-src.tgz" >OMNEST 4.3 for Linux and Mac OS X (TGZ) - 166Mb</a><br/>
-       <small>md5: fc50a9d70b35792aeac72d7a337cff25</small>
+       <a href="/download/commercial4/omnest-4.3.1-src.tgz" >OMNEST 4.3.1 for Linux and Mac OS X (TGZ) - 166MB</a><br/>
+       <small>md5: e60ab15576c5a9960ad611a64827f5e6</small>
     </td>
   </tr>
 
