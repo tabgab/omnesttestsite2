@@ -40,7 +40,7 @@ and for much more.</p>
 <img class="pic right" style="margin-top: -8px; margin-bottom: 20px;" src="images/tour/omnest-for-research.png" width="260">
 <h2>Designed for Innovators</h2>
 <p class="lefttext">
-As an innovator or researcher, you know you need to investigate deep into systems &mdash;
+As an innovator or researcher, you need to investigate deep into systems &mdash;
 tweaking existing configuration parameters isn't enough.
 OMNEST gives you freedom in testing your ideas: it lets you implement in simulation what you want, the way you want it.
 Expect frameworks and open-source tweakable models instead of "canned" models, a very extensible
