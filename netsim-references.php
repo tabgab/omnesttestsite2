@@ -20,6 +20,76 @@
 
 <p>OMNeT++ was used in several EU-sponsored research projects:</p>
 
+
+<hr>
+
+<img class="pic left" src="images/researchprojects/geysers.png">
+
+<p><b>GEYSERS.</b> The vision of the GEYSERS (Generalized Infrastructure for Dynamic
+Infrastructure Services, <a target="_blank" href="http://geysers.eu">geysers.eu</a>)
+FP7 project is to qualify optical infrastructure providers and network
+operators with a new architecture, to enhance their traditional business
+operations. Infrastructure Providers will compose virtual infrastructures
+and rent them out to Virtual Infrastructure Operators, which will run
+cost-efficient, dynamic and mission-specific infrastructures by means of
+integrated control and virtualization management techniques.</p>
+
+<p>University of Ghent as a project partner developed a simulation
+framework built on OMNeT++ for performance studies of the GEYSERS
+architecture. The GEYSERS model is based on the MPLS, RSVP and LDP protocol
+implementations in the INET Framework.</p>
+
+<p class="bibref">
+De Leenheer, M.; Buysse, J. et al., 2011.
+"Design and Implementation of a Simulation Environment for Network Virtualization".
+In proceedings of the IEEE 16th International Workshop on Computer Aided Modeling
+and Design of Communication Links and Networks (CAMAD), 10-11 June 2011, Kyoto, Japan.
+[<a target="_blank" href="http://users.atlantis.ugent.be/cdvelder/papers/2011/deleenheer2011camad.pdf">pdf</a>]
+</p>
+
+<hr>
+
+<img class="pic left" src="images/researchprojects/pursuit.png">
+
+<p><b>PURSUIT.</b> The PURSUIT (Publish Subscribe Internet Technology,
+<a target="_blank" href="http://fp7-pursuit.eu">fp7-pursuit.eu</a>)
+FP7 project is concerned with a system-level approach to re-designing the
+major function of the current Internet, namely the internetworking layer.
+PURSUIT directly builds on the vision and results from the former FP7 project
+PSIRP.
+</p>
+
+<p>OMNeT++ was mainly used for the development of simulators for the
+proposed name resolution solutions. The base module developed for this
+purpose was H-Pastry, a hierarchical version of the Pastry Distributed Hash
+Table (DHT) overlay. H-Pastry was developed as an extension of the Pastry
+DHT simulator that comes with the Oversim package of overlay networks for
+OMNeT++. Another simulator module was developed in OMNeT++ for evaluating
+Selective Neighbour Caching (SNC).</p>
+
+<p class="bibref">
+Janne Riihij&auml;rvi et al, 2012. PURSUIT project deliverable D4.4,
+"Description of Validation and Simulation Tools in PURSUIT Context",
+Section 2.3 "OMNeT++ Simulator", pp.10.
+[<a target="_blank" href="http://wiki.fp7-pursuit.eu/uploads/4/45/INFSO-ICT-257217_PURSUIT_D4_4_v1_0_final.pdf">pdf</a>]
+
+</p>
+<hr>
+
+<img class="pic left" src="images/researchprojects/uloop.png">
+
+<p><b>ULOOP.</b> The ULOOP (User-centric Wireless Local Loop,
+<a target="_blank" href="http://uloop.eu">uloop.eu</a>) FP7
+project brings in a fresh approach to user-centricity by exploring
+user-provided networking aspects in a way that expands the reach of a
+multi-access backbone.</p>
+
+<p>The OMNeT++ simulation model for the ULOOP Resource Management / RelaySpot
+is available as part of the D3.6 public deliverable.
+[<a target="_blank" href="http://siti.ulusofona.pt/~uloop/documents/uloop-documents">download page</a>]
+
+</p>
+
 <hr>
 
 <img class="pic left" src="images/researchprojects/4ward.png">
@@ -30,12 +100,12 @@ is to make the development of networks and networked applications faster and eas
 leading to both more advanced and more affordable communication services.
 </p>
 
-<p>OMNeT++ was used in Working Package 5 of 4WARDS (Generic Path architecture and mechanisms)
-to implement an optical network model for validatig the ontology-based resource description concept
+<p>OMNeT++ was used in Working Package 5 of 4WARD (Generic Path architecture and mechanisms)
+to implement an optical network model for validating the ontology-based resource description concept
 presented in WP5.
 </p>
 
-<p class="bibref">Deliverable for 4WARDS, WP5: <i>D-5.3 Evaluation of Generic Path architecture and mechanisms</i>
+<p class="bibref">Deliverable for 4WARD, WP5: <i>D-5.3 Evaluation of Generic Path architecture and mechanisms</i>
 [<a target="_blank" href="http://www.4ward-project.eu/index.php?s=file_download&amp;id=98">pdf</a>]</p>
 
 <hr>
