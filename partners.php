@@ -34,16 +34,6 @@
 
   <tr>
     <td style="height:80px; width:180px">
-      <a class="noicon" href="http://www.eswlab.com" target="_blank"><img src="images/misc/eswlab-logo.gif"></a>
-    </td>
-    <td>
-      <b>Engineering Software Lab, Ltd.</b> (<a href="http://www.eswlab.com" target="_blank">eswlab.com</a>)<br>
-      Countries: Israel
-    </td>
-  </tr>
-
-  <tr>
-    <td style="height:80px; width:180px">
       <a class="noicon" href="http://www.pulse-denshi.co.jp" target="_blank"><img src="images/misc/pulse-denshi-logo.png"></a>
     </td>
     <td>
@@ -52,17 +42,6 @@
     </td>
   </tr>
 
-<!--
-  <tr>
-    <td style="height:80px; width:180px">
-      <a class="noicon" href="http://dellsoft.in" target="_blank"><img src="images/misc/dellsoft-logo.jpg"></a>
-    </td>
-    <td>
-      <b>DELLSOFT Technologies</b> (<a href="http://dellsoft.in" target="_blank">dellsoft.in</a>)</a><br>
-      Countries: India
-    </td>
-  </tr>
--->
 </table>
 
 <p>Note: <a href="piracy.php">Piracy of OMNeT++ Licenses in China</a>.</p>
