@@ -31,8 +31,9 @@ function addGoogleAnalyticsToLinks() {
 			as[i].onclick = function()
 			{ 
 				var splitResult = this.href.split("//");
-				_gaq.push(['_trackPageview', '/ext/' +splitResult[1]]);
-				// alert("ext/" +splitResult[1]);
+				// _gaq.push(['_trackPageview', '/ext/' +splitResult[1]]);
+				ga('send', 'pageview', '/ext/' +splitResult[1]);
+				// alert("/ext/" +splitResult[1]);
 			};
 		}
 
@@ -44,8 +45,9 @@ function addGoogleAnalyticsToLinks() {
 				as[i].onclick = function()
 				{ 
 					var splitResult = this.href.split(extTrack[0]);
-					_gaq.push(['_trackPageview', '/files' + splitResult[1]]);
-					// alert("files" +splitResult[1]);
+					// _gaq.push(['_trackPageview', '/files' + splitResult[1]]);
+					ga('send', 'pageview', '/files' + splitResult[1]);
+					// alert("/files/" +splitResult[1]);
 				};
 			}
 		}
