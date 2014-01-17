@@ -31,7 +31,7 @@
     </td>
     <td>
       <a href="/download/commercial4/omnest-4.4-win32.exe">OMNEST 4.4 for Windows (installer) - 405MB</a><br/>
-      <small>md5sum: ba9cf5d9e660da8c568750c3bcbdb83e</small>
+      <small>md5sum: b8dcc680a549c1860c71fc5810cdb396</small>
     </td>
   </tr>
 
@@ -41,7 +41,7 @@
     </td>
     <td>
        <a href="/download/commercial4/omnest-4.4-src.tgz" >OMNEST 4.4 for Linux and Mac OS X (TGZ) - 184MB</a><br/>
-       <small>md5: b5e58bbd6fd8a8e6f51d1f68c7587ebf</small>
+       <small>md5sum: 4f104d3dc8dd3b58c1d9a94079858737</small>
     </td>
   </tr>
 
