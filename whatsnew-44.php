@@ -18,10 +18,12 @@
 
 <div id="header"><h1>What's New in OMNEST 4.4</h1></div>
 
-<p>The focus of this update is to make OMNEST more compatible with recent operating system versions
-and to improve its debugging capabilities.</p>
+<p>The focus of this update is to improve compatibility with the latest
+operating system and compiler releases. It also introduces features that
+help you debug and verify simulation models more efficiently. Read on for
+details.</p>
 
-<p>Sim:</p>
+<p>Simulation Core:</p>
 
 <ul>
   <li>
@@ -54,16 +56,15 @@ and to improve its debugging capabilities.</p>
     to be used without a corresponding @statistic attribute, e.g. they
     can now be added to signals programmatically.
   </li>
-</ul>
-
-<p>Further signals-related changes:</p>
-
-<ul>
-  <li>added emit(simsignal_t, const cObject*) to cComponent</li>
-  <li>added receiveSignal() overload for bool to cIListener</li>
-  <li>introduced SimsignalType which replaces the older cITimestampedValue::Type</li>
-  <li>added cObjectFactory::isInstance() method that effectively wraps a dynamic_cast</li>
-  <li>added Register_Abstract_Class() macro that allows abstract classes to be used in signal declarations as type.</li>
+  <li>Further signals-related changes:
+    <ul>
+      <li>added emit(simsignal_t, const cObject*) to cComponent</li>
+      <li>added receiveSignal() overload for bool to cIListener</li>
+      <li>introduced SimsignalType which replaces the older cITimestampedValue::Type</li>
+      <li>added cObjectFactory::isInstance() method that effectively wraps a dynamic_cast</li>
+      <li>added Register_Abstract_Class() macro that allows abstract classes to be used in signal declarations as type.</li>
+    </ul>
+  </li>
   <li>Added cNEDValue::parseQuantity()</li>
   <li>New result filter: removeRepeats</li>
   <li>Feature: Just-in-time debugging support.
