@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - What's New in the 4.4 Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+</head>
+
+<body>
+<?php print_leadin($product_menu, __FILE__); ?>
+
+<div id="header"><h1>What's New in OMNEST 4.4</h1></div>
+
+<p>The focus of this update is to make OMNEST more compatible with recent operaing system versions
+and to improve its debugging capabilities.</p>
+
+<p>Sim:</p>
+<ul>
+<li>
+    Support for optional signal checking. When signal checking is turned on,
+    signals emitted by modules/channels must be declared with a @signal property
+    in the module&#8217;s or channel&#8217;s NED description; undeclared signals will result
+    in a runtime error. Signal declarations are of the form
+<pre><tt>@signal[&lt;signalName&gt;](type=&lt;dataType&gt;);</tt></pre>
+<p>&lt;signalName&gt; may contain wildcards (?,*). Type is optional; if present,
+data type can be long, unsigned long, double, simtime_t, string, or a
+registered class name. To allow NULL pointers, append a question mark to
+the class name. Example:</p>
+<pre><tt>@signal[receivedPk](type=cPacket?);</tt></pre>
+<p>This feature is controlled by the check-signals=&lt;bool&gt; configuration
+option, and it is turned off by default for now.</p>
+</li>
+<li>
+    Support for @statistic-style declarative result recording on dynamically
+    registered signals (e.g. "conn-<n>" where n is an integer). Instead of
+    @statistic, add a @statisticTemplate property in the NED file, and for
+    each new signal call ev.addResultRecorders(...).
+</li>
+<li>
+    Support for programmatically adding result filters and recorders on
+    signals: cResultRecorder has been revised to allow result recorders
+    to be used without a corresponding @statistic attribute, e.g. they
+    can now be added to signals programmatically.    
+</li>
+</ul>
+<p>
+Further signals-related changes:
+</p>
+<ul>
+<li>
+added emit(simsignal_t, const cObject*) to cComponent
+</li>
+<li>
+added receiveSignal() overload for bool to cIListener
+</li>
+<li>
+introduced SimsignalType which replaces the older cITimestampedValue::Type
+</li>
+<li>
+added cObjectFactory::isInstance() method that effectively wraps a
+      dynamic_cast
+</li>
+<li>
+added Register_Abstract_Class() macro that allows abstract classes to be
+      used in signal declarations as type.
+</li>
+<li>
+Added cNEDValue::parseQuantity()
+</li>
+<li>
+New result filter: removeRepeats
+</li>
+<li>
+Feature: Just-in-time debugging support.
+<ul>
+<li>
+new configuration options: <em>debugger-attach-on-startup</em>, <em>debugger-attach-on-error</em>,
+        <em>debugger-attach-command</em>, <em>debugger-attach-wait-time</em>.
+</li>
+<li>
+the simulation kernel can invoke the debugger on an error (or on startup)
+        using the command-line specified by the <em>debugger-attach-command</em> option.
+</li>
+</ul>
+</li>
+</ul>
+<p>NED:</p>
+<ul>
+<li>
+More freedom in NED property syntax: (1) Hyphens, dots and colons are now
+    allowed in property names and indices; and (2) values no longer need
+    to be enclosed in quotes if they contain parens, provided that parens are
+    balanced.
+</li>
+</ul>
+<p>Tkenv:</p>
+<ul>
+<li>
+Feature: Animation filters (right-click on any message, and select
+    "Exclude messages like <em>&#8230;</em> from animation" from the context menu.)
+</li>
+<li>
+Feature: "Debug Next Event" (Ctrl+F9). It causes the simulation program
+    to stop in the debugger just before entering the handleMessage() call.
+</li>
+<li>
+Fixes and workarounds for various issues on Mac OS X (poor animation speed,
+    missing icons on OS X Mavericks, hang on the F5 key, etc.)
+</li>
+<li>
+Fix: the "Filter Window Contents" dialog could lose state
+</li>
+<li>
+Source cleanup (consistent naming style for Tcl procedures)
+</li>
+</ul>
+<p>IDE:</p>
+<ul>
+<li>
+Use Eclipse 4.3 as base platform
+</li>
+<li>
+Support for project-specific images: icons from the "images/" folder of the
+    project and its dependencies are automatically used by the NED editor, and
+    added to the Tkenv image path when the simulation is launched. (The folder
+    name is currently hardcoded; it will become configurable in future versions.)
+</li>
+<li>
+Sequence Chart: Fixed bug that caused including the same reuses multiple times.
+    Fixed error handling when the error occurs in paint during startup.
+</li>
+</ul>
+<p>Improved support for C++11, Mac OS X:</p>
+<ul>
+<li>
+The source now compiles without any warning with both gcc and clang, using
+    the "-std=c++11 -Wall" flags (clang is the default compiler on OS X since
+    version 10.9 Mavericks).
+</li>
+<li>
+Added proper support for cross-compilation using ./configure --host=i686-w64-mingw32
+</li>
+<li>
+Updated install instructions for OS X 10.9 Mavericks. Specifically, gdb is
+    no longer distributed with OS X; users are expected to install it themselves
+    from MacPorts, and digitally sign it.
+</li>
+<li>
+IDE: fixed the launcher not to throw error if the toolchain is clang.
+</li>
+<li>
+Updated the source to compile with both Bison 2.3 and 3.0
+</li>
+</ul>
+<p>Bugs fixed: <a target="_blank" href="http://tinyurl.com/omnetpp44-fixes">http://tinyurl.com/omnetpp44-fixes</a></p>
+
+<br/>
+<h2><a href="whatsnew-431.php">What's New in OMNEST 4.3.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+
+<?php print_leadout(); ?>
+</body>
+</html>
+
