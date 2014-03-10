@@ -16,11 +16,10 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>What's New in OMNEST 4.4</h1></div>
+<div id="header"><h1>What's New in OMNEST 4.4.1</h1></div>
 
-<p>The focus of this update is to improve compatibility with the latest
-operating system and compiler releases. It also introduces features that
-help you debug and verify simulation models more efficiently.
+<p>This is a bugfix release for OMNEST 4.4. The focus of version 4.4 
+was to improve compatibility with the latest operating system and compilers releases.
 </p>
 
 <p>Simulation Core:</p>
@@ -141,7 +140,7 @@ help you debug and verify simulation models more efficiently.
   <li>Updated the source to compile with both Bison 2.3 and 3.0</li>
 </ul>
 
-<p>Bugs fixed: <a target="_blank" href="http://tinyurl.com/omnetpp44-fixes">http://tinyurl.com/omnetpp44-fixes</a></p>
+<p>Bugs fixed: <a target="_blank" href="http://tinyurl.com/omnetpp441-fixes">http://tinyurl.com/omnetpp441-fixes</a></p>
 
 <br/>
 <h2><a href="whatsnew-431.php">What's New in OMNEST 4.3.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>

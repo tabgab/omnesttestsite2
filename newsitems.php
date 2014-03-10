@@ -9,7 +9,7 @@ $news = array(
         "title" => "OMNEST 4.4.1 released",
         "date" => "March 10, 2014",
         "summary" => "OMNEST 4.4.1 has been released with bugfixes.",
-        "link" => "whatsnew-44.php"
+        "link" => "whatsnew-441.php"
     ),
 
     array(
