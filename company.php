@@ -24,15 +24,6 @@ reseller partners.</p>
 
 <p>OMNEST/OMNeT++ is copyright (c) 1992-2013 <a href="http://opensim.hu/index_en.html">OpenSim Ltd</a>.</p>
 
-<p>Simulcraft and Opensim successfully blend the open-source approach with
-commercial activities. We derive pride and satisfaction from being able
-to serve thousands of people -- students, lecturers, researchers -- who are
-using OMNeT++ in Academia, and we believe that our key to success is
-the open source approach and a live and thriving user community.
-The revenue from OMNEST allows us to continually improve and support OMNeT++,
-and generally contribute to the growth of the community.
-</p>
-
 <h2>Company Information</h2>
 
 <p><b>Simulcraft Inc.</b><br>
