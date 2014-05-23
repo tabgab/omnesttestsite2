@@ -63,6 +63,7 @@ function send_mails()
     $embedding = $_POST['embedding'];
     $message = $_POST['message'];
     $newsletter = $_POST['newsletter'];
+    $turing = $_POST['turing'];
 
     $headers =
         'MIME-Version: 1.0' . $eol .
@@ -114,7 +115,10 @@ function send_mails()
 
 if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $_POST['email']) < 1) {
     echo "Please press the back button on your browser and provide a valid email address so that we can send you the download location of the evaluation version.";
-} else if (strpos($_POST['message'],"http:") !== false) {
+} else if ($_POST['turing'] != "17") {
+    echo ("Please prove that you are a human by solving the Turing test on the previous page!");
+} else if (strpos($_POST['message'],"http:") !== false || strpos($_POST['message'],"https:") !== false ||
+           strpos($_POST['position'],"http:") !== false || strpos($_POST['position'],"https:") !== false) {
     echo ("Urls are not allowed in the message. Thank you for your understanding.");
 } else if (!send_mails()) {
     echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b> or try again later.");
