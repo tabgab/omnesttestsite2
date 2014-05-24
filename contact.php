@@ -45,6 +45,9 @@ matters related to OMNEST, and will not disclose it to third parties.</p>
 <tr>
 <td>Position:<sup>*</sup></td><td><input type="text" name="position" style="width: 400px;" /></td>
 </tr>
+<tr>
+<td>Turing test: How much<br>is six plus eleven?<sup>*</sup></td><td><input type="text" name="turing" style="width: 400px;" /></td>
+</tr>
 
 <tr>
 <td>OMNeT++ experience:<sup>*</sup></td><td>
@@ -111,6 +114,8 @@ matters related to OMNEST, and will not disclose it to third parties.</p>
   frmvalidator.addValidation("name","req","Please enter your name");
   frmvalidator.addValidation("email","req","Please enter your e-mail address");
   frmvalidator.addValidation("email","email","Please enter a valid e-mail address");
+  frmvalidator.addValidation("turing","req","Please prove that you are a human by solving the Turing test!");
+  frmvalidator.addValidation("turing","regexp=17","Please prove that you are a human by solving the Turing test!");
   frmvalidator.addValidation("company","req","Please enter your company");
   frmvalidator.addValidation("position","req","Please provide your position in your company");
   frmvalidator.addValidation("omnetpp_experience","dontselect=0","Please select whether you have previous experience with OMNeT++");
