@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - What's New in the 4.4 Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+</head>
+
+<body>
+<?php print_leadin($product_menu, __FILE__); ?>
+
+<div id="header"><h1>What's New in OMNEST 4.5</h1></div>
+<p>Tkenv:</p>
+<p>The focus of version 4.5 was to improve the usability of the graphical runtime environment (Tkenv).</p>
+<ul>
+<li>
+<p>
+The Tkenv GUI has been redesigned for single-window mode to improve
+   usability and user experience. Tkenv has also received a new, modern look
+   and feel, due to the use of the Ttk widgets and a custom Ttk theme.
+</p>
+</li>
+<li>
+<p>
+single-window mode, with object navigator + 3 built-in inspectors
+     that interact in a meaningful way (new inspector windows can still
+     be opened)
+</p>
+</li>
+<li>
+<p>
+keep inpector windows on top of the main window at all times
+</p>
+</li>
+<li>
+<p>
+use Ttk widgets everywhere, with custom theme - this makes a huge
+     difference in looks on all platforms but esp. on OS X
+</p>
+</li>
+<li>
+<p>
+BLT no longer needed (we use Ttk instead)
+</p>
+</li>
+<li>
+<p>
+inspectors are no longer tied to a single object; visited objects
+     are remembered as navigable history (back/forward)
+</p>
+</li>
+<li>
+<p>
+module graphics now remembers zoom level and settings per NED type
+</p>
+</li>
+<li>
+<p>
+for each log line, the context module is now stored, and is shown
+     as a line prefix where it makes sense (differs from event&#8217;s module)
+</p>
+</li>
+<li>
+<p>
+Tkenv now stores message sendings and also a clone of corresponding
+     message objects (cMessage), and can show them in the log window
+</p>
+</li>
+<li>
+<p>
+message printer classes can be contributed to customize the
+     messages view of log windows
+</p>
+</li>
+<li>
+<p>
+more concise status area that shows more information at the same time
+</p>
+</li>
+<li>
+<p>
+part of the status area can be turned off to free up vertical space
+</p>
+</li>
+<li>
+<p>
+timeline drawing now adapts to font size
+</p>
+</li>
+<li>
+<p>
+on-demand scrollbars (i.e. they are hidden when not needed)
+</p>
+</li>
+<li>
+<p>
+main menu cleanup (reorganized, removed obsolete items)
+</p>
+</li>
+<li>
+<p>
+dialogs where it makes sense now remember size and location
+</p>
+</li>
+<li>
+<p>
+additional hotkeys: Ctrl+Plus/Minus for Zoom, Ctrl+F5 Run Until,
+     Ctrl+Q Quit, etc.
+</p>
+</li>
+<li>
+<p>
+OS X: use Command key for hotkeys instead of Ctrl
+</p>
+</li>
+<li>
+<p>
+countless other, smaller improvements
+</p>
+</li>
+</ul><p>Other:</p>
+<ul>
+<li>
+<p>
+In the Windows bundle, the debugger have been upgraded to gdb-7.7;
+    Tcl/Tk has been upgraded to version 8.6.0.
+</p>
+</li>
+<li>
+<p>
+New configure.user option to prefer clang over gcc if both are installed
+</p>
+</li>
+<li>
+<p>
+New configure.user option to enable/disable C++ 11 compilance (-std=c++11)
+    Note that this is NOT supported on Windows because of issues with the bundled
+    MinGW 4.7 compiler.
+</p>
+</li>
+<li>
+<p>
+Tcl/Tk version 8.5 is required, 8.6 is preferred; BLT is no longer in use
+</p>
+</li>
+</ul>
+<p>Bugs fixed: <a href="http://tinyurl.com/omnetpp45-fixes">http://tinyurl.com/omnetpp45-fixes</a></p>
+
+
+<br/>
+<h2><a href="whatsnew-441.php">What's New in OMNEST 4.4.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+
+<?php print_leadout(); ?>
+</body>
+</html>
+
