@@ -8,7 +8,7 @@ $news = array(
         "id" => "omnest-4.5",
         "title" => "OMNEST 4.5 released",
         "date" => "July 16, 2014",
-        "summary" => "OMNEST 4.5 has been released with improved graphical runtime.",
+        "summary" => "OMNEST 4.5 has been released.",
         "link" => "whatsnew-45.php"
     ),
 

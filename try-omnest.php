@@ -32,7 +32,7 @@ libraries, tools, the IDE, sample simulations and documentation.
       <a class="noicon" href="download-eval-request.php"><img src="images/misc/download-win-eval.png"/></a>
     </td>
     <td style="vertical-align: top">
-      <p>Installs OMNEST Evaluation on a Windows machine (Windows 8, 7 or XP).
+      <p>Installs OMNEST Evaluation on a Windows machine (Windows 8 or 7).
       You can run and modify all the provided samples and create your own small simulations.
       You can also download, install and try OMNeT++ models from the web.
       </p>
