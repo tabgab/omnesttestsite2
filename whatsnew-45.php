@@ -18,103 +18,110 @@
 
 <div id="header"><h1>What's New in OMNEST 4.5</h1></div>
 <p>The focus of version 4.5 was to improve the usability of the graphical runtime environment (Tkenv).</p>
+
 <h2>Tkenv</h2>
 <ul>
 
-<li>Tkenv Usability Improvements
+<li><b>Single-Window Mode</b>
    <p>The Tkenv GUI has been redesigned for single-window mode to improve
    usability and user experience. New inspector windows can still
-     be opened, and they are kept always above the main window.</p>
-<img src="images/whatsnew-45/45-single-window.png" border="0"><br>
+   be opened, and they are kept always above the main window.</p>
+   <img src="images/whatsnew-45/45-single-window.png" border="0"><br>
+   <br><br>
 </li>
 
-<li>
-single-window mode, with object navigator + 3 built-in inspectors
-     that interact in a meaningful way (new inspector windows can still
-     be opened)
-</li>
-
-<li>New Look and Feel
+<li><b>New Look and Feel</b>
    <p>Tkenv has also received a new, modern look
    and feel, due to the use of the Ttk widgets and a custom Ttk theme.
-   This makes a huge difference in looks on all platforms, but especially on OS X. 
+   This makes a huge difference in looks on all platforms, but especially on OS X.
    See before (left) and after (right) screenshots.</p>
-<img src="images/whatsnew-45/45-newtheme.png" border="0" width="650">
+   <img src="images/whatsnew-45/45-newtheme.png" border="0" width="650">
+   <br><br>
 </li>
 
-<li>Inspector Navigation History
-    <p>Inspectors are no longer tied to a single object and visited objects
-     are remembered as navigable history (back/forward/up). Local toolbars
-     were added to the upper right corner of the inspectors with navigation and
-     other context aware actions.</p>
-<img src="images/whatsnew-45/45-inspector-nav.png" border="0">
+<li><b>Navigation History for Inspectors</b>
+   <p>Inspectors are no longer tied to a single object and visited objects
+   are remembered as navigable history (back/forward/up). Local toolbars
+   were added to the upper right corner of the inspectors with navigation and
+   other context aware actions.</p>
+   <img src="images/whatsnew-45/45-inspector-nav.png" border="0">
+   <br><br>
 </li>
 
-<li>New Message Tracing
-    <p>Tkenv now stores message sendings and also a clone of corresponding
-     message objects (cMessage), and can show them in the log window.
-     Message printer classes can be contributed to customize the
-     content of the log lines. Switching between the module log and 
-     the message trace is possible using the local toolbar in the log 
-     inspector window.</p>
-<img src="images/whatsnew-45/45-message-trace.png" border="0">
+<li><b>Packet Trace View</b>
+   <p>Tkenv now stores message sendings and also a clone of corresponding
+   message objects (cMessage), and can show them in the log window.
+   Message printer classes can be contributed to customize the
+   content of the log lines. Switching between the module log and
+   the message trace is possible using the local toolbar in the log
+   inspector window.</p>
+   <img src="images/whatsnew-45/45-message-trace.png" border="0">
+   <br><br>
 </li>
 
-<li>Optimized Status Area
-    <p>The status area is more concise now (two rows instead of three), 
-       and shows more information at the same time.
-       A part of the status area can be turned off to free up vertical space (Ctrl+D).
+<li><b>Optimized Status Area</b>
+   <p>The status area is more concise now (two rows instead of three),
+   and shows more information at the same time.
+   A part of the status area can be turned off to free up vertical space (Ctrl+D).
+   </p>
+   <img src="images/whatsnew-45/45-status-area.png" border="0">
+   <br><br>
+</li>
+
+<li><b>Main Menu Cleanup</b>
+    <p>We have reorganized the main menu, removed obsolete menu items
+    and added numerous smaller improvements:
+    additional hotkeys (Ctrl+Plus/Minus for Zoom, Ctrl+F5 Run Until,
+    Ctrl+Q Quit); on-demand scrollbars (i.e. they are hidden when not needed);
+    module graphics now remembers zoom level and settings per NED type; etc.
     </p>
-<img src="images/whatsnew-45/45-status-area.png" border="0">
+    <img src="images/whatsnew-45/45-menu-cleanup.png" border="0">
+    <br><br>
 </li>
 
-<li>Main Menu Cleanup
-    <p>We have reorganized the main menu, removed obsolete menu items 
-       and added numerous smaller improvements:
-       additional hotkeys (Ctrl+Plus/Minus for Zoom, Ctrl+F5 Run Until,
-       Ctrl+Q Quit); on-demand scrollbars (i.e. they are hidden when not needed);
-       module graphics now remembers zoom level and settings per NED type; etc.
-    </p>
-<img src="images/whatsnew-45/45-menu-cleanup.png" border="0">
+</ul>
+
+<p><b>Other Tkenv Improvements:</b></p>
+
+<ul>
+
+<li>
+Module graphics now remembers zoom level and settings per NED type
 </li>
 
 <li>
-BLT no longer needed (we use Ttk instead)
+For each log line, the context module is now stored, and is shown
+     as a line prefix where it makes sense (where it differs from event&#8217;s module)
 </li>
 
 <li>
-module graphics now remembers zoom level and settings per NED type
-</li>
-
-<li>
-for each log line, the context module is now stored, and is shown
-     as a line prefix where it makes sense (differs from event&#8217;s module)
-</li>
-
-<li>
-message printer classes can be contributed to customize the
+Message printer classes can be contributed to customize the
      messages view of log windows
 </li>
 
 <li>
-timeline drawing now adapts to font size
+Timeline drawing now adapts to font size
 </li>
 
 <li>
-on-demand scrollbars (i.e. they are hidden when not needed)
+On-demand scrollbars (i.e. they are hidden when not needed)
 </li>
 
 <li>
-dialogs where it makes sense now remember size and location
+Dialogs where it makes sense now remember size and location
 </li>
 
 <li>
-additional hotkeys: Ctrl+Plus/Minus for Zoom, Ctrl+F5 Run Until,
+Additional hotkeys: Ctrl+Plus/Minus for Zoom, Ctrl+F5 Run Until,
      Ctrl+Q Quit, etc.
 </li>
 
 <li>
 OS X: use Command key for hotkeys instead of Ctrl
+</li>
+
+<li>
+BLT is no longer needed (we use Ttk instead)
 </li>
 
 </ul>
