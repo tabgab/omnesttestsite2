@@ -110,7 +110,7 @@ function send_mails()
     "The OMNEST Team" . $eol;
 
     //dbg: return maildummy($destaddr, "OMNEST Evaluation Request", $body, $headers) && maildummy($email, "OMNEST Evaluation Download", $confirm_body, $confirm_headers);
-    return mail($destaddr, "OMNEST Evaluation Request", $body, $headers) && mail($email, "OMNEST Evaluation Download", $confirm_body, $confirm_headers);
+    return mail($destaddr, "OMNEST Evaluation Request - " . $name, $body, $headers) && mail($email, "OMNEST Evaluation Download", $confirm_body, $confirm_headers);
 }
 
 if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $_POST['email']) < 1) {
