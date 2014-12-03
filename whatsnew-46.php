@@ -17,10 +17,11 @@
 <?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>What's New in OMNEST 4.6</h1></div>
-<p>The focus of version 4.6 was to enable C++11 compatibility and to update
-the bundled windows toolchain to MSYS2/MINGW64(32bit). Additionally, we made 
-several usability enhancements to Tkenv (zooming) and made the IDE a native 
-64-bit application on Mac OS X.</p>
+
+<p>Highlights of this release: simulation models are now compiled as C++11 sources;
+we have upgraded the Windows toolchain to MSYS2 and the latest MinGW;
+the debut of the opp_test program; and the rewrite of opp_msgc as part of nedtool.
+There were also numerous bug fixes.</p>
 
 <h2>Tkenv:</h2>
 <ul>
@@ -72,10 +73,10 @@ several usability enhancements to Tkenv (zooming) and made the IDE a native
     <li><p>The bundled MSYS2 toolchain now contains the pacman package manager,
         so you can install additional packages if you wish</p></li>
     <li><p>Change in OMNEST: The msys/ directory has been moved to tools/win32/ while
-        the mingw/ directory that contains the compiler has been moved to 
+        the mingw/ directory that contains the compiler has been moved to
         tools/win32/mingw32/.</p></li>
     </ul>
-</li>      
+</li>
 </ul>
 
 
