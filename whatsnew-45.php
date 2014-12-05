@@ -5,7 +5,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - What's New in the 4.4 Version</title>
+    <title>OMNEST - What's New in the 4.5 Version</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
