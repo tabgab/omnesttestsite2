@@ -120,7 +120,7 @@ function print_titlepage_head_contribution() {
 
 <?php
 function print_head_contribution_internal($is_title_page) { ?>
-    <base href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME']?>" /> <!-- avoid issues with /index.php/ style tags URI-->
+    <base href="<?php echo "//" . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME']?>" /> <!-- avoid issues with /index.php/ style tags URI-->
     <style type="text/css">
 <?php
 // optimization: include instead of <link rel="stylesheet" type="text/css" href="common/omnest.css">
