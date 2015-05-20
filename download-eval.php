@@ -81,11 +81,11 @@ var google_conversion_label = "DEFAULT";
 //-->
 
 </script>
-<script language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js">
+<script language="JavaScript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
 
 <noscript>
-<img height=1 width=1 src="http://www.googleadservices.com/pagead/conversion/1067620223/?value=1&label=DEFAULT&script=0">
+<img height=1 width=1 src="//www.googleadservices.com/pagead/conversion/1067620223/?value=1&label=DEFAULT&script=0">
 </noscript>
 
 <?php print_leadout(); ?>

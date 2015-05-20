@@ -19,7 +19,7 @@
 <div id="header"><h1>Search Results</h1></div>
 
 <div id="cse-search-form" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script src="//www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
   google.load('search', '1', {language : 'en', style : google.loader.themes.DEFAULT});
   google.setOnLoadCallback(function() {

@@ -7,7 +7,7 @@ if (levenshtein($pos_field, "student") <= $similarity || levenshtein($pos_field,
     || levenshtein($pos_field, "estudiante") <= $similarity) {
 ?>
 <head>
-<meta HTTP-EQUIV="REFRESH" content="0; url=http://www.omnetpp.org/" />
+<meta HTTP-EQUIV="REFRESH" content="0; url=//www.omnetpp.org/" />
 </head>
 <?php
 } else {
@@ -34,7 +34,7 @@ include("common/design.php");
 
 error_reporting(0); // turn off all errors and warnings (including notices caused by unfilled form fields)
 
-$download_url = "http://omnest.com/download-eval.php?id=2bef15153a2f7c8";
+$download_url = "//omnest.com/download-eval.php?id=2bef15153a2f7c8";
 
 function maildummy($to, $subject, $message, $additional_headers)
 {
