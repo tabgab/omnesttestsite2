@@ -102,10 +102,10 @@ of extra components and features in OMNEST (<a href="comparison.php">comparison<
     </tr>
     <tr>
         <td>
-            Goverment Institute
+            Government Institute
         </td>
         <td>
-            Goverment or Commercial funded research, or joint venture.
+            Government or Commercial funded research, or joint venture.
         </td>
         <td>
             Commercial
@@ -116,7 +116,7 @@ of extra components and features in OMNEST (<a href="comparison.php">comparison<
             Military Institute
         </td>
         <td>
-            Goverment or Commercial Research.
+            Government or Commercial Research.
         </td>
         <td>
             Commercial
