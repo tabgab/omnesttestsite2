@@ -1,1 +1,2 @@
-Redirect /license //omnest.com/license.php
+Redirect /license http://omnest.com/license.php
+Redirect /download http://omnetpp.org/download
