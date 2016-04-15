@@ -20,37 +20,47 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 4.6 <a href="whatsnew-46.php">(What's new in this release?)</a></h3>
+<h3 style="margin-bottom:0">Latest stable version: 5.0 <!-- <a href="whatsnew-50.php">(What's new in this release?)</a>--></h3>
 
 <h3>Downloads:</h3>
 
 <table style="border-spacing:10px">
   <tr>
-    <td style="width:80px; padding-right: 20px; text-align: right">
-      <a class="noicon" href="/download/commercial4/omnest-4.6-win32.exe"><img src="images/misc/win-logo.png"/></a>
+    <td style="width:80px; padding-right: 0px; text-align: center;">
+      <a class="noicon" href="/download/commercial5/omnest-5.0-src-windows.zip"><img src="images/misc/win10-logo.png"/></a>
     </td>
     <td>
-      <a href="/download/commercial4/omnest-4.6-win32.exe">OMNEST 4.6 for Windows (installer) - 500MB</a><br/>
-      <small>md5sum: b1344fb75229a537e0c772a0c0894cf4</small>
+      <a href="/download/commercial5/omnest-5.0-src-windows.zip">OMNEST 5.0 for Windows (ZIP) - 537MB</a><br/>
+      <small>md5sum: 4b5d95a24904a5d9b9e6331fdd24f8b7</small>
     </td>
   </tr>
 
   <tr>
-    <td style="width:80px; padding-right: 20px; text-align: right">
-      <a class="noicon" href="/download/commercial4/omnest-4.6-src.tgz"><img src="images/misc/osx-linux-logo.png"></a>
+    <td style="width:80px; padding-right: 0px; text-align: center">
+      <a class="noicon" href="/download/commercial5/omnest-5.0-src.tgz"><img src="images/misc/linux-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial4/omnest-4.6-src.tgz" >OMNEST 4.6 for Linux and Mac OS X (TGZ) - 190MB</a><br/>
-       <small>md5sum: eebbe33e58ec3db270e4185fe397f798</small>
+       <a href="/download/commercial5/omnest-5.0-src.tgz" >OMNEST 5.0 for Linux (TGZ) - 220MB</a><br/>
+       <small>md5sum: f11847b33ab072bfef336b86e82c2434</small>
     </td>
   </tr>
 
   <tr>
-    <td style="width:80px; padding-right: 20px; text-align: right">
-      <a class="noicon" href="/download/commercial4/InstallGuide.pdf"><img src="images/misc/pdf.png"></a>
+    <td style="width:80px; padding-right: 0px; text-align: center">
+      <a class="noicon" href="/download/commercial5/omnest-5.0-src-macosx.tgz"><img src="images/misc/osx-logo.png"></a>
     </td>
     <td>
-      <a href="/download/commercial4/InstallGuide.pdf" >Installation Guide (PDF)</a>
+       <a href="/download/commercial5/omnest-5.0-src-macosx.tgz" >OMNEST 5.0 for Mac OS X (TGZ) - 260MB</a><br/>
+       <small>md5sum: 8e53ad852902dfa3f97aa36b75d02886</small>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="width:80px; padding-right: 0px; text-align: center">
+      <a class="noicon" href="/download/commercial5/InstallGuide.pdf"><img src="images/misc/pdf.png"></a>
+    </td>
+    <td>
+      <a href="/download/commercial5/InstallGuide.pdf" >Installation Guide (PDF)</a>
     </td>
   </tr>
 

@@ -22,6 +22,12 @@
 
 <h3>Previous versions</h3>
 <ul>
+    <li><a href="/download/commercial4/omnest-4.6-win32.exe">OMNEST 4.6 for Windows (installer) - 500MB</a><br/>
+    <small>md5sum: b1344fb75229a537e0c772a0c0894cf4</small>
+    </li>
+    <li><a href="/download/commercial4/omnest-4.6-src.tgz">OMNEST 4.6 for Linux and Mac OS X (TGZ) - 190MB</a><br/>
+    <small>md5sum: eebbe33e58ec3db270e4185fe397f798</small>
+    </li>
     <li><a href="/download/commercial4/omnest-4.5-win32.exe">OMNEST 4.5 for Windows (installer) - 405MB</a><br/>
     <small>md5sum: 3e42d26f8eba03dca2a248fb253cdef3</small>
     </li>
