@@ -31,7 +31,9 @@
     </td>
     <td>
       <a href="/download/commercial5/omnest-5.0-src-windows.zip">OMNEST 5.0 for Windows (ZIP) - 537MB</a><br/>
-      <small>md5sum: 4b5d95a24904a5d9b9e6331fdd24f8b7</small>
+      <small>md5sum: 4b5d95a24904a5d9b9e6331fdd24f8b7</small><br>
+      <small>This is a source package that does not contain precompiled binaries, one needs to compile them
+      from source. Another download containing binaries and packaged as an installer is coming soon.</small>
     </td>
   </tr>
 
