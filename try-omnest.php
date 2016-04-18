@@ -50,7 +50,7 @@ libraries, tools, the IDE, sample simulations and documentation.
   </tr>
   <tr>
     <td style="width:130px; vertical-align: top">
-      <center><img src="images/misc/osx-linux-logo.png"></center>
+      <center><img src="images/misc/osx-logo.png"><img src="images/misc/linux-logo.png"></center>
     </td>
     <td style="vertical-align: top">
       OMNEST has wide platform support. In addition to Windows, the IDE is also available on Mac OS X and Linux,
