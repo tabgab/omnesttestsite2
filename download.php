@@ -20,7 +20,7 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 5.0 <!-- <a href="whatsnew-50.php">(What's new in this release?)</a>--></h3>
+<h3 style="margin-bottom:0">Latest stable version: 5.0 <a href="whatsnew-50.php">(What's new in this release?)</a></h3>
 
 <h3>Downloads:</h3>
 
