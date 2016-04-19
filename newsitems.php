@@ -5,6 +5,14 @@
 //
 $news = array(
     array(
+        "id" => "omnest-5.0",
+        "title" => "OMNEST 5.0 released",
+        "date" => "Apr 14, 2016",
+        "summary" => "OMNEST 5.0 has been released with major new features.",
+        "link" => "whatsnew-50.php"
+    ),
+
+    array(
         "id" => "omnest-4.6",
         "title" => "OMNEST 4.6 released",
         "date" => "Dec 2, 2014",
