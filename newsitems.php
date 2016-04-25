@@ -8,7 +8,9 @@ $news = array(
         "id" => "omnest-5.0",
         "title" => "OMNEST 5.0 released",
         "date" => "Apr 14, 2016",
-        "summary" => "OMNEST 5.0 has been released with major new features.",
+        "summary" => "OMNEST 5.0 has been released.
+        New features include 3D graphics support, support for rich 2D graphics, 
+        improved logging, a new Qt-based runtime environment, and much more.",
         "link" => "whatsnew-50.php"
     ),
 
