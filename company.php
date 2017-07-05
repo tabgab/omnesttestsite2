@@ -27,10 +27,6 @@ reseller partners.</p>
 <h2>Company Information</h2>
 
 <p><b>Simulcraft Inc.</b><br>
-OT Center, Crystal Offices<br>
-Victoria, Mah&eacute;<br>
-Republic of Seychelles<br>
-Fax: +44 20 7681 1502<br>
 E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a></p>
 
 <p>You can also contact us using the <a href="contact.php">contact page</a>.</p>
