@@ -18,11 +18,9 @@
 
 <div id="header"><h1>About Us</h1></div>
 
-<p>Simulcraft, Inc. is the exclusive distributor of OMNEST software worldwide.
+<p>Simulcraft, Inc. is a distributor of OMNEST software worldwide.
 OMNEST licenses and support contracts are available from Simulcraft and its authorized
 reseller partners.</p>
-
-<p>OMNEST/OMNeT++ is copyright (c) 1992-2013 <a href="http://opensim.hu/index_en.html">OpenSim Ltd</a>.</p>
 
 <h2>Company Information</h2>
 
