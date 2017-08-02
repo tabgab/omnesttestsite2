@@ -113,7 +113,6 @@ of extra components and features in OMNEST (<a href="comparison.php">comparison<
   frmvalidator.addValidation("email","email","Please enter a valid e-mail address");
   frmvalidator.addValidation("company","req","Please enter your company");
   frmvalidator.addValidation("turing","req","Please prove that you are a human by solving the Turing test!");
-  frmvalidator.addValidation("turing","regexp=17","Please prove that you are a human by solving the Turing test!");
   frmvalidator.addValidation("position","req","Please provide your position in your company");
   frmvalidator.addValidation("omnetpp_experience","dontselect=0","Please select whether you have previous experience with OMNeT++");
   frmvalidator.addValidation("cpp_experience","dontselect=0","Please select whether you have C++ experience");
