@@ -18,23 +18,20 @@
 
 <div id="header"><h1>Search Results</h1></div>
 
-<div id="cse-search-form" style="width: 100%;">Loading</div>
-<script src="//www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1', {language : 'en', style : google.loader.themes.DEFAULT});
-  google.setOnLoadCallback(function() {
-    var customSearchControl = new google.search.CustomSearchControl('009649308609806762212:j2rolk7vjoq');
-    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    var options = new google.search.DrawOptions();
-    options.setSearchFormRoot('cse-search-form');
-
-    options.setAutoComplete(true);
-    customSearchControl.draw('cse', options);
-    customSearchControl.execute("<?php echo addslashes($_GET['q']); ?>");
-  }, true);
+<div id="cse-search-form" style="width: 100%;">
+<script>
+(function() {
+  var cx = '016744391605184731946:wpp0gg8gyhq';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
 </script>
-
-<div id="cse" style="width:100%;"></div>
+<gcse:searchresults-only></gcse:searchresults-only>
+</div>
 
 <?php print_leadout(); ?>
 </body>
