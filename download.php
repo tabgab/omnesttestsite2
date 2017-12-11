@@ -50,7 +50,7 @@
       <a class="noicon" href="/download/commercial5/omnest-5.1.1-src-macosx.tgz"><img src="images/misc/osx-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial5/omnest-5.1.1-src-macosx.tgz" >OMNEST 5.1.1 for Mac OS X (TGZ) - 290MB</a><br/>
+       <a href="/download/commercial5/omnest-5.1.1-src-macosx.tgz" >OMNEST 5.1.1 for macOS (TGZ) - 290MB</a><br/>
        <small>md5sum: 66a982f48fc80db4226ce8ca1434d340</small>
     </td>
   </tr>

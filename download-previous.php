@@ -28,49 +28,49 @@
     <li><a href="/download/commercial5/omnest-5.0-src.tgz">OMNEST 5.0 for Linux (TGZ) - 220MB</a><br/>
     <small>f11847b33ab072bfef336b86e82c2434</small>
     </li>
-    <li><a href="/download/commercial5/omnest-5.0-src-macos.tgz">OMNEST 5.0 for Mac OS X (TGZ) - 260MB</a><br/>
+    <li><a href="/download/commercial5/omnest-5.0-src-macos.tgz">OMNEST 5.0 for macOS (TGZ) - 260MB</a><br/>
     <small>8e53ad852902dfa3f97aa36b75d02886</small>
     </li>
     <li><a href="/download/commercial4/omnest-4.6-win32.exe">OMNEST 4.6 for Windows (installer) - 500MB</a><br/>
     <small>md5sum: b1344fb75229a537e0c772a0c0894cf4</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.6-src.tgz">OMNEST 4.6 for Linux and Mac OS X (TGZ) - 190MB</a><br/>
+    <li><a href="/download/commercial4/omnest-4.6-src.tgz">OMNEST 4.6 for Linux and macOS (TGZ) - 190MB</a><br/>
     <small>md5sum: eebbe33e58ec3db270e4185fe397f798</small>
     </li>
     <li><a href="/download/commercial4/omnest-4.5-win32.exe">OMNEST 4.5 for Windows (installer) - 405MB</a><br/>
     <small>md5sum: 3e42d26f8eba03dca2a248fb253cdef3</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.5-src.tgz">OMNEST 4.5 for Linux and Mac OS X (TGZ) - 184MB</a><br/>
+    <li><a href="/download/commercial4/omnest-4.5-src.tgz">OMNEST 4.5 for Linux and macOS (TGZ) - 184MB</a><br/>
     <small>md5sum: 5e52f592402eb30c1fadd3f39507b64e</small>
     </li>
     <li><a href="/download/commercial4/omnest-4.4.1-win32.exe">OMNEST 4.4.1 for Windows (installer) - 405MB</a><br/>
     <small>md5sum: 2454260fac5cd701036297612484cabd</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.4.1-src.tgz">OMNEST 4.4.1 for Linux and Mac OS X (TGZ) - 184MB</a><br/>
+    <li><a href="/download/commercial4/omnest-4.4.1-src.tgz">OMNEST 4.4.1 for Linux and macOS (TGZ) - 184MB</a><br/>
     <small>md5sum: 2a568c26954aaace5cf62269bdabe3b8</small>
     </li>
 	<li><a href="/download/commercial4/omnest-4.3.1-win32.exe">OMNEST 4.3.1 for Windows (installer) - 377MB</a><br/>
     <small>md5sum: b2e9eb75b6cf1b67a8d7a499f1a31436</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.3.1-src.tgz" >OMNEST 4.3.1 for Linux and Mac OS X (TGZ) - 166MB</a><br/>
+    <li><a href="/download/commercial4/omnest-4.3.1-src.tgz" >OMNEST 4.3.1 for Linux and macOS (TGZ) - 166MB</a><br/>
     <small>md5sum: e60ab15576c5a9960ad611a64827f5e6</small>
     </li>
     <li><a href="/download/commercial4/omnest-4.2.2-win32.exe" >OMNEST 4.2.2 for Windows (installer) - 293MB</a><br/>
     <small>md5sum: d2f48dc9c27e3dda968ceebef93c9df8</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.2.2-src.tgz" >OMNEST 4.2.2 for Linux, Mac OS X (TGZ) - 141MB</a><br/>
+    <li><a href="/download/commercial4/omnest-4.2.2-src.tgz" >OMNEST 4.2.2 for Linux, macOS (TGZ) - 141MB</a><br/>
     <small>md5sum: 8c79d459e696147c86e041f23704f97f</small>
     </li>
     <li><a href="/download/commercial4/omnest-4.1-win32.exe" >OMNEST 4.1 for Windows (installer) - 293MB</a><br/>
     <small>md5sum: cf0ef48a32ea0960def07dae09b52295</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux, Mac OS X (TGZ) - 141MB</a><br/>
+    <li><a href="/download/commercial4/omnest-4.1-src.tgz" >OMNEST 4.1 for Linux, macOS (TGZ) - 141MB</a><br/>
     <small>md5sum: bced01ac34683ae4c89ad43cc2acf700</small>
     </li>
     <li><a href="/download/commercial4/omnest-4.0-win32.exe" >OMNEST 4.0 for Windows (installer) - 231MB</a><br/>
     <small>md5sum: 9a55cbc649f513a30eb18db86023a7e7</small>
     </li>
-    <li><a href="/download/commercial4/omnest-4.0p1-src.tgz" >OMNEST 4.0p1 for Linux, Mac OS X (TGZ) - 120MB</a><br/>
+    <li><a href="/download/commercial4/omnest-4.0p1-src.tgz" >OMNEST 4.0p1 for Linux, macOS (TGZ) - 120MB</a><br/>
     <small>md5sum: d7b4e5a584d532e42f1656f96bc83fda</small>
     </li>
 

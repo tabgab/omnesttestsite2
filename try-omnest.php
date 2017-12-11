@@ -53,9 +53,9 @@ libraries, tools, the IDE, sample simulations and documentation.
       <center><img src="images/misc/osx-logo.png"><img src="images/misc/linux-logo.png"></center>
     </td>
     <td style="vertical-align: top">
-      OMNEST has wide platform support. In addition to Windows, the IDE is also available on Mac OS X and Linux,
+      OMNEST has wide platform support. In addition to Windows, the IDE is also available on macOS and Linux,
       and simulations can be run on virtually any platform that is powerful enough and has a standards-compliant C++ compiler.
-      If you wish to evaluate OMNEST on Mac OS X or Linux, please <a href="contact.php">contact us</a>.
+      If you wish to evaluate OMNEST on macOS or Linux, please <a href="contact.php">contact us</a>.
     </td>
   </tr>
 
@@ -66,7 +66,7 @@ libraries, tools, the IDE, sample simulations and documentation.
 
 Note:
 <ul>
- <!-- <li>If you need to evaluate OMNEST on Mac OS X or Linux, please <a href="contact.php">contact us</a>.</li> -->
+ <!-- <li>If you need to evaluate OMNEST on macOS or Linux, please <a href="contact.php">contact us</a>.</li> -->
  <li>Limitations of the evaluation version: (1) no source code is provided for the simulation kernel;
     (2) simulations are limited to 10,000,000 events and 1000 modules.</li>
  <li>Network simulation models are not included, they need to be downloaded separately;

@@ -216,9 +216,9 @@ library. This functionality includes:</p>
 <h2>Platforms</h2>
 
 <p>Simulations can be run on Windows and practically in any Unix-like environment
-that is powerful enough and has a modern C++ compiler, including Mac OS X and Linux.</p>
+that is powerful enough and has a modern C++ compiler, including macOS and Linux.</p>
 
-<p>The Simulation IDE is currently available on Windows, Mac OS X and Linux.</p>
+<p>The Simulation IDE is currently available on Windows, macOS and Linux.</p>
 
 <br>
 

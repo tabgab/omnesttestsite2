@@ -129,7 +129,7 @@ Differences apply to licensing, packaging, and certain features only.</p>
         <div class="footnotes">
             <sup>1</sup> if you are unsure whether you need a commercial license, please check the <a href="licensingfaq.php">Licensing FAQ</a>
             <br/>
-            <sup>2</sup> the IDE is supported on Linux, Mac OS&nbsp;X and Windows; the simulation kernel and models can be compiled on other platforms as well
+            <sup>2</sup> the IDE is supported on Linux, macOS and Windows; the simulation kernel and models can be compiled on other platforms as well
             <br/>
             <sup>3</sup> for MinGW and recent versions of Visual C++
             <br/>

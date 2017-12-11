@@ -40,7 +40,7 @@ the Simulation IDE as well.</p>
       <td class="doctitle"><a href="documentation/InstallGuide.pdf">Installation Guide</a></td>
       <!-- format: pdf -->
       <td>
-        Provides instructions on how to install OMNEST on Windows, Mac OS X and
+        Provides instructions on how to install OMNEST on Windows, macOS and
         selected Linux distributions. Also gives directions on how to build and
         install OMNEST on other Linux distributions and arbitrary Unix and
         Unix-like systems.
