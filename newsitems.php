@@ -5,10 +5,21 @@
 //
 $news = array(
     array(
+        "id" => "omnest-5.2.1",
+        "title" => "OMNEST 5.2.1 released",
+        "date" => "Dec 11, 2017",
+        "summary" => "Highlights of this release are the fine-tuning of result recording and processing
+        (especially around weighted statistics); many bug fixes and improvements in Qtenv;
+        makefile changes to allow DEBUG and RELEASE builds of models to co-exist, and
+        several related changes in the IDE.",
+        "link" => "whatsnew-521.php"
+    ),
+
+    array(
         "id" => "omnest-5.1.1",
         "title" => "OMNEST 5.1.1 released",
         "date" => "May 10, 2017",
-        "summary" => "This release significantly improves and builds upon 
+        "summary" => "This release significantly improves and builds upon
          functionality introduced in version 5.0, and also raises the bar in other areas.",
         "link" => "whatsnew-511.php"
     ),
@@ -18,7 +29,7 @@ $news = array(
         "title" => "OMNEST 5.0 released",
         "date" => "Apr 14, 2016",
         "summary" => "OMNEST 5.0 has been released.
-        New features include 3D graphics support, support for rich 2D graphics, 
+        New features include 3D graphics support, support for rich 2D graphics,
         improved logging, a new Qt-based runtime environment, and much more.",
         "link" => "whatsnew-50.php"
     ),
