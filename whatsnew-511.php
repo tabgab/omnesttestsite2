@@ -127,18 +127,25 @@
 </li>
 <li>
 <p>Added support for smooth custom animations. This means that simulation time is interpolated between events, and the animation can be stopped between events. In the event number display, the event number is prefixed with either 'last:' or 'next:' to make it unambiguous. A new 'Animation Parameters' window has been added where one can view the current animation speed, framerate, and other metrics.</p>
+<img width="600" src="images/whatsnew/51-qtenv-animcontrols.png" border="0">
+</li>
+<li>
+<p>Added built-in support to record animation into a high quality video. Press the record button on the toolbar for instructions.</p>
+<img width="600" src="images/whatsnew/51-qtenv-videorecording.png" border="0">
 </li>
 <li>
 <p>One-stepping now stops right before events so pressing F4 will execute the next event instantly. For consistency, after initialization, the simulation time will be set to that of the first event (not always to 0s).</p>
 </li>
 <li>
 <p>The simulation time display now has digit grouping and units turned on by default for better readability. Settings can be changed in the context menu.</p>
+<img width="600" src="images/whatsnew/51-qtenv-toolbar.png" border="0">
 </li>
 <li>
 <p>Added built-in support to record animation into a high quality video. (Press the record button on the toolbar for instructions.)</p>
 </li>
 <li>
 <p>Improvements on built-in animations: Messages sent with a nonzero propagation delay are now animated properly (not instantaneously). Packets of nonzero length are now displayed as "strips" when transmitted on a link with a transmission rate and propagation delay. The animation of method call hierarchies now represents the call graph better.</p>
+<img width="600" src="images/whatsnew/51-qtenv-anim1.png" border="0">
 </li>
 <li>
 <p>Two-way connections are now drawn as two half-length lines so that they don’t cover one another.</p>
@@ -151,6 +158,14 @@
 </li>
 <li>
 <p>Inspector windows made persistent between runs and will be re-opened on simulation restart.</p>
+</li>
+<li><p>Added graphical inspectors for histograms. They are enabled for any
+       cStatistic-based histogram objects, i.e. they are currently not available
+       for @statistic-based output histograms.</p>
+<img width="600" src="images/whatsnew/51-qtenv-histograms.png" border="0">
+</li>
+<li><p>Added graphical inspectors for output vectors.</p>
+<img width="600" src="images/whatsnew/51-qtenv-vectors.png" border="0"><br>
 </li>
 <li>
 <p>Other improvements, including tweaks to the Preferences dialog, context menu usability in inspectors, updated application and toolbar icons, a new 'Rebuild network' button on the toolbar, and many bug fixes.</p>
@@ -325,6 +340,7 @@ outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
 <ul>
 <li>
 <p>In the Run/Debug Configurations dialog, the "OMNeT++ Simulation" form page has been revised for usability and to better support simulation campaigns. The launcher (code that schedules and actually runs the simulations and arranges feedback in the Progress view and the Console) has also been improved. Details follow.</p>
+<img width="600" src="images/whatsnew/51-ide-launcher.png" border="0">
 </li>
 <li>
 <p>The "Runs" form field now accepts a run filter expression that can refer to iteration variables. (This form field corresponds to the -r option of simulations.)</p>
@@ -423,6 +439,7 @@ outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
 <ul>
 <li>
 <p>aloha: The updated example highlights the use of the new smooth animation API. The server and all hosts now have fixed positions (still random but deterministic, and not using auto-layouting), so that their individual propagation delays can be computed. Each transmitted packet is visualized with a ring and many concentric circles, illustrating the propagation of the electromagnetic wave. The visualization is faithful, e.g. multiple signals visually overlapping at a receiver actually means a collision. Animation speed is controlled by each node, taking three parameters for different states (idle, transmission edge, midtransmission) into account.</p>
+<img width="400" src="images/whatsnew/51-qtenv-anim2.png" border="0">
 </li>
 <li>The routing example was modified to demonstrate the new, built-in packet animation in Qtenv. Packets are displayed as arrows along the connection showing the actual packet length on the wire.</li>
 <li>

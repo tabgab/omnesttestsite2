@@ -197,6 +197,7 @@
      depends on) to the appropriate build configuration if necessary: Run
      and Profile will perform RELEASE build, Debug will perform DEBUG build.
   </p>
+  <img width="500" src="images/whatsnew/52-ide-switchconfig.png" border="0">
   </li>
   <li>
   <p>
@@ -212,6 +213,7 @@
      automatically or to ask before the build. The scope of build can also
      configured; options are: "None", "This project", or "Project + dependencies".
   </p>
+  <img width="600" src="images/whatsnew/52-ide-buildbeforelaunch.png" border="0">
   </li>
   <li>
   <p>
@@ -227,6 +229,7 @@
   Better progress reporting and cancellation for batch runs. Internally,
      this is the result of switching to the new JobGroups API of Eclipse.
   </p>
+  <img width="600" src="images/whatsnew/52-ide-progress.png" border="0">
   </li>
   </ul></div>
   <div class="paragraph"><p>IDE/Analysis Tool:</p></div>
@@ -281,6 +284,7 @@
   </p>
   </li>
   </ul></div>
+  <img width="600" src="images/whatsnew/52-ide-histograms.png" border="0">
   </li>
   <li>
   <p>
@@ -339,6 +343,7 @@
   <p>
   Improved the appearance and usability of the Animation Parameters dialog.
   </p>
+  <img width="600" src="images/whatsnew/52-qtenv-animcontrols.png" border="0">
   </li>
   <li>
   <p>

@@ -113,6 +113,7 @@ Added 3D graphics support via OpenSceneGraph. The 3D scene graph is to
    can be visualized in the new Qtenv runtime GUI. (There is no 3D support
    in Tkenv, due to technical limitations.)
 </p>
+<img width="600" src="images/whatsnew/50-qtenv-3d.png" border="0">
 </li>
 <li>
 <p>
@@ -556,6 +557,7 @@ Added a large simulation time and event number display to the toolbar that
    set up simulation, along with message statistics, have been moved to the
    bottom status bar of the main window.
 </p>
+<img width="600" src="images/whatsnew/50-tkenv-status-area.png" border="0">
 </li>
 <li>
 <p>
@@ -609,6 +611,7 @@ Finished implementation of the Canvas API Tkenv rendering. The
    The implementation is based on the Tkpath Tcl/Tk extension, which was
    significantly enhanced by our team.
 </p>
+<img width="600" src="images/whatsnew/50-tkenv-canvas.png" border="0">
 </li>
 <li>
 <p>
@@ -662,6 +665,7 @@ Qtenv, the Qt-based runtime environment is currently in preview status,
    <em>PREFER_QTENV=yes</em> in configure.user to make Qtenv the default GUI.
    Note that 3D visualization is only available in Qtenv.
 </p>
+<img width="600" src="images/whatsnew/50-qtenv-window.png" border="0">
 </li>
 </ul></div>
 <div class="paragraph"><p>Cmdenv:</p></div>

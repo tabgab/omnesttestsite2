@@ -29,7 +29,9 @@ There were also numerous bug fixes.</p>
     a point, and Shift + double click to zoom out; use Ctrl + left mouse
     button to drag out a rectangle to zoom to (a.k.a. marquee zoom;
     implementation based on patch from Christoph Sommer), right-click
-    cancels marquee zoom; use left mouse button for panning</p></li>
+    cancels marquee zoom; use left mouse button for panning</p>
+<img src="images/whatsnew/46-tkenv-marquee-zoom.png" border="0" width="500">
+</li>
 
 <li><p>Further small UI fixes (see ChangeLog)</p></li>
 </ul>
@@ -47,7 +49,9 @@ There were also numerous bug fixes.</p>
 </ul>
 <h2>IDE:</h2>
 <ul>
-<li><p>The IDE is now based on Eclipse 4.4 Luna, and requires JDK 1.7 or later.</p></li>
+<li><p>The IDE is now based on Eclipse 4.4 Luna, and requires JDK 1.7 or later.</p>
+<img src="images/whatsnew/46-eclipse-platform.png" border="0" width="500">
+</li>
 
 <li><p>The IDE is now a 64-bit application on Mac OS X.</p></li>
 </ul>
