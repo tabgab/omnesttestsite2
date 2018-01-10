@@ -76,6 +76,12 @@ and more...
 <h1><a href="embedding.php">Add Simulation To Your Software Products!</a></h1>
 <p>You can <a href="embedding.php">embed</a> the simulation kernel or whole simulations into your software products.</p>
 
+<h1><a href="whatsnew-50.php">Visualize your Simulation in 3D!</a></h1>
+<a href="whatsnew-50.php"><img width="150" src="images/misc/3d_sats.png" style="float: left; margin-right: 10px"/></a>
+<p>The OMNEST runtime user interface allows you to build 3D animations
+for your simulation model employing the widely used OpenSceneGraph library.</p>
+<div style="clear:both"></div>
+
 <!--TODO
 <h1><a href="testimonials.php">Testimonials</a></h1>
 
@@ -114,7 +120,6 @@ news_print_frontpage(2);
 <div style="clear:both"></div>
 
 </div>
-
 
 </div>
 <div style="float:right; width:140px">
