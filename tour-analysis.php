@@ -50,16 +50,11 @@ various formats, ready for inclusion into your reports.</p>
 <div class="separator"></div>
 
 <img class="pic right rounded" style="margin-top: 12px; margin-right: 10px;" width="200" src="images/tour/tour-analysis-integration.png" alt=""/>
-<h1>Integration with industry standard analysis tools allows you get the best of all</h1>
-<p class="lefttext">You can harness the power of your favourite statistics program (Matlab, GNU R and others)
-for processing OMNEST simulation results. We use open file formats,
-and provide export/import functions and extension packages to help you make this work.</p>
-<!--
-<p>Open and easy-to-parse output file formats allow you to import simulation results
-into your favourite statistics program, such as Matlab, R or Python packages,
-for further analysis. OMNEST provides tools to facilitate this process,
-such as CSV export and an R package to directly read result files into R.</p>
--->
+<h1>Integration with industry standard analysis tools allows more freedom</h1>
+<p class="lefttext">You can harness the power of your favourite statistics package (Matlab, Python/SciPy/Pandas,
+GNU R and others) for detailed evaluation of your simulation results. OMNEST records results in
+open file formats, and provides export/import functions and extension packages to help you process
+them in the tool of your choice.</p>
 <div class="separator"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>

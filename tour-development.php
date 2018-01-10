@@ -37,7 +37,7 @@ editor for networks and topology, a smart configuration editor, and much more.</
 
 <img class="pic right rounded" style="margin-top: 12px;" width="200" src="images/tour/tour-development-debug.png" alt=""/>
 <h1>The integrated debugging environment helps you identify problems quickly</h1>
-<p class="lefttext">The OMNEST graphical simulation runtime front-end combines well with the C++
+<p class="lefttext">The OMNEST graphical simulation runtime user interface combines well with the C++
 debugger to form an integrated environment. You can easily switch
 between high-level (simulation) and low-level (C++) debugging,
 allowing you to track down problems efficiently.</p>
@@ -50,6 +50,15 @@ interactive sequence chart in the OMNEST IDE. The chart includes
 events, messages sent between components, C++ method calls across
 components, etc. This tool can be an invaluable help in tracking down
 model errors, and in showing off and documenting model operation.</p>
+<div class="separator"></div>
+
+<img class="pic right rounded" style="margin-top: 10px;" width="200" src="images/tour/tour-development-3d.png" alt=""/>
+<h1>Impress your customers with 3D visualization</h1>
+<p class="lefttext">The OMNEST runtime user interface allows you to
+build 3D animations for your simulation model employing the widely used OpenSceneGraph library.
+Maps, terrain, buildings, vehicles, signals, annotations and many other features
+may be used to enrich the visualization of your simulation.
+</p>
 <div class="separator"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>
