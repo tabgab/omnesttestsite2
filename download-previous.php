@@ -22,6 +22,16 @@
 
 <h3>Previous versions</h3>
 <ul>
+    <li><a href="/download/commercial5/omnest-5.2.1-win64.exe">OMNEST 5.2.1 for Windows (installer) - 586MB</a><br/>
+    <small>750ae4f9302588e5c38b55b093c39fd7</small>
+    </li>
+    <li><a href="/download/commercial5/omnest-5.2.1-src-linux.tgz">OMNEST 5.2.1 for Linux (TGZ) - 247MB</a><br/>
+    <small>a3b59e2ca7725171f701950a98e15106</small>
+    </li>
+    <li><a href="/download/commercial5/omnest-5.2.1-src-macos.tgz">OMNEST 5.2.1 for macOS (TGZ) - 290MB</a><br/>
+    <small>8dcb6f336562f4aa79b0f8d1302eeb5f</small>
+    </li>
+
     <li><a href="/download/commercial5/omnest-5.1.1-win64.exe">OMNEST 5.1.1 for Windows (installer) - 586MB</a><br/>
     <small>b382acc71d9e7e5f1ec995907ba4f159</small>
     </li>

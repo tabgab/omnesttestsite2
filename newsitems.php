@@ -5,6 +5,16 @@
 //
 $news = array(
     array(
+        "id" => "omnest-5.4.1",
+        "title" => "OMNEST 5.4.1 released",
+        "date" => "June 29, 2018",
+        "summary" => "Highlights of this release are an improved message compiler (required for INET 4),
+        much improved histogram support, a more powerful cMessagePrinter API and its
+        implementation in Qtenv, and better support for smooth animation in Qtenv.",
+        "link" => "whatsnew-541.php"
+    ),
+
+    array(
         "id" => "omnest-5.2.1",
         "title" => "OMNEST 5.2.1 released",
         "date" => "Dec 11, 2017",
