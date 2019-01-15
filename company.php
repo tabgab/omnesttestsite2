@@ -18,14 +18,25 @@
 
 <div id="header"><h1>About Us</h1></div>
 
-<p>Simulcraft, Inc. is a distributor of OMNEST software worldwide.
-OMNEST licenses and support contracts are available from Simulcraft and its authorized
+<p>Cogtative Software FZE and Simulcraft, Inc. are distributors of OMNEST software worldwide.
+OMNEST licenses and support contracts are available from these two companies and their authorized
 reseller partners.</p>
 
 <h2>Company Information</h2>
+  
+  <p><b>Cogitative Software FZE</b><br>
+    1st. Floor Al Shmookh Business Center<br />
+Al Ettehad St.<br />
+7845 Umm Al Quwain<br />
+UAE</p>
+  
+<p>E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a></p>
 
 <p><b>Simulcraft Inc.</b><br>
-E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a></p>
+  OT Centre, Crystal Offices,<br />
+  Victoria,<br />
+  Republic of Seychelles<br /></p>
+<p>E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a></p>
 
 <p>You can also contact us using the <a href="contact.php">contact page</a>.</p>
 
