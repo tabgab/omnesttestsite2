@@ -30,7 +30,7 @@ Al Ettehad St.<br />
 7845 Umm Al Quwain<br />
 UAE</p>
   
-<p>E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a></p>
+<p>E-mail: <a href="mailto:info@cogitasoft.com">info@cogitasoft.com</a></p>
 
 <p><b>Simulcraft Inc.</b><br>
   OT Centre, Crystal Offices,<br />
