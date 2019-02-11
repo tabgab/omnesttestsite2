@@ -41,7 +41,7 @@
 <p>Support for smooth custom animations. The goal was to allow models to visualize their operation using sophisticated animations while the simulation is running under a GUI (Qtenv). The key idea is that refreshDisplay() is called repeatedly at a reasonable rate to render frames. refreshDisplay() knows the animation position from the simulation time (which is now interpolated between events) and the "animation time", a variable also made accessible to the model. Animation-to-simulation speed ratio (sec/simsec) is determined by an "animation speed" variable (or rather, several such variables) that can be set explicitly from code. Different animation speeds can be chosen dynamically to adapt the animation to the current time scale of the interesting events or processes in the simulation. Animations that need to take place in zero simulation time are supported with "holds", i.e. holding up the simulation for a certain animation time period. The actual playing speed of the resulting animation can be controlled in Qtenv using the "Speed" slider on the toolbar. Note that this feature is only available in Qtenv (and not in Tkenv which is more-or-less in maintenance mode from now on).</p>
 </li>
 <li>
-<p>If a model implements such full-blown animations for a compound module that OMNeT++'s default animations (message sending/method call animations) become a liability, they can now be programmatically turned off for that module with a setBuiltinAnimationsAllowed(false) call.</p>
+<p>If a model implements such full-blown animations for a compound module that OMNEST's default animations (message sending/method call animations) become a liability, they can now be programmatically turned off for that module with a setBuiltinAnimationsAllowed(false) call.</p>
 </li>
 <li>
 <p>Support for self-refreshing figures. cFigure now has a refreshDisplay() method which is called on every display refresh as long as the containing canvas is open in the GUI. Overriding that method in custom figure classes allows the figure to update itself according to the state of the simulation. The self-refreshing feature is especially useful for figures that implement various meters, gauges, plots or charts, because this way they don’t require an additional helper module to update them. Note this feature is only available in Qtenv.</p>
@@ -181,7 +181,7 @@
 <div>
 <ul>
 <li>
-<p>While Qtenv is now the default runtime GUI, simulations can still be launched under Tkenv by adding "-u Tkenv" to the command line. Tkenv is being maintained, but it is not actively developed any more. This means that most new features, including the ones added in this OMNeT++ release (smooth custom animations, self-refreshing figures, etc) will not be available under Tkenv.</p>
+<p>While Qtenv is now the default runtime GUI, simulations can still be launched under Tkenv by adding "-u Tkenv" to the command line. Tkenv is being maintained, but it is not actively developed any more. This means that most new features, including the ones added in this OMNEST release (smooth custom animations, self-refreshing figures, etc) will not be available under Tkenv.</p>
 </li>
 </ul>
 </div>
@@ -212,7 +212,7 @@
 <p>Default result file naming scheme been changed to be more practical. The traditional naming scheme contained the run number, which has now been replaced by the values of the iteration variables and the repetition counter. Example: old: Aloha-16.sca, new: Aloha-numHosts=10,mean=0.9-#3.sca. Illegal and inconvenient characters are encoded in an urlencode-like manner. This naming scheme applies to cmdenv output files, eventlog files and snapshot files as well.</p>
 </li>
 <li>
-<p>Experimental support for SQLite as result file format. SQLite result files can be browsed using existing GUI tools (SQLite Browser, SQLite Studio), can be queried using SQL, and can be accessed and manipulated from all major programming languages including Python and R. These benefits are in exchange for slight performance penalty. SQLite result files contain the same information as OMNeT++ native result files, they can co-exist, and OMNeT++ tools and the IDE understand both. To switch to SQLite as default result file format, compile OMNeT++ with PREFER_SQLITE_RESULT_FILES=yes set in configure.user. To use SQLite only for specific simulations, add the following lines to their omnetpp.ini files:</p>
+<p>Experimental support for SQLite as result file format. SQLite result files can be browsed using existing GUI tools (SQLite Browser, SQLite Studio), can be queried using SQL, and can be accessed and manipulated from all major programming languages including Python and R. These benefits are in exchange for slight performance penalty. SQLite result files contain the same information as OMNEST native result files, they can co-exist, and OMNEST tools and the IDE understand both. To switch to SQLite as default result file format, compile OMNEST with PREFER_SQLITE_RESULT_FILES=yes set in configure.user. To use SQLite only for specific simulations, add the following lines to their omnetpp.ini files:</p>
 <div>
 <pre>outputvectormanager-class="omnetpp::envir::SqliteOutputVectorManager"
 outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
@@ -263,7 +263,7 @@ outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
 <p>scavetool: CSV and other tabular export has been improved: run attributes (iteration variables, etc) are now added to the output as columns. Note that scavetool currently cannot export to SQLite.</p>
 </li>
 <li>
-<p>opp_makemake: OMNeT++ and generated model makefiles now use compiler- generated dependencies (gcc/clang -MMD option) that are saved in the out/ directory in *.d files. "make depend" is no longer needed.</p>
+<p>opp_makemake: OMNEST and generated model makefiles now use compiler- generated dependencies (gcc/clang -MMD option) that are saved in the out/ directory in *.d files. "make depend" is no longer needed.</p>
 </li>
 <li>
 <p>opp_makemake: Support for deep includes (automatically adding each subfolder to the include path) has been dropped, due to being error-prone and having limited usefulness. In projects that used this feature, #include directives need to be updated to include the directory as well.</p>
@@ -339,7 +339,7 @@ outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
 <div>
 <ul>
 <li>
-<p>In the Run/Debug Configurations dialog, the "OMNeT++ Simulation" form page has been revised for usability and to better support simulation campaigns. The launcher (code that schedules and actually runs the simulations and arranges feedback in the Progress view and the Console) has also been improved. Details follow.</p>
+<p>In the Run/Debug Configurations dialog, the "OMNEST Simulation" form page has been revised for usability and to better support simulation campaigns. The launcher (code that schedules and actually runs the simulations and arranges feedback in the Progress view and the Console) has also been improved. Details follow.</p>
 <img width="600" src="images/whatsnew/51-ide-launcher.png" border="0">
 </li>
 <li>
@@ -384,7 +384,7 @@ outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
 <p>In the Browse Data page, display Experiment/Measurement/Replication columns instead of Folder/Filename/RunId/Config/RunNumber. Note that this is just the default value for a preference, so the change will only take effect in new installations or new workspaces. The default columns widths have also been increased.</p>
 </li>
 <li>
-<p>Initial support for SQLite result files. From the end user perspective, they should work exactly as OMNeT++ result files.</p>
+<p>Initial support for SQLite result files. From the end user perspective, they should work exactly as OMNEST result files.</p>
 </li>
 <li>
 <p>CSV and other tabular export has been improved in the same way as in scavetool (as they use the same export engine).</p>
@@ -400,7 +400,7 @@ outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
 <p>The Windows version now targets 64-bit Windows, using MinGW-w64. The required GCC compiler is included as well as all necessary libraries (Qt5, OSG, etc.) Support for 32-bit Windows has been dropped.</p>
 </li>
 <li>
-<p>Compiling OMNeT++ now requires a C⁠+⁠+11 compliant compiler.</p>
+<p>Compiling OMNEST now requires a C⁠+⁠+11 compliant compiler.</p>
 </li>
 <li>
 <p>The configure script no longer detects and tests for the presence of the 'pcap' library. If models need it, they have to implement their own method to detect and configure it.</p>
@@ -412,7 +412,7 @@ outputscalarmanager-class="omnetpp::envir::SqliteOutputScalarManager"</pre>
 <p>The 'configure' script now accepts WITH_XXX=yes/no options on the command line. Look into the configure.user file to see the supported variables.</p>
 </li>
 <li>
-<p>Cross compilation of OMNeT++ for Windows on a Linux host is now supported.</p>
+<p>Cross compilation of OMNEST for Windows on a Linux host is now supported.</p>
 </li>
 </ul>
 </div>

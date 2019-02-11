@@ -27,7 +27,7 @@ There is no change in the simulation kernel and tools. Read on for details.</p>
 
 <ul>
   <li>When the IDE is started with an empty workspace (e.g. on first-time launch), it
-  offers the user the following options: (1) Import the OMNeT++ sample simulations
+  offers the user the following options: (1) Import the OMNEST sample simulations
   into the workspace; and (2) Download and install the INET Framework.</li>
 
   <li>The latter function is also available via the Help &gt; Install Simulation Models...
@@ -39,7 +39,7 @@ There is no change in the simulation kernel and tools. Read on for details.</p>
   introductory pages in the editor area: "Getting Started" (practical advice
   for getting past the first 10 minutes spent in the IDE); "At a Glance"
   (explains the common file types like NED, msg and ini, and their purposes);
-  "OMNeT++ Samples" (describes each example simulation in two sentences, then provides
+  "OMNEST Samples" (describes each example simulation in two sentences, then provides
   links for opening the project, viewing the README, launching the simulation, etc.)
   These pages are also available from the Help system (except the last one, which
   has a dedicated menu item under the Help menu.)</li>

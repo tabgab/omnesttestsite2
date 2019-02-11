@@ -251,7 +251,7 @@
   <li>
   <p>
   The Tcl/Tk based runtime interface is now deprecated and turned off by
-      default. It will be removed in future OMNeT++ versions. You can still enable it
+      default. It will be removed in future OMNEST versions. You can still enable it
       in configure.user by setting WITH_TKENV = yes, but we strongly suggest using
       Qtenv instead.
   </p>
@@ -295,7 +295,7 @@
   </li>
   <li>
   <p>
-  OMNeT++ now requires osgEarth 2.7 or later (check the Install Guide for
+  OMNEST now requires osgEarth 2.7 or later (check the Install Guide for
       further instructions on how to upgrade osgEarth.)
   </p>
   </li>
