@@ -344,23 +344,19 @@ survive termination of this License for any reason.
 by placing an order for a subsequent 12 month limited license, or you may
 purchase a perpetual license.
 
-10.6    For Annual License ONLY: Converting an Annual License to a
+10.6    For 1 Year Annual license ONLY: Converting a Annual License to a
 Perpetual License. You may decide, at any time while you hold a valid
 Annual License (including up to 90 days after its expiration), to convert
-your Annual License to a Perpetual License. OPENSIM LTD. warrants to
-reduce the price of the perpetual license by the fee you paid for the last
-12 months' license. The offer is for the last 12 months only. If you convert
-a license you have used for more than 12 months, the discount offered
-will still not exceed the license fees you paid for 12 months. You may be
-required to show proof of purchase to take advantage of this offer.
+your Annual License to a Perpetual License by purchasing a perpetual
+license of OMNEST.
 
 11.     GENERAL PROVISIONS.
 
 11.1    Canadian Transactions. If you are subject to Canadian law, you
 agree to the following: The parties hereto have expressly required that the
 present License and its Exhibits be drawn up in the English language. / Les
-parties aux présentes, ont expressément exigé que la présente Convention et
-ses Annexes soient rédigées en langue anglaise.
+parties aux prÃ©sentes, ont expressÃ©ment exigÃ© que la prÃ©sente Convention et
+ses Annexes soient rÃ©digÃ©es en langue anglaise.
 
 11.2    Hazardous Uses. The PRODUCT is not intended for use, and you may
 not use or allow others to use the PRODUCT, in connection with any
