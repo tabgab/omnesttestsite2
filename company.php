@@ -18,7 +18,7 @@
 
 <div id="header"><h1>About Us</h1></div>
 
-<p>Cogtative Software FZE and Simulcraft, Inc. are distributors of OMNEST software worldwide.
+<p>Cogitative Software FZE and Simulcraft, Inc. are distributors of OMNEST software worldwide.
 OMNEST licenses and support contracts are available from these two companies and their authorized
 reseller partners.</p>
 
