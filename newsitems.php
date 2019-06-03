@@ -5,6 +5,16 @@
 //
 $news = array(
     array(
+        "id" => "omnest-5.5.1",
+        "title" => "OMNEST 5.5.1 released",
+        "date" => "June 4, 2019",
+        "summary" => "This release contains several important fixes like JDK 11 and osgEarth 2.10
+        compatibility, a workaround for long CDT indexing times, and several improvements in the
+        simulation library.",
+        "link" => "whatsnew-551.php"
+    ),
+
+    array(
         "id" => "omnest-5.4.1",
         "title" => "OMNEST 5.4.1 released",
         "date" => "June 29, 2018",
