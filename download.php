@@ -21,6 +21,7 @@
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
 <h3 style="margin-bottom:0">Latest stable version: 5.5.1 <a href="whatsnew-551.php">(What's new in this release?)</a></h3>
+<p>For release announcements, follow <a href="https://twitter.com/omnetpp" target="_blank">@omnetpp</a> on Twitter.</p>
 
 <h3>Downloads:</h3>
 

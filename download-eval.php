@@ -28,6 +28,8 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
 
 <p><b>Please bookmark this page so that you will be able to come back to it later.</b></p>
 
+<p>For release announcements, follow <a href="https://twitter.com/omnetpp" target="_blank">@omnetpp</a> on Twitter.</p>
+
 <p>The evaluation version is a full OMNEST installation, including the simulation
 libraries, tools, the IDE, sample simulations and documentation.
 You can run and modify all the provided samples and create your own small simulations.
