@@ -11,7 +11,7 @@
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
-    <script src="common/gen_validatorv31.js" type="text/javascript"></script>
+    <script src="common/gen_validatorv4.js" type="text/javascript"></script>
     <style type="text/css">
       td:first-child {text-align: right; }
     </style>
