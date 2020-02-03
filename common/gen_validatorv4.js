@@ -153,7 +153,7 @@ function clear_all_validations()
     }
 }
 
-function form_submit_handler()
+function form_submit_handler(event)
 {
     var bRet = true;
     document.error_disp_handler.clear_msgs();
@@ -181,6 +181,8 @@ function form_submit_handler()
         document.error_disp_handler.FinalShowMsg();
         return false;
     }
+    if (this.old_onsubmit)  // CHANGE - successful validation: if there was an installed handler, call that too
+        return this.old_onsubmit(event);
     return true;
 }
 
