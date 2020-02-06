@@ -39,6 +39,8 @@ function formatMailBody(obj, order) {
     var key = order[idx];
     result += key + ": " + obj[key] + "\n";
   }
+
+  result += "\nSee at: https://docs.google.com/spreadsheets/d/1EObdZ4XQmsJgJX_k_LWq_KlVeDL4qzkzAjcA1iaF8-E/edit#gid=0\n";
   return result; // once the looping is done, `result` will be one long string to put in the email body
 }
 
@@ -55,10 +57,18 @@ function doPost(e) {
 
   try {
     Logger.log(e); // the Google Script version of console.log see: Class Logger
-    record_data(e);
-
     // shorter name for form data
     var mailData = e.parameters;
+
+    // emulate success if turing test was unsuccessful, but do nothing otherwise
+    if (String(mailData.turing) !== "17") {
+      return ContentService
+          .createTextOutput(JSON.stringify({"result":"success",
+                            "data": JSON.stringify(e.parameters) }))
+          .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    var recordingSucceded = record_data(e);
 
     // names and order of form elements (if set)
     var orderParameter = mailData.formDataNameOrder;
@@ -112,6 +122,7 @@ function doPost(e) {
  * e is the data received from the POST
  */
 function record_data(e) {
+  var success = true;
   var lock = LockService.getDocumentLock();
   lock.waitLock(30000); // hold off up to 30 sec to avoid concurrent writing
 
@@ -160,17 +171,18 @@ function record_data(e) {
   }
   catch(error) {
     Logger.log(error);
+    success = false;
   }
   finally {
     lock.releaseLock();
-    return;
+    return success;
   }
 
 }
 
 function getDataColumns(data) {
   return Object.keys(data).filter(function(column) {
-    return !(column === 'formDataNameOrder' || column === 'formGoogleSheetName' || column === 'formGoogleSendEmail' || column === 'honeypot');
+    return !(column === 'formDataNameOrder' || column === 'formGoogleSheetName' || column === 'formGoogleSendEmail' || column === 'honeypot' || column === 'turing');
   });
 }
 
