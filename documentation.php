@@ -48,7 +48,7 @@ the Simulation IDE as well.</p>
     </tr>
 
     <tr>
-      <td class="doctitle"><a href="documentation/Manual.pdf">OMNEST Manual</a></td>
+      <td class="doctitle"><a href="documentation/SimulationManual.pdf">OMNEST Manual</a></td>
       <!-- format: pdf, html -->
       <td>
         A comprehensive and in-depth description of using OMNEST; from principles

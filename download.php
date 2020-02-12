@@ -58,10 +58,10 @@
 
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center">
-      <a class="noicon" href="/download/commercial5/InstallGuide.pdf"><img src="images/misc/pdf.png"></a>
+      <a class="noicon" href="/documentation/InstallGuide.pdf"><img src="images/misc/pdf.png"></a>
     </td>
     <td>
-      <a href="/download/commercial5/InstallGuide.pdf" >Installation Guide (PDF)</a>
+      <a href="/documentation/InstallGuide.pdf" >Installation Guide (PDF)</a>
     </td>
   </tr>
 
