@@ -5,6 +5,16 @@
 //
 $news = array(
     array(
+        "id" => "omnest-5.6.1",
+        "title" => "OMNEST 5.6.1 released",
+        "date" => "Feb 12, 2020",
+        "summary" => "This is primarily a bugfix release, with a small but practically quite
+         useful NED feature (@reconnect) and minor additions to the simulation library.
+         Regarding bugfixes, Qtenv has received quite a lot of attention.",
+        "link" => "whatsnew-561.php"
+    ),
+
+    array(
         "id" => "omnest-5.5.1",
         "title" => "OMNEST 5.5.1 released",
         "date" => "June 4, 2019",

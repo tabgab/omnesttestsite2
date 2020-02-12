@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - What's New in the 5.5 Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+</head>
+
+<body>
+<?php print_leadin($product_menu, __FILE__); ?>
+
+<div id="header"><h1>What's New in OMNEST 5.6.1</h1></div>
+
+<div id="content">
+
+<div class="sect1">
+  <div class="sectionbody">
+  <div class="paragraph"><p>This is primarily a bugfix release, with a small but practically
+    quite useful NED feature (<code>@reconnect</code>) and minor additions to the simulation
+    library. Regarding bugfixes, Qtenv has received quite a lot of attention.</p>
+  </div>
+
+  <div class="paragraph"><p>NED:</p></div>
+  <div class="ulist">
+    <ul>
+      <li>The new <code>@reconnect</code> property allows reconnecting already connected gates by specifying it in the new connection's body. This is especially useful in INET Framework, e.g. because it eliminates the need for "hook" modules in compound modules that represent network interfaces.</li>
+    </ul>
+  </div>
+
+  <div class="paragraph"><p>Simulation library:</p></div>
+  <div class="ulist">
+    <ul>
+      <li>SimTime: Added the <code>fromRaw()</code> method.</li>
+      <li>cGate: Added the <code>isGateHalf()</code> and <code>getOtherHalf()</code> methods.</li>
+      <li>The <code>deleteModule()</code> method was moved from <code>cSimpleModule</code> to <code>cModule</code>, revised, and its functionality extended: it is now allowed for a running module to delete itself, also as part of a module tree. (Note: direct deletion of a module or channel object, i.e. via the <code>delete</code> operator, is still not allowed.)</li>
+      <li>cLabelFigure: Added rotation support (<code>setAngle()</code> method).</li>
+      <li>cAbstractHistogram: Fixed the <code>getCDF()</code> method which was broken.</li>
+      <li>cFigure: Fixed a bug that caused adding figures to be O(n) or slower, causing a huge performance penalty with 10000 or more figures.</li>
+      <li>Several further smaller improvements.</li>
+    </ul>
+  </div>
+
+  <div class="paragraph"><p>Qtenv:</p></div>
+  <div class="ulist">
+    <ul>
+      <li>Added a "Debug Now" option to the Simulate menu.</li>
+      <li>Allow dragging submodules around by holding Shift. (This works by changing the coordinates in the display string.)</li>
+      <li>Added option to export module graphics to an image, and a dialog to select the exported area.</li>
+      <li>Start the animation at t=0, not right before the first event.</li>
+      <li>Add some sideways offset to methodcall animation lines and text, to reduce overlap with connection arrows.</li>
+      <li>Connection arrows: Make the <code>"m=[nesw]"</code> display string tag work better with border-to-border connections.</li>
+      <li>Align the lines of info text (<code>"t"</code> display string tag) of submodules and connections appropriately in the left/top/right positions.</li>
+      <li>Performance: cache min(animSpeed) in cCanvas, so that Qtenv doesn't have to compute it every time.</li>
+      <li>Set a busy indicator (spinny cursor) during more potentially long operations.</li>
+      <li>When the layouting process takes a long time (more than five seconds), ask the user what to do (wait or finish).</li>
+      <li>Added an option to disable logging from refreshDisplay().</li>
+      <li>Default log prefix format changed to use <code>%K</code> instead of <code>%C</code>. (<code>%K</code> only prints the context component if it is different from the event's module; <code>%C</code> always prints it.)</li>
+      <li>Log prefix format: Added the <code>%&lt;</code> (trim preceding whitespace) directive.</li>
+      <li>Keep caret (cursor) near the same event when switching Log Inspector modes.</li>
+      <li>Removed the unused scrollback limit option. Updated the Preferences dialog accordingly.</li>
+      <li>Dozens of further bug fixes and improvements.</li>
+    </ul>
+  </div>
+
+  <div class="paragraph"><p>IDE:</p></div>
+  <div class="ulist">
+    <ul>
+      <li>Updated to use Eclipse 4.14, CDT 9.10.</li>
+      <li>IDE: Made the "Project Features" menu item more creative in finding the project. (It said "Select a project first" much too often.)</li>
+      <li>Analysis Tool: Fix weighted histogram PDF/CDF computation (use sum of weights instead of observation count).</li>
+      <li>NED editor: added manual connection routing using the "m" tag.</li>
+      <li>SequenceChart: Avoid out of bounds error when selecting manual axis ordering, or switching between "Manual" and "Minimize crossings" modes.</li>
+      <li>EventlogTable, SequenceChart: Strip ANSI escape sequences from log message lines.</li>
+      <li>Let the user permanently turn off the "OMNeT++ libraries not yet compiled" dialog.</li>
+      <li>Some further fixes and improvements.</li>
+    </ul>
+  </div>
+
+  <div class="paragraph"><p>Other:</p></div>
+  <div class="ulist">
+    <ul>
+      <li>scavetool: Fixed vector file indexing bug that caused certain blocks to be left out from the index. This also affects the Analysis Tool in the IDE, which uses the same code for result file access.</li>
+      <li><code>opp_test</code>, <code>opp_featuretool</code>: Various small fixes.</li>
+    </ul>
+  </div>
+
+  </div>
+  </div>
+
+<br/>
+<h2><a href="whatsnew-551.php">What's New in OMNEST 5.5.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+
+<?php print_leadout(); ?>
+</body>
+</html>
+
