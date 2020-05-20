@@ -16,15 +16,16 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>What's New in OMNEST 5.6.1</h1></div>
+<div id="header"><h1>What's New in OMNEST 5.6.2</h1></div>
 
 <div id="content">
 
 <div class="sect1">
   <div class="sectionbody">
   <div class="paragraph"><p>This is primarily a bugfix release, with a small but practically
-    quite useful NED feature (<code>@reconnect</code>) and minor additions to the simulation
-    library. Regarding bugfixes, Qtenv has received quite a lot of attention.</p>
+    quite useful NED feature (<code>@reconnect</code>),minor additions to the simulation
+    library and fixes to the IDE Sequence Chart viewer. Regarding bugfixes, Qtenv has
+    received quite a lot of attention.</p>
   </div>
 
   <div class="paragraph"><p>NED:</p></div>
