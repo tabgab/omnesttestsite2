@@ -261,14 +261,6 @@ OMNEST licenses for internal research and other purposes.</p>
 
 
   <tr>
-    <td><a class="noicon" href="http://www.boeing.com/" target="_blank"><img src="references/boeing.png"></a></td>
-    <td><p><a href="http://www.boeing.com/" target="_blank">Boeing, Inc.</a></p>
-    </td>
-  </tr>
-
-
-
-  <tr>
     <td><a class="noicon" href="http://www.fujitsu.com/" target="_blank"><img src="references/fujitsu.png"></a></td>
     <td><p><a href="http://www.fujitsu.com/" target="_blank">Fujitsu</a></p>
     </td>
