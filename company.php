@@ -32,12 +32,6 @@ UAE</p>
   
 <p>E-mail: <a href="mailto:info@cogitasoft.com">info@cogitasoft.com</a></p>
 
-<p><b>Simulcraft Inc.</b><br>
-  OT Centre, Crystal Offices,<br />
-  Victoria,<br />
-  Republic of Seychelles<br /></p>
-<p>E-mail: <a href="mailto:info@omnest.com">info@omnest.com</a></p>
-
 <p>You can also contact us using the <a href="contact.php">contact page</a>.</p>
 
 <?php print_leadout(); ?>

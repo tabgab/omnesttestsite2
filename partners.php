@@ -66,7 +66,7 @@ telecommunication and consulting. As a reseller partner, perhaps you
 too can become an essential part of making OMNEST the premiere
 simulation tool across multiple industries.</p>
 
-<p>Simulcraft understands the key role of VAR partners in the success of
+<p>Cogitative Software understands the key role of VAR partners in the success of
 OMNEST, we honor and protect the investments our partners make in
 market-building. If you are interested in developing a relationship along the
 grounds laid out above, we would like to hear from you.</p>

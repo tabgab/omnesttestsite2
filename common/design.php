@@ -223,7 +223,7 @@ function print_titlepage_leadout() { ?>
         <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_top.png); background-repeat:no-repeat; background-position:center top"></div>
         <div id="footer" style="background-color:#999999; padding: 10px 40px 15px 40px;">
             <?php print_footer_links(); ?>
-            <div style="text-align: center">Copyright (c) Simulcraft, Inc. All rights reserved.</div>
+            <div style="text-align: center">Copyright (c), Cogitative Software FZE. All rights reserved.</div>
         </div>
         <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_bottom.png); background-repeat:no-repeat; background-position:center bottom"></div>
     </div>
@@ -290,7 +290,7 @@ function print_leadout() { ?>
         </div>
         <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_top.png); background-repeat:no-repeat; background-position:center top"></div>
         <div id="footer" style="background-color:#999999; padding: 15px 40px 15px 40px; text-align: center;">
-            Copyright (c) Simulcraft, Inc. All rights reserved.
+            Copyright (c), Cogitative Software FZE. All rights reserved.
         </div>
         <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_bottom.png); background-repeat:no-repeat; background-position:center bottom"></div>
     </div>
