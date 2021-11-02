@@ -51,7 +51,7 @@ You can also download, install and try OMNeT++ models from the web.</p>
       </small>
 
 <div style="clear: both"></div>
-
+<br><br>
 <a class="noicon" href="download/free/omnest-5.7-linux-x86_64-eval.tgz"><img class="left" src="images/misc/download-linux-eval.png"/></a>
       <p><tt><a href="download/free/omnest-5.7-linux-x86_64-eval.tgz">omnest-5.7-linux-x86_64-eval.tgz</a></tt>
       &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5sum: d88dd4be29c42d204e6e205c525e1af7)</small></p>
