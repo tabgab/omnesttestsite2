@@ -5,6 +5,17 @@
 //
 $news = array(
     array(
+        "id" => "omnest-5.7",
+        "title" => "OMNEST 5.7 released",
+        "date" => "Nov 1, 2021",
+        "summary" => "This version is intended to be the last release of the 5.x series. The main
+        purpose of this release is to make it possible to write model code, primarily
+        NED, which is also compatible with the upcoming OMNEST 6.0. It also contains
+        several bug fixes backported from the 6.0 branch.",
+        "link" => "whatsnew-57.php"
+    ),
+
+    array(
         "id" => "omnest-5.6.2",
         "title" => "OMNEST 5.6.2 released",
         "date" => "May 20, 2020",

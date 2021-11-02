@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - What's New in the 5.7 Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+</head>
+
+<body>
+<?php print_leadin($product_menu, __FILE__); ?>
+
+<div id="header"><h1>What's New in OMNEST 5.7</h1></div>
+
+<div id="content">
+<div class="paragraph">
+      <p>This version is intended to be the last release of the 5.x
+      series. The main purpose of this release is to make it
+      possible to write model code, primarily NED, which is also
+      compatible with the upcoming OMNEST 6.0. It also contains
+      several bug fixes backported from the 6.0 branch.</p>
+    </div>
+    <div class="paragraph">
+      <p>For compatibility with 6.0:</p>
+    </div>
+    <div class="ulist">
+      <ul>
+        <li>
+          <p>NED: support for "parent.foo" syntax of parameter
+          references (and other references too, see below) in
+          expressions. Using the "parent" qualifier is only allowed
+          inside submodule and connection blocks (within the curly
+          braces), but not on compound module level. This change is
+          necessary for being able to write NED files which are
+          compatible with both OMNEST 5.7+ and 6.x. The
+          interpretation of parameter references in expressions
+          have changed in 6.0. In 6.0, a "foo" parameter reference
+          in a submodule means the parameter of the same submodule
+          ("this.foo"), while in 5.x it means the parameter of the
+          enclosing compound module (which would be expressed in
+          6.0 as "parent.foo").</p>
+          <p>The way to write NED files compatible with both is to always explicitly
+qualify the parameter with "this" or "parent". In a NED file written for
+5.x, prefix plain parameter references inside subcomponent curly brace blocks
+with "parent." to ensure that their meaning doesn't change in version 6.0.</p>
+          <p>The same change applies to submodule and gate references as well, e.g. in
+the argument of exists() and sizeof().</p>
+              <p>The change also affects the interpretation of references in expressions that
+occur in ini files.</p>
+              <p>Example:</p>
+          <div class="literalblock">
+            <div class="content">
+              <pre><code>network Network {
+   node: Node {
+     foo = foo; // CAVEAT: means "parent.foo" in 5.x, "this.foo" in 6.x!
+     bar = this.foo;  // OK: unambiguous, recognized by all versions
+     faa = parent.foo;  // OK: unambiguous, recognized in 5.7 and 6.x
+     baz = node2.foo;  // CAVEAT: means "parent.node2.foo" in 5.x, "this.node2.foo" in 6.x!
+     bax = parent.node2.foo;  // OK: unambiguous, recognized in 5.7 and 6.x
+   }
+}</code></pre>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p>MatchExpression: added 'field =~ pattern' syntax as
+          alternative to 'field(pattern)'</p>
+        </li>
+        <li>
+          <p>Added Ws, Wh, kWh, MWh to the list of recognized
+          measurement units</p>
+        </li>
+      </ul>
+    </div>
+    <div class="paragraph">
+      <p>Core:</p>
+    </div>
+    <div class="ulist">
+      <ul>
+        <li>
+          <p>Statistic recording: Added a way to disable
+          auto-adding of the warmup filter. One needs to specify
+          "autoWarmupFilter=false" in the @statistic for that. This
+          opens the possibility for the user to add warmup filters
+          to a custom place, not just before all other filters.
+          E.g. consider "min(warmup(foo))" (which is produced by
+          auto-adding of the warmup filter), and "warmup(min(foo))"
+          which might be what the user wants instead.</p>
+        </li>
+        <li>
+          <p>Fingerprints: Fixed a bug in cHasher::add(const char
+          *) which caused some bits in the input not affect the
+          fingerprint. This bugfix does not affect the fingerprint
+          of most simulations, because very few fingerprints use
+          strings as input.</p>
+        </li>
+        <li>
+          <p>Canvas: In cPathFigure, path parsing was refined: If
+          an op char is missing, assume previous one, in accordance
+          with the SVG specification.</p>
+        </li>
+        <li>
+          <p>cHistogram and histogram strategy classes: work around
+          several problems caused by the finite precision of
+          'double'.</p>
+        </li>
+        <li>
+          <p>Miscellaneous other bug fixes.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="paragraph">
+      <p>Cmdenv:</p>
+    </div>
+    <div class="ulist">
+      <ul>
+        <li>
+          <p>Added Fake GUI mode. Fake GUI means that
+          refreshDisplay() is called periodically during
+          simulation, in order to mimic the behavior of a graphical
+          user interface like Qtenv. It is useful for testing
+          simulation models with visualization using Cmdenv, e.g.
+          in smoke or fingerprint tests. Fake GUI can be enabled
+          with the cmdenv-fake-gui=true configuration option.</p>
+          <div class="literalblock">
+            <div class="content">
+              <pre><code>The set of currently supported options for Fake GUI:
+cmdenv-fake-gui-before-event-probability,
+cmdenv-fake-gui-after-event-probability,
+cmdenv-fake-gui-on-hold-probability,
+cmdenv-fake-gui-on-hold-numsteps,
+cmdenv-fake-gui-on-simtime-probability,
+cmdenv-fake-gui-on-simtime-numsteps,
+cmdenv-fake-gui-seed.</code></pre>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="paragraph">
+      <p>Qtenv:</p>
+    </div>
+    <div class="ulist">
+      <ul>
+        <li>
+          <p>Added Ctrl+W as shortcut for closing toplevel
+          inspector windows.</p>
+        </li>
+        <li>
+          <p>Made the "Run" and "Fast" buttons "pop out" (and stop
+          simulation) if triggered again. This adds a
+          radiobutton-like behavior to these actions, which is
+          handy for running the simulation for a very short time,
+          with a single button.</p>
+        </li>
+        <li>
+          <p>Log Inspector: Perform "find" on plain text comment,
+          i.e. ignore formatting escape sequences.</p>
+        </li>
+        <li>
+          <p>Log Inspector: After a search, scroll the found text
+          into the middle of the viewport instead of just to the
+          edge.</p>
+        </li>
+        <li>
+          <p>Find dialog: Select the entire searched text when
+          opening the find dialog, to allow easier and quicker
+          typing of a different query.</p>
+        </li>
+        <li>
+          <p>Further bug fixes.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="paragraph">
+      <p>Tools:</p>
+    </div>
+    <div class="ulist">
+      <ul>
+        <li>
+          <p>JsonExporter: Fix: In the exported file, result items
+          appeared under multiple runs due to missing filtering.
+          Applies to both the IDE and opp_scavetool.</p>
+        </li>
+        <li>
+          <p>In the Simulation Manual, the section about
+          opp_scavetool was out of date.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="paragraph">
+      <p>Simulation IDE:</p>
+    </div>
+    <div class="ulist">
+      <ul>
+        <li>
+          <p>Welcome screen theme changed (circle -&gt; solstice)
+          due to problems with dark theme with the old 'circle'
+          theme.</p>
+        </li>
+        <li>
+          <p>The Download Simulation Models dialog now supports
+          specifying a custom project name and location. Also, the
+          default project name is now coming from the downloaded
+          descriptor file (not from the .project file in the
+          archive.)</p>
+        </li>
+        <li>
+          <p>Fixed the download issues in the Download Simulation
+          Models dialog.</p>
+        </li>
+        <li>
+          <p>NED, Ini Editor: Syntax highlight for the NED "parent"
+          keyword</p>
+        </li>
+        <li>
+          <p>Ini Editor: group fingerprint and fakegui-related
+          fields on a separate new form page.</p>
+        </li>
+        <li>
+          <p>NED Editor: Fix rendering issue with the mouse cursor
+          for the creation tool in the palette.</p>
+        </li>
+        <li>
+          <p>Launcher: Print working directory and command line to
+          console when debugging simulations, similar to the simple
+          "run" mode launch.</p>
+        </li>
+        <li>
+          <p>Launcher: On macOS, use lldbmi2 for debug launches by
+          default.</p>
+        </li>
+        <li>
+          <p>Makefile generation brought in sync with
+          omnetpp-6pre11.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="paragraph">
+      <p>Build:</p>
+    </div>
+    <div class="ulist">
+      <ul>
+        <li>
+          <p>Use Eclipse 4.21, and JustJ as the private JRE.</p>
+        </li>
+        <li>
+          <p>Use python3 as the interpreter for Python scripts.</p>
+        </li>
+        <li>
+          <p>opp_makemake: Makefile generation brought in sync with
+          omnetpp-6pre11.</p>
+        </li>
+        <li>
+          <p>Got rid of a few bison warnings and properly test for
+          Bison 3.</p>
+        </li>
+        <li>
+          <p>Fixes for the Windows build.</p>
+        </li>
+        <li>
+          <p>Updated bundled sqlite3 amalgamation sources.</p>
+        </li>
+      </ul>
+    </div>
+
+</div>
+
+<br/>
+<h2><a href="whatsnew-562.php">What's New in OMNEST 5.6.2 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+
+<?php print_leadout(); ?>
+</body>
+</html>
+

@@ -20,7 +20,7 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 5.6.2 <a href="whatsnew-562.php">(What's new in this release?)</a></h3>
+<h3 style="margin-bottom:0">Latest stable version: 5.7 <a href="whatsnew-57.php">(What's new in this release?)</a></h3>
 <p>For release announcements, follow <a href="https://twitter.com/omnetpp" target="_blank">@omnetpp</a> on Twitter.</p>
 
 <h3>Downloads:</h3>
@@ -28,31 +28,31 @@
 <table style="border-spacing:10px">
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center;">
-      <a class="noicon" href="/download/commercial5/omnest-5.6.2-win64.exe"><img src="images/misc/win10-logo.png"/></a>
+      <a class="noicon" href="/download/commercial5/omnest-5.7-win64.exe"><img src="images/misc/win10-logo.png"/></a>
     </td>
     <td>
-      <a href="/download/commercial5/omnest-5.6.2-win64.exe">OMNEST 5.6.2 for Windows (installer) - 733MB</a><br/>
-      <small>md5sum: dcea1f4dd8d0861d1c54a3254b6faccf</small>
+      <a href="/download/commercial5/omnest-5.7-win64.exe">OMNEST 5.7 for Windows (installer)</a><br/>
+      <small>md5sum: 8549f8089c3d30f8d763d8c1d3290a1e</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center">
-      <a class="noicon" href="/download/commercial5/omnest-5.6.2-src-linux.tgz"><img src="images/misc/linux-logo.png"></a>
+      <a class="noicon" href="/download/commercial5/omnest-5.7-linux-x86_64.tgz"><img src="images/misc/linux-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial5/omnest-5.6.2-src-linux.tgz" >OMNEST 5.6.2 for Linux (TGZ) - 267MB</a><br/>
-       <small>md5sum: 874d3ff3af35f61014cde4f03da405d5</small>
+       <a href="/download/commercial5/omnest-5.7-linux-x86_64.tgz" >OMNEST 5.7 for Linux (TGZ)</a><br/>
+       <small>md5sum: eae7c9e96a2ee9c70274611bb9fd969f</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center">
-      <a class="noicon" href="/download/commercial5/omnest-5.6.2-src-macosx.tgz"><img src="images/misc/osx-logo.png"></a>
+      <a class="noicon" href="/download/commercial5/omnest-5.7-macos-x86_64.tgz"><img src="images/misc/osx-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial5/omnest-5.6.2-src-macosx.tgz" >OMNEST 5.6.2 for macOS (TGZ) - 315MB</a><br/>
-       <small>md5sum: 7ece2c438baaa983d76d6dee85c71665</small>
+       <a href="/download/commercial5/omnest-5.7-macos-x86_64.tgz" >OMNEST 5.7 for macOS (TGZ)</a><br/>
+       <small>md5sum: b316da75fb35d430b899ae3e13c81587</small>
     </td>
   </tr>
 

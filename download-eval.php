@@ -37,9 +37,9 @@ You can also download, install and try OMNeT++ models from the web.</p>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 
-<a class="noicon" href="download/free/omnest-5.6.2-win64-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
-      <p><tt><a href="download/free/omnest-5.6.2-win64-eval.exe">omnest-5.6.2-win64-eval.exe</a></tt>
-      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5sum: 8280e11ad4decfff0884daed944e0c7d)</small></p>
+<a class="noicon" href="download/free/omnest-5.7-win64-eval.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
+      <p><tt><a href="download/free/omnest-5.7-win64-eval.exe">omnest-5.7-win64-eval.exe</a></tt>
+      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5sum: a7345679d08bf87d3fe5d11a5eed7ace)</small></p>
       <p>This program installs OMNEST Evaluation on a Windows machine.
       For compiling models, OMNEST can use a preinstalled copy of Microsoft Visual C++ (2017) or
       the bundled <a href='http://mingw-w64.org/' target='_blank'>MinGW-w64</a> compiler.
@@ -47,9 +47,17 @@ You can also download, install and try OMNeT++ models from the web.</p>
 
       <small>NOTE: Some antivirus software may raise false alarms for some files in the
       package, especially MinGW-compiled executables. If this causes inconveniences for you,
-      select the Visual C++ compiler in the installer, and remove MinGW-related files
-      after installation (store/mingw-bin.tgz, mingw/).
+      disable these directories in your antivirus software.
       </small>
+
+<div style="clear: both"></div>
+
+<a class="noicon" href="download/free/omnest-5.7-linux-x86_64-eval.tgz"><img class="left" src="images/misc/download-linux-eval.png"/></a>
+      <p><tt><a href="download/free/omnest-5.7-linux-x86_64-eval.tgz">omnest-5.7-linux-x86_64-eval.tgz</a></tt>
+      &nbsp;&nbsp;&nbsp;&nbsp;<small>(md5sum: d88dd4be29c42d204e6e205c525e1af7)</small></p>
+      <p>The Linux version needs to be built on your system and requires several packages installed 
+        beforehand. Please consult the Installation Guide document in the doc folder.
+      </p>
 
 <div style="clear: both"></div>
 
@@ -58,7 +66,7 @@ You can also download, install and try OMNeT++ models from the web.</p>
 <p>The only limitations of the evaluation version are:</p>
 
 <ul>
- <li>No source code is provided for the simulation kernel.</li>
+ <li>No source code is provided for the simulation kernel (on Windows).</li>
  <li>Simulations are limited to 10,000,000 events and 1000 modules.</li>
 </ul>
 

@@ -32,14 +32,14 @@ libraries, tools, the IDE, sample simulations and documentation.
       <a class="noicon" href="download-eval-request.php"><img src="images/misc/download-win-eval.png"/></a>
     </td>
     <td style="vertical-align: top">
-      <p>Installs OMNEST Evaluation on a Windows machine (Windows 10, 8 or 7).
+      <p>Installs OMNEST Evaluation on a Windows machine (Windows 10 or 11).
       You can run and modify all the provided samples and create your own small simulations.
       You can also download, install and try OMNEST models from the web.
       </p>
 
       <p>A C++ compiler and binaries are included for compiling simulation models
-      from source (MinGW version of gcc); also included are the simulation libraries for
-      various versions of Microsoft Visual C++ (must be preinstalled on your system.)
+      from source (MinGW version of gcc and clang); also included are the simulation libraries for
+      the latest version of Microsoft Visual C++ (must be preinstalled on your system.)
     </td>
   </tr>
 
@@ -55,7 +55,7 @@ libraries, tools, the IDE, sample simulations and documentation.
     <td style="vertical-align: top">
       OMNEST has wide platform support. In addition to Windows, the IDE is also available on macOS and Linux,
       and simulations can be run on virtually any platform that is powerful enough and has a standards-compliant C++ compiler.
-      If you wish to evaluate OMNEST on macOS or Linux, please <a href="contact.php">contact us</a>.
+      If you wish to evaluate OMNEST on macOS, please <a href="contact.php">contact us</a>.
     </td>
   </tr>
 
