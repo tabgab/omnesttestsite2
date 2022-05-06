@@ -5,6 +5,15 @@
 //
 $news = array(
     array(
+        "id" => "omnest-6.0",
+        "title" => "OMNEST 6.0 released",
+        "date" => "May 6, 2022",
+        "summary" => "OMNeT++ 6.0 is the result of more than three years of work, and 
+         includes many essential new features that we would already have a hard time without.",
+        "link" => "whatsnew-60.php"
+    ),
+
+    array(
         "id" => "omnest-5.7",
         "title" => "OMNEST 5.7 released",
         "date" => "Nov 1, 2021",

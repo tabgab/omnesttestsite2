@@ -23,6 +23,19 @@
 <h3>Previous versions</h3>
 <ul>
 <li>
+      <a href="/download/commercial5/omnest-5.7-win64.exe">OMNEST 5.7 for Windows (installer) - 806MB</a><br/>
+      <small>md5sum: 8549f8089c3d30f8d763d8c1d3290a1e</small>
+    </li>
+    <li>
+       <a href="/download/commercial5/omnest-5.7-linux-x86_64.tgz" >OMNEST 5.7 for Linux (TGZ) - 328MB</a><br/>
+       <small>md5sum: eae7c9e96a2ee9c70274611bb9fd969f</small>
+    </li>
+    <li>
+       <a href="/download/commercial5/omnest-5.7-macos-x86_64.tgz" >OMNEST 5.7 for macOS (TGZ) - 468MB</a><br/>
+       <small>md5sum: b316da75fb35d430b899ae3e13c81587</small>
+    </li>
+
+    <li>
       <a href="/download/commercial5/omnest-5.6.2-win64.exe">OMNEST 5.6.2 for Windows (installer) - 733MB</a><br/>
       <small>md5sum: dcea1f4dd8d0861d1c54a3254b6faccf</small>
     </li>

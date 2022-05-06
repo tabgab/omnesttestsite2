@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+
+<?php include("common/design.php"); ?>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>OMNEST - What's New in the 6.0 Version</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="30" />
+    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <?php print_head_contribution(); ?>
+</head>
+
+<body>
+<?php print_leadin($product_menu, __FILE__); ?>
+
+<div id="header"><h1>What's New in OMNEST 6.0</h1></div>
+
+<div id="content">
+
+
+<div class="comment-body markdown-body js-preview-body" style="min-height: 231px;"><p>OMNeT++ 6.0 is the result of more than three years of work, and includes many essential new features that we would already have a hard time without. The present changelog summarizes all changes made during the 15+ pre-releases.</p>
+<p>We briefly summarize the changes below in each part of OMNeT++ before going into the details.</p>
+<p>The most prominent new feature is the new Python-based Analysis Tool in the IDE. The use of Python under the hood allows for arbitrarily complex computations to be performed on the data, visualizing the result in the most appropriate form chosen from a multitude of plot types, and producing publication quality output, all while using an intuitive user interface that makes straightforward tasks easy and convenient. Custom computations and custom plots are also easily accessible. The tool is able to handle large quantities of data. The Python APIs are also available outside the IDE (e.g. for standalone scripts), and a command-line tool for viewing and exporting charts created in the IDE also exists (<code>opp_charttool</code>).</p>
+<p>The NED language now supports parameters that carry C++ objects as values (type <code>object</code>), which can be used to parameterize modules with structured data (e.g. nontrivial configuration), packet prototypes, function objects, etc. Structured data may come from NED functions like <code>readCSV()</code> or <code>readJSON()</code> which parse data files, or may be specified directly in NED or ini files using JSON syntax. The syntax of ini files has even been adjusted to make it more convenient to write multi-line JSON values in it. Further new functionality includes the string match operator <code>=~</code>, the "spaceship" operator <code>&lt;=&gt;</code>, and support for Universal Function Call Syntax (UFCS). Incompatible changes include the change in the interpretation of parameter names that are not qualified with the <code>this</code> or <code>parent</code> keywords, and the necessity to mark module parameters with <code>@mutable</code> that are allowed to be set at runtime. Embedding NED files into simulation binaries for easier dissemination has also become possible.</p>
+<p>Message descriptions (msg files) have undergone even bigger changes. An import system has been added to make the content of a msg file available in others. The generated code and class descriptors can now be widely customized via properties. Targeted C++ blocks have been introduced for injecting C++ code into various places in the generated source files. Altogether, these (and further, smaller) features facilitate writing significantly cleaner msg files, especially in large projects like INET.</p>
+<p>The format of ini files have been made more flexible: the <code>Config</code> word in section headers is now optional, and long lines can be broken up to multiple lines without using trailing backslashes (just indent the continuation lines).</p>
+<p>In the simulation kernel, the most important change is the introduction of the Transmission Updates API, which allows in-progress packet (frame) transmissions to be modified, i.e. aborted, shortened, or extended. This API is necessary for implementing L2 features like frame preemption or on-the-fly frame aggregation. Other changes include the addition of utility APIs like <code>scheduleAfter()</code>, <code>rescheduleAt()</code> and <code>rescheduleAfter()</code>, refinements around module deletion and the introduction of the <code>preDelete()</code> virtual member function, refinements in the signals and listeners APIs, improved expression evaluation support, and the addition of string-handling utility functions, just to name a few.</p>
+<p>Regarding statistics recording, perhaps the most significant addition is the <code>demux</code> filter, which allows splitting a single stream (of emitted values) to multiple streams. The filter makes it possible to record statistics subdivided by some criteria, e.g. to record statistics per TCP connection, per remote IP address, per traffic class, etc., in INET. Further improvements include the addition of the <code>warmup</code> filter and the <code>autoWarmupFilter</code> statistic attribute that allow computed statistics to be calculated correctly also in the presence of a nonzero warm-up period. Result files now hold more metadata: parameter values and configuration entries are now also (optionally) recorded. This change, together with other, smaller adjustments, cause new result files not be understood by previous versions of OMNeT++.</p>
+<p>A significant amount of work has been put into improving the looks and functionality of Qtenv: material-style icons, HIDPI support, dark theme support, and countless small features that improve usability, especially around the Object Inspector and the Log View. For example, it is now possible to set the Messages view of the Log to display all timestamps as a delta to a user-specified reference timestamp; or, the Object Inspector now allows selecting a different display mode for a tree node. One important change is that method call animations are now disabled by default.</p>
+<p>The Sequence Chart tool in the IDE has been significantly improved, both visually and functionally, with the goal of allowing the user to configure the chart in a way that facilitates understanding of the sequence of events in the simulation. The tools provided for that purpose are the possibility to hide unnecessary elements (unrelated arrows, events, etc), support for user-defined coloring, interactively collapsible compound module axes, horizontally expanded events so that the arrows of nested method calls do not overlap, and more. The eventlog file format has also changed in a non-backward-compatible way, due to the addition of extra elements that allow the Sequence Chart tool to be faster and more scalable.</p>
+<p>Generating documentation from NED and MSG files has been made possible from the command line as well, using the new <code>opp_neddoc</code> tool. Functionality has been extended with the possibility of incorporating external information into the generated pages.</p>
+<p>The C++ debugging experience has been made more pleasant in several ways. For example, the "Debug on Error" and "Debug Next Event" functionality in Qtenv may now invoke the integrated debugger of the Simulation IDE, which is especially useful when the simulation was launched from the IDE. The User Guide also contains a hint on how to configure simulations to invoke VS Code as debugger.</p>
+<p>Due to improvements in the toolchain and the build process, Windows users may see the linking time of large models like INET Framework to drop dramatically (1-2 orders magnitude, e.g. from several minutes to several seconds). On macOS, Apple Silicon, is currently supported with x86-64 emulation.</p>
+<p>Now, the details:</p>
+<p>NED:</p>
+<ul>
+<li>
+<p>Semantics change: Within a submodule's or connection's curly brace block, the interpretation of parameter, gate, and submodule references that don't use an explicit <code>parent</code> or <code>this</code> qualifier has changed. They no longer refer to the enclosing compound module's item, but to the item of (or within) the local submodule or channel object. The interpretation of item references outside subcomponent blocks has remained unchanged. An example:</p>
+<div class="snippet-clipboard-content position-relative overflow-auto"><pre class="notranslate"><code class="notranslate">network Network {
+  parameters:
+      int foo;
+  submodules:
+    node1: { ... }
+    node2: Node {
+      foo = foo; // ERROR: self-reference! Change to 'foo=parent.foo'.
+      bar = this.foo;  // OK
+      baz = node1.foo;  // ERROR: refers to yet-uncreated submodule node2.node1!
+      bax = parent.node1.foo;  // OK
+    }
+}
+</code></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+
+  </div></div>
+<p>The set of forms accepted by <code>exists()</code> and <code>sizeof()</code> has been expanded. Notably, <code>exists()</code> can now be used to check the existence of an item in a submodule vector (as submodule vectors may now contain holes, due to <code>@omittedTypename</code>). Also, the <code>index()</code> syntax has been removed, <code>index</code> is only accepted without parens.</p>
+<p>Note that referencing a submodule's submodule from NED (i.e. the <code>a.b</code> or <code>this.a.b</code> syntax within a submodule block) is generally wrong, because the network is built top-down, and submodules are only created after parameters have already been set up. (An exception is using it in the values of <code>volatile</code> parameters, because they are evaluated later.)</p>
+<p>Error messages have been revised and expanded to be more helpful and facilitate porting NED code from 5.x.</p>
+<p>To write NED which is compatible with both OMNeT++ version 5.x and 6.0, qualify all references within subcomponent blocks with explicit <code>parent</code> or <code>this</code>, and require OMNeT++ 5.7 which is the first and only 5.x version that understands the <code>parent</code> keyword.</p>
+</li>
+<li>
+<p>NED grammar: Added <code>object</code> as parameter type. Parameters of this type may hold objects subclassed from <code>cOwnedObject</code> that they can take ownership of.</p>
+</li>
+<li>
+<p>NED parameters of type <code>object</code> may have a <code>@class()</code> property, with the syntax <code>@class(classname)</code> or <code>@class(classname?)</code>. The property specifies that the parameter should only accept objects of the given type and its subclasses. The referenced class must be registered via <code>Register_Class()</code> or <code>Register_Abstract_Class()</code>. Parameters declared without the question mark in <code>@class()</code> don't accept <code>nullptr</code> as value, while the ones with question mark do.</p>
+</li>
+<li>
+<p>The NED expression syntax has been extended to accept JSON-style constructs, i.e. arrays and dictionaries (termed "object" in JSON), and the <code>nullptr</code> keyword. The array syntax is a list of values enclosed in square brackets, for example <code>[1, 2, 3]</code>, and the array is accessible as a <code>cValueArray</code> object in C++. The dictionary syntax uses curly braces: <code>{"foo" : 1, "bar" : 2 }</code>, and dictionaries are presented as <code>cValueMap</code> objects. If a dictionary is prefixed by a name, then the name is interpreted as a class name, and values are interpreted as fields of the object: <code>cMessage { name: "hello", kind: 1}</code>.</p>
+</li>
+<li>
+<p>Object parameters allow simple values (int, double, bool, string) as well. C++-wise, they are stored in the parameter in <code>cValueHolder</code>-wrapped <code>cValue</code> objects.</p>
+</li>
+<li>
+<p>New NED functions have been introduced: <code>get()</code> (return an element of an array or dictionary), <code>size()</code> (returns the size of an array or dictionary), <code>eval()</code> (evaluates a NED expression given as string), <code>dup()</code> (clones an object). <code>dup()</code> simply calls an object's C++ <code>dup()</code> method; it is useful because module parameters of type <code>object</code> only accept objects they fully own, which can be worked around using <code>dup()</code>. An example:</p>
+<p>object a = [1,2,3];<br>
+object b = dup(a);  // without dup() it is an error: value is owned by parameter 'a'</p>
+<p>As <code>dup()</code> invoked on containers only duplicates the objects owned by the container, you may need extra <code>dup()</code> call when referring to objects owned by other parameters. Example:</p>
+<div class="snippet-clipboard-content position-relative overflow-auto"><pre class="notranslate"><code class="notranslate">object a = {};
+object b = dup([a,a]);  // ERROR (a's inside the array are not cloned)
+object c = [dup(a), dup(a)]  // OK
+</code></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+  </div></div>
+</li>
+<li>
+<p>NED grammar: Made operator precedence more similar to C/C++. Relational operators (<code>==, !=, &lt;, &lt;=, &gt;, &gt;=</code>) used to be on the same precedence level; now <code>==</code> and <code>!=</code> have lower precedence than the rest.</p>
+</li>
+<li>
+<p>NED grammar: Added the <code>=~</code> (match) and <code>&lt;=&gt;</code> (comparison, a.k.a. "spaceship") operators, the <code>undefined</code> keyword, and <code>bool()</code> as conversion function.</p>
+</li>
+<li>
+<p>String constants are now accepted with apostrophes too. This makes it possible to write quotation marks in strings without the need to escape them.</p>
+</li>
+<li>
+<p>For quantities (numbers with measurement units), the rules have changed slightly. When specifying quantities with multiple terms, a minus sign is only accepted at the front, to reduce the chance of confusion in arithmetic expressions. I.e. <code>-5s100ms</code> is valid as a quantity string (and means -5.1s), but <code>5s-100ms</code> is no longer.</p>
+<p>Also, the plain "0" constant is no longer accepted at places where a quantity with a measurement unit is expected. Reason: it was confusing when the expected unit was dB or dBm. E.g. in <code>omnetpp.ini</code>, should <code>**.power = 0</code> be interpreted as 0W or 0dBm?</p>
+</li>
+<li>
+<p>Added support for Universal Function Call Syntax (UFCS) to NED, which means that now any function call may also be written as if the function was a method of its first argument (provided it has one). That is, <code>f(x,..)</code> can now be also written in the alternative form <code>x.f(...)</code>. This results in improved readability in certain cases, and allows chaining function calls.</p>
+</li>
+<li>
+<p><code>xmldoc()</code> (and other file-reading functions) now interpret the file name as relative to the directory the expression comes from. When <code>xmldoc()</code> occurs in an included ini file, the file name is now interpreted as relative to the directory containing the included ini file (as opposed to being relative to the main ini file or the working directory.) If <code>xmldoc()</code> occurs in a NED file, the file name is relative to the directory where that NED file was loaded from.</p>
+</li>
+<li>
+<p>NED functions for reading (from file) and parsing (from string) of CSV, JSON and XML files: <code>parseCSV()</code>, <code>readCSV()</code>, <code>parseExtendedCSV()</code>, <code>readExtendedCSV()</code>, <code>parseJSON()</code>, <code>readJSON()</code>, <code>parseExtendedJSON()</code>, <code>readExtendedJSON()</code>, <code>parseXML()</code>, <code>readXML()</code>. The "extended" variants support expressions in the file, which will be evaluated during parsing. The XML functions are aliases to the existing <code>xml()</code>/<code>xmldoc()</code> functions. Bonus file-related functions: <code>readFile()</code>, <code>workingDir()</code>, <code>baseDir()</code>, <code>resolveFile()</code>, <code>absFilePath()</code>.</p>
+</li>
+<li>
+<p>The body of a parametric submodule now allows assigning apparently nonexistent parameters. For example, in the example below, the <code>sleepTime</code> assignment does not cause an error if <code>FooApp</code> has a <code>sleepTime</code> parameter but <code>IApp</code> does not:</p>
+<div class="snippet-clipboard-content position-relative overflow-auto"><pre class="notranslate"><code class="notranslate">app: &lt;default("FooApp")&gt; like IApp {
+    parameters:
+        address = parent.address;
+        sleepTime = 1s;  // ignored if app has no 'sleepTime' parameter
+}
+</code></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+  </div></div>
+</li>
+<li>
+<p>Implemented <code>@omittedTypename</code> property. <code>@omittedTypename</code> allows one to specify a NED type to use when <code>typename=""</code> is specified for a parametric submodule or channel. <code>@omittedTypename</code> can be specified on a module interface or channel interface, or on a submodule or connection. It should contain a single (optional) value. The value names the type to use. If it is absent, the submodule or channel will not be created. (The connection will be created without a channel object.)</p>
+</li>
+<li>
+<p>The <code>@mutable</code> property was introduced for parameters. If the module (or channel) is prepared for a parameter to change its value at runtime (i.e. the new value takes effect), then it should be marked with <code>@mutable</code>. If <code>@mutable</code> is missing, then trying to change the parameter will now result in a runtime error ("Cannot change non-mutable parameter".)</p>
+<p>The motivation is that in a complex model framework, there is usually a large number of (module or channel) parameters, and so far it has not been obvious for users which parameters can be meaningfully changed at runtime. For example, if a simple module did not implement <code>handleParameterChange()</code> or the <code>handleParameterChange()</code> method did not handle a particular parameter, then the user could technically change that NED parameter at runtime, but the change did not take effect. This has often caused confusion.</p>
+<p>Parameters of <code>ned.DelayChannel</code> and <code>ned.DatarateChannel</code> are now marked <code>@mutable</code>.</p>
+<p>To allow running existing simulation models that have not yet been updated with <code>@mutable</code> annotations, we have added the <code>parameter-mutability-check</code> configuration option. Setting <code>parameter-mutability-check=false</code> will give back the old behavior (not raising an error).</p>
+</li>
+<li>
+<p>Added the <code>expr()</code> operator to NED, with the purpose of allowing models to accept formulas or expressions which it could use e.g. to determine the processing time of a packet based on packet length or other properties, decide whether a packet should be allowed to pass or should be filtered out based on its contents (filter condition), or to derive x and y coordinates of a mobile node in the function of time.</p>
+<p>The argument to <code>expr()</code> is a NED expression which will typically contain free variables, (like x and y in <code>expr(x+y)</code>). The <code>expr()</code> operator creates an object that encapsulates the expression, so it can be assigned to parameters of the type <code>object</code>. On the C++ side, the module implementation should query the parameter to get at the expression object (of type <code>cOwnedDynamicExpression</code>), and then it may bind the free variables and evaluate the expression as often as it wishes.</p>
+</li>
+<li>
+<p>In <code>xml()</code> and <code>xmldoc()</code> element selectors, <code>$MODULE_INDEX</code>, <code>$PARENTMODULE_NAME</code> and similar variables now evaluate to the empty string if they are not applicable, instead of raising an error that was often problematic.</p>
+</li>
+<li>
+<p>Improved error reporting during network building: when an error occurs during assigning a parameter from a NED file, the error message now includes the location of the assignment (file:line in NED file).</p>
+</li>
+</ul>
+<p>MSG:</p>
+<ul>
+<li>
+<p>Made the hitherto experimental operation mode and feature set of the message compiler official. This feature set was originally added around OMNeT++ 5.3, and could be enabled by passing the <code>--msg6</code> option to <code>opp_msgtool</code>. There was also a no-op <code>--msg4</code> option that selected the old (OMNeT++ 4.x compatible) operation. Most of the OMNeT++ 6.0 pre-releases shipped with the new operation mode being the default (i.e. <code>--msg6</code> became a no-op), with features continually being added and refined. Then, finally, the old code and the <code>--msg4</code> option were removed altogether.</p>
+<p>The new operation mode represents a complete overhaul of the message compiler, with significant non-backward-compatible changes to the MSG language. These features were largely motivated by the needs of INET 4.</p>
+</li>
+<li>
+<p>The message compiler is now aware of the OMNeT++ library classes, as if they were imported by default. Declarations come from <code>sim_std.msg</code>.</p>
+</li>
+<li>
+<p>Added import support. A message file can now reference definitions in other message files using the <code>import</code> keyword. Type announcements are no longer needed (in fact, they are ignored with a warning), and there is now much less need for <code>cplusplus</code> blocks as well.</p>
+</li>
+<li>
+<p>Classes without an <code>extends</code> clause no longer have <code>cObject</code> as their default base class. If <code>cObject</code> should be the base class, <code>extends cObject</code> needs to be added explicitly.</p>
+</li>
+<li>
+<p>Field getters now return <code>const</code> reference. Separate <code>get..ForUpdate()</code> getters that return non-<code>const</code> are generated to cover uses cases when the contained value (typically an object) needs to be modified in-place.</p>
+</li>
+<li>
+<p>Added targeted <code>cplusplus</code> blocks, with the syntax of <code>cplusplus(&lt;target&gt;) {{..}}</code>. The target can be <code>h</code> (the generated header file -- the default), <code>cc</code> (the generated C++ file), <code>&lt;classname&gt;</code> (content is inserted into the declaration of the type, just before the closing curly bracket), or <code>&lt;classname&gt;::&lt;methodname&gt;</code> (content is inserted into the body of the specified method). For the last one, supported methods include the constructor, copy constructor (use <code>Foo&amp;</code> as name), destructor, <code>operator=</code>, <code>copy()</code>, <code>parsimPack()</code>, <code>parsimUnpack()</code>, etc., and the per-field generated methods (setter, getter, etc.).</p>
+</li>
+<li>
+<p>Enum names can now be used as field type name, i.e. <code>int foo @enum(Foo)</code> can now be also written as <code>Foo foo</code>.</p>
+</li>
+<li>
+<p>Support for <code>const</code> fields (no setter generated/expected).</p>
+</li>
+<li>
+<p>Support for pointer and owned pointer fields. Owned pointers are denoted with the <code>@owned</code> field property. Non-owned pointers are simply stored and returned; owned pointers imply delete-in-destructor and clone-on-dup behavior. Owned pointer fields have a remover method generated for them (<code>removeFoo()</code> for a <code>foo</code> field, or <code>removeFoo(index)</code> if the <code>foo</code> field is an array). The remover method removes and returns the object in the field or array element, and replaces it with a <code>nullptr</code>. Additionally, if the object is a <code>cOwnedObject</code>, <code>take()</code> and <code>drop()</code> calls are also generated into the bodies of the appropriate methods. There is also an <code>@allowReplace</code> property that controls whether the setter method of an owned pointer field is allowed to delete the previously set object; the default is <code>@allowReplace(false)</code>.</p>
+</li>
+<li>
+<p>More convenient dynamic arrays: inserter, appender and eraser methods are now generated into the class. For example <code>insertFoo(index,value)</code>, <code>appendFoo(value)</code>, and <code>eraseFoo(index)</code> are generated for a <code>foo[]</code> field.</p>
+</li>
+<li>
+<p>Support for pass-by-value for fields. Annotate the field with <code>@byValue</code> for that. <code>@byValue</code> and many other properties can also be specified on the class, and they are inherited by fields that instantiate that type.</p>
+</li>
+<li>
+<p>Additional C++ base classes may be specified with the <code>@implements</code> property.</p>
+</li>
+<li>
+<p>The <code>@str</code> property causes an <code>str()</code> method to be generated; the expression to be returned from the method should be given in the value of the property.</p>
+</li>
+<li>
+<p>The <code>@clone</code> property specifies code to duplicate (one array element of) the field value.</p>
+</li>
+<li>
+<p>The <code>@beforeChange</code> class property specifies the name of a method to be called from all generated methods that mutate the object, e.g. from setters. It allows implementing objects that become immutable ("frozen") after an initial setup phase.</p>
+</li>
+<li>
+<p>The <code>@custom</code> field property causes the field to only appear in descriptors, but no code is generated for it at all. One can inject the code that implements the field (data member, getter, setter, etc.) via targeted <code>cplusplus</code> blocks.</p>
+</li>
+<li>
+<p>The <code>@customImpl</code> field property, suppresses generating implementations for the field's accessor methods, allowing custom implementations to be supplied by the user.</p>
+</li>
+<li>
+<p>Added the <code>@abstract</code> field and class property. For a field, it is equivalent to the <code>abstract</code> keyword; for classes, it marks the whole class as abstract.</p>
+</li>
+<li>
+<p>Abstract fields no longer require the class to be marked with <code>@customize</code>.</p>
+</li>
+<li>
+<p>Message files now allow more than one <code>namespace &lt;namespace&gt;;</code> directive. The <code>namespace;</code> syntax should be used to return to the toplevel C++ namespace.</p>
+</li>
+<li>
+<p>The names of generated method can be overridden with the following field properties: <code>@setter</code>, <code>@getter</code>, <code>@getterForUpdate</code>, <code>@sizeSetter</code>, <code>@sizeGetter</code>, <code>@inserter</code>, <code>@eraser</code>, <code>@appender</code>, <code>@remover</code>, etc.</p>
+</li>
+<li>
+<p>Data types can be overridden with the following properties: <code>@cppType</code>, <code>@datamemberType</code>, <code>@argType</code>, <code>@returnType</code>, <code>@sizeType</code>.</p>
+</li>
+<li>
+<p>Changed C++ type for array sizes and indices, i.e. the default of <code>@sizeType</code>, from <code>int</code> to <code>size_t</code>.</p>
+</li>
+<li>
+<p>Added support for setting pointer members and array sizes via class descriptors. (<code>cClassDescriptor</code> had no facility for that.) This involves adding two methods to <code>cClassDescriptor</code> (<code>setFieldArraySize()</code> and <code>setFieldStructValuePointer()</code>), and support for the <code>@resizable()</code> and <code>@replaceable</code> field attributes that tell the message compiler to generate the respective code in the class.</p>
+</li>
+<li>
+<p>The <code>@toString</code> and <code>@fromString</code> properties specify a method name or code fragment to convert the field's value to/from string form in class descriptors (<code>getFieldValueAsString()</code> and <code>setFieldValueFromString()</code> methods of <code>cClassDescriptor</code>). In the absence of <code>@toString</code>, previous versions converted the value to string by writing it to a stream using <code>operator&lt;&lt;</code>; now the <code>str()</code> method of the object is used if it has one. If neither <code>@toString</code> nor <code>str()</code> exist, an empty string is returned.</p>
+</li>
+<li>
+<p>Likewise, the <code>@toValue</code> and <code>@fromValue</code> properties specify a method name or code fragment to convert the field's value to/from <code>cValue</code> form in class descriptors ((<code>getFieldValue()</code> and <code>setFieldValue()</code> methods of <code>cClassDescriptor</code>)).</p>
+</li>
+<li>
+<p>Better code for generated classes, e.g. inline field initializers, and use of the <code>=delete</code> syntax of C++11 in the generated code.</p>
+</li>
+<li>
+<p>Better code generated for descriptors, e.g. symbolic constants for field indices.</p>
+</li>
+<li>
+<p>The list of reserved words (words that cannot be used as identifiers in MSG files; it is the union of the words reserved by C++ and by the MSG language) has been updated.</p>
+</li>
+<li>
+<p>A complete list of supported properties (not all of them are explicitly listed above) can be found in an Appendix of the Simulation Manual.</p>
+</li>
+</ul>
+<p>Ini files:</p>
+<ul>
+<li>
+<p>It is now possible to break long lines without using a trailing backslash. Continuation lines are marked as such by indenting them, i.e. an indented line is now interpreted as a continuation of the previous line. (It is not possible to break a line inside a string constant that way.) Breaking lines using a trailing backslash way still works (and it can also be used to break string constants, too). Indentation-based line continuation has the advantage over backslashes that it allows placing comments on intermediate lines (whereas with backslashes, the first <code>#</code> makes the rest of the lines also part of the comment).</p>
+</li>
+<li>
+<p>The <code>Config</code> prefix in section headers is now optional, that is, the heading <code>[Config PureAloha]</code> may now be also written as <code>[PureAloha]</code>, with the two being equivalent.</p>
+</li>
+</ul>
+<p>Simulation kernel / Modules, channels, programming model:</p>
+<ul>
+<li>
+<p>Added the <code>scheduleAfter()</code>, <code>rescheduleAt()</code>, <code>rescheduleAfter()</code> methods to <code>cSimpleModule</code>. They are mainly for convenience, but using <code>rescheduleAt()</code> instead of <code>cancelEvent()</code> + <code>scheduleAt()</code> will eventually allow for a more efficient implementation.</p>
+</li>
+<li>
+<p>Change in the parameter change notification mechanism: Calls to the <code>handleParameterChange()</code> method during initialization are no longer suppressed. Because now every change results in a notification, the umbrella <code>handleParameter(nullptr)</code> call at the end of the initialization is no longer needed and has been removed. The consequence is that <code>handleParameterChange()</code> methods need to be implemented more carefully, because they may be called at a time when the module may not have completed all initialization stages. Also, if an existing model relied on <code>handleParameter(nullptr)</code> being called, it needs to be updated.</p>
+</li>
+<li>
+<p>Improvements in the multi-stage initialization protocol with regard to dynamic module creation. Modules now keep track of the last init stage they completed (<code>lastCompletedInitStage</code>). During an init stage, initialization of modules is restarted if creation/deletion is detected during iteration; modules already initialized in the previous round are recognized and skipped with the help of <code>lastCompletedInitStage</code>.</p>
+</li>
+<li>
+<p><code>cModule</code> now keeps track of submodule vectors as entities, and not just as a collection of submodules with vector indices, meaning that we can now distinguish between nonexistent and zero-size submodule vectors. Random access of vector elements has also became more efficient (constant-time operation). Several new methods have been added as part of this change: <code>hasSubmoduleVector()</code>, <code>getSubmoduleVectorSize()</code>, <code>addSubmoduleVector()</code>, <code>deleteSubmoduleVector()</code>, <code>setSubmoduleVectorSize()</code>, <code>getSubmoduleVectorNames()</code>.</p>
+</li>
+<li>
+<p>As part of the above change, several <code>cModule</code> and <code>cModuleType</code> methods have been added or updated. A partial list:</p>
+<ul>
+<li>In <code>cModule</code>, the <code>hasSubmodule()</code>, <code>getSubmoduleNames()</code>, <code>hasGateVector()</code>, <code>hasGates()</code> methods have been added for consistency between submodule and gate APIs.</li>
+<li>The return type of the <code>getGateNames()</code> method has been changed from <code>std::string&lt;const char*&gt;</code> to <code>std::vector&lt;std::string&gt;</code>, for consistency with <code>getSubmoduleNames()</code>.</li>
+<li><code>cModule</code>: added <code>setIndex()</code> and <code>setNameAndIndex()</code>.</li>
+<li><code>cModule</code>, <code>cGate</code>: <code>getIndex()</code>, <code>getVectorSize()</code>, <code>gateSize()</code> and similar methods now throw exception for non-vector submodules/gates.</li>
+<li><code>cModule</code>: add separate <code>addGateVector()</code> method instead misusing <code>addGate()</code> for creating gate vectors, also for consistency with <code>addSubmoduleVector()</code>.</li>
+<li>In <code>cModuleType::create()</code>, the <code>vectorSize</code> parameter of <code>create()</code> has been removed.</li>
+<li>In <code>cModuleType::createScheduleInit()</code>, an index argument was added to allow creating submodule vector elements.</li>
+<li><code>cModule</code>: added <code>addSubmodule()</code> method which flows more naturally than <code>cModuleType::create()</code>.</li>
+</ul>
+</li>
+<li>
+<p>There have been changes in submodule and channel iterators. <code>SubmoduleIterator</code> has been rewritten due to the change in how submodule vectors are represented, which may affect the iteration order in some cases. Iterators now throw an exception if a change occurs in the list of submodules/channels during iteration. Their APIs have also changed a little: <code>operator--</code> was removed, and <code>init(m)</code> was renamed to <code>reset()</code>.</p>
+</li>
+<li>
+<p>Optimized <code>cModule::ChannelIterator</code> by letting <code>cModule</code> maintain a linked list of channels (<code>cChannel</code>), so that <code>ChannelIterator</code> doesn't have to search through the whole compound module to find them.</p>
+</li>
+<li>
+<p>Module name and full name (i.e. "name[index]") are now stringpooled, which reduces memory usage in exchange for a small build-time extra cost. In addition, string pools now use <code>std::unordered_map</code> instead of <code>std::map</code>, which results in improved performance.</p>
+</li>
+<li>
+<p><code>cComponent</code>: added <code>getNedTypeAndFullName()</code> and <code>getNedTypeAndFullPath()</code>. They are especially useful in constructing error messages in NED functions.</p>
+</li>
+</ul>
+<p>Simulation kernel / Signals and notifications:</p>
+<ul>
+<li>
+<p><code>intpar_t</code> was renamed to <code>intval_t</code>, and <code>uintval_t</code> was added. Both are guaranteed to be at least 64 bits wide.</p>
+</li>
+<li>
+<p>Signal listeners changed to use <code>intval_t</code> and <code>uintval_t</code> instead of <code>long</code> and <code>unsigned long</code>. This change was necessary because <code>long</code> is only 32 bits wide on Windows. This affects methods of <code>cListener</code> and subclasses like <code>cResultFilter</code> and <code>cResultRecorder</code>.</p>
+</li>
+<li>
+<p>Emitting <code>nullptr</code> as a string (<code>const char*</code> overload of <code>emit()</code>) is disallowed. The reason is that <code>nullptr</code> cannot be represented in <code>std::string</code>, which causes problems e.g. in result filters and recorders.</p>
+</li>
+<li>
+<p>Added two new model change notifications: <code>cPostModuleBuildNotification</code>, <code>cPostComponentInitializeNotification</code>.</p>
+</li>
+<li>
+<p>Minor changes in some model change notification classes. In <code>cPreModuleAddNotification</code>, the <code>vectorSize</code> field was removed (as it was redundant), and in <code>cPostModuleDeleteNotification</code>, the interpretation of the index field has changed a little: if the deleted module was not part of a module vector, index is now set to -1 instead of 0.</p>
+</li>
+</ul>
+<p>Simulation kernel / Utilities:</p>
+<ul>
+<li>
+<p>Two utility functions were added to <code>cObject</code>: <code>getClassAndFullPath()</code> and <code>getClassAndFullName()</code>. They are mostly useful in logging and error messages.</p>
+</li>
+<li>
+<p><code>cMatchExpression</code>: The <code>field =~ pattern</code> syntax replaces <code>field(pattern)</code>. Also removed the implicit OR syntax. The old syntaxes looked confusing, and made it difficult to tell apart the concise notation from expression-style notation.</p>
+</li>
+<li>
+<p>Added <code>opp_component_ptr&lt;T&gt;</code>. It implements a smart pointer that points to a <code>cComponent</code> (i.e. a module or channel), and automatically becomes <code>nullptr</code> when the referenced object is deleted. It is a non-owning ("weak") pointer, i.e. the pointer going out of scope has no effect on the referenced object. <code>opp_component_ptr&lt;T&gt;</code> can be useful in implementing modules that hold pointers to other modules and want to be prepared for those modules getting deleted. It can also be useful for simplifying safe destruction of compound modules containing such modules.</p>
+</li>
+<li>
+<p>New classes: <code>opp_pooledstring</code>, <code>opp_staticpooledstring</code>. They provide pool- backed string storage (reference-counted and non-reference-counted, respectively). In turn, the <code>cStringPool</code> class was removed; use either of the pooled string classes or or <code>opp_staticpooledstring::get(const char *)</code> instead.</p>
+</li>
+<li>
+<p>Several string functions have been made available for models. A representative partial list: <code>opp_isempty()</code>, <code>opp_isblank()</code>, <code>opp_nulltoempty()</code>, <code>opp_trim()</code>, <code>opp_split()</code>, <code>opp_splitandtrim()</code>, <code>opp_join()</code>, <code>opp_stringendswith()</code>, <code>opp_substringbefore()</code>, etc.</p>
+</li>
+<li>
+<p>The <code>cStringTokenizer</code> class has been rewritten. It now supports features like optional skipping of empty tokens, optional trimming of tokens, optional honoring of quotes, optional honoring of parens/braces/brackets (i.e. the input string is not broken into tokens in the middle of a parenthesized expression).</p>
+</li>
+</ul>
+<p>Simulation kernel / Visualization support:</p>
+<ul>
+<li>
+<p>Added display name support to modules. Display name is a string that optionally appears in Qtenv next to (or instead of) the normal module name, in order to help the user distinguish between similarly-named submodules. For example, application-layer modules <code>app[0]</code>, <code>app[1]</code>, etc. in INET may be given descriptive names like "file transfer", "video", "voice", or "CBR", and have them displayed in Qtenv. Display names may be set using the <code>display-name</code> per-module configuration option, or programmatically by calling <code>setDisplayName()</code>.</p>
+</li>
+<li>
+<p>Added the <code>g=&lt;group&gt;</code> (layout group) display string tag, which makes it possible to apply predefined arrangements like row, column, matrix or ring to a group of unrelated submodules. This layouting feature was previously only available for submodule vectors. When "g" tags are used, submodules in the same group are now regarded for layouting purposes as if they were part of the same submodule vector.</p>
+</li>
+<li>
+<p>Made it possible to specify display strings in the configuration. The value given in the <code>display-string</code> per-component configuration option is merged into the component's display string in the same way inheritance or submodule display strings work: it may add, overwrite or remove items from it.</p>
+</li>
+<li>
+<p>Added text alignment support to text and label figures: <code>cFigure::Alignment</code> enum, <code>getAlignment()</code>/<code>setAlignment()</code> in <code>cAbstractTextFigure</code>.</p>
+</li>
+<li>
+<p>Added the <code>toAlpha()</code> method and a constructor taking <code>Color</code> to <code>cFigure::RGBA</code>.</p>
+</li>
+</ul>
+<p>Simulation kernel / Transmission updates:</p>
+<ul>
+<li>
+<p>The initial <code>send()</code> is interpreted as: "packet transmission begins now, packet content and duration are, as things are now, going to be this".</p>
+<p>Following that, an "update" (or any number of updates) can be sent. An update is a packet with the updated ("actual") content, and with a "remaining transmission duration" attached. Updates may only be sent while transmission is still ongoing.</p>
+<p>As an example, aborting a transmission is done by sending a packet with a truncated content and a remaining duration of zero.</p>
+<p>Transmission updates are paired with the original packet they modify using a transmissionId. The transmissionId is normally chosen to be the packet ID of the original transmission. Channels should understand updates and handle them accordingly.</p>
+<p>Receivers that receive the packet at the end of the reception, which is the default operating mode, will only receive the final update. The original packet and intermediate updates are absorbed by the simulation kernel.</p>
+<p>Receivers that receive the packet at the start of the reception (see <code>cGate::setDeliverImmediately()</code>, previously called <code>setDeliverOnReceptionStart()</code>) should be prepared to receive all of the original packet and the updates, and handle them appropriately. Tx updates can be recognized from <code>cPacket::isUpdate()</code> returning <code>true</code>. <code>cPacket::getRemainingDuration()</code> returns the remaining transmission duration, and <code>cPacket::getDuration()</code> the total transmission duration.</p>
+<p>As a safeguard against unprepared modules accidentally processing tx updates as normal full-blown packets, the module is only given tx updates if it explicitly declares that it is able to handle them properly. The latter is done by the module calling <code>setTxUpdateSupport(true)</code> before receiving packets, e.g. in <code>initialize()</code>.</p>
+<p>Non-transmission channels treat tx updates in the same way as they treat any other messages and packets (they ignore the <code>cPacket::isUpdate()</code> flag).</p>
+<p>Details and related changes follow.</p>
+</li>
+<li>
+<p><code>send()</code> and <code>sendDirect()</code> now accept a <code>SendOptions</code> struct where optional parameters such as delay can be passed in. <code>sendDelayed()</code> and other <code>send()</code>/<code>sendDirect()</code> variants now convert their extra args to a <code>SendOptions</code>, and delegate to the "standard" <code>send()</code>/<code>sendDirect()</code> versions. <code>SendOptions</code> was introduced as a means to handle combinatorial explosion of <code>send()</code> variants.</p>
+</li>
+<li>
+<p>For methods that participate in the send protocol (<code>cGate::deliver()</code>, <code>cModule::arrived()</code>, <code>cChannel::processMessage()</code>), <code>SendOptions</code> was added.</p>
+</li>
+<li>
+<p><code>cDatarateChannel</code> now allows the sender to explicitly specify the packet duration in <code>SendOptions</code>, overriding the duration that the channel would compute from the packet length and the channel datarate.</p>
+</li>
+<li>
+<p><code>cDatarateChannel</code>'s datarate is now optional: set it to 0 or <code>nan</code> to leave it unspecified. This change was necessary to support transmitting frames with per-frame data rate selection. If the datarate is unspecified, the packet duration must be supplied in the send call, otherwise a runtime error will be raised.</p>
+</li>
+<li>
+<p><code>cDatarateChannel</code>: non-packet messages now pass through without interfering with packets.</p>
+</li>
+<li>
+<p><code>cDatarateChannel</code>: disabled channels now let transmission updates through, so that it is possible for the transmitter module to abort the ongoing packet transmission.</p>
+</li>
+<li>
+<p>Tx updates (without duration/remainingDuration) are allowed on paths without transmission channels.</p>
+</li>
+<li>
+<p>In <code>cChannel::processMessage()</code>, <code>result_t</code> was renamed <code>cChannel::Result</code>, and it is now a proper return value (not an output parameter).</p>
+</li>
+<li>
+<p><code>remainingDuration</code> was added to <code>cChannel::Result</code>.</p>
+</li>
+<li>
+<p><code>cDatarateChannel</code> now optionally allows multiple concurrent transmissions, with or without any bookkeeping and associated checks. This is useful for modeling a channel with multiple subchannels or carriers. The operating mode has to be selected programmatically, with the channel's <code>setMode()</code> method. Possible modes are <code>SINGLE</code>, <code>MULTI</code> and <code>UNCHECKED</code>.</p>
+</li>
+<li>
+<p>The <code>forceTransmissionFinishTime()</code> method of channels has been deprecated. It was always meant as a temporary device to allow implementing aborting frame transmissions, and now with the arrival of the new transmission update API there is no reason to use it any more. Simulations using it should be migrated to the new API.</p>
+</li>
+<li>
+<p>Renamed <code>setDeliverOnReceptionStart()</code> to <code>setDeliverImmediately()</code>.</p>
+</li>
+<li>
+<p>Added <code>cSimpleModule::supportsTxUpdates()</code> flag.</p>
+</li>
+<li>
+<p><code>cPacket</code> now carries a <code>remainingDuration</code> field.</p>
+</li>
+<li>
+<p><code>cPacket</code>: eliminated <code>FL_ISRECEPTIONSTART</code>; <code>isReceptionStart()</code> now uses <code>remainingDuration</code> as input; added a similar <code>isReceptionEnd()</code> method.</p>
+</li>
+<li>
+<p><code>cPacket::str()</code> overhaul to reflect new fields and uses.</p>
+</li>
+<li>
+<p>In the APIs, send delay and propagation delay, which were sort of combined into a single value, are now distinct values, handled separately.</p>
+</li>
+</ul>
+<p>Simulation kernel / Module deletion:</p>
+<ul>
+<li>
+<p>Added the <code>preDelete()</code> method to <code>cComponent</code>. This is an initially empty virtual function that the user can override to add tasks to be done before the module (or channel) is deleted. When <code>deleteModule()</code> is called on a compound module, it first invokes <code>preDelete()</code> for each module in the submodule tree, and only starts deleting modules after that. <code>preDelete()</code> can help simplify network or module deletion in a complex simulation that involves model change listeners.</p>
+</li>
+<li>
+<p><code>cIListener</code>'s destructor now unsubscribes from all places it was subscribed to. This change was necessitated by the following <code>deleteModule()</code> change.</p>
+</li>
+<li>
+<p><code>deleteModule()</code>: Module destruction sequence was changed so that when deleting a compound module, the compound module's local listeners are notified about the deletion of the submodules.</p>
+</li>
+<li>
+<p><code>deleteModule()</code> internals refactored. The motivation was to avoid doing things like firing pre-model-change notifications from a halfway-deleted module. Now we do every potentially risky thing (such as deleting submodules and disconnecting gates) from <code>doDeleteModule()</code>, and only delete the module object when it is already barebones (no submodules, gates, listeners, etc). With this change, the deletion sequence is now pretty much the reverse of the setup sequence.</p>
+</li>
+<li>
+<p>Now it is allowed for modules to be deleted (including self-deletion) and created at will during initialization.</p>
+</li>
+</ul>
+<p>Simulation kernel / Expressions, object parameters, JSON values:</p>
+<ul>
+<li>
+<p>Under the hood, all expression parsing and evaluation tasks now use the same new generic extensible expression evaluator framework. It is used for NED expressions, object matching, scenario constraint, statistics recording, result selection in the Simulation IDE and in <code>opp_scavetool</code>, in <code>cDynamicExpression</code> and <code>cMatchExpression</code>, etc. In the new framework, expression parsing and the translation of the AST to an evaluator tree are done in separate steps, which makes the library very versatile. Evaluators include support for shortcutting logical and conditional operators, constant folding, and an <code>undefined</code> value (anything involving <code>undefined</code> will evaluate to <code>undefined</code>).</p>
+</li>
+<li>
+<p><code>cNedValue</code> was renamed to <code>cValue</code> (compatibility typedef added), as it is now a generic value container used throughout the simulation kernel (<code>cPar</code>, <code>cExpression</code>, <code>cClassDescriptor</code>, etc.), i.e. it is no longer specific to NED.</p>
+</li>
+<li>
+<p><code>cValue</code>'s <code>doubleValue()</code> and <code>intValue()</code> methods now throw an exception when called on a value that has a measurement unit, in order to reduce usage mistakes. If the value has a unit, call either <code>doubleValueInUnit()</code> / <code>intValueInUnit()</code>, or <code>doubleValueRaw()</code>/<code>intValueRaw()</code> plus <code>getUnit()</code>.</p>
+</li>
+<li>
+<p><code>cValue</code> changed to hold <code>any_ptr</code> (see later) instead of <code>cObject*</code>. This change involves several changes, e.g. type <code>OBJECT</code> renamed to <code>POINTER</code>, and <code>pointerValue()</code> added.</p>
+</li>
+<li>
+<p><code>cPar</code>: Added support for object parameters. New type constant: <code>OBJECT</code>. New methods: <code>setObjectValue()</code>, <code>objectValue()</code>, <code>operator=(cObject*)</code>, <code>operator cObject*</code>.</p>
+</li>
+<li>
+<p><code>cPar</code>: Added <code>cValue</code>-based generic access: <code>getValue()</code>, <code>setValue()</code>.</p>
+</li>
+<li>
+<p>Store origin (file:line) info in <code>cPar</code> parameters (more precisely, in <code>cDynamicExpression</code>), so we can report it on evaluation errors. Most visible change: <code>cPar::parse()</code> gained an extra <code>FileLine</code> argument. Also, <code>cDynamicExpression</code> now has <code>get/setSourceLocation()</code>.</p>
+</li>
+<li>
+<p>Added <code>cValueArray</code> and <code>cValueMap</code> classes for representing JSON data in NED expressions. A third class is <code>cValueHolder</code>, a wrapper around <code>cValue</code>, which is only used when a non-object value (double, string, etc) is assigned to a NED parameter of the type <code>object</code>. All three classes subclass from <code>cValueContainer</code>. Note that behavior of the <code>dup()</code> methods of <code>cValueArray</code> and <code>cValueMap</code> is consistent with that of <code>cArray</code> and <code>cQueue</code>, i.e. only those objects that are owned by the cloned container are duplicated.</p>
+</li>
+<li>
+<p>NED functions that take or return values of type <code>object</code> are now allowed.</p>
+</li>
+<li>
+<p>NED functions can now be defined with the alternative signature:</p>
+<p>cValue f(cExpression::Context *context, cValue argv[], int argc)</p>
+<p>in addition to the existing signature</p>
+<p>cValue f(cComponent *contextComponent, cValue argv[], int argc)</p>
+<p>The <code>cExpression::Context</code> argument allows one to access the context component, and also the directory where the ini file entry or the NED file containing the expression occurred (the "base directory"). <code>Define_NED_Function()</code> accepts both signatures. The base directory is useful for functions like <code>xmldoc()</code> that want to access files relative to the location of the NED expression.</p>
+</li>
+<li>
+<p><code>cNedFunction</code> now allows to search for NED functions by name AND accepted number of args.</p>
+</li>
+<li>
+<p><code>cDynamicExpression</code> has been reimplemented using the new internal <code>Expression</code> class, and support for user-defined variables, members, methods, and functions was added. As a consequence, the public interface of the class has significantly changed as well.</p>
+</li>
+<li>
+<p>Added the <code>cOwnedDynamicExpression</code> class which holds the result of a NED <code>expr()</code> operator. <code>cOwnedDynamicExpression</code> is both <code>cOwnedObject</code> and <code>cDynamicExpression</code> (multiple inheritance). To make this possible, the <code>cObject</code> base class was removed from <code>cExpression</code>.</p>
+</li>
+<li>
+<p><code>cClassDescriptor</code>: Use exception instead of returning <code>false</code> for indicating error. The return types of the following methods changed from <code>bool</code> to <code>void</code>: <code>setFieldValueAsString()</code>, <code>setFieldArraySize()</code>, <code>setFieldStructValuePointer()</code>.</p>
+</li>
+<li>
+<p><code>cClassDescriptor</code>: Added support for setting pointer members and array sizes via class descriptors. New methods: <code>setFieldArraySize()</code>, <code>setFieldStructValuePointer()</code>.</p>
+</li>
+<li>
+<p><code>cClassDescriptor</code>: Added <code>getFieldValue()</code>/<code>setFieldValue()</code> methods to allow accessing fields in a typed way, using <code>cValue</code>. Previously existing methods <code>getFieldValueAsString()</code>/<code>setFieldValueAsString()</code> only allowed string-based access. In MSG files, the <code>@toValue()</code> and <code>@fromValue()</code> properties can be used to provide code to convert objects or fields to <code>cValue</code>.</p>
+</li>
+<li>
+<p><code>cClassDescriptor</code>: Methods changed to use <code>any_ptr</code> instead of <code>void*</code> for passing the object. (<code>any_ptr</code> is a smart pointer class that provides type safety for <code>void*</code> pointers.) Pointers need to be put into and extracted from <code>any_ptr</code> using the new <code>toAnyPtr()</code> / <code>fromAnyPtr()</code> functions. They have specialized versions for each type (via templates and overloading). For new types, the message compiler generates <code>toAnyPtr()</code>/<code>fromAnyPtr()</code> in the header file. For the simulation library classes, these methods come from <code>sim_std_m.h</code> (generated from <code>sim_std.msg</code>); <code>sim_std_m.h</code> is now part of <code>&lt;omnetpp.h&gt;</code>.</p>
+</li>
+</ul>
+<p>Simulation kernel / Fingerprints:</p>
+<ul>
+<li>
+<p>Due a bugfix in <code>cHasher::add(const char *)</code>, fingerprints that involve hashing strings changed their values.</p>
+</li>
+<li>
+<p>The implementation of <code>cHasher::add(const std::string&amp;)</code> was changed to be consistent with the <code>add(const char *)</code> overload. This may cause fingerprint changes in models that use it.</p>
+</li>
+<li>
+<p>Changed the way fingerprints are computed from figures. Most importantly, fingerprints are now affected by all visual properties, not just geometry information. This change only affects fingerprints that contain the 'f' (=figures) ingredient.</p>
+</li>
+<li>
+<p>The introduction of the new expression evaluation framework also somewhat affects fingerprints. The fact that logical operators and inline-if are now shortcutting may change the fingerprint of some simulations, due to consuming fewer random numbers during expression evaluation.</p>
+</li>
+</ul>
+<p>Simulation kernel / Miscellaneous:</p>
+<ul>
+<li>
+<p>The <code>getModuleByPath()</code> method was changed to never return <code>nullptr</code>, even if an empty string is given as path. Instead, it will throw an exception if the module was not found. This change makes this method consistent with other getter methods in the simulation library, and allows <code>nullptr</code> checks to be removed from model code that uses it. A new method, <code>findModuleByPath()</code> was added for cases when an optionally existing module needs to be found. These methods, initially defined on <code>cModule</code>, have been moved to <code>cComponent</code> so that they can be called on channels too.</p>
+</li>
+<li>
+<p>Signature change of the <code>cVisitor::visit(cObject *obj)</code> virtual method: it can now request end of iteration via returning <code>false</code> (hence, return type changed from <code>void</code> to <code>bool</code>) instead of throwing <code>EndTraversalException</code>. Existing <code>cVisitor</code> subclasses in model code will need to be adjusted.</p>
+</li>
+<li>
+<p><code>cPar</code>: Implemented <code>isMutable()</code> and the mechanism behind the new <code>@mutable</code> property.</p>
+</li>
+<li>
+<p><code>cProperty</code>: Added <code>getNumKeys()</code> method; <code>updateWith()</code> made public.</p>
+</li>
+<li>
+<p><code>cConfiguration</code>: Removed <code>getParameterKeyValuePairs()</code>. Instead, <code>getKeyValuePairs()</code> made smarter with an extra <code>flags</code> parameter to be able to handle the various use cases.</p>
+</li>
+<li>
+<p><code>cMessage</code>: Allowed <code>isMessage()</code> to be called from subclasses.</p>
+</li>
+<li>
+<p><code>cEnvir</code>: New result recording related methods: <code>recordComponentType()</code>, <code>recordParameter()</code>.</p>
+</li>
+<li>
+<p><code>cEnvir</code>: Added <code>getConnectionLine()</code>, which returns the coordinates of a connection arrow. This is for certain custom animations.</p>
+</li>
+<li>
+<p><code>cEnvir</code>: Added <code>pausePoint()</code>, an animation-related experimental API.</p>
+</li>
+<li>
+<p>Result filters: Two new methods in the <code>cResultListener</code> interface: <code>emitInitialValue()</code> and <code>callEmitInitialValue()</code>.</p>
+</li>
+<li>
+<p><code>cResultFilter</code>, <code>cResultRecorder</code>: Grouped <code>init()</code> args into a <code>Context</code> struct, The old <code>init()</code> methods have been preserved as deprecated (and invoked from the new <code>init()</code>) in case an existing filter/recorder overrides them. Note that potential external calls to the old <code>init()</code> method won't work any more (they will have no effect), and need to be changed to the new version.</p>
+</li>
+<li>
+<p>Added <code>MergeFilter</code>, a result filter that allows multiple inputs, and multiplexes them onto its singe output. It is available (as the <code>merge()</code> function) in the <code>source=</code> part of <code>@statistic</code>.</p>
+</li>
+<li>
+<p>Fixed histogram loading issue in the output scalar file (.sca). Bin edges that are very close could become equal in the file if insufficient printing precision was set, rendering the file unreadable. The issue is now handled both during result file writing (if such condition is detected, bin edges are written with full [16-digit] precision) and reading (zero-width bins are merged into adjacent nonzero-width bin).</p>
+</li>
+</ul>
+<p>Simulation kernel / Cleanup:</p>
+<ul>
+<li>
+<p>Removed obsolete/deprecated classes and methods. A partial list: <code>cVarHistogram</code>, <code>cLegacyHistogram</code>, <code>cLongHistogram</code>, <code>cDoubleHistogram</code>, <code>cWeightedStdDev</code>, <code>cDensityEstBase</code>; <code>detailedInfo()</code> method; <code>timeval_*()</code> functions; <code>cHistogram</code> methods <code>setRangeAuto()</code>, <code>setRangeAutoLower()</code>, <code>setRangeAutoUpper()</code>, <code>setNumCells()</code>, <code>setCellSize()</code>; <code>operator()</code> of iterator classes in <code>cArray</code>/<code>cModule</code>/<code>cQueue</code>; <code>cFigure</code>/<code>cCanvas</code> deprecated methods <code>addFigureAbove()</code> and <code>addFigureBelow()</code>; many <code>cAbstractHistogram</code> (ex-<code>cDensityEstBase</code>) methods, etc. Instead of the removed <code>timeval_*()</code> methods, use <code>opp_get_monotonic_clock_usecs()</code> or <code>opp_get_monotonic_clock_nsecs()</code>, and perform the arithmetic in <code>int64_t</code>.</p>
+</li>
+<li>
+<p>Refactoring: Some classes, methods and variables related to ownership management were renamed: <code>cDefaultOwner</code> -&gt; <code>cSoftOwner</code>; <code>defaultOwner</code> -&gt; <code>owningContext</code>, etc.</p>
+</li>
+<li>
+<p>The <code>setPerformFinalGC()</code> method was removed. It was meant for internal use, and pretty much unused by model code.</p>
+</li>
+<li>
+<p>Removed the support for OMNeT++ 4.x fingerprints (<code>USE_OMNETPP4x_FINGERPRINTS</code>).</p>
+</li>
+<li>
+<p><code>WITH_OMNETPP4x_LISTENER_SUPPORT</code> was removed.</p>
+</li>
+<li>
+<p>Source code modernization: use in-class member initializers wherever possible. The source code now requires a C++14 compiler.</p>
+</li>
+<li>
+<p>Internal classes, global variables, etc moved into the <code>omnetpp::internal</code> namespace.</p>
+</li>
+</ul>
+<p>Runtime:</p>
+<ul>
+<li>
+<p>Accept expressions as value for (most) config options. For options that accept values both with and without quotes (types STRING, FILENAME, FILENAMES, PATH), a heuristic decides whether a string is to be taken literally or to be evaluated as an expression. Expressions may also use NED operators, module parameters and other NED expression features. For example, it is possible to use the module vector index in the value of the <code>display-name</code> option: <code>**.app[0..3].display-name = "cbr-" + string(index)</code></p>
+</li>
+<li>
+<p>Allow parameter values to be specified on the command line. For example, <code>--**.mss=512</code> is equivalent to inserting the <code>**.mss=512</code> line near the top of the configuration in <code>omnetpp.ini</code>.</p>
+</li>
+<li>
+<p>Do not complain about missing <code>omnetpp.ini</code> if a <code>--network</code> command-line option is present.</p>
+</li>
+<li>
+<p>There were several improvements related to the NED path. The <code>NEDPATH</code> environment variable has been renamed to <code>OMNETPP_NED_PATH</code>, but the old one is still recognized for backward compatibility. Multiple <code>-n</code> options are now accepted. Also, the <code>NEDPATH</code> environment variable used to be ignored when a <code>-n</code> option was present, no longer so. Excluding packages from NED file loading has also been implemented. NED exclusions can be specified in multiple ways: the <code>-x &lt;packagelist&gt;</code> command-line option, the <code>OMNETPP_NED_PACKAGE_EXCLUSIONS</code> environment variable, and the <code>ned-package-exclusions</code> configuration option (they accept semicolon- separated lists).</p>
+</li>
+<li>
+<p>Change in NED loading: Now, if a package has files in several distinct source trees, only one of them may contain a <code>package.ned</code> file.</p>
+</li>
+<li>
+<p>There were also several improvements related the image path. The <code>-i &lt;imgpath&gt;</code> option command-line option has been added. It may occur multiple times. The image path is now defined jointly by the <code>OMNETPP_IMAGE_PATH</code> environment variable, <code>-i</code> command-line options, and the <code>image-path</code> configuration option. <code>./bitmaps</code> was removed from default image path, as it was virtually unused. The default value <code>./images</code> now comes from the default value of the image-path configuration option.</p>
+</li>
+<li>
+<p>Added support for embedding NED files into a binary (an executable or library). The <code>cpp</code> subcommand of <code>opp_nedtool</code> generates C++ code that contains the content of NED files as string constants, which can then be compiled into the simulation binary. When the simulation program is started, these embedded NED files will be loaded automatically, and the original NED files will no longer be needed for running simulations. Optional garbling, which prevents NED source code from being directly readable inside the compiled binaries, is also available. A <code>makefrag</code> file can be used to integrate the NED-to-C++ translation into the build process. To see an example <code>makefrag</code> file, view the <code>makefrag</code> help topic in <code>opp_nedtool</code>.</p>
+</li>
+<li>
+<p>Several global config options were changed to be per-run: <code>scheduler-class</code>, <code>debug-on-errors</code>, <code>print-undisposed</code>, <code>fingerprintcalculator-class</code>.</p>
+</li>
+<li>
+<p>Added the <code>parsim-num-partitions</code> config option, which makes it possible to explicitly declare the number of partitions to be used with parallel simulation. (Before, it was explicitly taken by OMNeT++ from MPI or the respective communication layer.)</p>
+</li>
+<li>
+<p>Added the <code>config-recording</code> configuration option, which controls the amount of configuration options to save into result files.</p>
+</li>
+<li>
+<p>Allow recording actual module/channel parameter values into the output scalar file, via the new <code>param-recording</code> per-object boolean configuration option. Note that parameters will be recorded as "parameter" result items, not as scalars. For volatile parameters, the expression itself will be recorded (e.g. <code>exponential(0.5)</code>), not any particular value drawn from it.</p>
+</li>
+<li>
+<p>Added support for result directory subdivision: the <code>resultdir-subdivision</code> boolean configuration option and the <code>${iterationvarsd}</code> variable. The motivation is that the performance of various file managers (including Eclipse's Project Explorer) tends to degrade severely if there are more than a few thousand files in a single directory. In OMNeT++, this problem occurs when a parameter study produces a large number of result files. The common workaround is to "hash" the files into a subdirectory tree. (For example, git also uses this technique to store the contents of <code>.git/objects</code> dir).</p>
+<p>In OMNeT++, such feature can be turned on by setting <code>resultdir-subdivision=</code> <code>true</code> in the configuration. Since it is natural to use the iteration variables to define the directory hierarchy, directory subdivision makes use of the new <code>${iterationvarsd}</code> configuration variable. This variable is similar to <code>${iterationvarsf}</code> but it contains slashes instead of commas, which makes it suitable for creating a directory tree. Enabling directory subdivision will cause <code>/${configname}/${iterationvarsd}</code> to be appended to the name of the results directory (see <code>result-dir</code> config option), causing result files to be created in a subdirectory tree under the results directory.</p>
+<p>If you want to set up the directory hierarchy in a different way, you can do so by setting the <code>result-dir</code> config option and appending various variables to the value. E.g.: <code>result-dir = "results/${repetition}"</code></p>
+</li>
+<li>
+<p>Added the <code>${datetimef}</code> inifile variable, which contains the current timestamp in a form usable as part of a file name.</p>
+</li>
+<li>
+<p>Eventlog recording: Implemented snapshot and incremental index support to increase performance and scalability. This introduces significant (breaking) changes in the <code>elog</code> file format, and adds a set of associated configuration options; see the Sequence Chart section below for details.</p>
+</li>
+<li>
+<p>Added <code>%&lt;</code> (trim preceding whitespace) to the list of accepted directives<br>
+for log prefixes.</p>
+</li>
+<li>
+<p>The obsolete command-line options <code>-x</code>, <code>-X</code>, <code>-g</code>, and <code>-G</code> were removed.</p>
+</li>
+<li>
+<p>Made the <code>-q</code> option more permissive: if <code>-c</code> is missing, assume <code>General</code></p>
+</li>
+<li>
+<p>Added the <code>-e</code> option, which prints the value of the given configuration option.</p>
+</li>
+<li>
+<p><code>opp_run -v</code> output now includes the system architecture OMNeT++ was built for<br>
+(e.g. <code>ARCH_X86_64</code> or <code>ARCH_AARCH64</code>).</p>
+</li>
+<li>
+<p><code>-h resultfilters</code> and <code>-h resultrecorders</code> now include the descriptions in the list of result filters and recorders.</p>
+</li>
+<li>
+<p>Added two new <code>-h</code> topics: <code>latexconfigvars</code>, <code>sqliteschema</code>. They are mainly used for producing info for the Appendices in the manual.</p>
+</li>
+<li>
+<p>In order to reduce OMNeT++'s external dependencies, we now use an embedded copy of Yxml as the default XML parser. Yxml (<a href="https://dev.yorhel.nl/yxml" rel="nofollow">https://dev.yorhel.nl/yxml</a>) is a small and fast SAX-style XML parser with a liberal license.</p>
+<p>Support for using LibXML2 remained in place, but very few users will actually need it. Expat support has been removed. Note that no significant functionality is lost when Yxml is used instead of LibXML2. LibXML2 is only needed for Schema or DTD-based validation (and possibly, default value completion), which virtually no simulation models require. Also note that Yxml-based parsing scales much better than LibXML2, both performance-wise and regarding memory usage.</p>
+</li>
+<li>
+<p>The bundled SQLite sources were upgraded to version 3.30.1.</p>
+</li>
+</ul>
+<p>Statistics recording:</p>
+<ul>
+<li>
+<p>Added the <code>warmup</code> filter. This filter discards values during the warm-up period, and is automatically inserted at the front of the result filter chains when the <code>warmup-period</code> config option is present.</p>
+</li>
+<li>
+<p>Added the <code>autoWarmupFilter</code> statistic attribute that allows one to disable auto-adding the <code>warmup</code> filter to a statistic. Example:</p>
+<p><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/statistic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="">@statistic</a><a href="/omnetpp/omnetpp/blob/omnetpp-6.0/record=vector;autoWarmupFilter=false">foo</a>;</p>
+<p>This will cause all values from the <code>foo</code> signal to be recorded, even values emitted during the warm-up period (if one is set).</p>
+<p>However, the real motivation behind this feature is to allow the user to add the warm-up filter at a non-default location in the filter chain, because the default location is not always correct.</p>
+<p>For example, <code>@statistic[foo](source=min;record=vector)</code> is equivalent to <code>@statistic[foo](source=min(warmup(foo));autoWarmupFilter=false;record=vector)</code>, and records (as vector) the minimum of the values which were emitted after the warmup period is over. In contrast, if we replace <code>min(warmup(foo))</code> with <code>warmup(min(foo))</code>, it will compute the minimum of ALL values, but only starts recording the result after the warmup period has expired.</p>
+<p>This is a crucial difference sometimes. For example, a statistic might record queue length computed as the difference of the number of messages that entered the queue and those that left it:</p>
+<p><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/statistic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="">@statistic</a><a href="/omnetpp/omnetpp/blob/omnetpp-6.0/source=count(pkIn)-count(pkOut);record=vector">queueLen</a>; //INCORRECT</p>
+<p>In this case, if a warmup period is set, the result may even go negative because the <code>pkIn</code> and <code>pkOut</code> signals that arrive during the warmup period are ignored, and if <code>pkOut</code> arrives after that, we are at -1. The correct solution is to add the <code>warmup</code> filter after the difference between arrivals and departures have been computed:</p>
+<p><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/statistic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="">@statistic</a><a href="/omnetpp/omnetpp/blob/omnetpp-6.0/source=warmup(count(pkIn)-count(pkOut));autoWarmupFilter=false;record=vector">queueLen</a>; //OK</p>
+<p>The <code>autoWarmupFilter</code> option exists because either location for the warmup filter (beginning or end of the chain, or even mid-chain) may make sense for certain statistics. The model author needs to decide per-statistic which one is correct.</p>
+</li>
+<li>
+<p>Added the <code>demux</code> filter, which allows splitting the stream of values arriving from a signal to multiple streams. For example, if values from a <code>foo</code> signal are tagged with the labels <code>first</code>, <code>second</code> and <code>third</code>, then the following statistics:<br>
+<a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/statistic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="">@statistic</a><a href="/omnetpp/omnetpp/blob/omnetpp-6.0/record=count(demux(foo))">foo</a>;</p>
+<p>will produce three scalars: <code>first:foo:count(demux)</code>, <code>second:foo:count(demux)</code>, and <code>third:foo:count(demux)</code>. The labels are taken from the (full) name of the details object specified in the <code>emit()</code> call.</p>
+<p>This filter is especially useful if you intend to save multiple instances of the same statistics from the same module (e.g. per-connection TCP statistics).</p>
+</li>
+<li>
+<p>In result files, the <code>,vector</code> suffix is now suppressed in the titles of vector results (similarly also <code>,histogram</code> and <code>,stats</code>), as they simply echo the result item's type. (They were there in the first place because recording mode is automatically appended to result titles <code>@statistic(title=...)</code> after a comma; it is now suppressed for the mentioned recording modes.)</p>
+</li>
+<li>
+<p>Added the <code>merge</code> filter which multiplexes several inputs onto a single output. It is available in the <code>source=</code> part of <code>@statistic</code>.</p>
+</li>
+<li>
+<p>Result filters: The <code>count</code> and <code>sum</code> filters now record the initial zero value as well.</p>
+</li>
+<li>
+<p>Result files now include two new result attributes for each item: <code>recordingmode</code>, which is the item in the <code>@statistic(record=...)</code> list that produced the given result item, and <code>moduledisplaypath</code>, the module/channel path that contains display names instead of the normal names where available.</p>
+</li>
+<li>
+<p><code>sumPerDuration</code> filter: fix computation when invoked during warmup period.</p>
+</li>
+</ul>
+<p>Cmdenv:</p>
+<ul>
+<li>Added the <code>cmdenv-fake-gui</code> boolean configuration option, which enables "fake GUI" functionality during simulation. "Fake GUI" means that <code>refreshDisplay()</code> is periodically invoked during simulation, in order to mimic the behavior of a graphical user interface like Qtenv. It is useful for batch testing of simulation models that contain visualization. Several further configuration options exist for controlling the details: <code>cmdenv-fake-gui-after-event-probability</code>, <code>cmdenv-fake-gui-before-event-probability</code>, <code>cmdenv-fake-gui-on-hold-numsteps</code>, <code>cmdenv-fake-gui-on-hold-probability</code>, <code>cmdenv-fake-gui-on-simtime-numsteps</code>, <code>cmdenv-fake-gui-on-simtime-probability</code>, <code>cmdenv-fake-gui-seed</code>.</li>
+</ul>
+<p>Qtenv:</p>
+<ul>
+<li>
+<p>Modernized look: Material-style SVG-based icons, HIDPI support, dark theme support.</p>
+</li>
+<li>
+<p>New actions on the main toolbar: "Debug next event", "Debug on errors", "Show animation parameters". ("Load NED file" was removed from the toolbar as it was rarely needed, but it's still available from the menu.)</p>
+</li>
+<li>
+<p>The default digit separator used in the main simulation time and event number displays was changed to space.</p>
+</li>
+<li>
+<p>A lot of effort was made to refine packet animation, also with regard to the new "transmission updates" API. For example, the animation filter now affects deliveries as well, and transmissions on ideal channels are now shown as a full-length line. Transmission updates are drawn as "notches" on the message line.</p>
+</li>
+<li>
+<p>Turned off animating method calls by default. The rationale is that method call animations usually expose low-level (C++ implementation level) details on the GUI, which are rarely of interest to a casual user.</p>
+</li>
+<li>
+<p>Added the possibility to disable method call visualization locally (for that module type) via the context menu, even when the global switch in the Preferences dialog is turned on.</p>
+</li>
+<li>
+<p>Added support for showing a submodule's display name under the icon instead of, or in addition to, the normal name. The format can be selected in the context menu.</p>
+</li>
+<li>
+<p>The view mode (grouped/flat/inheritance/children) in the Object Inspector used to be tied to the type (class) of the object displayed in the inspector. Since that resulted in too much mode switching while the user navigated the object tree, and the switching logic was not easily discoverable by the user, we removed the feature of per-type remembering of view modes. The view mode now only changes when the user explicitly switches in on the UI.</p>
+</li>
+<li>
+<p>In the Object Inspector, added the possibility to select display mode (Children/Grouped/Flat/Inheritance) per-node. If display mode override is specified for a node, it will affect the whole subtree. The display mode for the selected tree can be changed via hotkey (Ctrl+B) or via the context menu.</p>
+</li>
+<li>
+<p>The "Set Sending Time as Reference" option was added to the messages view context menu. This option makes it possible to set a reference time, and display all other times as a delta compared to it.</p>
+</li>
+<li>
+<p>In the messages view, there was a slight change in the notation used for the source and destination modules of the message, in order to make it unambiguous. Use explicit "." and "^" to indicate the location of the module. Also, it now uses arrows of uniform lengths everywhere.</p>
+</li>
+<li>
+<p>The "Allow Backward Arrows for Hops" option was added to the messages view context menu. When this option is enabled, it allows the use of backward arrows to ensure a consistent relative ordering of modules in the log. For example, if two modules A and B exchange messages, this option will cause the window to display them as "A--&gt;B" and "A&lt;--B", as opposed to the default "A--&gt;B" and "B--&gt;A". This sometimes makes the log easier to follow.</p>
+</li>
+<li>
+<p>Added support for new columns in the packet log view: TxUpdate, Durations, Length, Info. This was implemented in the <code>cDefaultMessagePrinter</code> class which is part of the simulation library. This change makes it possible to see if a packet is a transmission update (except if the simulation installs its own packet printer like INET does).</p>
+</li>
+<li>
+<p>In the messages view, simulation time is now formatted with digit grouping on.</p>
+</li>
+<li>
+<p>In the log, the banners of component init stages that do not print anything are now suppressed.</p>
+</li>
+<li>
+<p>Added the "Fira Code" font as embedded resource, and set it to be used by default for the log window. The reason is that it provides nice "--&gt;" arrow ligatures in the Messages view.</p>
+</li>
+<li>
+<p>Prevent manually enabled "Debug on Errors" setting from being turned off by (lack of) configuration option.</p>
+</li>
+<li>
+<p>Fix osgEarth viewpoints ignoring SRS (PR <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="747473932" data-permission-text="Title is private" data-url="https://github.com/omnetpp/omnetpp/issues/851" data-hovercard-type="pull_request" data-hovercard-url="/omnetpp/omnetpp/pull/851/hovercard" href="https://github.com/omnetpp/omnetpp/pull/851">#851</a>).</p>
+</li>
+<li>
+<p>Countless small improvements and bug fixes.</p>
+</li>
+<li>
+<p>Raised the minimum required Qt version to 5.9.</p>
+</li>
+</ul>
+<p>Tkenv:</p>
+<ul>
+<li>Tkenv has been removed. Use Qtenv for all simulations.</li>
+</ul>
+<p>Tools:</p>
+<ul>
+<li>
+<p>The names of all command-line tools now begin with <code>opp_</code>.</p>
+</li>
+<li>
+<p>Added <code>opp_ide</code>, an alternative to the <code>omnetpp</code> command that launches the Simulation IDE.</p>
+</li>
+<li>
+<p>Added <code>opp_neddoc</code>, a tool that makes it possible to generate HTML documentation from NED files from the command line. <code>opp_neddoc</code> works by launching the IDE in headless mode.</p>
+</li>
+<li>
+<p><code>opp_nedtool</code> was rewritten for convenience and features. The main points are the following:</p>
+<ul>
+<li>Removed msgc-related functionality, now it is really just about NED.</li>
+<li>Command-line interface redesigned for better usability (subcommands, better help, etc.)</li>
+<li>Added support for generating C++ source (<code>cpp</code> subcommand), for embedding NED files into an executable or library.</li>
+<li>The tool now accepts directories as command-line arguments, too, and processes all NED files in them.</li>
+<li>More convenient output (no <code>*_n.ned</code>, <code>*_n.xml</code>).</li>
+<li>Removed obsolete <code>@listfile</code> and <code>@@listfile</code> support.</li>
+<li>Fixed bugs in splitting NED files to one NED type per file.</li>
+</ul>
+</li>
+<li>
+<p><code>opp_msgtool</code> was rewritten in the style of <code>opp_nedtool</code>. Details:</p>
+<ul>
+<li>Made <code>--msg6</code> the default mode, <code>--msg4</code> was removed.</li>
+<li>The command-line interface now uses subcommands; if no subcommand is specified, the default action is C++ code generation. The rarely useful <code>-T</code> (type of next file) and <code>-h</code> (here) options have been removed.</li>
+<li>Better help. A <code>builtindefs</code> help page has also been added, which prints the built-in declarations.</li>
+</ul>
+</li>
+<li>
+<p><code>opp_scavetool</code> had several improvements. A brief summary:</p>
+<ul>
+<li>The tool now accepts directories as command-line arguments, too, and recursively loads scalar and vector files from them.</li>
+<li>Command-line arguments may now contain double asterisk wildcards (<code>**</code>) in addition to normal wildcards (<code>*</code>,<code>?</code>). Double asterisks can match any number of directory levels. Example: <code>results/**.vec</code> matches all <code>.vec</code> files anywhere under the <code>results/</code> directory. (When specifying wildcard arguments on the command line, be sure to quote them so that the shell does not expand them before <code>opp_scavetool</code> gets invoked.)</li>
+<li>Added options to limit vector data by simulation time: <code>--start-time &lt;time&gt;</code>, <code>--end-time &lt;time&gt;</code>.</li>
+<li>Accepts exporter options in the <code>--&lt;key&gt;=&lt;value&gt;</code> notation as well, not only with <code>-x</code>.</li>
+<li>In filter expressions, run attributes now have to be referred to with the <code>runattr:</code> prefix. The <code>attr:</code> prefix now only matches result attributes.</li>
+<li>In exporters, the way of representing histograms in the output has slightly changed: underflow/overflow values are now saved separately instead of as underflow/overflow "bins". Thus, there are now one more bin edges than bin values.</li>
+<li>The possibility to apply vector operations to vector results was removed from <code>opp_scavetool</code> and exporters. The recommended way of processing output vectors is with Python and NumPy.</li>
+<li>The <code>help</code> subcommand was refined.</li>
+</ul>
+</li>
+<li>
+<p>Added <code>opp_charttool</code>, a tool for "running" ANF files on the command line, e.g. for image or data export. Filtering options (<code>-i</code>, <code>-n</code>) allow multiple charts to be selected for exporting. The <code>templates</code> subcommand lists the available chart templates.</p>
+</li>
+<li>
+<p><code>opp_featuretool</code>: Extensive refactoring as well as refinement of its operation and command-line options. In general, the tool has become more forgiving: a missing <code>.featurestates</code> file or extra/missing entries in it no longer causes an error or warning. Missing file and file entries are initialized with the default enablement state; extra entries are preserved (in the hope they'll be useful, e.g. after switching to a different topic branch). The content of the <code>.nedexclusions</code> file is now also automatically adjusted without stopping with an error. User-visible changes are the following:</p>
+<ul>
+<li>Removed the <code>validate</code> and <code>repair</code> subcommands (all commands implicitly validate and repair now).</li>
+<li>Better validation of the <code>.oppfeatures</code> file: Detect and report duplicate feature IDs and unresolved feature dependencies.</li>
+<li>Check for the existence of the C++ source root and NED folders.</li>
+<li>Preserve unknown features in the <code>.featurestate</code> file instead of fail/warn about them. Reason: they often occur when switching between branches.</li>
+<li><code>isenabled -v</code> prints list of disabled features to stdout, not to stderr</li>
+<li>Complain less about fixable problems.</li>
+<li>Non-verbose operation by default.</li>
+<li>Improved error/warning messages.</li>
+</ul>
+</li>
+<li>
+<p><code>opp_makemake</code>: The <code>makefrag</code> file is now included instead of copied into the generated makefile. Also, a <code>help</code> target has been added to the generated makefiles: typing <code>make help</code> now prints the list of accepted targets (<code>all</code>, <code>clean</code>, etc.) and user-settable makefile variables (<code>MODE</code>, <code>V</code>, <code>CFLAGS</code>, etc.), complete with helpful descriptions and usage examples.</p>
+</li>
+<li>
+<p><code>opp_test</code>: The set of possible test outcomes has been refined. Possible outcomes are now <code>PASS</code>, <code>FAIL</code>, <code>ERROR</code>, <code>SKIP</code> and <code>EXPECTEDFAIL</code>. <code>SKIP</code> means that the test was not performed, because e.g. it would test an optional feature which is currently disabled; <code>ERROR</code> means that the test was not performed because of an unrecoverable error (i.e. crash or exception). The diagnostic output for failed tests is now a colorized diff instead of a simple printout of the expected and the actual contents. It is possible to designate a test case as an "expected failure", by specifying <code>%expected-failure: &lt;reason&gt;</code> in the test file. This is useful if we know that a certain test case is correct, but it is not possible to fix it for some reason.</p>
+</li>
+</ul>
+<p>IDE / Analysis Tool:</p>
+<ul>
+<li>
+<p>The Analysis Tool in the IDE has been rewritten, using a new approach. The number one goals were to allow ARBITRARY computations to be performed on the data, VISUALIZE the result in the most appropriate form chosen from a multitude of chart/plot types, and produce PUBLICATION QUALITY output. Additional goals were an intuitive user interface that makes straightforward tasks easy and convenient, scalability that allows the processing of a large amount of simulation results inside the IDE, and facilities to make (most of) the UI's functionality available on the command line as well.</p>
+<p>The key technologies the new Analysis Tool employs are Python, NumPy, Pandas, and Matplotlib. The use of Python and Pandas gives access to advanced data manipulation and analysis capabilities, while Matplotlib offers dozens of plot types out of the box, endless customizations, and proven high-quality output. A large effort was made to properly integrate these technologies into the IDE, so that using the Analysis Tool provides a superior user experience, and brings the power of Python close to users without necessarily requiring them to write code in Python.</p>
+<p>Common charting tasks are accessible with a few mouse clicks, via predefined Chart Templates that can be configured using dialogs. The heart of all Chart Templates is Python code that performs all of the computation and plotting. The Python code behind a chart can be viewed and freely edited using an integrated language-aware editor. Matplotlib plots appear inside the Analysis Tool's UI, and they are live (i.e. not just images): zooming, panning, and interacting with possible embedded controls in the plot all work seamlessly. IDE-native plots can also be chosen as an alternative to Matplotlib, as they provide increased scalability at the cost of being less flexible and featureful.</p>
+<p>Special attention was paid to scalability. The UI is now easily capable of dealing with at least several tens of thousands of result files, and several million result items.</p>
+<p>The OMNeT++ Python API for querying, transforming and plotting simulation results is available in the form of Python packages for use in Python scripts outside the IDE as well. There is also a command-line tool (<code>opp_charttool</code>) that can "run" Analysis (anf) files e.g. for image export. <code>opp_charttool</code> can be integrated e.g. into the build process of a paper written in LaTeX.</p>
+<p>The documentation of the Analysis Tool's user interface can be found in the User Guide. A reference of the Python API has a dedicated Appendix in the Simulation Manual, while the "Result Recording and Analysis" chapter in the same Manual provides some practical guidance on how to use the API.</p>
+</li>
+</ul>
+<p>IDE / Sequence Chart Tool:</p>
+<ul>
+<li>
+<p>The visualization of events have been horizontally expanded on the chart, now it uses long rounded rectangles instead of small circles. This change allows the visualization of method calls without their arrows overlapping. If method calls are hidden then the chart falls back to the old behavior where events are small circles.</p>
+</li>
+<li>
+<p>The set of displayed axes can be explicitly configured independently from the set of displayed events. The chart now also supports displaying events on a compound module axis if the corresponding submodule axis is hidden. Collapsing and expanding module axes can be done using the mouse.</p>
+</li>
+<li>
+<p>The chart now also displays a set of axis headers on the left side that shows the module hierarchy in a compact and interactive way.</p>
+</li>
+<li>
+<p>All parts of the sequence chart can be independently shown/hidden.</p>
+</li>
+<li>
+<p>The selection has been extended with support for axes and method call arrows.</p>
+</li>
+<li>
+<p>A new time measurement feature has been added that allows measuring the time difference between multiple selected events and other interesting points in time.</p>
+</li>
+<li>
+<p>Several automatic configuration presets have been added (e.g. network level, full detail, default) to make the configuration for the most common use cases easier.</p>
+</li>
+<li>
+<p>A new pattern-matching-based user-defined colorization (e.g. message sends, method calls, axes, events) feature has been added. This feature allows creating more easily understandable sequence charts by encoding certain model properties as colors.</p>
+</li>
+<li>
+<p>The chart can display diagnostics information such as eventlog file statistics and operation statistics.</p>
+</li>
+<li>
+<p>Added support for SVG export.</p>
+</li>
+</ul>
+<p>IDE / NED Documentation Generator:</p>
+<ul>
+<li>
+<p>The documentation generator now allows you to inject your own documentation fragments (possibly generated by 3rd-party tools) at various points in the documentation.</p>
+</li>
+<li>
+<p>Modern look for the generated pages (Material design).</p>
+</li>
+<li>
+<p>It is now possible to specify excluded directories during documentation generation, in order to be able to exclude samples, showcases etc. that are not integral part of the documentation.</p>
+</li>
+<li>
+<p>Now generates <code>nedtags.xml</code> and <code>msgtags.xml</code> files which are compatible with the <code>doxytags.xml</code> file that Doxygen generates. This allows crosslinking to the NED documentation from a Sphinx-based documentation, using the doxy-link plugin.</p>
+</li>
+<li>
+<p>Generate usage and inheritance diagrams only if they are meaningful.</p>
+</li>
+<li>
+<p>Use SVG files as the usage/inheritance diagram image. Removed map files as SVG already contains proper links.</p>
+</li>
+<li>
+<p>Generate "Implementors" table for interfaces. The Implementors table includes indirect implementors as well.</p>
+</li>
+<li>
+<p>Fix: Inheritance diagrams were missing in module interface pages, even if they had implementors. This bug made INET documentation much less useful.</p>
+</li>
+<li>
+<p>The functionality of the documentation generator is now also available from the command line (<code>opp_neddoc</code>).</p>
+</li>
+</ul>
+<p>IDE / Inifile Editor:</p>
+<ul>
+<li>
+<p>Added support for ignorable options. User can mark custom config options as ones to be ignored by the editor.</p>
+</li>
+<li>
+<p>Config option values that contain expressions are no longer falsely flagged as errors.</p>
+</li>
+<li>
+<p>The confusing "Unused entry (does not match any parameters)" warning that often appeared falsely for INET simulations due to deficiencies in analyzing the network structure has been re-worded to include the possibility that it is false, and has also been demoted from being "warning" to "info".</p>
+</li>
+<li>
+<p>Eliminated the asynchronous/delayed form page reread in Form mode, which often caused editing glitches.</p>
+</li>
+</ul>
+<p>IDE Miscellaneous:</p>
+<ul>
+<li>
+<p>Install Simulation Models dialog: Added support for changing the project name and location on download.</p>
+</li>
+<li>
+<p>Turned on showing the line numbers ruler in source editors by default.</p>
+</li>
+<li>
+<p>Added an XML editor, Terminal (a view that contains a shell prompt), PyDev (Python editor), and the Eclipse Marketplace client to the IDE.</p>
+</li>
+<li>
+<p>The simulation launcher now passes NED exclusions to the simulation program as <code>-x</code> options. NED exclusions typically come from disabled project features, e.g. in INET.</p>
+</li>
+<li>
+<p>Added SVG export capability to the NED Editor.</p>
+</li>
+<li>
+<p>Updated to Eclipse 4.22, CDT 10.5 and PyDev 9.2.</p>
+</li>
+<li>
+<p>The JRE is now provided by the Eclipse JustJ project, so the IDE no longer requires Java to be installed on the host OS.</p>
+</li>
+<li>
+<p>Added support for ARM-based Linux distros.</p>
+</li>
+</ul>
+<p>C++ Debugging:</p>
+<ul>
+<li>
+<p>Better debugging experience by fine-tuning the compiler options, especially with the clang compiler.</p>
+</li>
+<li>
+<p>Added LLDB pretty printers for various OMNeT++ types. They can be useful if you use LLDB-based external debuggers like XCode or VS Code. You should manually import them from the LLDB debugger console with the following command:</p>
+<p>command script import &lt;OMNETPP_ROOT&gt;/python/omnetpp/lldb/formatters/omnetpp.py</p>
+</li>
+<li>
+<p>Allow Qtenv's "Debug on Error" and "Debug Next Event" functionality to use the integrated debugger of the Simulation IDE. This required multiple changes. First, the IDE was extended to accept an URL which, when opened in the IDE, causes the integrated debugger to start a debug session and attach to a process given with its PID. This URL is:</p>
+<p><code>omnetpp://cdt/debugger/attach?pid=&lt;pid&gt;</code></p>
+<p>The URL can also be opened from the command line, by running the <code>omnetpp</code> command with the URL as argument. The command opens the URL in the existing IDE instance if it is already running, or starts a new one if it does not.</p>
+<p>The second change was to update the default value of the OMNeT++ <code>debugger-attach-command</code> configuration option to use the above command. (Previously it has used various other debuggers which were likely to be found on the host OS: GDB, Nemiver, VS Code, etc.)</p>
+<p>Hint: You can force Qtenv to use Visual Studio Code as your external debugger by setting the following environment variable:</p>
+<p>export OMNETPP_DEBUGGER_COMMAND="code --open-url "vscode://vadimcn.vscode-lldb/launch/config?{request:'attach', pid:'%u'}""</p>
+<p>Alternatively, you can specify the same value (<code>code --open-url ...</code>) to the "debugger-attach-command" configuration option in <code>omnetpp.ini</code>.</p>
+</li>
+</ul>
+<p>Result file format changes:</p>
+<ul>
+<li>
+<p>There were a number of changes in the format of result files (.sca and .vec files), so the file format version has been bumped from 2 to 3. (The file format is recorded at the top of each result file in a <code>version</code> line.) The set of changes is relatively small; see details below.</p>
+</li>
+<li>
+<p>Iteration variables are no longer saved as run attributes but in separate <code>itervar</code> lines, in order to be able to tell them apart with certainty.</p>
+</li>
+<li>
+<p><code>param</code> lines (which recorded parameter assignment entries in the configuration) have been replaced with the more general <code>config</code> lines. <code>config</code> lines record all configuration entries, not just parameter assignments.</p>
+</li>
+<li>
+<p>In version 2, concrete parameter values (if requested) were recorded as scalars, whereas in version 3 they are recorded as a separate result item type, in <code>par</code> lines. This allows the recording of volatile parameters (as expressions) and non-numeric values as well.</p>
+</li>
+<li>
+<p>Component NED type names are now recorded, as <code>typename</code> pseudo parameters.</p>
+</li>
+<li>
+<p>The <code>sum</code> and <code>sqrsum</code> fields of weighted statistics are no longer recorded, as they are irrelevant.</p>
+</li>
+</ul>
+<p>SQLite result file format changes:</p>
+<ul>
+<li>
+<p>SQLite result files underwent a similar change in the database schema. Files in the old format are no longer understood. A brief summary of changes follows.</p>
+</li>
+<li>
+<p>The <code>runParam</code> table was renamed to <code>runConfig</code>, and its columns were also similarly renamed: <code>paramKey</code>, <code>paramValue</code> and <code>paramOrder</code> became <code>configKey</code>, <code>configValue</code> and <code>configOrder</code>, respectively.</p>
+</li>
+<li>
+<p>Iteration variables are in a new table called <code>runItervar</code>, with columns <code>runId</code>, <code>itervarName</code> and <code>itervarValue</code>.</p>
+</li>
+<li>
+<p>Two new tables were added for representing the new result item types: <code>parameter</code> (with the columns <code>paramId</code>, <code>runId</code>, <code>moduleName</code>, <code>paramName</code> and <code>paramValue</code>), and <code>paramAttr</code> (with the columns <code>paramId</code>, <code>attrName</code> and <code>attrValue</code>). Note that <code>paramValue</code> contains values in the syntax it would have to be written in a NED file or in <code>omnetpp.ini</code>, i.e. string constants include the quotation marks.</p>
+</li>
+</ul>
+<p>Eventlog file format and configuration:</p>
+<ul>
+<li>
+<p>The eventlog file format has been changed substantially. You won't be able to open older eventlog files with this version of the IDE, nor new files in previous IDE versions.</p>
+</li>
+<li>
+<p>The most prominent change is the introduction of snapshot and index chunks in addition to the already recorded event chunks. The former contains a complete snapshot of the relevant simulation state without referring to any other line in the file. The latter provides the set of changes in the relevant simulation state since the last index or snapshot chunk. The contents of the index chunk is expressed as references to other lines of the eventlog file. This change in the eventlog format provides the foundation for a better user experience in the IDE especially for large eventlog files.</p>
+</li>
+<li>
+<p>Several new eventlog-recording-related configuration options have been added:</p>
+<ul>
+<li>
+<p>The <code>eventlog-snapshot-frequency</code> configuration option specifies how often snapshots are recorded in the eventlog file. Snapshots help various tools to handle large eventlog files more efficiently. Specifying greater value means less help, while smaller value means bigger eventlog files.</p>
+</li>
+<li>
+<p>The <code>eventlog-index-frequency</code> configuration option specifies how often indices are recorder in the eventlog file. An index is much smaller than a full snapshot, but it only contains the differences since the last index. Specifying greater value means less help, while smaller value means bigger eventlog files.</p>
+</li>
+<li>
+<p>The <code>eventlog-max-size</code> configuration option specifies the maximum size of the eventlog file in bytes. The eventlog file is automatically truncated when this limit is reached.</p>
+</li>
+<li>
+<p>The <code>eventlog-min-truncated-size</code> configuration options specifies the minimum size of the eventlog file in bytes after the file is truncated. Truncation means older events are discarded while newer ones are kept.</p>
+</li>
+<li>
+<p>The <code>eventlog-options</code> configuration option allows for recording only certain categories (e.g. text, message, module, method call, display string), to reduce the eventlog file size.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Build environment:</p>
+<ul>
+<li>
+<p>If a file called <code>setenv_local</code> is present in the installation root, it is automatically sourced from the <code>setenv</code> script. <code>setenv_local</code> can be used to set up user specific environment variables.</p>
+</li>
+<li>
+<p>The content of the <code>$PLATFORM</code> makefile variable has changed. Until now, it contained a <code>&lt;platform&gt;.&lt;architecture&gt;</code> pair (e.g. <code>win32.x86_64</code>) which was misleading. From now on, <code>Makefile.inc</code> provides <code>$PLATFORM</code> (e.g. <code>win32</code>) and <code>$ARCH</code> (e.g. <code>x86_64</code>) as separate variables. <code>makefrag</code> files must be updated if <code>$PLATFORM</code> variable was used in them.</p>
+</li>
+<li>
+<p>To build OMNeT++ with Akaroa support, <code>WITH_AKAROA=yes</code> must be specified in the <code>configure.user</code> file. The configuration script no longer tries to autodetect Akaroa without the user explicitly requesting it.</p>
+</li>
+<li>
+<p>osgEarth support is now disabled by default. You must explicitly set <code>WITH_OSGEARTH=yes</code> in the <code>configure.user</code> file. Some Linux distibutions no longer include osgEarth so you may need to build it manually from sources.</p>
+</li>
+<li>
+<p>Debug builds are now compiled with -O0 for maximum debuggability. Release builds are compiled with <code>-O2 -ffp-contract=off</code> to disable fused multiply-add operations. This ensures that floating point operations will generate exactly the same results in DEBUG and RELEASE mode and their accuracy would not depend on unpredictable optimizations.</p>
+</li>
+</ul>
+<p>Windows Support:</p>
+<ul>
+<li>
+<p>On Windows, the toolchain (compiler, libraries, etc.) can now be found in <code>tools/win32.x86_64</code>.</p>
+</li>
+<li>
+<p>Setting of environment variables has been moved into the <code>setenv</code> script. It is automatically sourced when <code>mingwenv.cmd</code> or <code>vcenv.cmd</code> is started.</p>
+</li>
+<li>
+<p>On Windows, libraries and other dependencies used by simulations, such as Qt, OSG, osgEarth, etc., are now separated from the rest of the toolchain binaries (compiler, etc.). You can find them in the <code>opt</code> subdirectory of the <code>tools/win32.x86_64</code> folder.</p>
+</li>
+<li>
+<p>On Windows, when creating a shared library, the build system now generates a proper import library and also a module definition file (<code>&lt;targetname&gt;.dll.a</code>, <code>&lt;targetname&gt;.def</code>). External projects must link against that library instead of linking directly with the <code>&lt;targetname&gt;.dll</code> file. (Note that the linker automatically uses the <code>.dll.a</code> files if they are present in the library path and falls back to use the pure <code>.dll</code> file only if the import library is not present. It means that you don't have to do anything extra to use these files apart from making them available along your <code>.dll</code> files.)</p>
+</li>
+<li>
+<p>The Windows toolchain now contains the (much faster) LLD linker. LLD is also used on other platforms instead of the GNU linker, if available. For large projects, LLD is dramatically faster than the standard GNU linker. In one instance, the use of LLD, together with other changes that were partly done in INET, reduced INET linking time on Windows from 380s to 2s in DEBUG mode, and from 90s to 5s in RELEASE mode on one of our dev boxes.</p>
+</li>
+</ul>
+<p>macOS support:</p>
+<ul>
+<li>
+<p>On macOS, the toolchain (compiler, libraries, etc.) can now be found in <code>tools/macos.x86_64</code>.</p>
+</li>
+<li>
+<p>Rudimentary support for Apple silicon: <code>source setenv</code> now automatically launches a (nested) x86_64 emulation shell on ARM-based Macs.</p>
+</li>
+</ul>
+<p>Sample simulations:</p>
+<ul>
+<li>
+<p>Added "openstreetmap", an example simulation that displays a city map, with some animated car traffic on it. Map data come from an OSM file exported from openstreetmap.org.</p>
+</li>
+<li>
+<p>Added "petrinets", an example simulation demonstrating how to implement stochastic Petri nets, a well-known formalism for the description of distributed systems.</p>
+</li>
+<li>
+<p>Added the "wiredphy" sample simulation to demonstrate transmission updates.</p>
+</li>
+<li>
+<p>The "fifo" example simulation was extended with a TandemQueues network and related configurations in omnetpp.ini.</p>
+</li>
+<li>
+<p>The "resultfiles" folder project now contains scalar and vector result files from the Fifo1, Fifo2, and the new TandemQueues simulations.</p>
+</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>
+<p>Simulation Manual has been updated. The largest changes were in the "Message Descriptions" and "Result Analysis" sections (which were practically rewritten). There are also two new appendices: "Python API for Chart Scripts", and "Message Class/Field Properties".</p>
+</li>
+<li>
+<p>User Guide: The chapter about the Analysis Tool ("Result Analysis") has been rewritten.</p>
+</li>
+<li>
+<p>Install Guide has been updated. New sections in the macOS chapter: "Enabling Development Mode in the Terminal", "Running OMNeT++ on Apple Silicon". We also added instructions on installing OMNeT++ on WSL (Windows Subsystem for Linux) on Windows 10, which is important because we found that running OMNeT++ on WSL is considerably faster than using it with the MinGW toolchain.</p>
+</li>
+<li>
+<p>Converted all of our structured documents (User Guide, Install Guide, etc.) from their original source format (DocBook or AsciiDoc) to reStructuredText, except for the Simulation Manual which remains in LaTeX.</p>
+</li>
+</ul></div>
+
+
+</div>
+<br/>
+<h2><a href="whatsnew-57.php">What's New in OMNEST 5.7 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+
+<?php print_leadout(); ?>
+</body>
+</html>
+
