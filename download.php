@@ -61,7 +61,7 @@
       <a class="noicon" href="/download/commercial6/omnest-6.0-macos-x86_64.tgz"><img src="images/misc/osx-logo.png"></a>
     </td>
     <td>
-       <a href="/download/commercial5/omnest-6.0-macos-x86_64.tgz" >OMNEST 6.0 for macOS (x86_64 TGZ)</a><br/>
+       <a href="/download/commercial6/omnest-6.0-macos-x86_64.tgz" >OMNEST 6.0 for macOS (x86_64 TGZ)</a><br/>
        <small>md5sum: b4d01c201c0e25182f288703d7f2fd1c</small>
     </td>
   </tr>
