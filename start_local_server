@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run -p 80:80 -v "$PWD":/var/www/html php:7.3-apache
