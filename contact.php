@@ -112,7 +112,7 @@
 
     <div class="server_error_message" style="display:none;">
       <p><b>Unfortunately our backend is not running currently.</b></p>
-      Please try again later. We are sorry for this inconvenience.
+      Please contact us directly at <b>info@omnest.com</b>. We are sorry for this inconvenience.
     </div>
   </form>
 
