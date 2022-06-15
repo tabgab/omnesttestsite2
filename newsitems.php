@@ -5,10 +5,20 @@
 //
 $news = array(
     array(
+        "id" => "tsn-released",
+        "title" => "Time-Sensitive Networking (TSN) Introduced in INET",
+        "date" => "May 13, 2023",
+        "summary" => "Key features of TSN were added to the INET Framework in version 4.4.
+        The model was developed together with an automotive industry partner to ensure relevance
+        and is able to simulate the most important features of this domain.",
+        "link" => "https://inet.omnetpp.org/2022-06-15-tsn-released.html"
+    ),
+
+    array(
         "id" => "omnest-6.0",
         "title" => "OMNEST 6.0 released",
         "date" => "May 6, 2022",
-        "summary" => "OMNeT++ 6.0 is the result of more than three years of work, and 
+        "summary" => "OMNEST 6.0 is the result of more than three years of work, and 
          includes many essential new features that we would already have a hard time without.",
         "link" => "whatsnew-60.php"
     ),
