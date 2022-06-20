@@ -84,7 +84,7 @@ $purchase_menu = array(
         array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
     )),
     array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Training and Consulting", "link"=>"services.php"),
+        array("text"=>"Consulting, Training", "link"=>"services.php"),
         array("text"=>"Technical Support", "link"=>"support.php"),
         array("text"=>"Download OMNEST", "link"=>"download.php"),
     )),
@@ -154,7 +154,7 @@ function print_footer_links()
                     <li><a href="comparison.php" id="footermenu">OMNeT++ Comparison</a></li>
                     <li><a href="support.php" id="footermenu">Technical Support</a></li>
                     <li><a href="download.php" id="footermenu">Download OMNEST</a></li>
-                    <li><a href="services.php" id="footermenu">Training and Consulting</a></li>
+                    <li><a href="services.php" id="footermenu">Consulting, Training</a></li>
                 </ul>
             </td>
             <td>

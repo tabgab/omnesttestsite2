@@ -42,14 +42,14 @@ and more...
 <a href="simulation-models.php">Explore the models&nbsp;&raquo;</a>
 </p>
 
-<h1>Free Orientation/Consulting Session</h1>
+<h1><a href="services.php#orientation">Free Orientation/Consulting Session</a></h1>
 <p>Simulation is an art, and one can save a substantial amount of time by choosing the right
    tools and approach (model library, detail level, etc.) from the start.
    A license purchase entitles you to a one-hour video discussion session with our developers, 
    where you can receive expert advice to reach your project goals sooner.
 </p>
 
-<h1><a href="services.php">Consulting Services</a></h1>
+<h1><a href="services.php#consulting">Consulting Services</a></h1>
 <p>We have been designing simulations for well over a decade, and this experience may be 
 useful to you. By consulting with our experts early in your projects, you can avoid costly
 detours and make the right design decisions from the start. 
