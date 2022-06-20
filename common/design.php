@@ -131,6 +131,7 @@ include("common/omnest.css");
       <script defer type="text/javascript" src="common/pngfix.js"></script>
     <![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Google Universal Analytics -->
 	<script>
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -141,6 +142,15 @@ include("common/omnest.css");
   		ga('send', 'pageview');
 
 	</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2J2F9G90F2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2J2F9G90F2');
+</script>
     <script type="text/javascript">
 <?php
 // optimization: include instead of <script type="text/javascript" src="common/addGAToLinks.js">
