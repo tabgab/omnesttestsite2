@@ -18,7 +18,7 @@ $tour_menu = array(
     array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
     array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "crosslink"=>1),
-    array("text"=>"Support", "link"=>"support.php", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "crosslink"=>1),
     array("text"=>"Company", "link"=>"company.php", "crosslink"=>1)
 );
 
@@ -62,7 +62,7 @@ $product_menu = array(
 
     array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
     array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "crosslink"=>1),
-    array("text"=>"Support", "link"=>"support.php", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "crosslink"=>1),
     array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "crosslink"=>1),
 );
 
@@ -83,10 +83,10 @@ $purchase_menu = array(
         array("text"=>"License Agreement", "link"=>"license.php"),
         array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
     )),
-    array("text"=>"Support", "link"=>"support.php", "highlight"=>0, "submenu"=>array(
+    array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Training and Consulting", "link"=>"services.php"),
         array("text"=>"Technical Support", "link"=>"support.php"),
         array("text"=>"Download OMNEST", "link"=>"download.php"),
-        array("text"=>"Training and Consulting", "link"=>"services.php"),
     )),
     array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"About Us", "link"=>"company.php"),
@@ -200,7 +200,7 @@ function print_top_menu($menu, $current_page)
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     //print_top_menu_item("SERVICES", "services.php", $current_page=="services.php");
     //echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("SUPPORT", "support.php", $is_support_related);
+    print_top_menu_item("SERVICES", "services.php", $is_support_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     print_top_menu_item("ABOUT US", "company.php", $is_company_related);
 }

@@ -18,8 +18,11 @@
 
 <div id="header"><h1>Services</h1></div>
 
+<p>The OMNEST Team is here to support you! Our mission is to create more value for 
+our customers, assisting them in achieving their project goals.</p>
 
-<h2>Can we help you with some training?</h2>
+<br>
+<h2>Can we Help you with some Training?</h2>
 
 <p>OMNEST is a complex system with many powerful features.</p>
 
@@ -35,25 +38,53 @@ availability at <a href="mailto:info@omnest.com">info@omnest.com</a>.
 Get in touch with us today by e-mail, or complete the 
 <a href="contact.php">contact form</a>.</p>
 
-<h2>Save time and money with consulting!</h2>
+<br/>
 
-<p>OMNEST is used in a great variety of simulation domains from 
-business processes to sensor networks and beyond.</p>
+<h2>Free Orientation Meeting</h2>
 
-<p>We have been designing simulations for well over a decade, 
-and this experience may be useful to you. We may not be experts 
-in your specific area of research, but the basic principles of 
-successful simulation design apply to each and every project equally.</p>
+<p>Get up to speed quickly with the free OMNEST Consulting Boost!</p>
 
-<p>By relying on our experts early in your project, you can save 
-time and money avoiding costly experiments. Our experienced staff 
-can help you make the right design decisions for your project to 
-ensure maximum results with minimum cost.</p>
+<p>We offer a dedicated orientation meeting for all license purchases over video conferencing. This is highly recommended, as you will get the opportunity to directly discuss the best approach to start (or continue) using OMNEST in your research. You can ask questions about anything you feel would be important to you, including INET-related questions. You may also get useful tips about using the latest features of OMNEST, the best approach to simulation in your specific use case, how to set up simulations, virtualization, abstraction levels, statistics collection, etc. We are confident that such a session will be highly useful to you. We will dedicate an hour to you alone, making sure you get up to speed with the software and choose the best approach to simulate your scenario right from the beginning.</p>
 
-<p>By combining your domain specific knowledge with our deep 
-understanding of the simulation platform we can put together a 
-reliable recipe for success and help you achieve your project
-goals with confidence.</p>
+<p>Even experienced IT professionals may find it challenging to start working on a new project or start using new tools. You may still have questions about OMNEST, or have training needs. OMNEST offers comprehensive support and user-specific training on request. You can discuss this, as well as any OMNEST and INET topics in this initial 1-hour session receiving valuable tips and help in getting to use the system in minimal time and maximum efficiency.</p>
+
+<br/>
+
+<h2>OMNEST Support and Maintenance</h2>
+
+<p>Keep your licenses current, get direct access to developer-level support for quick resolution of your OMNEST problems!</p>
+
+<p>Time is money! Cut down on problem resolution time with a "direct line" to developers with expert knowledge of OMNEST. Submit your question via email, get a qualified response quickly, continue working to achieve your project goals with minimal interruption.
+This tier ensures that you have access to the latest version of OMNEST and receive all updates. You can contact support with problems you encounter with OMNEST (and OMNEST alone), receive assistance with any bugs you may encounter or a problem with the software itself. (SLA applies)</p>
+
+<br/>
+
+<h2>OMNEST Support and Maintenance with INET Support</h2>
+
+<p>Would you like to have support for the INET Framework as well? This tier is for you!</p>
+
+<p>You can contact support with difficulties you encounter in creating and configuring your simulation models using the INET Framework. You can draw on the experience of experienced OMNEST and INET developers to assist you in solving simple problems you may encounter. If a bug is encountered in the INET Framework, our developers will make an effort to provide you with a workaround or solution, but no guarantees are provided regarding the timing of any bugfix releases. Domain-specific problems that require a deeper understanding of the project and providing solutions to architectural or simulation strategy specific questions are outside of the scope of this tier. Details of this offer are contained in the SLA. with the addition, that you can raise issues relating to both OMNEST and INET.</p>
+
+<p>Limitations: INET is open-source software, which is the cumulated work of many contributors. Not all parts have been written by the OMNEST developer team. Our developers have a deep understanding of OMNEST and INET, but they may not have full knowledge of all protocols and application areas where INET is used. </p>
+
+<p>Guarantee: Some parts of the INET Framework were written by third party developers with special domain knowledge. OPENSIM developers might not be proficient in all application fields of INET. If, for some reason, our development team is not suited to tackling your specific domain or use of INET, either party may decide that we are unable to assist you and COGITATIVE will refund the full INET Support surcharge (EUR 1,200 per license) in the form of a credit towards your next order. (SLA applies)</p>
+
+<br/>
+<h2>Consulting</h2>
+
+<p>You may have some topics that require deeper understanding and analysis. That is OK, let us tackle them together!</p>
+
+<p>Perfectly customized consulting is available for your projects, starting with joint sessions to identify and discuss challenges, discuss alternatives, coaching, training, possibly even custom model or scenario development.</p>
+
+<p>For queries that require our development team to acquire a deeper understanding of your scenario, domain specific details and simulation requirements, a simple support request might not be adequate. In such more demanding instances, we offer you the support of our OMNEST and INET developers to discuss simulation and development strategies, approaches and even provide coding services when required.
+The cost of this service is on a per hour basis. If you have an uninterrupted support plan in place for your licenses since purchase, significant discounts are available for this option.</p>
+
+Cost: 
+<ul>
+<li>EUR 250/h for anyone.</li>
+<li>EUR 220/h if you have Level 1 OMNEST Support</li>
+<li>EUR 200/h if you have OMNEST and INET Support</li>
+</ul>
 
 <p>Get in touch with us on <a href="mailto:info@omnest.com">info@omnest.com</a> 
 to discuss how we can help you today, or complete the 
