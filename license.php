@@ -45,10 +45,6 @@ PRODUCT from OPENSIM LTD. or an OPENSIM LTD. authorized reseller. If you
 obtained the PRODUCT from any other source, you may not install or use the
 PRODUCT.
 
-SIMULCRAFT is the exclusive worldwide commercial sublicenser of the PRODUCT,
-and as such has all rights to sublicense the PRODUCT to end users and
-developers without restriction.
-
 1.      Ownership.  The PRODUCT is proprietary to OPENSIM LTD. The
 PRODUCT is licensed, not sold, to you notwithstanding any reference herein
 to "purchases." You acknowledge and agree that: (a) the PRODUCT is
