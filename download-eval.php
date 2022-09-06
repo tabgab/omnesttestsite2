@@ -37,9 +37,9 @@ You can also download, install and try OMNeT++ models from the web.</p>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 
-<a class="noicon" href="download/free/omnest-6.0-eval-windows-x86_64.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
-      <p><tt><a href="download/free/omnest-6.0-eval-windows-x86_64.exe">omnest-6.0-eval-windows-x86_64.exe</a></tt>
-      &nbsp;&nbsp;<small>(md5sum: 0c120d97e65af3026515ec6951920e91)</small></p>
+<a class="noicon" href="download/free/omnest-6.0.1-eval-windows-x86_64.exe"><img class="left" src="images/misc/download-win-eval.png"/></a>
+      <p><tt><a href="download/free/omnest-6.0.1-eval-windows-x86_64.exe">omnest-6.0.1-eval-windows-x86_64.exe</a></tt>
+      &nbsp;&nbsp;<small>(md5sum: b967ed40e0b36027fb9cb83c2de32445)</small></p>
       <p>This program installs OMNEST Evaluation on a Windows machine.
       For compiling models, OMNEST can use
       the bundled <a href='http://mingw-w64.org/' target='_blank'>MinGW-w64</a> compiler.
@@ -52,9 +52,9 @@ You can also download, install and try OMNeT++ models from the web.</p>
 
 <div style="clear: both"></div>
 <br><br>
-<a class="noicon" href="download/free/omnest-6.0-eval-linux-x86_64.tgz"><img class="left" src="images/misc/download-linux-eval.png"/></a>
-      <p><tt><a href="download/free/omnest-6.0-eval-linux-x86_64.tgz">omnest-6.0-linux-x86_64-eval.tgz</a></tt>
-      &nbsp;&nbsp;<small>(md5sum: 8311ec2b322c505058a3308abb122cda)</small></p>
+<a class="noicon" href="download/free/omnest-6.0.1-eval-linux-x86_64.tgz"><img class="left" src="images/misc/download-linux-eval.png"/></a>
+      <p><tt><a href="download/free/omnest-6.0.1-eval-linux-x86_64.tgz">omnest-6.0.1-linux-x86_64-eval.tgz</a></tt>
+      &nbsp;&nbsp;<small>(md5sum: c4f5dc1e3af17d0dc0a4ffb8394785ec)</small></p>
       <p>The Linux version needs to be built on your system and requires several packages installed 
         beforehand. Please consult the Installation Guide document in the doc folder.
       </p>

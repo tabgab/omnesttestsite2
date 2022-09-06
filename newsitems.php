@@ -5,9 +5,17 @@
 //
 $news = array(
     array(
+        "id" => "omnest-6.0.1",
+        "title" => "OMNEST 6.0.1 released",
+        "date" => "Sept 6, 2022",
+        "summary" => "OMNEST 6.0.1 is a maintenance release containing several bugfixes.",
+        "link" => "whatsnew-601.php"
+    ),
+
+    array(
         "id" => "tsn-released",
         "title" => "Time-Sensitive Networking (TSN) Introduced in INET",
-        "date" => "May 13, 2023",
+        "date" => "May 13, 2022",
         "summary" => "Key features of TSN were added to the INET Framework in version 4.4.
         The model was developed together with an automotive industry partner to ensure relevance
         and is able to simulate the most important features of this domain.",
