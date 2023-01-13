@@ -48,7 +48,7 @@ and still have the flexibility to modify it later.</p>
 
 <ul>
 <li><b>Existing models</b> may be useful for your project; see the
-<a href="simulation-models.php#nocs">Simulation Models</a> page for more information.
+<a href="simulation-models#nocs">Simulation Models</a> page for more information.
 
 <li><b>Simulation performance</b> is ensured by careful design and the use of C++
 for both models and the simulation kernel and library.

@@ -46,7 +46,7 @@ for illustration of this idea.</p>
 <h2>Models</h2>
 
 <p>Click for the overview of the <a href="queueinglib">OMNEST performance modeling library (queueinglib)</a>.
-Existing <a href="simulation-models.php#cloud">simulation models</a> for cloud computing,
+Existing <a href="simulation-models#cloud">simulation models</a> for cloud computing,
 storage area networks (SANs) and other domains may also be useful.</p>
 
 
