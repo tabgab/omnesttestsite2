@@ -45,7 +45,7 @@ for illustration of this idea.</p>
 
 <h2>Models</h2>
 
-<p>Click for the overview of the <a href="queueinglib.php">OMNEST performance modeling library (queueinglib)</a>.
+<p>Click for the overview of the <a href="queueinglib">OMNEST performance modeling library (queueinglib)</a>.
 Existing <a href="simulation-models.php#cloud">simulation models</a> for cloud computing,
 storage area networks (SANs) and other domains may also be useful.</p>
 
@@ -71,8 +71,8 @@ storage area networks (SANs) and other domains may also be useful.</p>
 <h2>Case Studies</h2>
 
 <ul>
-<li><a href="casestudy-cloud.php">Performance Simulation of Clouds at IBM Research</a>
-<li><a href="casestudy-afdx.php">High-Level Modeling of AFDX Networks</a>
+<li><a href="casestudy-cloud">Performance Simulation of Clouds at IBM Research</a>
+<li><a href="casestudy-afdx">High-Level Modeling of AFDX Networks</a>
 </ul>
 
 <!-- <?php print_next_links($product_menu, __FILE__); ?> -->

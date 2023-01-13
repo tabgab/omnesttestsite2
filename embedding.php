@@ -47,7 +47,7 @@ then compiled into your application in an unchanged form.</p>
     has embedded OMNEST&#8482; simulation technology into its
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> business process simulation product.
     MEGA Process 6.1 runs OMNEST&#8482; simulation kernel.
-    Read the <a href="press-mega.php">press release</a>.</p>
+    Read the <a href="press-mega">press release</a>.</p>
     </td>
   </tr>
 

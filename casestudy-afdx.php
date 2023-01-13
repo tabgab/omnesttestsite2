@@ -30,7 +30,7 @@ for aircraft on-board data networks based on the
 Avionics Full-Duplex Switched Ethernet (AFDX) standard. The model
 would be used for various purposes including performance evaluation and
 reliability analysis. The base of the model was the
-<a href="queueinglib.php">OMNEST performance modeling library</a>.
+<a href="queueinglib">OMNEST performance modeling library</a>.
 The library allowed us to create the model quickly, and left room for gradual refinement
 and extension in various directions.</i></p>
 
@@ -66,7 +66,7 @@ did not need the complex implementation found in INET.</p>
 <div>A Minimal Redundant AFDX Network</div>
 </div>
 
-<p> Our next take was the <a href="queueinglib.php">Performance Modeling
+<p> Our next take was the <a href="queueinglib">Performance Modeling
 Library</a> delivered with OMNEST as a "sample simulation". This library is a complete
 implementation of several simple blocks (with source code) that can be used
 to build up queueing networks. Queues, servers, classifiers, switches and

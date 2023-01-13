@@ -813,7 +813,7 @@ Removed google-earth demo. (We already have a similar demo, osg-earth.)
 </div>
 
 <br/>
-<h2><a href="whatsnew-46.php">What's New in OMNEST 4.6 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-46">What's New in OMNEST 4.6 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>

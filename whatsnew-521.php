@@ -529,7 +529,7 @@
   </div>
 
 <br/>
-<h2><a href="whatsnew-511.php">What's New in OMNEST 5.1.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-511">What's New in OMNEST 5.1.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>

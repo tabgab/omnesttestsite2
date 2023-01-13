@@ -273,7 +273,7 @@ cmdenv-fake-gui-seed.</code></pre>
 </div>
 
 <br/>
-<h2><a href="whatsnew-562.php">What's New in OMNEST 5.6.2 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-562">What's New in OMNEST 5.6.2 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>

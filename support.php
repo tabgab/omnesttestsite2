@@ -25,7 +25,7 @@ You may also contact us at the above address if you need assistance
 during evaluation.</p>
 
 <p>If you already have an OMNEST license, you can download the product
-<a href="downloads.php">here</a>.</p>
+<a href="downloads">here</a>.</p>
 
 <?php print_leadout(); ?>
 </body>

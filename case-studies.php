@@ -23,24 +23,24 @@
 <h2>Network Simulation</h2>
 
 <ul>
-<li><a href="casestudy-boss.php">The Celtic BOSS Project (Railway on-board wireless secured video surveillance)</a>
-<li><a href="casestudy-adhoc.php">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
-<li><a href="casestudy-lrwpan.php">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
+<li><a href="casestudy-boss">The Celtic BOSS Project (Railway on-board wireless secured video surveillance)</a>
+<li><a href="casestudy-adhoc">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
+<li><a href="casestudy-lrwpan">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
 </ul>
 
 <h2>Architectural Exploration</h2>
 
 <ul>
-<li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
-<li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
-<li><a href="casestudy-infiniband.php">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
+<li><a href="casestudy-ibmzurich">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
+<li><a href="casestudy-photonic">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
+<li><a href="casestudy-infiniband">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
 </ul>
 
 <h2>Performance Modeling</h2>
 
 <ul>
-<li><a href="casestudy-cloud.php">Performance Simulation of Clouds at IBM Research</a>
-<li><a href="casestudy-afdx.php">High-Level Modeling of AFDX Networks</a>
+<li><a href="casestudy-cloud">Performance Simulation of Clouds at IBM Research</a>
+<li><a href="casestudy-afdx">High-Level Modeling of AFDX Networks</a>
 </ul>
 
 <?php print_leadout(); ?>

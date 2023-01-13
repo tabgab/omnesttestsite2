@@ -26,7 +26,7 @@ considered.</p>
 
 <p style="line-height:110%"><small>
 OMNEST and OMNeT++ are mostly identical except for licensing, branding, and the presence
-of extra components and features in OMNEST (<a href="comparison.php">comparison</a>).</small></p>
+of extra components and features in OMNEST (<a href="comparison">comparison</a>).</small></p>
 
 
 <h2>What license do I need if I am in an education/research environment?</h2>

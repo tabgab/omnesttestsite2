@@ -9,7 +9,7 @@ $news = array(
         "title" => "OMNEST 6.0.1 released",
         "date" => "Sept 6, 2022",
         "summary" => "OMNEST 6.0.1 is a maintenance release containing several bugfixes.",
-        "link" => "whatsnew-601.php"
+        "link" => "whatsnew-601"
     ),
 
     array(
@@ -28,7 +28,7 @@ $news = array(
         "date" => "May 6, 2022",
         "summary" => "OMNEST 6.0 is the result of more than three years of work, and 
          includes many essential new features that we would already have a hard time without.",
-        "link" => "whatsnew-60.php"
+        "link" => "whatsnew-60"
     ),
 
     array(
@@ -39,7 +39,7 @@ $news = array(
         purpose of this release is to make it possible to write model code, primarily
         NED, which is also compatible with the upcoming OMNEST 6.0. It also contains
         several bug fixes backported from the 6.0 branch.",
-        "link" => "whatsnew-57.php"
+        "link" => "whatsnew-57"
     ),
 
     array(
@@ -50,7 +50,7 @@ $news = array(
          useful NED feature (@reconnect), minor additions to the simulation library
          and fixes to the IDE Sequence Chart viewer.
          Regarding bugfixes, Qtenv has received quite a lot of attention.",
-        "link" => "whatsnew-562.php"
+        "link" => "whatsnew-562"
     ),
 
     array(
@@ -60,7 +60,7 @@ $news = array(
         "summary" => "This release contains several important fixes like JDK 11 and osgEarth 2.10
         compatibility, a workaround for long CDT indexing times, and several improvements in the
         simulation library.",
-        "link" => "whatsnew-551.php"
+        "link" => "whatsnew-551"
     ),
 
     array(
@@ -70,7 +70,7 @@ $news = array(
         "summary" => "Highlights of this release are an improved message compiler (required for INET 4),
         much improved histogram support, a more powerful cMessagePrinter API and its
         implementation in Qtenv, and better support for smooth animation in Qtenv.",
-        "link" => "whatsnew-541.php"
+        "link" => "whatsnew-541"
     ),
 
     array(
@@ -81,7 +81,7 @@ $news = array(
         (especially around weighted statistics); many bug fixes and improvements in Qtenv;
         makefile changes to allow DEBUG and RELEASE builds of models to co-exist, and
         several related changes in the IDE.",
-        "link" => "whatsnew-521.php"
+        "link" => "whatsnew-521"
     ),
 
     array(
@@ -90,7 +90,7 @@ $news = array(
         "date" => "May 10, 2017",
         "summary" => "This release significantly improves and builds upon
          functionality introduced in version 5.0, and also raises the bar in other areas.",
-        "link" => "whatsnew-511.php"
+        "link" => "whatsnew-511"
     ),
 
     array(
@@ -100,7 +100,7 @@ $news = array(
         "summary" => "OMNEST 5.0 has been released.
         New features include 3D graphics support, support for rich 2D graphics,
         improved logging, a new Qt-based runtime environment, and much more.",
-        "link" => "whatsnew-50.php"
+        "link" => "whatsnew-50"
     ),
 
     array(
@@ -108,7 +108,7 @@ $news = array(
         "title" => "OMNEST 4.6 released",
         "date" => "Dec 2, 2014",
         "summary" => "OMNEST 4.6 has been released.",
-        "link" => "whatsnew-46.php"
+        "link" => "whatsnew-46"
     ),
 
     array(
@@ -116,7 +116,7 @@ $news = array(
         "title" => "OMNEST 4.5 released",
         "date" => "July 16, 2014",
         "summary" => "OMNEST 4.5 has been released.",
-        "link" => "whatsnew-45.php"
+        "link" => "whatsnew-45"
     ),
 
     array(
@@ -124,7 +124,7 @@ $news = array(
         "title" => "OMNEST 4.4.1 released",
         "date" => "March 10, 2014",
         "summary" => "OMNEST 4.4.1 has been released with bugfixes.",
-        "link" => "whatsnew-441.php"
+        "link" => "whatsnew-441"
     ),
 
     array(
@@ -132,7 +132,7 @@ $news = array(
         "title" => "OMNEST 4.4 released",
         "date" => "January 16, 2014",
         "summary" => "OMNEST 4.4 has been released with improved compiler support and bugfixes.",
-        "link" => "whatsnew-44.php"
+        "link" => "whatsnew-44"
     ),
 
     array(
@@ -140,7 +140,7 @@ $news = array(
         "title" => "OMNEST 4.3.1 released",
         "date" => "September 16, 2013",
         "summary" => "OMNEST 4.3.1 has been released with several improvements and bugfixes.",
-        "link" => "whatsnew-431.php"
+        "link" => "whatsnew-431"
     ),
 
     array(
@@ -148,7 +148,7 @@ $news = array(
         "title" => "OMNEST 4.3 released",
         "date" => "April 15, 2013",
         "summary" => "OMNEST 4.3 has been released with several new features, improvements and bugfixes.",
-        "link" => "whatsnew-43.php"
+        "link" => "whatsnew-43"
     ),
 
     array(
@@ -216,7 +216,7 @@ $news = array(
         "title" => "OMNEST 4.2.1 released",
         "date" => "January 24, 2012",
         "summary" => "We are happy to announce the release of OMNEST 4.2.1.",
-        "link" => "whatsnew-42.php"
+        "link" => "whatsnew-42"
     ),
 
     array(
@@ -241,7 +241,7 @@ $news = array(
         "summary" => "
           Recently, we have received reports that crooks are peddling OMNeT++ licenses
           for commercial use in China.",
-        "link" => "piracy.php"
+        "link" => "piracy"
     ),
 
     array(
@@ -249,7 +249,7 @@ $news = array(
         "title" => "OMNEST 4.1 released",
         "date" => "June 14, 2010",
         "summary" => "We are happy to announce the release of OMNEST 4.1.",
-        "link" => "whatsnew-41.php",
+        "link" => "whatsnew-41",
     ),
 
     array(
@@ -293,7 +293,7 @@ $news = array(
           Environment. OMNEST 4.0 features include an Eclipse-based Simulation IDE,
           greatly enhanced NED language and simulation kernel, a streamlined
           simulation kernel and many other improvements.",
-        "link" => "whatsnew-40.php"
+        "link" => "whatsnew-40"
     ),
 
 );

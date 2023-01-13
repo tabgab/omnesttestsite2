@@ -35,7 +35,7 @@
     <i>If your work is of noncommercial nature, you don't need OMNEST: you can use the
     open-source version OMNeT++ from <a href="https://omnetpp.org">omnetpp.org</a>.</i>
     OMNEST and OMNeT++ are mostly identical except for licensing, branding, and the presence
-    of extra components and features in OMNEST (<a href="comparison.php">comparison</a>).</small></p>
+    of extra components and features in OMNEST (<a href="comparison">comparison</a>).</small></p>
 
     <table style="border-spacing: 9px">
     <tr><td>&nbsp;</td><td><div id='post_robot_errorloc' style='color: #cc0000; font-size:10px;'></div></td></tr>

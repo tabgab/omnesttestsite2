@@ -20,7 +20,7 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 6.0.1 <a href="whatsnew-601.php">(What's new in this release?)</a></h3>
+<h3 style="margin-bottom:0">Latest stable version: 6.0.1 <a href="whatsnew-601">(What's new in this release?)</a></h3>
 <p>For release announcements, follow <a href="https://twitter.com/omnetpp" target="_blank">@omnetpp</a> on Twitter.</p>
 
 <h3>Downloads:</h3>
@@ -79,7 +79,7 @@
 
 <p><small>Note: The above downloads are for both "Annual" and "Perpetual" licenses.</small></p>
 
-<p><a href="download-previous.php">Older versions can be found here.</a></p>
+<p><a href="download-previous">Older versions can be found here.</a></p>
 
 <p>To download open-source simulation models and other extensions, please visit the
 <a href="https://omnetpp.org/download/models-and-tools" target="_blank">OMNeT++ community site</a>.

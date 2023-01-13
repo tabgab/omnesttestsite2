@@ -31,7 +31,7 @@ UAE</p>
   
 <p>E-mail: <a href="mailto:info@cogitasoft.com">info@cogitasoft.com</a></p>
 
-<p>You can also contact us using the <a href="contact.php">contact page</a>.</p>
+<p>You can also contact us using the <a href="contact">contact page</a>.</p>
 
 <?php print_leadout(); ?>
 </body>

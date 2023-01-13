@@ -57,7 +57,7 @@ for both models and the simulation kernel and library.
 and for distributing memory requirements when needed.</p>
 
 <li><b>SystemC integration</b>. If you are simulating hardware,
-OMNEST's <a href="systemc-integration.php">SystemC integration feature</a>
+OMNEST's <a href="systemc-integration">SystemC integration feature</a>
 can be useful.  Both RTL and higher-level SystemC modules can be used in
 OMNEST simulations, without any performance loss.</p>
 
@@ -73,16 +73,16 @@ an OMNEST simulation to other simulators) are also within reach.</p>
 <h2>Case Studies</h2>
 
 <ul>
-<li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
-<li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
-<li><a href="casestudy-infiniband.php">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
+<li><a href="casestudy-ibmzurich">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
+<li><a href="casestudy-photonic">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
+<li><a href="casestudy-infiniband">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
 </ul>
 
 <div style="clear:both"></div>
 
 <br>
 
-<!-- <?php print_next_link("application-areas.php", "Back to Application Areas"); ?> -->
+<!-- <?php print_next_link("application-areas", "Back to Application Areas"); ?> -->
 
 <?php print_leadout(); ?>
 </body>

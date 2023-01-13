@@ -25,9 +25,9 @@ Thank you for taking the OMNEST Product Tour.</p>
 soon welcome you among the happy users of our simulation tool.</p>
 
 <?php
-print_next_link("contact.php", "Questions? Contact us");
-print_next_link("try-omnest.php", "Try OMNEST");
-print_next_link("overview.php", "Learn about OMNEST in more detail");
+print_next_link("contact", "Questions? Contact us");
+print_next_link("try-omnest", "Try OMNEST");
+print_next_link("overview", "Learn about OMNEST in more detail");
 ?>
 
 <div style="clear:both"></div>

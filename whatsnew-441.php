@@ -143,7 +143,7 @@ was to improve compatibility with the latest operating system and compilers rele
 <p>Bugs fixed: <a target="_blank" href="http://tinyurl.com/omnetpp441-fixes">http://tinyurl.com/omnetpp441-fixes</a></p>
 
 <br/>
-<h2><a href="whatsnew-431.php">What's New in OMNEST 4.3.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-431">What's New in OMNEST 4.3.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>

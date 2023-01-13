@@ -86,7 +86,7 @@ There were also numerous bug fixes.</p>
 
 <p>Bugs fixed: <a href="http://tinyurl.com/omnetpp46-fixes" target="_blank">http://tinyurl.com/omnetpp46-fixes</a></p>
 <br/>
-<h2><a href="whatsnew-45.php">What's New in OMNEST 4.5 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-45">What's New in OMNEST 4.5 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>

@@ -71,7 +71,7 @@ You can also download, install and try OMNeT++ models from the web.</p>
 </ul>
 
 <p>If you need an unlimited version of OMNEST for your evaluation,
-please <a href="contact.php">contact us</a>.</p>
+please <a href="contact">contact us</a>.</p>
 
 
 <!-- Google Code for DEFAULT Conversion Page -->

@@ -1,13 +1,13 @@
 <?php
 
 $casestudies = array(
-    array("link"=>"casestudy-afdx.php", "text"=>"Modeling Avionics Full-Duplex Switched Ethernet (AFDX) Networks"),
-    array("link"=>"casestudy-ibmzurich.php", "text"=>"Simulation of Next-Generation Supercomputing Systems at IBM Research"),
-    array("link"=>"casestudy-photonic.php", "text"=>"Architectural Exploration of Chip-Scale Photonic Interconnection Networks"),
-    array("link"=>"casestudy-infiniband.php", "text"=>"Improving the Performance of InfiniBand in a Supercomputing Cluster"),
-    array("link"=>"casestudy-boss.php", "text"=>"The Celtic BOSS Project (Railway on-board wireless secured video surveillance)"),
-    array("link"=>"casestudy-adhoc.php", "text"=>"Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks"),
-    array("link"=>"casestudy-lrwpan.php", "text"=>"Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications"),
+    array("link"=>"casestudy-afdx", "text"=>"Modeling Avionics Full-Duplex Switched Ethernet (AFDX) Networks"),
+    array("link"=>"casestudy-ibmzurich", "text"=>"Simulation of Next-Generation Supercomputing Systems at IBM Research"),
+    array("link"=>"casestudy-photonic", "text"=>"Architectural Exploration of Chip-Scale Photonic Interconnection Networks"),
+    array("link"=>"casestudy-infiniband", "text"=>"Improving the Performance of InfiniBand in a Supercomputing Cluster"),
+    array("link"=>"casestudy-boss", "text"=>"The Celtic BOSS Project (Railway on-board wireless secured video surveillance)"),
+    array("link"=>"casestudy-adhoc", "text"=>"Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks"),
+    array("link"=>"casestudy-lrwpan", "text"=>"Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications"),
 );
 
 function print_next_casestudy_links($current_page)

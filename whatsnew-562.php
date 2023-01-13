@@ -96,7 +96,7 @@
   </div>
 
 <br/>
-<h2><a href="whatsnew-551.php">What's New in OMNEST 5.5.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-551">What's New in OMNEST 5.5.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>

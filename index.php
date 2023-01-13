@@ -30,7 +30,7 @@ OMNEST simulations can also be embedded into your own software products.
 <div id="under-intro-text">
 
 <div id="leftcol" style="float:left; width:400px">
-<h1><a href="simulation-models.php">Simulation Models</a></h1>
+<h1><a href="simulation-models">Simulation Models</a></h1>
 
 <p>Models exist for
 Internet protocols, wireless networks, switched LANs, TSN,
@@ -39,7 +39,7 @@ mobile ad-hoc networks, mesh networks, wireless sensor networks,
 vehicular networks, NoCs, optical networks,
 HPC clusters, cloud computing, SANs,
 and more...
-<a href="simulation-models.php">Explore the models&nbsp;&raquo;</a>
+<a href="simulation-models">Explore the models&nbsp;&raquo;</a>
 </p>
 
 <h1><a href="services.php#orientation">Free Orientation/Consulting Session</a></h1>
@@ -55,17 +55,17 @@ useful to you. By consulting with our experts early in your projects, you can av
 detours and make the right design decisions from the start. 
 </p>
 
-<h1><a href="case-studies.php">Case Studies</a></h1>
+<h1><a href="case-studies">Case Studies</a></h1>
 
 <ul>
-  <li><a href="casestudy-ibmzurich.php">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
-  <li><a href="casestudy-adhoc.php">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
-  <li><a href="casestudy-photonic.php">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
-  <li><a href="case-studies.php">More&nbsp;&raquo;</a><br>
+  <li><a href="casestudy-ibmzurich">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
+  <li><a href="casestudy-adhoc">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
+  <li><a href="casestudy-photonic">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
+  <li><a href="case-studies">More&nbsp;&raquo;</a><br>
 </ul>
 
 <!--
-<h1><a href="publications.php">Selected Publications</a></h1>
+<h1><a href="publications">Selected Publications</a></h1>
 
 <img src="images/misc/ieee.png">
 <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
@@ -86,17 +86,17 @@ detours and make the right design decisions from the start.
 </div> <!--leftcol-->
 
 <div id="rightcol" style="float:right; width:340px">
-<h1><a href="embedding.php">Add Simulation To Your Software Products!</a></h1>
-<p>You can <a href="embedding.php">embed</a> the simulation kernel or whole simulations into your software products.</p>
+<h1><a href="embedding">Add Simulation To Your Software Products!</a></h1>
+<p>You can <a href="embedding">embed</a> the simulation kernel or whole simulations into your software products.</p>
 
-<h1><a href="whatsnew-50.php">Visualize your Simulation in 3D!</a></h1>
-<a href="whatsnew-50.php"><img width="150" src="images/misc/3d_sats.png" style="float: left; margin-right: 10px"/></a>
+<h1><a href="whatsnew-50">Visualize your Simulation in 3D!</a></h1>
+<a href="whatsnew-50"><img width="150" src="images/misc/3d_sats.png" style="float: left; margin-right: 10px"/></a>
 <p>The OMNEST runtime user interface allows you to build 3D animations
 for your simulation model employing the widely used OpenSceneGraph library.</p>
 <div style="clear:both"></div>
 
 <!--TODO
-<h1><a href="testimonials.php">Testimonials</a></h1>
+<h1><a href="testimonials">Testimonials</a></h1>
 
 <p><i>"Using OMNEST was a real pleasure after the struggle we had with our former simulation tool."</i>
 - John Smith, ACME Inc.</i></p>
@@ -110,17 +110,17 @@ for your simulation model employing the widely used OpenSceneGraph library.</p>
 
 <img alt="" src="images/misc/marenostrum-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
 <p>IBM researchers have used OMNEST to optimize one of Europe's most powerful supercomputers.<br>
-<a href="casestudy-ibmzurich.php">Read more&nbsp;&raquo;</a></p>
+<a href="casestudy-ibmzurich">Read more&nbsp;&raquo;</a></p>
 <div style="clear:both"></div>
 <br>
 
 <img alt="" src="images/misc/workshop08-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
 <p>Users meet regularly at the International OMNeT++ Workshop, co-located with the SimuTools conference.<br>
-<a href="community.php">Read more&nbsp;&raquo;</a></p>
+<a href="community">Read more&nbsp;&raquo;</a></p>
 <div style="clear:both"></div>
 -->
 
-<h1><a href="news.php">News</a></h1>
+<h1><a href="news">News</a></h1>
 
 <?php
 include("newsitems.php");
@@ -136,9 +136,9 @@ news_print_frontpage(2);
 
 </div>
 <div style="float:right; width:140px">
-    <h1 class="titlepage" style="margin-top:3px; margin-left:0px"><a href="references.php">References</a></h1>
+    <h1 class="titlepage" style="margin-top:3px; margin-left:0px"><a href="references">References</a></h1>
     <div style="text-align:center; border:solid 1px #bebebe; padding:8px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px">
-        <a href="references.php">
+        <a href="references">
         <img src="refs/ibm.png"> <br><br>
         <img src="refs/thales.gif" width=110> <br><br>
         <img src="refs/alcatel-lucent.gif" width=100> <br><br>
@@ -147,7 +147,7 @@ news_print_frontpage(2);
         <img src="refs/fraunhofer.jpg" width=110>
         </a>
     </div>
-    <p style="margin-top:5px; margin-left:10px"><a href="references.php">More references...</a></p>
+    <p style="margin-top:5px; margin-left:10px"><a href="references">More references...</a></p>
 </div>
 <div style="clear:both"></div>
 

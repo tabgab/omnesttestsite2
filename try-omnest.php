@@ -22,14 +22,14 @@
 libraries, tools, the IDE, sample simulations and documentation.
 </p>
 
-<div class="next" style="text-align:right"><a href="download-eval-request.php">Proceed to Downloads <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></div>
+<div class="next" style="text-align:right"><a href="download-eval-request">Proceed to Downloads <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></div>
 
 <h2>Windows Installer</h2>
 
 <table>
   <tr>
     <td style="width:130px; vertical-align: top">
-      <a class="noicon" href="download-eval-request.php"><img src="images/misc/download-win-eval.png"/></a>
+      <a class="noicon" href="download-eval-request"><img src="images/misc/download-win-eval.png"/></a>
     </td>
     <td style="vertical-align: top">
       <p>Installs OMNEST Evaluation on a Windows machine (Windows 10 or 11).
@@ -55,7 +55,7 @@ libraries, tools, the IDE, sample simulations and documentation.
     <td style="vertical-align: top">
       OMNEST has wide platform support. In addition to Windows, the IDE is also available on macOS and Linux,
       and simulations can be run on virtually any platform that is powerful enough and has a standards-compliant C++ compiler.
-      If you wish to evaluate OMNEST on macOS, please <a href="contact.php">contact us</a>.
+      If you wish to evaluate OMNEST on macOS, please <a href="contact">contact us</a>.
     </td>
   </tr>
 
@@ -66,14 +66,14 @@ libraries, tools, the IDE, sample simulations and documentation.
 
 Note:
 <ul>
- <!-- <li>If you need to evaluate OMNEST on macOS or Linux, please <a href="contact.php">contact us</a>.</li> -->
+ <!-- <li>If you need to evaluate OMNEST on macOS or Linux, please <a href="contact">contact us</a>.</li> -->
  <li>Limitations of the evaluation version: (1) no source code is provided for the simulation kernel;
     (2) simulations are limited to 10,000,000 events and 1000 modules.</li>
  <li>Network simulation models are not included, they need to be downloaded separately;
-     <a href="simulation-models.php">read more here</a>.</li>
+     <a href="simulation-models">read more here</a>.</li>
 </ul>
 
-<div class="next" style="text-align:right"><a href="download-eval-request.php">Proceed to Downloads <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></div>
+<div class="next" style="text-align:right"><a href="download-eval-request">Proceed to Downloads <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></div>
 
 <br><br>
 

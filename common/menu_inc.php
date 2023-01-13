@@ -3,95 +3,95 @@
 // PRODUCT  | TRY OMNEST  | HOW TO BUY | SUPPORT | ABOUT US
 
 $touritems = array(
-    //array("text"=>"Take Advantage of Simulation", "link"=>"tour-why-simulation.php"),
-    array("text"=>"Benefit from Existing Models", "link"=>"tour-models.php"),
-    array("text"=>"Develop Models Easily", "link"=>"tour-development.php"),
-    array("text"=>"High-Performance Simulation", "link"=>"tour-simulation.php"),
-    array("text"=>"Evaluate Your Model", "link"=>"tour-analysis.php"),
-    array("text"=>"OMNEST Integrates Well", "link"=>"tour-integrates.php"),
+    //array("text"=>"Take Advantage of Simulation", "link"=>"tour-why-simulation"),
+    array("text"=>"Benefit from Existing Models", "link"=>"tour-models"),
+    array("text"=>"Develop Models Easily", "link"=>"tour-development"),
+    array("text"=>"High-Performance Simulation", "link"=>"tour-simulation"),
+    array("text"=>"Evaluate Your Model", "link"=>"tour-analysis"),
+    array("text"=>"OMNEST Integrates Well", "link"=>"tour-integrates"),
 );
 
 $tour_menu = array(
-    array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
+    array("text"=>"What is OMNEST?", "link"=>"omnest-is"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "highlight"=>0, "submenu"=>$touritems),
-    array("text"=>"Learn about OMNEST", "link"=>"overview.php", "crosslink"=>1),
-    array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
-    array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
-    array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "crosslink"=>1),
-    array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "crosslink"=>1),
-    array("text"=>"Company", "link"=>"company.php", "crosslink"=>1)
+    array("text"=>"Learn about OMNEST", "link"=>"overview", "crosslink"=>1),
+    array("text"=>"OMNEST in the World", "link"=>"references", "crosslink"=>1),
+    array("text"=>"Try OMNEST", "link"=>"try-omnest"),
+    array("text"=>"How to buy OMNEST", "link"=>"contact", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Services", "link"=>"services", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Company", "link"=>"company", "crosslink"=>1)
 );
 
 $product_menu = array(
-    array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
+    array("text"=>"What is OMNEST?", "link"=>"omnest-is"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
-    array("text"=>"Learn more about OMNEST", "link"=>"overview.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Overview", "link"=>"overview.php", "subpages"=>array(
-            "systemc-integration.php",
-            "embedding.php"
+    array("text"=>"Learn more about OMNEST", "link"=>"overview", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Overview", "link"=>"overview", "subpages"=>array(
+            "systemc-integration",
+            "embedding"
         )),
-        array("text"=>"Typical Application Areas", "link"=>"application-areas.php", "subpages"=>array(
-            "architecture-verification.php",
-            "network-simulation.php",
-            "performance-modeling.php",
-            "queueinglib.php"
+        array("text"=>"Typical Application Areas", "link"=>"application-areas", "subpages"=>array(
+            "architecture-verification",
+            "network-simulation",
+            "performance-modeling",
+            "queueinglib"
         )),
-        array("text"=>"Simulation Models", "link"=>"simulation-models.php"),
-        array("text"=>"Simulation IDE", "link"=>"ide.php"),
-        array("text"=>"Demo Videos", "link"=>"demo-videos.php"),
-        array("text"=>"Documentation", "link"=>"documentation.php"),
+        array("text"=>"Simulation Models", "link"=>"simulation-models"),
+        array("text"=>"Simulation IDE", "link"=>"ide"),
+        array("text"=>"Demo Videos", "link"=>"demo-videos"),
+        array("text"=>"Documentation", "link"=>"documentation"),
     )),
 
-    array("text"=>"OMNEST in the World", "link"=>"references.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Customers", "link"=>"references.php"),
-        //TODO add back when there is content:  array("text"=>"Testimonials", "link"=>"testimonials.php"),
-        array("text"=>"Publications", "link"=>"publications.php"),
-        array("text"=>"Case Studies", "link"=>"case-studies.php", "subpages"=>array(
-            "casestudy-adhoc.php",
-            "casestudy-afdx.php",
-            "casestudy-boss.php",
-            "casestudy-cloud.php",
-            "casestudy-ibmzurich.php",
-            "casestudy-infiniband.php",
-            "casestudy-lrwpan.php",
-            "casestudy-photonic.php"
+    array("text"=>"OMNEST in the World", "link"=>"references", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Customers", "link"=>"references"),
+        //TODO add back when there is content:  array("text"=>"Testimonials", "link"=>"testimonials"),
+        array("text"=>"Publications", "link"=>"publications"),
+        array("text"=>"Case Studies", "link"=>"case-studies", "subpages"=>array(
+            "casestudy-adhoc",
+            "casestudy-afdx",
+            "casestudy-boss",
+            "casestudy-cloud",
+            "casestudy-ibmzurich",
+            "casestudy-infiniband",
+            "casestudy-lrwpan",
+            "casestudy-photonic"
         )),
-        array("text"=>"Reference Projects", "link"=>"netsim-references.php"),
-        array("text"=>"Book Recommendation", "link"=>"network-simulation-book.php"),
+        array("text"=>"Reference Projects", "link"=>"netsim-references"),
+        array("text"=>"Book Recommendation", "link"=>"network-simulation-book"),
     )),
 
-    array("text"=>"Try OMNEST", "link"=>"try-omnest.php"),
-    array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "crosslink"=>1),
-    array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "crosslink"=>1),
-    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Try OMNEST", "link"=>"try-omnest"),
+    array("text"=>"How to buy OMNEST", "link"=>"contact", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Services", "link"=>"services", "highlight"=>0, "crosslink"=>1),
+    array("text"=>"Company", "link"=>"company", "highlight"=>0, "crosslink"=>1),
 );
 
 $purchase_menu = array(
-    array("text"=>"What is OMNEST?", "link"=>"omnest-is.php"),
+    array("text"=>"What is OMNEST?", "link"=>"omnest-is"),
     array("text"=>"OMNEST Product Tour", "link"=>$touritems[0]["link"], "crosslink"=>1),
-    array("text"=>"Learn about OMNEST", "link"=>"overview.php", "crosslink"=>1),
-    array("text"=>"OMNEST in the World", "link"=>"references.php", "crosslink"=>1),
-    array("text"=>"Try OMNEST", "link"=>"try-omnest.php", "subpages"=>array(
-            "download-eval-request.php",
-            "download-eval-post.php",
-            "download-eval.php"
+    array("text"=>"Learn about OMNEST", "link"=>"overview", "crosslink"=>1),
+    array("text"=>"OMNEST in the World", "link"=>"references", "crosslink"=>1),
+    array("text"=>"Try OMNEST", "link"=>"try-omnest", "subpages"=>array(
+            "download-eval-request",
+            "download-eval-post",
+            "download-eval"
         )),
-    array("text"=>"How to buy OMNEST", "link"=>"contact.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Request Quotation", "link"=>"contact.php"),
-        array("text"=>"Do I Need a License?", "link"=>"licensingfaq.php"),
-        array("text"=>"Licensing Options", "link"=>"licensing.php"),
-        array("text"=>"License Agreement", "link"=>"license.php"),
-        array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison.php"),
+    array("text"=>"How to buy OMNEST", "link"=>"contact", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Request Quotation", "link"=>"contact"),
+        array("text"=>"Do I Need a License?", "link"=>"licensingfaq"),
+        array("text"=>"Licensing Options", "link"=>"licensing"),
+        array("text"=>"License Agreement", "link"=>"license"),
+        array("text"=>"OMNEST vs. OMNeT++", "link"=>"comparison"),
     )),
-    array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"Consulting, Training", "link"=>"services.php"),
-        array("text"=>"Technical Support", "link"=>"support.php"),
-        array("text"=>"Download OMNEST", "link"=>"downloads.php"),
+    array("text"=>"Services", "link"=>"services", "highlight"=>0, "submenu"=>array(
+        array("text"=>"Consulting, Training", "link"=>"services"),
+        array("text"=>"Technical Support", "link"=>"support"),
+        array("text"=>"Download OMNEST", "link"=>"downloads"),
     )),
-    array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
-        array("text"=>"About Us", "link"=>"company.php"),
-        // array("text"=>"Community", "link"=>"community.php"),
-        array("text"=>"Partners", "link"=>"partners.php"),
+    array("text"=>"Company", "link"=>"company", "highlight"=>0, "submenu"=>array(
+        array("text"=>"About Us", "link"=>"company"),
+        // array("text"=>"Community", "link"=>"community"),
+        array("text"=>"Partners", "link"=>"partners"),
     )),
 );
 
@@ -111,8 +111,8 @@ function print_footer_links()
                 <ul>
                     <li>Introduction
                         <ul>
-                            <li><a href="omnest-is.php" id="footermenu">What is OMNEST?</a>
-                            <li><a href="tour-models.php" id="footermenu">Product Tour</a>
+                            <li><a href="omnest-is" id="footermenu">What is OMNEST?</a>
+                            <li><a href="tour-models" id="footermenu">Product Tour</a>
                         </ul>
                     </li>
                 </ul>
@@ -121,12 +121,12 @@ function print_footer_links()
                 <ul>
                     <li>Learn More
                         <ul>
-                            <li><a href="overview.php" id="footermenu">Overview</a>
-                            <li><a href="application-areas.php" id="footermenu">Application Areas</a>
-                            <li><a href="simulation-models.php" id="footermenu">Simulation Models</a>
-                            <li><a href="ide.php" id="footermenu">Simulation IDE</a>
-                            <li><a href="demo-videos.php" id="footermenu">Demo Videos</a>
-                            <li><a href="documentation.php" id="footermenu">Documentation</a>
+                            <li><a href="overview" id="footermenu">Overview</a>
+                            <li><a href="application-areas" id="footermenu">Application Areas</a>
+                            <li><a href="simulation-models" id="footermenu">Simulation Models</a>
+                            <li><a href="ide" id="footermenu">Simulation IDE</a>
+                            <li><a href="demo-videos" id="footermenu">Demo Videos</a>
+                            <li><a href="documentation" id="footermenu">Documentation</a>
                         </ul>
                     </li>
                 </ul>
@@ -135,32 +135,32 @@ function print_footer_links()
                 <ul>
                     <li>OMNEST In the World
                         <ul>
-                            <li><a href="references.php" id="footermenu">Customers</a>
-                            <!-- <li><a href="testimonials.php" id="footermenu">Testimonials</a> -->
-                            <li><a href="publications.php" id="footermenu">Publications</a>
-                            <li><a href="case-studies.php" id="footermenu">Case Studies</a>
-                            <li><a href="netsim-references.php" id="footermenu">Reference Projects</a>
-                            <li><a href="network-simulation-book.php" id="footermenu">Book Recommendation</a>
+                            <li><a href="references" id="footermenu">Customers</a>
+                            <!-- <li><a href="testimonials" id="footermenu">Testimonials</a> -->
+                            <li><a href="publications" id="footermenu">Publications</a>
+                            <li><a href="case-studies" id="footermenu">Case Studies</a>
+                            <li><a href="netsim-references" id="footermenu">Reference Projects</a>
+                            <li><a href="network-simulation-book" id="footermenu">Book Recommendation</a>
                         </ul>
                     </li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="contact.php" id="footermenu">Contact Us /<br> Request Quotation</a></li>
-                    <li><a href="licensingfaq.php" id="footermenu">Do I Need a License?</a></li>
-                    <li><a href="licensing.php" id="footermenu">Licensing Options</a></li>
-                    <li><a href="license.php" id="footermenu">License Agreement</a></li>
-                    <li><a href="comparison.php" id="footermenu">OMNeT++ Comparison</a></li>
-                    <li><a href="support.php" id="footermenu">Technical Support</a></li>
-                    <li><a href="downloads.php" id="footermenu">Download OMNEST</a></li>
-                    <li><a href="services.php" id="footermenu">Consulting, Training</a></li>
+                    <li><a href="contact" id="footermenu">Contact Us /<br> Request Quotation</a></li>
+                    <li><a href="licensingfaq" id="footermenu">Do I Need a License?</a></li>
+                    <li><a href="licensing" id="footermenu">Licensing Options</a></li>
+                    <li><a href="license" id="footermenu">License Agreement</a></li>
+                    <li><a href="comparison" id="footermenu">OMNeT++ Comparison</a></li>
+                    <li><a href="support" id="footermenu">Technical Support</a></li>
+                    <li><a href="downloads" id="footermenu">Download OMNEST</a></li>
+                    <li><a href="services" id="footermenu">Consulting, Training</a></li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="company.php" id="footermenu">Company</a>
-                    <li><a href="partners.php" id="footermenu">Partners</a>
+                    <li><a href="company" id="footermenu">Company</a>
+                    <li><a href="partners" id="footermenu">Partners</a>
                 </ul>
             </td>
         </tr>
@@ -174,35 +174,35 @@ function print_top_menu($menu, $current_page)
 
     $current_page = basename($current_page);
 
-    $is_tryomnest_related = $current_page=="try-omnest.php" ||
-                            $current_page=="download-eval.php" ||
-                            $current_page=="download-eval-post.php" ||
-                            $current_page=="download-eval-request.php";
+    $is_tryomnest_related = $current_page=="try-omnest" ||
+                            $current_page=="download-eval" ||
+                            $current_page=="download-eval-post" ||
+                            $current_page=="download-eval-request";
 
-    $is_purchase_related =  $current_page=="contact.php" ||
-                            $current_page=="contact_post.php" ||
-                            $current_page=="licensingfaq.php" ||
-                            $current_page=="licensing.php" ||
-                            $current_page=="license.php";
+    $is_purchase_related =  $current_page=="contact" ||
+                            $current_page=="contact_post" ||
+                            $current_page=="licensingfaq" ||
+                            $current_page=="licensing" ||
+                            $current_page=="license";
 
-    $is_support_related =   $current_page=="support.php" ||
-                            $current_page=="downloads.php" ||
-                            $current_page=="services.php";
+    $is_support_related =   $current_page=="support" ||
+                            $current_page=="downloads" ||
+                            $current_page=="services";
 
-    $is_company_related =   $current_page=="company.php" ||
-                            $current_page=="partners.php";
+    $is_company_related =   $current_page=="company" ||
+                            $current_page=="partners";
 
-    print_top_menu_item("PRODUCT", "omnest-is.php", $menu===$tour_menu || $menu===$product_menu);
+    print_top_menu_item("PRODUCT", "omnest-is", $menu===$tour_menu || $menu===$product_menu);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("TRY OMNEST", "try-omnest.php", $is_tryomnest_related);
+    print_top_menu_item("TRY OMNEST", "try-omnest", $is_tryomnest_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("HOW TO BUY", "contact.php", $is_purchase_related);
+    print_top_menu_item("HOW TO BUY", "contact", $is_purchase_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    //print_top_menu_item("SERVICES", "services.php", $current_page=="services.php");
+    //print_top_menu_item("SERVICES", "services", $current_page=="services");
     //echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("SERVICES", "services.php", $is_support_related);
+    print_top_menu_item("SERVICES", "services", $is_support_related);
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    print_top_menu_item("ABOUT US", "company.php", $is_company_related);
+    print_top_menu_item("ABOUT US", "company", $is_company_related);
 }
 
 function print_top_menu_item($name, $link, $is_selected)
@@ -303,7 +303,7 @@ function print_next_tourstep_links($current_page, $small=false)
     if ($tourstep != NULL)
         print_next_link($tourstep["link"], "Next: " . $tourstep["text"], $small);
     else
-        print_next_link("tour-thankyou.php", "Next: Finish the Tour", $small);
+        print_next_link("tour-thankyou", "Next: Finish the Tour", $small);
 }
 
 function print_next_tourstep_links_small($current_page)

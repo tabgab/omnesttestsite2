@@ -44,7 +44,7 @@
 
 </table>
 
-<p>Note: <a href="piracy.php">Piracy of OMNeT++ Licenses in China</a>.</p>
+<p>Note: <a href="piracy">Piracy of OMNeT++ Licenses in China</a>.</p>
 
 
 <h2>Interested in becoming an OMNEST&#8482; reseller?</h2>
@@ -71,7 +71,7 @@ OMNEST, we honor and protect the investments our partners make in
 market-building. If you are interested in developing a relationship along the
 grounds laid out above, we would like to hear from you.</p>
 
-<p><a href="contact.php">Contact us</a> and we will get back to you shortly.</p>
+<p><a href="contact">Contact us</a> and we will get back to you shortly.</p>
 
 <?php print_leadout(); ?>
 </body>

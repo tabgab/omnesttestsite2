@@ -13,6 +13,9 @@ Options All -Indexes
   RewriteCond %{REQUEST_URI} !/$
   RewriteRule (.*) $1\.php [L]
 
+  # remove / from the end of URLs
+  RewriteRule (.*)/$ $1 [R=301,L]
+
   # this is for the index
   RewriteRule ^index\.php$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f

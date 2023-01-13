@@ -171,11 +171,11 @@ library. This functionality includes:</p>
     C++ plug-in interfaces are made available to customize various aspects of the simulation kernel:
     event scheduling, configuration and model parameterization, result recording and more.
 
-    <li><strong><a href="embedding.php">Embeddable simulation kernel</a></strong><br>
+    <li><strong><a href="embedding">Embeddable simulation kernel</a></strong><br>
     You can create your own applications that rely on the OMNEST simulation
     kernel internally for simulation functions: the simulation kernel, model components
     or even whole simulations can be embedded into your program as C++ libraries.
-    <a href="embedding.php">Read more&nbsp;&raquo;</a>
+    <a href="embedding">Read more&nbsp;&raquo;</a>
 
     <li><strong>Parallel simulation</strong><br>
     Simulation models can be executed using parallel distributed simulation
@@ -202,11 +202,11 @@ library. This functionality includes:</p>
     <li><strong>Network emulation capabilities</strong><br>
     Available as part of model packages like the INET Framework.
 
-    <li><strong><a href="systemc-integration.php">SystemC integration</a></strong><br>
+    <li><strong><a href="systemc-integration">SystemC integration</a></strong><br>
     The OMNEST-SystemC integration feature
     allows for mixing OMNEST and SystemC modules in the same simulation program,
     without the performance loss usually characteristic of co-simulation solutions.
-    <a href="systemc-integration.php">Read more&nbsp;&raquo;</a>
+    <a href="systemc-integration">Read more&nbsp;&raquo;</a>
 
     <li><strong>HLA support</strong><br>
     Allows for connecting OMNEST with other simulators via HLA / IEEE 1516.

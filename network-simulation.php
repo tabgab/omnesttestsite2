@@ -32,7 +32,7 @@ that have been written by researchers for the OMNeT++ simulation framework.
 </p>
 
 <p>The list of simulation models and model frameworks is available on the
-<a href="simulation-models.php">Simulation Models</a> page.</p>
+<a href="simulation-models">Simulation Models</a> page.</p>
 
 <h2>Benefits</h2>
 
@@ -55,14 +55,14 @@ such as queueing or resource allocation models.</p>
 <h2>Case Studies</h2>
 
 <ul>
-<li><a href="casestudy-boss.php">The Celtic BOSS Project (Railway on-board wireless secured video surveillance)</a>
-<li><a href="casestudy-adhoc.php">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
-<li><a href="casestudy-lrwpan.php">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
+<li><a href="casestudy-boss">The Celtic BOSS Project (Railway on-board wireless secured video surveillance)</a>
+<li><a href="casestudy-adhoc">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
+<li><a href="casestudy-lrwpan">Simulation Study of IEEE 802.15.4 LR-WPAN for Industrial Applications</a>
 </ul>
 
 <!--
-<?php print_next_link("simulation-models.php", "Simulation Models"); ?>
-<?php print_next_link("application-areas.php", "Back to Application Areas"); ?>
+<?php print_next_link("simulation-models", "Simulation Models"); ?>
+<?php print_next_link("application-areas", "Back to Application Areas"); ?>
 -->
 
 <?php print_leadout(); ?>

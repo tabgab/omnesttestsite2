@@ -40,7 +40,7 @@ research institute or company), then the deciding factor is whether the
 results will be publicly available (i.e. published in a journal or
 presented at a public conference), or will be used in the creation of a
 commercial product. For a more detailed description please check the <a
-href="licensingfaq.php">Licensing FAQ</a>. We reserve the right to make
+href="licensingfaq">Licensing FAQ</a>. We reserve the right to make
 final judgment on this issue in any specific case.</p>
 
 <h2>Academic Public License</h2>

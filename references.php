@@ -59,7 +59,7 @@ OMNEST licenses for internal research and other purposes.</p>
     <td><a class="noicon" href="http://www.ibm.com/" target="_blank"><img src="refs/ibm.png"></a></td>
     <td><p><a href="http://www.ibm.com/" target="_blank">IBM</a> has chosen to deploy OMNEST&#8482;
     at its <a href="http://www.zurich.ibm.com/" target="_blank">Zurich Research Laboratory</a>.
-    Read the <a href="press-ibm.php">press release</a>.</p>
+    Read the <a href="press-ibm">press release</a>.</p>
     </td>
   </tr>
 
@@ -124,8 +124,8 @@ OMNEST licenses for internal research and other purposes.</p>
   <tr>
     <td><a class="noicon" href="http://www.thalesgroup.com/" target="_blank"><img src="refs/thales.gif"></a></td>
     <td><p><a href="http://www.thalesgroup.com/" target="_blank">Thales Communications</a> is using OMNEST&#8482; in its research facilities world-wide.
-    You can find related information on our network simulation <a href="netsim-references.php">references</a>
-    and <a href="case-studies.php">case studies</a> pages.</p>
+    You can find related information on our network simulation <a href="netsim-references">references</a>
+    and <a href="case-studies">case studies</a> pages.</p>
     </td>
 
   </tr>
@@ -177,7 +177,7 @@ OMNEST licenses for internal research and other purposes.</p>
     has chosen to embed OMNEST&#8482; simulation technology into its
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> product.
     MEGA Process 6.1 runs OMNEST&#8482; simulation kernel.
-    Read the <a href="press-mega.php">press release</a>.</p>
+    Read the <a href="press-mega">press release</a>.</p>
 
     </td>
   </tr>

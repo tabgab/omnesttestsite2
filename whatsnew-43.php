@@ -101,7 +101,7 @@ are a lot of other links in the network.)
 </ul>
 
 <br/>
-<h2><a href="whatsnew-42.php">What's New in OMNEST 4.2 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-42">What's New in OMNEST 4.2 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>

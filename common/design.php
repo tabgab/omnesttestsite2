@@ -173,18 +173,18 @@ function print_titlepage_leadin() { ?>
         </div>
 
         <div id="logo" style="position:absolute; top:24px; left: 36px">
-            <a href="index.php"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
+            <a href="/"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
         </div>
 
         <div id="search" style="position:absolute; top:16px; right:20px; background-image:url(common/images/search.png); background-repeat: no-repeat; width:150px; height:24px;">
-            <form name="frmSearch" action="search.php" method="get">
+            <form name="frmSearch" action="search" method="get">
                 <input type="text" name="q" style="border-style:none; margin:1px 3px 1px 3px; width:120px; height:15px"/>
                 <input type="image" src="common/images/search-icon.png" alt="Search" style="vertical-align:middle; border-style:none"/>
             </form>
         </div>
 
         <div id="topmenu" style="position:absolute; top:56px; right:20px;">
-                <?php print_top_menu(null, "index.php"); ?>
+                <?php print_top_menu(null, "/"); ?>
         </div>
 
         <div style="position:absolute; background-color:#197C92; background-image:url(common/images/banner_omnest.jpg); top:78px; width:100%; height:346px;"
@@ -198,15 +198,15 @@ function print_titlepage_leadin() { ?>
         <img style="display:none" src="common/images/button_learn_more_hover.png" alt="" >
         <img style="display:none" src="common/images/button_download_eval_hover.png" alt="" >
         <!-- sensitive areas -->
-        <a href="omnest-is.php"><div style="position:absolute; top:372px; left:25px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
-        <a href="try-omnest.php"><div style="position:absolute; top:372px; left:231px; width:180px; height:58px" onmouseover="document.getElementById('downloadbutton').src='common/images/button_download_eval_hover.png'" onmouseout="document.getElementById('downloadbutton').src='common/images/button_download_eval.png'"><img src="common/images/button_transparent.png" alt="Download" /></div></a>
+        <a href="omnest-is"><div style="position:absolute; top:372px; left:25px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+        <a href="try-omnest"><div style="position:absolute; top:372px; left:231px; width:180px; height:58px" onmouseover="document.getElementById('downloadbutton').src='common/images/button_download_eval_hover.png'" onmouseout="document.getElementById('downloadbutton').src='common/images/button_download_eval.png'"><img src="common/images/button_transparent.png" alt="Download" /></div></a>
 
 <!--
         <img id="tourbutton" style="position:absolute; top:364px; left:86px" alt="" src="common/images/button_learn_more.png">
         <!- - preload button hover images - ->
         <img style="display:none" src="common/images/button_learn_more_hover.png" alt="">
         <!- - sensitive areas - ->
-        <a href="omnest-is.php" id="button"><div style="position:absolute; top:372px; left:96px; width:180px; height:58px" onmouseover="document.getElementById('tourbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('tourbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+        <a href="omnest-is" id="button"><div style="position:absolute; top:372px; left:96px; width:180px; height:58px" onmouseover="document.getElementById('tourbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('tourbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
 -->
 
         <div style="position:absolute; top:120px; left:577px"><img src="common/images/slidewindow.png" alt=""></div>
@@ -258,11 +258,11 @@ function print_leadin($menu, $file) { ?>
         </div>
 
         <div id="logo" style="position:absolute; top:24px; left: 36px">
-            <a href="index.php"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
+            <a href="/"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
         </div>
 
         <div id="search" style="position:absolute; top:16px; right:20px; background-image:url(common/images/search.png); background-repeat: no-repeat; width:150px; height:24px;">
-            <form name="frmSearch" action="search.php" method="get">
+            <form name="frmSearch" action="search" method="get">
                 <input type="text" name="q" style="border-style:none; margin:1px 3px 1px 3px; width:120px; height:15px"/>
                 <input type="image" alt="Search" src="common/images/search-icon.png" style="vertical-align:middle; border-style:none"/>
             </form>

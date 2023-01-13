@@ -30,7 +30,7 @@
     <p>Please give us some details about yourself and your project, and we will
           get back to you soon. We will only use this data to better assist you with
           matters related to OMNEST, and will not disclose it to third parties.</p>
-    <p><small>Frequently asked: <a href="licensingfaq.php"><b>Do I need a license for OMNEST?</b></a></small></p>
+    <p><small>Frequently asked: <a href="licensingfaq"><b>Do I need a license for OMNEST?</b></a></small></p>
 
     <table style="border-spacing: 9px">
     <tr><td>&nbsp;</td><td><div id='post_robot_errorloc' style='color: #cc0000; font-size:10px;'></div></td></tr>

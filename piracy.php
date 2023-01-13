@@ -45,7 +45,7 @@ qualified local support with our qualified partners.
 <h2>Related</h2>
 
 <ul class="links">
-  <li><a href="partners.php">List of OMNEST partners worldwide</a>
+  <li><a href="partners">List of OMNEST partners worldwide</a>
 </ul>
 
 <?php print_leadout(); ?>

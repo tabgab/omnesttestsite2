@@ -28,7 +28,7 @@ function news_print_item_page($news_id)
         }
     }
 
-    echo "<ul class='links'><li><a href='news.php'>Read all news</a></ul>\n";
+    echo "<ul class='links'><li><a href='news'>Read all news</a></ul>\n";
 }
 
 function news_print_list()
@@ -53,7 +53,7 @@ function news_print_list()
 
         echo "<p>" . $news_data["summary"];
         if (array_key_exists("fulltext", $news_data))
-            echo " <a href='news.php?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
+            echo " <a href='news?id=" . $news_data["id"] . "'>More&nbsp;&raquo;</a>";
         if (array_key_exists("link", $news_data))
             echo " <a href='" . $news_data["link"] . "'>More&nbsp;&raquo;</a>";
         echo "</p>\n";
@@ -66,7 +66,7 @@ function news_print_frontpage($maxitems)
 
     $count = 0;
     foreach ($news as $news_data) {
-        $link = array_key_exists("link", $news_data) ? $news_data["link"] : "news.php?id=" . $news_data["id"];
+        $link = array_key_exists("link", $news_data) ? $news_data["link"] : "news?id=" . $news_data["id"];
         echo "<div class='news'>\n";
         if (array_key_exists("image", $news_data))
             echo "<img alt='' src='" . $news_data["image"]. "' width=150 style='float:left; margin-right:10px; margin-top:3px'>";
@@ -82,7 +82,7 @@ function news_print_frontpage($maxitems)
     }
 
     if (sizeof($news) > $maxitems)
-        echo "<p><a href='news.php'>More news&nbsp;&raquo;</a></p>\n";
+        echo "<p><a href='news'>More news&nbsp;&raquo;</a></p>\n";
 }
 
 ?>

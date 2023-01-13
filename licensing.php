@@ -20,7 +20,7 @@
 
 <p>If you are looking into using OMNEST for simulation projects within your company,
 or you are searching for an embeddable simulation kernel for your product,
-please check the <a href="licensingfaq.php">Licensing FAQ</a> and the license
+please check the <a href="licensingfaq">Licensing FAQ</a> and the license
 conditions below. You are welcome to contact us with your questions,
 or for further details.</p>
 
@@ -66,7 +66,7 @@ consider their application in detail (scope, planned number, distribution, etc.)
 if you plan to use them extensively. Note that if your counterpart (or colleague)
 also has access to OMNEST, then the distribution of binaries is usually not necessary.</p>
 
-We hope the above has met with your requirements. Please do not hesitate to <a href="contact.php">contact us</a> for details.
+We hope the above has met with your requirements. Please do not hesitate to <a href="contact">contact us</a> for details.
 
 <?php print_leadout(); ?>
 </body>

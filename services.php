@@ -86,7 +86,7 @@ exact training requirements and tailor our course to best suit your needs.</p>
 
 <p>Get in touch with us on <a href="mailto:info@omnest.com">info@omnest.com</a> 
 to discuss how we can help you today, or complete the 
-<a href="contact.php">contact form</a>.</p>
+<a href="contact">contact form</a>.</p>
 
 <?php print_leadout(); ?>
 </body>

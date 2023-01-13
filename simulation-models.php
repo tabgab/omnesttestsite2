@@ -286,7 +286,7 @@ for the design of a on- and off-chip photonic communications for multi-processor
 and the design of nanophotonic optical broadband switches (NOBS).</p>
 
 <p>When simulating NoCs or SoCs (Systems-on-Chip),
-OMNEST's <a href="systemc-integration.php">SystemC extension</a>
+OMNEST's <a href="systemc-integration">SystemC extension</a>
 may also come handy. It allows for mixing OMNEST and SystemC (or SystemC/TLM) models
 in the same simulation, without incurring the severe performance loss that is typical
 with co-simulations.</p>
@@ -299,7 +299,7 @@ with co-simulations.</p>
 data center infrastructure: iCanCloud (for clouds), SIMCAN (for HPC architectures),
 SimSANs (for storage area networks), HECIOS (for distributed file systems) and
 OMPCM (for software architectures including network effects), as discussed below.
-The <a href="casestudy-cloud.php">cloud simulation paper</a> from IBM Research
+The <a href="casestudy-cloud">cloud simulation paper</a> from IBM Research
 may also be useful.</p>
 
 <?php extlink("icancloud"); ?> is a simulation framework for cloud computing systems.
