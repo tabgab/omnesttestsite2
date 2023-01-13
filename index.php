@@ -139,12 +139,12 @@ news_print_frontpage(2);
     <h1 class="titlepage" style="margin-top:3px; margin-left:0px"><a href="references.php">References</a></h1>
     <div style="text-align:center; border:solid 1px #bebebe; padding:8px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px">
         <a href="references.php">
-        <img src="references/ibm.png"> <br><br>
-        <img src="references/thales.gif" width=110> <br><br>
-        <img src="references/alcatel-lucent.gif" width=100> <br><br>
-        <img src="references/cisco.gif"> <br><br>
-        <img src="references/eads.png"> <br><br>
-        <img src="references/fraunhofer.jpg" width=110>
+        <img src="refs/ibm.png"> <br><br>
+        <img src="refs/thales.gif" width=110> <br><br>
+        <img src="refs/alcatel-lucent.gif" width=100> <br><br>
+        <img src="refs/cisco.gif"> <br><br>
+        <img src="refs/eads.png"> <br><br>
+        <img src="refs/fraunhofer.jpg" width=110>
         </a>
     </div>
     <p style="margin-top:5px; margin-left:10px"><a href="references.php">More references...</a></p>

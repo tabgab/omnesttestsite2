@@ -86,7 +86,7 @@ $purchase_menu = array(
     array("text"=>"Services", "link"=>"services.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"Consulting, Training", "link"=>"services.php"),
         array("text"=>"Technical Support", "link"=>"support.php"),
-        array("text"=>"Download OMNEST", "link"=>"download.php"),
+        array("text"=>"Download OMNEST", "link"=>"downloads.php"),
     )),
     array("text"=>"Company", "link"=>"company.php", "highlight"=>0, "submenu"=>array(
         array("text"=>"About Us", "link"=>"company.php"),
@@ -153,7 +153,7 @@ function print_footer_links()
                     <li><a href="license.php" id="footermenu">License Agreement</a></li>
                     <li><a href="comparison.php" id="footermenu">OMNeT++ Comparison</a></li>
                     <li><a href="support.php" id="footermenu">Technical Support</a></li>
-                    <li><a href="download.php" id="footermenu">Download OMNEST</a></li>
+                    <li><a href="downloads.php" id="footermenu">Download OMNEST</a></li>
                     <li><a href="services.php" id="footermenu">Consulting, Training</a></li>
                 </ul>
             </td>
@@ -186,7 +186,7 @@ function print_top_menu($menu, $current_page)
                             $current_page=="license.php";
 
     $is_support_related =   $current_page=="support.php" ||
-                            $current_page=="download.php" ||
+                            $current_page=="downloads.php" ||
                             $current_page=="services.php";
 
     $is_company_related =   $current_page=="company.php" ||

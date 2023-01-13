@@ -21,7 +21,7 @@
 <p> Z&uuml;rich, April 15<sup>th</sup> 2003</p>
 <br>
 
-<img src="references/ibm.png" alt="IBM" class="left pic" width="80" height="42">
+<img src="refs/ibm.png" alt="IBM" class="left pic" width="80" height="42">
 
 <p>IBM's Z&uuml;rich Research Laboratory has chosen to invest in OMNEST&#8482; licenses for its research.</p>
 

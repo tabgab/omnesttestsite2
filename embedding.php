@@ -42,7 +42,7 @@ then compiled into your application in an unchanged form.</p>
 <p>The following companies have chosen to embed OMNEST&#8482; technology:</p>
 <table class="fancytable">
   <tr>
-    <td><a class="noicon" href="http://www.mega.com/" target="_blank"><img src="references/mega.gif" ></a></td>
+    <td><a class="noicon" href="http://www.mega.com/" target="_blank"><img src="refs/mega.gif" ></a></td>
     <td><p><a href="http://www.mega.com/" target="_blank">MEGA Corporation</a>
     has embedded OMNEST&#8482; simulation technology into its
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> business process simulation product.
@@ -52,7 +52,7 @@ then compiled into your application in an unchanged form.</p>
   </tr>
 
   <tr>
-    <td><a class="noicon" href="http://www.eads.com/" target="_blank"><img src="references/eads.png"></a></td>
+    <td><a class="noicon" href="http://www.eads.com/" target="_blank"><img src="refs/eads.png"></a></td>
     <td><p><a href="http://www.eads.com/" target="_blank">European Aeronautic Defence and Space Company.</a> <br> EADS professionals are using and embedding OMNEST&#8482; technology to simulate the internals of vehicle systems.</p>
     </td>
   </tr>

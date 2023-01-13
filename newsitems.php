@@ -183,7 +183,7 @@ $news = array(
         "summary" => "
           We are happy to announce the second maintenance release of OMNEST 4.2.
           This release contains fixes for several bugs reported against OMNEST 4.2.1.
-          <a href='download.php'>Download</a>
+          <a href='downloads.php'>Download</a>
         ",
     ),
 

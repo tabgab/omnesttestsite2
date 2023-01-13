@@ -20,7 +20,7 @@
 
 <p>Paris, March 1<sup>st</sup> 2004</p> <br>
 
-<img src="references/mega.gif" alt="" align="left" width="197" height="102">
+<img src="refs/mega.gif" alt="" align="left" width="197" height="102">
 
 <p>Last year MEGA International decided to embed OMNEST&#8482; technology into their Business Process Analysis
 and Enterprise Architecture Solutions suite, which resulted in simulation capabilities being added into the MEGA Process
