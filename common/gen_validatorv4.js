@@ -567,7 +567,7 @@ function validateEmail(email)
     }
     if (splitted[2] != null)
     {
-        var regexp_domain = /^[\w-\.]*\.[A-Za-z]{2,4}$/;
+        var regexp_domain = /^[\w-\.]*\.[A-Za-z]{2,63}$/;
         if (splitted[2].match(regexp_domain) == null)
         {
             var regexp_ip = /^\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\]$/;
