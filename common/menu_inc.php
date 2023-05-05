@@ -172,7 +172,7 @@ function print_top_menu($menu, $current_page)
 {
     global $tour_menu, $product_menu, $purchase_menu;
 
-    $current_page = basename($current_page);
+    $current_page = basename($current_page, ".php");
 
     $is_tryomnest_related = $current_page=="try-omnest" ||
                             $current_page=="download-eval" ||
@@ -213,7 +213,7 @@ function print_top_menu_item($name, $link, $is_selected)
 
 function print_menu($menu, $current_page)
 {
-    $current_page = basename($current_page);
+    $current_page = basename($current_page, ".php");
 
     echo "<div class=\"vmenu\">\n";
     foreach ($menu as $menuitem) {
@@ -247,7 +247,7 @@ function is_highlightable($menuitem, $current_page)
 
 function print_next_links($menu, $current_page)
 {
-    $current_page = basename($current_page);
+    $current_page = basename($current_page, ".php");
     $menuitem = get_next_menu_item($menu, $current_page);
 
     echo "<br>\n";
@@ -296,7 +296,7 @@ function print_next_link_small($url, $text)
 
 function print_next_tourstep_links($current_page, $small=false)
 {
-    $current_page = basename($current_page);
+    $current_page = basename($current_page, ".php");
 
     $tourstep = get_next_tourstep_item($current_page);
 

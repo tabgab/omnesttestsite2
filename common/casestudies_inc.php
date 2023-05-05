@@ -12,7 +12,7 @@ $casestudies = array(
 
 function print_next_casestudy_links($current_page)
 {
-    $current_page = basename($current_page);
+    $current_page = basename($current_page, ".php");
 
     $casestudy = get_next_casestudy_item($current_page);
 
