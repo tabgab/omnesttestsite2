@@ -127,21 +127,16 @@ function print_head_contribution_internal($is_title_page) { ?>
 include("common/omnest.css");
 ?>
     </style>
+  <script
+    type="text/javascript"
+    src="https://app.termly.io/embed.min.js"
+    data-auto-block="on"
+    data-website-uuid="49c7f4f3-4e30-4fe6-8b61-dbda7b41cf68"></script>
+
     <!--[if lt IE 7.]>
       <script defer type="text/javascript" src="common/pngfix.js"></script>
     <![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!-- Google Universal Analytics -->
-	<script>
-  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  		ga('create', 'UA-240922-1', 'omnest.com');
-  		ga('send', 'pageview');
-
-	</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J2F9G90F2"></script>
 <script>
