@@ -133,10 +133,7 @@ include("common/omnest.css");
     data-auto-block="on"
     data-website-uuid="49c7f4f3-4e30-4fe6-8b61-dbda7b41cf68"></script>
 
-    <!--[if lt IE 7.]>
-      <script defer type="text/javascript" src="common/pngfix.js"></script>
-    <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J2F9G90F2"></script>
 <script>
@@ -146,13 +143,6 @@ include("common/omnest.css");
 
   gtag('config', 'G-2J2F9G90F2');
 </script>
-    <script type="text/javascript">
-<?php
-// optimization: include instead of <script type="text/javascript" src="common/addGAToLinks.js">
- include("common/addGAToLinks.js");
-?>
-    </script>
-<?php } ?>
 
 <?php
 /**
@@ -233,9 +223,6 @@ function print_titlepage_leadout() { ?>
         <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_bottom.png); background-repeat:no-repeat; background-position:center bottom"></div>
     </div>
   </div>
-    <script>
-    addGoogleAnalyticsToLinks();
-    </script>
 <?php } ?>
 
 
@@ -303,9 +290,5 @@ function print_leadout() { ?>
         <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_bottom.png); background-repeat:no-repeat; background-position:center bottom"></div>
     </div>
   </div>
-
-    <script>
-    addGoogleAnalyticsToLinks();
-    </script>
 <?php } ?>
 
