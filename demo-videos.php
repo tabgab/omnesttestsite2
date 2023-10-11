@@ -25,23 +25,28 @@
 <div id="header"><h1>Introductory and Demo Videos</h1></div>
 
 <table>
-  <tr><td rowspan="3"><div style="margin-right: 20px; background-image: url(images/video/ide-thumb.png); background-repeat: no-repeat; width: 220px; height: 165px;">
-             <a class="noicon" href="/webdemo/ide" target="_blank"><img src="images/video/play.png" ></a>
+  <tr><td rowspan="3">
+          <div id="idethumb-id" style="margin-right: 20px; background-image: url(images/video/ide-thumb.png); background-repeat: no-repeat; width: 220px; height: 165px;">
+             <img src="images/video/play.png" onclick="document.getElementById('idevideo-id').style.display='block'; document.getElementById('idethumb-id').style.display='none';">
           </div>
       </td>
       <td><h2>Using the IDE</h2></td>
   </tr>
   <tr>
       <td>
+        <div id="idevideo-id" style="display:none" >
+          <iframe title="Using the IDE" class="youtube-player" width="660" height="397" src="https://www.youtube.com/embed/KUe_vrWbEJY" style="border: 0px"></iframe>
+          <a><div style="text-align: center" onclick="document.getElementById('idevideo-id').style.display='none'; document.getElementById('idethumb-id').style.display='block';">Close</div></a>
+        </div>
       </td>
   </tr>
   <tr>
     <td>
-      <div>
-             <p>This is a 15-minute tutorial that walks through the basic steps of creating
-             and running a simulation, visualizing its execution history on a sequence chart,
-             and analyzing the simulation results, in order to show basic functions of the
-             OMNEST Simulation IDE.</p>
+      <div id="idetext-id">
+        <p>This is a 15-minute tutorial that walks through the basic steps of creating
+        and running a simulation, visualizing its execution history on a sequence chart,
+        and analyzing the simulation results, in order to show basic functions of the
+        OMNEST Simulation IDE.</p>
        </div>
      </td>
   </tr>
