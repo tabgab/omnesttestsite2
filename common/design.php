@@ -143,6 +143,7 @@ include("common/omnest.css");
 
   gtag('config', 'G-2J2F9G90F2');
 </script>
+<?php } ?>
 
 <?php
 /**
