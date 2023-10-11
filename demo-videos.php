@@ -35,7 +35,7 @@
   <tr>
       <td>
         <div id="idevideo-id" style="display:none" >
-          <iframe title="Using the IDE" class="youtube-player" width="660" height="397" src="https://www.youtube.com/embed/KUe_vrWbEJY" style="border: 0px"></iframe>
+          <iframe title="Using the IDE" class="youtube-player" width="660" height="397" src="https://www.youtube.com/embed/KUe_vrWbEJY&origin=https://omnest.com" style="border: 0px"></iframe>
           <a><div style="text-align: center" onclick="document.getElementById('idevideo-id').style.display='none'; document.getElementById('idethumb-id').style.display='block';">Close</div></a>
         </div>
       </td>
@@ -65,7 +65,7 @@
   <tr>
       <td>
         <div id="earthvideo-id" style="display:none" >
-          <iframe title="Google Earth Demo" class="youtube-player" width="660" height="397" src="http://www.youtube.com/embed/cFPJPVh3ouQ" style="border: 0px"></iframe>
+          <iframe title="Google Earth Demo" class="youtube-player" width="660" height="397" src="http://www.youtube.com/embed/cFPJPVh3ouQ&origin=https://omnest.com" style="border: 0px"></iframe>
           <a><div style="text-align: center" onclick="document.getElementById('earthvideo-id').style.display='none'; document.getElementById('earththumb-id').style.display='block';">Close</div></a>
         </div>
       </td>
@@ -100,7 +100,7 @@
   <tr>
       <td>
         <div id="seqvideo-id" style="display:none" >
-          <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" width="660" height="397" src="http://www.youtube.com/embed/9yZZFgwl4Ns" style="border: 0px"></iframe>
+          <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" width="660" height="397" src="http://www.youtube.com/embed/9yZZFgwl4Ns&origin=https://omnest.com" style="border: 0px"></iframe>
           <a><div style="text-align: center" onclick="document.getElementById('seqvideo-id').style.display='none'; document.getElementById('seqthumb-id').style.display='block';">Close</div></a>
         </div>
       </td>
