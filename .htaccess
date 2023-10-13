@@ -21,6 +21,9 @@ Options All -Indexes
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.php [L]
+
+  # standalone pages
+  Redirect 301 /webdemo/ide/ https://www.youtube.com/embed/KUe_vrWbEJY
 </IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
