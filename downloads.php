@@ -20,49 +20,48 @@
 
 <p>You can download OMNEST here if you have already purchased a license.</p>
 
-<h3 style="margin-bottom:0">Latest stable version: 6.0.1 <a href="whatsnew-601">(What's new in this release?)</a></h3>
-<p>For release announcements, follow <a href="https://twitter.com/omnetpp" target="_blank">@omnetpp</a> on Twitter.</p>
+<h3 style="margin-bottom:0">Latest stable version: 6.0.2 <a href="whatsnew-602">(What's new in this release?)</a></h3>
 
 <h3>Downloads:</h3>
 
 <table style="border-spacing:10px">
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center;">
-      <a class="noicon" href="/download/commercial6/omnest-6.0-windows-x86_64.exe"><img src="images/misc/win10-logo.png"/></a>
+      <img src="images/misc/win10-logo.png"/>
     </td>
     <td>
-      <a href="/download/commercial6/omnest-6.0.1-windows-x86_64.exe">OMNEST 6.0.1 for Windows (x86_64 installer)</a><br/>
-      <small>md5sum: 8f3c85961934e297cb86caa1f3451359</small>
+      <a href="/download/commercial6/omnest-6.0.2-windows-x86_64.exe">OMNEST 6.0.2 for Windows (x86_64 installer)</a><br/>
+      <small>md5sum: 2c33ff0d65e39fc74926da6ce60e62cf</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center">
-      <a class="noicon" href="/download/commercial6/omnest-6.0.1-linux-x86_64.tgz"><img src="images/misc/linux-logo.png"></a>
+      <img src="images/misc/linux-logo.png">
     </td>
     <td>
-       <a href="/download/commercial6/omnest-6.0.1-linux-x86_64.tgz" >OMNEST 6.0.1 for Linux (x86_64 TGZ)</a><br/>
-       <small>md5sum: 6bbe5776bbee4932a2856d86f1b602a9</small>
+       <a href="/download/commercial6/omnest-6.0.2-linux-x86_64.tgz" >OMNEST 6.0.2 for Linux (x86_64 TGZ)</a><br/>
+       <small>md5sum: c5d4974af31500c7252f6fdf0bd3072a</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center">
-      <a class="noicon" href="/download/commercial6/omnest-6.0.1-linux-aarch64.tgz"><img src="images/misc/linux-logo.png"></a>
+      <img src="images/misc/linux-logo.png">
     </td>
     <td>
-       <a href="/download/commercial6/omnest-6.0.1-linux-aarch64.tgz" >OMNEST 6.0.1 for Linux (aarch64 TGZ)</a><br/>
-       <small>md5sum: dfd5e3e16a1cedf4942760fdb648f6f7</small>
+       <a href="/download/commercial6/omnest-6.0.2-linux-aarch64.tgz" >OMNEST 6.0.2 for Linux (aarch64 TGZ)</a><br/>
+       <small>md5sum: feaf168e234f8d8e1839c262261cd170</small>
     </td>
   </tr>
 
   <tr>
     <td style="width:80px; padding-right: 0px; text-align: center">
-      <a class="noicon" href="/download/commercial6/omnest-6.0.1-macos-x86_64.tgz"><img src="images/misc/osx-logo.png"></a>
+      <img src="images/misc/osx-logo.png">
     </td>
     <td>
-       <a href="/download/commercial6/omnest-6.0.1-macos-x86_64.tgz" >OMNEST 6.0.1 for macOS (x86_64 TGZ)</a><br/>
-       <small>md5sum: 105cf058dbd616270228919a9bc56062</small>
+       <a href="/download/commercial6/omnest-6.0.2-macos-x86_64.tgz" >OMNEST 6.0.2 for macOS (x86_64 TGZ)</a><br/>
+       <small>md5sum: 6246b9d0615c35b16951657d0447e7f2</small>
     </td>
   </tr>
 
