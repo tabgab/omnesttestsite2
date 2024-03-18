@@ -5,6 +5,14 @@
 //
 $news = array(
     array(
+        "id" => "omnest-6.0.3",
+        "title" => "OMNEST 6.0.3 released",
+        "date" => "March 18, 2024",
+        "summary" => "OMNEST 6.0.3 is a maintenance release containing several bugfixes.",
+        "link" => "whatsnew-603"
+    ),
+
+    array(
         "id" => "omnest-6.0.2",
         "title" => "OMNEST 6.0.2 released",
         "date" => "Oct 24, 2023",
