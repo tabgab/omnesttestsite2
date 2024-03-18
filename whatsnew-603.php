@@ -16,7 +16,7 @@
 <body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
-<div id="header"><h1>What's New in OMNEST 6.0.2</h1></div>
+<div id="header"><h1>What's New in OMNEST 6.0.3</h1></div>
 
 <div id="content">
 
@@ -38,7 +38,7 @@
 
 <br>
 
-<h2><a href="whatsnew-602">What's New in OMNEST 6.0.1 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
+<h2><a href="whatsnew-602">What's New in OMNEST 6.0.2 <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></h2>
 
 <?php print_leadout(); ?>
 </body>
