@@ -25,9 +25,9 @@ needs to be simulated with high performance: protocol modeling,
 modeling of wired and wireless communication networks, architectural
 simulation of high-performance clusters, to name a few.</p>
 
-<p>The noncommercial version, OMNeT++, has a huge academic
+<p>The noncommercial version, OMNeT++, has a large academic
 user community, with several groups publishing and supporting
-simulation models, and several hundred papers published each year
+simulation models, and hundreds of papers published each year
 on the simulation of wireless networks and other topics.</p>
 
 <p>Our users commonly mention the following items when asked why they
@@ -37,22 +37,22 @@ chose OMNEST (or OMNeT++):</p>
   <li><b>very efficient</b> -- OMNEST simulations execute fast and scale very well,
       which can be surprising given the amount of features in the simulation library
 
-  <li><b>can be learned fast</b> -- some C++ knowledge is required, but the programming model and
+  <li><b>can be learned quickly</b> -- some C++ knowledge is required, but the programming model and
       the API can be picked up quickly, and one can become productive in a short time
 
-  <li><b>great community</b> -- the simulator has a huge user community, and a lot of information
-      is freely available on the Internet; this is very useful when one bumps into a problem,
+  <li><b>great community</b> -- the simulator has a large user community, and a lot of information
+      is freely available on the Internet; this is very useful when one encounters a problem,
       as the solution is often just a web search away (compare that with proprietary
       tools where publicly available information is often limited to marketing materials)
 
   <li><b>component model</b> -- simulation models are easier to understand and maintain
       and can be combined in unexpected ways (because components usually do not interact with
-      each other directly on the C++ level, only via means provided by OMNEST, e.g. messages)
+      each other directly at the C++ level, only via means provided by OMNEST, e.g. messages)
 
-  <li><b>flexible</b> -- the simulator and models can be extended in pleasantly felxible ways;
+  <li><b>flexible</b> -- the simulator and models can be extended in pleasantly flexible ways;
       exotic scenarios such as interfacing with other simulators and external systems,
       parallel simulation, emulation, and combinations of the above, can be realized;
-      and the full source code is there to study and debug when needed
+      and the full source code is available to study and debug when needed
 </ul>
 
 
@@ -69,13 +69,13 @@ architecture of simulation models. Models are built from reusable
 components, called modules, which can be combined to form more complex structures. The
 depth of module nesting is not limited. Modules communicate primarily by
 message passing, via connections or by direct sending. Module behavior can be
-programmed in C++, using the simulation infrastructure OMNEST provides.</p>
+programmed in C++, using the simulation infrastructure provided by OMNEST.</p>
 
 <p>Component architecture provides multiple benefits:</p>
 
 <ul>
    <li>simulation models are easier to understand and maintain, and can be combined productively,
-       (because components do not interact with each other directly on the C++ level,
+       (because components do not interact with each other directly at the C++ level,
        only via means provided by OMNEST, e.g. messages).
    <li>facilitates code reuse
    <li>helps you choose the right abstraction level: a component in a model can be later
@@ -85,7 +85,7 @@ programmed in C++, using the simulation infrastructure OMNEST provides.</p>
 
 <p>Components are assembled using a domain-specific language, NED, that can
 be edited both graphically and in source. The NED language defines the
-appearance, parameters and connection points of components (<i>modules</i>),
+appearance, parameters, and connection points of components (<i>modules</i>),
 and also the submodules and internal connections (netlist).
 NED has support for parametric topologies, packages, inheritance, interfaces,
 metadata annotation, documentation comments, and many other language features
@@ -95,7 +95,7 @@ necessary for creating and working with large model frameworks.</p>
 can carry simple (int, double, string, bool) and compound data types (e.g. XML),
 and can be set to values like <i>normal(1.0,0.3)</i> to act as random number sources.
 To reduce the amount of configuration needed to parameterize a model, parameters
-may have default values, and both NED and configuration files allows several model
+may have default values, and both NED and configuration files allow several model
 parameters to be set together by using wildcard patterns.</p>
 
 <p>Configuration files also let you define parameter studies, that is, multiple runs
@@ -111,7 +111,7 @@ library. This functionality includes:</p>
 <ul>
     <li><strong>Message passing</strong><br>
     Modules communicate primarily by message passing, via connections or direct sending.
-    Messages may represent jobs, network packets, control information or other entities.
+    Messages may represent jobs, network packets, control information, or other entities.
     OMNEST provides support for generating C++ message classes (e.g. packet headers)
     from compact descriptions. Timers are also represented with messages that a module sends to itself.
     </li>
@@ -134,32 +134,32 @@ library. This functionality includes:</p>
     Data can be recorded directly, or the model can emit them as signals and let
     the simulation framework take care of recording them in the appropriate form and
     level of detail. Results can be recorded as scalars (e.g. the sum, count, average,
-    other other property of the values), as histograms, as statistical summaries,
+    or other property of the values), as histograms, as statistical summaries,
     or all values as vectors (i.e. time series). Result files can be plotted using
     the IDE, or programmatically from GNU R (we have an R package that understands
     result files) or other programming environments.</li>
 
     <li><strong>Logging</strong><br>
-    Good log messages in the code (be it yours or 3rd party code) help you understand
-    the behaviour of the model, and can also reduce debugging time. OMNEST can also
+    Good log messages in the code (whether it is yours or 3rd party code) help you understand
+    the behavior of the model and can also reduce debugging time. OMNEST can also
     save log messages (along with other activities of the model) into an event log
-    file that can be later filtered by module, simulation time or other properties,
+    file that can be later filtered by module, simulation time, or other properties,
     can be searched and examined, and can be viewed together with dynamically drawn
     sequence charts.</li>
 
     <li><strong>Access and runtime manipulation of models</strong><br>
     OMNEST supports the creation and deletion of modules and connections at runtime,
-    opening the possiblity for modeling dynamically changing networks, as well
-    as importing topology from external source at runtime.
+    opening the possibility for modeling dynamically changing networks, as well
+    as importing topology from an external source at runtime.
     It is also possible to extract the network topology into a graph representation,
-    for example for finding shortest paths.
+    for example, for finding shortest paths.
 
 </ul>
 
 
-<h2>Performance, Integration and Extensibility</h2>
+<h2>Performance, Integration, and Extensibility</h2>
 
-<p>OMNEST allows many interesting possiblities:</p>
+<p>OMNEST allows many interesting possibilities:</p>
 
 <ul>
     <li><strong>Open interfaces</strong><br>
@@ -169,11 +169,11 @@ library. This functionality includes:</p>
 
     <li><strong>Extensible</strong><br>
     C++ plug-in interfaces are made available to customize various aspects of the simulation kernel:
-    event scheduling, configuration and model parameterization, result recording and more.
+    event scheduling, configuration and model parameterization, result recording, and more.
 
     <li><strong><a href="embedding">Embeddable simulation kernel</a></strong><br>
     You can create your own applications that rely on the OMNEST simulation
-    kernel internally for simulation functions: the simulation kernel, model components
+    kernel internally for simulation functions: the simulation kernel, model components,
     or even whole simulations can be embedded into your program as C++ libraries.
     <a href="embedding">Read more&nbsp;&raquo;</a>
 
@@ -182,21 +182,21 @@ library. This functionality includes:</p>
     on clusters or multicore/multiprocessor architectures,
     to speed up the simulations or to distribute memory requirements.
     Simulation models don't need to be instrumented for parallel simulation, but they need
-    to obey certain restrictions (e.g. no global variables and no direct access of
+    to adhere to certain restrictions (e.g. no global variables and no direct access of
     components that are instantiated in a different partition may be used).
-    Parallel simulation runs on top of MPI, and employs conservative synchronization.
+    Parallel simulation runs on top of MPI and employs conservative synchronization.
     Using named pipes or other communication means instead of MPI is also possible.
 
     <li><strong>Multiple Replications in Parallel</strong><br>
-    OMNEST lets you speed up steady-state simulations using the
+    OMNEST allows you to speed up steady-state simulations using the
     <a href="http://www.cosc.canterbury.ac.nz/research/RG/net_sim/simulation_group/akaroa/about.chtml" target="_blank">Akaroa</a>
     package. Akaroa runs multiple replications of the model on nodes of a computing cluster.
-    (Akaroa software and license needs to be obtained separately from its authors.)</li>
+    (Akaroa software and license need to be obtained separately from its authors.)</li>
 
     <li><strong>Real-time and hardware-in-the-loop simulation</strong><br>
     The simulation kernel supports real-time and hardware-in-the loop simulation
     via a plugin interface. A functioning and extensively commented source code
-    example will help you to quickly implement your own application-specific
+    example will help you quickly implement your own application-specific
     hardware-in-the-loop simulation.
 
     <li><strong>Network emulation capabilities</strong><br>
@@ -215,10 +215,10 @@ library. This functionality includes:</p>
 
 <h2>Platforms</h2>
 
-<p>Simulations can be run on Windows and practically in any Unix-like environment
+<p>Simulations can be run on Windows and practically on any Unix-like environment
 that is powerful enough and has a modern C++ compiler, including macOS and Linux.</p>
 
-<p>The Simulation IDE is currently available on Windows, macOS and Linux.</p>
+<p>The Simulation IDE is currently available on Windows, macOS, and Linux.</p>
 
 <br>
 

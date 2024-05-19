@@ -43,7 +43,7 @@ fast interconnects, network-on-chip architectures and more.</p>
 <h2><a href="performance-modeling">Queueing-Based Performance Modeling</a></h2>
 
 <p><img class="right" src="images/misc/performance-modeling.png" alt="">
-You can build queueing and resource allocation based performance models easily,
+You can easily build queueing and resource allocation based performance models,
 and when more details need to be accommodated into the model, OMNEST helps you
 by allowing you to refine, specialize, enhance or replace model blocks.</p>
 <p><a href="performance-modeling">Read more&nbsp;&raquo;</a></p>

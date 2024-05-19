@@ -45,7 +45,7 @@
       <div id="idetext-id">
         <p>This is a 15-minute tutorial that walks through the basic steps of creating
         and running a simulation, visualizing its execution history on a sequence chart,
-        and analyzing the simulation results, in order to show basic functions of the
+        and analyzing the simulation results to show the basic functions of the
         OMNEST Simulation IDE.</p>
        </div>
      </td>
@@ -79,7 +79,7 @@
                  The nodes have identical radios, with a transmission range of about 500m;
                  for simplicity, we assume that the area covered by each radio is a perfect circle.
                  When two nodes move within range of each other, they can communicate with each other,
-                 forming a (usually disconnected) ad-hoc network. Visualization shows the mobile
+                 forming a (usually disconnected) ad-hoc network. The visualization shows the mobile
                  nodes themselves (a 3D car model), their recent trails, their transmission ranges,
                  and the current connectivity of the network (cars that are closer than 500m are
                  connected with a white line).</p>
@@ -108,11 +108,11 @@
   <tr>
     <td>
       <div id="seqtext-id">
-             <p>One of the unrivalled features of OMNEST is being able to record the simulation history
+             <p>One of the unrivaled features of OMNEST is being able to record the simulation history
              and visualize it on a sequence chart. The sequence chart can be dragged, filtered, viewed
-             in different timeline modes (linear, compressed, etc), saved in SVG format, and so on.
-             This can be invaluable help in tracking down protocol errors, and in showing off and
-             documenting model operation. The linked video is one of the many Sequence Chart videos
+             in different timeline modes (linear, compressed, etc.), saved in SVG format, and so on.
+             This can be an invaluable help in tracking down protocol errors and in showing off and
+             documenting model operation. The linked video is one of the many sequence chart videos
              made available.</p>
        </div>
      </td>

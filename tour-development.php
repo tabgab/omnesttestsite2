@@ -19,45 +19,45 @@
 <?php print_next_tourstep_links_small(__FILE__); ?>
 
 <img class="pic right rounded" style="margin-top: 25px;" width="200" src="images/tour/tour-development-components.png" alt=""/>
-<h1>Component-based modeling lets you build your models from reusable, self-contained blocks</h1>
+<h1>Component-based modeling allows you to construct models from reusable, self-contained blocks</h1>
 <p class="lefttext">OMNEST simulation models are built from reusable, self-contained components,
 assembled using a domain-specific language.
 Components provide a natural organization for your code, facilitate code reuse,
-and also help you choose the right abstraction level by allowing you to
-replace any component with more detailed / less detailed versions.</p>
+and also help you choose the appropriate abstraction level by allowing you to
+replace any component with more detailed or less detailed versions.</p>
 <div class="separator"></div>
 
 <img class="pic left rounded" style="margin-top: 10px;" width="200" src="images/tour/tour-development-ide-tools.png" alt=""/>
 <h1>The Simulation IDE provides you with state-of-the-art development tools</h1>
-<p class="righttext">OMNEST gives you tools for all stages of a simulation project: developing C++ code,
-assembling, configuring and running simulation models and analyzing results.
+<p class="righttext">OMNEST offers tools for all stages of a simulation project: developing C++ code,
+assembling, configuring and running simulation models, and analyzing results.
 The IDE provides modern C++ editing with refactoring capabilities, a dual-mode (graphical/source)
 editor for networks and topology, a smart configuration editor, and much more.</p>
 <div class="separator"></div>
 
 <img class="pic right rounded" style="margin-top: 12px;" width="200" src="images/tour/tour-development-debug.png" alt=""/>
-<h1>The integrated debugging environment helps you identify problems quickly</h1>
-<p class="lefttext">The OMNEST graphical simulation runtime user interface combines well with the C++
+<h1>The integrated debugging environment helps you quickly identify problems</h1>
+<p class="lefttext">The OMNEST graphical simulation runtime user interface integrates with the C++
 debugger to form an integrated environment. You can easily switch
 between high-level (simulation) and low-level (C++) debugging,
-allowing you to track down problems efficiently.</p>
+allowing you to effectively track down problems.</p>
 <div class="separator"></div>
 
 <img class="pic left rounded" style="margin-top: 10px;" width="200" src="images/tour/tour-development-seqchart.png" alt=""/>
 <h1>The sequence chart helps you understand the dynamic behavior of your model</h1>
-<p class="righttext">You can configure simulations to record a detailed history, and visualize it on an
+<p class="righttext">You can configure simulations to record a detailed history and visualize it on an
 interactive sequence chart in the OMNEST IDE. The chart includes
 events, messages sent between components, C++ method calls across
-components, etc. This tool can be an invaluable help in tracking down
-model errors, and in showing off and documenting model operation.</p>
+components, etc. This tool can be invaluable in tracking down
+model errors and showcasing and documenting model operation.</p>
 <div class="separator"></div>
 
 <img class="pic right rounded" style="margin-top: 10px;" width="200" src="images/tour/tour-development-3d.png" alt=""/>
 <h1>Impress your customers with 3D visualization</h1>
-<p class="lefttext">The OMNEST runtime user interface allows you to
-build 3D animations for your simulation model employing the widely used OpenSceneGraph library.
-Maps, terrain, buildings, vehicles, signals, annotations and many other features
-may be used to enrich the visualization of your simulation.
+<p class="lefttext">The OMNEST runtime user interface enables you to
+create 3D animations for your simulation model using the widely used OpenSceneGraph library.
+Maps, terrain, buildings, vehicles, signals, annotations, and many other features
+can be used to enhance the visualization of your simulation.
 </p>
 <div class="separator"></div>
 

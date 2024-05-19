@@ -19,12 +19,12 @@
 <div id="header"><h1>About Us</h1></div>
 
 <p>Cogitative Software FZE is the exclusive distributor of OMNEST software worldwide.
-OMNEST licenses and support contracts are available only from authorized reseller partners.</p>
+OMNEST licenses and support contracts are only available from authorized reseller partners.</p>
 
 <h2>Company Information</h2>
   
   <p><b>Cogitative Software FZE</b><br>
-    1st. Floor Al Shmookh Business Center<br />
+    1st Floor Al Shmookh Business Center<br />
 Al Ettehad St.<br />
 7845 Umm Al Quwain<br />
 UAE</p>

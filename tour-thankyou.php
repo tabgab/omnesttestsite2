@@ -21,7 +21,7 @@
 <p><img class="rounded right" src="images/tour/thankyou.png" width="200" alt="">
 Thank you for taking the OMNEST Product Tour.</p>
 
-<p>We hope that you found that OMNEST fits your needs, and we can
+<p>We hope that you found that OMNEST meets your needs, and we can
 soon welcome you among the happy users of our simulation tool.</p>
 
 <?php

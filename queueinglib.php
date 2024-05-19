@@ -115,8 +115,8 @@ function iconWithLabel($icon, $name) {
             <?php iconWithLabel("table2", "JobList"); ?>
         </td>
         <td>
-            <p>The Fork and Join blocks can be used to model splitting a job to
-            sub-jobs. For each incoming job, Fork creates N sub-jobs which
+            <p>The Fork and Join blocks can be used to model splitting a job into
+            sub-jobs. For each incoming job, Fork creates N sub-jobs that
             are sent out on different outputs. These sub-jobs may be processed
             individually (in Queue blocks, etc.), and should end up in the same Join
             block. After all sub-jobs have arrived in the Join block, it sends out

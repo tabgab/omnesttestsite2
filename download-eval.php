@@ -31,9 +31,9 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
 <p>For release announcements, follow <a href="https://twitter.com/omnetpp" target="_blank">@omnetpp</a> on Twitter.</p>
 
 <p>The evaluation version is a full OMNEST installation, including the simulation
-libraries, tools, the IDE, sample simulations and documentation.
+libraries, tools, the IDE, sample simulations, and documentation.
 You can run and modify all the provided samples and create your own small simulations.
-You can also download, install and try OMNeT++ models from the web.</p>
+You can also download, install, and try OMNeT++ models from the web.</p>
 
 <h2><a name="installer"></a>Windows Installer</h2>
 
@@ -46,7 +46,7 @@ You can also download, install and try OMNeT++ models from the web.</p>
       </p>
 
       <small>NOTE: Some antivirus software may raise false alarms for some files in the
-      package, especially MinGW-compiled executables. If this causes inconveniences for you,
+      package, especially MinGW-compiled executables. If this causes inconvenience for you,
       disable these directories in your antivirus software.
       </small>
 

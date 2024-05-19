@@ -49,29 +49,29 @@
 
 <h2>Interested in becoming an OMNEST&#8482; reseller?</h2>
 
-<p>We value initiative, flexibility and dedication to fulfill customer
+<p>We value initiative, flexibility, and dedication to fulfilling customer
 needs, and are looking to establish reseller relationships with companies
-who think and act in a similar way. An OMNEST reseller must
-really add value to the offering, by investing the energy and time to be
+that think and act in a similar way. An OMNEST reseller must
+truly add value to the offering by investing the energy and time to be
 able to support users locally. An OMNEST reseller partner must also be
-willing to invest into marketing, to extend visibility and reach in the
+willing to invest in marketing to extend visibility and reach in the
 targeted market.</p>
 
-<p>While these investments are not to be underestimated, the potential
+<p>While these investments should not be underestimated, the potential
 rewards are significant. Discrete Event Simulation is today's "must
-have" technology in manufacturing, system design, communication and
-networking, amongst other technical disciplines. Industries range from
-high-tech IT and defense, through electronics and consumer goods, to
+have" technology in manufacturing, system design, communication, and
+networking, among other technical disciplines. Industries range from
+high-tech IT and defense through electronics and consumer goods to
 telecommunication and consulting. As a reseller partner, perhaps you
-too can become an essential part of making OMNEST the premiere
+can too become an essential part of making OMNEST the premiere
 simulation tool across multiple industries.</p>
 
 <p>Cogitative Software understands the key role of VAR partners in the success of
-OMNEST, we honor and protect the investments our partners make in
-market-building. If you are interested in developing a relationship along the
-grounds laid out above, we would like to hear from you.</p>
+OMNEST. We honor and protect the investments our partners make in
+market-building. If you are interested in developing a relationship
+based on the outlined grounds, we would like to hear from you.</p>
 
-<p><a href="contact">Contact us</a> and we will get back to you shortly.</p>
+<p><a href="contact">Contact us</a>, and we will get back to you shortly.</p>
 
 <?php print_leadout(); ?>
 </body>

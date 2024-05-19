@@ -20,10 +20,10 @@
 
 <div id="header"><h1>Case Study &ndash; The Celtic BOSS Project (Railway on-board wireless secured video surveillance)</h1></div>
 
-<p>The purpose of the BOSS project was the design and prototype development
-of an efficient railway communication system. This system was aimed to
-support the high demands of an audio/video surveillance system in a rolling
-train from a control center on the wayside, and also to address related
+<p>The purpose of the BOSS project was to design and develop a prototype for
+an efficient railway communication system. This system was aimed at
+supporting the high demands of an audio/video surveillance system in a rolling
+train from a control center on the wayside, and also addressing related
 issues, such as predictive maintenance. The system is based on WiMAX/HSUPA
 (outdoors, towards the control center) and WiFi (indoors) networks.
 </p>
@@ -33,16 +33,16 @@ issues, such as predictive maintenance. The system is based on WiMAX/HSUPA
 <div>Screenshot of the BOSS simulation, with transmitted video and mobility displays</div>
 </div>
 
-<p>The functional architecture had been developed into a full communication
+<p>The functional architecture was developed into a full communication
 architecture as an OMNeT++ simulation model. The model was enriched
-through the project lifetime by the modules and algorithms developed
+throughout the project's lifetime by the modules and algorithms developed
 within the project's technical packages on radio communications,
-signalling, adaptation to impairments, efficient multimedia compression,
+signaling, adaptation to impairments, efficient multimedia compression,
 and abnormal events detection.</p>
 
-<p><i>"The OMNeT++ simulator was a key element to ensure firstly validation of the
-system before prototyping, secondly establishment of initial working
-settings for the demonstration phase, and thirdly measurement and
+<p><i>"The OMNeT++ simulator was a key element to ensure the first validation of the
+system before prototyping, the establishment of initial working
+settings for the demonstration phase, and the measurement and
 assessment of techniques that will not be realistically implantable in the
 BOSS demonstrator,"</i> they write.</p>
 

@@ -22,7 +22,7 @@
 <h1>Simulation lets you experiment with systems that don't exist yet</h1>
 <p class="leftext">You can explore the merits of alternative designs without actually physically constructing the systems.
 By investigating the effects of specific design decisions during the design phase rather than the construction phase,
-the overall cost and risk of building the system diminishes significantly.</p>
+the overall cost and risk of building the system diminish significantly.</p>
 <div class="separator"></div>
 
 <img class="pic left rounded" style="margin-top: 12px;" width="200" src="images/tour/tour-whysim-largescale.png" alt=""/>
@@ -36,7 +36,7 @@ Using simulations, you can prepare in advance and mitigate any risks before they
 <div class="separator"></div>
 
 <img class="pic right rounded" style="margin-top: 12px;" width="200" src="images/tour/tour-whysim-reproduce.png" alt=""/>
-<h1>Simulation let you synthesize scenarios that are hard to reproduce with the physical system</h1>
+<h1>Simulation lets you synthesize scenarios that are hard to reproduce with the physical system</h1>
 <p class="lefttext">Often, you want to find out the exact border conditions where your system encounters problems
 and ensure you never encounter them. In physical systems,simulating these exact conditions - often involving multiple
 hardware components is very difficult. Radio propagation, message conflicts, processor cycles,
@@ -55,13 +55,13 @@ and remove bugs in the system, ensuring that you can approach the next productio
 <div class="separator"></div>
 
 <img class="pic right rounded" style="margin-top: 10px;" width="200" src="images/tour/tour-whysim-verify.png" alt=""/>
-<h1>Simulation lets you verify and validate a product early in the development</h1>
+<h1>Simulation lets you verify and validate a product early in development</h1>
 <p class="lefttext">Simulations may incorporate production code embedded in the system.
 In that case, system-level simulations can be used for functional and performance testing of your product even before moving on
 to later phases of  development such as prototyping.
 Running system-level simulations with predefined test vectors
-lets you discover and rectify defects early in the development,
-leading to cost saving and improvement in product quality.</p>
+lets you discover and rectify defects early in development,
+leading to cost-saving and improvement in product quality.</p>
 <div class="separator"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>

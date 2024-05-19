@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <?php include("common/design.php"); ?>
 
 <head>
@@ -18,7 +17,7 @@
 
 <div id="header"><h1>Network Simulation Reference Projects</h1></div>
 
-<p>OMNeT++ was used in several EU-sponsored research projects:</p>
+<p>OMNeT++ has been used in several EU-sponsored research projects:</p>
 
 
 <hr>
@@ -72,8 +71,8 @@ Janne Riihij&auml;rvi et al, 2012. PURSUIT project deliverable D4.4,
 "Description of Validation and Simulation Tools in PURSUIT Context",
 Section 2.3 "OMNeT++ Simulator", pp.10.
 [<a target="_blank" href="http://wiki.fp7-pursuit.eu/uploads/4/45/INFSO-ICT-257217_PURSUIT_D4_4_v1_0_final.pdf">pdf</a>]
-
 </p>
+
 <hr>
 
 <img class="pic left" src="images/researchprojects/uloop.png">
@@ -105,7 +104,7 @@ to implement an optical network model for validating the ontology-based resource
 presented in WP5.
 </p>
 
-<p class="bibref">Deliverable for 4WARD, WP5: <i>D-5.3 Evaluation of Generic Path architecture and mechanisms</i>
+<p class="bibref">Deliverable for 4WARD, WP5: <i>D-5.3 Evaluation of Generic Path architecture and mechanisms</i> 
 [<a target="_blank" href="http://www.4ward-project.eu/index.php?s=file_download&amp;id=98">pdf</a>]</p>
 
 <hr>
@@ -203,7 +202,7 @@ and NXP Semiconductors.</p>
 <p class="bibref">
 L. Bokor, Sz. Novaczki, L. T. Zeke, G. Jeney, 2009.
 <i>"Design and Evaluation of Host Identity Protocol (HIP) Simulation Framework for INET/OMNeT++"</i>,
-in the proceedings of the 12-th ACM International Conference on Modeling, Analysis and Simulation
+in the proceedings of the 12th ACM International Conference on Modeling, Analysis and Simulation
 of Wireless and Mobile Systems (MSWIM 2009), Tenerife, Canary Islands, Spain, Oct. 26. 2009.
 [<a href="pdf/bokor2009-hip.pdf">pdf</a>]
 </p>

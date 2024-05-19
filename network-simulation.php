@@ -37,13 +37,13 @@ that have been written by researchers for the OMNeT++ simulation framework.
 <h2>Benefits</h2>
 
 <p>Models such as the INET Framework or Castalia are <i>frameworks</i>,
-having been written with the express purpose of making it easy to extend
-and build on top of them.</p>
+specifically designed to be easy to extend and to build on top of them.
+</p>
 
-<p>Due to OMNEST's component architecture, you can combine existing blocks
+<p>Thanks to OMNEST's component architecture, you can combine existing blocks
 (protocol models, application models, queues, etc.) and your custom blocks
-to form models of arbitrary hosts, routers, switches and other network devices.
-Protocol models may also be mixed with other kinds of simulation models
+to create models of arbitrary hosts, routers, switches, and other network devices.
+Protocol models can also be mixed with other types of simulation models
 such as queueing or resource allocation models.</p>
 
 

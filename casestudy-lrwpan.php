@@ -31,15 +31,15 @@ automation control.</p>
 <div style="width:250px">Screenshot of the LR-WPAN model in the OMNeT++ user interface (figure from the paper; click to enlarge)</div>
 </div>
 
-<p>Researchers from Siemens and University of Erlangen-Nuremberg performed
+<p>Researchers from Siemens and the University of Erlangen-Nuremberg performed
 a series of OMNeT++-based simulation experiments that contribute to a better
 understanding of IEEE 802.15.4 behavior. The simulations were performed with
-a IEEE 802.15.4 simulation model the authors developed for OMNeT++.</p>
+an IEEE 802.15.4 simulation model the authors developed for OMNeT++.</p>
 
 <p>The results outline the capabilities of this protocol in the
-selected scenarios, and also the limitations. They
+selected scenarios, as well as the limitations. They
 investigated the dependency of the protocol on protocol-inherent
-parameters such as the beacon order and the superframe order, and also to
+parameters, such as the beacon order and the superframe order, and also on
 different traffic load. The results can be used for planning and deploying
 IEEE 802.15.4 based sensor networks with specific performance demands. A
 special focus was put on application scenarios in industrial sensor network

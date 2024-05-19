@@ -33,10 +33,10 @@
 
 <p>OMNEST is the commercial version of OMNeT++, one of the most popular
 network simulation frameworks in academic and research communities.
-OMNeT++ is distributed under the <i>Academic Public License</i> that
+OMNeT++ is distributed under the <i>Academic Public License</i>, which
 does not allow commercial use.</p>
 
-<p>OMNEST and OMNeT++ are nearly identical, simulation models written
+<p>OMNEST and OMNeT++ are nearly identical. Simulation models written
 for OMNeT++ are guaranteed to compile and run with OMNEST, and vice versa.
 Differences apply to licensing, packaging, and certain features only.</p>
 

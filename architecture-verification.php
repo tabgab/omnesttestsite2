@@ -8,7 +8,7 @@
     <title>OMNEST - Architecture Verification</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
-    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="description" content="OMNEST Network Simulation Framework - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
 </head>
@@ -27,10 +27,9 @@ needs to be simulated with high performance.</p>
 
 <p><b>Several customers use OMNEST for the architectural exploration of
 high-performance computing systems,</b> such as the design of fast interconnects,
-network-on-chip architectures and more.</p>
+network-on-chip architectures, and more.</p>
 
 <img class="right" src="images/misc/architecture-verification.png" alt="">
-
 
 <h2>Benefits</h2>
 
@@ -39,30 +38,30 @@ you to build the model hierarchically in a top-down or
 bottom-up fashion. Components can represent any level of detail that is
 appropriate for your simulation study, from high-level functional models
 down to cycle-accurate models. The component architecture also makes it possible
-to have multiple implementations with varying level of detail for a given
-component, or to replace a single component with a composite one.
-These features allow you to write the simulation model on the appropriate abstraction level
+to have multiple implementations with varying levels of detail for a given
+component or to replace a single component with a composite one.
+These features allow you to write the simulation model at the appropriate abstraction level
 and still have the flexibility to modify it later.</p>
 
 <p>Some more points to consider:</p>
 
 <ul>
 <li><b>Existing models</b> may be useful for your project; see the
-<a href="simulation-models#nocs">Simulation Models</a> page for more information.
+<a href="simulation-models#nocs">Simulation Models</a> page for more information.</li>
 
 <li><b>Simulation performance</b> is ensured by careful design and the use of C++
-for both models and the simulation kernel and library.
+for both models and the simulation kernel and library.</li>
 
 <li><b>Parallel simulation</b> capability is available for speeding up model execution
-and for distributing memory requirements when needed.</p>
+and for distributing memory requirements when needed.</li>
 
 <li><b>SystemC integration</b>. If you are simulating hardware,
 OMNEST's <a href="systemc-integration">SystemC integration feature</a>
-can be useful.  Both RTL and higher-level SystemC modules can be used in
-OMNEST simulations, without any performance loss.</p>
+can be useful. Both RTL and higher-level SystemC modules can be used in
+OMNEST simulations without any performance loss.</li>
 
-<li><b>Hardware-in-the-loop</b> (emulation), and <b>co-simulation</b> (connecting
-an OMNEST simulation to other simulators) are also within reach.</p>
+<li><b>Hardware-in-the-loop</b> (emulation) and <b>co-simulation</b> (connecting
+ an OMNEST simulation to other simulators) are also within reach.</li>
 </ul>
 
 <div class="pic right">
@@ -73,9 +72,9 @@ an OMNEST simulation to other simulators) are also within reach.</p>
 <h2>Case Studies</h2>
 
 <ul>
-<li><a href="casestudy-ibmzurich">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
-<li><a href="casestudy-photonic">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
-<li><a href="casestudy-infiniband">Improving the Performance of InfiniBand in a Supercomputing Cluster</a>
+<li><a href="casestudy-ibmzurich">Simulation of Next-Generation Supercomputing Systems at IBM Research</a></li>
+<li><a href="casestudy-photonic">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a></li>
+<li><a href="casestudy-infiniband">Improving the Performance of InfiniBand in a Supercomputing Cluster</a></li>
 </ul>
 
 <div style="clear:both"></div>

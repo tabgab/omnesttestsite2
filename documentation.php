@@ -20,7 +20,7 @@
 
 <p>OMNEST comes with the following documentation. Note: network simulation
 frameworks have their own documentation, they are not listed here.
-Most documents are available via the html-based Help system of
+Most documents are available via the HTML-based Help system of
 the Simulation IDE as well.</p>
 
 <table class="fancytable">
@@ -84,7 +84,7 @@ the Simulation IDE as well.</p>
         functionality. Covers model (NED) editing; C++ editing and build; parameterizing
         and configuring models; launching simulations; debugging, tracing and
         inspecting simulations; visualizing simulation history on sequence charts;
-        analysing simulation results; generating model documentation; and other tasks.
+        analyzing simulation results; generating model documentation; and other tasks.
 
       </td>
     </tr>
@@ -107,7 +107,7 @@ the Simulation IDE as well.</p>
       <td>
         Documents how one can extend the Eclipse-based Simulation IDE by writing
         plug-ins in Java. Contains installation instructions for the Eclipse PDE
-        (Plug-in Development Environment), and gives an overview of the
+        (Plug-in Development Environment) and gives an overview of the
         additional APIs exposed by OMNEST plug-ins. (Detailed API documentation
         is provided in the form of Javadoc comments.)
       </td>

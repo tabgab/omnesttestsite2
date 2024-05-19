@@ -21,15 +21,15 @@
 <div id="header"><h1>Case Study &ndash; Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</h1></div>
 
 <div class="pic right" >
-<img src="images/misc/massin2009fig-thumb.png" alt="Overall protocol achitecture" onclick="enlarge(this);" longdesc="images/misc/massin2009fig.png"/>
+<img src="images/misc/massin2009fig-thumb.png" alt="Overall protocol architecture" onclick="enlarge(this);" longdesc="images/misc/massin2009fig.png"/>
 <div>Protocol architecture (XLI=cross-layer interface)<br>(figure from the paper; click to enlarge)</div>
 </div>
 
 <p>
 Thales Group researchers Rapha&euml;l Massin and his colleagues
-developed a OMNeT++-based simulation framework to enable the study of
+developed an OMNeT++-based simulation framework to enable the study of
 data and multimedia content transmission over hybrid wired/wireless ad-hoc
-networks, as well as the design of innovative radio accesss schemes. To
+networks, as well as the design of innovative radio access schemes. To
 achieve this goal, the complete protocol stack from the application to the
 physical layer is simulated, and the real bits and bytes of the messages
 transferred on the radio channel are exchanged. To ensure that this

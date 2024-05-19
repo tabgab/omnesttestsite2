@@ -9,7 +9,7 @@
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
     <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
-    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
+    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla" />
     <?php print_head_contribution(); ?>
 </head>
 
@@ -19,7 +19,7 @@
 <div id="header"><h1>Try OMNEST!</h1></div>
 
 <p>Evaluation versions are full OMNEST installations, including the simulation
-libraries, tools, the IDE, sample simulations and documentation.
+libraries, tools, the IDE, sample simulations, and documentation.
 </p>
 
 <div class="next" style="text-align:right"><a href="download-eval-request">Proceed to Downloads <img src="common/images/button_next.png"><img src="common/images/button_next.png"></a></div>
@@ -38,7 +38,7 @@ libraries, tools, the IDE, sample simulations and documentation.
       </p>
 
       <p>A C++ compiler and binaries are included for compiling simulation models
-      from source (MinGW version of gcc and clang); also included are the simulation libraries for
+      from source (MinGW version of GCC and Clang); also included are the simulation libraries for
       the latest version of Microsoft Visual C++ (must be preinstalled on your system.)
     </td>
   </tr>

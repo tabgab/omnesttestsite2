@@ -19,9 +19,9 @@
 <div id="header"><h1>OMNEST Simulation Engine</h1></div>
 
 <p><strong>The OMNEST&#8482; Simulation Engine is a C++ library
-that can be built into your application to provide simulation capabilities.</strong>
+that can be integrated into your application to provide simulation capabilities.</strong>
 Models can be developed and tested in the OMNEST Simulation IDE,
-then compiled into your application in an unchanged form.</p>
+then compiled into your application without any changes.</p>
 
 <img src="images/misc/omnest-engine.png" class="right"/>
 
@@ -29,7 +29,7 @@ then compiled into your application in an unchanged form.</p>
 
 <ul>
     <li>Hierarchical, component-based modeling</li>
-    <li>C++-based, high performance simulation kernel</li>
+    <li>C++-based, high-performance simulation kernel</li>
     <li>Source code is provided</li>
     <li>Parallel simulation and other advanced features</li>
     <li>Responsive and expert support</li>
@@ -46,7 +46,7 @@ then compiled into your application in an unchanged form.</p>
     <td><p><a href="http://www.mega.com/" target="_blank">MEGA Corporation</a>
     has embedded OMNEST&#8482; simulation technology into its
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> business process simulation product.
-    MEGA Process 6.1 runs OMNEST&#8482; simulation kernel.
+    MEGA Process 6.1 utilizes OMNEST&#8482; simulation kernel.
     Read the <a href="press-mega">press release</a>.</p>
     </td>
   </tr>

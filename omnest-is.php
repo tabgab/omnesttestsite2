@@ -29,18 +29,18 @@ h2 {
 
 <img class="pic left" style="margin-top: 20px;" src="images/tour/omnest-network-simulator.png" width="260">
 <h2>A Network Simulator Platform</h2>
-<p class="righttext">OMNEST provides generic infrastructure for creating, running and evaluating simulations.
-OMNEST caters for the simulation of communication networks including
-wired and wireless networks, mobile ad-hoc networks and sensor networks;
+<p class="righttext">OMNEST provides a generic infrastructure for creating, running, and evaluating simulations.
+OMNEST caters to the simulation of communication networks, including
+wired and wireless networks, mobile ad-hoc networks, and sensor networks;
 hardware like high-speed interconnects and networks-on-chip;
 it can be used for performance modeling of clouds and other HPC systems;
-and for much more.</p>
+and much more.</p>
 <div class="separator"></div>
 
 <img class="pic right" style="margin-top: -8px; margin-bottom: 20px;" src="images/tour/omnest-for-research.png" width="260">
 <h2>Designed for Innovators</h2>
 <p class="lefttext">
-As an innovator or researcher, you need to investigate deep into systems &mdash;
+As an innovator or researcher, you need to investigate deeply into systems &mdash;
 tweaking existing configuration parameters isn't enough.
 OMNEST gives you freedom in testing your ideas: it lets you implement in simulation what you want, the way you want it.
 Expect frameworks and open-source tweakable models instead of "canned" models, a very extensible
@@ -49,10 +49,10 @@ simulation framework, and many ways to automate your work.</p>
 
 <img class="pic left" style="margin-top: -20px; margin-bottom: 34px;" src="images/tour/omnest-performance.png" width="260">
 <h2>High Performance</h2>
-<p class="righttext">Models are written in C++, and execute on top of
+<p class="righttext">Models are written in C++ and execute on top of
 a streamlined simulation kernel to provide high event throughput.
 Parallel simulation and the possibility to utilize computing clusters
-also saves you time when running large simulations or simulation campaigns.
+also save you time when running large simulations or simulation campaigns.
 </p>
 <div class="separator"></div>
 
@@ -66,13 +66,13 @@ or model libraries that they can turn to whenever new challenges appear.</p>
 <img class="pic left" style="margin-top: -12px;" src="images/tour/omnest-flexible.png" width="260">
 <h2>Flexible</h2>
 <p class="righttext">Simulation models are built from self-contained blocks that can be combined in many ways.
-You can explore, modify and enhance models, because you have access to the source code and to platform infrastructure.
+You can explore, modify, and enhance models because you have access to the source code and to the platform infrastructure.
 You can also get the simulator to work together with other software in your toolbox: external simulators, Matlab, SystemC, HLA, you name it.</p>
 <div class="separator"></div>
 
 <img class="pic right" style="margin-top: 20px;" src="images/tour/omnest-open.png" width="260">
 <h2>Open Culture, Open Interfaces</h2>
-<p class="lefttext">OMNEST has started as an open-source project, and it shows.
+<p class="lefttext">OMNEST started as an open-source project, and it shows.
 We do not hide any source code from you or lock down any part of the product.
 Well-documented extension APIs, plain-text input and output file formats make it easy to accommodate special needs.
 Simulations can be run on a multitude of platforms.</p>
@@ -80,10 +80,10 @@ Simulations can be run on a multitude of platforms.</p>
 
 <img class="pic left" style="margin-top: 36px; margin-bottom: 40px;" src="images/tour/omnest-community.png" width="260">
 <h2>Well Embedded in the Scientific Community</h2>
-<p class="righttext">Known by  the name OMNeT++, OMNEST is a well-established tool in the scientific community.
+<p class="righttext">Known by the name OMNeT++, OMNEST is a well-established tool in the scientific community.
 Over 260 papers are published each year at various conferences and in journals, and
 dedicated workshops take place annually with peer-reviewed submissions. The community mailing list
-is busier than ever, and there are dozens of OMNeT++-related web sites (projects, blogs, etc).
+is busier than ever, and there are dozens of OMNeT++-related websites (projects, blogs, etc.).
 For you, this means you have access to a huge pool of talent and a wealth of information on the Internet.</p>
 <div class="separator"></div>
 
@@ -91,7 +91,7 @@ For you, this means you have access to a huge pool of talent and a wealth of inf
 <h2>With a Wealth of Simulation Models</h2>
 <p class="lefttext">As a result of the strong user community, there is an ever-growing number of open-source simulation models
 available to you, covering very diverse domains from internet routing to ad-hoc and sensor networks, in-car networks,
-4G, photonic on-chip networks and so on.
+4G, photonic on-chip networks, and so on.
 These models can give you a jump-start when building your simulation.</p>
 <div class="separator"></div>
 

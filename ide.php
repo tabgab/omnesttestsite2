@@ -8,7 +8,7 @@
     <title>OMNEST - The Simulation IDE</title>
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="revisit-after" content="30" />
-    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
+    <meta name="description" content="OMNEST Network Simulation Framework - High-Performance Simulation for All Kinds of Networks" />
     <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
     <?php print_head_contribution(); ?>
     <style type="text/css">
@@ -40,7 +40,7 @@ to give you a brief overview of the Simulation IDE.</p>
 NED editor graphically or in source mode. Changes made in one
 representation are immediately reflected in the other. The source editor
 offers live error markers, intelligent Content Assist, Go To Declaration,
-Inheritance View and other convenience features.</p>
+Inheritance View, and other convenience features.</p>
 
 <div style="clear:both"></div>
 <hr>
@@ -51,7 +51,7 @@ Inheritance View and other convenience features.</p>
 <p>Simulation components are implemented in C++, using the OMNEST simulation
 library. OMNEST relies on Eclipse's C/C++ Development Tooling (CDT),
 one of the finest C++ IDEs in existence, for efficient editing.
-CDT offers content assist, navigation, code templates, refactoring and
+CDT offers content assist, navigation, code templates, refactoring, and
 many other features. Makefiles and the C++ build are managed automatically,
 but can be manually tweaked if necessary.</p>
 
@@ -78,9 +78,9 @@ view of the parameterized module tree, and many other useful features.</p>
 <p>Simulations can be run under several user interfaces, including a command-line
 interface for batch execution and a graphical interactive runtime environment.
 The graphical runtime allows the user to explore the simulation model and
-stop, resume or single-step execution; animates packet transmissions and other events;
+stop, resume, or single-step execution; animates packet transmissions and other events;
 displays log messages from model components; allows the user to peek into queues, buffers,
-state variables and other objects; and provides other useful features.</p>
+state variables, and other objects; and provides other useful features.</p>
 
 <div style="clear:both"></div>
 <hr>
@@ -92,9 +92,9 @@ state variables and other objects; and provides other useful features.</p>
 simulation history and visualize it on an interactive sequence chart in
 the IDE. The sequence chart includes simulation events, messages
 sent between simulation components and C++ method calls across components.
-Sequence charts tool can be invaluable help in tracking down protocol errors,
+Sequence charts tool can be an invaluable help in tracking down protocol errors,
 in demonstrating the model, and also in documenting model operation
-(as the chart can be exported in various image formats including SVG.)
+(as the chart can be exported in various image formats, including SVG.)
 The tool offers a wide range of filtering and display options, and it remains
 useful for very large file sizes (beyond 4GB) as well.
 </p>
@@ -111,8 +111,8 @@ histograms, time series, etc.) are written into result files during execution;
 these files also record various details about the simulation run, such as
 the time of execution, and the name of the network and its parameterization.
 The result analysis tool allows you to select a subset of all result files
-to work with, and displays their contents organized in various ways.
-You can filter the result items you are interested in, and plot
+to work with and displays their contents organized in various ways.
+You can filter the result items you are interested in and plot
 them. Processing steps such as averaging or smoothing vector data
 can also be applied before plotting. Data and graphics can be exported
 in various formats, and the way the plots have been produced

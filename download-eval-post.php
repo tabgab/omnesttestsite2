@@ -30,7 +30,7 @@ include("common/design.php");
 <div id="header"><h1>OMNEST Evaluation Download</h1></div>
 
 <?php
-// if the form is modified you should modify also the corresponding parser in sugarcrm (modules/Omnst_OppWebForm/OmnetMailParser.php)
+// if the form is modified, you should also modify the corresponding parser in sugarcrm (modules/Omnst_OppWebForm/OmnetMailParser.php)
 
 error_reporting(0); // turn off all errors and warnings (including notices caused by unfilled form fields)
 
@@ -42,7 +42,7 @@ function maildummy($to, $subject, $message, $additional_headers)
     return true;
 }
 
-// send two e-mails. One to the contact@omnest.com containing all details and an other as a confirmation letter to the user
+// send two emails: one to contact@omnest.com containing all details and another as a confirmation letter to the user
 function send_mails()
 {
     global $download_url;
@@ -121,7 +121,7 @@ if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{
            strpos($_POST['position'],"http:") !== false || strpos($_POST['position'],"https:") !== false) {
     echo ("Urls are not allowed in the message. Thank you for your understanding.");
 } else if (!send_mails()) {
-    echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b> or try again later.");
+    echo ("<b>Unfortunately, our backend is not currently running.</b><br>Please contact us directly via email using <b>info at omnest dot com</b> or try again later.");
 } else {
     //note: our emails apparently don't always get through to the user's mailbox, so we also display the download URL here
     //echo ("<b>Thank you for your interest in the OMNEST Simulator.</b><br><br>We have sent an e-mail to you containing the download address of the OMNEST Simulator evaluation version.<br>");

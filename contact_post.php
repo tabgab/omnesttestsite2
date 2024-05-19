@@ -29,7 +29,7 @@ function maildummy($to, $subject, $message, $additional_headers)
     return true;
 }
 
-// send two e-mails. One to the contact@omnest.com containing all details and an other as a confirmation letter to the user
+// send two emails. One to the contact@omnest.com containing all details and another as a confirmation letter to the user
 function send_mails()
 {
     $destaddr = "contact@omnest.com";
@@ -103,9 +103,9 @@ if (preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{
     echo ("Please prove that you are a human by solving the Turing test on the previous page!");
 } else if (strpos($_POST['message'],"http:") !== false || strpos($_POST['message'],"https:") !== false ||
            strpos($_POST['position'],"http:") !== false || strpos($_POST['position'],"https:") !== false) {
-    echo ("Urls are not allowed in the message. Thank you for your understanding.");
+    echo ("URLs are not allowed in the message. Thank you for your understanding.");
 } else if (!send_mails()) {
-    echo ("<b>Unfortunately our backend is not running currently.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
+    echo ("<b>Unfortunately our backend is not currently running.</b><br>Please contact us directly via email using <b>info at omnest dot com</b>.");
 } else {
 ?>
 

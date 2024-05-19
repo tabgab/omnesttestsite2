@@ -27,8 +27,8 @@
         method="POST" class="gform" name="post_robot" id="post_robot">
 
     <div class="form-elements">
-    <p>Please give us some details about yourself and your project, and we will
-          get back to you soon. We will only use this data to better assist you with
+    <p>Please provide us with some details about yourself and your project, and we will
+          get back to you as soon as possible. We will only use this data to better assist you with
           matters related to OMNEST, and will not disclose it to third parties.</p>
     <p><small>Frequently asked: <a href="licensingfaq"><b>Do I need a license for OMNEST?</b></a></small></p>
 
@@ -47,7 +47,7 @@
     <td>Position:<sup>*</sup></td><td><input type="text" name="position" style="width: 400px;" /></td>
     </tr>
     <tr>
-    <td>Turing test: How much<br>is six plus eleven?<sup>*</sup></td><td><input type="text" name="turing" style="width: 400px;" /><input id="honeypot" type="text" name="honeypot" value="" style="display: none"/></td>
+    <td>Turing test: What is the sum of six and eleven?<sup>*</sup></td><td><input type="text" name="turing" style="width: 400px;" /><input id="honeypot" type="text" name="honeypot" value="" style="display: none"/></td>
     </tr>
     <tr>
     <td>OMNeT++ experience:<sup>*</sup></td><td>
@@ -77,17 +77,17 @@
 
     <tr>
     <td></td><td>
-    <input type="checkbox" name="price_list" checked/>Please send pricing information<br />
+    <input type="checkbox" name="price_list" checked/>Please send me pricing information<br />
     </td>
     </tr>
 
     <tr>
-    <td>Area of interest</td><td>
+    <td>Areas of interest</td><td>
     <input type="checkbox" name="performance_modeling" />Performance Modeling<br />
     <input type="checkbox" name="architecture_verification" />Architecture Verification<br />
     <input type="checkbox" name="embedding" />Embedding the simulation kernel into a product<br />
     <input type="checkbox" name="network_simulation" />Network Simulation<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;<small>Which areas or protocols (e.g. ad-hoc, IPv6, MPLS)</small><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<small>Areas or protocols of interest (e.g. ad-hoc, IPv6, MPLS)</small><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="protocols" style="width: 383px;" />
     </td>
     </tr>
@@ -97,7 +97,7 @@
     </tr>
 
     <tr>
-    <td>&nbsp;</td><td><input type="checkbox" name="newsletter" checked/>I would like to be notified about new versions and other events</td>
+    <td>&nbsp;</td><td><input type="checkbox" name="newsletter" checked/>I would like to receive notifications about new versions and other events</td>
     </tr>
     <tr><td>&nbsp;</td><td><input type="image" alt="Send" src="common/images/button_send.gif" />
         <img id="spinner" height="18" style="left-padding:20px; display:none;" src="common/images/spinner.gif"></td></tr>
@@ -111,8 +111,8 @@
     </div>
 
     <div class="server_error_message" style="display:none;">
-      <p><b>Unfortunately our backend is not running currently.</b></p>
-      Please contact us directly at <b>info@omnest.com</b>. We are sorry for this inconvenience.
+      <p><b>Unfortunately our backend is currently not running.</b></p>
+      Please contact us directly at <b>info@omnest.com</b>. We apologize for this inconvenience.
     </div>
   </form>
 

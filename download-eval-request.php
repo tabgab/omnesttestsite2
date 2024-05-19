@@ -27,15 +27,15 @@
         method="POST" class="gform" name="post_robot" id="post_robot" data-sheet="evaluations">
 
     <div class="form-elements">
-    <p>Before downloading your evaluation copy, please give us some information
-    about yourself. We will only use this data to contact you about OMNEST,
-    and will not disclose it to third parties.</p>
+    <p>Before downloading your evaluation copy, please provide us with some information
+    about yourself. We will only use this data to contact you regarding OMNEST,
+    and will not share it with third parties.</p>
 
     <p style="line-height:110%"><small><b>Are you a student or a lecturer?</b>
     <i>If your work is of noncommercial nature, you don't need OMNEST: you can use the
     open-source version OMNeT++ from <a href="https://omnetpp.org">omnetpp.org</a>.</i>
-    OMNEST and OMNeT++ are mostly identical except for licensing, branding, and the presence
-    of extra components and features in OMNEST (<a href="comparison">comparison</a>).</small></p>
+    OMNEST and OMNeT++ are mostly identical except for licensing, branding, and
+    extra components and features in OMNEST (<a href="comparison">comparison</a>).</small></p>
 
     <table style="border-spacing: 9px">
     <tr><td>&nbsp;</td><td><div id='post_robot_errorloc' style='color: #cc0000; font-size:10px;'></div></td></tr>
@@ -52,7 +52,7 @@
     <td>Position:<sup>*</sup></td><td><input type="text" name="position" style="width: 400px;" /></td>
     </tr>
     <tr>
-    <td>Turing test: How much<br>is six plus eleven?<sup>*</sup></td><td><input type="text" name="turing" style="width: 400px;" /><input id="honeypot" type="text" name="honeypot" value="" style="display: none"/></td>
+    <td>Turing test: What is<br>the result of six plus eleven?<sup>*</sup></td><td><input type="text" name="turing" style="width: 400px;" /><input id="honeypot" type="text" name="honeypot" value="" style="display: none"/></td>
     </tr>
     <tr>
     <td>OMNeT++ experience:<sup>*</sup></td><td>
@@ -67,7 +67,7 @@
     </tr>
 
     <tr>
-    <td>Where did you hear about<br>OMNEST or OMNeT++?<sup>*</sup></td><td>
+    <td>How did you hear about<br>OMNEST or OMNeT++?<sup>*</sup></td><td>
     <select name="source">
       <option value="0">Select:</option>
       <option value="web">Web search</option>
@@ -86,7 +86,7 @@
     <input type="checkbox" name="architecture_verification" />Architecture Verification<br />
     <input type="checkbox" name="embedding" />Embedding the simulation kernel into a product<br />
     <input type="checkbox" name="network_simulation" />Network Simulation<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;<small>Which areas or protocols (e.g. ad-hoc, IPv6, MPLS)</small><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<small>Areas or protocols of interest (e.g., ad-hoc, IPv6, MPLS)</small><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="protocols" style="width: 383px;" />
     </td>
     </tr>
@@ -96,7 +96,7 @@
     </tr>
 
     <tr>
-    <td>&nbsp;</td><td><input type="checkbox" name="newsletter" checked/>I would like to be notified about new versions and other events</td>
+    <td>&nbsp;</td><td><input type="checkbox" name="newsletter" checked/>I would like to receive notifications about new versions and other events</td>
     </tr>
     <tr><td>&nbsp;</td><td><input type="image" alt="Send" src="common/images/button_send.gif" />
         <img id="spinner" height="18" style="left-padding:20px; display:none;" src="common/images/spinner.gif"></td></tr>
@@ -111,8 +111,8 @@
     </div>
 
     <div class="server_error_message" style="display:none;">
-      <p><b>Unfortunately our backend is not running currently.</b></p>
-      Please try again later. We are sorry for this inconvenience.
+      <p><b>Unfortunately, our backend is currently not running.</b></p>
+      Please try again later. We apologize for the inconvenience.
     </div>
   </form>
 

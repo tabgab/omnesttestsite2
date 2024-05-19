@@ -20,31 +20,31 @@
 
 <img class="pic right rounded" style="margin-top: 25px; margin-right: 6px;" width="200" src="images/tour/tour-integration-workflow.png" alt=""/>
 <h1>Open and well-documented file formats let you integrate OMNEST into your workflow</h1>
-<p class="lefttext">All model files and output files are plain text to make it easier for you to generate and/or process them
-with your own custom tools or 3rd party software. OMNEST also provides command-line tools and C++ libraries to manipulate them.</p>
+<p class="lefttext">All model files and output files are in plain text format, allowing easy generation and processing
+with custom tools or 3rd party software. OMNEST also provides command-line tools and C++ libraries to manipulate them.</p>
 <div class="separator"></div>
 
 <img class="pic left rounded" style="margin-top: 10px;" width="200" src="images/tour/tour-integration-systemc-etc.png" alt=""/>
 <h1>Integration with existing simulation software using SystemC or HLA gives you interoperability</h1>
-<p class="righttext">OMNEST allows you to mix native and SystemC modules in the same simulation
-without the performance penalty usually associated with co-simulation.
-OMNEST can also take part in HLA federations, and can be extended to interoperate with other simulators by other means.</p>
+<p class="righttext">OMNEST allows you to combine native and SystemC modules in the same simulation
+without the performance penalty typically associated with co-simulation.
+OMNEST can also participate in HLA federations and can be extended to interoperate with other simulators through other means.</p>
 <div class="separator"></div>
 
 <img class="pic right rounded" style="margin-top: 14px;" width="200" src="images/tour/tour-integration-embedding.png" alt=""/>
 <h1>Seamless embedding into your proprietary software makes you even more competitive</h1>
-<p class="lefttext">Simulations can be redistributed, and your users will be able to run them with different
-parameter settings. The simulation kernel, model components, even whole simulations can  be
-embedded as libraries into your software products. OMNEST has been succesfully embedded into different simulators covering a wide area of application.</p>
+<p class="lefttext">Simulations can be redistributed, and users will be able to run them with different
+parameter settings. The simulation kernel, model components, and even entire simulations can be
+embedded as libraries into your software products. OMNEST has been successfully embedded into various simulators, covering a wide range of applications.</p>
 <div class="separator"></div>
 
 <img class="pic left rounded" style="margin-top: 0px;" width="200" src="images/tour/tour-integration-eclipse.png" alt=""/>
-<h1>Eclipse-based Simulation IDE allows you to extend it with 3rd party and in-house tools and functions</h1>
-<p class="righttext">The OMNEST IDE is based on Eclipse, a software product that many companies use
-as an integration platform. 3rd party extensions, such as UML tools and source code analyzers,
-are available from the Eclipse Marketplace.
+<h1>Eclipse-based Simulation IDE allows for extension with 3rd party and in-house tools and functions</h1>
+<p class="righttext">The OMNEST IDE is based on Eclipse, a software product widely used by many companies
+as an integration platform. Third-party extensions, such as UML tools and source code analyzers,
+can be obtained from the Eclipse Marketplace.
 You can also extend the Simulation IDE and its tools with new functions,
-for example domain-specific model validation.</p>
+such as domain-specific model validation.</p>
 <div class="separator"></div>
 
 <?php print_next_tourstep_links(__FILE__); ?>

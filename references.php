@@ -29,7 +29,7 @@ OMNEST licenses for internal research and other purposes.</p>
   <col style="width:220px"/><col />
   <tr>
     <td><a class="noicon" href="http://www.qualcomm.com/" target="_blank"><img src="refs/qualcomm.gif"></a></td>
-    <td><p>Researchers are using Oversim P2P Simulator (<a href="http://www.oversim.org/" target="_blank">www.oversim.org</a>)
+    <td><p>Researchers use the Oversim P2P Simulator (<a href="http://www.oversim.org/" target="_blank">www.oversim.org</a>)
       on top of OMNEST at <a href="http://www.qualcomm.com/" target="_blank">Qualcomm</a> to simulate various network scenarios.</p>
     </td>
   </tr>
@@ -39,7 +39,7 @@ OMNEST licenses for internal research and other purposes.</p>
   <tr>
     <td><a class="noicon" href="http://www.mellanox.com/" target="_blank"><img src="refs/mellanox.png"></a></td>
     <td><p><a href="http://www.mellanox.com/" target="_blank">Mellanox Technologies</a>, the leading provider of Infiniband
-      technology are using OMNEST in their research. They have released their own Infiniband model for
+      technology, uses OMNEST in their research. They have released their own Infiniband model for
       OMNEST/OMNeT++ users. The model can be downloaded from our community site,
       <a href="http://www.omnetpp.org/omnetpp/doc_details/2070-infiniband" target="_blank">here</a>.</p>
     </td>
@@ -49,7 +49,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
   <tr>
     <td><a class="noicon" href="http://www.intel.com/" target="_blank"><img src="refs/intel.gif"></a></td>
-    <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> is using OMNEST&#8482; simulation technology in its research.</p>
+    <td><p><a href="http://www.intel.com/" target="_blank">Intel Corporation</a> uses OMNEST&#8482; simulation technology in its research.</p>
     </td>
   </tr>
 
@@ -114,7 +114,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
   <tr>
     <td><a class="noicon" href="http://www.eads.com/" target="_blank"><img src="refs/eads.png"></a></td>
-    <td><p><a href="http://www.eads.com/" target="_blank">European Aeronautic Defence and Space Company.</a> <br> EADS professionals are using and embedding OMNEST&#8482; technology to simulate the internals of vehicle systems.</p>
+    <td><p><a href="http://www.eads.com/" target="_blank">European Aeronautic Defence and Space Company.</a> <br> EADS professionals use and embed OMNEST&#8482; technology to simulate the internals of vehicle systems.</p>
     </td>
 
   </tr>
@@ -123,7 +123,7 @@ OMNEST licenses for internal research and other purposes.</p>
 
   <tr>
     <td><a class="noicon" href="http://www.thalesgroup.com/" target="_blank"><img src="refs/thales.gif"></a></td>
-    <td><p><a href="http://www.thalesgroup.com/" target="_blank">Thales Communications</a> is using OMNEST&#8482; in its research facilities world-wide.
+    <td><p><a href="http://www.thalesgroup.com/" target="_blank">Thales Communications</a> uses OMNEST&#8482; in its research facilities worldwide.
     You can find related information on our network simulation <a href="netsim-references">references</a>
     and <a href="case-studies">case studies</a> pages.</p>
     </td>
@@ -137,9 +137,9 @@ OMNEST licenses for internal research and other purposes.</p>
     <td><p>The <a href="http://www.spec.org/" target="_blank">Standard Performance Evaluation Corporation (SPEC)</a>
       announced <a href="http://www.spec.org/cpu2006" target="_blank">SPEC CPU2006</a>, its next-generation benchmark for CPU-intensive performance.
       <a href="http://www.spec.org/cpu2006/CINT2006" target="_blank">SPEC CINT2006</a>
-      is the successor of CPU2000. OMNeT++ simulation is
+      is the successor to CPU2000. OMNeT++ simulation is
       <a href="http://www.spec.org/cpu2006/Docs/471.omnetpp.html" target="_blank">one of the 12 integer benchmarks</a>,
-      in the total of 29 benchmarks.</p>
+      out of the total 29 benchmarks.</p>
     </td>
   </tr>
 
@@ -174,9 +174,9 @@ OMNEST licenses for internal research and other purposes.</p>
   <tr>
     <td><a class="noicon" href="http://www.mega.com/" target="_blank"><img src="refs/mega.gif"></a></td>
     <td><p><a href="http://www.mega.com/" target="_blank">MEGA Corporation</a>
-    has chosen to embed OMNEST&#8482; simulation technology into its
+    has chosen to embed OMNEST&#8482; simulation technology in its
     <a href="http://www.mega.com/en/product/mega_process/index.asp?l=en" target="_blank">MEGA Process</a> product.
-    MEGA Process 6.1 runs OMNEST&#8482; simulation kernel.
+    MEGA Process 6.1 runs on the OMNEST&#8482; simulation kernel.
     Read the <a href="press-mega">press release</a>.</p>
 
     </td>

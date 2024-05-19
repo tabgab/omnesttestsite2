@@ -19,8 +19,8 @@
 <?php print_leadin($product_menu, __FILE__); ?>
 
 <!--TODO:
- OpenFlow
- CometOS
+    OpenFlow
+    CometOS
 -->
 
 
@@ -287,7 +287,7 @@ and the design of nanophotonic optical broadband switches (NOBS).</p>
 
 <p>When simulating NoCs or SoCs (Systems-on-Chip),
 OMNEST's <a href="systemc-integration">SystemC extension</a>
-may also come handy. It allows for mixing OMNEST and SystemC (or SystemC/TLM) models
+may also come in handy. It allows for mixing OMNEST and SystemC (or SystemC/TLM) models
 in the same simulation, without incurring the severe performance loss that is typical
 with co-simulations.</p>
 </div>
@@ -349,9 +349,9 @@ HECIOS is based on the <a href="#inet">INET Framework</a>.
 <p><?php extlink("ompcm"); ?> is an implementation of the Palladio Component Model based
 on the OMNeT++ simulation framework. As OMNeT++ offers full network simulation support,
 the influence of network effects on a modeled system can be investigated.
-It uses a specialised representation for description of RD-SEFF behavior called SimCore.
+It uses a specialized representation for description of RD-SEFF behavior called SimCore.
 By applying a series of model-transformations, a Palladio model can be transformed fully
-automatically to a OMNeT++ network definition file (NED) that uses the developed OMPCM modules.
+automatically to an OMNeT++ network definition file (NED) that uses the developed OMPCM modules.
 </p>
 
 </div>

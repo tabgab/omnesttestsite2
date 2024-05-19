@@ -28,19 +28,19 @@ InfiniBand interconnect network (illustration; source:
 </div>
 
 <p>
-Dr Birk and his colleague at the Parallel Systems Laboratory of the
+Dr. Birk and his colleague at the Parallel Systems Laboratory of the
 Technion (Israel Institute of Technology) investigated congestion in
 high-performance (HPC) computing clusters using the InfiniBand&#0174;
 interconnection network, with the help of Eitan Zahavi of Mellanox
 Technologies (Mellanox is a leading provider of InfiniBand equipment).
 InfiniBand (24%) is one of the most prevalent interconnects
-in top-500 supercomputers beside Gigabit Ethernet (58%) (2009).
+in the top 500 supercomputers, alongside Gigabit Ethernet (58%) (2009).
 Congestion arises in cluster-based supercomputers due to contention for links,
 and spreads due to oversubscription of communication resources.
 </p>
 
 <p>The researchers used OMNeT++ simulations to explore and evaluate
-various options to mitigate congestion to improve the performance of the system.
+various options to mitigate congestion and improve the performance of the system.
 Since the goal was to simulate large networks with thousands of nodes,
 they created special InfiniBand models that operate at the functional,
 rather than cycle-accurate, level.
@@ -55,9 +55,9 @@ Based on simulation experiments, the team proposed novel adaptive routing
 and rate calculation algorithms. On a slightly augmented 16-ary 3-tree implementing
 a 4096-node fat tree (which is highly representative of current computer
 clusters), adaptive routing alone was shown to be effective at mitigating the
-"topological" congestion, i.e. reduced it by some 50%. The necessary slight
+"topological" congestion, reducing it by approximately 50%. The necessary slight
 topological extension only entailed a 10% increase in the number of switch ports.
-The study contributes to the understanding of supercomputer architectures, and
+The study contributes to the understanding of supercomputer architectures and
 helps build more powerful supercomputers in a cost-effective way.
 </p>
 
