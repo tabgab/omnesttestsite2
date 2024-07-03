@@ -1,2 +1,4 @@
 #!/bin/sh
-docker run -p 80:80 -v "$PWD":/var/www/html php:7.3-apache
+
+cd $(dirname $0)
+docker run -it --rm -v "$PWD":/usr/src/app -v "$PWD/_site":/usr/src/app/_site -p "4000:4000" starefossen/github-pages

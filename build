@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export UID=$(id -u)
+export GID=$(id -g)
+cd $(dirname $0)
+docker run -it --rm -v "$PWD":/usr/src/app -v "$PWD/_site":/usr/src/app/_site -e UID=$UID -e GID=$GID starefossen/github-pages /bin/sh -c "jekyll build --verbose && chown -R $UID:$GID /usr/src/app/_site"
