@@ -6,22 +6,12 @@ if ($_GET['id'] != "2bef15153a2f7c8") {
   exit();
 }
 ?>
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: OMNEST - Download Evaluation Version
+---
 
-<?php include("common/design.php"); ?>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - Download Evaluation Version</title>
-    <meta name="robots" content="INDEX,FOLLOW" />
-    <meta name="revisit-after" content="30" />
-    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
-    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
-    <?php print_head_contribution(); ?>
-</head>
-
-<body>
 <?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST Evaluation Download</h1></div>
@@ -55,7 +45,7 @@ You can also download, install, and try OMNeT++ models from the web.</p>
 <a class="noicon" href="download/eval/omnest-6.0.3-eval-linux-x86_64.tgz"><img class="left" src="images/misc/download-linux-eval.png"/></a>
       <p><tt><a href="download/eval/omnest-6.0.3-eval-linux-x86_64.tgz">omnest-6.0.3-eval-linux-x86_64.tgz</a></tt>
       &nbsp;&nbsp;<small>(md5sum: 524da867e10e8826906f14d6efa577f8)</small></p>
-      <p>The Linux version needs to be built on your system and requires several packages installed 
+      <p>The Linux version needs to be built on your system and requires several packages installed
         beforehand. Please consult the Installation Guide document in the doc folder.
       </p>
 
@@ -99,5 +89,4 @@ var google_conversion_label = "DEFAULT";
 </noscript>
 
 <?php print_leadout(); ?>
-</body>
-</html>
+

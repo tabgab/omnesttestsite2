@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: OMNEST - Performance Modeling Case Studies
+---
 
-<?php include("common/design.php"); ?>
-<?php include("common/casestudies_inc.php"); ?>
-<?php include("common/extlinks_inc.php"); ?>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>OMNEST - Performance Modeling Case Studies</title>
-    <meta name="robots" content="INDEX,FOLLOW" />
-    <meta name="revisit-after" content="30" />
-    <meta name="description" content="OMNEST Network Simulation Framework  - High-Performance Simulation for All Kinds of Networks" />
-    <meta name="keywords" content="embeddable, discrete event simulator, simulation, c++, c, high-performance, open source, performance modeling, network simulation, protocol design, architecture verification, simulation framework, systemc, hla"  />
-    <?php print_head_contribution(); ?>
-</head>
-
-<body>
 <?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>Case Study &ndash; Modeling Avionics Full-Duplex Switched Ethernet</h1></div>
@@ -52,7 +40,7 @@ uses preconfigured virtual circuits to deliver data between ESs.)</p>
 <p><b>Considerations.</b> As a first step in our modeling process, we
 investigated what model components are readily available for OMNEST. Because
 AFDX uses Ethernet as the base technology and uses higher layer protocols
-like TCP when transmitting data between applications, we considered 
+like TCP when transmitting data between applications, we considered
 <?php extlink("inet", "INET Framework"); ?>. INET contains both Ethernet
 modules and higher layer protocols like IP, TCP, and UDP. We concluded using
 INET Framework would give too detailed a model and would deliver answers to
@@ -119,6 +107,5 @@ model, by being able to modify or replace the initial building blocks.</p>
 <?php print_next_casestudy_links(__FILE__); ?>
 
 <?php print_leadout(); ?>
-</body>
-</html>
+
 
