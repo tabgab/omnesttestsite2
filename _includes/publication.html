@@ -1,0 +1,15 @@
+{% assign pub = site.data.publications[include.id] %}
+
+<p id="{{ include.id }}">
+    {% if pub.logo %}
+        {% for logo in pub.logo | split: " " %}
+            <img src="{{ site.baseurl }}/images/misc/{{ logo }}.png" style="vertical-align: middle; padding-right: 2px;"/>
+        {% endfor %}
+    {% endif %}
+
+    <a href="{{ pub.link }}" target="_blank">{{ pub.title }}</a>. <i>{{ pub.authors }}, {{ pub.year }}</i>. {{ pub.where }}.
+
+    {% if pub.pdf %}
+        [<a href="{{ pub.pdf }}" target="_blank">PDF</a>]
+    {% endif %}
+</p>

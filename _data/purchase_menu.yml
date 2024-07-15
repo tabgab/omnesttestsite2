@@ -1,0 +1,51 @@
+- text: "What is OMNEST?"
+  link: "omnest-is"
+- text: "OMNEST Product Tour"
+  link: "tour-models"
+  crosslink: 1
+- text: "Learn about OMNEST"
+  link: "overview"
+  crosslink: 1
+- text: "OMNEST in the World"
+  link: "references"
+  crosslink: 1
+- text: "Try OMNEST"
+  link: "try-omnest"
+  subpages:
+    - "download-eval-request"
+    - "download-eval-post"
+    - "download-eval"
+- text: "How to buy OMNEST"
+  link: "contact"
+  highlight: 0
+  submenu:
+    - text: "Request Quotation"
+      link: "contact"
+    - text: "Do I Need a License?"
+      link: "licensingfaq"
+    - text: "Licensing Options"
+      link: "licensing"
+    - text: "License Agreement"
+      link: "license"
+    - text: "OMNEST vs. OMNeT++"
+      link: "comparison"
+- text: "Services"
+  link: "services"
+  highlight: 0
+  submenu:
+    - text: "Consulting, Training"
+      link: "services"
+    - text: "Technical Support"
+      link: "support"
+    - text: "Download OMNEST"
+      link: "downloads"
+- text: "Company"
+  link: "company"
+  highlight: 0
+  submenu:
+    - text: "About Us"
+      link: "company"
+    # - text: "Community"
+    #   link: "community"
+    - text: "Partners"
+      link: "partners"

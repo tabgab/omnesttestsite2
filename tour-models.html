@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: page
 title: OMNEST Tour - Simulation Models
+menu: tour
 ---
 
 
-<?php print_leadin($tour_menu, __FILE__); ?>
-
-<?php print_next_tourstep_links_small(__FILE__); ?>
+{% include next_tourstep_links.html small=true %}
 
 <img class="pic right rounded" style="margin-top: 30px;" width="200" src="images/tour/tour-models-domains.png" alt=""/>
 <h1>Simulation models are available for many application domains</h1>
@@ -50,7 +49,6 @@ Having the source also allows you to change or enhance the model to fit your nee
 not only simulation models are open source, but you also have the source code to the full system.</p>
 <div class="separator"></div>
 
-<?php print_next_tourstep_links(__FILE__); ?>
+{% include next_tourstep_links.html %}
 
-<?php print_leadout(); ?>
 

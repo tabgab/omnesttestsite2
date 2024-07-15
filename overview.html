@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST Overview
+menu: product
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST Overview</h1></div>
 
@@ -212,7 +211,6 @@ that is powerful enough and has a modern C++ compiler, including macOS and Linux
 
 <br>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

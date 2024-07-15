@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST - INET Framework
+menu: product
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>INET Framework</h1></div>
 
@@ -87,8 +86,7 @@ Lille, 20-22 Oct. 2009.
 
 <p><a href="pdf/maureir2010.pdf">Read the article (pdf)</a></p>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 
 

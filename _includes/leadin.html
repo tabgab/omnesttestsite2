@@ -1,0 +1,36 @@
+<div style="position:relative; width: 992px; margin: 0 auto; background-image: url(common/images/bg.png); background-repeat: repeat-y; background-position: center top;">
+    <div id="container" style="position:relative; width: 980px; margin: 0 auto; background-color: white;">
+
+        <div style="position:absolute; background-color:#093E65; background-image:url(common/images/top_strip_blue.png); top:0px; width:100%; height:6px;">
+            &nbsp;
+        </div>
+
+        <div id="logo" style="position:absolute; top:24px; left: 36px">
+            <a href="/"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
+        </div>
+
+        <div id="search" style="position:absolute; top:16px; right:20px; background-image:url(common/images/search.png); background-repeat: no-repeat; width:150px; height:24px;">
+            <form name="frmSearch" action="search" method="get">
+                <input type="text" name="q" style="border-style:none; margin:1px 3px 1px 3px; width:120px; height:15px"/>
+                <input type="image" alt="Search" src="common/images/search-icon.png" style="vertical-align:middle; border-style:none"/>
+            </form>
+        </div>
+
+        <div id="topmenu" style="position:absolute; top:56px; right:20px;">
+            {% include top_menu.html menu=include.menu %}
+        </div>
+
+        <div style="position:absolute; background-color:#257D93; background-image:url(common/images/bg_inner.jpg); top:78px; width:100%; height:38px;">
+            &nbsp;
+        </div>
+
+        <div id="headplaceholder" style="height:110px"></div>
+
+        <div style="width: 980px;  background-color: white; min-height: 500px">
+
+            <div id="content" style="margin:0px;">
+                <div style="float:left; width:220px; padding:0 10px 0 10px; min-height:350px; margin-top:20px; background-image:url(common/images/menu_vertical_sep.png); background-position:top right; background-repeat:no-repeat;">
+                    {% include menu.html menu=include.menu %}
+                </div>
+
+                <div style="float:right; width:690px; margin: 20px 30px 20px 0">

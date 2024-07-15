@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: page
 title: OMNEST - Simulation Models
+menu: product
+head_contribution: <script src="common/collapsible.js" type="text/javascript"></script>
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <!--TODO:
     OpenFlow
@@ -42,7 +42,7 @@ open-source licenses. Below is a partial list of the models, organized by topic.
 <h2 class="framed" id="inet">Internet</h2>
 <div>
 
-<p>The <?php extlink("inet" ); ?> is the best place to begin when you want to simulate
+<p>The {% include extlink.html key="inet" %} is the best place to begin when you want to simulate
 any of the protocols, technologies and applications used on the Internet and other WANs.
 <a toggle="internet" ></a></p>
 
@@ -72,24 +72,24 @@ on the INET Framework web site for details.</p>
 <p>Several simulation frameworks take INET as a base, and extend it into various directions:</p>
 
 <ul>
-  <li><?php extlink("oversim" ); ?> is an overlay and peer-to-peer network simulation framework.
+  <li>{% include extlink.html key="oversim" %} is an overlay and peer-to-peer network simulation framework.
        The simulator contains several models for structured (e.g. Chord, Kademlia, Pastry)
        and unstructured (e.g. GIA) P2P systems and overlay protocols.
-  <li><?php extlink("denacast" ); ?> is a framework for the simulation of peer-to-peer video streaming,
+  <li>{% include extlink.html key="denacast" %} is a framework for the simulation of peer-to-peer video streaming,
        itself based on OverSim
-  <li><?php extlink("ansa" ); ?> is a project for automated analysis of security properties of networks.
+  <li>{% include extlink.html key="ansa" %} is a project for automated analysis of security properties of networks.
        They have implemented several protocols for INET: IS-IS, OSPFv3, RIPng, PIM-DM, MLDv1, MLDv2,
        TRILL, VLAN, STP and possibly others
-  <li><?php extlink("rease" ); ?> is a framework for creating realistic network simulation environments.
+  <li>{% include extlink.html key="rease" %} is a framework for creating realistic network simulation environments.
        ReaSE covers topology generation (AS-level as well as router-level), generation of
        self-similar background traffic, and generation of attack traffic (e.g. DDoS)
-  <li><?php extlink("hipsimpp" ); ?> is a Host Identity Protocol (HIP) simulation framework,
+  <li>{% include extlink.html key="hipsimpp" %} is a Host Identity Protocol (HIP) simulation framework,
        developed for the testing and validation of HIP and its extensions
-  <li><?php extlink("mcoapp" ); ?> (<?php extlink("mcoapp-github" ); ?>) extends the Mobile IPv6
+  <li>{% include extlink.html key="mcoapp" %} ({% include extlink.html key="mcoapp-github" %}) extends the Mobile IPv6
        implementation in INET with Multiple Care-of Addresses support (RFC 5648)
-  <li><?php extlink("ebitsim" ); ?> is an enhanced BitTorrent simulation with multiple concurrent swarms,
+  <li>{% include extlink.html key="ebitsim" %} is an enhanced BitTorrent simulation with multiple concurrent swarms,
        multiple trackers and a timeslice processing model
-  <li><?php extlink("quagga" ); ?> is a port of the Quagga open-source routing suite into the INET Framework
+  <li>{% include extlink.html key="quagga" %} is a port of the Quagga open-source routing suite into the INET Framework
   <li> many of the models listed in further sections are also INET-based
   <li> etc. <i>(search github or the web)</i>
 </ul>
@@ -109,9 +109,9 @@ network devices built from them (switch, access point, etc.)
 
 <p>More support for switched networks, including VLAN, Spanning-Tree Protocol (STP) and
 Rapid Spanning-Tree Protocol (RSTP), is available from
-<?php extlink("inetmanet"); ?> (see <a href="#manets">below</a>).</p>
+{% include extlink.html key="inetmanet" %} (see <a href="#manets">below</a>).</p>
 
-<p>A WiMAX model is available as part of the <?php extlink("numbat" ); ?> project.
+<p>A WiMAX model is available as part of the {% include extlink.html key="numbat" %} project.
 However, one drawback of Numbat is its limited interoperability with the INET Framework.</p>
 </div>
 
@@ -123,7 +123,7 @@ However, one drawback of Numbat is its limited interoperability with the INET Fr
 is the <a href="#inet">INET Framework</a>.
 </p>
 
-<p>An alternative is <?php extlink("mixim"); ?> (<?php extlink("miximsf"); ?>),
+<p>An alternative is {% include extlink.html key="mixim" %} ({% include extlink.html key="miximsf" %}),
 which contains a much more detailed physical layer model but has no
 models for the upper layers of the protocol stack. If you need both
 a detailed physical model and detailed upper layers, you can use
@@ -131,12 +131,12 @@ INET and MiXiM together.
 As for the future, we plan to integrate MiXiM into the INET Framework;
 the result of this work can be expected to be released before the end of 2013.</p>
 
-<p>The INET Framework also has a fork called <?php extlink("inetmanet"); ?>,
+<p>The INET Framework also has a fork called {% include extlink.html key="inetmanet" %},
 which is a superset of INET with many experimental (sometimes <i>very</i> experimental)
 MANET-related additions.</p>
 
 <p>If you need to simulate Personal Area Networks (PANs), Body Area Networks (BANs),
-or other networks of low-power embedded devices, <?php extlink("castalia"); ?> may also be suitable for you.
+or other networks of low-power embedded devices, {% include extlink.html key="castalia" %} may also be suitable for you.
 Castalia includes realistic wireless channel and radio models, with a realistic node
 behaviour especially relating to access of the radio.</p>
 
@@ -149,14 +149,14 @@ behaviour especially relating to access of the radio.</p>
 
 <p>There are currently three good choices for the simulation of wireless sensor networks (WSNs)
 with OMNEST: The <a href="#inet">INET Framework</a>,
-<?php extlink("mixim"); ?> (see <a href="#manets">above</a>) and
-<?php extlink("castalia"); ?> (see <a href="#manets">above</a>).
+{% include extlink.html key="mixim" %} (see <a href="#manets">above</a>) and
+{% include extlink.html key="castalia" %} (see <a href="#manets">above</a>).
 The INET Framework is currently missing a battery model, which may or may not be a problem
 for your project. </p>
 
 <p>Other frameworks like PAWiS or LSU Sensor Simulator (SenSim) should be considered obsolete.</p>
 
-<p>If your work involves TinyOS, the tool called <?php extlink("nesct"); ?> might be of interest to you.
+<p>If your work involves TinyOS, the tool called {% include extlink.html key="nesct" %} might be of interest to you.
 NesCT is a programming language translator that uses NesC programming language as an input,
 and produces OMNeT++ simulation code from it.</p>
 </div>
@@ -166,10 +166,10 @@ and produces OMNeT++ simulation code from it.</p>
 <div>
 
 <p>The recommended framework for simulating vehicular (i.e. inter-vehicle) networks is
-<?php extlink("veins"); ?>, which combines a MiXiM-based network simulator with
+{% include extlink.html key="veins" %}, which combines a MiXiM-based network simulator with
 the SUMO road traffic simulator. <a toggle="vehicular"></a></p>
 
-<p>An alternative to Veins is <?php extlink("vns"); ?> (Vehicular Networks Simulator).</p>
+<p>An alternative to Veins is {% include extlink.html key="vns" %} (Vehicular Networks Simulator).</p>
 
 <p>However, vehicular networks are essentially mobile ad-hoc networks,
 so you may also make use of other model frameworks capable of
@@ -182,7 +182,7 @@ simulating MANETs (see <a href="#manets">above</a>).</p>
 
 <p>Protocols used in cars (automotive networks: CAN, LIN, DC-Bus, FlexRay,
 MOST, TTEthernet, etc.) and in aircraft (avionics networks like AFDX) belong here.
-Currently a TTEthernet model named <?php extlink("tt4inet"); ?> is available;
+Currently a TTEthernet model named {% include extlink.html key="tt4inet" %} is available;
 it is based on the <a href="#inet">INET Framework</a>.</p>
 
 <p>The release of other protocol models, including Ethernet Audio-Video Bridging (AVB)
@@ -194,7 +194,7 @@ can also be expected.</p>
 
 <div>
 <p>There are currently two model frameworks for next-generation cellular networks (3GPP/4G/LTE):
-<?php extlink("simulte"); ?> and <?php extlink("4gsim"); ?>,
+{% include extlink.html key="simulte" %} and {% include extlink.html key="4gsim" %},
 both based on the <a href="#inet">INET Framework</a>.
 On the long term, we would like the two LTE frameworks to converge.</p>
 </div>
@@ -204,7 +204,7 @@ On the long term, we would like the two LTE frameworks to converge.</p>
 <div>
 
 <p>For the simulation of satellite communication systems, you can make use of
-<?php extlink("os3"); ?>, the Open Source Satellite Simulator.
+{% include extlink.html key="os3" %}, the Open Source Satellite Simulator.
 The goal of the OS<sup>3</sup> project was to make evaluating satellite communication protocols as easy as possible.
 OS<sup>3</sup> can also automatically import real satellite tracks and weather data
 to simulate conditions at a certain point in the past or in the future,
@@ -216,24 +216,24 @@ and offers powerful visualization. OS<sup>3</sup> extends the
 <h2 class="framed" id="optical">Optical Networks</h2>
 <div>
 
-<p><?php extlink("hnrl"); ?> provides models for network systems, components,
+<p>{% include extlink.html key="hnrl" %} provides models for network systems, components,
 and protocols in both optical and wireless networking and their hybrid.
 Currently, the following models and research frameworks have been implemented:
 models for the hybrid TDM/WDM-PON under the SUCCESS-HPON architecture;
 framework for the equivalent circuit rate (ECR)-based study of next-generation
 optical access (NGOA) architectures.</p>
 
-<p><?php extlink("epon"); ?> is a simulation model for Ethernet Passive Optical Networks.
+<p>{% include extlink.html key="epon" %} is a simulation model for Ethernet Passive Optical Networks.
 OLT and ONU modules are defined and they both suport one or multiple LLIDs.
 MPCP protocol has been implemented on OLT and ONU models to assign LLIDs dynamically. </p>
 
-<p><?php extlink("obs"); ?> (<?php extlink("obsgithub"); ?>) provides models for
+<p>{% include extlink.html key="obs" %} ({% include extlink.html key="obsgithub" %}) provides models for
 Optical Burst Switching (OBS), a new optical switching technology
 capable of supporting a high demand for bandwidth in optical backbones with
 Wavelength Division Multiplexing (WDM). OBSModules allows one to study nodes,
 edge nodes and core nodes, and link the OBS network with other data networks like IPv4.</p>
 
-<p><?php extlink("phoenixsim"); ?> (see <a href="#nocs">below</a>.) may also be of interest.</p>
+<p>{% include extlink.html key="phoenixsim" %} (see <a href="#nocs">below</a>.) may also be of interest.</p>
 </div>
 
 
@@ -241,12 +241,12 @@ edge nodes and core nodes, and link the OBS network with other data networks lik
 <div>
 
 <p>An open-source InfiniBand simulation model is available from Mellanox as
-<?php extlink("ib_flit_sim"); ?>.
+{% include extlink.html key="ib_flit_sim" %}.
 It models the data-path of hosts and switches at the flit transfer level,
 and can be used to estimate network performance under configurable hardware
 capabilities, timing and topologies.</p>
 
-<p>Although not an open-source model, <?php extlink("venus"); ?> is a simulation tool
+<p>Although not an open-source model, {% include extlink.html key="venus" %} is a simulation tool
 developed at IBM Research for performance evaluation high-performance computing systems
 and large-scale data center networks. It includes models of various networking technologies,
 including 10G Ethernet, InfiniBand, and Myrinet. Venus provides very high flexibility in terms of
@@ -254,7 +254,7 @@ network topologies and routing schemes, including built-in support for arbitrary
 and fat tree topologies, as well as the possibility to import topology description files of arbitrary
 regular and irregular topologies.</p>
 
-<p>Frameworks developed for Network-on-Chip simulations, e.g. <?php extlink("hnocs"); ?> and <?php extlink("phoenixsim"); ?>,
+<p>Frameworks developed for Network-on-Chip simulations, e.g. {% include extlink.html key="hnocs" %} and {% include extlink.html key="phoenixsim" %},
 may also be useful in the simulation of interconnection networks (see <a href="#nocs">below</a>.)</p>
 </div>
 
@@ -263,12 +263,12 @@ may also be useful in the simulation of interconnection networks (see <a href="#
 <div>
 
 <p>There are two model frameworks specifically designed for the simulation of NoCs. One is
-<?php extlink("hnocs"); ?>,
+{% include extlink.html key="hnocs" %},
 a modular simulator for heterogeneous NoCs. HNoCs modules available today implement
 wormhole switching, with round-robin or winner-takes-all arbitration.</p>
 
 <p>The other model framework is
-<?php extlink("phoenixsim"); ?>
+{% include extlink.html key="phoenixsim" %}
 (Photonic and Electronic Network Integration and Execution Simulator), used
 for the design of a on- and off-chip photonic communications for multi-processor systems,
 and the design of nanophotonic optical broadband switches (NOBS).</p>
@@ -290,7 +290,7 @@ OMPCM (for software architectures including network effects), as discussed below
 The <a href="casestudy-cloud">cloud simulation paper</a> from IBM Research
 may also be useful.</p>
 
-<?php extlink("icancloud"); ?> is a simulation framework for cloud computing systems.
+{% include extlink.html key="icancloud" %} is a simulation framework for cloud computing systems.
 The main purpose of iCanCloud is to predict the trade-offs between cost and performance
 of a given set of applications executed in a specific hardware, and then provide users
 with useful information about such costs.
@@ -307,7 +307,7 @@ can be used in iCanCloud: using traces of real applications; using a state graph
 and programming new applications directly in the simulation platform.
 </p>
 
-<p><?php extlink("simcan"); ?> is a simulation framework for modeling
+<p>{% include extlink.html key="simcan" %} is a simulation framework for modeling
 a wide range of high-performance computing (HPC) architectures.
 The main characteristics of SIMCAN are the flexibility to model different architectures easily,
 and the ability to scale those models keeping a good level of performance and accuracy.
@@ -317,7 +317,7 @@ of the architecture (like nodes, switches, etc).
 SIMCAN is based on the <a href="#inet">INET Framework</a>.
 </p>
 
-<p><?php extlink("simsans"); ?>, on the other hand, is tool for detailed simulation of
+<p>{% include extlink.html key="simsans" %}, on the other hand, is tool for detailed simulation of
 Storage Area Networks (SANs) in data centers.
 SimSANs is capable of simulating real-world Fibre Channel (FC) and FC over Ethernet (FCoE)
 SAN environments and SCSI IO applications.
@@ -328,13 +328,13 @@ It is especially useful in infrastructure design and performance analysis of dat
 SimSANs is neither open source (please contact the author for source) nor based on INET.
 </p>
 
-<p><?php extlink("hecios"); ?> (High-End Computing I/O Simulator), is a trace-driven
+<p>{% include extlink.html key="hecios" %} (High-End Computing I/O Simulator), is a trace-driven
 parallel file system simulator, developed for simulating PVFS (Parallel Virtual File System).
 HECIOS is based on the <a href="#inet">INET Framework</a>.
-(<?php extlink("heciosthesis"); ?>)
+({% include extlink.html key="heciosthesis" %})
 </p>
 
-<p><?php extlink("ompcm"); ?> is an implementation of the Palladio Component Model based
+<p>{% include extlink.html key="ompcm" %} is an implementation of the Palladio Component Model based
 on the OMNeT++ simulation framework. As OMNeT++ offers full network simulation support,
 the influence of network effects on a modeled system can be investigated.
 It uses a specialized representation for description of RD-SEFF behavior called SimCore.
@@ -344,7 +344,6 @@ automatically to an OMNeT++ network definition file (NED) that uses the develope
 
 </div>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

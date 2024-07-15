@@ -1,10 +1,14 @@
 ---
-layout: default
+layout: page
 title: OMNEST - Performance Modeling Library
+menu: product
+head_contribution: |
+  <style type="text/css">
+    th {text-align: center}
+    td:first-child {text-align: center;}
+  </style>
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>Performance Modeling Library</h1></div>
 
@@ -27,12 +31,6 @@ can be controlled on a fine-grained level.
 The library contains blocks (modules) like the following:
 </p>
 
-<?php
-function iconWithLabel($icon, $name) {
-  echo "<div style='display:inline-block; text-align:center; vertical-align:top; margin:6px 3px'><img src='images/queueing/$icon.png' alt=''/><br>$name</div>";
-}
-?>
-
 <table class="fancytable" style="width:90%">
     <tr>
         <th style="width:30%">Component</th>
@@ -40,8 +38,8 @@ function iconWithLabel($icon, $name) {
     </tr>
     <tr>
         <td>
-            <?php iconWithLabel("source", "Source,"); ?>
-            <?php iconWithLabel("sink", "Sink"); ?>
+            {% include iconwithlabel.html icon="source" name="Source," %}
+            {% include iconwithlabel.html icon="sink" name="Sink" %}
         </td>
         <td>
             <p>A Source block generates jobs for the queueing network. Generation
@@ -57,7 +55,7 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("delay", "Delay"); ?>
+            {% include iconwithlabel.html icon="delay" name="Delay" %}
         </td>
         <td>
             <p>A Delay block delays the job for an interval, which can be
@@ -69,7 +67,7 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("queue", "Queue"); ?>
+            {% include iconwithlabel.html icon="queue" name="Queue" %}
         </td>
         <td>
             <p>A Queue block represents a queue with a built-in server.
@@ -81,8 +79,8 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("passiveq", "Passive-<br>Queue,"); ?>
-            <?php iconWithLabel("server", "Server"); ?>
+            {% include iconwithlabel.html icon="passiveq" name="Passive-<br>Queue," %}
+            {% include iconwithlabel.html icon="server" name="Server" %}
         </td>
         <td>
             <p>PassiveQueue and Server represent a detached queue and queue server.
@@ -96,9 +94,9 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("fork", "Fork,"); ?>
-            <?php iconWithLabel("join", "Join,"); ?>
-            <?php iconWithLabel("table2", "JobList"); ?>
+            {% include iconwithlabel.html icon="fork" name="Fork," %}
+            {% include iconwithlabel.html icon="join" name="Join," %}
+            {% include iconwithlabel.html icon="table2" name="JobList" %}
         </td>
         <td>
             <p>The Fork and Join blocks can be used to model splitting a job into
@@ -114,8 +112,8 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("queue", "Resource-<br>Based-<br>Queue,"); ?>
-            <?php iconWithLabel("buffer", "Resource-<br>Pool"); ?>
+            {% include iconwithlabel.html icon="queue" name="Resource-<br>Based-<br>Queue," %}
+            {% include iconwithlabel.html icon="buffer" name="Resource-<br>Pool" %}
         </td>
         <td>
             <p>A ResourceBasedQueue is a queue with a built-in server that needs to
@@ -130,8 +128,8 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("arrival", "Allocate,"); ?>
-            <?php iconWithLabel("departure", "Deallocate"); ?>
+            {% include iconwithlabel.html icon="arrival" name="Allocate," %}
+            {% include iconwithlabel.html icon="departure" name="Deallocate" %}
         </td>
         <td>
             <p>Allocate and Deallocate can be used to acquire resources for
@@ -145,8 +143,8 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("routing", "Router,"); ?>
-            <?php iconWithLabel("classifier", "Classifier"); ?>
+            {% include iconwithlabel.html icon="routing" name="Router," %}
+            {% include iconwithlabel.html icon="classifier" name="Classifier" %}
         </td>
         <td>
             <p>Router and Classifier can be used to route or classify jobs,
@@ -157,7 +155,7 @@ function iconWithLabel($icon, $name) {
 
     <tr>
         <td>
-            <?php iconWithLabel("fork", "Clone,"); ?> ...
+            {% include iconwithlabel.html icon="fork" name="Clone," %} ...
         </td>
         <td>
             <p>Additional library blocks perform further tasks, like the Clone
@@ -178,7 +176,6 @@ original library blocks, because there are no interpreted code blocks that would
 slow down the simulation.
 </p>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

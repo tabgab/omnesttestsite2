@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: page
 title: OMNEST Tour - OMNEST Integrates
+menu: tour
 ---
 
 
-<?php print_leadin($tour_menu, __FILE__); ?>
-
-<?php print_next_tourstep_links_small(__FILE__); ?>
+{% include next_tourstep_links.html small=true %}
 
 <img class="pic right rounded" style="margin-top: 25px; margin-right: 6px;" width="200" src="images/tour/tour-integration-workflow.png" alt=""/>
 <h1>Open and well-documented file formats let you integrate OMNEST into your workflow</h1>
@@ -37,7 +36,6 @@ You can also extend the Simulation IDE and its tools with new functions,
 such as domain-specific model validation.</p>
 <div class="separator"></div>
 
-<?php print_next_tourstep_links(__FILE__); ?>
+{% include next_tourstep_links.html %}
 
-<?php print_leadout(); ?>
 

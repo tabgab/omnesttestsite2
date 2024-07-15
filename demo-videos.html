@@ -1,10 +1,16 @@
 ---
-layout: default
+layout: page
 title: OMNEST - Introductory and Demo Videos
+menu: product
+head_contribution: |
+  <style type="text/css">
+    .row td {
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 20px;
+    }
+  </style>
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>Introductory and Demo Videos</h1></div>
 
@@ -103,7 +109,6 @@ title: OMNEST - Introductory and Demo Videos
   </tr>
 </table>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

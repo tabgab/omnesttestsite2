@@ -1,0 +1,68 @@
+- text: "What is OMNEST?"
+  link: "omnest-is"
+- text: "OMNEST Product Tour"
+  link: "tour-models"
+  crosslink: 1
+- text: "Learn more about OMNEST"
+  link: "overview"
+  highlight: 0
+  submenu:
+    - text: "Overview"
+      link: "overview"
+      subpages:
+        - "systemc-integration"
+        - "embedding"
+    - text: "Typical Application Areas"
+      link: "application-areas"
+      subpages:
+        - "architecture-verification"
+        - "network-simulation"
+        - "performance-modeling"
+        - "queueinglib"
+    - text: "Simulation Models"
+      link: "simulation-models"
+    - text: "Simulation IDE"
+      link: "ide"
+    - text: "Demo Videos"
+      link: "demo-videos"
+    - text: "Documentation"
+      link: "documentation"
+- text: "OMNEST in the World"
+  link: "references"
+  highlight: 0
+  submenu:
+    - text: "Customers"
+      link: "references"
+    #TODO add back when there is content:  - text: "Testimonials"
+    #link: "testimonials"
+    - text: "Publications"
+      link: "publications"
+    - text: "Case Studies"
+      link: "case-studies"
+      subpages:
+        - "casestudy-adhoc"
+        - "casestudy-afdx"
+        - "casestudy-boss"
+        - "casestudy-cloud"
+        - "casestudy-ibmzurich"
+        - "casestudy-infiniband"
+        - "casestudy-lrwpan"
+        - "casestudy-photonic"
+    - text: "Reference Projects"
+      link: "netsim-references"
+    - text: "Book Recommendation"
+      link: "network-simulation-book"
+- text: "Try OMNEST"
+  link: "try-omnest"
+- text: "How to buy OMNEST"
+  link: "contact"
+  highlight: 0
+  crosslink: 1
+- text: "Services"
+  link: "services"
+  highlight: 0
+  crosslink: 1
+- text: "Company"
+  link: "company"
+  highlight: 0
+  crosslink: 1

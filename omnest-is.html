@@ -1,12 +1,18 @@
 ---
-layout: default
+layout: page
 title: OMNEST Is...
+menu: tour
+head_contribution: |
+  <style type="text/css">
+    h2 {
+        font-size: 32px;
+    }
+  </style>
+  <script src="common/enlargeit.js" type="text/javascript"></script>
 ---
 
 
-<?php print_leadin($tour_menu, __FILE__); ?>
-
-<?php print_next_link_small($touritems[0]["link"], "Take the Product Tour!"); ?>
+{% include next_link.html url=site.data.touritems.0.link text="Take the Product Tour!" small=true %}
 
 <br>
 <div id="header"><h1>What is OMNEST?</h1></div>
@@ -79,9 +85,6 @@ available to you, covering very diverse domains from internet routing to ad-hoc 
 These models can give you a jump-start when building your simulation.</p>
 <div class="separator"></div>
 
-<?php
-print_next_link($touritems[0]["link"], "Take the Product Tour!");
-?>
+{% include next_link.html url=site.data.touritems.0.link text="Take the Product Tour!" small=true %}
 
-<?php print_leadout(); ?>
 

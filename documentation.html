@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST - Documentation
+menu: product
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST Documentation</h1></div>
 
@@ -149,7 +148,6 @@ the Simulation IDE as well.</p>
   </tbody>
 </table>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

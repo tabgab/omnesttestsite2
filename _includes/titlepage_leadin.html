@@ -1,0 +1,54 @@
+<div style="position:relative; width: 992px; margin: 0 auto; background-image: url(common/images/bg.png); background-repeat: repeat-y; background-position: center top;">
+    <div id="titlepage" style="position:relative; width: 980px; margin: 0 auto;">
+
+        <!-- Banner Area: Logo, Search, Top menu, Banner with Buttons -->
+        <div style="position:absolute; background-color:#093E65; background-image:url(common/images/top_strip_blue.png); top:0px; width:100%; height:6px;">
+            &nbsp;
+        </div>
+
+        <div id="logo" style="position:absolute; top:24px; left: 36px">
+            <a href="/"><img src="common/images/logo.png" width="136" alt="OMNEST"></a>
+        </div>
+
+        <div id="search" style="position:absolute; top:16px; right:20px; background-image:url(common/images/search.png); background-repeat: no-repeat; width:150px; height:24px;">
+            <form name="frmSearch" action="search" method="get">
+                <input type="text" name="q" style="border-style:none; margin:1px 3px 1px 3px; width:120px; height:15px"/>
+                <input type="image" src="common/images/search-icon.png" alt="Search" style="vertical-align:middle; border-style:none"/>
+            </form>
+        </div>
+
+        <div id="topmenu" style="position:absolute; top:56px; right:20px;">
+                {% include top_menu.html %}
+        </div>
+
+        <div style="position:absolute; background-color:#197C92; background-image:url(common/images/banner_omnest.jpg); top:78px; width:100%; height:346px;"
+             alt="queueing, mobile, wireless, photonic, sensor, internet, resource allocation, SystemC, real-time, ad-hoc, emulation, optical, performance, system-on-chip, protocol">
+            &nbsp;
+        </div>
+
+        <img id="learnbutton" style="position:absolute; top:364px; left:14px" alt="" src="common/images/button_learn_more.png">
+        <img id="downloadbutton" style="position:absolute; top:364px; left:220px" alt="" src="common/images/button_download_eval.png">
+        <!-- preload button hover images -->
+        <img style="display:none" src="common/images/button_learn_more_hover.png" alt="" >
+        <img style="display:none" src="common/images/button_download_eval_hover.png" alt="" >
+        <!-- sensitive areas -->
+        <a href="omnest-is"><div style="position:absolute; top:372px; left:25px; width:180px; height:58px" onmouseover="document.getElementById('learnbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('learnbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+        <a href="try-omnest"><div style="position:absolute; top:372px; left:231px; width:180px; height:58px" onmouseover="document.getElementById('downloadbutton').src='common/images/button_download_eval_hover.png'" onmouseout="document.getElementById('downloadbutton').src='common/images/button_download_eval.png'"><img src="common/images/button_transparent.png" alt="Download" /></div></a>
+
+<!--
+        <img id="tourbutton" style="position:absolute; top:364px; left:86px" alt="" src="common/images/button_learn_more.png">
+        <!- - preload button hover images - ->
+        <img style="display:none" src="common/images/button_learn_more_hover.png" alt="">
+        <!- - sensitive areas - ->
+        <a href="omnest-is" id="button"><div style="position:absolute; top:372px; left:96px; width:180px; height:58px" onmouseover="document.getElementById('tourbutton').src='common/images/button_learn_more_hover.png'" onmouseout="document.getElementById('tourbutton').src='common/images/button_learn_more.png'"><img src="common/images/button_transparent.png" alt="Learn More" /></div></a>
+-->
+
+        <div style="position:absolute; top:120px; left:577px"><img src="common/images/slidewindow.png" alt=""></div>
+        <div id="slideshow" style="position:absolute; top:130px; left:606px; background-color:#00245A; width:340px; height:218px">
+        </div>
+
+        <div id="headplaceholder" style="height:427px"></div>
+
+        <!-- Content -->
+        <div style="width: 980px; background-color: white; min-height: 400px; border-top: solid transparent 1px;">  <!-- tweak: 1px white border prevents minor firefox layouting bug [too much space below banner] (ff 3.6.12) -->
+            <div id="content" style="margin:10px 25px 20px 25px">

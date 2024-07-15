@@ -176,11 +176,9 @@ function print_top_menu($menu, $current_page)
 
     $is_tryomnest_related = $current_page=="try-omnest" ||
                             $current_page=="download-eval" ||
-                            $current_page=="download-eval-post" ||
                             $current_page=="download-eval-request";
 
     $is_purchase_related =  $current_page=="contact" ||
-                            $current_page=="contact_post" ||
                             $current_page=="licensingfaq" ||
                             $current_page=="licensing" ||
                             $current_page=="license";

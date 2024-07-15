@@ -1,0 +1,31 @@
+{% assign news_id = include.news_id %}
+{% assign news_data = null %}
+
+{% for item in site.data.news %}
+  {% if item.id == news_id %}
+    {% assign news_data = item %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if news_data == null %}
+  <h1>Not Found</h1>
+  <p>No such news item: {{ news_id }}.</p>
+{% else %}
+  <h1>{{ news_data.title }}</h1>
+  <p class="newsdate">{{ news_data.date }}</p><br>
+
+  {% if news_data.fulltext == null %}
+    <p>{{ news_data.summary }}</p>
+    {% if news_data.link %}
+      <a href="{{ news_data.link }}">More&nbsp;&raquo;</a>
+    {% endif %}
+  {% else %}
+    <p><i>{{ news_data.summary }}</i></p>
+    {{ news_data.fulltext | markdownify }}
+  {% endif %}
+{% endif %}
+
+<ul class="links">
+  <li><a href="{{ site.baseurl }}/news">Read all news</a></li>
+</ul>

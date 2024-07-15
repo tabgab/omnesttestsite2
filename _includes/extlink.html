@@ -1,0 +1,5 @@
+{% assign extlink = site.data.extlinks[include.key] %}
+{% assign link = extlink.link %}
+{% assign text = include.text | default: extlink.text %}
+
+<a href="{{ link }}" target="_blank">{{ text }}</a>

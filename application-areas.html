@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST - Typical Application Areas
+menu: product
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>Typical Application Areas</h1></div>
 
@@ -51,7 +50,6 @@ while still being able to develop and test models in the OMNEST Simulation IDE.<
 <div style="clear:both"></div>
 
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

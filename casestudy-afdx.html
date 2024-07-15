@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: page
 title: OMNEST - Performance Modeling Case Studies
+menu: product
+head_contribution: <script src="common/enlargeit.js" type="text/javascript"></script>
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>Case Study &ndash; Modeling Avionics Full-Duplex Switched Ethernet</h1></div>
 
@@ -41,7 +41,7 @@ uses preconfigured virtual circuits to deliver data between ESs.)</p>
 investigated what model components are readily available for OMNEST. Because
 AFDX uses Ethernet as the base technology and uses higher layer protocols
 like TCP when transmitting data between applications, we considered
-<?php extlink("inet", "INET Framework"); ?>. INET contains both Ethernet
+{% include extlink.html key="inet" text="INET Framework" %}. INET contains both Ethernet
 modules and higher layer protocols like IP, TCP, and UDP. We concluded using
 INET Framework would give too detailed a model and would deliver answers to
 questions we are not really interested in (like how the upper level
@@ -104,8 +104,7 @@ model, by being able to modify or replace the initial building blocks.</p>
       as something more sophisticated (like modeling web browsing behavior)</li>
 </ul>
 
-<?php print_next_casestudy_links(__FILE__); ?>
+{% include next_casestudy_links.html %}
 
-<?php print_leadout(); ?>
 
 

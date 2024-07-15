@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+{% include leadin.html menu=site.data.product_menu %}
+{{ content }}
+{% if page.link %}
+<p><a href="{{ page.link }}">More&nbsp;&raquo;</a></p>
+{% endif %}
+{% include leadout.html %}
+</body>
+</html>

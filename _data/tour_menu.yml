@@ -1,0 +1,35 @@
+- text: "What is OMNEST?"
+  link: "omnest-is"
+- text: "OMNEST Product Tour"
+  link: "tour-models"
+  highlight: 0
+  submenu:
+    - text: "Benefit from Existing Models"
+      link: "tour-models"
+    - text: "Develop Models Easily"
+      link: "tour-development"
+    - text: "High-Performance Simulation"
+      link: "tour-simulation"
+    - text: "Evaluate Your Model"
+      link: "tour-analysis"
+    - text: "OMNEST Integrates Well"
+      link: "tour-integrates"
+- text: "Learn about OMNEST"
+  link: "overview"
+  crosslink: 1
+- text: "OMNEST in the World"
+  link: "references"
+  crosslink: 1
+- text: "Try OMNEST"
+  link: "try-omnest"
+- text: "How to buy OMNEST"
+  link: "contact"
+  highlight: 0
+  crosslink: 1
+- text: "Services"
+  link: "services"
+  highlight: 0
+  crosslink: 1
+- text: "Company"
+  link: "company"
+  crosslink: 1

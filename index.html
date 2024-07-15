@@ -1,11 +1,7 @@
 ---
-layout: default
+layout: titlepage
 title: OMNEST - High-Performance Simulation for All Kinds of Networks
 ---
-
-
-
-<?php print_titlepage_leadin(); ?>
 
 <div style="float:left; width:760px; margin-top: 8px">
 
@@ -111,11 +107,7 @@ for your simulation model employing the widely used OpenSceneGraph library.</p>
 
 <h1><a href="news">News</a></h1>
 
-<?php
-include("newsitems.php");
-include("common/news_inc.php");
-news_print_frontpage(2);
-?>
+{% include titlepage_news.html maxitems=2 %}
 
 </div> <!--rightcol-->
 
@@ -139,7 +131,3 @@ news_print_frontpage(2);
     <p style="margin-top:5px; margin-left:10px"><a href="references">More references...</a></p>
 </div>
 <div style="clear:both"></div>
-
-
-<?php print_titlepage_leadout(); ?>
-

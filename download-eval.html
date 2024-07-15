@@ -1,18 +1,9 @@
-<?php
-error_reporting(0); // turn off warning when id parameter is missing
-if ($_GET['id'] != "2bef15153a2f7c8") {
-  header("HTTP/1.1 307 Temporary Redirect");
-  header("Location: download-eval-request.php");
-  exit();
-}
-?>
 ---
-layout: default
+layout: page
 title: OMNEST - Download Evaluation Version
+menu: purchase
 ---
 
-
-<?php print_leadin($purchase_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST Evaluation Download</h1></div>
 
@@ -88,5 +79,4 @@ var google_conversion_label = "DEFAULT";
 <img height=1 width=1 src="//www.googleadservices.com/pagead/conversion/1067620223/?value=1&label=DEFAULT&script=0">
 </noscript>
 
-<?php print_leadout(); ?>
 

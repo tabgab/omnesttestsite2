@@ -1,0 +1,8 @@
+
+{% capture current_page %}{{ page.url | split: "/" | last | replace: ".html", "" }}{% endcapture %}
+{% assign menuitem = include.menuitem %}
+{ % include get_next_menu_item.html menu=site.data.menu current_page=current_page %}
+
+{% if next_menu_item %}
+  { % include print_next_link.html url=next_menu_item.link text="Next: TODO append: next_menu_item.text" %}
+{% endif %}

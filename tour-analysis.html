@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: page
 title: OMNEST Tour - Result Analysis
+menu: tour
 ---
 
 
-<?php print_leadin($tour_menu, __FILE__); ?>
-
-<?php print_next_tourstep_links_small(__FILE__); ?>
+{% include next_tourstep_links.html small=true %}
 
 <img class="pic right rounded" style="margin-top: 26px;" width="200" src="images/tour/tour-analysis-record.png" alt=""/>
 <h1>Simulation models can be easily set up to record useful statistics</h1>
@@ -47,7 +46,6 @@ open file formats and provides export/import functions and extension packages to
 them in the tool of your choice.</p>
 <div class="separator"></div>
 
-<?php print_next_tourstep_links(__FILE__); ?>
+{% include next_tourstep_links.html %}
 
-<?php print_leadout(); ?>
 

@@ -1,0 +1,16 @@
+{% assign current_page = page.url | split: '.' | first %}
+
+{% assign is_tryomnest_related = current_page == "try-omnest" or current_page contains "download-eval" %}
+{% assign is_purchase_related = current_page == "contact" or current_page contains "licensing" %}
+{% assign is_support_related = current_page == "support" or current_page == "downloads" or current_page == "services" %}
+{% assign is_company_related = current_page == "company" or current_page == "partners" %}
+
+<a href="{{ site.baseurl }}/omnest-is" id="topmenu" class="{{ 'topmenuitem_selected' if menu == tour_menu or menu == product_menu else 'topmenuitem' }}">PRODUCT</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="{{ site.baseurl }}/try-omnest" id="topmenu" class="{{ 'topmenuitem_selected' if is_tryomnest_related else 'topmenuitem' }}">TRY OMNEST</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="{{ site.baseurl }}/contact" id="topmenu" class="{{ 'topmenuitem_selected' if is_purchase_related else 'topmenuitem' }}">HOW TO BUY</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="{{ site.baseurl }}/services" id="topmenu" class="{{ 'topmenuitem_selected' if is_support_related else 'topmenuitem' }}">SERVICES</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="{{ site.baseurl }}/company" id="topmenu" class="{{ 'topmenuitem_selected' if is_company_related else 'topmenuitem' }}">ABOUT US</a>

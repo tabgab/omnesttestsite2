@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST Tour - Thank You
+menu: tour
 ---
 
-
-<?php print_leadin($tour_menu, __FILE__); ?>
 
 <h1>Thank You</h1>
 
@@ -14,16 +13,13 @@ Thank you for taking the OMNEST Product Tour.</p>
 <p>We hope that you found that OMNEST meets your needs, and we can
 soon welcome you among the happy users of our simulation tool.</p>
 
-<?php
-print_next_link("contact", "Questions? Contact us");
-print_next_link("try-omnest", "Try OMNEST");
-print_next_link("overview", "Learn about OMNEST in more detail");
-?>
+{% include next_link.html url="contact" text="Questions? Contact us" %}
+{% include next_link.html url="try-omnest" text="Try OMNEST" %}
+{% include next_link.html url="overview" text="Learn about OMNEST in more detail" %}
 
 <div style="clear:both"></div>
 <br>
 <br>
 
 
-<?php print_leadout(); ?>
 

@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST Tour - TODO
+menu: tour
 ---
 
-
-<?php print_leadin($tour_menu, __FILE__); ?>
 
 <img class="pic right rounded" width=200 src="images/screenshots/todo-thumb.png" alt="todo" onclick="enlarge(this);"/>
 <h1>OMNET is widely used in academic research, producing a great number of new models yearly</h1>
@@ -21,7 +20,6 @@ title: OMNEST Tour - TODO
 <p>todo</p>
 <div style="clear:both"></div>
 
-<?php print_next_tourstep_links(__FILE__); ?>
+{% include next_tourstep_links.html %}
 
-<?php print_leadout(); ?>
 

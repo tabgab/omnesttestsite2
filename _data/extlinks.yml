@@ -1,0 +1,108 @@
+inet:
+  link: "http://inet.omnetpp.org"
+  text: "INET Framework"
+mixim:
+  link: "https://github.com/omnetpp/mixim"
+  text: "MiXiM"
+miximsf:
+  link: "http://mixim.sourceforge.net/"
+  text: "old site"
+inetmanet:
+  link: "https://github.com/aarizaq/inetmanet-2.0"
+  text: "INETMANET"
+castalia:
+  link: "http://castalia.research.nicta.com.au/index.php/en/"
+  text: "Castalia"
+oversim:
+  link: "http://www.oversim.org"
+  text: "OverSim"
+denacast:
+  link: "http://www.denacast.org/"
+  text: "DenaCast"
+ansa:
+  link: "http://nes.fit.vutbr.cz/ansa/pmwiki.php?n=Main.HomePage"
+  text: "ANSA"
+rease:
+  link: "https://i72projekte.tm.uka.de/trac/ReaSE"
+  text: "ReaSE"
+hipsimpp:
+  link: "http://www.ict-optimix.eu/index.php/HIPSim"
+  text: "HIPSim++"
+mcoapp:
+  link: "http://mcoa.dei.uc.pt"
+  text: "mCoA++"
+mcoapp-github:
+  link: "https://github.com/bmsousa/mCoAplus"
+  text: "github"
+ebitsim:
+  link: "http://github.com/pedromanoel/EbitSim"
+  text: "EBitSim"
+quagga:
+  link: "https://github.com/inet-framework/inet-quagga"
+  text: "Quagga"
+numbat:
+  link: "http://klub.com.pl/numbat/"
+  text: "Numbat"
+nesct:
+  link: "http://nesct.sourceforge.net/"
+  text: "NesCT"
+veins:
+  link: "http://veins.car2x.org/"
+  text: "Veins"
+vns:
+  link: "http://www.dcc.fc.up.pt/~rjf/vns/"
+  text: "VNS"
+tt4inet:
+  link: "http://tte4inet.realmv6.org"
+  text: "TT4INET"
+simulte:
+  link: "http://simulte.com"
+  text: "SimuLTE"
+4gsim:
+  link: "https://github.com/4gsim/4Gsim"
+  text: "4Gsim"
+os3:
+  link: "http://www-os3.kn.e-technik.tu-dortmund.de"
+  text: "OS<sup>3</sup>"
+hnrl:
+  link: "https://github.com/kyeongsoo/inet-hnrl"
+  text: "INET-HNRL"
+epon:
+  link: "http://sourceforge.net/projects/omneteponmodule/"
+  text: "EPON"
+obs:
+  link: "https://www.tlm.unavarra.es/research/projects/strrong/soft/obsmodules/"
+  text: "OBSModules"
+obsgithub:
+  link: "https://github.com/mikelizal/OBSmodules"
+  text: "github"
+ib_flit_sim:
+  link: "http://www.mellanox.com/page/omnet"
+  text: "ib_flit_sim"
+venus:
+  link: "http://researcher.watson.ibm.com/researcher/view_project.php?id=1071"
+  text: "Venus"
+hnocs:
+  link: "http://hnocs.eew.technion.ac.il"
+  text: "HNoCS"
+phoenixsim:
+  link: "http://lightwave.ee.columbia.edu/?s=research&p=phoenixsim"
+  text: "PhoenixSim"
+icancloud:
+  link: "http://icancloudsim.org"
+  text: "iCanCloud"
+simcan:
+  link: "http://www.arcos.inf.uc3m.es/~simcan"
+  text: "SIMCAN"
+simsans:
+  link: "http://www.simsans.org"
+  text: "SimSANs"
+hecios:
+  link: "https://github.com/bws/HECIOS"
+  text: "HECIOS"
+heciosthesis:
+  link: "http://etd.lib.clemson.edu/documents/1252424075/Settlemyer_clemson_0050D_10281.pdf"
+  text: "Details"
+ompcm:
+  link: "http://sdqweb.ipd.kit.edu/wiki/OMPCM"
+  text: "OMPCM"

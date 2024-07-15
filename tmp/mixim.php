@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST - MiXiM
+menu: product
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>MiXiM -- Detailed PHY and MAC Layer Simulations</h1></div>
 
@@ -49,7 +48,6 @@ OMNeT++ 2009: Proceedings of the 1st International Workshop on OMNeT++ (hosted b
 
 <p><a href="pdf/mixim2009.pdf">Read the article (pdf)</a></p>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

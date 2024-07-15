@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST at a Glance
+menu: product
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>OMNEST at a Glance</h1></div>
 
@@ -72,7 +71,6 @@ let you build the model, run batches, process event log and result files, and do
 
 </table>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

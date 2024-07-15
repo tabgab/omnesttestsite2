@@ -1,0 +1,30 @@
+<h1>News</h1>
+
+<!-- Table of Contents -->
+<div class="toc">
+  <p>Index</p>
+  <ol>
+    {% assign counter = 0 %}
+    {% for news_item in site.posts %}
+      {% assign counter = counter | plus: 1 %}
+      <li><a href="{{ page.url }}#news-{{ counter }}">{{ news_item.title }}</a></li>
+    {% endfor %}
+  </ol>
+</div>
+
+<!-- News Items -->
+{% assign counter = 0 %}
+{% for news_item in site.posts %}
+  {% assign counter = counter | plus: 1 %}
+  <a name="news-{{ counter }}"></a>
+  <p class="newstitle"><a href="{{ news_item.url }}">{{ news_item.title }}</a></p>
+  <p class="newsdate">{{ news_item.date }}</p>
+  <p>
+    {{ news_item.excerpt | default: news_item.content }}
+    {% if news_item.link %}
+      <a href="{{ news_item.link }}">More&nbsp;&raquo;</a>
+    {% else %}
+      <a href="{{ news_item.url }}">More&nbsp;&raquo;</a>
+    {% endif %}
+  </p>
+{% endfor %}

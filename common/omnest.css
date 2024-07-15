@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'custom';
-  src: url("common/LTe50177.ttf") format('truetype'); /* TTF file for CSS3 browsers */
+  src: url("LTe50177.ttf") format('truetype'); /* TTF file for CSS3 browsers */
 }
 
 /*** General ***/
@@ -53,7 +53,7 @@ a.kiemeles:hover {
 }
 
 a[href^="http://"], a[href^="https://"] {
-    background: url(common/images/external-link.png) center right no-repeat;
+    background: url(images/external-link.png) center right no-repeat;
     padding-right: 13px;
 }
 
@@ -64,14 +64,14 @@ a.noicon[href^="http://"], a.noicon[href^="https://"] {
 
 h2.framed[id] {
     cursor: pointer;
-    background-image: url(common/images/circled_plus.png);
+    background-image: url(images/circled_plus.png);
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 27px;
 }
 
 h2.framed.expanded[id] {
-    background-image: url(common/images/circled_minus.png);
+    background-image: url(images/circled_minus.png);
 }
 
 h2[id]+div {
@@ -213,7 +213,7 @@ div.framed {
 /*** lists ***/
 
 ul {
-    list-style-image: url(common/images/list_01.gif);
+    list-style-image: url(images/list_01.gif);
 }
 
 li {
@@ -323,7 +323,7 @@ a.topmenuitem:hover {
     margin-left: 5px;
     padding-left: 8px;
     height: 29px;
-    background-image: url(common/images/menu_underline.png);
+    background-image: url(images/menu_underline.png);
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -363,7 +363,7 @@ a.topmenuitem:hover {
 }
 
 .vmenu .selected:before {
-   content: url(common/images/menu_selection.png);
+   content: url(images/menu_selection.png);
    padding-right: 3px;
    margin-left: -9px;
 }

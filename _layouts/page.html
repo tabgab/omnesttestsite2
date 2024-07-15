@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+{% if page.menu == "product" %}
+  {% assign menu = site.data.product_menu %}
+{% elsif page.menu == "purchase" %}
+  {% assign menu = site.data.purchase_menu %}
+{% elsif page.menu == "tour" %}
+  {% assign menu = site.data.tour_menu %}
+{% else %}
+  {% assign menu = nil %}
+{% endif %}
+
+<body>
+{% include leadin.html menu=menu %}
+{{ content }}
+{% include leadout.html %}
+</body>
+</html>
+

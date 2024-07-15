@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: OMNEST - Discrete Event Simulation
+menu: product
 ---
 
-
-<?php print_leadin($product_menu, __FILE__); ?>
 
 <div id="header"><h1>Discrete Event Simulation</h1></div>
 
@@ -47,7 +46,6 @@ superior support.</p>
     <li>Parallel simulation and other advanced features</li>
 </ul>
 
-<?php print_next_links($product_menu, __FILE__); ?>
+{% include next_links.html menu=site.data.product_menu %}
 
-<?php print_leadout(); ?>
 

@@ -1,22 +1,10 @@
 ---
-layout: default
+layout: page
 title: OMNEST - News
+menu: product
 ---
 
 
-<?php print_leadin($product_menu, __FILE__); ?>
+{% include news_list.html %}
 
-<?php
-include("newsitems.php");
-include("common/news_inc.php");
-
-error_reporting(0); // turn off warning
-$news_id = $_GET['id'];
-if ($news_id)
-    news_print_item_page($news_id);
-else
-    news_print_list();
-?>
-
-<?php print_leadout(); ?>
 
