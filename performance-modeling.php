@@ -19,7 +19,7 @@
 <div id="header"><h1>Performance Modeling</h1></div>
 
 <p><b>OMNEST allows you to easily build queueing and resource allocation-based performance models
-by combining existing blocks. When more details need to be accommodated into the model,
+by combining existing blocks.</b> When more details need to be accommodated into the model,
 OMNEST helps you by allowing you to refine, specialize, enhance, or replace
 model blocks, and you can also create new blocks.</p>
 
