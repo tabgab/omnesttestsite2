@@ -5,201 +5,261 @@ menu: product
 head_contribution: <script src="common/collapsible.js" type="text/javascript"></script>
 ---
 
-
-<!--TODO:
-    OpenFlow
-    CometOS
--->
-
-
 <div id="header"><h1>Simulation Models</h1></div>
 
-<p style="margin-bottom: 0;"><b>With OMNEST you can make use of the models written for OMNeT++,
-the noncommercial version of OMNEST.</b>
-These models have been written by the OMNeT++ user community, and published under various
-open-source licenses. Below is a partial list of the models, organized by topic.
+<p><b>The standard protocol simulation library</b> of OMNEST is the {% include extlink.html key="inet"  %}. INET provides models for simulating a variety of
+communication networks, ranging from the Internet to Time-Sensitive Networking (TSN),
+mobile ad hoc networks, and more.
+INET has been specifically designed to facilitate experimentation
+with protocols and various architectures. Additionally, INET has support for
+cross-cutting features such as emulation, real-time (RT) and
+hardware-in-the-loop (HIL) simulation, visualization, advanced statistics
+collection, and more, and is accompanied by comprehensive documentation and showcase
+simulations.</p>
+
+<p><b>A significant number of other simulation models</b> and model libraries have
+been developed for OMNeT++ by various research groups and individual members of
+the user community, published under different open-source licenses. These
+models can also be utilized with OMNEST. An approximate catalog of these models is
+available on the
+<a href="https://omnetpp.org/download/models-and-tools">Simulation Models and
+Tools</a> page of the OMNeT++ website.
 </p>
 
-<br>
-
-<p>
-<a href="#inet">Internet</a> &bull;
-<a href="#lans">Wired and Wireless LANs</a> &bull;
-<a href="#manets">Mobile Ad-hoc Networks</a> &bull;
-<a href="#wsn">Sensor Networks</a> &bull;
-<a href="#vehicular">Vehicular Networks</a> &bull;
-<a href="#in-vehicle">In-vehicle Networks</a> &bull;
-<a href="#cellular">Cellular Networks</a> &bull;
-<a href="#satellite">Satellite Communications</a> &bull;
-<a href="#optical">Optical Networks</a> &bull;
-<a href="#interconnection">Interconnection Networks</a> &bull;
-<a href="#nocs">Networks-on-Chip (NoCs)</a> &bull;
-<a href="#cloud">Cloud Computing, HPC Clusters, SANs</a>
-</p>
+<p>Below is a list of recommendations for simulating various types of networks.</p>
 
 <div style="text-align: right;"><a toggleAll="yes">Expand all</a></div>
 
-<h2 class="framed" id="inet">Internet</h2>
+<h2 class="framed" id="inet">Internet Simulations</h2>
 <div>
 
-<p>The {% include extlink.html key="inet" %} is the best place to begin when you want to simulate
-any of the protocols, technologies and applications used on the Internet and other WANs.
-<a toggle="internet" ></a></p>
+<p>The {% include extlink.html key="inet" %} should be used for simulating any of the protocols,
+technologies, and applications used on the Internet and other Wide Area Networks
+(WANs). INET includes the essential components such as protocols from the TCP/IP
+stack, common routing protocols, support for differentiated services, label
+switching (MPLS), static autoconfiguration, application models, and more.</p>
 
-<p>It consists of cleanly programmed and well-commented models
-that lend themselves to experimentation with protocols and various architectures.
-Existing protocol models can be freely combined to form hosts and network devices.
-INET also has support for emulation, real-time (RT) and hardware-in-the-loop (HIL) simulation.</p>
-
-<p>The INET Framework contains models for
-network layer protocols (IPv4, IPv6 and their families),
-transport protocols (TCP, UDP, SCTP, RTP),
-LANs and other wired networks (Ethernet, PPP),
-wireless protocols (IEEE 802.11a/b/g and extensions),
-mobility support,
-applications (file transfer, web, voice, CBR/VBR source, etc.),
-static network configuration,
-routing (RIP, OSPF, BGP, etc.),
-multicast (IGMP),
-mobile IPv6 (MIPv6),
-ad-hoc routing protocols (AODV, BATMAN, DSDV, DSR, OLSR, DYMO, BATMAN, etc.),
-differential services (aka DiffServ),
-label switching (MPLS, RSVP/TE, LDP, etc.),
-and more.
-See the <a href="http://inet.omnetpp.org/index.php?n=Main.Status" target="_blank">Protocol Matrix</a>
-on the INET Framework web site for details.</p>
-
+<!-- [TODO: port models to more recent OMNeT++/INET versions]
 <p>Several simulation frameworks take INET as a base, and extend it into various directions:</p>
 
 <ul>
-  <li>{% include extlink.html key="oversim" %} is an overlay and peer-to-peer network simulation framework.
+  <li>{% include extlink.html key="oversim"  %} is an overlay and peer-to-peer network simulation framework.
        The simulator contains several models for structured (e.g. Chord, Kademlia, Pastry)
        and unstructured (e.g. GIA) P2P systems and overlay protocols.
-  <li>{% include extlink.html key="denacast" %} is a framework for the simulation of peer-to-peer video streaming,
+  <li>{% include extlink.html key="denacast"  %} is a framework for the simulation of peer-to-peer video streaming,
        itself based on OverSim
-  <li>{% include extlink.html key="ansa" %} is a project for automated analysis of security properties of networks.
+  <li>{% include extlink.html key="ansa"  %} is a project for automated analysis of security properties of networks.
        They have implemented several protocols for INET: IS-IS, OSPFv3, RIPng, PIM-DM, MLDv1, MLDv2,
        TRILL, VLAN, STP and possibly others
-  <li>{% include extlink.html key="rease" %} is a framework for creating realistic network simulation environments.
+  <li>{% include extlink.html key="rease"  %} is a framework for creating realistic network simulation environments.
        ReaSE covers topology generation (AS-level as well as router-level), generation of
        self-similar background traffic, and generation of attack traffic (e.g. DDoS)
-  <li>{% include extlink.html key="hipsimpp" %} is a Host Identity Protocol (HIP) simulation framework,
+  <li>{% include extlink.html key="hipsimpp"  %} is a Host Identity Protocol (HIP) simulation framework,
        developed for the testing and validation of HIP and its extensions
-  <li>{% include extlink.html key="mcoapp" %} ({% include extlink.html key="mcoapp-github" %}) extends the Mobile IPv6
+  <li>{% include extlink.html key="mcoapp"  %} ({% include extlink.html key="mcoapp-github"  %}) extends the Mobile IPv6
        implementation in INET with Multiple Care-of Addresses support (RFC 5648)
-  <li>{% include extlink.html key="ebitsim" %} is an enhanced BitTorrent simulation with multiple concurrent swarms,
+  <li>{% include extlink.html key="ebitsim"  %} is an enhanced BitTorrent simulation with multiple concurrent swarms,
        multiple trackers and a timeslice processing model
-  <li>{% include extlink.html key="quagga" %} is a port of the Quagga open-source routing suite into the INET Framework
+  <li>{% include extlink.html key="quagga"  %} is a port of the Quagga open-source routing suite into the INET Framework
   <li> many of the models listed in further sections are also INET-based
   <li> etc. <i>(search github or the web)</i>
 </ul>
+-->
 
-<p>Several packages, e.g. xMIPv6, VoIPTool and HTTPTools, used to be separate projects but have been integrated into INET since.</p>
+<p>Several packages, including xMIPv6 and VoIPTool, were once separate projects
+but have since been integrated into INET.</p>
 </div>
 
 
-<h2 class="framed" id="lans">Wired and Wireless LANs</h2>
+<h2 class="framed" id="wired">Wired LANs and WANs</h2>
 <div>
 
-<p>The best choice for simulating LANs with OMNEST is the <a href="#inet">INET Framework</a>.
-The INET Framework contains models for Ethernet (including Fast Ethernet, Gigabit Ethernet,
-40 and 100 Gigabit Ethernet, duplex and half-duplex), IEEE 802.11 as well as
-network devices built from them (switch, access point, etc.)
-</p>
-
-<p>More support for switched networks, including VLAN, Spanning-Tree Protocol (STP) and
-Rapid Spanning-Tree Protocol (RSTP), is available from
-{% include extlink.html key="inetmanet" %} (see <a href="#manets">below</a>).</p>
-
-<p>A WiMAX model is available as part of the {% include extlink.html key="numbat" %} project.
-However, one drawback of Numbat is its limited interoperability with the INET Framework.</p>
+<p>The {% include extlink.html key="inet" %} is the recommended model library for simulating wired
+networks. INET provides models for PPP, and a wide range of Ethernet variants
+and features (including full duplex and half-duplex modes, cutthrough switching,
+and frame preemption), along with network devices built from them (switches,
+routers, access points, etc.). Support for switched networks is included,
+offering VLAN, spanning tree protocols (STP, RSTP), and TSN support.</p>
 </div>
 
 
-<h2 class="framed" id="manets">Mobile Ad-hoc Networks</h2>
+<h2 class="framed" id="tsn">Time-Sensitive Networking (TSN)</h2>
 <div>
 
-<p>The best choice for simulating mobile ad-hoc networks (MANETs) with OMNEST
-is the <a href="#inet">INET Framework</a>.
-</p>
+<p>The {% include extlink.html key="inet" %} provides comprehensive support for
+Time-Sensitive Networking (TSN), which is a set of IEEE 802 standards aimed at
+making Ethernet networks deterministic with low latency and high
+reliability.</p>
 
-<p>An alternative is {% include extlink.html key="mixim" %} ({% include extlink.html key="miximsf" %}),
-which contains a much more detailed physical layer model but has no
-models for the upper layers of the protocol stack. If you need both
-a detailed physical model and detailed upper layers, you can use
-INET and MiXiM together.
-As for the future, we plan to integrate MiXiM into the INET Framework;
-the result of this work can be expected to be released before the end of 2013.</p>
+<p>Key TSN capabilities supported by INET include:</p>
 
-<p>The INET Framework also has a fork called {% include extlink.html key="inetmanet" %},
-which is a superset of INET with many experimental (sometimes <i>very</i> experimental)
-MANET-related additions.</p>
+<ul>
+<li><b>Time Synchronization</b>: INET implements modules for the IEEE 802.1AS
+standard, which synchronizes clocks across network nodes to ensure coordinated
+communication. This is essential for ensuring accurate timing in time-critical
+applications such as industrial automation and automotive
+systems.</li>
 
-<p>If you need to simulate Personal Area Networks (PANs), Body Area Networks (BANs),
-or other networks of low-power embedded devices, {% include extlink.html key="castalia" %} may also be suitable for you.
-Castalia includes realistic wireless channel and radio models, with a realistic node
-behaviour especially relating to access of the radio.</p>
+<li><b>Per-Stream Filtering and Policing</b>: This feature, compliant with IEEE
+802.1Qci, allows for the control and shaping of traffic streams. It can enforce
+bandwidth limits and prevent misbehaving streams from affecting the
+network.</li>
 
-<p>Other models, including the Mobility Framework (MF), should be considered obsolete.</p>
+<li><b>Scheduling and Traffic Shaping</b>: INET supports both <b>Time-Aware Shaping</b>
+(IEEE 802.1Qbv) and <b>Credit-Based Shaping</b> (IEEE 802.1Qav). These methods help
+ensure low-latency, prioritized traffic transmission and reduce
+congestion.</li>
+
+<li><b>Frame Replication and Elimination for Reliability (FRER)</b>: This feature,
+defined in IEEE 802.1CB, enables the replication of critical frames across
+redundant paths to ensure reliability, which is particularly advantageous in systems where
+packet loss is unacceptable.</li>
+
+<li><b>Frame Preemption</b>: With the implementation of the IEEE 802.1Qbu standard,
+high-priority traffic can interrupt lower-priority frames, improving latency for
+critical data.</li>
+
+<li><b>Cut-Through Switching</b>: INET incorporates cut-through switching to reduce
+latency by initiating the forwarding process before the complete reception of a
+frame.</li>
+
+<li><b>Automatic Gate-Schedule Configuration</b>: INET offers mechanisms for
+configuring gate control lists used in time-sensitive switches, which can be accomplished
+manually or using external solvers like SAT-based gate scheduling.</li>
+</ul>
+
+<p>These features are modular and can be combined in various ways, enabling
+users to simulate complex TSN environments and explore different network
+configurations tailored to specific applications like automotive or industrial
+networks. The INET site contains several
+<a href="https://inet.omnetpp.org/docs/showcases/tsn/" target="_blank">showcase examples</a>
+demonstrating these features.</p>
+
+<p>We recommend using the INET Framework for TSN simulations over other TSN model
+libraries.</p>
+
 </div>
 
 
-<h2 class="framed" id="wsn">Sensor Networks</h2>
+<h2 class="framed" id="wireless">Wireless Communication</h2>
 <div>
 
-<p>There are currently three good choices for the simulation of wireless sensor networks (WSNs)
-with OMNEST: The <a href="#inet">INET Framework</a>,
-{% include extlink.html key="mixim" %} (see <a href="#manets">above</a>) and
-{% include extlink.html key="castalia" %} (see <a href="#manets">above</a>).
-The INET Framework is currently missing a battery model, which may or may not be a problem
-for your project. </p>
+<p>The preferred choice for simulating wireless LANs with OMNEST is the
+{% include extlink.html key="inet" %}. The INET Framework features a sophisticated
+WiFi model with a modular architecture that closely follows the IEEE 802.11
+standard. Other available protocol models include IEEE 802.15.4 and WSN
+protocols such as L-MAC and B-MAC. LoRa is available as a separate package
+({% include extlink.html key="flora"  %}). Abstract communication models for high-level
+modeling are also provided.</p>
 
-<p>Other frameworks like PAWiS or LSU Sensor Simulator (SenSim) should be considered obsolete.</p>
+<p>Key capabilities for wireless simulation in INET include:</p>
+<ul>
+<li>Optional detailed signal representation (time/frequency domain)</li>
+<li>Optional bit/symbol-level radio models</li>
+<li>Various modulation schemes</li>
+<li>Antenna models with optional directional selectivity</li>
+<li>Various path loss models</li>
+<li>Obstacle loss models</li>
+<li>Reception error models</li>
+<li>Coexistence/crosstalk modeling</li>
+<li>Background noise models, noise sources</li>
+<li>Abstract models such as unit disk for high-level modeling</li>
+</ul>
 
-<p>If your work involves TinyOS, the tool called {% include extlink.html key="nesct" %} might be of interest to you.
-NesCT is a programming language translator that uses NesC programming language as an input,
-and produces OMNeT++ simulation code from it.</p>
+</div>
+
+
+<h2 class="framed" id="manet-wsn">Mobile Ad Hoc and Wireless Sensor Networks (MANETs, WSNs)</h2>
+<div>
+
+<p>The recommended model for simulating mobile ad hoc networks (MANETs) and
+wireless sensor networks (WSNs) using OMNEST is the {% include extlink.html key="inet" %}.
+INET offers the required infrastructure for this domain, including
+mobility support, detailed radio models, low-energy MAC protocols, energy
+consumption, and battery models, among others.</p>
+
+<p>An alternative choice is the INET fork named {% include extlink.html key="inetmanet" %}, which is a superset of INET with many experimental (sometimes <i>very</i>
+experimental) MANET-related additions. Other options, including the MiXiM,
+Castalia, LSU SenSim, etc., are now considered obsolete.</p>
+</div>
+
+
+<h2 class="framed" id="cellular">Cellular (5G/LTE) Networks</h2>
+
+<div>
+<p>{% include extlink.html key="simu5g" %} is an open-source 5G/LTE simulation framework
+that focuses on the data plane. As the successor to the widely-used SimuLTE 4G
+simulator, Simu5G introduces 5G New Radio access while maintaining its
+predecessor's strengths. Geared towards facilitating 5G research, Simu5G is
+fully customizable with a simple pluggable interface, allowing users to develop
+new modules for implementing custom algorithms and protocols.</p>
+
+<p>Simu5G supports the simulation of scenarios where 4G and 5G coexist,
+including StandAlone (SA) and E-UTRA/NR Dual Connectivity (ENDC) deployments.
+Simu5G seamlessly integrates with the INET Framework, and can be used together
+with other model libraries, such as Veins for vehicular mobility
+simulations.</p>
 </div>
 
 
 <h2 class="framed" id="vehicular">Vehicular Networks</h2>
 <div>
 
-<p>The recommended framework for simulating vehicular (i.e. inter-vehicle) networks is
-{% include extlink.html key="veins" %}, which combines a MiXiM-based network simulator with
-the SUMO road traffic simulator. <a toggle="vehicular"></a></p>
+<p>A variety of open-source models for vehicular network simulations are
+available for OMNEST. {% include extlink.html key="veins" %}, which integrates OMNEST with
+the SUMO road traffic simulator using co-simulation, is a widely-used option for
+modeling Vehicle-to-Vehicle (V2V) and Vehicle-to-Infrastructure (V2I)
+communication, leveraging standards like IEEE 802.11p and DSRC for realistic
+simulations. Veins is typically used together with the INET Framework.</p>
 
-<p>An alternative to Veins is {% include extlink.html key="vns" %} (Vehicular Networks Simulator).</p>
-
-<p>However, vehicular networks are essentially mobile ad-hoc networks,
-so you may also make use of other model frameworks capable of
-simulating MANETs (see <a href="#manets">above</a>).</p>
+<p>For more specialized needs, {% include extlink.html key="artery" %} extends Veins for V2X
+communication based on the ETSI ITS-G5 standard, making it ideal for cooperative
+driving scenarios. {% include extlink.html key="plexe" %} enhances Veins with platooning
+capabilities, enabling detailed simulations of autonomous vehicle coordination.
+Veins may also be combined with Simu5G to incorporate cellular communication for
+long-range V2V and V2I studies. {% include extlink.html key="veins-vlc" %} extends Veins
+with the ability to simulate Vehicular Visible Light Communication (V-VLC)
+alongside the default IEEE 802.11p communication, and includes realistic
+headlight and taillight path loss models.</p>
 </div>
 
 
-<h2 class="framed" id="in-vehicle">In-vehicle Networks</h2>
+<h2 class="framed" id="in-vehicle">In-Vehicle Networks</h2>
 <div>
 
-<p>Protocols used in cars (automotive networks: CAN, LIN, DC-Bus, FlexRay,
-MOST, TTEthernet, etc.) and in aircraft (avionics networks like AFDX) belong here.
-Currently a TTEthernet model named {% include extlink.html key="tt4inet" %} is available;
-it is based on the <a href="#inet">INET Framework</a>.</p>
+<p>To simulate fieldbus communication protocols such as CAN and FlexRay, which
+enable reliable communication between electronic control units (ECUs) within
+vehicles, the {% include extlink.html key="fico4omnet" %} library can be utilized. FiCo4OMNeT
+allows engineers to simulate and analyze the performance and reliability of
+in-vehicle networks, assisting in the development of robust automotive
+communication architectures.</p>
 
-<p>The release of other protocol models, including Ethernet Audio-Video Bridging (AVB)
-can also be expected.</p>
+<!-- OMNEST provides robust simulation capabilities for in-vehicle networks,
+supporting essential automotive communication protocols like CAN, LIN, FlexRay,
+and MOST. ensuring efficient operation of various
+automotive systems. -->
+
+<p>For modern car architectures that leverage Ethernet, Time-Sensitive Networking
+(TSN) is highly relevant (see the TSN section above). TSN facilitates
+deterministic real-time communication over Ethernet, which is vital for
+advanced driver-assistance systems (ADAS) and autonomous driving features.</p>
+
 </div>
 
-
-<h2 class="framed" id="cellular">Cellular Networks</h2>
-
+<h2 class="framed" id="quantum">Quantum Communication</h2>
 <div>
-<p>There are currently two model frameworks for next-generation cellular networks (3GPP/4G/LTE):
-{% include extlink.html key="simulte" %} and {% include extlink.html key="4gsim" %},
-both based on the <a href="#inet">INET Framework</a>.
-On the long term, we would like the two LTE frameworks to converge.</p>
+
+<p>The Quantum Internet Simulation Package ({% include extlink.html key="quisp" %}) offers a
+state-of-the-art, event-driven simulation of quantum repeater networks, envisioned
+to serve as the backbone of the future Quantum Internet. QuISP aims to model a full-scale
+Quantum Internet with up to 100 networks, each comprising up to 100 nodes. Its
+primary focus revolves around protocol design and the emergent behavior of complex,
+large-scale, heterogeneous networks, while maintaining a high level of realism
+in the physical layer.</p>
 </div>
 
 
+<!-- [TODO: port models to more recent OMNeT++/INET versions]
 <h2 class="framed" id="satellite">Satellite Communications</h2>
 <div>
 
@@ -209,10 +269,11 @@ The goal of the OS<sup>3</sup> project was to make evaluating satellite communic
 OS<sup>3</sup> can also automatically import real satellite tracks and weather data
 to simulate conditions at a certain point in the past or in the future,
 and offers powerful visualization. OS<sup>3</sup> extends the
-<a href="#inet">INET Framework</a>.</p>
+{% include extlink.html key="inet" %}.</p>
 </div>
+-->
 
-
+<!-- [TODO: port models to more recent OMNeT++/INET versions]
 <h2 class="framed" id="optical">Optical Networks</h2>
 <div>
 
@@ -224,7 +285,7 @@ framework for the equivalent circuit rate (ECR)-based study of next-generation
 optical access (NGOA) architectures.</p>
 
 <p>{% include extlink.html key="epon" %} is a simulation model for Ethernet Passive Optical Networks.
-OLT and ONU modules are defined and they both suport one or multiple LLIDs.
+OLT and ONU modules are defined and they both support one or multiple LLIDs.
 MPCP protocol has been implemented on OLT and ONU models to assign LLIDs dynamically. </p>
 
 <p>{% include extlink.html key="obs" %} ({% include extlink.html key="obsgithub" %}) provides models for
@@ -235,8 +296,9 @@ edge nodes and core nodes, and link the OBS network with other data networks lik
 
 <p>{% include extlink.html key="phoenixsim" %} (see <a href="#nocs">below</a>.) may also be of interest.</p>
 </div>
+-->
 
-
+<!-- [TODO: port models to more recent OMNeT++/INET versions]
 <h2 class="framed" id="interconnection">Interconnection Networks</h2>
 <div>
 
@@ -257,8 +319,9 @@ regular and irregular topologies.</p>
 <p>Frameworks developed for Network-on-Chip simulations, e.g. {% include extlink.html key="hnocs" %} and {% include extlink.html key="phoenixsim" %},
 may also be useful in the simulation of interconnection networks (see <a href="#nocs">below</a>.)</p>
 </div>
+-->
 
-
+<!-- [TODO: port models to more recent OMNeT++/INET versions]
 <h2 class="framed" id="nocs">Networks-on-Chip (NoCs)</h2>
 <div>
 
@@ -279,7 +342,9 @@ may also come in handy. It allows for mixing OMNEST and SystemC (or SystemC/TLM)
 in the same simulation, without incurring the severe performance loss that is typical
 with co-simulations.</p>
 </div>
+-->
 
+<!-- [TODO: port models to more recent OMNeT++/INET versions]
 <h2 class="framed" id="cloud">Cloud computing, HPC clusters, SANs</h2>
 <div>
 
@@ -314,7 +379,7 @@ and the ability to scale those models keeping a good level of performance and ac
 SIMCAN includes a set of configurable modules that allow to simulate
 from simple elements (like disk drives, file systems, etc) to complete components
 of the architecture (like nodes, switches, etc).
-SIMCAN is based on the <a href="#inet">INET Framework</a>.
+SIMCAN is based on the {% include extlink.html key="inet" %}.
 </p>
 
 <p>{% include extlink.html key="simsans" %}, on the other hand, is tool for detailed simulation of
@@ -330,7 +395,7 @@ SimSANs is neither open source (please contact the author for source) nor based 
 
 <p>{% include extlink.html key="hecios" %} (High-End Computing I/O Simulator), is a trace-driven
 parallel file system simulator, developed for simulating PVFS (Parallel Virtual File System).
-HECIOS is based on the <a href="#inet">INET Framework</a>.
+HECIOS is based on the {% include extlink.html key="inet" %}.
 ({% include extlink.html key="heciosthesis" %})
 </p>
 
@@ -341,8 +406,8 @@ It uses a specialized representation for description of RD-SEFF behavior called 
 By applying a series of model-transformations, a Palladio model can be transformed fully
 automatically to an OMNeT++ network definition file (NED) that uses the developed OMPCM modules.
 </p>
-
 </div>
+-->
 
 {% include next_links.html menu=site.data.product_menu %}
 
