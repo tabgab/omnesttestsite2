@@ -1,10 +1,10 @@
 {% assign menu = include.menu %}
-{% assign current_page = page.url | split: '.' | first %}
+{% assign current_page_url = page.url | remove: '.html' | remove: '/' %}
 
 <div class="vmenu">
     {% for menuitem in menu %}
         {% assign class_attr = "vmenuitem" %}
-        {% if menuitem.highlight and menuitem.link == current_page %}
+        {% if menuitem.link == current_page_url and menuitem.submenu == null %}
             {% assign class_attr = class_attr | append: " selected" %}
         {% endif %}
         <div class="{{ class_attr }}"><a id="menu" href="{{ site.baseurl }}/{{ menuitem.link }}">{{ menuitem.text }}</a></div>
@@ -12,7 +12,7 @@
             <div class="vsubmenu">
                 {% for submenuitem in menuitem.submenu %}
                     {% assign class_attr = "vsubmenuitem" %}
-                    {% if submenuitem.highlight and submenuitem.link == current_page %}
+                    {% if submenuitem.link == current_page_url %}
                         {% assign class_attr = class_attr | append: " selected" %}
                     {% endif %}
                     <div class="{{ class_attr }}"><a id="menu" href="{{ site.baseurl }}/{{ submenuitem.link }}">{{ submenuitem.text }}</a></div>

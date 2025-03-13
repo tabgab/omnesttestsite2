@@ -1,16 +1,26 @@
-{% assign current_page = page.url | split: '.' | first %}
+{% assign current_page_url = page.url | remove: '.html' | remove: '/' %}
 
-{% assign is_tryomnest_related = current_page == "try-omnest" or current_page contains "download-eval" %}
-{% assign is_purchase_related = current_page == "contact" or current_page contains "licensing" %}
-{% assign is_support_related = current_page == "support" or current_page == "downloads" or current_page == "services" %}
-{% assign is_company_related = current_page == "company" or current_page == "partners" %}
+{% comment %} Determine which section is active - only one should be active at a time {% endcomment %}
+{% assign active_section = "none" %}
 
-<a href="{{ site.baseurl }}/omnest-is" id="topmenu" class="{{ 'topmenuitem_selected' if menu == tour_menu or menu == product_menu else 'topmenuitem' }}">PRODUCT</a>
+{% if page.menu == 'product' or page.menu == 'tour' %}
+  {% assign active_section = "product" %}
+{% elsif current_page_url == 'try-omnest' or current_page_url contains 'download-eval' %}
+  {% assign active_section = "try" %}
+{% elsif current_page_url == 'company' or current_page_url == 'partners' %}
+  {% assign active_section = "about" %}
+{% elsif current_page_url == 'support' or current_page_url == 'downloads' or current_page_url == 'services' %}
+  {% assign active_section = "services" %}
+{% elsif page.menu == 'purchase' or current_page_url == 'contact' or current_page_url contains 'licensing' %}
+  {% assign active_section = "buy" %}
+{% endif %}
+
+<a href="{{ site.baseurl }}/omnest-is" id="topmenu" class="{% if active_section == 'product' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">PRODUCT</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/try-omnest" id="topmenu" class="{{ 'topmenuitem_selected' if is_tryomnest_related else 'topmenuitem' }}">TRY OMNEST</a>
+<a href="{{ site.baseurl }}/try-omnest" id="topmenu" class="{% if active_section == 'try' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">TRY OMNEST</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/contact" id="topmenu" class="{{ 'topmenuitem_selected' if is_purchase_related else 'topmenuitem' }}">HOW TO BUY</a>
+<a href="{{ site.baseurl }}/contact" id="topmenu" class="{% if active_section == 'buy' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">HOW TO BUY</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/services" id="topmenu" class="{{ 'topmenuitem_selected' if is_support_related else 'topmenuitem' }}">SERVICES</a>
+<a href="{{ site.baseurl }}/services" id="topmenu" class="{% if active_section == 'services' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">SERVICES</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/company" id="topmenu" class="{{ 'topmenuitem_selected' if is_company_related else 'topmenuitem' }}">ABOUT US</a>
+<a href="{{ site.baseurl }}/company" id="topmenu" class="{% if active_section == 'about' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">ABOUT US</a>
