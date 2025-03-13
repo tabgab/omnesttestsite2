@@ -421,3 +421,49 @@ table.footerlinks a:hover {
     clear: both;
     margin-top: 30px;
 }
+
+/* Navigation link styles */
+.navigation-links {
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-center {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.nav-next {
+    text-align: right;
+}
+
+.navigation-links a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.navigation-links a:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-center a {
+    background-color: #005CAC;
+    color: white;
+}
+
+.nav-center a:hover {
+    background-color: #004a8a;
+}

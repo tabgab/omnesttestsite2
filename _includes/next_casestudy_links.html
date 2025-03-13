@@ -1,1 +1,30 @@
-TODO
+{% assign current_page_url = page.url | remove: '.html' | remove: '/' %}
+
+{% assign case_studies = site.data.product_menu[3].submenu[2].subpages %}
+{% assign current_index = -1 %}
+{% assign last_index = case_studies.size | minus: 1 %}
+
+{% for i in (0..last_index) %}
+  {% if current_page_url == case_studies[i] %}
+    {% assign current_index = i %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index != -1 %}
+<div class="navigation-links">
+  <div class="nav-inner">
+    <div class="nav-center">
+      <a href="case-studies" title="View all case studies">All Case Studies</a>
+    </div>
+    
+    <div class="nav-next">
+      {% if current_index < last_index %}
+        {% assign next_index = current_index | plus: 1 %}
+        {% assign next_case = case_studies[next_index] %}
+        <a href="{{ next_case }}" title="Next Case Study">Next &raquo;</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
