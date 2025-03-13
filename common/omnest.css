@@ -452,7 +452,9 @@ table.footerlinks a:hover {
 
 .tour-next-link a {
     color: #005CAC;
-    font-size: 18px;
+    font-family: custom, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
     text-decoration: none;
     padding: 5px 10px;
     transition: color 0.2s;
@@ -463,6 +465,8 @@ table.footerlinks a:hover {
 }
 
 .tour-next-link.small a {
+    font-family: custom, Arial, Helvetica, sans-serif;
+    font-weight: normal;
     font-size: 14px;
 }
 
