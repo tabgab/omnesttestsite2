@@ -1,9 +1,26 @@
-TODO
+{% assign current_page_url = page.url | remove: '.html' | remove: '/' %}
 
-{% capture current_page %}{{ page.url | split: "/" | last | replace: ".html", "" }}{% endcapture %}
-{% assign menuitem = include.menuitem %}
-{ % include get_next_menu_item.html menu=site.data.menu current_page=current_page %}
+{% assign learn_pages = site.data.product_menu[2].submenu | map: "link" %}
+{% assign learn_titles = site.data.product_menu[2].submenu | map: "text" %}
+{% assign current_index = -1 %}
+{% assign last_index = learn_pages.size | minus: 1 %}
 
-{% if next_menu_item %}
-  { % include print_next_link.html url=next_menu_item.link text="Next: TODO append: next_menu_item.text" %}
+{% for i in (0..last_index) %}
+  {% if current_page_url == learn_pages[i] %}
+    {% assign current_index = i %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index != -1 %}
+  <div class="tour-next-link{% if include.small %} small{% endif %}">
+    {% if current_index < last_index %}
+      {% assign next_index = current_index | plus: 1 %}
+      {% assign next_page = learn_pages[next_index] %}
+      {% assign next_title = learn_titles[next_index] %}
+      <a href="{{ next_page }}" title="Go to {{ next_title }}">Next: {{ next_title }} &raquo;</a>
+    {% elsif current_index == last_index %}
+      <a href="references" title="Learn about OMNEST in the World">Next: OMNEST in the World &raquo;</a>
+    {% endif %}
+  </div>
 {% endif %}
