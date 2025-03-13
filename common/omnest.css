@@ -170,10 +170,12 @@ div.framed {
 }
 
 .rounded, .rounded img {
-/*    -moz-border-radius: 6px;
+    /* Border radius disabled but preserved in comments for future reference
+    -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
     clip-path: url(resources.svg#roundclip); // does not work on firefox when page zoomed */
+    overflow: hidden;
 }
 
 .pic img, img.pic {
@@ -243,6 +245,7 @@ p.newsdate {
 }
 
 p.newssummary {
+    margin-bottom: 16px;
 }
 
 /*** fancy table ***/
@@ -269,10 +272,11 @@ p.newssummary {
     color: #669;
     padding: 6px 8px;
 }
-.fancytable tbody tr:hover td
-{
-    /* color: #00576D; */
-    /* color: #0084A5; */
+.fancytable tbody tr:hover td {
+    /* Hover colors disabled but preserved in comments for reference
+    color: #00576D; 
+    color: #0084A5; */
+    background-color: #f5f5f5;
 }
 
 .fancytable .sep
@@ -429,6 +433,37 @@ table.footerlinks a:hover {
     margin-bottom: 20px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
+}
+
+/* Small navigation variant for top of page */
+.navigation-links.small-nav {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 0;
+    border-top: none;
+}
+
+/* Simple next link for tour pages */
+.tour-next-link {
+    text-align: right;
+    margin: 20px 0;
+    clear: both;
+}
+
+.tour-next-link a {
+    color: #005CAC;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.tour-next-link a:hover {
+    color: #CC3333;
+}
+
+.tour-next-link.small a {
+    font-size: 14px;
 }
 
 .nav-inner {

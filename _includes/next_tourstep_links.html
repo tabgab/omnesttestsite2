@@ -1,1 +1,26 @@
-TODO
+{% assign current_page_url = page.url | remove: '.html' | remove: '/' %}
+
+{% assign tour_pages = site.data.tour_menu[1].submenu | map: "link" %}
+{% assign tour_titles = site.data.tour_menu[1].submenu | map: "text" %}
+{% assign current_index = -1 %}
+{% assign last_index = tour_pages.size | minus: 1 %}
+
+{% for i in (0..last_index) %}
+  {% if current_page_url == tour_pages[i] %}
+    {% assign current_index = i %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index != -1 %}
+  <div class="tour-next-link{% if include.small %} small{% endif %}">
+    {% if current_index < last_index %}
+      {% assign next_index = current_index | plus: 1 %}
+      {% assign next_page = tour_pages[next_index] %}
+      {% assign next_title = tour_titles[next_index] %}
+      <a href="{{ next_page }}" title="Go to {{ next_title }}">Next: {{ next_title }} &raquo;</a>
+    {% elsif current_index == last_index %}
+      <a href="tour-thankyou" title="Complete the tour">Next: Finish the Tour &raquo;&raquo;</a>
+    {% endif %}
+  </div>
+{% endif %}
