@@ -1,0 +1,100 @@
+<script type="text/javascript">
+    function switchSlideshow() {
+        var $active = $("#slideshow IMG.slideshow-active");
+        if ( $active.length == 0 ) $active = $("#slideshow IMG:last");
+        var $next =  $active.next().length ? $active.next() : $("#slideshow IMG:first");
+        $active.addClass("slideshow-last-active");
+        $next.css({opacity: 0.0})
+            .addClass("slideshow-active")
+            .animate({opacity: 1.0}, 500, function() {
+                $active.removeClass("slideshow-active slideshow-last-active");
+            });
+    }
+
+    $(function() {
+        var images =
+            ["images/slideshow/ethernet-switch.jpg",
+             "images/slideshow/laptops.jpg",
+             "images/slideshow/wireless-tower-sign.jpg",
+             "images/slideshow/datacenter.jpg",
+             "images/slideshow/junction.jpg",
+             "images/slideshow/in-car-network.jpg",
+             "images/slideshow/sensor-nodes.jpg",
+             "images/slideshow/comm-towers.jpg",
+             "images/slideshow/optical-switch.jpg",
+             "images/slideshow/satellite.jpg",
+             "images/slideshow/satellite-dishes.jpg"];
+        var first = true;
+        var slideshow = document.getElementById("slideshow");
+        for (var image in images) {
+            var imageElement = document.createElement("img");
+            imageElement.src = images[image];
+            if (first)
+                imageElement.setAttribute("class", "slideshow-active");
+            first = false;
+            slideshow.appendChild(imageElement);
+        }
+        setInterval("switchSlideshow()", 3500);
+    });
+
+    $(function() {
+        var images =
+           ["images/tour/omnest-community.png",
+            "images/tour/omnest-flexible.png",
+            "images/tour/omnest-for-research.png",
+            "images/tour/omnest-models.png",
+            "images/tour/omnest-network-simulator.png",
+            "images/tour/omnest-open.png",
+            "images/tour/omnest-performance.png",
+            "images/tour/omnest-trusted.png",
+            "images/tour/thankyou.png",
+            "images/tour/tour-analysis-integration.png",
+            "images/tour/tour-analysis-record.png",
+            "images/tour/tour-analysis-tool.png",
+            "images/tour/tour-development-components.png",
+            "images/tour/tour-development-debug.png",
+            "images/tour/tour-development-ide-tools.png",
+            "images/tour/tour-development-seqchart.png",
+            "images/tour/tour-integration-eclipse.png",
+            "images/tour/tour-integration-embedding.png",
+            "images/tour/tour-integration-systemc-etc.png",
+            "images/tour/tour-integration-workflow.png",
+            "images/tour/tour-models-combine.png",
+            "images/tour/tour-models-domains.png",
+            "images/tour/tour-models-parameters.png",
+            "images/tour/tour-models-source.png",
+            "images/tour/tour-simulation-hil.png",
+            "images/tour/tour-simulation-inspect.png",
+            "images/tour/tour-simulation-parallel.png",
+            "images/tour/tour-simulation-performance.png",
+            "images/tour/tour-whysim-blueprints.png",
+            "images/tour/tour-whysim-details.png",
+            "images/tour/tour-whysim-largescale.png",
+            "images/tour/tour-whysim-reproduce.png",
+            "images/tour/tour-whysim-verify.png"];
+        for (var image in images) {
+            var imageElement = document.createElement("img");
+            imageElement.src = images[image];
+        }
+    });
+
+</script>
+
+<style type="text/css">
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.slideshow-active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.slideshow-last-active {
+    z-index:9;
+}
+</style>
