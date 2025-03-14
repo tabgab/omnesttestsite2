@@ -106,3 +106,24 @@ heciosthesis:
 ompcm:
   link: "http://sdqweb.ipd.kit.edu/wiki/OMPCM"
   text: "OMPCM"
+artery:
+  link: "http://artery.v2x-research.eu/"
+  text: "Artery"
+plexe:
+  link: "https://plexe.car2x.org/"
+  text: "PLEXE"
+veins-vlc:
+  link: "https://www2.tkn.tu-berlin.de/software/veins-vlc/"
+  text: "Veins VLC"
+fico4omnet:
+  link: "https://core-researchgroup.de/projects/simulation/"
+  text: "FiCo4OMNET"
+simu5g:
+  link: "http://simu5g.org"
+  text: "Simu5G"
+quisp:
+  link: "https://aqua.sfc.wide.ad.jp/quisp_website/"
+  text: "QuISP"
+flora:
+  link: "https://flora.aalto.fi/"
+  text: "FLoRa"
