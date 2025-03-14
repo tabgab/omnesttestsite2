@@ -446,7 +446,6 @@ table.footerlinks a:hover {
 /* Simple next link for tour pages */
 .tour-next-link {
     text-align: right;
-    margin: 20px 0;
     clear: both;
 }
 
