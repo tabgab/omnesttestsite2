@@ -1,182 +1,69 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
 <?xml version="1.0" encoding="UTF-8"?>
+{% comment %}
+can use front matter in any page:
+sitemap:
+  lastmod: 2018-05-25
+  priority: 0.7
+  changefreq: 'weekly'
+  exclude: 'no'
+{% endcomment %}
+
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://staging.omnest.com/</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/omnest-is</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/try-omnest</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/contact</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/services</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/company</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/2024/10/28/omnest-6.1.0.html</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/2024/03/18/omnest-6.0.3.html</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/tour-models</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/tour-development</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/tour-simulation</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/tour-analysis</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/tour-integrates</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/overview</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/references</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/licensingfaq</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/licensing</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/license</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/comparison</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/support</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/downloads</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/partners</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/application-areas</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/simulation-models</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/ide</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/demo-videos</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/documentation</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/publications</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/case-studies</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/netsim-references</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/network-simulation-book</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/docs/InstallGuide.pdf</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/docs/SimulationManual.pdf</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://staging.omnest.com/docs/UserGuide.pdf</loc>
-  <lastmod>2025-03-14T12:49:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+  {% for post in site.posts %}
+    {% unless post.published == false %}
+    <url>
+      <loc>{{ site.url }}{{ post.url  | remove: ".html" }}</loc>
+      {% if post.sitemap.lastmod %}
+      <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif post.date %}
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if post.sitemap.changefreq %}
+      <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% else %}
+      <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if post.sitemap.priority %}
+      <priority>{{ post.sitemap.priority }}</priority>
+      {% else %}
+      <priority>0.5</priority>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+  {% for page in site.pages %}
+    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" %}
+    <url>
+      <loc>{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
+      {% if page.sitemap.lastmod %}
+      <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif page.date %}
+      <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if page.sitemap.changefreq %}
+      <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+      {% else %}
+      <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if page.sitemap.priority %}
+      <priority>{{ page.sitemap.priority }}</priority>
+      {% else %}
+      <priority>0.3</priority>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
 </urlset>
