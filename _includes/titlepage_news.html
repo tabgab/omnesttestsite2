@@ -7,7 +7,7 @@
     {% if news_item.image %}
       <img alt="" src="{{ news_item.image }}" width="150" style="float:left; margin-right:10px; margin-top:3px">
     {% endif %}
-    <p class="newstitle"><a href="{{ news_item.url }}">{{ news_item.title }}</a></p>
+    <p class="newstitle"><a href="{{ news_item.url | remove: '.html' }}">{{ news_item.title }}</a></p>
     <p class="newsdate">{{ news_item.date }}</p>
   </div>
   {% assign count = count | plus: 1 %}
