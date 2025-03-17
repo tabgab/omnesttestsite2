@@ -7,8 +7,9 @@
     {% if news_item.image %}
       <img alt="" src="{{ news_item.image }}" width="150" style="float:left; margin-right:10px; margin-top:3px">
     {% endif %}
-    <p class="newstitle"><a href="{{ news_item.url | remove: '.html' }}">{{ news_item.title }}</a></p>
-    <p class="newsdate">{{ news_item.date }}</p>
+    <p class="newstitle"><a href="{{ news_item.link | default: news_item.url | remove: '.html' }}">{{ news_item.title }}</a></p>
+    <p class="newsdate">{{ news_item.date | date: "%B %d, %Y" }}</p>
+    {{ news_item.excerpt | default: news_item.content }}
   </div>
   {% assign count = count | plus: 1 %}
   {% if count >= maxitems %}

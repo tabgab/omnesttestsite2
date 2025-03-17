@@ -18,7 +18,7 @@
   {% assign counter = counter | plus: 1 %}
   <a name="news-{{ counter }}"></a>
   <p class="newstitle"><a href="{{ news_item.url | remove: '.html' }}">{{ news_item.title }}</a></p>
-  <p class="newsdate">{{ news_item.date }}</p>
+  <p class="newsdate">{{ news_item.date | date: "%B %d, %Y"}}</p>
   <p>
     {{ news_item.excerpt | default: news_item.content }}
     {% if news_item.link %}
