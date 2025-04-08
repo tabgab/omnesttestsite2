@@ -1,0 +1,395 @@
+/* 
+ * OMNEST Website - Responsive Styles
+ * Contains media queries for responsive design
+ */
+
+/* Import variables */
+@import url('variables.css');
+
+/* 
+ * Mobile-first approach:
+ * Default styles are for mobile devices
+ * Media queries target larger screens
+ */
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+  /* Typography */
+  h1 {
+    font-size: calc(var(--font-size-4xl) * 1.1);
+  }
+  
+  h2 {
+    font-size: calc(var(--font-size-3xl) * 1.1);
+  }
+  
+  /* Hero section */
+  .hero h1 {
+    font-size: calc(var(--font-size-5xl) * 0.8);
+  }
+  
+  .hero p {
+    font-size: var(--font-size-lg);
+  }
+  
+  /* Buttons */
+  .btn-group {
+    flex-direction: row;
+  }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  /* Typography */
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .hero h1 {
+    font-size: var(--font-size-5xl);
+  }
+  
+  .hero p {
+    font-size: var(--font-size-xl);
+  }
+  
+  /* Navigation */
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .nav-item {
+    margin-left: var(--spacing-lg);
+    width: auto;
+    text-align: left;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0;
+    border-bottom: none;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  /* Layout */
+  .row {
+    flex-direction: row;
+  }
+  
+  .col {
+    margin-bottom: 0;
+  }
+  
+  /* Cards */
+  .card {
+    height: 100%;
+  }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+  /* Typography */
+  body {
+    font-size: calc(var(--font-size-md) * 1.05);
+  }
+  
+  h1 {
+    font-size: calc(var(--font-size-4xl) * 1.1);
+  }
+  
+  h2 {
+    font-size: calc(var(--font-size-3xl) * 1.1);
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .hero h1 {
+    font-size: calc(var(--font-size-5xl) * 1.1);
+  }
+  
+  /* Container */
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  /* Container */
+  .container {
+    max-width: var(--container-width);
+  }
+  
+  /* Typography */
+  body {
+    font-size: var(--font-size-md);
+  }
+  
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  /* Hero section */
+  .hero h1 {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .navbar, .footer, .hero {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 24pt;
+  }
+  
+  h2 {
+    font-size: 20pt;
+  }
+  
+  h3 {
+    font-size: 16pt;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr, img {
+    page-break-inside: avoid;
+  }
+  
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Specific page responsive adjustments */
+
+/* Homepage */
+@media (max-width: 768px) {
+  .references-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  
+  .reference-logo {
+    max-width: 100px;
+  }
+}
+
+/* Tour pages */
+@media (max-width: 768px) {
+  .tour-navigation {
+    flex-direction: column;
+  }
+  
+  .tour-navigation .btn {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Documentation pages */
+@media (max-width: 992px) {
+  .documentation-sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .documentation-content {
+    margin-left: 0;
+  }
+}
+
+/* Case studies */
+@media (max-width: 768px) {
+  .case-study-image {
+    float: none;
+    margin: 0 0 var(--spacing-md) 0;
+    width: 100%;
+  }
+}
+
+/* Download pages */
+@media (max-width: 768px) {
+  .download-options {
+    flex-direction: column;
+  }
+  
+  .download-option {
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+/* Contact form */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Specific component responsive adjustments */
+
+/* Tables */
+@media (max-width: 768px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+}
+
+/* Forms */
+@media (max-width: 576px) {
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-right: 0;
+  }
+}
+
+/* Modals */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+}
+
+/* Breadcrumbs */
+@media (max-width: 576px) {
+  .breadcrumb {
+    flex-wrap: wrap;
+  }
+}
+
+/* Pagination */
+@media (max-width: 576px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
+
+/* Alerts */
+@media (max-width: 576px) {
+  .alert {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+/* Tooltips */
+@media (max-width: 576px) {
+  .tooltip {
+    max-width: 200px;
+  }
+}
+
+/* Popovers */
+@media (max-width: 576px) {
+  .popover {
+    max-width: 200px;
+  }
+}
+
+/* Carousel */
+@media (max-width: 576px) {
+  .carousel-caption {
+    position: static;
+    padding: var(--spacing-md);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Navbar */
+@media (max-width: 768px) {
+  .navbar-brand {
+    max-width: 70%;
+  }
+  
+  .navbar-brand img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,191 @@
+/* Responsive styles */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .content-area {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Fix for collapsible headings */
+    h2.framed[id] {
+        padding-left: 40px !important;
+        background-position: 10px center !important;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    p, li {
+        font-size: 0.95rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Fix for home page title */
+    main#main-content > h1,
+    main#main-content > h2,
+    main#main-content > h3,
+    main#main-content > p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Exception for elements inside containers */
+    .container h1, .container h2, .container h3, .container p, .container li,
+    .card h1, .card h2, .card h3, .card p, .card li,
+    .hero h1, .hero h2, .hero h3, .hero p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-column {
+        margin-bottom: 20px;
+    }
+    
+    /* Ensure all content has proper margins */
+    #header, 
+    #main-content,
+    .page-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Fix for tables on mobile */
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .content-area {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    /* Fix for collapsible headings */
+    h2.framed[id] {
+        padding-left: 35px !important;
+        background-position: 5px center !important;
+    }
+    
+    /* Fix for home page title */
+    main#main-content > h1,
+    main#main-content > h2,
+    main#main-content > h3,
+    main#main-content > p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Exception for elements inside containers */
+    .container h1, .container h2, .container h3, .container p, .container li,
+    .card h1, .card h2, .card h3, .card p, .card li,
+    .hero h1, .hero h2, .hero h3, .hero p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Ensure all content has proper margins */
+    #header, 
+    #main-content,
+    .page-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Fix for home page title */
+    main#main-content > h1,
+    main#main-content > h2,
+    main#main-content > h3,
+    main#main-content > p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Ensure content doesn't touch the edge on any device */
+.content-area {
+    padding: 20px;
+}
+
+#header h1 {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Fix for any direct children of body that might not have proper container */
+body > div:not(.container):not(.page-wrapper):not(.footer) {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Ensure images don't overflow their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure code blocks don't overflow */
+pre, code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Fix for hero section on home page */
+@media (max-width: 767.98px) {
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .hero h1, .hero p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

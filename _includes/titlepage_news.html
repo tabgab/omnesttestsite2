@@ -3,14 +3,29 @@
 {% assign news = site.posts %}
 
 {% for news_item in news %}
-  <div class="news">
+  <div class="news-item mb-4">
     {% if news_item.image %}
-      <img alt="" src="{{ news_item.image }}" width="150" style="float:left; margin-right:10px; margin-top:3px">
+      <div class="row">
+        <div class="col-md-4 col-sm-3 mb-2 mb-sm-0">
+          <img src="{{ news_item.image }}" alt="{{ news_item.title }}" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 col-sm-9">
+          <h3 class="news-title h5 mb-1"><a href="{{ news_item.link | default: news_item.url | remove: '.html' }}">{{ news_item.title }}</a></h3>
+          <p class="news-date text-muted small mb-2">{{ news_item.date | date: "%B %d, %Y" }}</p>
+          <div class="news-excerpt">{{ news_item.excerpt | default: news_item.content }}</div>
+        </div>
+      </div>
+    {% else %}
+      <h3 class="news-title h5 mb-1"><a href="{{ news_item.link | default: news_item.url | remove: '.html' }}">{{ news_item.title }}</a></h3>
+      <p class="news-date text-muted small mb-2">{{ news_item.date | date: "%B %d, %Y" }}</p>
+      <div class="news-excerpt">{{ news_item.excerpt | default: news_item.content }}</div>
     {% endif %}
-    <p class="newstitle"><a href="{{ news_item.link | default: news_item.url | remove: '.html' }}">{{ news_item.title }}</a></p>
-    <p class="newsdate">{{ news_item.date | date: "%B %d, %Y" }}</p>
-    {{ news_item.excerpt | default: news_item.content }}
   </div>
+  
+  {% if forloop.last == false and count < maxitems %}
+    <hr class="my-3">
+  {% endif %}
+  
   {% assign count = count | plus: 1 %}
   {% if count >= maxitems %}
     {% break %}
@@ -18,5 +33,7 @@
 {% endfor %}
 
 {% if news | size > maxitems %}
-  <p><a href="news">More news&nbsp;&raquo;</a></p>
+  <div class="text-right mt-3">
+    <a href="news" class="card-link">All news</a>
+  </div>
 {% endif %}

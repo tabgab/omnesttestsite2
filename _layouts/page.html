@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 {% include head.html %}
 </head>
@@ -16,8 +16,23 @@
 
 <body>
 {% include leadin.html menu=menu %}
+<main id="main-content" class="animate-fade-in">
 {{ content }}
+</main>
 {% include leadout.html %}
+
+<!-- Mobile navigation toggle script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.navbar-toggle');
+    const navMenu = document.querySelector('.navbar-nav');
+    
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+      });
+    }
+  });
+</script>
 </body>
 </html>
-

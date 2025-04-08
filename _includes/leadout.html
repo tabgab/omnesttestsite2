@@ -1,15 +1,116 @@
-                </div>
-                <div style="clear:both"></div>
+</div> <!-- End of content-area -->
+        </div> <!-- End of row -->
+    </div> <!-- End of container -->
+</div> <!-- End of page-wrapper -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Product</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="/omnest-is">What is OMNEST?</a></li>
+                    <li class="footer-link"><a href="/tour-models">Product Tour</a></li>
+                    <li class="footer-link"><a href="/overview">Overview</a></li>
+                    <li class="footer-link"><a href="/application-areas">Application Areas</a></li>
+                </ul>
             </div>
-            <div style="clear:both"></div>
+            <div class="footer-column">
+                <h3>Learn More</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="/simulation-models">Simulation Models</a></li>
+                    <li class="footer-link"><a href="/ide">Simulation IDE</a></li>
+                    <li class="footer-link"><a href="/demo-videos">Demo Videos</a></li>
+                    <li class="footer-link"><a href="/documentation">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>OMNEST In the World</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="/references">Customers</a></li>
+                    <li class="footer-link"><a href="/publications">Publications</a></li>
+                    <li class="footer-link"><a href="/case-studies">Case Studies</a></li>
+                    <li class="footer-link"><a href="/network-simulation-book">Book Recommendation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Purchase</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="/contact">Contact Us / Request Quotation</a></li>
+                    <li class="footer-link"><a href="/licensingfaq">Do I Need a License?</a></li>
+                    <li class="footer-link"><a href="/licensing">Licensing Options</a></li>
+                    <li class="footer-link"><a href="/support">Technical Support</a></li>
+                </ul>
+            </div>
         </div>
-        <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_top.png); background-repeat:no-repeat; background-position:center top"></div>
-        <div id="footer" style="background-color:#999999; padding: 15px 40px 15px 40px; text-align: center;">
-            <a href="#"
-              onclick="window.displayPreferenceModal();return false;"
-              id="termly-consent-preferences">Consent Preferences</a><br>
-            Copyright (c), Cogitative Software FZE. All rights reserved.
+        <div class="footer-bottom">
+            <a href="#" onclick="window.displayPreferenceModal();return false;" id="termly-consent-preferences" class="mb-2 d-inline-block">Consent Preferences</a>
+            <p>Copyright (c), Cogitative Software FZE. All rights reserved.</p>
         </div>
-        <div style="width:100%; background-color:#999999; height: 10px; background-image:url(common/images/footer_bottom.png); background-repeat:no-repeat; background-position:center bottom"></div>
     </div>
-  </div>
+</footer>
+
+<!-- Back to top button -->
+<a href="#" id="back-to-top" class="back-to-top d-none d-md-flex" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+</a>
+
+<script>
+    // Back to top button
+    document.addEventListener('DOMContentLoaded', function() {
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        if (backToTopButton) {
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('active');
+                } else {
+                    backToTopButton.classList.remove('active');
+                }
+            });
+            
+            // Smooth scroll to top when clicked
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
+</script>
+
+<style>
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-primary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    .back-to-top.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .back-to-top:hover {
+        background-color: var(--color-primary-dark);
+        transform: translateY(-3px);
+    }
+</style>

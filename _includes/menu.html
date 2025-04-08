@@ -1,23 +1,92 @@
 {% assign menu = include.menu %}
 {% assign current_page_url = page.url | remove: '.html' | remove: '/' %}
 
-<div class="vmenu">
-    {% for menuitem in menu %}
-        {% assign class_attr = "vmenuitem" %}
-        {% if menuitem.link == current_page_url and menuitem.submenu == null %}
-            {% assign class_attr = class_attr | append: " selected" %}
-        {% endif %}
-        <div class="{{ class_attr }}"><a id="menu" href="{{ site.baseurl }}/{{ menuitem.link }}">{{ menuitem.text }}</a></div>
-        {% if menuitem.submenu %}
-            <div class="vsubmenu">
-                {% for submenuitem in menuitem.submenu %}
-                    {% assign class_attr = "vsubmenuitem" %}
-                    {% if submenuitem.link == current_page_url %}
-                        {% assign class_attr = class_attr | append: " selected" %}
-                    {% endif %}
-                    <div class="{{ class_attr }}"><a id="menu" href="{{ site.baseurl }}/{{ submenuitem.link }}">{{ submenuitem.text }}</a></div>
-                {% endfor %}
-            </div>
-        {% endif %}
-    {% endfor %}
+<div class="sidebar-menu">
+    <nav class="nav flex-column">
+        {% for menuitem in menu %}
+            {% assign class_attr = "nav-link" %}
+            {% if menuitem.link == current_page_url and menuitem.submenu == null %}
+                {% assign class_attr = class_attr | append: " active" %}
+            {% endif %}
+            <a href="{{ site.baseurl }}/{{ menuitem.link }}" class="{{ class_attr }}">{{ menuitem.text }}</a>
+            
+            {% if menuitem.submenu %}
+                <div class="submenu">
+                    {% for submenuitem in menuitem.submenu %}
+                        {% assign class_attr = "nav-link submenu-link" %}
+                        {% if submenuitem.link == current_page_url %}
+                            {% assign class_attr = class_attr | append: " active" %}
+                        {% endif %}
+                        <a href="{{ site.baseurl }}/{{ submenuitem.link }}" class="{{ class_attr }}">{{ submenuitem.text }}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </nav>
 </div>
+
+<!-- Mobile sidebar toggle button (only visible on small screens) -->
+<div class="d-md-none mb-4">
+    <button class="btn btn-primary btn-block sidebar-toggle" id="sidebarToggle">
+        Show Menu
+    </button>
+</div>
+
+<style>
+    .sidebar-menu {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .sidebar-menu .nav-link {
+        padding: var(--spacing-sm) var(--spacing-md);
+        color: var(--color-primary);
+        border-left: 3px solid transparent;
+        transition: all var(--transition-fast);
+    }
+    
+    .sidebar-menu .nav-link:hover {
+        background-color: var(--color-background-alt);
+        border-left-color: var(--color-primary-light);
+    }
+    
+    .sidebar-menu .nav-link.active {
+        color: var(--color-accent);
+        font-weight: 600;
+        border-left-color: var(--color-accent);
+    }
+    
+    .sidebar-menu .submenu {
+        padding-left: var(--spacing-lg);
+    }
+    
+    .sidebar-menu .submenu-link {
+        font-size: 0.9rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+    
+    /* Mobile sidebar */
+    @media (max-width: 767.98px) {
+        .sidebar-menu {
+            display: none;
+        }
+        
+        .sidebar-menu.active {
+            display: block;
+            margin-bottom: var(--spacing-lg);
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebarMenu = document.querySelector('.sidebar-menu');
+        
+        if (sidebarToggle && sidebarMenu) {
+            sidebarToggle.addEventListener('click', function() {
+                sidebarMenu.classList.toggle('active');
+                sidebarToggle.textContent = sidebarMenu.classList.contains('active') ? 'Hide Menu' : 'Show Menu';
+            });
+        }
+    });
+</script>

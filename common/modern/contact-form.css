@@ -1,0 +1,147 @@
+/* Contact form responsive styles */
+
+/* Base form styles */
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Checkbox container styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 30px; /* Ensure consistent height */
+}
+
+.checkbox-container .checkbox-text {
+  flex: 1;
+  padding-right: 15px;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: visible; /* Allow text to overflow */
+  text-overflow: clip; /* Don't add ellipsis */
+  width: auto; /* Allow text to take its natural width */
+  max-width: none; /* Remove any max-width constraints */
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-left: auto;
+  transform: scale(1.2);
+  flex-shrink: 0;
+  position: relative;
+  top: 0;
+}
+
+/* Custom send button */
+.contact-form button[type="submit"],
+.contact-form input[type="submit"] {
+  background-color: #005CAC;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 120px;
+  height: auto;
+}
+
+.contact-form button[type="submit"]:hover,
+.contact-form input[type="submit"]:hover {
+  background-color: #004a8a;
+}
+
+/* Fix for the send button */
+.contact-form .send-button-container {
+  background-color: #e9eaea; /* Same as page background */
+  padding: 10px 0;
+  border: none;
+}
+
+/* Fix for the left column of the send button row */
+.contact-form tr:last-child td:first-child,
+.contact-form .send-button-row td:first-child {
+  background-color: #e9eaea; /* Same as page background */
+}
+
+/* Fix for the Areas of Interest section */
+.contact-form td {
+  vertical-align: middle; /* Ensure vertical alignment */
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+  .contact-form table {
+    width: 100%;
+    border-spacing: 5px;
+  }
+  
+  .contact-form td {
+    display: block;
+    text-align: left !important;
+    padding: 5px 0;
+  }
+  
+  .contact-form td:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form textarea,
+  .contact-form select {
+    width: 100% !important;
+    max-width: 100%;
+  }
+  
+  /* Improve checkbox alignment on mobile */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    min-height: 30px; /* Ensure consistent height */
+  }
+  
+  .checkbox-container .checkbox-text {
+    flex: 1;
+    padding-right: 15px;
+    white-space: normal; /* Allow text wrapping on mobile */
+    width: auto;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-left: auto;
+    transform: scale(1.2);
+    flex-shrink: 0;
+  }
+  
+  /* Fix for the send button on mobile */
+  .contact-form input[type="image"] {
+    max-width: 120px !important;
+    height: auto !important;
+  }
+}
+
+/* Fix for the huge send button */
+.contact-form input[type="image"] {
+  max-width: 120px !important;
+  height: auto !important;
+}

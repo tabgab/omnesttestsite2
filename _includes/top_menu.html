@@ -15,12 +15,18 @@
   {% assign active_section = "buy" %}
 {% endif %}
 
-<a href="{{ site.baseurl }}/omnest-is" id="topmenu" class="{% if active_section == 'product' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">PRODUCT</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/try-omnest" id="topmenu" class="{% if active_section == 'try' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">TRY OMNEST</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/contact" id="topmenu" class="{% if active_section == 'buy' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">HOW TO BUY</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/services" id="topmenu" class="{% if active_section == 'services' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">SERVICES</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{{ site.baseurl }}/company" id="topmenu" class="{% if active_section == 'about' %}topmenuitem_selected{% else %}topmenuitem{% endif %}">ABOUT US</a>
+<li class="nav-item">
+    <a href="{{ site.baseurl }}/omnest-is" class="nav-link {% if active_section == 'product' %}active{% endif %}">Product</a>
+</li>
+<li class="nav-item">
+    <a href="{{ site.baseurl }}/try-omnest" class="nav-link {% if active_section == 'try' %}active{% endif %}">Try OMNEST</a>
+</li>
+<li class="nav-item">
+    <a href="{{ site.baseurl }}/contact" class="nav-link {% if active_section == 'buy' %}active{% endif %}">How to Buy</a>
+</li>
+<li class="nav-item">
+    <a href="{{ site.baseurl }}/services" class="nav-link {% if active_section == 'services' %}active{% endif %}">Services</a>
+</li>
+<li class="nav-item">
+    <a href="{{ site.baseurl }}/company" class="nav-link {% if active_section == 'about' %}active{% endif %}">About Us</a>
+</li>

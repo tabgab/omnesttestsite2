@@ -1,0 +1,181 @@
+/* Main CSS file for OMNEST website */
+
+/* Import all CSS files in the correct order */
+
+/* Variables first */
+@import url('variables.css');
+
+/* Base styles */
+@import url('base.css');
+
+/* Grid system */
+@import url('grid.css');
+
+/* Components */
+@import url('components.css');
+
+/* Utility classes */
+@import url('utilities.css');
+
+/* Contact form styles */
+@import url('contact-form-direct.css');
+
+/* Responsive styles (should be last) */
+@import url('responsive.css');
+
+/* Additional custom styles */
+
+/* Page transitions */
+.page-transition {
+    transition: opacity 0.3s ease;
+}
+
+.page-transition.fade-out {
+    opacity: 0;
+}
+
+.page-transition.fade-in {
+    opacity: 1;
+}
+
+/* Page wrapper */
+.page-wrapper {
+    min-height: calc(100vh - 70px - 300px); /* Viewport height minus header and footer */
+    padding: var(--spacing-lg) 0;
+}
+
+/* Content area */
+.content-area {
+    padding: var(--spacing-md);
+}
+
+/* Ensure proper padding for all content */
+#header, #main-content {
+    padding: 0 var(--spacing-md);
+}
+
+/* Fix for hero section on home page */
+h1, h2, h3, h4, h5, h6, p {
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+}
+
+/* Fix for hero section on home page */
+.hero h1, .hero p {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Ensure all content has proper margins on mobile */
+@media (max-width: 767.98px) {
+    .content-area {
+        padding: var(--spacing-md) var(--spacing-md);
+    }
+    
+    #header, #main-content {
+        padding: 0 var(--spacing-md);
+    }
+    
+    /* Fix for direct children of body */
+    body > div:not(.container):not(.page-wrapper):not(.footer) {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    /* Fix for home page title */
+    main#main-content > h1,
+    main#main-content > h2,
+    main#main-content > h3,
+    main#main-content > p {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    /* Fix for container on mobile */
+    .container {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+}
+
+/* Slideshow enhancements */
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Code blocks */
+pre, code {
+    font-family: monospace;
+    background-color: var(--color-background-alt);
+    border-radius: var(--radius-sm);
+}
+
+pre {
+    padding: var(--spacing-md);
+    overflow-x: auto;
+    margin-bottom: var(--spacing-md);
+}
+
+code {
+    padding: 0.2em 0.4em;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--color-border);
+}
+
+th {
+    background-color: var(--color-background-alt);
+    font-weight: var(--font-weight-semibold);
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-background-alt);
+}
+
+/* Blockquotes */
+blockquote {
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin: 0 0 var(--spacing-lg);
+    border-left: 4px solid var(--color-primary);
+    background-color: var(--color-background-alt);
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Horizontal rule */
+hr {
+    margin: var(--spacing-lg) 0;
+    border: 0;
+    border-top: 1px solid var(--color-border);
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .page-wrapper {
+        min-height: auto;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}

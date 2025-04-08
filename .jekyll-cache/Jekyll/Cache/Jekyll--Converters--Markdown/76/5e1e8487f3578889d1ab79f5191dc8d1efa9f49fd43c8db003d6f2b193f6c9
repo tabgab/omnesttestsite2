@@ -1,0 +1,3 @@
+I"!<p>This version is intended to be the last release of the 5.x series. The main purpose of this release is to make it possible to write model code, primarily NED, which is also compatible with the upcoming OMNEST 6.0. It also contains several bug fixes backported from the 6.0 branch.</p>
+
+:ET
