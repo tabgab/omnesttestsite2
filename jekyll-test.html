@@ -1,0 +1,36 @@
+---
+layout: default
+title: Jekyll Test Page
+---
+
+<div class="container">
+    <h1>Jekyll Test Page</h1>
+    <p>This page tests if Jekyll is processing the site correctly.</p>
+    
+    <h2>Site Variables</h2>
+    <pre>
+site.title: {{ site.title }}
+site.baseurl: {{ site.baseurl }}
+site.url: {{ site.url }}
+page.url: {{ page.url }}
+page.path: {{ page.path }}
+    </pre>
+    
+    <h2>CSS Test</h2>
+    <p>The following CSS files should be loaded correctly:</p>
+    <ul>
+        <li>{{ site.baseurl }}/common/modern/main.css</li>
+        <li>{{ site.baseurl }}/common/modern/animations.css</li>
+        <li>{{ site.baseurl }}/common/omnest.css</li>
+    </ul>
+    
+    <h2>Navigation</h2>
+    <ul>
+        <li><a href="{{ site.baseurl }}/">Main Site</a></li>
+        <li><a href="{{ site.baseurl }}/index-simple.html">Simple Index</a></li>
+        <li><a href="{{ site.baseurl }}/css-test.html">CSS Test</a></li>
+        <li><a href="{{ site.baseurl }}/github-pages-config.html">GitHub Pages Configuration</a></li>
+        <li><a href="{{ site.baseurl }}/github-actions-test.html">GitHub Actions Test</a></li>
+        <li><a href="{{ site.baseurl }}/workflow-status.html">Workflow Status</a></li>
+    </ul>
+</div>
