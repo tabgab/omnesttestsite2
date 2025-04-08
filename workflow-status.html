@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Actions Workflow Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0077cc;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        .error {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+        .info {
+            background-color: #d9edf7;
+            color: #31708f;
+        }
+    </style>
+    <script>
+        function checkWorkflowStatus() {
+            const statusDiv = document.getElementById('status');
+            
+            // Display current time
+            const timeElement = document.createElement('div');
+            timeElement.className = 'status info';
+            timeElement.innerHTML = `<strong>Current Time:</strong> ${new Date().toLocaleString()}`;
+            statusDiv.appendChild(timeElement);
+            
+            // Display build information
+            const buildElement = document.createElement('div');
+            buildElement.className = 'status info';
+            buildElement.innerHTML = `<strong>Build Information:</strong><br>
+                This page was generated at: {{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }}<br>
+                Jekyll Version: {{ jekyll.version }}<br>
+                GitHub Pages Version: {{ site.github.versions.github-pages }}`;
+            statusDiv.appendChild(buildElement);
+            
+            // Display environment variables
+            const envElement = document.createElement('div');
+            envElement.className = 'status info';
+            envElement.innerHTML = `<strong>Environment Variables:</strong><br>
+                baseurl: {{ site.baseurl }}<br>
+                url: {{ site.url }}`;
+            statusDiv.appendChild(envElement);
+            
+            // Check if CSS files are accessible
+            const cssFiles = [
+                '/omnesttestsite2/common/modern/main.css',
+                '/omnesttestsite2/common/modern/animations.css',
+                '/omnesttestsite2/common/omnest.css'
+            ];
+            
+            cssFiles.forEach(cssFile => {
+                fetch(cssFile)
+                    .then(response => {
+                        const cssElement = document.createElement('div');
+                        cssElement.className = response.ok ? 'status success' : 'status error';
+                        if (response.ok) {
+                            cssElement.innerHTML = `<strong>CSS File:</strong> ${cssFile} - <span style="color: green;">Accessible</span>`;
+                        } else {
+                            cssElement.innerHTML = `<strong>CSS File:</strong> ${cssFile} - <span style="color: red;">Not accessible (${response.status} ${response.statusText})</span>`;
+                        }
+                        statusDiv.appendChild(cssElement);
+                    })
+                    .catch(error => {
+                        const cssElement = document.createElement('div');
+                        cssElement.className = 'status error';
+                        cssElement.innerHTML = `<strong>CSS File:</strong> ${cssFile} - <span style="color: red;">Error: ${error.message}</span>`;
+                        statusDiv.appendChild(cssElement);
+                    });
+            });
+        }
+        
+        window.onload = checkWorkflowStatus;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Actions Workflow Status</h1>
+        <p>This page checks the status of the GitHub Actions workflow.</p>
+        
+        <div id="status"></div>
+        
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="index-test.html">Index Test Page</a></li>
+            <li><a href="test.html">Basic Test Page</a></li>
+            <li><a href="css-test.html">CSS Test Page</a></li>
+            <li><a href="github-pages-config.html">GitHub Pages Configuration</a></li>
+            <li><a href="github-actions-test.html">GitHub Actions Test</a></li>
+        </ul>
+    </div>
+</body>
+</html>
