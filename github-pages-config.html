@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Pages Configuration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0077cc;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .config-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function displayPageInfo() {
+            const infoDiv = document.getElementById('page-info');
+            
+            // Display current URL
+            const urlElement = document.createElement('div');
+            urlElement.className = 'config-item';
+            urlElement.innerHTML = `<strong>Current URL:</strong> ${window.location.href}`;
+            infoDiv.appendChild(urlElement);
+            
+            // Display base URL
+            const baseUrlElement = document.createElement('div');
+            baseUrlElement.className = 'config-item';
+            const baseUrl = document.querySelector('base')?.href || 'No base tag found';
+            baseUrlElement.innerHTML = `<strong>Base URL:</strong> ${baseUrl}`;
+            infoDiv.appendChild(baseUrlElement);
+            
+            // Display document.baseURI
+            const baseURIElement = document.createElement('div');
+            baseURIElement.className = 'config-item';
+            baseURIElement.innerHTML = `<strong>document.baseURI:</strong> ${document.baseURI}`;
+            infoDiv.appendChild(baseURIElement);
+            
+            // Check if CSS files are accessible
+            const cssFiles = [
+                '/omnesttestsite2/common/modern/main.css',
+                '/omnesttestsite2/common/modern/animations.css',
+                '/omnesttestsite2/common/omnest.css'
+            ];
+            
+            cssFiles.forEach(cssFile => {
+                fetch(cssFile)
+                    .then(response => {
+                        const cssElement = document.createElement('div');
+                        cssElement.className = 'config-item';
+                        if (response.ok) {
+                            cssElement.innerHTML = `<strong>CSS File:</strong> ${cssFile} - <span style="color: green;">Accessible</span>`;
+                        } else {
+                            cssElement.innerHTML = `<strong>CSS File:</strong> ${cssFile} - <span style="color: red;">Not accessible (${response.status} ${response.statusText})</span>`;
+                        }
+                        infoDiv.appendChild(cssElement);
+                    })
+                    .catch(error => {
+                        const cssElement = document.createElement('div');
+                        cssElement.className = 'config-item';
+                        cssElement.innerHTML = `<strong>CSS File:</strong> ${cssFile} - <span style="color: red;">Error: ${error.message}</span>`;
+                        infoDiv.appendChild(cssElement);
+                    });
+            });
+            
+            // Display meta tags
+            const metaTags = document.getElementsByTagName('meta');
+            const metaElement = document.createElement('div');
+            metaElement.className = 'config-item';
+            metaElement.innerHTML = `<strong>Meta Tags:</strong><br>`;
+            for (let i = 0; i < metaTags.length; i++) {
+                const meta = metaTags[i];
+                metaElement.innerHTML += `${meta.outerHTML}<br>`;
+            }
+            infoDiv.appendChild(metaElement);
+        }
+        
+        window.onload = displayPageInfo;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Pages Configuration</h1>
+        <p>This page displays information about the GitHub Pages configuration.</p>
+        
+        <div id="page-info"></div>
+        
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index-test.html">Index Test Page</a></li>
+            <li><a href="test.html">Basic Test Page</a></li>
+            <li><a href="css-test.html">CSS Test Page</a></li>
+            <li><a href="index.html">Main Site</a></li>
+        </ul>
+    </div>
+</body>
+</html>
