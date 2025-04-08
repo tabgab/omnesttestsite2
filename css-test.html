@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0077cc;
+        }
+        .test-result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        .error {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+    </style>
+    <script>
+        function testCssFile(url) {
+            return new Promise((resolve, reject) => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = url;
+                
+                link.onload = () => {
+                    resolve({ url, status: 'success' });
+                };
+                
+                link.onerror = () => {
+                    reject({ url, status: 'error' });
+                };
+                
+                document.head.appendChild(link);
+            });
+        }
+        
+        async function runTests() {
+            const cssFiles = [
+                '/omnesttestsite2/common/modern/main.css',
+                '/omnesttestsite2/common/modern/animations.css',
+                '/omnesttestsite2/common/omnest.css'
+            ];
+            
+            const resultsDiv = document.getElementById('results');
+            
+            for (const cssFile of cssFiles) {
+                try {
+                    await testCssFile(cssFile);
+                    const resultElement = document.createElement('div');
+                    resultElement.className = 'test-result success';
+                    resultElement.textContent = `✅ ${cssFile} loaded successfully`;
+                    resultsDiv.appendChild(resultElement);
+                } catch (error) {
+                    const resultElement = document.createElement('div');
+                    resultElement.className = 'test-result error';
+                    resultElement.textContent = `❌ ${error.url} failed to load`;
+                    resultsDiv.appendChild(resultElement);
+                    
+                    // Try to fetch the file directly to get more information
+                    try {
+                        const response = await fetch(error.url);
+                        const statusElement = document.createElement('div');
+                        statusElement.textContent = `Status: ${response.status} ${response.statusText}`;
+                        resultElement.appendChild(statusElement);
+                    } catch (fetchError) {
+                        const errorElement = document.createElement('div');
+                        errorElement.textContent = `Fetch error: ${fetchError.message}`;
+                        resultElement.appendChild(errorElement);
+                    }
+                }
+            }
+        }
+        
+        window.onload = runTests;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Files Test</h1>
+        <p>This page tests if the CSS files are being served correctly.</p>
+        
+        <div id="results"></div>
+        
+        <h2>Direct Links</h2>
+        <p>You can also try accessing the CSS files directly:</p>
+        <ul>
+            <li><a href="/omnesttestsite2/common/modern/main.css" target="_blank">main.css</a></li>
+            <li><a href="/omnesttestsite2/common/modern/animations.css" target="_blank">animations.css</a></li>
+            <li><a href="/omnesttestsite2/common/omnest.css" target="_blank">omnest.css</a></li>
+        </ul>
+    </div>
+</body>
+</html>
