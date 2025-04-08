@@ -1,0 +1,104 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jekyll Variables Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0077cc;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .variable {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        .name {
+            font-weight: bold;
+            color: #0077cc;
+        }
+        .value {
+            font-family: monospace;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jekyll Variables Test</h1>
+        <p>This page displays the values of Jekyll variables.</p>
+        
+        <h2>Site Variables</h2>
+        <pre>
+<div class="variable"><span class="name">site.title:</span> <span class="value">{{ site.title }}</span></div>
+<div class="variable"><span class="name">site.baseurl:</span> <span class="value">{{ site.baseurl }}</span></div>
+<div class="variable"><span class="name">site.url:</span> <span class="value">{{ site.url }}</span></div>
+<div class="variable"><span class="name">site.time:</span> <span class="value">{{ site.time }}</span></div>
+<div class="variable"><span class="name">site.github:</span> <span class="value">{{ site.github }}</span></div>
+<div class="variable"><span class="name">site.github.url:</span> <span class="value">{{ site.github.url }}</span></div>
+<div class="variable"><span class="name">site.github.repository_url:</span> <span class="value">{{ site.github.repository_url }}</span></div>
+<div class="variable"><span class="name">site.github.owner_name:</span> <span class="value">{{ site.github.owner_name }}</span></div>
+<div class="variable"><span class="name">site.github.repository_name:</span> <span class="value">{{ site.github.repository_name }}</span></div>
+<div class="variable"><span class="name">site.github.project_title:</span> <span class="value">{{ site.github.project_title }}</span></div>
+<div class="variable"><span class="name">site.github.project_tagline:</span> <span class="value">{{ site.github.project_tagline }}</span></div>
+<div class="variable"><span class="name">site.github.build_revision:</span> <span class="value">{{ site.github.build_revision }}</span></div>
+<div class="variable"><span class="name">site.github.versions.jekyll:</span> <span class="value">{{ site.github.versions.jekyll }}</span></div>
+<div class="variable"><span class="name">site.github.versions.kramdown:</span> <span class="value">{{ site.github.versions.kramdown }}</span></div>
+<div class="variable"><span class="name">site.github.versions.liquid:</span> <span class="value">{{ site.github.versions.liquid }}</span></div>
+<div class="variable"><span class="name">site.github.versions.maruku:</span> <span class="value">{{ site.github.versions.maruku }}</span></div>
+<div class="variable"><span class="name">site.github.versions.rdiscount:</span> <span class="value">{{ site.github.versions.rdiscount }}</span></div>
+<div class="variable"><span class="name">site.github.versions.redcarpet:</span> <span class="value">{{ site.github.versions.redcarpet }}</span></div>
+<div class="variable"><span class="name">site.github.versions.RedCloth:</span> <span class="value">{{ site.github.versions.RedCloth }}</span></div>
+<div class="variable"><span class="name">site.github.versions.jemoji:</span> <span class="value">{{ site.github.versions.jemoji }}</span></div>
+<div class="variable"><span class="name">site.github.versions.jekyll-mentions:</span> <span class="value">{{ site.github.versions.jekyll-mentions }}</span></div>
+<div class="variable"><span class="name">site.github.versions.jekyll-redirect-from:</span> <span class="value">{{ site.github.versions.jekyll-redirect-from }}</span></div>
+<div class="variable"><span class="name">site.github.versions.jekyll-sitemap:</span> <span class="value">{{ site.github.versions.jekyll-sitemap }}</span></div>
+<div class="variable"><span class="name">site.github.versions.github-pages:</span> <span class="value">{{ site.github.versions.github-pages }}</span></div>
+<div class="variable"><span class="name">site.github.versions.ruby:</span> <span class="value">{{ site.github.versions.ruby }}</span></div>
+        </pre>
+        
+        <h2>Page Variables</h2>
+        <pre>
+<div class="variable"><span class="name">page.title:</span> <span class="value">{{ page.title }}</span></div>
+<div class="variable"><span class="name">page.url:</span> <span class="value">{{ page.url }}</span></div>
+<div class="variable"><span class="name">page.path:</span> <span class="value">{{ page.path }}</span></div>
+<div class="variable"><span class="name">page.name:</span> <span class="value">{{ page.name }}</span></div>
+<div class="variable"><span class="name">page.dir:</span> <span class="value">{{ page.dir }}</span></div>
+<div class="variable"><span class="name">page.layout:</span> <span class="value">{{ page.layout }}</span></div>
+        </pre>
+        
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="{{ site.baseurl }}/">Main Site</a></li>
+            <li><a href="{{ site.baseurl }}/index-simple.html">Simple Index</a></li>
+            <li><a href="{{ site.baseurl }}/css-test.html">CSS Test</a></li>
+            <li><a href="{{ site.baseurl }}/jekyll-test.html">Jekyll Test</a></li>
+            <li><a href="{{ site.baseurl }}/github-pages-config.html">GitHub Pages Configuration</a></li>
+            <li><a href="{{ site.baseurl }}/github-actions-test.html">GitHub Actions Test</a></li>
+            <li><a href="{{ site.baseurl }}/workflow-status.html">Workflow Status</a></li>
+        </ul>
+    </div>
+</body>
+</html>
