@@ -1,0 +1,49 @@
+# Site settings
+title: OMNEST - High-Performance Simulation for All Kinds of Networks
+email: info@omnest.com
+description: >-
+  OMNEST simulation software has been chosen by R&D staff, researchers
+  and engineers worldwide to investigate scenarios and design alternatives
+  in various wired/wireless networks, interconnection networks,
+  queueing-based performance models and other systems.
+baseurl: "/omnesttestsite2" # the subpath of your site, e.g. /blog
+url: "https://tabgab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - README.md
+  - run_local_server.sh
+  - start_local_server
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# Custom variables
+google_analytics: G-2J2F9G90F2
