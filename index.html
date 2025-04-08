@@ -1,62 +1,218 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>OMNEST Test Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #0077cc;
-        }
-        .test-links {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #f5f5f5;
-            border-radius: 5px;
-        }
-        .test-links h2 {
-            margin-top: 0;
-        }
-        .test-links ul {
-            padding-left: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>OMNEST Test Site</h1>
-        <p>This is a test site for the OMNEST website.</p>
-        
-        <div class="test-links">
-            <h2>Test Pages</h2>
-            <ul>
-                <li><a href="index-test.html">Index Test Page</a></li>
-                <li><a href="test.html">Basic Test Page</a></li>
-                <li><a href="css-test.html">CSS Test Page</a></li>
-                <li><a href="github-pages-config.html">GitHub Pages Configuration</a></li>
-                <li><a href="github-actions-test.html">GitHub Actions Test</a></li>
-            </ul>
-        </div>
-        
-        <div class="test-links">
-            <h2>Main Site</h2>
-            <ul>
-                <li><a href="index.html">Main Site</a></li>
-            </ul>
+---
+layout: titlepage
+title: OMNEST - High-Performance Simulation for All Kinds of Networks
+head_contribution: |
+  <style>
+    /* Animation styles */
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .animate-slide-up {
+      opacity: 0;
+      animation: slideUp 0.8s ease-in-out forwards;
+    }
+
+    .animate-slide-in-left {
+      opacity: 0;
+      animation: slideInLeft 0.8s ease-in-out forwards;
+    }
+
+    .animate-slide-in-right {
+      opacity: 0;
+      animation: slideInRight 0.8s ease-in-out forwards;
+    }
+
+    /* Delay classes */
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .delay-600 { animation-delay: 0.6s; }
+    .delay-700 { animation-delay: 0.7s; }
+    .delay-800 { animation-delay: 0.8s; }
+    .delay-900 { animation-delay: 0.9s; }
+    .delay-1000 { animation-delay: 1s; }
+
+    /* Card hover effects */
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Animated underline for links */
+    .animated-underline {
+      position: relative;
+      text-decoration: none;
+    }
+
+    .animated-underline::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0077CC;
+      transition: width 0.3s ease;
+    }
+
+    .animated-underline:hover::after {
+      width: 100%;
+    }
+
+    /* Animation keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="lead mb-5 animate-fade-in">
+                <strong>OMNEST simulation software has been chosen by R&amp;D staff, researchers
+                and engineers worldwide</strong> to investigate scenarios and design alternatives
+                in various wired/wireless networks, interconnection networks,
+                queueing-based performance models and other systems.
+                OMNEST simulations can also be embedded into your own software products.
+            </p>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover animate-slide-up delay-100">
+                        <div class="card-body">
+                            <h2 class="card-title"><a href="simulation-models" class="animated-underline">Simulation Models</a></h2>
+                            <p class="card-text">
+                                Models exist for Internet protocols, wireless networks, switched LANs, TSN,
+                                peer-to-peer networks, media streaming, mobile ad-hoc networks, mesh networks, 
+                                wireless sensor networks, vehicular networks, NoCs, optical networks,
+                                HPC clusters, cloud computing, SANs, and more...
+                            </p>
+                            <a href="simulation-models" class="card-link animated-underline">Explore the models</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover animate-slide-up delay-200">
+                        <div class="card-body">
+                            <h2 class="card-title"><a href="embedding" class="animated-underline">Add Simulation To Your Software Products!</a></h2>
+                            <p class="card-text">
+                                You can embed the simulation kernel or whole simulations into your software products.
+                                This allows you to integrate powerful simulation capabilities directly into your applications.
+                            </p>
+                            <a href="embedding" class="card-link animated-underline">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover animate-slide-up delay-300">
+                        <div class="card-body">
+                            <h2 class="card-title"><a href="services#orientation" class="animated-underline">Free Orientation/Consulting Session</a></h2>
+                            <p class="card-text">
+                                Simulation is an art, and one can save a substantial amount of time by choosing the right
+                                tools and approach (model library, detail level, etc.) from the start.
+                                A license purchase entitles you to a one-hour video discussion session with our developers,
+                                where you can receive expert advice to reach your project goals sooner.
+                            </p>
+                            <a href="services#orientation" class="card-link animated-underline">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover animate-slide-up delay-400">
+                        <div class="card-body">
+                            <h2 class="card-title"><a href="tsn" class="animated-underline">Time-Sensitive Networking (TSN)</a></h2>
+                            <p class="card-text">
+                                OMNEST provides comprehensive support for simulating Time-Sensitive Networking (TSN) applications. 
+                                Model and analyze deterministic Ethernet networks with precise timing guarantees for critical applications 
+                                in automotive, industrial automation, and aerospace domains.
+                            </p>
+                            <a href="tsn" class="card-link animated-underline">Learn more about TSN capabilities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover animate-slide-up delay-500">
+                        <div class="card-body">
+                            <h2 class="card-title"><a href="services#consulting" class="animated-underline">Consulting Services</a></h2>
+                            <p class="card-text">
+                                We have been designing simulations for well over a decade, and this experience may be
+                                useful to you. By consulting with our experts early in your projects, you can avoid costly
+                                detours and make the right design decisions from the start.
+                            </p>
+                            <a href="services#consulting" class="card-link animated-underline">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover animate-slide-up delay-600">
+                        <div class="card-body">
+                            <h2 class="card-title"><a href="news" class="animated-underline">News</a></h2>
+                            {% include titlepage_news.html maxitems=2 %}
+                            <a href="news" class="card-link animated-underline">All news</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Studies box moved to the bottom of the page with animation -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card mb-4 animate-fade-in delay-700">
+                        <div class="card-body">
+                            <h2 class="card-title"><a href="case-studies" class="animated-underline">Case Studies</a></h2>
+                            <div class="row">
+                                <div class="col-md-4 animate-slide-in-left delay-800">
+                                    <ul class="mb-0">
+                                        <li><a href="casestudy-ibmzurich" class="animated-underline">Simulation of Next-Generation Supercomputing Systems at IBM Research</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 animate-fade-in delay-900">
+                                    <ul class="mb-0">
+                                        <li><a href="casestudy-adhoc" class="animated-underline">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 animate-slide-in-right delay-1000">
+                                    <ul class="mb-0">
+                                        <li><a href="casestudy-photonic" class="animated-underline">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a></li>
+                                        <li><a href="case-studies" class="animated-underline">More case studies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</body>
-</html>
+</div>
