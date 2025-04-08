@@ -1,0 +1,26 @@
+# Simple Jekyll configuration for testing
+title: OMNEST Test Site
+email: info@omnest.com
+description: >-
+  A test site for the OMNEST website.
+baseurl: "/omnesttestsite2" # the subpath of your site
+url: "https://tabgab.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - README.md
+  - run_local_server.sh
+  - start_local_server
