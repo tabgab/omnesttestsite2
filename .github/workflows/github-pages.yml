@@ -3,7 +3,8 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch name
+      - main
+      - gh-pages
 
 jobs:
   github-pages:
@@ -22,7 +23,7 @@ jobs:
       # Use GitHub Actions' ruby to setup ruby
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: '3.0'
           bundler-cache: true
       
       # Install dependencies & build site
@@ -43,4 +44,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: gh-pages  # default branch where GitHub Pages content lives
+          publish_branch: gh-pages
+          force_orphan: true  # Create a new orphan branch with only the latest commit
