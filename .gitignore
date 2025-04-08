@@ -4,3 +4,7 @@ omnest.com-php
 .vscode
 Thumbs.db
 *.bak
+.jekyll-cache/
+.jekyll-cache/Jekyll/Cache/
+.sass-cache/
+.jekyll-metadata
