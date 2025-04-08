@@ -2,24 +2,156 @@
 layout: page
 title: OMNEST - About Us
 menu: purchase
+head_contribution: |
+  <style>
+    /* Company page specific styles */
+    .company-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .company-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .company-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+    
+    .company-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .company-icon {
+      background-color: rgba(0, 119, 204, 0.1);
+      border-radius: 50%;
+      color: #0077CC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      height: 60px;
+      width: 60px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .company-title {
+      margin: 0;
+      color: #005CAC;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .company-content {
+      color: #555;
+      line-height: 1.6;
+    }
+    
+    .company-content p {
+      margin-bottom: 15px;
+    }
+    
+    .company-button {
+      background-color: #0077CC;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 600;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .company-button:hover {
+      background-color: #0088DD;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .highlight-box {
+      background-color: rgba(0, 119, 204, 0.05);
+      border-left: 4px solid #0077CC;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .contact-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+  </style>
 ---
 
-
-<div id="header"><h1>About Us</h1></div>
-
-<p>Cogitative Software FZE is the exclusive distributor of OMNEST software worldwide.
-OMNEST licenses and support contracts are only available from authorized reseller partners.</p>
-
-<h2>Company Information</h2>
-
-  <p><b>Cogitative Software FZE</b><br>
-    1st Floor Al Shmookh Business Center<br />
-Al Ettehad St.<br />
-7845 Umm Al Quwain<br />
-UAE</p>
-
-<p>E-mail: <a href="mailto:info@cogitasoft.com">info@cogitasoft.com</a></p>
-
-<p>You can also contact us using the <a href="contact">contact page</a>.</p>
-
-
+<div class="company-container">
+  <h1 class="page-title">About Us</h1>
+  
+  <p class="lead animate-fade-in">Cogitative Software FZE is the exclusive distributor of OMNEST software worldwide. OMNEST licenses and support contracts are only available from authorized reseller partners.</p>
+  
+  <!-- Company Information Card -->
+  <div class="company-card animate-fade-in">
+    <div class="company-header">
+      <div class="company-icon">
+        🏢
+      </div>
+      <div>
+        <h2 class="company-title">Company Information</h2>
+      </div>
+    </div>
+    
+    <div class="company-content">
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Cogitative Software FZE</strong><br>
+            1st Floor Al Shmookh Business Center<br>
+            Al Ettehad St.<br>
+            7845 Umm Al Quwain<br>
+            UAE
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="highlight-box">
+            <strong>Contact Us:</strong><br>
+            Email: <a href="mailto:info@cogitasoft.com">info@cogitasoft.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mission Card -->
+  <div class="company-card animate-fade-in">
+    <div class="company-header">
+      <div class="company-icon">
+        🎯
+      </div>
+      <div>
+        <h2 class="company-title">Our Mission</h2>
+      </div>
+    </div>
+    
+    <div class="company-content">
+      <p>Our mission is to provide high-quality simulation software that enables engineers, researchers, and developers to model and analyze complex networks and systems with precision and efficiency.</p>
+      
+      <p>We are committed to continuous innovation and excellence in our products, ensuring that OMNEST remains at the forefront of simulation technology.</p>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="contact-section animate-fade-in">
+    <h2>Get in Touch</h2>
+    <p>Have questions about OMNEST or need assistance? We're here to help!</p>
+    <a href="contact" class="company-button">Contact Us</a>
+  </div>
+</div>
