@@ -10,7 +10,7 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v3
@@ -23,7 +23,7 @@ jobs:
       # Use GitHub Actions' ruby to setup ruby
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: '3.0'
           bundler-cache: true
       
       # Install dependencies & build site
