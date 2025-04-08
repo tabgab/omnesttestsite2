@@ -1,133 +1,312 @@
 ---
 layout: titlepage
 title: OMNEST - High-Performance Simulation for All Kinds of Networks
+head_contribution: |
+  <style>
+    /* Index page enhanced styles based on services page */
+    .index-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .feature-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+    
+    .feature-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .feature-icon {
+      background-color: rgba(0, 119, 204, 0.1);
+      border-radius: 50%;
+      color: #0077CC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      height: 60px;
+      width: 60px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .feature-title {
+      margin: 0;
+      color: #005CAC;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .feature-tagline {
+      font-size: 18px;
+      font-weight: 500;
+      color: #444;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    
+    .feature-content {
+      color: #555;
+      line-height: 1.6;
+    }
+    
+    .feature-content p {
+      margin-bottom: 15px;
+    }
+    
+    .feature-cta {
+      margin-top: 20px;
+      text-align: right;
+    }
+    
+    .feature-button {
+      background-color: #0077CC;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 600;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .feature-button:hover {
+      background-color: #0088DD;
+      transform: translateY(-2px);
+    }
+    
+    .highlight-box {
+      background-color: rgba(0, 119, 204, 0.05);
+      border-left: 4px solid #0077CC;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .intro-section {
+      margin-bottom: 30px;
+    }
+    
+    .news-section {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    
+    .two-column {
+      display: flex;
+      gap: 30px;
+    }
+    
+    .column {
+      flex: 1;
+    }
+    
+    /* Add animation classes from services page */
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @media (max-width: 767.98px) {
+      .two-column {
+        flex-direction: column;
+      }
+      
+      .feature-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .feature-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
 ---
 
-<div style="float:left; width:760px; margin-top: 8px">
+<div class="index-container">
+  <div class="intro-section">
+    <p class="lead"><b>OMNEST simulation software has been chosen by R&amp;D staff, researchers
+    and engineers worldwide</b> to investigate scenarios and design alternatives
+    in various wired/wireless networks, interconnection networks,
+    queueing-based performance models and other systems.
+    OMNEST simulations can also be embedded into your own software products.</p>
+  </div>
 
-<p><b>OMNEST simulation software has been chosen by R&amp;D staff, researchers
-and engineers worldwide</b> to investigate scenarios and design alternatives
-in various wired/wireless networks, interconnection networks,
-queueing-based performance models and other systems.
-OMNEST simulations can also be embedded into your own software products.
-</p>
+  <div class="two-column">
+    <div class="column">
+      <!-- Simulation Models -->
+      <div class="feature-card animate-fade-in">
+        <div class="feature-header">
+          <div class="feature-icon">
+            🔍
+          </div>
+          <div>
+            <h2 class="feature-title"><a href="{{ site.baseurl }}/simulation-models">Simulation Models</a></h2>
+          </div>
+        </div>
+        
+        <div class="feature-content">
+          <p>Models exist for
+          Internet protocols, wireless networks, switched LANs, TSN,
+          peer-to-peer networks, media streaming,
+          mobile ad-hoc networks, mesh networks, wireless sensor networks,
+          vehicular networks, NoCs, optical networks,
+          HPC clusters, cloud computing, SANs,
+          and more...</p>
+        </div>
+        
+        <div class="feature-cta">
+          <a href="{{ site.baseurl }}/simulation-models" class="feature-button">Explore the models</a>
+        </div>
+      </div>
 
-<div id="under-intro-text">
+      <!-- Free Orientation/Consulting Session -->
+      <div class="feature-card animate-fade-in">
+        <div class="feature-header">
+          <div class="feature-icon">
+            🤝
+          </div>
+          <div>
+            <h2 class="feature-title"><a href="{{ site.baseurl }}/services#orientation">Free Orientation/Consulting Session</a></h2>
+          </div>
+        </div>
+        
+        <div class="feature-content">
+          <p>Simulation is an art, and one can save a substantial amount of time by choosing the right
+          tools and approach (model library, detail level, etc.) from the start.
+          A license purchase entitles you to a one-hour video discussion session with our developers,
+          where you can receive expert advice to reach your project goals sooner.</p>
+        </div>
+        
+        <div class="feature-cta">
+          <a href="{{ site.baseurl }}/services#orientation" class="feature-button">Learn More</a>
+        </div>
+      </div>
 
-<div id="leftcol" style="float:left; width:400px">
-<h1><a href="{{ site.baseurl }}/simulation-models">Simulation Models</a></h1>
+      <!-- Consulting Services -->
+      <div class="feature-card animate-fade-in">
+        <div class="feature-header">
+          <div class="feature-icon">
+            💡
+          </div>
+          <div>
+            <h2 class="feature-title"><a href="{{ site.baseurl }}/services#consulting">Consulting Services</a></h2>
+          </div>
+        </div>
+        
+        <div class="feature-content">
+          <p>We have been designing simulations for well over a decade, and this experience may be
+          useful to you. By consulting with our experts early in your projects, you can avoid costly
+          detours and make the right design decisions from the start.</p>
+        </div>
+        
+        <div class="feature-cta">
+          <a href="{{ site.baseurl }}/services#consulting" class="feature-button">Get Consulting</a>
+        </div>
+      </div>
 
-<p>Models exist for
-Internet protocols, wireless networks, switched LANs, TSN,
-peer-to-peer networks, media streaming,
-mobile ad-hoc networks, mesh networks, wireless sensor networks,
-vehicular networks, NoCs, optical networks,
-HPC clusters, cloud computing, SANs,
-and more...
-<a href="{{ site.baseurl }}/simulation-models">Explore the models&nbsp;&raquo;</a>
-</p>
-
-<h1><a href="{{ site.baseurl }}/services#orientation">Free Orientation/Consulting Session</a></h1>
-<p>Simulation is an art, and one can save a substantial amount of time by choosing the right
-   tools and approach (model library, detail level, etc.) from the start.
-   A license purchase entitles you to a one-hour video discussion session with our developers,
-   where you can receive expert advice to reach your project goals sooner.
-</p>
-
-<h1><a href="{{ site.baseurl }}/services#consulting">Consulting Services</a></h1>
-<p>We have been designing simulations for well over a decade, and this experience may be
-useful to you. By consulting with our experts early in your projects, you can avoid costly
-detours and make the right design decisions from the start.
-</p>
-
-<h1><a href="{{ site.baseurl }}/case-studies">Case Studies</a></h1>
-
-<ul>
-  <li><a href="{{ site.baseurl }}/casestudy-ibmzurich">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
-  <li><a href="{{ site.baseurl }}/casestudy-adhoc">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
-  <li><a href="{{ site.baseurl }}/casestudy-photonic">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
-  <li><a href="{{ site.baseurl }}/case-studies">More&nbsp;&raquo;</a><br>
-</ul>
-
-<!--
-<h1><a href="publications">Selected Publications</a></h1>
-
-<img src="images/misc/ieee.png">
-<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
-<small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
-<br><br>
-
-<img src="images/misc/ieee.png">
-<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
-<small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
-<br><br>
-
-<img src="images/misc/ieee.png">
-<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6498553">Towards Modeling Interconnection Networks of Exascale Systems with OMNet++.</a>
-<small>P Yebenes, J Escudero-Sahuquillo... - Parallel, Distributed and Network-Based Processing (PDP)..., 2013 - ieeexplore.ieee.org</small>
-<br><br>
--->
-
-</div> <!--leftcol-->
-
-<div id="rightcol" style="float:right; width:340px">
-<h1><a href="{{ site.baseurl }}/embedding">Add Simulation To Your Software Products!</a></h1>
-<p>You can <a href="{{ site.baseurl }}/embedding">embed</a> the simulation kernel or whole simulations into your software products.</p>
-
-<h1><a href="{{ site.baseurl }}/whatsnew-50">Visualize your Simulation in 3D!</a></h1>
-<a href="{{ site.baseurl }}/whatsnew-50"><img width="150" src="{{ site.baseurl }}/images/misc/3d_sats.png" style="float: left; margin-right: 10px"/></a>
-<p>The OMNEST runtime user interface allows you to build 3D animations
-for your simulation model employing the widely used OpenSceneGraph library.</p>
-<div style="clear:both"></div>
-
-<!--TODO
-<h1><a href="testimonials">Testimonials</a></h1>
-
-<p><i>"Using OMNEST was a real pleasure after the struggle we had with our former simulation tool."</i>
-- John Smith, ACME Inc.</i></p>
-
-<p><i>"Due to OMNEST's good design and excellent documentation, we became productive with it very fast."</i>
-- Jane Smith, EMCA Inc.</i></p>
--->
-
-<!--
-<h1>Featured Stories</h1>
-
-<img alt="" src="images/misc/marenostrum-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
-<p>IBM researchers have used OMNEST to optimize one of Europe's most powerful supercomputers.<br>
-<a href="casestudy-ibmzurich">Read more&nbsp;&raquo;</a></p>
-<div style="clear:both"></div>
-<br>
-
-<img alt="" src="images/misc/workshop08-featured.jpg" width=150 style="float:left; margin-right:10px; margin-top:3px">
-<p>Users meet regularly at the International OMNeT++ Workshop, co-located with the SimuTools conference.<br>
-<a href="community">Read more&nbsp;&raquo;</a></p>
-<div style="clear:both"></div>
--->
-
-<h1><a href="{{ site.baseurl }}/news">News</a></h1>
-
-{% include titlepage_news.html maxitems=2 %}
-
-</div> <!--rightcol-->
-
-<div style="clear:both"></div>
-
-</div>
-
-</div>
-<div style="float:right; width:140px">
-    <h1 class="titlepage" style="margin-top:3px; margin-left:0px"><a href="{{ site.baseurl }}/references">References</a></h1>
-    <div style="text-align:center; border:solid 1px #bebebe; padding:8px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px">
-        <a href="{{ site.baseurl }}/references">
-        <img src="{{ site.baseurl }}/refs/ibm.png"> <br><br>
-        <img src="{{ site.baseurl }}/refs/thales.gif" width=110> <br><br>
-        <img src="{{ site.baseurl }}/refs/alcatel-lucent.gif" width=100> <br><br>
-        <img src="{{ site.baseurl }}/refs/cisco.gif"> <br><br>
-        <img src="{{ site.baseurl }}/refs/eads.png"> <br><br>
-        <img src="{{ site.baseurl }}/refs/fraunhofer.jpg" width=110>
-        </a>
+      <!-- Case Studies -->
+      <div class="feature-card animate-fade-in">
+        <div class="feature-header">
+          <div class="feature-icon">
+            📊
+          </div>
+          <div>
+            <h2 class="feature-title"><a href="{{ site.baseurl }}/case-studies">Case Studies</a></h2>
+          </div>
+        </div>
+        
+        <div class="feature-content">
+          <ul>
+            <li><a href="{{ site.baseurl }}/casestudy-ibmzurich">Simulation of Next-Generation Supercomputing Systems at IBM Research</a>
+            <li><a href="{{ site.baseurl }}/casestudy-adhoc">Detailed Cross-Layer Simulator for Content Transmission over Wireless Ad-Hoc Networks</a>
+            <li><a href="{{ site.baseurl }}/casestudy-photonic">Architectural Exploration of Chip-Scale Photonic Interconnection Networks</a>
+          </ul>
+        </div>
+        
+        <div class="feature-cta">
+          <a href="{{ site.baseurl }}/case-studies" class="feature-button">View All Case Studies</a>
+        </div>
+      </div>
     </div>
-    <p style="margin-top:5px; margin-left:10px"><a href="{{ site.baseurl }}/references">More references...</a></p>
+
+    <div class="column">
+      <!-- Add Simulation To Your Software Products -->
+      <div class="feature-card animate-fade-in">
+        <div class="feature-header">
+          <div class="feature-icon">
+            🔌
+          </div>
+          <div>
+            <h2 class="feature-title"><a href="{{ site.baseurl }}/embedding">Add Simulation To Your Software Products!</a></h2>
+          </div>
+        </div>
+        
+        <div class="feature-content">
+          <p>You can <a href="{{ site.baseurl }}/embedding">embed</a> the simulation kernel or whole simulations into your software products.</p>
+        </div>
+        
+        <div class="feature-cta">
+          <a href="{{ site.baseurl }}/embedding" class="feature-button">Learn About Embedding</a>
+        </div>
+      </div>
+
+      <!-- Visualize your Simulation in 3D -->
+      <div class="feature-card animate-fade-in">
+        <div class="feature-header">
+          <div class="feature-icon">
+            🌐
+          </div>
+          <div>
+            <h2 class="feature-title"><a href="{{ site.baseurl }}/whatsnew-50">Visualize your Simulation in 3D!</a></h2>
+          </div>
+        </div>
+        
+        <div class="feature-content">
+          <a href="{{ site.baseurl }}/whatsnew-50"><img width="150" src="{{ site.baseurl }}/images/misc/3d_sats.png" style="float: left; margin-right: 10px"/></a>
+          <p>The OMNEST runtime user interface allows you to build 3D animations
+          for your simulation model employing the widely used OpenSceneGraph library.</p>
+          <div style="clear:both"></div>
+        </div>
+        
+        <div class="feature-cta">
+          <a href="{{ site.baseurl }}/whatsnew-50" class="feature-button">See 3D Features</a>
+        </div>
+      </div>
+
+      <!-- News -->
+      <div class="news-section animate-fade-in">
+        <h2 class="feature-title"><a href="{{ site.baseurl }}/news">News</a></h2>
+        
+        {% include titlepage_news.html maxitems=2 %}
+        
+        <div class="feature-cta">
+          <a href="{{ site.baseurl }}/news" class="feature-button">View All News</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div style="clear:both"></div>
