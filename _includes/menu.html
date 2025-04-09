@@ -36,6 +36,18 @@
             {% endif %}
         {% endfor %}
     </nav>
+    
+    <!-- Search box at the bottom of the sidebar -->
+    <div class="sidebar-search mt-4">
+        <form name="frmSearch" action="search" method="get">
+            <div class="search-container">
+                <input type="text" name="q" class="search-input" placeholder="Search...">
+                <button type="submit" class="search-button">
+                    &#128269; <!-- Unicode search icon -->
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
 
 
@@ -46,14 +58,16 @@
         padding: 20px;
         border-radius: 5px;
         margin-bottom: 20px;
+        position: relative;
     }
-    
     /* Desktop styles */
     @media (min-width: 768px) {
         .sidebar-menu {
             margin-bottom: var(--spacing-lg);
             display: block !important;
+            float: none !important;
         }
+        
         
         .mobile-menu-toggle,
         .mobile-menu-close {
@@ -95,6 +109,17 @@
             text-align: right;
             margin-bottom: 15px;
             display: block !important;
+        }
+        
+        /* Mobile search box styles */
+        .sidebar-search {
+            padding: var(--spacing-sm);
+            margin-top: var(--spacing-lg);
+            width: 100%;
+        }
+        
+        .search-container {
+            width: 100%;
         }
         
         .menu-icon-right, .menu-icon-left {
@@ -165,6 +190,42 @@
     .sidebar-menu .submenu-link {
         font-size: 0.9rem;
         padding: var(--spacing-xs) var(--spacing-md);
+    }
+    
+    /* Search box styles */
+    .sidebar-search {
+        padding: var(--spacing-md);
+        border-top: 1px solid var(--color-border);
+        margin-top: var(--spacing-md);
+    }
+    
+    .search-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .search-input {
+        width: 100%;
+        padding: 6px 10px;
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        font-size: 0.9rem;
+    }
+    
+    .search-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: transparent;
+        border: none;
+        padding: 0 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-primary);
     }
 </style>
 
