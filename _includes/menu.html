@@ -25,16 +25,19 @@
     </nav>
 </div>
 
-<!-- Mobile sidebar toggle button (only visible on small screens) -->
-<div class="d-md-none mb-4">
-    <button class="btn btn-primary btn-block sidebar-toggle" id="sidebarToggle">
-        Show Menu
-    </button>
-</div>
 
 <style>
+    .sidebar {
+        display: block !important;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
     .sidebar-menu {
         margin-bottom: var(--spacing-lg);
+        display: block !important;
     }
     
     .sidebar-menu .nav-link {
@@ -42,6 +45,8 @@
         color: var(--color-primary);
         border-left: 3px solid transparent;
         transition: all var(--transition-fast);
+        display: block;
+        margin-bottom: 5px;
     }
     
     .sidebar-menu .nav-link:hover {
@@ -57,36 +62,11 @@
     
     .sidebar-menu .submenu {
         padding-left: var(--spacing-lg);
+        display: block;
     }
     
     .sidebar-menu .submenu-link {
         font-size: 0.9rem;
         padding: var(--spacing-xs) var(--spacing-md);
     }
-    
-    /* Mobile sidebar */
-    @media (max-width: 767.98px) {
-        .sidebar-menu {
-            display: none;
-        }
-        
-        .sidebar-menu.active {
-            display: block;
-            margin-bottom: var(--spacing-lg);
-        }
-    }
 </style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const sidebarToggle = document.getElementById('sidebarToggle');
-        const sidebarMenu = document.querySelector('.sidebar-menu');
-        
-        if (sidebarToggle && sidebarMenu) {
-            sidebarToggle.addEventListener('click', function() {
-                sidebarMenu.classList.toggle('active');
-                sidebarToggle.textContent = sidebarMenu.classList.contains('active') ? 'Hide Menu' : 'Show Menu';
-            });
-        }
-    });
-</script>
