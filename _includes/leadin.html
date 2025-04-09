@@ -33,12 +33,10 @@
     <div class="container">
         <div class="row">
             {% if include.menu %}
-            <div class="col-md-3 sidebar" style="float: left; width: 25%; background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
-                <div class="sidebar-menu">
-                    {% include menu.html menu=include.menu %}
-                </div>
+            <div class="col-md-3 sidebar">
+                {% include menu.html menu=include.menu %}
             </div>
-            <div class="col-md-9 content-area px-3" style="float: right; width: 75%;"> <!-- Added px-3 for horizontal padding -->
+            <div class="col-md-9 content-area px-3"> <!-- Added px-3 for horizontal padding -->
             {% else %}
-            <div class="col-12 content-area px-3" style="width: 100%;"> <!-- Added px-3 for horizontal padding -->
+            <div class="col-12 content-area px-3"> <!-- Added px-3 for horizontal padding -->
             {% endif %}
