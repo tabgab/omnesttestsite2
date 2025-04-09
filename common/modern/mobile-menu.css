@@ -1,0 +1,128 @@
+/* Mobile Menu Styles */
+
+/* Logo styles for mobile */
+@media (max-width: 767px) {
+    .logo-wide {
+        display: none !important;
+    }
+    
+    .logo-narrow {
+        display: block !important;
+        width: 40px !important; /* Ensure the logo is visible */
+        height: auto !important;
+        min-width: 40px !important;
+    }
+    
+    .navbar-brand {
+        padding: 0.5rem 0;
+        margin-right: 0.5rem;
+        flex-shrink: 0; /* Prevent logo from shrinking */
+    }
+}
+
+/* Navbar toggle button */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-primary);
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease;
+    margin-left: 0.5rem;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle.active {
+    color: var(--color-primary-dark);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile menu styles - only affects the top navigation, not the sidebar */
+@media (max-width: 767px) {
+    /* Only show the toggle button in the header */
+    .header .navbar-toggle {
+        display: block;
+    }
+    
+    /* Only target the navbar-nav in the header, not in the sidebar */
+    .header .navbar-nav {
+        position: fixed;
+        top: 60px; /* Height of the header */
+        right: -280px; /* Start off-screen - increased width */
+        width: 280px; /* Increased width for better readability */
+        height: calc(100vh - 60px);
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 1rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .header .navbar-nav.active {
+        right: 0; /* Slide in from right */
+    }
+    
+    .header .nav-item {
+        width: 100%;
+        margin: 0 0 0.75rem 0;
+    }
+    
+    .header .nav-link {
+        display: block;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #f0f0f0;
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    }
+    
+    /* Adjust header layout */
+    .header-inner {
+        justify-content: space-between;
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+    
+    /* Hide search form on very small screens */
+    @media (max-width: 480px) {
+        .search-form {
+            display: none !important;
+        }
+    }
+    
+    /* Adjust search form */
+    .search-form {
+        margin-right: 0.5rem !important;
+    }
+    
+    /* Ensure the header doesn't overflow */
+    .header .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 100%;
+    }
+    
+    /* Preserve the sidebar navigation */
+    .sidebar {
+        display: block !important;
+    }
+}
+
+/* Ensure the navbar toggle button is visible and properly aligned */
+@media (max-width: 767px) {
+    .header .d-flex.align-items-center {
+        justify-content: flex-end;
+        flex: 1;
+    }
+    
+    .header-inner {
+        display: flex;
+        align-items: center;
+    }
+}
