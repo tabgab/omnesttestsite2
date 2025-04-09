@@ -18,9 +18,9 @@
       {% assign next_index = current_index | plus: 1 %}
       {% assign next_page = tour_pages[next_index] %}
       {% assign next_title = tour_titles[next_index] %}
-      <a href="{{ next_page }}" title="Go to {{ next_title }}">Next: {{ next_title }} &raquo;</a>
+      <a href="{{ site.baseurl }}/{{ next_page }}" title="Go to {{ next_title }}">Next: {{ next_title }} &raquo;</a>
     {% elsif current_index == last_index %}
-      <a href="tour-thankyou" title="Complete the tour">Next: Finish the Tour &raquo;&raquo;</a>
+      <a href="{{ site.baseurl }}/tour-thankyou" title="Complete the tour">Next: Finish the Tour &raquo;&raquo;</a>
     {% endif %}
   </div>
 {% endif %}

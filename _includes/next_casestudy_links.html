@@ -15,14 +15,14 @@
 <div class="navigation-links">
   <div class="nav-inner">
     <div class="nav-center">
-      <a href="case-studies" title="View all case studies">All Case Studies</a>
+      <a href="{{ site.baseurl }}/case-studies" title="View all case studies">All Case Studies</a>
     </div>
     
     <div class="nav-next">
       {% if current_index < last_index %}
         {% assign next_index = current_index | plus: 1 %}
         {% assign next_case = case_studies[next_index] %}
-        <a href="{{ next_case }}" title="Next Case Study">Next &raquo;</a>
+        <a href="{{ site.baseurl }}/{{ next_case }}" title="Next Case Study">Next &raquo;</a>
       {% endif %}
     </div>
   </div>

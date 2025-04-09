@@ -19,9 +19,9 @@
       {% assign next_index = current_index | plus: 1 %}
       {% assign next_page = learn_pages[next_index] %}
       {% assign next_title = learn_titles[next_index] %}
-      <a href="{{ next_page }}" title="Go to {{ next_title }}">Next: {{ next_title }} &raquo;</a>
+      <a href="{{ site.baseurl }}/{{ next_page }}" title="Go to {{ next_title }}">Next: {{ next_title }} &raquo;</a>
     {% elsif current_index == last_index %}
-      <a href="references" title="Learn about OMNEST in the World">Next: OMNEST in the World &raquo;</a>
+      <a href="{{ site.baseurl }}/references" title="Learn about OMNEST in the World">Next: OMNEST in the World &raquo;</a>
     {% endif %}
   </div>
 {% endif %}
