@@ -5,23 +5,20 @@
 {% include slideshow.html %}
 </head>
 <body>
-{% include titlepage_leadin.html %}
+{% if page.url == "/" or page.url == "/index.html" %}
+  {% assign menu = nil %}
+{% else %}
+  {% assign menu = site.data.product_menu %}
+{% endif %}
+{% include titlepage_leadin.html menu=menu %}
 <main id="main-content" class="animate-fade-in">
 {{ content }}
 </main>
 {% include titlepage_leadout.html %}
 
-<!-- Mobile navigation toggle script -->
+<!-- Animation script -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const navToggle = document.querySelector('.navbar-toggle');
-    const navMenu = document.querySelector('.navbar-nav');
-    
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-      });
-    }
     
     // Add animation classes to elements with delay
     const animateElements = document.querySelectorAll('.card, .hero-content h1, .hero-content p, .btn-group');

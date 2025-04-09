@@ -21,7 +21,7 @@
                 <nav class="nav">
                     <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
                     <ul class="navbar-nav" id="navMenu">
-                        {% include top_menu.html %}
+                        {% include top_menu.html menu=include.menu %}
                     </ul>
                 </nav>
             </div>
@@ -98,4 +98,14 @@
 </section>
 
 <div class="container">
-    <div class="content-area py-5">
+    <div class="row">
+        {% if include.menu %}
+        <div class="col-md-3 sidebar" style="float: left; width: 25%; background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
+            <div class="sidebar-menu">
+                {% include menu.html menu=include.menu %}
+            </div>
+        </div>
+        <div class="col-md-9 content-area px-3 py-5" style="float: right; width: 75%;">
+        {% else %}
+        <div class="col-12 content-area px-3 py-5" style="width: 100%;">
+        {% endif %}
