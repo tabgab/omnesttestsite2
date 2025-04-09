@@ -1,0 +1,21 @@
+/* Responsive logo styles */
+
+/* Default state - show wide logo, hide narrow logo */
+.logo-wide {
+    display: block;
+}
+
+.logo-narrow {
+    display: none;
+}
+
+/* On smaller screens (when the sidebar collapses) - hide wide logo, show narrow logo */
+@media (max-width: 768px) {
+    .logo-wide {
+        display: none;
+    }
+    
+    .logo-narrow {
+        display: block;
+    }
+}
