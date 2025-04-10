@@ -272,11 +272,9 @@ p.newssummary {
     color: #669;
     padding: 6px 8px;
 }
+/* Hover effect removed as requested */
 .fancytable tbody tr:hover td {
-    /* Hover colors disabled but preserved in comments for reference
-    color: #00576D; 
-    color: #0084A5; */
-    background-color: #f5f5f5;
+    /* No hover effect */
 }
 
 .fancytable .sep
