@@ -1,9 +1,11 @@
 - text: "What is OMNEST?"
   link: "omnest-is"
 - text: "OMNEST Product Tour"
-  link: "tour-models"
+  link: "tour-why-simulation"
   highlight: 0
   submenu:
+    - text: "Why Simulation"
+      link: "tour-why-simulation"
     - text: "Benefit from Existing Models"
       link: "tour-models"
     - text: "Develop Models Easily"

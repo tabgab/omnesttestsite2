@@ -12,10 +12,18 @@
         padding-right: 15px !important;
     }
     
+    /* Force all images to be on the right in mobile view */
+    .pic.left {
+        float: right !important;
+        margin-left: 15px !important;
+        margin-right: 0 !important;
+    }
+    
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         padding-left: 15px;
         padding-right: 15px;
+        margin-top: 0;
     }
     
     h2 {
@@ -187,5 +195,46 @@ pre, code {
     .hero h1, .hero p {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+/* Responsive styles for tour pages */
+@media (max-width: 575.98px) {
+    /* Extra small devices (phones) */
+    .lefttext, .righttext {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        clear: both;
+        padding-top: 10px;
+    }
+    
+    /* Make images in tour pages display properly on mobile */
+    .pic.right, .pic.left {
+        width: 120px !important; /* Reduce image size on mobile */
+        display: block;
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Small devices (tablets) */
+    .lefttext {
+        margin-right: 100px !important;
+    }
+    
+    .righttext {
+        margin-left: 100px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Medium devices */
+    .lefttext {
+        margin-right: 150px !important;
+    }
+    
+    .righttext {
+        margin-left: 150px !important;
     }
 }
