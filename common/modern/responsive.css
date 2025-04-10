@@ -62,7 +62,8 @@
     /* Exception for elements inside containers */
     .container h1, .container h2, .container h3, .container p, .container li,
     .card h1, .card h2, .card h3, .card p, .card li,
-    .hero h1, .hero h2, .hero h3, .hero p {
+    .hero h1, .hero h2, .hero h3, .hero p,
+    .company-card h1, .company-card h2, .company-card h3, .company-card p, .company-card li {
         padding-left: 0;
         padding-right: 0;
     }
@@ -88,6 +89,19 @@
         display: block;
         width: 100%;
         overflow-x: auto;
+    }
+    
+    /* Tour page specific styles */
+    .lefttext, .righttext {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        clear: both;
+        padding-top: 10px;
+    }
+    
+    /* Reduce image size on mobile for tour pages */
+    .pic.right, .pic.left {
+        width: 120px !important;
     }
 }
 
@@ -198,24 +212,6 @@ pre, code {
     }
 }
 
-/* Responsive styles for tour pages */
-@media (max-width: 575.98px) {
-    /* Extra small devices (phones) */
-    .lefttext, .righttext {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        clear: both;
-        padding-top: 10px;
-    }
-    
-    /* Make images in tour pages display properly on mobile */
-    .pic.right, .pic.left {
-        width: 120px !important; /* Reduce image size on mobile */
-        display: block;
-        margin: 0 auto 15px auto;
-        text-align: center;
-    }
-}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* Small devices (tablets) */
