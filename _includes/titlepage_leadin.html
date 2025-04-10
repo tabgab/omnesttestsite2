@@ -68,6 +68,39 @@
     </div>
     
     <!-- Full-width Tag Cloud with hover effects -->
+    <style>
+        /* Override hover color for tag cloud items only */
+        .tag-cloud-item {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: transform var(--transition-fast);
+            padding: 3px 8px;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+        }
+        
+        .tag-cloud-item:hover {
+            color: var(--color-primary); /* Keep the same color on hover */
+            text-decoration: none; /* No underline on hover */
+            transform: scale(1.1); /* Add a slight scale effect instead */
+        }
+        
+        /* Animation for scale up */
+        @keyframes scaleUp {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        
+        .animate-scale-up {
+            animation: scaleUp 0.3s ease forwards;
+            animation-play-state: paused;
+        }
+        
+        .animate-scale-up:hover {
+            animation-play-state: running;
+        }
+    </style>
     <div class="animate-fade-in delay-800 animated-bg-gradient" style="width: 100%; text-align: center; padding: 20px 0; margin-top: 20px; position: relative; z-index: 2;">
         <div class="container">
             <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px;">
