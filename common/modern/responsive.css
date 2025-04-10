@@ -90,19 +90,6 @@
         width: 100%;
         overflow-x: auto;
     }
-    
-    /* Tour page specific styles */
-    .lefttext, .righttext {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        clear: both;
-        padding-top: 10px;
-    }
-    
-    /* Reduce image size on mobile for tour pages */
-    .pic.right, .pic.left {
-        width: 120px !important;
-    }
 }
 
 /* Small devices (tablets, 576px and up) */
@@ -212,6 +199,21 @@ pre, code {
     }
 }
 
+/* Responsive styles for tour pages */
+@media (max-width: 575.98px) {
+    /* Extra small devices (phones) */
+    .lefttext, .righttext {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        clear: both;
+        padding-top: 10px;
+    }
+    
+    /* Make images in tour pages display properly on mobile */
+    .pic.right, .pic.left {
+        width: 120px !important; /* Reduce image size on mobile */
+    }
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* Small devices (tablets) */
