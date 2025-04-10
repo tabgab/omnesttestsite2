@@ -8,6 +8,30 @@ head_contribution: |
         border-bottom: 1px solid lightgray;
         padding-bottom: 20px;
     }
+    
+    /* Responsive video container */
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 660px;
+        margin: 0 auto;
+    }
+    
+    /* Make videos responsive */
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        aspect-ratio: 16/9;
+        border: 0;
+    }
+    
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+        .video-container {
+            max-width: 100%;
+        }
+    }
   </style>
 ---
 
@@ -24,8 +48,10 @@ head_contribution: |
   </tr>
   <tr>
       <td>
-        <div id="idevideo-id" style="display:none" >
-          <iframe title="Using the IDE" class="youtube-player" width="660" height="397" src="https://www.youtube.com/embed/KUe_vrWbEJY?origin=http://omnest.com" style="border: 0px"></iframe>
+        <div id="idevideo-id" style="display:none">
+          <div class="video-container">
+            <iframe title="Using the IDE" class="youtube-player" src="https://www.youtube.com/embed/KUe_vrWbEJY?origin=http://omnest.com"></iframe>
+          </div>
           <a><div style="text-align: center" onclick="document.getElementById('idevideo-id').style.display='none'; document.getElementById('idethumb-id').style.display='block';">Close</div></a>
         </div>
       </td>
@@ -54,8 +80,10 @@ head_contribution: |
   </tr>
   <tr>
       <td>
-        <div id="earthvideo-id" style="display:none" >
-          <iframe title="Google Earth Demo" class="youtube-player" width="660" height="397" src="https://www.youtube.com/embed/cFPJPVh3ouQ?origin=http://omnest.com" style="border: 0px"></iframe>
+        <div id="earthvideo-id" style="display:none">
+          <div class="video-container">
+            <iframe title="Google Earth Demo" class="youtube-player" src="https://www.youtube.com/embed/cFPJPVh3ouQ?origin=http://omnest.com"></iframe>
+          </div>
           <a><div style="text-align: center" onclick="document.getElementById('earthvideo-id').style.display='none'; document.getElementById('earththumb-id').style.display='block';">Close</div></a>
         </div>
       </td>
@@ -89,8 +117,10 @@ head_contribution: |
   </tr>
   <tr>
       <td>
-        <div id="seqvideo-id" style="display:none" >
-          <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" width="660" height="397" src="https://www.youtube.com/embed/9yZZFgwl4Ns?origin=http://omnest.com" style="border: 0px"></iframe>
+        <div id="seqvideo-id" style="display:none">
+          <div class="video-container">
+            <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" src="https://www.youtube.com/embed/9yZZFgwl4Ns?origin=http://omnest.com"></iframe>
+          </div>
           <a><div style="text-align: center" onclick="document.getElementById('seqvideo-id').style.display='none'; document.getElementById('seqthumb-id').style.display='block';">Close</div></a>
         </div>
       </td>
