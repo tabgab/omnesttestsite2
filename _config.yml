@@ -6,8 +6,8 @@ description: >-
   and engineers worldwide to investigate scenarios and design alternatives
   in various wired/wireless networks, interconnection networks,
   queueing-based performance models and other systems.
-baseurl: "/omnesttestsite2" # the subpath of your site, e.g. /blog
-url: "https://tabgab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
