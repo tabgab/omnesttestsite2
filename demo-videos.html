@@ -4,11 +4,6 @@ title: OMNEST - Introductory and Demo Videos
 menu: product
 head_contribution: |
   <style type="text/css">
-    .row td {
-        border-bottom: 1px solid lightgray;
-        padding-bottom: 20px;
-    }
-    
     /* Responsive video container */
     .video-container {
         position: relative;
@@ -26,8 +21,52 @@ head_contribution: |
         border: 0;
     }
     
+    /* Video section styling */
+    .video-section {
+        margin-bottom: 30px;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 20px;
+    }
+    
+    /* Video thumbnail styling */
+    .video-thumb {
+        margin-right: 20px;
+        background-repeat: no-repeat;
+        width: 220px;
+        height: 165px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .video-thumb img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* Responsive layout */
+    .video-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .video-info {
+        flex: 1;
+        min-width: 300px;
+    }
+    
     /* Media query for small screens */
     @media (max-width: 767px) {
+        .video-flex-container {
+            flex-direction: column;
+        }
+        
+        .video-thumb {
+            margin: 0 auto 20px auto;
+        }
+        
         .video-container {
             max-width: 100%;
         }
@@ -38,106 +77,95 @@ head_contribution: |
 
 <div id="header"><h1>Introductory and Demo Videos</h1></div>
 
-<table>
-  <tr><td rowspan="3">
-          <div id="idethumb-id" style="margin-right: 20px; background-image: url(images/video/ide-thumb.png); background-repeat: no-repeat; width: 220px; height: 165px;">
-             <img src="images/video/play.png" onclick="document.getElementById('idevideo-id').style.display='block'; document.getElementById('idethumb-id').style.display='none';">
-          </div>
-      </td>
-      <td><h2>Using the IDE</h2></td>
-  </tr>
-  <tr>
-      <td>
-        <div id="idevideo-id" style="display:none">
-          <div class="video-container">
-            <iframe title="Using the IDE" class="youtube-player" src="https://www.youtube.com/embed/KUe_vrWbEJY?origin=http://omnest.com"></iframe>
-          </div>
-          <a><div style="text-align: center" onclick="document.getElementById('idevideo-id').style.display='none'; document.getElementById('idethumb-id').style.display='block';">Close</div></a>
+<div class="video-section">
+  <div class="video-flex-container">
+    <div id="idethumb-id" class="video-thumb" style="background-image: url(images/video/ide-thumb.png);">
+      <img src="images/video/play.png" onclick="document.getElementById('idevideo-id').style.display='block'; document.getElementById('idethumb-id').style.display='none';">
+    </div>
+    
+    <div class="video-info">
+      <h2>Using the IDE</h2>
+      
+      <div id="idevideo-id" style="display:none">
+        <div class="video-container">
+          <iframe title="Using the IDE" class="youtube-player" src="https://www.youtube.com/embed/KUe_vrWbEJY?origin=http://omnest.com"></iframe>
         </div>
-      </td>
-  </tr>
-  <tr>
-    <td>
+        <a><div style="text-align: center" onclick="document.getElementById('idevideo-id').style.display='none'; document.getElementById('idethumb-id').style.display='block';">Close</div></a>
+      </div>
+      
       <div id="idetext-id">
         <p>This is a 15-minute tutorial that walks through the basic steps of creating
         and running a simulation, visualizing its execution history on a sequence chart,
         and analyzing the simulation results to show the basic functions of the
         OMNEST Simulation IDE.</p>
-       </div>
-     </td>
-  </tr>
-</table>
+      </div>
+    </div>
+  </div>
+</div>
 
 <hr/>
 
-<table>
-  <tr><td rowspan="3">
-          <div id="earththumb-id" style="margin-right: 20px; background-image: url(images/video/googleearth-thumb.png); background-repeat: no-repeat; width: 220px; height: 165px;">
-             <img src="images/video/play.png" onclick="document.getElementById('earthvideo-id').style.display='block'; document.getElementById('earththumb-id').style.display='none';">
-          </div>
-      </td>
-      <td><h2>Google Earth Demo</h2></td>
-  </tr>
-  <tr>
-      <td>
-        <div id="earthvideo-id" style="display:none">
-          <div class="video-container">
-            <iframe title="Google Earth Demo" class="youtube-player" src="https://www.youtube.com/embed/cFPJPVh3ouQ?origin=http://omnest.com"></iframe>
-          </div>
-          <a><div style="text-align: center" onclick="document.getElementById('earthvideo-id').style.display='none'; document.getElementById('earththumb-id').style.display='block';">Close</div></a>
+<div class="video-section">
+  <div class="video-flex-container">
+    <div id="earththumb-id" class="video-thumb" style="background-image: url(images/video/googleearth-thumb.png);">
+      <img src="images/video/play.png" onclick="document.getElementById('earthvideo-id').style.display='block'; document.getElementById('earththumb-id').style.display='none';">
+    </div>
+    
+    <div class="video-info">
+      <h2>Google Earth Demo</h2>
+      
+      <div id="earthvideo-id" style="display:none">
+        <div class="video-container">
+          <iframe title="Google Earth Demo" class="youtube-player" src="https://www.youtube.com/embed/cFPJPVh3ouQ?origin=http://omnest.com"></iframe>
         </div>
-      </td>
-  </tr>
-  <tr>
-    <td>
+        <a><div style="text-align: center" onclick="document.getElementById('earthvideo-id').style.display='none'; document.getElementById('earththumb-id').style.display='block';">Close</div></a>
+      </div>
+      
       <div id="earthtext-id">
-             <p>This is a demo for visualizing an OMNEST network simulation using Google Earth.
-                 The demo simulates a wireless mobile ad-hoc network. The model contains a number
-                 of mobile nodes (cars) that move about randomly over a 2km-by-2km area.
-                 The nodes have identical radios, with a transmission range of about 500m;
-                 for simplicity, we assume that the area covered by each radio is a perfect circle.
-                 When two nodes move within range of each other, they can communicate with each other,
-                 forming a (usually disconnected) ad-hoc network. The visualization shows the mobile
-                 nodes themselves (a 3D car model), their recent trails, their transmission ranges,
-                 and the current connectivity of the network (cars that are closer than 500m are
-                 connected with a white line).</p>
-       </div>
-     </td>
-  </tr>
-</table>
+        <p>This is a demo for visualizing an OMNEST network simulation using Google Earth.
+           The demo simulates a wireless mobile ad-hoc network. The model contains a number
+           of mobile nodes (cars) that move about randomly over a 2km-by-2km area.
+           The nodes have identical radios, with a transmission range of about 500m;
+           for simplicity, we assume that the area covered by each radio is a perfect circle.
+           When two nodes move within range of each other, they can communicate with each other,
+           forming a (usually disconnected) ad-hoc network. The visualization shows the mobile
+           nodes themselves (a 3D car model), their recent trails, their transmission ranges,
+           and the current connectivity of the network (cars that are closer than 500m are
+           connected with a white line).</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <hr/>
 
-<table>
-  <tr><td rowspan="3"><div id="seqthumb-id" style="margin-right: 20px; background-image: url(images/video/seqchart-thumb.png); background-repeat: no-repeat; width: 220px; height: 165px;">
-             <img src="images/video/play.png" onclick="document.getElementById('seqvideo-id').style.display='block'; document.getElementById('seqthumb-id').style.display='none';">
-          </div>
-      </td>
-      <td><h2>Visualizing the Simulation on Sequence Charts</h2></td>
-  </tr>
-  <tr>
-      <td>
-        <div id="seqvideo-id" style="display:none">
-          <div class="video-container">
-            <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" src="https://www.youtube.com/embed/9yZZFgwl4Ns?origin=http://omnest.com"></iframe>
-          </div>
-          <a><div style="text-align: center" onclick="document.getElementById('seqvideo-id').style.display='none'; document.getElementById('seqthumb-id').style.display='block';">Close</div></a>
+<div class="video-section">
+  <div class="video-flex-container">
+    <div id="seqthumb-id" class="video-thumb" style="background-image: url(images/video/seqchart-thumb.png);">
+      <img src="images/video/play.png" onclick="document.getElementById('seqvideo-id').style.display='block'; document.getElementById('seqthumb-id').style.display='none';">
+    </div>
+    
+    <div class="video-info">
+      <h2>Visualizing the Simulation on Sequence Charts</h2>
+      
+      <div id="seqvideo-id" style="display:none">
+        <div class="video-container">
+          <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" src="https://www.youtube.com/embed/9yZZFgwl4Ns?origin=http://omnest.com"></iframe>
         </div>
-      </td>
-  </tr>
-  <tr>
-    <td>
+        <a><div style="text-align: center" onclick="document.getElementById('seqvideo-id').style.display='none'; document.getElementById('seqthumb-id').style.display='block';">Close</div></a>
+      </div>
+      
       <div id="seqtext-id">
-             <p>One of the unrivaled features of OMNEST is being able to record the simulation history
-             and visualize it on a sequence chart. The sequence chart can be dragged, filtered, viewed
-             in different timeline modes (linear, compressed, etc.), saved in SVG format, and so on.
-             This can be an invaluable help in tracking down protocol errors and in showing off and
-             documenting model operation. The linked video is one of the many sequence chart videos
-             made available.</p>
-       </div>
-     </td>
-  </tr>
-</table>
+        <p>One of the unrivaled features of OMNEST is being able to record the simulation history
+           and visualize it on a sequence chart. The sequence chart can be dragged, filtered, viewed
+           in different timeline modes (linear, compressed, etc.), saved in SVG format, and so on.
+           This can be an invaluable help in tracking down protocol errors and in showing off and
+           documenting model operation. The linked video is one of the many sequence chart videos
+           made available.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% include next_links.html menu=site.data.product_menu %}
 
