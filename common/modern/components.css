@@ -124,7 +124,7 @@
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    /* transform removed as requested */
     box-shadow: var(--shadow-md);
 }
 
