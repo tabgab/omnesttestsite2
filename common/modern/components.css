@@ -219,6 +219,7 @@
     padding: var(--spacing-sm) var(--spacing-md);
     color: var(--color-text);
     text-decoration: none;
+    font-family: var(--font-heading);
     font-weight: var(--font-weight-medium);
     transition: color var(--transition-fast);
     position: relative;
@@ -437,6 +438,7 @@
 .sidebar-menu .nav-link {
     padding: var(--spacing-sm) var(--spacing-md);
     color: var(--color-text);
+    font-family: var(--font-heading);
     border-left: 3px solid transparent;
     transition: all var(--transition-fast);
 }
