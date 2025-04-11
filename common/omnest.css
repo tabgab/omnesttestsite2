@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-    color: #E54426;
+    /* color change removed as requested */
     cursor: pointer;
 }
 
@@ -355,9 +355,8 @@ a.topmenuitem:hover {
 .vmenu .vsubmenu a {
     color: #808080;
 }
-
 .vmenu a:hover {
-    color: #E54426;
+    /* color change removed as requested */
 }
 
 .vmenu .selected a {
@@ -456,9 +455,8 @@ table.footerlinks a:hover {
     padding: 5px 10px;
     transition: color 0.2s;
 }
-
 .tour-next-link a:hover {
-    color: #CC3333;
+    /* color change removed as requested */
 }
 
 .tour-next-link.small a {
