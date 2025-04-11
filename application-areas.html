@@ -2,52 +2,146 @@
 layout: page
 title: OMNEST - Typical Application Areas
 menu: product
+head_contribution: |
+  <style type="text/css">
+    /* Responsive section styling */
+    .area-section {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    /* Responsive flex container */
+    .area-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    /* Image styling */
+    .area-image {
+        flex: 0 0 180px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .area-image.right {
+        order: 2;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    
+    .area-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /* Content styling */
+    .area-content {
+        flex: 1;
+        min-width: 300px;
+    }
+    
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+        .area-flex-container {
+            flex-direction: column;
+        }
+        
+        .area-image, .area-image.right {
+            order: 1;
+            margin: 0 auto 20px auto;
+            text-align: center;
+        }
+        
+        .area-content {
+            order: 2;
+            width: 100%;
+        }
+    }
+  </style>
 ---
 
 
 <div id="header"><h1>Typical Application Areas</h1></div>
 
 
-<h2><a href="network-simulation">Simulation of Communication Networks</a></h2>
+<div class="area-section">
+  <h2><a href="network-simulation">Simulation of Communication Networks</a></h2>
+  
+  <div class="area-flex-container">
+    <div class="area-image right">
+      <img src="images/misc/network.png" alt="Network simulation">
+    </div>
+    
+    <div class="area-content">
+      <p>
+        The largest application area for OMNEST is the simulation of various
+        communication networks, such as wired and wireless networks, mobile ad-hoc networks,
+        sensor networks, vehicular networks and others.
+      </p>
+      <p><a href="network-simulation">Read more&nbsp;&raquo;</a></p>
+    </div>
+  </div>
+</div>
 
-<p><img class="right" src="images/misc/network.png" alt="">
-The largest application area for OMNEST is the simulation of various
-communication networks, such as wired and wireless networks, mobile ad-hoc networks,
-sensor networks, vehicular networks and others.</p>
-<p><a href="network-simulation">Read more&nbsp;&raquo;</a></p>
-<div style="clear:both"></div>
+<div class="area-section">
+  <h2><a href="architecture-verification">Architectural exploration of high-speed interconnections, HPC and other systems</a></h2>
+  
+  <div class="area-flex-container">
+    <div class="area-image">
+      <img src="images/misc/architecture-verification.png" alt="Architecture verification" width="180px">
+    </div>
+    
+    <div class="area-content">
+      <p>
+        Several customers use OMNEST for the architectural exploration of high-performance computing systems:
+        fast interconnects, network-on-chip architectures and more.
+      </p>
+      <p><a href="architecture-verification">Read more&nbsp;&raquo;</a></p>
+    </div>
+  </div>
+</div>
 
-<hr>
+<div class="area-section">
+  <h2><a href="performance-modeling">Queueing-Based Performance Modeling</a></h2>
+  
+  <div class="area-flex-container">
+    <div class="area-image right">
+      <img src="images/misc/performance-modeling.png" alt="Performance modeling">
+    </div>
+    
+    <div class="area-content">
+      <p>
+        You can easily build queueing and resource allocation based performance models,
+        and when more details need to be accommodated into the model, OMNEST helps you
+        by allowing you to refine, specialize, enhance or replace model blocks.
+      </p>
+      <p><a href="performance-modeling">Read more&nbsp;&raquo;</a></p>
+    </div>
+  </div>
+</div>
+<div class="area-section">
+  <h2><a href="embedding">As an Embeddable Simulation Library</a></h2>
+  
+  <div class="area-flex-container">
+    <div class="area-image">
+      <img src="images/misc/omnest-engine.png" alt="OMNEST engine" width="180px">
+    </div>
+    
+    <div class="area-content">
+      <p>
+        Several customers have chosen to embed the OMNEST simulation kernel into their
+        products. By doing so, one can benefit from its functionality and high performance,
+        while still being able to develop and test models in the OMNEST Simulation IDE.
+      </p>
+      <p><a href="embedding">Read more&nbsp;&raquo;</a></p>
+    </div>
+  </div>
+</div>
 
-<h2><a href="architecture-verification">Architectural exploration of high-speed interconnections, HPC and other systems</a></h2>
-
-<p><img class="left" src="images/misc/architecture-verification.png" alt="" width="180px"/>
-Several customers use OMNEST for the architectural exploration of high-performance computing systems:
-fast interconnects, network-on-chip architectures and more.</p>
-<p><a href="architecture-verification">Read more&nbsp;&raquo;</a></p>
-<div style="clear:both"></div>
-
-<hr>
-
-<h2><a href="performance-modeling">Queueing-Based Performance Modeling</a></h2>
-
-<p><img class="right" src="images/misc/performance-modeling.png" alt="">
-You can easily build queueing and resource allocation based performance models,
-and when more details need to be accommodated into the model, OMNEST helps you
-by allowing you to refine, specialize, enhance or replace model blocks.</p>
-<p><a href="performance-modeling">Read more&nbsp;&raquo;</a></p>
-<div style="clear:both"></div>
-
-<hr>
-
-<h2><a href="embedding">As an Embeddable Simulation Library</a></h2>
-
-<p><img class="left" src="images/misc/omnest-engine.png" alt="" width="180px">
-Several customers have chosen to embed the OMNEST simulation kernel into their
-products. By doing so, one can benefit from its functionality and high performance,
-while still being able to develop and test models in the OMNEST Simulation IDE.</p>
-<p><a href="embedding">Read more&nbsp;&raquo;</a></p>
-<div style="clear:both"></div>
 
 
 {% include next_links.html menu=site.data.product_menu %}
