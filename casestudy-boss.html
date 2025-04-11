@@ -16,10 +16,53 @@ issues, such as predictive maintenance. The system is based on WiMAX/HSUPA
 (outdoors, towards the control center) and WiFi (indoors) networks.
 </p>
 
-<div class="pic right" style="width:290px">
-<img src="images/misc/celtic-boss.jpg"/>
-<div>Screenshot of the BOSS simulation, with transmitted video and mobility displays</div>
+<div class="section-header">
+  <div class="section-image">
+    <img src="images/misc/celtic-boss.jpg" alt="Screenshot of the BOSS simulation" style="max-width: 290px;">
+    <div class="image-caption">Screenshot of the BOSS simulation, with transmitted video and mobility displays</div>
+  </div>
 </div>
+
+<style>
+/* Responsive section header with image */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section-image {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0 5px;
+  max-width: 100%;
+}
+
+.image-caption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .section-image {
+    width: calc(100% - 10px);
+    margin: 0 auto 15px auto;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+}
+</style>
 
 <p>The functional architecture was developed into a full communication
 architecture as an OMNeT++ simulation model. The model was enriched

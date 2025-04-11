@@ -8,12 +8,53 @@ head_contribution: <script src="common/enlargeit.js" type="text/javascript"></sc
 
 <div id="header"><h1>Case Study &ndash; Architectural Exploration of Chip-Scale Photonic Interconnection Networks</h1></div>
 
-<div class="pic right">
-<img src="images/misc/photonic-on-chip-network.jpg"/>
-<div>Artist's concept of a silicon chip featuring an on-chip<br> nanophotonic network
-(illustration; source: <a href="http://domino.research.ibm.com/comm/research_projects.nsf/pages/photonics.index.html" target="_blank">IBM</a>)
+<div class="section-header">
+  <div class="section-image">
+    <img src="images/misc/photonic-on-chip-network.jpg" alt="Artist's concept of a silicon chip" style="max-width: 300px;">
+    <div class="image-caption">Artist's concept of a silicon chip featuring an on-chip nanophotonic network (illustration; source: <a href="http://domino.research.ibm.com/comm/research_projects.nsf/pages/photonics.index.html" target="_blank">IBM</a>)</div>
+  </div>
 </div>
-</div>
+
+<style>
+/* Responsive section header with image */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section-image {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0 5px;
+  max-width: 100%;
+}
+
+.image-caption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .section-image {
+    width: calc(100% - 10px);
+    margin: 0 auto 15px auto;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+}
+</style>
 
 <p>
 Researchers at the Lightwave Research Laboratory, Columbia University

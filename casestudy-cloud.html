@@ -26,12 +26,53 @@ heuristics to manage this infrastructure, cloud users, approval processes,
 and reservation and provisioning of resources.</p>
 </i>
 
-<div class="pic right" >
-<img src="images/misc/altevogt-cloud-3.png" width="300px" alt="" onclick="enlarge(this);" longdesc="images/misc/altevogt-cloud-3.png"/>
-<div style="width: 300px">A typical cloud simulation consisting of several clusters,
-each cluster containing a number of managed nodes, storage subsystems,
-and LANs for customer, management, storage access (figure from the paper; click to enlarge)</div>
+<div class="section-header">
+  <div class="section-image">
+    <img src="images/misc/altevogt-cloud-3.png" alt="Cloud simulation diagram" onclick="enlarge(this);" longdesc="images/misc/altevogt-cloud-3.png" style="max-width: 300px;">
+    <div class="image-caption">A typical cloud simulation consisting of several clusters, each cluster containing a number of managed nodes, storage subsystems, and LANs for customer, management, storage access (figure from the paper; click to enlarge)</div>
+  </div>
 </div>
+
+<style>
+/* Responsive section header with image */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section-image {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0 5px;
+  max-width: 100%;
+}
+
+.image-caption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .section-image {
+    width: calc(100% - 10px);
+    margin: 0 auto 15px auto;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+}
+</style>
 
 <p>Dr. Altevogt (IBM Research, Germany) and his colleagues have built an
 OMNEST-based simulation framework for the performance simulation of clouds.
@@ -57,9 +98,11 @@ of processor cycles or bandwidth associated with disk or network I/O)
 required by the requests posted against the cloud to perform their
 operations as required by the business logic.</p>
 
-<div class="pic left" >
-<img src="images/misc/altevogt-cloud-1.png" width="300px" alt="Model of a critical region" onclick="enlarge(this);" longdesc="images/misc/altevogt-cloud-1.png"/>
-<div style="width: 300px">Modeling a critical region during the execution of a software workflow; the pool allows only 1 request in flight<br>(figure from the paper; click to enlarge)</div>
+<div class="section-header">
+  <div class="section-image">
+    <img src="images/misc/altevogt-cloud-1.png" alt="Model of a critical region" onclick="enlarge(this);" longdesc="images/misc/altevogt-cloud-1.png" style="max-width: 300px;">
+    <div class="image-caption">Modeling a critical region during the execution of a software workflow; the pool allows only 1 request in flight (figure from the paper; click to enlarge)</div>
+  </div>
 </div>
 
 <p>A request executing at a hardware simulation module first tries to

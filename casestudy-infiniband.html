@@ -8,12 +8,53 @@ head_contribution: <script src="common/enlargeit.js" type="text/javascript"></sc
 
 <div id="header"><h1>Case Study &ndash; Improving the Performance of InfiniBand in a Supercomputing Cluster</h1></div>
 
-<div class="pic right rounded">
-<img src="images/misc/pleiades.jpg">
-<div style="width:350px">The Pleiades supercomputer, featuring the world's largest
-InfiniBand interconnect network (illustration; source:
-<a href="http://www.hec.nasa.gov/news/gallery_images/pleiades.html" target="_blank">NASA</a>)</div>
+<div class="section-header">
+  <div class="section-image">
+    <img src="images/misc/pleiades.jpg" alt="The Pleiades supercomputer" style="max-width: 350px;">
+    <div class="image-caption">The Pleiades supercomputer, featuring the world's largest InfiniBand interconnect network (illustration; source: <a href="http://www.hec.nasa.gov/news/gallery_images/pleiades.html" target="_blank">NASA</a>)</div>
+  </div>
 </div>
+
+<style>
+/* Responsive section header with image */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section-image {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0 5px;
+  max-width: 100%;
+}
+
+.image-caption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .section-image {
+    width: calc(100% - 10px);
+    margin: 0 auto 15px auto;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+}
+</style>
 
 <p>
 Dr. Birk and his colleague at the Parallel Systems Laboratory of the
