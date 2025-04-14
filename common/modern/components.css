@@ -44,11 +44,10 @@
     background-color: var(--color-primary);
     border-color: var(--color-primary);
 }
-
 .btn-primary:hover {
     color: #fff;
-    /* color change removed as requested */
-    /* border-color change removed as requested */
+    background-color: #0088DD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary {
