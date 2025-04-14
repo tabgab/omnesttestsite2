@@ -4,40 +4,17 @@ title: OMNEST - Introductory and Demo Videos
 menu: product
 head_contribution: |
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-      // Setup click handlers for the first video
-      document.getElementById('idethumb-id').addEventListener('click', function() {
-        document.getElementById('idevideo-id').style.display = 'block';
-        document.getElementById('idethumb-id').style.display = 'none';
-      });
-      
-      document.getElementById('ideclose-id').addEventListener('click', function() {
-        document.getElementById('idevideo-id').style.display = 'none';
-        document.getElementById('idethumb-id').style.display = 'block';
-      });
-      
-      // Setup click handlers for the second video
-      document.getElementById('earththumb-id').addEventListener('click', function() {
-        document.getElementById('earthvideo-id').style.display = 'block';
-        document.getElementById('earththumb-id').style.display = 'none';
-      });
-      
-      document.getElementById('earthclose-id').addEventListener('click', function() {
-        document.getElementById('earthvideo-id').style.display = 'none';
-        document.getElementById('earththumb-id').style.display = 'block';
-      });
-      
-      // Setup click handlers for the third video
-      document.getElementById('seqthumb-id').addEventListener('click', function() {
-        document.getElementById('seqvideo-id').style.display = 'block';
-        document.getElementById('seqthumb-id').style.display = 'none';
-      });
-      
-      document.getElementById('seqclose-id').addEventListener('click', function() {
-        document.getElementById('seqvideo-id').style.display = 'none';
-        document.getElementById('seqthumb-id').style.display = 'block';
-      });
-    });
+    // Simple function to show a video and hide its thumbnail
+    function showVideo(videoId, thumbId) {
+      document.getElementById(videoId).style.display = 'block';
+      document.getElementById(thumbId).style.display = 'none';
+    }
+    
+    // Simple function to hide a video and show its thumbnail
+    function hideVideo(videoId, thumbId) {
+      document.getElementById(videoId).style.display = 'none';
+      document.getElementById(thumbId).style.display = 'block';
+    }
   </script>
   <style type="text/css">
     /* Responsive video container */
@@ -115,8 +92,8 @@ head_contribution: |
 
 <div class="video-section">
   <div class="video-flex-container">
-    <div id="idethumb-id" class="video-thumb" style="background-image: url(images/video/ide-thumb.png); cursor: pointer;">
-      <img src="images/video/play.png">
+    <div id="idethumb-id" class="video-thumb" style="background-image: url(images/video/ide-thumb.png); cursor: pointer;" onclick="showVideo('idevideo-id', 'idethumb-id')">
+      <img src="images/video/play.png" onclick="showVideo('idevideo-id', 'idethumb-id')">
     </div>
     
     <div class="video-info">
@@ -126,7 +103,7 @@ head_contribution: |
         <div class="video-container">
           <iframe title="Using the IDE" class="youtube-player" src="https://www.youtube.com/embed/KUe_vrWbEJY?origin=http://omnest.com"></iframe>
         </div>
-        <a><div id="ideclose-id" style="text-align: center; cursor: pointer;">Close</div></a>
+        <a><div id="ideclose-id" style="text-align: center; cursor: pointer;" onclick="hideVideo('idevideo-id', 'idethumb-id')">Close</div></a>
       </div>
       
       <div id="idetext-id">
@@ -143,8 +120,8 @@ head_contribution: |
 
 <div class="video-section">
   <div class="video-flex-container">
-    <div id="earththumb-id" class="video-thumb" style="background-image: url(images/video/googleearth-thumb.png); cursor: pointer;">
-      <img src="images/video/play.png">
+    <div id="earththumb-id" class="video-thumb" style="background-image: url(images/video/googleearth-thumb.png); cursor: pointer;" onclick="showVideo('earthvideo-id', 'earththumb-id')">
+      <img src="images/video/play.png" onclick="showVideo('earthvideo-id', 'earththumb-id')">
     </div>
     
     <div class="video-info">
@@ -154,7 +131,7 @@ head_contribution: |
         <div class="video-container">
           <iframe title="Google Earth Demo" class="youtube-player" src="https://www.youtube.com/embed/cFPJPVh3ouQ?origin=http://omnest.com"></iframe>
         </div>
-        <a><div id="earthclose-id" style="text-align: center; cursor: pointer;">Close</div></a>
+        <a><div id="earthclose-id" style="text-align: center; cursor: pointer;" onclick="hideVideo('earthvideo-id', 'earththumb-id')">Close</div></a>
       </div>
       
       <div id="earthtext-id">
@@ -177,8 +154,8 @@ head_contribution: |
 
 <div class="video-section">
   <div class="video-flex-container">
-    <div id="seqthumb-id" class="video-thumb" style="background-image: url(images/video/seqchart-thumb.png); cursor: pointer;">
-      <img src="images/video/play.png">
+    <div id="seqthumb-id" class="video-thumb" style="background-image: url(images/video/seqchart-thumb.png); cursor: pointer;" onclick="showVideo('seqvideo-id', 'seqthumb-id')">
+      <img src="images/video/play.png" onclick="showVideo('seqvideo-id', 'seqthumb-id')">
     </div>
     
     <div class="video-info">
@@ -188,7 +165,7 @@ head_contribution: |
         <div class="video-container">
           <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" src="https://www.youtube.com/embed/9yZZFgwl4Ns?origin=http://omnest.com"></iframe>
         </div>
-        <a><div id="seqclose-id" style="text-align: center; cursor: pointer;">Close</div></a>
+        <a><div id="seqclose-id" style="text-align: center; cursor: pointer;" onclick="hideVideo('seqvideo-id', 'seqthumb-id')">Close</div></a>
       </div>
       
       <div id="seqtext-id">
