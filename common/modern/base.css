@@ -1,5 +1,14 @@
 /* Base styles for OMNEST website */
 
+/* Font declarations */
+@font-face {
+    font-family: 'LTe50177';
+    src: url('../LTe50177.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Reset */
 *, *::before, *::after {
     box-sizing: border-box;
