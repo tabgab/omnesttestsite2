@@ -2,7 +2,8 @@
 
 <p id="{{ include.id }}">
     {% if pub.logo %}
-        {% for logo in pub.logo | split: " " %}
+        {% assign logos = pub.logo | split: " " %}
+        {% for logo in logos %}
             <img src="{{ site.baseurl }}/images/misc/{{ logo }}.png" style="vertical-align: middle; padding-right: 2px;"/>
         {% endfor %}
     {% endif %}
