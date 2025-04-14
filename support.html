@@ -2,18 +2,202 @@
 layout: page
 title: OMNEST - Support
 menu: purchase
+head_contribution: |
+  <style>
+    /* Support page specific styles */
+    .support-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .support-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      padding: 25px;
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .support-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+    
+    .support-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .support-icon {
+      background-color: rgba(0, 119, 204, 0.1);
+      border-radius: 50%;
+      color: #0077CC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      height: 60px;
+      width: 60px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .support-title {
+      margin: 0;
+      color: #005CAC;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .support-tagline {
+      font-size: 18px;
+      font-weight: 500;
+      color: #444;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    
+    .support-content {
+      color: #555;
+      line-height: 1.6;
+    }
+    
+    .support-content p {
+      margin-bottom: 15px;
+    }
+    
+    .support-cta {
+      margin-top: 20px;
+      text-align: right;
+    }
+    
+    .support-button {
+      background-color: #0077CC;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 600;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .support-button:hover {
+      background-color: #0088DD;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .highlight-box {
+      background-color: rgba(0, 119, 204, 0.05);
+      border-left: 4px solid #0077CC;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .section-image {
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .section-image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image-caption {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 8px;
+      text-align: center;
+    }
+    
+    @media (max-width: 767.98px) {
+      .support-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .support-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
 ---
 
-
-<div id="header"><h1>Technical Support</h1></div>
-
-<img src="images/misc/support.png" class="pic right" alt="">
-
-<p>OMNEST product technical support is available at <b>support@omnest.com</b>.
-You may also contact us at the above address if you need assistance
-during evaluation.</p>
-
-<p>If you already have an OMNEST license, you can download the product
-<a href="download">here</a>.</p>
-
+<div class="support-container">
+  <h1 class="page-title">Technical Support</h1>
+  
+  <p class="lead">Get the help you need to make the most of OMNEST.</p>
+  
+  <!-- Technical Support Card -->
+  <div class="support-card animate-fade-in">
+    <div class="support-header">
+      <div class="support-icon">
+        🛟
+      </div>
+      <div>
+        <h2 class="support-title">Contact Support</h2>
+      </div>
+    </div>
+    
+    <p class="support-tagline">Our team is ready to assist you with any technical questions</p>
+    
+    <div class="support-content">
+      <div class="section-image">
+        <img src="images/misc/support.png" alt="Technical Support">
+      </div>
+      
+      <div class="highlight-box">
+        <strong>Direct Support:</strong> OMNEST product technical support is available at <b>support@omnest.com</b>
+      </div>
+      
+      <p>You may also contact us at the above address if you need assistance during evaluation. Our technical team is ready to help you with any questions or issues you might encounter while using OMNEST.</p>
+      
+      <p>If you already have an OMNEST license, you can download the product from our downloads section.</p>
+    </div>
+    
+    <div class="support-cta">
+      <a href="download" class="support-button">Download Products</a>
+    </div>
+  </div>
+  
+  <!-- Support Options Card -->
+  <div class="support-card animate-fade-in">
+    <div class="support-header">
+      <div class="support-icon">
+        📋
+      </div>
+      <div>
+        <h2 class="support-title">Support Options</h2>
+      </div>
+    </div>
+    
+    <p class="support-tagline">Comprehensive support plans to meet your needs</p>
+    
+    <div class="support-content">
+      <p>OMNEST offers various support and maintenance plans to ensure you get the most out of your investment. Our support plans include:</p>
+      
+      <ul>
+        <li>Access to the latest versions and updates</li>
+        <li>Direct email support from our development team</li>
+        <li>Priority bug fixes and feature requests</li>
+        <li>Technical guidance for your specific use cases</li>
+      </ul>
+      
+      <div class="highlight-box">
+        <strong>Need more information?</strong> Visit our services page to learn more about our support plans and other professional services.
+      </div>
+    </div>
+    
+    <div class="support-cta">
+      <a href="services" class="support-button">View Support Plans</a>
+    </div>
+  </div>
+</div>
 
