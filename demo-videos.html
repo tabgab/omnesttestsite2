@@ -4,34 +4,85 @@ title: OMNEST - Introductory and Demo Videos
 menu: product
 head_contribution: |
   <script type="text/javascript">
-    // Simple function to show a video and hide its thumbnail
-    function showVideo(videoId, thumbId) {
-      document.getElementById(videoId).style.display = 'block';
+    // Function to show a video and hide its thumbnail
+    function showVideo(videoId, thumbId, textId) {
+      // Hide the thumbnail
       document.getElementById(thumbId).style.display = 'none';
+      
+      // Show the video container
+      var videoContainer = document.getElementById(videoId);
+      videoContainer.style.display = 'block';
+      
+      // Hide the text if specified
+      if (textId) {
+        document.getElementById(textId).style.display = 'none';
+      }
+      
+      // Notify Termly that we're showing content that requires consent
+      if (window.Termly && window.Termly.loadConsent) {
+        window.Termly.loadConsent();
+      }
     }
     
-    // Simple function to hide a video and show its thumbnail
-    function hideVideo(videoId, thumbId) {
+    // Function to hide a video and show its thumbnail
+    function hideVideo(videoId, thumbId, textId) {
+      // Hide the video container
       document.getElementById(videoId).style.display = 'none';
+      
+      // Show the thumbnail
       document.getElementById(thumbId).style.display = 'block';
+      
+      // Show the text if specified
+      if (textId) {
+        document.getElementById(textId).style.display = 'block';
+      }
     }
+    
+    // Function to initialize Termly consent for YouTube videos
+    function initTermlyConsent() {
+      // Check if Termly is available
+      if (window.Termly && window.Termly.loadConsent) {
+        // Add event listener for Termly consent changes
+        document.addEventListener('termly:consent:changed', function(event) {
+          // If marketing consent is granted, show the videos
+          if (event.detail && event.detail.marketing === true) {
+            // Make all iframes visible
+            var iframes = document.querySelectorAll('iframe[data-category="marketing"]');
+            for (var i = 0; i < iframes.length; i++) {
+              iframes[i].style.display = 'block';
+            }
+          }
+        });
+      }
+    }
+    
+    // Initialize when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      initTermlyConsent();
+    });
   </script>
   <style type="text/css">
-    /* Responsive video container */
-    .video-container {
-        position: relative;
-        width: 100%;
-        max-width: 660px;
-        margin: 0 auto;
-    }
+    /* This style is now defined below with the proper aspect ratio */
     
     /* Make videos responsive */
     .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
+        height: 100%;
         max-width: 100%;
-        aspect-ratio: 16/9;
         border: 0;
+    }
+    
+    /* Create a responsive container with proper aspect ratio */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
     
     /* Video section styling */
@@ -92,8 +143,8 @@ head_contribution: |
 
 <div class="video-section">
   <div class="video-flex-container">
-    <div id="idethumb-id" class="video-thumb" style="background-image: url(images/video/ide-thumb.png); cursor: pointer;" onclick="showVideo('idevideo-id', 'idethumb-id')">
-      <img src="images/video/play.png" onclick="showVideo('idevideo-id', 'idethumb-id')">
+    <div id="idethumb-id" class="video-thumb" style="background-image: url(images/video/ide-thumb.png); cursor: pointer;" onclick="showVideo('idevideo-id', 'idethumb-id', 'idetext-id')">
+      <img src="images/video/play.png" onclick="showVideo('idevideo-id', 'idethumb-id', 'idetext-id')">
     </div>
     
     <div class="video-info">
@@ -101,9 +152,19 @@ head_contribution: |
       
       <div id="idevideo-id" style="display:none">
         <div class="video-container">
-          <iframe title="Using the IDE" class="youtube-player" src="https://www.youtube.com/embed/KUe_vrWbEJY?origin=http://omnest.com"></iframe>
+          <!-- YouTube embed with data-category for Termly -->
+          <iframe
+            title="Using the IDE"
+            class="youtube-player"
+            src="https://www.youtube-nocookie.com/embed/KUe_vrWbEJY?rel=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            data-category="marketing"
+            data-termly-consent="marketing">
+          </iframe>
         </div>
-        <a><div id="ideclose-id" style="text-align: center; cursor: pointer;" onclick="hideVideo('idevideo-id', 'idethumb-id')">Close</div></a>
+        <a><div style="text-align: center; cursor: pointer;" onclick="hideVideo('idevideo-id', 'idethumb-id', 'idetext-id')">Close</div></a>
       </div>
       
       <div id="idetext-id">
@@ -120,8 +181,8 @@ head_contribution: |
 
 <div class="video-section">
   <div class="video-flex-container">
-    <div id="earththumb-id" class="video-thumb" style="background-image: url(images/video/googleearth-thumb.png); cursor: pointer;" onclick="showVideo('earthvideo-id', 'earththumb-id')">
-      <img src="images/video/play.png" onclick="showVideo('earthvideo-id', 'earththumb-id')">
+    <div id="earththumb-id" class="video-thumb" style="background-image: url(images/video/googleearth-thumb.png); cursor: pointer;" onclick="showVideo('earthvideo-id', 'earththumb-id', 'earthtext-id')">
+      <img src="images/video/play.png" onclick="showVideo('earthvideo-id', 'earththumb-id', 'earthtext-id')">
     </div>
     
     <div class="video-info">
@@ -129,9 +190,19 @@ head_contribution: |
       
       <div id="earthvideo-id" style="display:none">
         <div class="video-container">
-          <iframe title="Google Earth Demo" class="youtube-player" src="https://www.youtube.com/embed/cFPJPVh3ouQ?origin=http://omnest.com"></iframe>
+          <!-- YouTube embed with data-category for Termly -->
+          <iframe
+            title="Google Earth Demo"
+            class="youtube-player"
+            src="https://www.youtube-nocookie.com/embed/cFPJPVh3ouQ?rel=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            data-category="marketing"
+            data-termly-consent="marketing">
+          </iframe>
         </div>
-        <a><div id="earthclose-id" style="text-align: center; cursor: pointer;" onclick="hideVideo('earthvideo-id', 'earththumb-id')">Close</div></a>
+        <a><div style="text-align: center; cursor: pointer;" onclick="hideVideo('earthvideo-id', 'earththumb-id', 'earthtext-id')">Close</div></a>
       </div>
       
       <div id="earthtext-id">
@@ -154,8 +225,8 @@ head_contribution: |
 
 <div class="video-section">
   <div class="video-flex-container">
-    <div id="seqthumb-id" class="video-thumb" style="background-image: url(images/video/seqchart-thumb.png); cursor: pointer;" onclick="showVideo('seqvideo-id', 'seqthumb-id')">
-      <img src="images/video/play.png" onclick="showVideo('seqvideo-id', 'seqthumb-id')">
+    <div id="seqthumb-id" class="video-thumb" style="background-image: url(images/video/seqchart-thumb.png); cursor: pointer;" onclick="showVideo('seqvideo-id', 'seqthumb-id', 'seqtext-id')">
+      <img src="images/video/play.png" onclick="showVideo('seqvideo-id', 'seqthumb-id', 'seqtext-id')">
     </div>
     
     <div class="video-info">
@@ -163,9 +234,19 @@ head_contribution: |
       
       <div id="seqvideo-id" style="display:none">
         <div class="video-container">
-          <iframe title="Visualizing the Simulation on Sequence Charts" class="youtube-player" src="https://www.youtube.com/embed/9yZZFgwl4Ns?origin=http://omnest.com"></iframe>
+          <!-- YouTube embed with data-category for Termly -->
+          <iframe
+            title="Visualizing the Simulation on Sequence Charts"
+            class="youtube-player"
+            src="https://www.youtube-nocookie.com/embed/9yZZFgwl4Ns?rel=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            data-category="marketing"
+            data-termly-consent="marketing">
+          </iframe>
         </div>
-        <a><div id="seqclose-id" style="text-align: center; cursor: pointer;" onclick="hideVideo('seqvideo-id', 'seqthumb-id')">Close</div></a>
+        <a><div style="text-align: center; cursor: pointer;" onclick="hideVideo('seqvideo-id', 'seqthumb-id', 'seqtext-id')">Close</div></a>
       </div>
       
       <div id="seqtext-id">
