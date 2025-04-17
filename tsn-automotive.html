@@ -15,22 +15,13 @@ menu: product
             
             <h2 class="mt-5">Key Challenges in Automotive Networks</h2>
             
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Mixed-criticality traffic:</strong> Handling both safety-critical and non-critical traffic on the same network</li>
-                        <li><strong>Ultra-low latency requirements:</strong> Ensuring sensor data reaches control units within microsecond precision</li>
-                        <li><strong>High reliability:</strong> Maintaining communication even in the presence of faults</li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Bandwidth efficiency:</strong> Managing increasing data rates from cameras, lidars, and radars</li>
-                        <li><strong>Cost-effectiveness:</strong> Replacing multiple specialized networks with a single Ethernet-based network</li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="feature-list">
+                <li><span class="bullet"></span> <strong>Mixed-criticality traffic:</strong> Handling both safety-critical and non-critical traffic on the same network</li>
+                <li><span class="bullet"></span> <strong>Ultra-low latency requirements:</strong> Ensuring sensor data reaches control units within microsecond precision</li>
+                <li><span class="bullet"></span> <strong>High reliability:</strong> Maintaining communication even in the presence of faults</li>
+                <li><span class="bullet"></span> <strong>Bandwidth efficiency:</strong> Managing increasing data rates from cameras, lidars, and radars</li>
+                <li><span class="bullet"></span> <strong>Cost-effectiveness:</strong> Replacing multiple specialized networks with a single Ethernet-based network</li>
+            </ul>
             
             <h2 class="mt-5">TSN Features for Automotive Applications</h2>
             
@@ -123,26 +114,15 @@ menu: product
             
             <h2 class="mt-5">Simulation Capabilities with OMNEST</h2>
             
-            <p>
-                OMNEST provides comprehensive simulation capabilities for automotive TSN networks:
-            </p>
+            <p>OMNEST's TSN simulation capabilities allow you to:</p>
             
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Network topology design:</strong> Model complex in-vehicle network topologies with multiple switches and end devices</li>
-                        <li><strong>Traffic pattern analysis:</strong> Simulate realistic automotive traffic patterns and analyze their impact on network performance</li>
-                        <li><strong>Configuration optimization:</strong> Test different TSN configuration parameters to find optimal settings for specific automotive applications</li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Failure scenario testing:</strong> Evaluate network behavior under various failure conditions to ensure safety requirements are met</li>
-                        <li><strong>End-to-end latency analysis:</strong> Measure and analyze latency for critical traffic flows across the network</li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="feature-list">
+                <li><span class="bullet"></span> <strong>Network topology design:</strong> Model complex in-vehicle network topologies with multiple switches and end devices</li>
+                <li><span class="bullet"></span> <strong>Traffic pattern analysis:</strong> Simulate realistic automotive traffic patterns and analyze their impact on network performance</li>
+                <li><span class="bullet"></span> <strong>Configuration optimization:</strong> Test different TSN configuration parameters to find optimal settings for specific automotive applications</li>
+                <li><span class="bullet"></span> <strong>Failure scenario testing:</strong> Evaluate network behavior under various failure conditions to ensure safety requirements are met</li>
+                <li><span class="bullet"></span> <strong>End-to-end latency analysis:</strong> Measure and analyze latency for critical traffic flows across the network</li>
+            </ul>
             
             <h2 class="mt-5">Case Study: Camera-based ADAS System</h2>
             
@@ -172,3 +152,46 @@ menu: product
         </div>
     </div>
 </div>
+
+<style>
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-list li .bullet {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.numbered-list {
+    padding-left: 1.5rem;
+}
+
+.numbered-list li {
+    margin-bottom: 0.5rem;
+}
+
+.reference-link {
+    color: #0077cc;
+    text-decoration: none;
+    border-bottom: 1px dotted #0077cc;
+}
+
+.reference-link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #0077cc;
+}
+</style>
