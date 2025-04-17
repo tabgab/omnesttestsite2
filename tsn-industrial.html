@@ -1,0 +1,241 @@
+---
+layout: page
+title: TSN for Industrial Control Systems
+menu: product
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Time-Sensitive Networking for Industrial Control Systems</h1>
+            
+            <div class="alert alert-primary mb-4">
+                <strong>Industrial control systems</strong> are evolving rapidly with Industry 4.0 initiatives, requiring deterministic communication for real-time control applications. Time-Sensitive Networking (TSN) provides the foundation for converged networks that can handle both critical control traffic and standard IT traffic on the same infrastructure.
+            </div>
+            
+            <h2 class="mt-5">Key Challenges in Industrial Networks</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Deterministic communication:</strong> Ensuring predictable delivery of control messages with microsecond precision</li>
+                        <li><strong>Converged networks:</strong> Combining OT (Operational Technology) and IT (Information Technology) traffic on a single network</li>
+                        <li><strong>Vendor interoperability:</strong> Integrating devices from multiple vendors in a standardized network</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Scalability:</strong> Supporting large-scale industrial deployments with hundreds or thousands of nodes</li>
+                        <li><strong>Migration path:</strong> Enabling gradual transition from legacy fieldbus systems to TSN-based networks</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">TSN Features for Industrial Applications</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Time Synchronization (IEEE 802.1AS)</h3>
+                            <p class="card-text">
+                                Precise time synchronization is fundamental for coordinated industrial operations. OMNEST simulations can model the gPTP (generalized Precision Time Protocol) to achieve sub-microsecond synchronization across the factory floor.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/timesynchronization/doc/" class="card-link" target="_blank">INET TSN Time Synchronization Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Scheduled Traffic (IEEE 802.1Qbv)</h3>
+                            <p class="card-text">
+                                Time-aware shapers enable deterministic transmission of control traffic by scheduling network access using gate control lists. This ensures that high-priority traffic (like motion control commands) is transmitted without interference from lower-priority traffic.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/scheduledtraffic/doc/" class="card-link" target="_blank">INET TSN Scheduled Traffic Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Credit-Based Shaper (IEEE 802.1Qav)</h3>
+                            <p class="card-text">
+                                For traffic that requires bandwidth guarantees but not strict time scheduling, credit-based shapers provide fair bandwidth allocation while preventing traffic bursts from affecting other streams.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/cbs/doc/" class="card-link" target="_blank">INET TSN Credit-Based Shaper Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Per-Stream Filtering and Policing (IEEE 802.1Qci)</h3>
+                            <p class="card-text">
+                                This feature provides protection against faulty devices or malicious attacks by filtering and policing individual streams, ensuring that misbehaving devices cannot disrupt the entire network.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/streamfiltering/doc/" class="card-link" target="_blank">INET TSN Stream Filtering Showcase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Industrial Automation Use Cases</h2>
+            
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Motion Control</h3>
+                            <p class="card-text">
+                                TSN enables precise coordination of multiple axes in motion control applications, where controllers must synchronize motors with sub-millisecond precision to achieve smooth and accurate movement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Process Automation</h3>
+                            <p class="card-text">
+                                In process industries, TSN provides reliable communication for monitoring and control of continuous processes, ensuring that critical process variables are transmitted with deterministic latency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Machine-to-Machine</h3>
+                            <p class="card-text">
+                                TSN facilitates deterministic communication between machines on the factory floor, enabling coordinated operations and improving overall production efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Remote I/O</h3>
+                            <p class="card-text">
+                                Distributed I/O systems benefit from TSN's deterministic communication, allowing controllers to access remote I/O with predictable timing, regardless of network load.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Advanced TSN Applications in Industrial Settings</h2>
+            
+            <p>
+                Recent research has expanded the application of TSN in industrial environments. According to a comprehensive study (<a href="https://arxiv.org/html/2306.03691v4" target="_blank">Cavalcanti et al., 2023</a>), TSN is being integrated with other technologies to create more robust industrial communication systems:
+            </p>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">TSN with OPC UA</h3>
+                            <p class="card-text">
+                                The combination of OPC UA (Open Platform Communications Unified Architecture) with TSN creates a powerful framework for industrial communication, providing both semantic interoperability and deterministic transport.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">TSN with 5G</h3>
+                            <p class="card-text">
+                                Integration of TSN with 5G networks enables wireless deterministic communication for mobile industrial equipment and flexible production lines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">TSN for Edge Computing</h3>
+                            <p class="card-text">
+                                TSN supports edge computing architectures by providing deterministic communication between sensors, edge devices, and cloud systems, enabling real-time analytics and control at the edge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Simulation Capabilities with OMNEST</h2>
+            
+            <p>
+                OMNEST provides comprehensive simulation capabilities for industrial TSN networks:
+            </p>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Network topology design:</strong> Model complex factory floor network topologies with multiple switches and end devices</li>
+                        <li><strong>Traffic pattern analysis:</strong> Simulate realistic industrial traffic patterns and analyze their impact on network performance</li>
+                        <li><strong>Configuration optimization:</strong> Test different TSN configuration parameters to find optimal settings for specific industrial applications</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Failure scenario testing:</strong> Evaluate network behavior under various failure conditions to ensure production continuity</li>
+                        <li><strong>End-to-end latency analysis:</strong> Measure and analyze latency for critical traffic flows across the network</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Industry Standards and Profiles</h2>
+            
+            <p>
+                Several industry organizations have developed TSN profiles to standardize the use of TSN in specific industrial contexts:
+            </p>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">IEC/IEEE 60802</h3>
+                            <p class="card-text">
+                                TSN profile for industrial automation, defining a common set of features and configurations for industrial applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Avnu Alliance</h3>
+                            <p class="card-text">
+                                Industrial automation TSN testbed and certification program, ensuring interoperability between TSN devices from different vendors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Conclusion</h2>
+            
+            <p>
+                Time-Sensitive Networking is transforming industrial control systems by providing deterministic communication over standard Ethernet. OMNEST's simulation capabilities allow industrial engineers to design, validate, and optimize TSN networks before deployment, ensuring they meet the strict timing and reliability requirements of modern industrial automation.
+            </p>
+            
+            <div class="text-center mt-5 mb-5">
+                <a href="contact" class="btn btn-primary btn-lg">Contact Us for More Information</a>
+                <a href="tsn" class="btn btn-outline-primary btn-lg ml-3">Back to TSN Overview</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,174 @@
+---
+layout: page
+title: TSN for Automotive In-Vehicle Networks
+menu: product
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Time-Sensitive Networking for Automotive In-Vehicle Networks</h1>
+            
+            <div class="alert alert-primary mb-4">
+                <strong>Modern vehicles</strong> are becoming increasingly complex, with dozens of electronic control units (ECUs) that need to communicate with each other in real-time. Time-Sensitive Networking (TSN) provides the deterministic communication infrastructure needed for advanced driver assistance systems (ADAS) and autonomous driving functions.
+            </div>
+            
+            <h2 class="mt-5">Key Challenges in Automotive Networks</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Mixed-criticality traffic:</strong> Handling both safety-critical and non-critical traffic on the same network</li>
+                        <li><strong>Ultra-low latency requirements:</strong> Ensuring sensor data reaches control units within microsecond precision</li>
+                        <li><strong>High reliability:</strong> Maintaining communication even in the presence of faults</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Bandwidth efficiency:</strong> Managing increasing data rates from cameras, lidars, and radars</li>
+                        <li><strong>Cost-effectiveness:</strong> Replacing multiple specialized networks with a single Ethernet-based network</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">TSN Features for Automotive Applications</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Time Synchronization (IEEE 802.1AS)</h3>
+                            <p class="card-text">
+                                Precise time synchronization is essential for coordinating distributed automotive systems. OMNEST simulations can model the gPTP (generalized Precision Time Protocol) to achieve sub-microsecond synchronization across the in-vehicle network.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/timesynchronization/doc/" class="card-link" target="_blank">INET TSN Time Synchronization Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Scheduled Traffic (IEEE 802.1Qbv)</h3>
+                            <p class="card-text">
+                                Time-aware shapers enable deterministic transmission of critical traffic by scheduling network access using gate control lists. This ensures that high-priority traffic (like steering or braking commands) is transmitted without interference from lower-priority traffic.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/scheduledtraffic/doc/" class="card-link" target="_blank">INET TSN Scheduled Traffic Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Frame Preemption (IEEE 802.1Qbu and IEEE 802.3br)</h3>
+                            <p class="card-text">
+                                When high-priority frames need immediate transmission, frame preemption allows them to interrupt the transmission of lower-priority frames, further reducing latency for critical traffic.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/framepreemption/doc/" class="card-link" target="_blank">INET TSN Frame Preemption Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Redundancy with Frame Replication and Elimination (IEEE 802.1CB)</h3>
+                            <p class="card-text">
+                                For safety-critical systems like steering and braking, redundant paths ensure that data arrives even if one path fails. Frame replication sends duplicate packets over different paths, while frame elimination removes duplicates at the receiver.
+                            </p>
+                            <a href="https://inet.omnetpp.org/docs/showcases/tsn/streamredundancy/doc/" class="card-link" target="_blank">INET TSN Redundancy Showcase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Automotive Use Cases</h2>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Autonomous Driving</h3>
+                            <p class="card-text">
+                                TSN enables reliable communication between sensors (cameras, lidars, radars), fusion units, and control systems with guaranteed latency bounds, essential for real-time decision making in autonomous vehicles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Advanced Driver Assistance Systems (ADAS)</h3>
+                            <p class="card-text">
+                                Features like automatic emergency braking, adaptive cruise control, and lane keeping assistance rely on deterministic communication to ensure timely response to changing road conditions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Domain Controllers</h3>
+                            <p class="card-text">
+                                Modern vehicle architectures are moving toward domain controllers that consolidate multiple functions. TSN provides the communication backbone between these controllers, ensuring that each domain (powertrain, chassis, infotainment, etc.) receives the data it needs with appropriate timing guarantees.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Simulation Capabilities with OMNEST</h2>
+            
+            <p>
+                OMNEST provides comprehensive simulation capabilities for automotive TSN networks:
+            </p>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Network topology design:</strong> Model complex in-vehicle network topologies with multiple switches and end devices</li>
+                        <li><strong>Traffic pattern analysis:</strong> Simulate realistic automotive traffic patterns and analyze their impact on network performance</li>
+                        <li><strong>Configuration optimization:</strong> Test different TSN configuration parameters to find optimal settings for specific automotive applications</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Failure scenario testing:</strong> Evaluate network behavior under various failure conditions to ensure safety requirements are met</li>
+                        <li><strong>End-to-end latency analysis:</strong> Measure and analyze latency for critical traffic flows across the network</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 class="mt-5">Case Study: Camera-based ADAS System</h2>
+            
+            <p>
+                A typical advanced driver assistance system might include multiple cameras sending high-bandwidth video streams to a central processing unit. Using OMNEST's TSN simulation capabilities, engineers can:
+            </p>
+            
+            <ol>
+                <li>Model the network topology with cameras, processing units, and other ECUs</li>
+                <li>Configure time synchronization to ensure all cameras operate with a common time reference</li>
+                <li>Set up scheduled traffic to guarantee bandwidth for video streams</li>
+                <li>Implement frame preemption for urgent control messages</li>
+                <li>Analyze end-to-end latency to ensure it meets the requirements for real-time processing</li>
+                <li>Test the system under various load conditions to identify potential bottlenecks</li>
+            </ol>
+            
+            <h2 class="mt-5">Conclusion</h2>
+            
+            <p>
+                Time-Sensitive Networking is transforming automotive in-vehicle networks by providing deterministic communication over standard Ethernet. OMNEST's simulation capabilities allow automotive engineers to design, validate, and optimize TSN networks before deployment, ensuring they meet the strict timing and reliability requirements of modern vehicles.
+            </p>
+            
+            <div class="text-center mt-5 mb-5">
+                <a href="contact" class="btn btn-primary btn-lg">Contact Us for More Information</a>
+                <a href="tsn" class="btn btn-outline-primary btn-lg ml-3">Back to TSN Overview</a>
+            </div>
+        </div>
+    </div>
+</div>
