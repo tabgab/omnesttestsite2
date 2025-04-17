@@ -15,22 +15,13 @@ menu: product
             
             <h2 class="mt-5">Key Challenges in Industrial Networks</h2>
             
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Deterministic communication:</strong> Ensuring predictable delivery of control messages with microsecond precision</li>
-                        <li><strong>Converged networks:</strong> Combining OT (Operational Technology) and IT (Information Technology) traffic on a single network</li>
-                        <li><strong>Vendor interoperability:</strong> Integrating devices from multiple vendors in a standardized network</li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Scalability:</strong> Supporting large-scale industrial deployments with hundreds or thousands of nodes</li>
-                        <li><strong>Migration path:</strong> Enabling gradual transition from legacy fieldbus systems to TSN-based networks</li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="feature-list">
+                <li><span class="bullet"></span> <strong>Deterministic communication:</strong> Ensuring predictable delivery of control messages with microsecond precision</li>
+                <li><span class="bullet"></span> <strong>Converged networks:</strong> Combining OT (Operational Technology) and IT (Information Technology) traffic on a single network</li>
+                <li><span class="bullet"></span> <strong>Vendor interoperability:</strong> Integrating devices from multiple vendors in a standardized network</li>
+                <li><span class="bullet"></span> <strong>Scalability:</strong> Supporting large-scale industrial deployments with hundreds or thousands of nodes</li>
+                <li><span class="bullet"></span> <strong>Migration path:</strong> Enabling gradual transition from legacy fieldbus systems to TSN-based networks</li>
+            </ul>
             
             <h2 class="mt-5">TSN Features for Industrial Applications</h2>
             
@@ -138,40 +129,11 @@ menu: product
                 Recent research has expanded the application of TSN in industrial environments. According to a comprehensive study (<a href="https://arxiv.org/html/2306.03691v4" target="_blank">Cavalcanti et al., 2023</a>), TSN is being integrated with other technologies to create more robust industrial communication systems:
             </p>
             
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title">TSN with OPC UA</h3>
-                            <p class="card-text">
-                                The combination of OPC UA (Open Platform Communications Unified Architecture) with TSN creates a powerful framework for industrial communication, providing both semantic interoperability and deterministic transport.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title">TSN with 5G</h3>
-                            <p class="card-text">
-                                Integration of TSN with 5G networks enables wireless deterministic communication for mobile industrial equipment and flexible production lines.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title">TSN for Edge Computing</h3>
-                            <p class="card-text">
-                                TSN supports edge computing architectures by providing deterministic communication between sensors, edge devices, and cloud systems, enabling real-time analytics and control at the edge.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ul class="feature-list mt-3">
+                <li><span class="bullet"></span> <strong>TSN with OPC UA:</strong> The combination of OPC UA (Open Platform Communications Unified Architecture) with TSN creates a powerful framework for industrial communication, providing both semantic interoperability and deterministic transport.</li>
+                <li><span class="bullet"></span> <strong>TSN with 5G:</strong> Integration of TSN with 5G networks enables wireless deterministic communication for mobile industrial equipment and flexible production lines.</li>
+                <li><span class="bullet"></span> <strong>TSN for Edge Computing:</strong> TSN supports edge computing architectures by providing deterministic communication between sensors, edge devices, and cloud systems, enabling real-time analytics and control at the edge.</li>
+            </ul>
             
             <h2 class="mt-5">Simulation Capabilities with OMNEST</h2>
             
@@ -179,22 +141,13 @@ menu: product
                 OMNEST provides comprehensive simulation capabilities for industrial TSN networks:
             </p>
             
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Network topology design:</strong> Model complex factory floor network topologies with multiple switches and end devices</li>
-                        <li><strong>Traffic pattern analysis:</strong> Simulate realistic industrial traffic patterns and analyze their impact on network performance</li>
-                        <li><strong>Configuration optimization:</strong> Test different TSN configuration parameters to find optimal settings for specific industrial applications</li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>Failure scenario testing:</strong> Evaluate network behavior under various failure conditions to ensure production continuity</li>
-                        <li><strong>End-to-end latency analysis:</strong> Measure and analyze latency for critical traffic flows across the network</li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="feature-list">
+                <li><span class="bullet"></span> <strong>Network topology design:</strong> Model complex factory floor network topologies with multiple switches and end devices</li>
+                <li><span class="bullet"></span> <strong>Traffic pattern analysis:</strong> Simulate realistic industrial traffic patterns and analyze their impact on network performance</li>
+                <li><span class="bullet"></span> <strong>Configuration optimization:</strong> Test different TSN configuration parameters to find optimal settings for specific industrial applications</li>
+                <li><span class="bullet"></span> <strong>Failure scenario testing:</strong> Evaluate network behavior under various failure conditions to ensure production continuity</li>
+                <li><span class="bullet"></span> <strong>End-to-end latency analysis:</strong> Measure and analyze latency for critical traffic flows across the network</li>
+            </ul>
             
             <h2 class="mt-5">Industry Standards and Profiles</h2>
             
@@ -239,3 +192,46 @@ menu: product
         </div>
     </div>
 </div>
+
+<style>
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-list li .bullet {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.numbered-list {
+    padding-left: 1.5rem;
+}
+
+.numbered-list li {
+    margin-bottom: 0.5rem;
+}
+
+.reference-link {
+    color: #0077cc;
+    text-decoration: none;
+    border-bottom: 1px dotted #0077cc;
+}
+
+.reference-link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #0077cc;
+}
+</style>
